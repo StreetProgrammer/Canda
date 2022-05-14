@@ -1,0 +1,55 @@
+.contact-info {
+    h3 {
+        color: $secFont;
+        font-weight: bold;
+    }
+
+    .info-wrapper {
+        p:nth-child(2) .icon {
+            color: $priFont;
+        }
+
+        p {
+            display: flex;
+
+            .icon {
+                color: $secFont;
+            }
+        }
+    }
+}
+
+.store-image {
+    max-width: 100%;
+
+    img {
+        width: 50%;
+    }
+
+}
+
+.contact-form-content {
+    margin: auto 8rem;
+
+    @media #{$tab} {
+        margin: auto 1rem;
+    }
+
+    @media #{$small_mobile} {
+        margin: auto 0rem;
+    }
+
+    h2 {
+        color: $secFont;
+        font-weight: bold;
+    }
+
+    h3 {
+        color: $thiFont;
+        font-weight: bold;
+    }
+
+    .form {
+        padding: 2rem;
+    }
+}

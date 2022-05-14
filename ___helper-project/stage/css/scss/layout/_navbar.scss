@@ -1,0 +1,155 @@
+.top-header-wrapper {
+    height: 70px;
+    box-sizing: border-box;
+    background: $white;
+    -webkit-box-shadow: 4px 2px 2px 1px rgba(167, 167, 167, 0.75);
+    -moz-box-shadow: 4px 2px 2px 1px rgba(167, 167, 167, 0.75);
+    box-shadow: 4px 2px 2px 1px rgba(167, 167, 167, 0.75);
+
+    .top-header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        align-content: center;
+        padding: 20px 0px;
+
+        .top-nav {
+            .main-menu {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+
+                .item {
+                    padding: 5px 10px;
+
+                    a {
+                        font-weight: bold;
+                        color: $secFont;
+                    }
+
+                    @media #{$tab} {
+                        display: none;
+                    }
+
+                }
+
+                .item:nth-child(1) {
+                    position: relative;
+
+                    a {
+                        color: $priFont;
+
+                        i:nth-child(2) {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .submenu {
+                        background-color: #FFF;
+                        border-radius: 10px;
+                        padding: 0px;
+                        min-height: 150px;
+                        padding-top: 25px;
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        left: 0;
+                        top: 140%;
+                        width: 200px;
+                        z-index: 999;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, .02);
+                        border: 2px solid #ddd;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all ease-in-out 0.3s;
+
+                        li {
+                            display: block;
+
+                            a {
+                                padding: 8px 0px 8px 0px;
+                                font-size: 12px !important;
+                                position: inherit;
+                                display: block;
+
+                                &::before {
+                                    display: none;
+                                }
+                            }
+
+                            &:hover a {
+                                color: $secFont;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                    &:hover>ul {
+                        opacity: 1;
+                        visibility: visible;
+                        top: 100%;
+                    }
+
+                    &:hover>a::before {
+                        opacity: 1;
+                        transform: scaleX(1);
+                    }
+                }
+
+                .item:nth-child(3),
+                .item:nth-child(4) {
+                    border-left: 2px solid $secFont;
+                }
+
+                .toggle {
+                    cursor: pointer;
+
+                    .bars {
+                        background-color: #999;
+                        display: inline-block;
+                        height: 2px;
+                        position: relative;
+                        width: 18px;
+
+                        &::before,
+                        &::after {
+                            content: "";
+                            background-color: #999;
+                            display: inline-block;
+                            height: 2px;
+                            position: absolute;
+                            width: 18px;
+                        }
+
+                        &::before {
+                            top: 5px;
+                        }
+
+                        &::after {
+                            top: -5px;
+                        }
+                    }
+
+                    @media #{$medium_device} {
+                        display: none;
+                    }
+
+                    @media #{$big_screen} {
+                        display: none;
+                    }
+
+                    @media #{$extra_big_screen} {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .main-logo {
+            height: 40px;
+        }
+    }
+}

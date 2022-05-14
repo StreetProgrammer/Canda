@@ -1,0 +1,538 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <title>Document</title>
+    <style>
+        /* body {
+            font-family: tahoma;
+            height: 100vh;
+            background-image: url(https://picsum.photos/g/3000/2000);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+        } */
+        
+        .our-team {
+            padding: 30px 0 40px;
+            margin-bottom: 30px;
+            background-color: #f7f5ec;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .our-team .picture {
+            display: inline-block;
+            height: 130px;
+            width: 130px;
+            margin-bottom: 50px;
+            z-index: 1;
+            position: relative;
+        }
+        
+        .our-team .picture::before {
+            content: "";
+            width: 100%;
+            height: 0;
+            border-radius: 50%;
+            background-color: #1369ce;
+            position: absolute;
+            bottom: 135%;
+            right: 0;
+            left: 0;
+            opacity: 0.9;
+            transform: scale(3);
+            transition: all 0.3s linear 0s;
+        }
+        
+        .our-team:hover .picture::before {
+            height: 100%;
+        }
+        
+        .our-team .picture::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #1369ce;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .our-team .picture img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            transform: scale(1);
+            transition: all 0.9s ease 0s;
+        }
+        
+        .our-team:hover .picture img {
+            box-shadow: 0 0 0 14px #f7f5ec;
+            transform: scale(0.7);
+        }
+        
+        .our-team .title {
+            display: block;
+            font-size: 15px;
+            color: #4e5052;
+            text-transform: capitalize;
+        }
+        
+        .our-team .social {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background-color: #1369ce;
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            transition: all 0.5s ease 0s;
+        }
+        
+        .our-team:hover .social {
+            bottom: 0;
+        }
+        
+        .our-team .social li {
+            display: inline-block;
+        }
+        
+        .our-team .social li a {
+            display: block;
+            padding: 10px;
+            font-size: 17px;
+            color: white;
+            transition: all 0.3s ease 0s;
+            text-decoration: none;
+        }
+        
+        .our-team .social li a:hover {
+            color: #1369ce;
+            background-color: #f7f5ec;
+        }
+        
+        .team-title {
+            color: #4e5052;
+            padding: 10px;
+            margin: 10px auto;
+            background-color: #f7f5ec;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            // sales team
+            var SalesTeamSection = ''
+            var SalesTeam = [{
+                name: 'Mark Zabaneh',
+                title: 'Parts Manager',
+                phone: '905-895-3222',
+                email: 'jscavvuzzo@newmarkethyundai.ca',
+                img: './team/Mark-Zabaneh.png',
+            }, {
+                name: 'James Yang',
+                title: 'Product Advisor',
+                phone: '905-895-3222',
+                email: 'jyang@newmarkethyundai.ca',
+                img: './team/James-Yang.png',
+            }, {
+                name: 'Kyle Schweda',
+                title: 'Product Advisor',
+                phone: '905-895-3222',
+                email: 'kschweda@newmarkethyundai.ca',
+                img: './team/Kyle-Schweda.jpg',
+            }, {
+                name: 'Anthony Papadakis',
+                title: 'Product Advisor',
+                phone: '905-895-3222',
+                email: 'apapadakis@newmarkethyundai.ca',
+                img: './team/Anthony-Papadakis.jpg',
+            }, {
+                name: 'Matthew Sarchuk',
+                title: 'Product Advisor',
+                phone: '905-895-3222',
+                email: 'msarchuk@newmarkethyundai.ca',
+                img: './team/Matthew-Sarchuk.jpg',
+            }, {
+                name: 'Robbie Graham',
+                title: 'Product Advisor',
+                phone: '905-895-3222',
+                email: 'rgraham@newmarkethyundai.ca',
+                img: './team/Robbie-Graham.jpg',
+            }, {
+                name: 'Michael Ilavsky',
+                title: 'Product Advisor',
+                phone: '905-895-3222',
+                email: 'milavsky@newmarkethyundai.ca',
+                img: './team/Michael-Ilavsky.jpg',
+            }, {
+                name: 'Scott Maceachern',
+                title: 'Product Advisor',
+                phone: '905-895-3222',
+                email: 'smaceachern@newmarkethyundai.ca',
+                img: './team/Scott-Maceachern.jpg',
+            }]
+            $.each(SalesTeam, function(index, value) {
+                SalesTeamSection = `${SalesTeamSection}
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="our-team">
+                        <div class="picture">
+                            <img class="img-fluid" src="${value.img}">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="name">${value.name}</h3>
+                            <h4 class="title">${value.title}</h4>
+                            <h4 class="title">${value.phone}</h4>
+                        </div>
+                        <ul class="social">
+                            <li>
+                                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true">ddd</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                `
+            });
+            $('.sales-team-row').html(SalesTeamSection);
+            console.log(SalesTeamSection);
+
+            // Service team
+            var ServiceTeamSection = ''
+            var ServiceTeam = [{
+                name: 'Brennan Anderson',
+                title: 'Service Advisor',
+                phone: '905-895-3222',
+                email: 'banderson@newmarkethyundai.ca',
+                img: './team/Brennan-Anderson.png',
+            }, {
+                name: 'Krissy Brisbois',
+                title: 'Service Advisor',
+                phone: '905-895-3222',
+                email: 'kbrisbois@newmarkethyundai.ca',
+                img: './team/Krissy-Brisbois.jpg',
+            }, {
+                name: 'Chris Mavromatis',
+                title: 'Parts Associate',
+                phone: '905-895-3222',
+                email: 'kschweda@newmarkethyundai.ca',
+                img: './team/Chris-Mavromatis.jpg',
+            }, {
+                name: 'Jack Arundell',
+                title: 'Building Maintenance',
+                phone: '905-895-3222',
+                email: 'apapadakis@newmarkethyundai.ca',
+                img: './team/Jack-Arundell.jpg',
+            }]
+            $.each(ServiceTeam, function(index, value) {
+                ServiceTeamSection = `${ServiceTeamSection}
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="our-team">
+                        <div class="picture">
+                            <img class="img-fluid" src="${value.img}">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="name">${value.name}</h3>
+                            <h4 class="title">${value.title}</h4>
+                            <h4 class="title">${value.phone}</h4>
+                        </div>
+                        <ul class="social">
+                            <li>
+                                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                `
+            });
+            $('.service-team-row').html(ServiceTeamSection);
+            console.log(ServiceTeamSection);
+
+            // Finance team
+            var FinanceTeamSection = ''
+            var FinanceTeam = [{
+                name: 'John Vong',
+                title: 'Business Manager',
+                phone: '905-895-3222',
+                email: 'jvong@newmarkethyundai.ca',
+                img: './team/John-Vong.png',
+            }]
+            $.each(FinanceTeam, function(index, value) {
+                FinanceTeamSection = `${FinanceTeamSection}
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="our-team">
+                        <div class="picture">
+                            <img class="img-fluid" src="${value.img}">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="name">${value.name}</h3>
+                            <h4 class="title">${value.title}</h4>
+                            <h4 class="title">${value.phone}</h4>
+                        </div>
+                        <ul class="social">
+                            <li>
+                                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                `
+            });
+            $('.finance-team-row').html(FinanceTeamSection);
+            console.log(FinanceTeamSection);
+
+            // Finance team
+            var ManagementTeamSection = ''
+            var ManagementTeam = [{
+                name: 'Brayden Micucci',
+                title: 'General Manager',
+                phone: '905-895-3222',
+                email: 'bmicucci@newmarkethyundai.ca',
+                img: './team/John-Vong.png',
+            }, {
+                name: 'Daniel Forte',
+                title: 'Sales Manager',
+                phone: '905-895-3222',
+                email: 'dforte@newmarkethyundai.ca',
+                img: './team/Daniel-Forte.png',
+            }, {
+                name: 'Stefan Rudic',
+                title: 'Sales Manager',
+                phone: '905-895-3222',
+                email: 'srudic@newmarkethyundai.ca',
+                img: './team/Stefan-Rudic.png',
+            }, {
+                name: 'Jonathan Scavuzzo',
+                title: 'Parts Manager',
+                phone: '905-895-3222',
+                email: 'jscavvuzzo@newmarkethyundai.ca',
+                img: './team/Jonathan-Scavuzzo.png',
+            }, {
+                name: 'Daniel Scavuzzo',
+                title: 'Service Manager',
+                phone: '905-895-3222',
+                email: 'dscavuzzo@newmarkethyundai.ca',
+                img: './team/Daniel-Scavuzzo.png',
+            }, {
+                name: 'Jennifer Thatcher',
+                title: 'Controller',
+                phone: '905-895-3222',
+                email: 'jthatcher@newmarkethyundai.ca',
+                img: './team/Jennifer-Thatcher.png',
+            }, {
+                name: 'Megan MacIsaac',
+                title: 'Accounting Clerk',
+                phone: '905-895-3222',
+                email: 'jthatcher@newmarkethyundai.ca',
+                img: './team/Megan-MacIsaac.png',
+            }, {
+                name: 'Kari Anderson',
+                title: 'Reception',
+                phone: '905-895-3222',
+                email: 'jthatcher@newmarkethyundai.ca',
+                img: './team/Kari-Anderson.png',
+            }]
+            $.each(ManagementTeam, function(index, value) {
+                ManagementTeamSection = `${ManagementTeamSection}
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="our-team">
+                        <div class="picture">
+                            <img class="img-fluid" src="${value.img}">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="name">${value.name}</h3>
+                            <h4 class="title">${value.title}</h4>
+                            <h4 class="title">${value.phone}</h4>
+                        </div>
+                        <ul class="social">
+                            <li>
+                                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                `
+            });
+            $('.management-team-row').html(ManagementTeamSection);
+            console.log(ManagementTeamSection);
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Meet Our Team</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="team-title">Sales</h5>
+            </div>
+        </div>
+        <div class="row sales-team-row">
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Michele Miller</h3>
+                        <h4 class="title">Web Developer</h4>
+                    </div>
+                    <ul class="social">
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Patricia Knott</h3>
+                        <h4 class="title">Web Developer</h4>
+                    </div>
+                    <ul class="social">
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Justin Ramos</h3>
+                        <h4 class="title">Web Developer</h4>
+                    </div>
+                    <ul class="social">
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Mary Huntley</h3>
+                        <h4 class="title">Web Developer</h4>
+                    </div>
+                    <ul class="social">
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="team-title">Service</h5>
+            </div>
+        </div>
+        <div class="row service-team-row">
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="team-title">Finance</h5>
+            </div>
+        </div>
+        <div class="row finance-team-row">
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="team-title">Management</h5>
+            </div>
+        </div>
+        <div class="row management-team-row">
+
+        </div>
+    </div>
+</body>
+
+</html>

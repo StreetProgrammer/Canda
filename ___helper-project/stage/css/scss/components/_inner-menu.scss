@@ -1,0 +1,186 @@
+.spo-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 2rem;
+
+    @media #{$tab} {
+        margin: 1rem 0rem;
+    }
+
+    .inner-menu-container {
+        display: flex;
+        flex: 100%;
+
+        @media #{$tab} {
+            flex-direction: column;
+        }
+
+        .inner-menu-pro{
+            max-height: 274px;
+        }
+        .inner-menu{
+            max-height: 312px;
+        }
+
+        .inner-menu, .inner-menu-pro {
+            flex: 24%;
+            background-color: $white;
+            margin: 0rem 1.5rem;
+
+            @media #{$tab} {
+                display: flex;
+                flex-direction: row;
+                margin: 1.5rem 0rem;
+            }
+
+            .menu-header {
+                border-bottom: 1px solid #ccc;
+
+                p:nth-child(1) {
+                    font-weight: bold;
+                }
+
+                p {
+                    color: $priFont;
+                }
+
+                @media #{$tab} {
+                    flex: 24%;
+                    padding: 10px;
+                }
+            }
+
+            .meun-ul {
+                list-style: none;
+
+                li {
+                    padding: 10px;
+                    border-bottom: 1px solid #ccc;
+
+                    @media #{$tab} {
+                        border: 0px;
+                    }
+
+                    a {
+                        display: block;
+                        color: $thiFont;
+                        font-weight: bold;
+
+                        &:hover,
+                        &:focus,
+                        &:visited,
+                        &:active {
+                            color: $secFont;
+                            border: 0;
+                        }
+                    }
+                }
+
+                @media #{$tab} {
+                    display: flex;
+                    flex: 70%;
+                    align-items: center;
+                    justify-content: space-around;
+
+                }
+
+                @media #{$small_mobile} {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .inner-menu-content {
+            flex: 72%;
+
+            .nav-box {
+                padding: 0.5rem;
+                border-radius: 3px;
+                background-color: $white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .icon {
+                    color: $priFont;
+                }
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+
+                    .title {
+                        color: $secFont;
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+
+                    .value {
+                        color: $priFont;
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .new-address-btn {
+                padding: 15px;
+                border: 1.5px solid $secFont;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &:hover {
+                    background-color: $white;
+                }
+
+                .icon {
+                    color: $secFont;
+                }
+
+                .text {
+                    color: $thiFont;
+                }
+            }
+
+            .address-item {
+                background-color: $white;
+                position: relative;
+                padding: 10px;
+
+                p {
+                    color: $thiFont;
+                    margin: 0.5rem;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+
+                p:nth-child(1) {
+                    color: $secFont;
+                }
+
+                .edit,
+                .delete {
+                    position: absolute;
+                    left: 10px;
+                    border: 0px;
+                    background: transparent;
+                    color: $thiFont;
+
+                    &:hover {
+                        color: $secFont;
+                    }
+                }
+
+                .edit {
+                    position: absolute;
+                    top: 15px;
+                }
+
+                .delete {
+                    top: 50px;
+                }
+            }
+        }
+    }
+}

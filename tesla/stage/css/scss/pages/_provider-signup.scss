@@ -1,0 +1,46 @@
+.pro-signup-breif {
+    h2 {
+        color: $secFont;
+        font-weight: bold;
+    }
+
+    h5 {
+        color: $priFont;
+        font-weight: bold;
+    }
+}
+
+.store-image {
+    max-width: 100%;
+
+    img {
+        width: 50%;
+    }
+
+}
+
+.pro-signup-form-content {
+    margin: auto 8rem;
+
+    @media #{$tab} {
+        margin: auto 1rem;
+    }
+
+    @media #{$small_mobile} {
+        margin: auto 0rem;
+    }
+
+    h2 {
+        color: $secFont;
+        font-weight: bold;
+    }
+
+    h3 {
+        color: $thiFont;
+        font-weight: bold;
+    }
+
+    .form {
+        padding: 2rem;
+    }
+}

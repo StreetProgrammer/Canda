@@ -1,0 +1,49 @@
+- var pageTitle = 'Account - Order Tracking'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body 
+        .page-wrapper.404-page
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    .row
+                        .col-md-12
+                            .spo-container.rtl
+                                h4.sec-font.my-3 حسابي
+                                .inner-menu-container
+                                    include pug/components/user-inner-menu
+                                    .inner-menu-content
+                                        include pug/components/user-top-tabs
+                                        .back-to
+                                            a(href="")
+                                                span.arrow <i class="fas fa-long-arrow-alt-right"></i>
+                                                | الرجوع إلى طلباتي
+                                        .box-shadow.mb-3.white-bg
+                                            .order-tracking-container.row
+                                                .col-sm-12.col-md-3.my-4.track-title 
+                                                    p.breif مسار الطلب
+                                                    h1 #523
+                                                .col-sm-12.col-md-6.my-4.text-center.more-detals
+                                                    p طباعة 100 ورقة ديجيتال
+                                                    p 2020/04/20 
+                                                    p جاهز للشحن
+                                                .col-md-12.mb-3.pb-3
+                                                    .order-progress-container
+                                                        ul.order-progress
+                                                            li.active قيد التنفيذ
+                                                                
+                                                            li في طريقه إليك
+                                                                
+                                                            li تم التسليم
+
+                                                
+                                                    
+            include pug/layout/footer           
+        include pug/layout/js

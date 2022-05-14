@@ -1,0 +1,1104 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="description"
+        content="Mountain Mitsubishi is your official Mitsubishi dealer in Mountain, Ontario. We provide the best offers on new Mitsubishi vehicles and used vehicles.">
+    <meta name="keywords"
+        content="Mitsubishi, Mountain, vehicles, Mirage, RVR, Outlander, Outlander PHEV, Eclipse CROSS, Mountain Mitsubishi, New Cars, Used Cars, Accessories">
+    <title>S-AWC: Super All Wheel Control - Mountain Mitsubishi | Your New and Used Mitsubishi Source in Ontario</title>
+    <script type="text/javascript" async=""
+        src="https://www.gstatic.com/recaptcha/releases/oqtdXEs9TE9ZUAIhXNz5JBt_/recaptcha__en.js"></script>
+    <script
+        src="/minify/?f=/js/jquery/jquery.js,/js/jquery/jquery-ui.js,/js/fancybox/jquery.fancybox.js,/js/jquery/jquery.matchHeight.js,/js/lightslider/dist/js/lightslider.min.js,/js/jquery/jqvalidate/jquery.validate.min.js,/js/jquery/jqvalidate/jquery.metadata.js,/js/sweetalert2/dist/sweetalert2.min.js,/js/jquery/jquery.form.js,/js/jquery/jquery.wslide.js,/js/jquery/jquery.thumbhover.js,/js/jquery/readmore.js,/js/bootboxjs/bootbox.js&amp;1577056146"
+        type="text/javascript"></script>
+    <link
+        href="/minify/?f=/css/jquery/smoothness/jquery-ui.css,/js/fancybox/jquery.fancybox.css,/js/lightslider/dist/css/lightslider.min.css,/css/front_style.css,/js/sweetalert2/dist/sweetalert2.min.css,/site-uploads/1001218/includes/bootstrap-bobmark.min.css,/site-uploads/1001218/includes/cambridge-css.css,/site-uploads/1001218/includes/font-awesome.min.css&amp;1591978001"
+        rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="/css/960.php?sid=1001218" rel="stylesheet" type="text/css">
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyAoH-TLb_oG_lcxiLkoG6We1FrbxAhpbwU"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        window.website_settings = { "website_name": "Mountain Mitsubishi" };
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&amp;render=explicit"
+        type="text/javascript" async="" defer=""></script>
+    <style>
+        #LeftDiv,
+        #RightDiv,
+        #CenterDiv,
+        #HeaderDiv,
+        #FooterDiv {
+            min-height: 15vh;
+        }
+
+        .collapse {
+            display: block !important;
+            visibility: visible !important;
+            height: auto !important;
+        }
+
+        .movableComp {
+            position: relative;
+        }
+
+        .centeredOverlay {
+            position: absolute;
+            /*background-color: rgba(255, 0, 0, 0.3);
+					dim the background*/
+            display: block !important;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: black;
+            text-align: center;
+            z-index: 999;
+        }
+    </style>
+    <script src="//cdn.ckeditor.com/4.11.1/full/ckeditor.js"></script>
+    <style>
+        .cke {
+            visibility: hidden;
+        }
+    </style>
+    <script type="text/javascript">
+        CKEDITOR.on('instanceCreated', function (event) {
+            var editor = event.editor,
+                element = editor.element;
+
+
+            editor.on('configLoaded', function () {
+                editor.config.allowedContent = true;
+                editor.config.enterMode = CKEDITOR.ENTER_SPAN;
+                editor.config.filebrowserBrowseUrl = '/fmanager/index/hideDes/true/sid/1001218';
+                editor.config.filebrowserUploadUrl = '/helper/ck-uploader/type/image/sid/1001218/';
+                editor.config.filebrowserFlashUploadUrl = '/helper/ck-uploader/type/media/sid/1001218/';
+                editor.config.filebrowserImageUploadUrl = '/helper/ck-uploader/type/image/sid/1001218/';
+                editor.config.filebrowserUploadMethod = 'form';
+                //editor.config.extraPlugins='mysave,mailform,cancel';
+                //editor.config.extraPlugins = 'sourcedialog';
+                //editor.config.extraPlugins = 'iframedialog';
+                editor.config.toolbar = [
+
+                    ['Source', '-', 'mysave', 'cancel', 'NewPage', 'Preview', '-', 'Templates', 'mailform'],
+                    ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Print', 'SpellChecker', 'Scayt'],
+                    ['Undo', 'Redo', '-', 'Find', 'Replace', '-', 'SelectAll', 'RemoveFormat'],
+                    ['Bold', 'Italic', 'Underline', 'Strike', '-', 'Subscript', 'Superscript'],
+                    '/',
+                    ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', 'Blockquote', 'CreateDiv'],
+                    ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+                    ['BidiLtr', 'BidiRtl'],
+                    ['Link', 'Unlink', 'Anchor'],
+                    ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak'],
+                    '/',
+                    ['Styles', 'Format', 'Font', 'FontSize'],
+                    ['TextColor', 'BGColor'],
+                    ['Maximize', 'ShowBlocks', '-', 'About']
+                ];
+
+
+            });
+
+            editor.on('blur', function () {
+                $('.droppableComp ,.droppableHtml').sortable('enable');
+                parent.makeItDirty();
+            });
+            editor.on('focus', function () {
+                $('.droppableComp ,.droppableHtml').sortable('disable');
+            });
+
+        });
+        window.refreshSortable = function (e) {
+
+            var elem = $('div.droppableHtml:data(sortable)');
+            if (elem.length) {
+                $('.droppableComp ,.droppableHtml').sortable('destroy');
+            }
+
+            $('.droppableComp ,.droppableHtml').unbind();
+
+            $('.droppableComp ,.droppableHtml').sortable({
+                connectWith: '.droppableComp ,.droppableHtml',
+                cursor: 'move',
+                revert: true,
+                scroll: true,
+                forcePlaceholderSize: true,
+                placeholder: 'ui-state-highlight',
+                start: function (event, ui) {
+                    destroyEditorInstances();
+                },
+                stop: function (event, ui) {
+                    CKEDITOR.inlineAll();
+                    parent.makeItDirty();
+                },
+            });
+
+        }
+
+        $(function () {
+            //$('.droppableComp ,.droppableHtml').bind('DOMSubtreeModified', refreshSortable);   
+            $('.droppableComp ,.droppableHtml').sortable({
+                connectWith: '.droppableComp ,.droppableHtml',
+                cursor: 'move',
+                revert: true,
+                scroll: true,
+                forcePlaceholderSize: true,
+                placeholder: 'ui-state-highlight',
+                start: function (event, ui) {
+                    destroyEditorInstances();
+                },
+                stop: function (event, ui) {
+                    CKEDITOR.inlineAll();
+                    parent.makeItDirty();
+                },
+            });
+        })
+
+
+        function destroyEditorInstances() {
+            for (var instance in CKEDITOR.instances) {
+                CKEDITOR.instances[instance].destroy();
+
+            }
+        }
+
+        window.refreshEditors = function () {
+
+            destroyEditorInstances();
+            CKEDITOR.inlineAll();
+            return true;
+        }
+        window.getHtml = function () {
+
+            destroyEditorInstances();
+
+            htmlString = $('head')[0].outerHTML + ($('body').html($('#parent')[0].outerHTML)[0].outerHTML);
+            CKEDITOR.inlineAll();
+            return htmlString;
+        }
+        window.setIncludes = function (includes) {
+            if ($.trim(includes)) {
+                $('head .include').remove();
+                $('head').prepend(includes);
+            }
+        }
+
+
+    </script>
+
+    <script src="/js/custom/front_end.js.php?sid=1001218&amp;pid=42141&amp;time=1592599194"
+        type="text/javascript"></script>
+    <link rel="canonical" href="http://simplywebeditor.com/S-AWC:-Super-All-Wheel-Control/">
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "S-AWC: Super All Wheel Control",
+            "item": "http://simplywebeditor.com/S-AWC:-Super-All-Wheel-Control/"
+        }
+    ]
+}
+</script>
+    <script src="/site-uploads/1001218/includes/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/site-uploads/1001218/includes/cambridge-placeholder.js" type="text/javascript"></script>
+    <style>
+
+    </style>
+    <meta name="generator" content="Created by :Simply Web Editor , simplywebeditor.com">
+    <script type="text/javascript" src="http://cdn.ckeditor.com/4.11.1/full/config.js?t=IA8F"></script>
+    <link rel="stylesheet" type="text/css"
+        href="http://cdn.ckeditor.com/4.11.1/full/skins/moono-lisa/editor.css?t=IA8F">
+    <script type="text/javascript" src="http://cdn.ckeditor.com/4.11.1/full/lang/en.js?t=IA8F"></script>
+    <script type="text/javascript" src="http://cdn.ckeditor.com/4.11.1/full/styles.js?t=IA8F"></script>
+    <link rel="stylesheet" type="text/css"
+        href="http://cdn.ckeditor.com/4.11.1/full/plugins/scayt/skins/moono-lisa/scayt.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.ckeditor.com/4.11.1/full/plugins/scayt/dialogs/dialog.css">
+    <link rel="stylesheet" type="text/css"
+        href="http://cdn.ckeditor.com/4.11.1/full/plugins/tableselection/styles/tableselection.css">
+    <link rel="stylesheet" type="text/css"
+        href="http://cdn.ckeditor.com/4.11.1/full/plugins/wsc/skins/moono-lisa/wsc.css">
+    <link rel="stylesheet" type="text/css"
+        href="http://cdn.ckeditor.com/4.11.1/full/plugins/copyformatting/styles/copyformatting.css">
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.google.com/maps-api-v3/api/js/41/3a/common.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.google.com/maps-api-v3/api/js/41/3a/util.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttp%3A%2F%2Fsimplywebeditor.com%2Fpage%2Fdisplay%2F%3FsiteId%3D1001218%26pageId%3D42141%26dboard%3Dtrue%3F0%2F&amp;4sAIzaSyAoH-TLb_oG_lcxiLkoG6We1FrbxAhpbwU&amp;callback=_xdc_._ojwabb&amp;key=AIzaSyAoH-TLb_oG_lcxiLkoG6We1FrbxAhpbwU&amp;token=9432"></script>
+</head>
+
+<body id="page_42141">
+    <div id="parent" class="editable-container container-fluid">
+        <div class="row">
+            <div id="HeaderDiv" class="droppableHtml droppableComp col-md-12 ui-sortable ui-sortable-disabled">
+                <div ppanel="htmlContainer" class="movableHtml common_element" data-component-htmlcontainer=""
+                    data-com-id="htmlContainer" id="html_1588990520539">
+                    <div contenteditable="true" class="contentHtml" style="position: relative;">
+                        <script type="text/javascript"
+                            front-src="https://sdk.autoverify.com/1a778164-0e15-44cf-b610-7e5886cdcfed/sdk.min.js"></script>
+                        <script front-src="/site-uploads/1001218/frontjs/jquery.scrollify.js"
+                            type="text/javascript"></script>
+                        <script front-src="/site-uploads/1001218/frontjs/main.js" type="text/javascript"></script>
+                        <script type="text/javascript"
+                            front-src="https://sdk.autoverify.com/65564499-045c-4e90-8d30-a181f6c8dad4/sdk.min.js"></script>
+                        <script front-src="https://kit.fontawesome.com/7b566b3ac0.js" crossorigin="anonymous"></script>
+                        <!-- start sidebar -->
+                        <nav class="sidebar-wrapper" id="sidebar">
+                            <div class="sidebar-content">
+                                <div class="sidebar-brand">
+                                    <div id="close-sidebar"><svg aria-hidden="true"
+                                            class="svg-inline--fa fa-times fa-w-11" data-fa-i2svg="" data-icon="times"
+                                            data-prefix="fas" focusable="false" role="img" viewBox="0 0 352 512"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                                                fill="currentColor"></path>
+                                        </svg><!-- <i class="fas fa-times">&nbsp;</i> -->
+                                    </div>
+                                </div>
+                                <style type="text/css">
+                                    /* strat section 3 */
+                                    #section03 .content {
+                                        position: absolute;
+                                        left: 50%;
+                                        top: 50%;
+                                        transform: translate(-50%, -50%);
+                                        z-index: 888;
+                                        min-width: 75%;
+                                    }
+
+                                    #section03 .content .main-link {
+                                        display: flex;
+                                        flex-direction: column;
+                                        text-decoration: none;
+                                        position: relative;
+                                    }
+
+                                    #section03 .content .main-link span {
+                                        min-height: 20px;
+                                        position: absolute;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                        left: 0px;
+                                        right: 0px;
+                                        text-align: center;
+                                        bottom: 0;
+                                        background-color: #fff;
+                                        color: #333;
+                                        font-size: 18px;
+                                        font-weight: bold;
+                                        padding: 15px;
+                                        transition: all ease-in-out 300ms;
+                                    }
+
+                                    #section03 .content .main-link:hover span {
+                                        font-size: 22px;
+                                        min-height: 100px;
+                                        opacity: 0.8;
+                                    }
+                                </style>
+                                <div class="sidebar-menu">
+                                    <ul>
+                                        <li><a class="item"
+                                                href="/page/display/?siteId=1001218&amp;pageId=42108"><span>Home</span></a>
+                                        </li>
+                                        <li><a class="item"
+                                                href="/page/display/?siteId=1001218&amp;pageId=42124"><span>In
+                                                    Stock</span></a></li>
+                                        <li><a class="item"
+                                                href="/page/display/?siteId=1001218&amp;pageId=42125"><span>Used
+                                                    Inventory</span></a></li>
+                                        <li class="sidebar-dropdown"><a class="item" href="#"><span>New
+                                                    Vehicles</span></a>
+                                            <div class="sidebar-submenu">
+                                                <ul>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42137">Showroom
+                                                        </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42138">Warranty
+                                                        </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42139">Built
+                                                            Better Backed Better </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42140">Rebates
+                                                        </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42141">S-AWC:
+                                                            Super All Wheel Control </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42142">Can I
+                                                            Get Financing </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42143">Value
+                                                            Your Trade </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <!-- <li class="sidebar-dropdown"><a class="item" href="#"><span>Inventory</span></a> <div class="sidebar-submenu"> <ul> <li><a href="/page/display/?siteId=1001200&pageId=40733">CPO Program Details </a></li> <li><a href="/page/display/?siteId=1001200&pageId=40729">New Inventory </a></li> <li><a href="/page/display/?siteId=1001200&pageId=40730">Used / CPO Inventory </a></li> <li><a href="/page/display/?siteId=1001200&pageId=40731">Certified Pre-Owned Inventory </a></li> </ul> </div> </li> -->
+                                        <li class="sidebar-dropdown"><a class="item" href="#"><span>Parts</span></a>
+                                            <div class="sidebar-submenu">
+                                                <ul>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42118">Shop
+                                                            Accessories</a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42151">Contact
+                                                            Parts</a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42150">Accessory
+                                                            Warranty</a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42148">About
+                                                            Parts</a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42149">Meet
+                                                            our Parts Staff</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="sidebar-dropdown"><a class="item" href="#"><span>Service</span></a>
+                                            <div class="sidebar-submenu">
+                                                <ul>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42152">About
+                                                            Service </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42153">Meet
+                                                            Our Service Staff </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42154">Schedule
+                                                            Service Appointment </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42155">Mountain
+                                                            Mitsubishi Vehicle Spa </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42156">Roadside
+                                                            Assistance </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42157">Service
+                                                            Reviews </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42158">Contact
+                                                            Service </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42159">Mitsubishi
+                                                            Ownership Experience </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="sidebar-dropdown"><a class="item" href="#"><span>Get
+                                                    Pre-Approved</span></a>
+                                            <div class="sidebar-submenu">
+                                                <ul>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42160">Credit
+                                                            Application </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="sidebar-dropdown"><a class="item" href="#"><span>Specials</span></a>
+                                            <div class="sidebar-submenu">
+                                                <ul>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42161">Monthly-Offers
+                                                        </a></li>
+                                                    <!-- <li><a href="/page/display/?siteId=1001218&pageId=40796">New Vehicle Specials </a></li> -->
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42119">Used
+                                                            Vehicle Specials </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42164">Parts
+                                                            Service Specials </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42165">Mitsubishi
+                                                            VIP Program </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42222">Lease
+                                                            Rates</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="sidebar-dropdown"><a class="item" href="#"><span>About Us</span></a>
+                                            <div class="sidebar-submenu">
+                                                <ul>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42131">Who We
+                                                            Are </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42132">Map
+                                                            Directions </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42133">Customer
+                                                            Reviews </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42134">Our
+                                                            Staff </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42135">Contact
+                                                            Sales </a></li>
+                                                    <li><a href="/page/display/?siteId=1001218&amp;pageId=42136">Hours
+                                                            of Operation </a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dealer-info">
+                                    <div>
+                                        <p class="text-center"><img alt="Logo"
+                                                src="/site-uploads/1001218/Images/transparent-logo.png" srcset=""></p>
+
+                                        <h3>Mountain Mitsubishi</h3>
+
+                                        <p class="address"><svg aria-hidden="true"
+                                                class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-2x" data-fa-i2svg=""
+                                                data-icon="map-marker-alt" data-prefix="fas" focusable="false"
+                                                role="img" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                            <!-- <i aria-hidden="true" class="fas fa-2x fa-map-marker-alt">&nbsp;</i> -->2211
+                                            Eagle St N, Mountain, ON</p>
+
+                                        <p class="ph"><svg aria-hidden="true"
+                                                class="svg-inline--fa fa-phone-alt fa-w-16 fa-2x" data-fa-i2svg=""
+                                                data-icon="phone-alt" data-prefix="fas" focusable="false" role="img"
+                                                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                            <!-- <i aria-hidden="true" class="fas fa-2x fa-phone-alt">&nbsp;</i> -->+1
+                                            905-526-4899</p>
+                                    </div>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed/v1/place?q=Mountain+Mitsubishi&amp;key=AIzaSyD09zQ9PNDNNy9TadMuzRV_UsPUoWKntt8"></iframe>
+                                </div>
+                                <!-- sidebar-menu-->
+                            </div>
+                            <!-- sidebar-content-->
+
+                            <div class="sidebar-footer"><a href="https://www.facebook.com/mitsubishiMountain/"
+                                    target="_blank"><svg aria-hidden="true"
+                                        class="svg-inline--fa fa-facebook fa-w-16 fa-2x" data-fa-i2svg=""
+                                        data-icon="facebook" data-prefix="fab" focusable="false" role="img"
+                                        viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                                            fill="currentColor"></path>
+                                    </svg><!-- <i aria-hidden="true" class="fab fa-2x fa-facebook">&nbsp;</i> --> </a>
+                                <a href="https://twitter.com/MitsubishiCamON" target="_blank"> <svg aria-hidden="true"
+                                        class="svg-inline--fa fa-twitter fa-w-16 fa-2x" data-fa-i2svg=""
+                                        data-icon="twitter" data-prefix="fab" focusable="false" role="img"
+                                        viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                            fill="currentColor"></path>
+                                    </svg><!-- <i aria-hidden="true" class="fab fa-2x fa-twitter">&nbsp;</i> --> </a> <a
+                                    href="https://www.instagram.com/mitsubishican/?hl=en" target="_blank"> <svg
+                                        aria-hidden="true" class="svg-inline--fa fa-instagram fa-w-14 fa-2x"
+                                        data-fa-i2svg="" data-icon="instagram" data-prefix="fab" focusable="false"
+                                        role="img" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                                            fill="currentColor"></path>
+                                    </svg><!-- <i aria-hidden="true" class="fab fa-2x fa-instagram">&nbsp;</i> --> </a>
+                                <a href="https://www.youtube.com/user/mitsubishicanada" target="_blank"> <svg
+                                        aria-hidden="true" class="svg-inline--fa fa-youtube fa-w-18 fa-2x"
+                                        data-fa-i2svg="" data-icon="youtube" data-prefix="fab" focusable="false"
+                                        role="img" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                                            fill="currentColor"></path>
+                                    </svg><!-- <i aria-hidden="true" class="fab fa-2x fa-youtube">&nbsp;</i> --> </a>
+                            </div>
+                        </nav>
+                        <!-- end sidebar -->
+
+                        <nav class="nav-container">
+                            <div class="brand"><a href="/"><img alt="Logo"
+                                        src="/site-uploads/1001218/Images/mitsubishi-logo-stacked-en.44443a48a41b.png"
+                                        srcset=""></a>
+
+                                <h2>Mountain Mitsubishi</h2>
+                            </div>
+
+                            <div class="models">
+                                <ul class="model-navv">
+                                    <li maodel-name="MIRAGE"><a href="/In-Stock/search/mirage/">MIRAGE</a></li>
+                                    <li maodel-name="RVR"><a href="/In-Stock/search/rvr">RVR</a></li>
+                                    <li class="active" maodel-name="OUTLANDER"><a
+                                            href="/In-Stock/search/outlander">OUTLANDER</a></li>
+                                    <li maodel-name="OUTLANDER PHEV"><a
+                                            href="/In-Stock/search/outlander%2520phev/">OUTLANDER PHEV</a></li>
+                                    <li maodel-name="ECLIPSE CROSS"><a href="/In-Stock/search/eclipse%20cross">ECLIPSE
+                                            CROSS</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav-location-phone">
+                                <ul>
+                                    <li><a id="show-sidebar"><svg aria-hidden="true"
+                                                class="svg-inline--fa fa-bars fa-w-14 fa-2x" data-fa-i2svg=""
+                                                data-icon="bars" data-prefix="fas" focusable="false" role="img"
+                                                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                                                    fill="currentColor"></path>
+                                            </svg><!-- <i class="fas fa-2x fa-bars">&nbsp;</i> --> </a></li>
+                                    <li><a href="tel:+15196500609"><svg aria-hidden="true"
+                                                class="svg-inline--fa fa-phone-alt fa-w-16 fa-2x" data-fa-i2svg=""
+                                                data-icon="phone-alt" data-prefix="fas" focusable="false" role="img"
+                                                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
+                                                    fill="currentColor"></path>
+                                            </svg><!-- <i class="fas fa-2x fa-phone-alt">&nbsp;</i> --> </a></li>
+                                    <li><a href="https://www.google.com/maps?saddr=My+Location&amp;daddr=Mountain+Mitsubishi+2211+Eagle+St+N,+Mountain,+ON"
+                                            target="_blank"><svg aria-hidden="true"
+                                                class="svg-inline--fa fa-map-marker-alt fa-w-12 fa-2x" data-fa-i2svg=""
+                                                data-icon="map-marker-alt" data-prefix="fas" focusable="false"
+                                                role="img" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                                                    fill="currentColor"></path>
+                                            </svg><!-- <i class="fas fa-2x fa-map-marker-alt">&nbsp;</i> --> </a></li>
+                                    <li><button class="shopping-cart" type="button"><span
+                                                class="glyphicon glyphicon-shopping-cart">&nbsp;</span></button></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="LeftDiv" class="droppableComp droppableHtml col-md-2 ui-sortable hidden ui-sortable-disabled"
+                style=""></div>
+            <div id="CenterDiv" class="droppableComp droppableHtml col-md-12 ui-sortable ui-sortable-disabled" style="">
+                <div ppanel="Breadcrumbs" class="movableComp contentComp" data-pagecompid="45431"
+                    data-component-breadcrumbs="" data-com-id="Breadcrumbs" id="comp_1590548696910">
+                    <nav aria-label="breadcrumb" class="breadcrumbParent">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"
+                                data-url="/S-AWC:-Super-All-Wheel-Control">S-AWC: Super All Wheel Control</li>
+                        </ol>
+                    </nav>
+                </div> <!-- start s-awc content-->
+                <!-- start first section -->
+                <div ppanel="htmlContainer" class="movableHtml" data-component-htmlcontainer=""
+                    data-com-id="htmlContainer" id="html_1585897451467">
+                    <div contenteditable="true" class="contentHtml" style="position: relative;">
+                        <div class="container">
+                            <h3 style="text-align: center;display: none;">s-awc-page</h3>
+
+                            <div id="s-awc-page">
+                                <div class="col-md-12 no-pading">
+                                    <div class="video">
+                                        <video autoplay="" loop="" muted=""
+                                            src="/site-uploads/1001218/videos/mitsu-s-awc-clip_v2.mp4">&nbsp;</video>
+
+                                        <div class="video-text">
+                                            <h1 class="bold">THE WORLD'S MOST ADVANCED FOUR-WHEEL DRIVE SYSTEM</h1>
+
+                                            <div class="video-images"><img
+                                                    src="/site-uploads/1001218/Images/AWC-Logo-300x110.png"> <img
+                                                    src="/site-uploads/1001218/Images/S-AWC-Logo-50H.png"></div>
+
+                                            <p>International model shown.<br>
+                                                Professional driver on a closed course. Do not attempt.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="descriptions">
+                                        <div class="col-md-6">
+                                            <div class="desc-item">
+                                                <h4><strong>MITSUBISHI MOTORS IS A RECOGNIZED LEADER IN 4-WHEEL DRIVE
+                                                        ENGINEERING, AND HAS BEEN EVER SINCE WE FIRST INTRODUCED THE
+                                                        MITSUBISHI PX33 IN 1936.</strong></h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="desc-item">
+                                                <p>Since then, we’ve refined and perfected our All-Wheel Control system,
+                                                    building vehicles that have conquered the rigors of off-road rally
+                                                    and endurance racing. These advanced technologies have been
+                                                    transitioned into every All-Wheel Control-equipped Mitsubishi Motors
+                                                    vehicle, providing you with the stability and traction you need to
+                                                    tackle any driving scenario, including our slippery Canadian winter
+                                                    roads.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end first section -->
+                <!-- start AWC -->
+                <div ppanel="htmlContainer" class="movableHtml" data-component-htmlcontainer=""
+                    data-com-id="htmlContainer" id="html_1585956561813">
+                    <div contenteditable="true" class="contentHtml" style="position: relative;">
+                        <div class="container">
+                            <h3 style="text-align: center;display: none;">AWC</h3>
+
+                            <div id="awc">
+                                <div class="col-md-12 no-pading text-center"><img alt="mitsubishi"
+                                        src="/site-uploads/1001218/Images/S-AWC_Header_Outlander-PHEV_2020-1.jpg"></div>
+
+                                <div class="col-md-12 no-pading text-center"><img
+                                        src="/site-uploads/1001218/Images/AWC-Logo-300x110.png">
+                                    <h1 class="bold">THE CONTROL YOU NEED</h1>
+
+                                    <p class="bold">Mitsubishi Motors’ patented All-Wheel Control system leverages a
+                                        suite of innovative technologies that delivers confidence and a superior driving
+                                        experience by improving handling, safety and performance across a variety of
+                                        driving and road conditions – wet, slick or dry.</p>
+                                </div>
+
+                                <div class="col-md-12 no-pading">
+                                    <div class="carousel slide" data-interval="false" data-pause="hover"
+                                        data-ride="carousel" id="AWC">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li class="active" data-slide-to="0" data-target="#AWC">&nbsp;</li>
+                                            <li data-slide-to="1" data-target="#AWC">&nbsp;</li>
+                                        </ol>
+                                        <a class="left-a" data-slide="prev" href="#AWC">- </a> <a class="right-a"
+                                            data-slide="next" href="#AWC">+ </a> <!-- Wrapper for slides -->
+
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <div class="flex-slider-item">
+                                                    <div class="img-div"><img alt="Los Angeles" class="hidden-sm"
+                                                            src="/site-uploads/1001218/Images/_slider-RVR-Angled-Image.png">
+                                                        <img alt="Los Angeles" class="hidden-lg"
+                                                            src="/site-uploads/1001218/Images/_slider-RVR-AWC-mobile.jpg">
+                                                    </div>
+
+                                                    <div class="desc-div">
+                                                        <h1>Driver Selectable Modes</h1>
+
+                                                        <p>Mitsubishi Motors’ All-Wheel Control system puts YOU in
+                                                            control, with the ability to choose how engaged the system
+                                                            is. There are three settings available at the touch of a
+                                                            button, optimizing your preference between fuel economy and
+                                                            4-Wheel Drive capability without compromising safety.</p>
+
+                                                        <h1>RVR</h1>
+
+                                                        <p>2-Wheel Drive: keeps the vehicle in Front-Wheel Drive
+                                                            regardless of driving conditions, for economical driving on
+                                                            normal dry roads and freeways.<br>
+                                                            4-Wheel Drive Auto: offers a well-balanced 4-Wheel Drive
+                                                            performance, resulting in enhanced fuel efficiency,
+                                                            traction, high-speed stability and predictable handling
+                                                            based on road and driving conditions.<br>
+                                                            4-Wheel Drive Lock: increased torque is applied to the rear
+                                                            wheels, helping the vehicle enhance performance on slippery
+                                                            surfaces, such as on snow-covered roads or sand.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="item active">
+                                                    <div class="flex-slider-item">
+                                                        <div class="desc-div">
+                                                            <h1>Driver Selectable Modes</h1>
+
+                                                            <p>Mitsubishi Motors’ All-Wheel Control system puts YOU in
+                                                                control, with the ability to choose how engaged the
+                                                                system is. There are three settings available at the
+                                                                touch of a button, optimizing your preference between
+                                                                fuel economy and 4-Wheel Drive capability without
+                                                                compromising safety.</p>
+
+                                                            <h1>RVR</h1>
+
+                                                            <p>2-Wheel Drive: keeps the vehicle in Front-Wheel Drive
+                                                                regardless of driving conditions, for economical driving
+                                                                on normal dry roads and freeways.<br>
+                                                                4-Wheel Drive Auto: offers a well-balanced 4-Wheel Drive
+                                                                performance, resulting in enhanced fuel efficiency,
+                                                                traction, high-speed stability and predictable handling
+                                                                based on road and driving conditions.<br>
+                                                                4-Wheel Drive Lock: increased torque is applied to the
+                                                                rear wheels, helping the vehicle enhance performance on
+                                                                slippery surfaces, such as on snow-covered roads or
+                                                                sand.</p>
+                                                        </div>
+
+                                                        <div class="img-div"><img alt="Los Angeles" class="hidden-sm"
+                                                                src="/site-uploads/1001218/Images/_slider-Outlander-Angled-Image.png">
+                                                            <img alt="Los Angeles" class="hidden-lg"
+                                                                src="/site-uploads/1001218/Images/_slider-Outlander-AWC-mobile.jpg">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="descriptions">
+                                        <div class="col-md-4">
+                                            <div class="desc-item">
+                                                <h3 class="bold">ELECTRONICALLY CONTROLLED COUPLING</h3>
+
+                                                <p>When wheel slippage is detected, the system directs torque between
+                                                    the front and rear axles as required, to enhance overall traction on
+                                                    slick surfaces. This is especially useful when accelerating from a
+                                                    stop on slippery surfaces, or climbing a hill covered in ice or
+                                                    snow.</p>
+                                                <a class="btn btn-primary btn-block"
+                                                    href="/page/display/?siteId=1001200&amp;pageId=40727">Trade
+                                                    Appraisal</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="desc-item">
+                                                <h3 class="bold">ACTIVE STABILITY CONTROL</h3>
+
+                                                <p>When the system detects a difference between the intended and actual
+                                                    direction of the vehicle, it automatically reduces engine power and
+                                                    applies brakes independently on the wheels with less traction. This
+                                                    reduces the chance of understeer or oversteer in tough cornering
+                                                    situations, enhancing safety and helping your vehicle stay on its
+                                                    path.</p>
+                                                <a class="btn btn-primary btn-block" href="/book-a-test-drive">Book a
+                                                    Test
+                                                    Drive</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="desc-item">
+                                                <h3 class="bold">ANTI-LOCK BRAKES</h3>
+
+                                                <p>Combined with Electronic Brakeforce Distribution, the system prevents
+                                                    the wheels from locking up under heavy braking, or while braking on
+                                                    slippery road surfaces. This allows the wheels to continue turning
+                                                    while stopping in an emergency, keeping you in control at all times.
+                                                </p>
+                                                <a class="btn btn-primary btn-block" href="">Brochure</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end AWC -->
+                <!-- start S-AWC -->
+                <div ppanel="htmlContainer" class="movableHtml" data-component-htmlcontainer=""
+                    data-com-id="htmlContainer" id="html_1585995492634">
+                    <div contenteditable="true" class="contentHtml" style="position: relative;">
+                        <div class="container">
+                            <h3 style="text-align: center;display: none;">S-AWC</h3>
+
+                            <div id="s-awc">
+                                <div class="col-md-12 no-pading text-center"><img
+                                        src="/site-uploads/1001218/Images/s-awc_illustration-banner-image.png"></div>
+
+                                <div class="col-md-12 no-pading text-center"><img
+                                        src="/site-uploads/1001218/Images/S-AWC-Logo-50H.png">
+                                    <h1 class="bold">WITH THIS MUCH CONTROL, WE CALL IT SUPER</h1>
+
+                                    <p class="bold">Mitsubishi Motors’ Super All-Wheel Control incorporates additional
+                                        torque vectoring technologies to provide more predictive handling by managing
+                                        the left-to-right driving and braking forces at an advanced level, for drivers
+                                        who desire more control, capability and confidence – wherever and whenever they
+                                        need it.</p>
+                                </div>
+
+                                <div class="col-md-12 no-pading text-center">
+                                    <div class="carousel slide" data-interval="false" data-pause="hover"
+                                        data-ride="carousel" id="S-AWC">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li class="active" data-slide-to="0" data-target="#S-AWC">&nbsp;</li>
+                                            <li data-slide-to="1" data-target="#S-AWC">&nbsp;</li>
+                                        </ol>
+                                        <a class="left-a" data-slide="prev" href="#S-AWC">- </a> <a class="right-a"
+                                            data-slide="next" href="#S-AWC">+ </a> <!-- Wrapper for slides -->
+
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="item active">
+                                                <div class="flex-slider-item">
+                                                    <div class="desc-div">
+                                                        <h1>Driver Selectable Modes</h1>
+
+                                                        <p>Super All-Wheel Control also features driver selectable modes
+                                                            at the touch of a button, to optimize capability depending
+                                                            on the driving situation.</p>
+
+                                                        <h1>ECLIPSE CROSS</h1>
+
+                                                        <p><b>AUTO:</b> offers a well-balanced 4-Wheel Drive
+                                                            performance, resulting in enhanced fuel efficiency,
+                                                            traction, high-speed stability and predictable handling
+                                                            based on road and driving conditions.<br>
+                                                            <b>SNOW:</b> provides improved traction and stability
+                                                            specifically for snow-covered or slippery roads.<br>
+                                                            <b>GRAVEL:</b> provides maximum traction on coarser roads or
+                                                            whenever you might find yourself stuck in a rough patch of
+                                                            off-road terrain.</p>
+                                                    </div>
+
+                                                    <div class="img-div"><img alt="Los Angeles" class="hidden-sm"
+                                                            src="/site-uploads/1001218/Images/_slider-Eclipse-Cross-S-AWC.png">
+                                                        <img alt="Los Angeles" class="hidden-lg"
+                                                            src="/site-uploads/1001218/Images/_slider-Eclipse-Cross-S-AWC-mobile-750w.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="flex-slider-item">
+                                                    <div class="desc-div">
+                                                        <h1>Driver Selectable Modes</h1>
+
+                                                        <p>Super All-Wheel Control also features driver selectable modes
+                                                            at the touch of a button, to optimize capability depending
+                                                            on the driving situation.</p>
+
+                                                        <h1>OUTLANDER GT S-AWC</h1>
+
+                                                        <p>4-Wheel Drive ECO: the system automatically transfers torque
+                                                            to the rear wheels when loss of traction is detected, to
+                                                            enhance stability beyond the typical 2-Wheel Drive
+                                                            fuel-efficient drive mode.<br>
+                                                            <b>NORMAL:</b> offers a well-balanced 4-Wheel Drive
+                                                            performance, resulting in enhanced fuel efficiency,
+                                                            traction, high-speed stability and predictable handling
+                                                            based on road and driving conditions.<br>
+                                                            <b>SNOW:</b> provides improved traction and stability
+                                                            specifically for snow-covered or slippery roads.<br>
+                                                            <b>LOCK:</b> provides maximum torque distribution across all
+                                                            four wheels at all times, for drivers who prefer to take the
+                                                            road less travelled, or for situations where more traction
+                                                            is required.</p>
+                                                    </div>
+
+                                                    <div class="img-div"><img alt="Los Angeles" class="hidden-sm"
+                                                            src="/site-uploads/1001218/Images/_slider-Outlander-GTS-AWC.png">
+                                                        <img alt="Los Angeles" class="hidden-lg"
+                                                            src="/site-uploads/1001218/Images/_slider-Outlander-GT-S-AWC-mobile-750w.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="flex-slider-item">
+                                                    <div class="desc-div">
+                                                        <h1>Driver Selectable Modes</h1>
+
+                                                        <p>Super All-Wheel Control also features driver selectable modes
+                                                            at the touch of a button, to optimize capability depending
+                                                            on the driving situation.</p>
+
+                                                        <h1>OUTLANDER PHEV</h1>
+
+                                                        <p>The Outlander PHEV is the only Plug-in Hybrid Electric SUV in
+                                                            Canada that offers all-electric 4-Wheel Drive, meaning you
+                                                            don’t have to compromise fuel efficiency while driving in EV
+                                                            Mode with 4-Wheel Drive capability! The twin electric motors
+                                                            manage the front-to-rear distribution of near-instantaneous
+                                                            torque to deliver the traction to the wheels that need it
+                                                            most, when they need it.<br>
+                                                            <b>NORMAL:</b> offers a well-balanced 4-Wheel Drive
+                                                            performance, resulting in enhanced efficiency, traction,
+                                                            high-speed stability and predictable handling based on road
+                                                            and driving conditions.<br>
+                                                            <b>LOCK:</b> provides maximum torque distribution across all
+                                                            four wheels at all times, for drivers who prefer to take the
+                                                            road less travelled, or for situations where a more traction
+                                                            is required.</p>
+                                                    </div>
+
+                                                    <div class="img-div"><img alt="Los Angeles" class="hidden-sm"
+                                                            src="/site-uploads/1001218/Images/_slider-Outlander-PHEV-S-AWC.png">
+                                                        <img alt="Los Angeles" class="hidden-lg"
+                                                            src="/site-uploads/1001218/Images/_slider-Outlander-PHEV-S-AWC-mobile-750w.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="descriptions">
+                                        <div class="col-md-6">
+                                            <div class="desc-item">
+                                                <h3 class="bold">ACTIVE FRONT DIFFERENTIAL</h3>
+
+                                                <p>Found exclusively on Outlander GT S-AWC, the Active Front
+                                                    Differential limits the differential speed between the right and
+                                                    left front wheels with an electronically controlled clutch when
+                                                    oversteer or understeer is detected, helping you hug the corners as
+                                                    you originally planned.</p>
+                                                <a class="btn btn-primary btn-block"
+                                                    href="/page/display/?siteId=1001200&amp;pageId=40727">Trade
+                                                    Appraisal</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="desc-item">
+                                                <h3 class="bold">ACTIVE YAW CONTROL</h3>
+
+                                                <p>This highly advanced system uses real-time data from the steering
+                                                    wheel angle, yaw rate, driving torque, braking pressure and wheel
+                                                    speed to detect excessive rotational force on any given wheel. It
+                                                    applies ABS systems as required to the four wheels to quickly manage
+                                                    wheel speed and maximize traction, providing an enhanced, sporty
+                                                    feel in tight corners, and improved safety when braking or
+                                                    accelerating in slippery or snow-covered turns.</p>
+                                                <a class="btn btn-primary btn-block" href="/book-a-test-drive">Book a
+                                                    Test Drive</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- start S-AWC -->
+                <!-- end s-awc content-->
+            </div>
+            <div id="RightDiv" class="droppableComp droppableHtml col-md-2 ui-sortable hidden ui-sortable-disabled"
+                style=""></div>
+        </div>
+        <div class="row">
+            <div id="FooterDiv" class="droppableHtml droppableComp col-md-12 ui-sortable ui-sortable-disabled">
+                <div ppanel="htmlContainer" class="movableHtml" data-component-htmlcontainer=""
+                    data-com-id="htmlContainer" id="html_1590596138111">
+                    <div contenteditable="true" class="contentHtml" style="position: relative;">
+                        <ul class="access-sidebar">
+                            <li><a href="/page/display/?siteId=1001218&amp;pageId=42137">Showroom</a></li>
+                            <li><a href="/page/display/?siteId=1001218&amp;pageId=42138">Warranty</a></li>
+                            <li><a href="/page/display/?siteId=1001218&amp;pageId=42139">Built Better Backed Better</a>
+                            </li>
+                            <li><a href="/page/display/?siteId=1001218&amp;pageId=42140">Rebates</a></li>
+                            <li><a href="/s-aws">S-AWC</a></li>
+                            <li><a href="/page/display/?siteId=1001218&amp;pageId=42142">Can I Get Financing</a></li>
+                            <li><a href="/page/display/?siteId=1001218&amp;pageId=42143">Value Your Trade</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="movableHtml common_element" data-com-id="htmlContainer" data-component-htmlcontainer=""
+                    id="html_1584670295048" ppanel="htmlContainer">
+                    <div contenteditable="true" class="contentHtml" style="position: relative;">
+                        <div class="footer-content-container">
+                            <div class="container footer">
+                                <div class="company child col-sm-4">
+                                    <h4>CONTACT US</h4>
+
+                                    <p>Sales:<br>
+                                        <strong>905-526-4899</strong></p>
+
+                                    <p>Service:<br>
+                                        <strong>905-526-4895</strong></p>
+
+                                    <p>Parts:<br>
+                                        <strong>905-526-4895</strong></p>
+
+                                    <p>2211 Eagle Street North, Mountain, ON N3H 4R7</p>
+                                </div>
+
+                                <div class="company child col-sm-4">
+                                    <ul class="child">
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="/page/display/?siteId=1001218&amp;pageId=42136">Hours of
+                                                Operation</a></li>
+                                        <li><a href="/page/display/?siteId=1001200&amp;pageId=40771">Roadside
+                                                Assistance</a></li>
+                                        <li><a href="/page/display/?siteId=1001200&amp;pageId=41905">Terms and
+                                                Conditions</a></li>
+                                        <li><a href="#">Casis</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="social child col-sm-4"><a
+                                        href="https://www.facebook.com/mitsubishiMountain/" target="_blank"><svg
+                                            aria-hidden="true" class="svg-inline--fa fa-facebook fa-w-16 fa-2x"
+                                            data-fa-i2svg="" data-icon="facebook" data-prefix="fab" focusable="false"
+                                            role="img" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                                                fill="currentColor"></path>
+                                        </svg><!-- <i aria-hidden="true" class="fab fa-2x fa-facebook">&nbsp;</i> -->
+                                    </a> <a href="https://twitter.com/MitsubishiCamON" target="_blank"> <svg
+                                            aria-hidden="true" class="svg-inline--fa fa-twitter fa-w-16 fa-2x"
+                                            data-fa-i2svg="" data-icon="twitter" data-prefix="fab" focusable="false"
+                                            role="img" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                                fill="currentColor"></path>
+                                        </svg><!-- <i aria-hidden="true" class="fab fa-2x fa-twitter">&nbsp;</i> -->
+                                    </a> <a href="https://www.instagram.com/mitsubishican/?hl=en" target="_blank"> <svg
+                                            aria-hidden="true" class="svg-inline--fa fa-instagram fa-w-14 fa-2x"
+                                            data-fa-i2svg="" data-icon="instagram" data-prefix="fab" focusable="false"
+                                            role="img" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                                                fill="currentColor"></path>
+                                        </svg><!-- <i aria-hidden="true" class="fab fa-2x fa-instagram">&nbsp;</i> -->
+                                    </a> <a href="https://www.youtube.com/user/mitsubishicanada" target="_blank"> <svg
+                                            aria-hidden="true" class="svg-inline--fa fa-youtube fa-w-18 fa-2x"
+                                            data-fa-i2svg="" data-icon="youtube" data-prefix="fab" focusable="false"
+                                            role="img" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                                                fill="currentColor"></path>
+                                        </svg><!-- <i aria-hidden="true" class="fab fa-2x fa-youtube">&nbsp;</i> -->
+                                    </a></div>
+                            </div>
+                        </div>
+
+                        <div id="copyright">
+                            <div class="container">Copyright© 2020 Mountain Mitsubishi - AODA Accessible Web Site -
+                                Powered by <a href="http://www.turnkeywebsolutions.com" target="_blank">Turn Key Web
+                                    Solutions</a> - <a href="/page/display/?siteId=1001200&amp;pageId=40974">Privacy
+                                    Policy</a> - <a data-target="#Login-form" data-toggle="modal" data-whatever="@mdo"
+                                    href="#" type="button">Dealer Performance Login</a></div>
+
+                            <div aria-labelledby="exampleModalLabel" class="modal fade" id="Login-form" role="dialog"
+                                tabindex="-1">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header"><button aria-label="Close" class="close"
+                                                data-dismiss="modal" type="button"><span
+                                                    aria-hidden="true">×</span></button>
+
+                                            <h4 class="modal-title" id="exampleModalLabel"><span
+                                                    id="inline-style-39">Dealer Performance Login</span></h4>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <form abframeid="iframe.0.5382617226418978"
+                                                abineguid="5A3879D9777C43A78D6EF19514608EC0"
+                                                action="https://equipmentsearch.com/index/login/"
+                                                class="container-fluid" id="loginform" method="post" name="login"
+                                                target="_blank">
+                                                <div class="form-group">
+                                                    <div class="col-xs-8 form-group"><label class="sr-only"
+                                                            for="username">First Name</label><input
+                                                            class="form-control input-sm" id="exampleInputEmail1"
+                                                            name="username" placeholder="Username" title="username">
+                                                    </div>
+
+                                                    <div class="col-xs-8 form-group"><label class="sr-only"
+                                                            for="password">First Name</label><input
+                                                            class="form-control input-sm" id="exampleInputPassword1"
+                                                            name="password" placeholder="Password" title="password"
+                                                            type="password"></div>
+
+                                                    <div class="col-xs-12" id="inline-style-91"><br>
+                                                        <input class="submit btn-danger btn-sm" id="inline-style-92"
+                                                            type="submit" value="Login"></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+*,
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.wrapper .req-p {
+  margin-right: 2vw;
+  text-align: right;
+  font-size: 14px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper .req-p {
+    margin: 40px 0;
+  }
+}
+
+.group {
+  position: relative;
+  margin: 25px 0;
+  padding: 0;
+  margin-right: 2vw;
+}
+
+.group label.error {
+  top: 100%;
+  color: #ce1f2b;
+  font-size: 16px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .group {
+    margin: 40px 0;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+input {
+  background: none;
+  color: #000;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #000;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:focus ~ label.m-label,
+input:not(:placeholder-shown) ~ label.m-label,
+input.error ~ label.m-label {
+  top: -14px;
+  font-size: 12px;
+  color: #777;
+}
+
+input:focus ~ .bar:before {
+  width: 100%;
+}
+
+textarea {
+  background: none;
+  color: #000;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  border: 1px solid #000;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea:focus ~ label {
+  top: -14px;
+  font-size: 12px;
+  color: #777;
+}
+
+textarea:focus ~ .bar:before {
+  width: 100%;
+}
+
+label {
+  color: #000;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #777;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+  left: 0%;
+}
+
+.flex-checkboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-checkboxes .checkboxe-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .flex-checkboxes .checkboxe-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 767px) {
+  .flex-checkboxes .checkboxe-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+}
+
+.flex-checkboxes .checkboxe-item .checkbox-lbl {
+  position: relative;
+  top: auto;
+  margin: 0;
+  color: #000;
+  cursor: pointer;
+  pointer-events: all;
+  font-size: 16px;
+}
+
+.flex-checkboxes .checkboxe-item input[type=checkbox], .flex-checkboxes .checkboxe-item input[type=radio] {
+  width: auto;
+  margin: 0;
+}
+
+#Buttons {
+  float: left;
+  padding: 0;
+  clear: both;
+  padding-bottom: 10px;
+}
+
+#Buttons .SendCopyCheck {
+  display: none;
+}
+
+#Buttons .btn.btn-default {
+  display: none;
+}
+
+#Buttons .btn.btn-primary {
+  border-radius: 0;
+  background-color: #000;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 0 !important;
+  padding: 15px 20px;
+}
+
+.required-astriks {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/*# sourceMappingURL=form.css.map */

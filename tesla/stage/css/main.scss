@@ -1,0 +1,38 @@
+// @import "./libs/bootstrap-rtl.min.css";
+
+// @import './scss/layout/fonts';
+// @import "./scss/variables/colors";
+// @import "./scss/variables/responsive";
+
+// @import "./scss/layout/global";
+@import "./scss/layout/sidebar";
+// @import "./scss/layout/navbar";
+// @import "./scss/layout/footer";
+
+
+/*
+components
+*/
+// @import "./scss/components/inner-menu";
+// @import "./scss/components/modal";
+// @import "./scss/components/chat";
+
+
+
+
+/* 
+pages
+*/
+// @import "./scss/pages/index";
+// @import "./scss/pages/signup";
+// @import "./scss/pages/signin";
+// @import "./scss/pages/404";
+// @import "./scss/pages/account/address";
+// @import "./scss/pages/account/wallet";
+// @import "./scss/pages/account/wallet-add";
+// @import "./scss/pages/account/order";
+// @import "./scss/pages/pick";
+// @import "./scss/pages/provider-signup";
+// @import "./scss/pages/services";
+// @import "./scss/pages/succes";
+@import "./scss/pages/tesla";

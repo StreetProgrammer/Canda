@@ -1,0 +1,52 @@
+- var pageTitle = 'FAQ'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body 
+        .page-wrapper.faq-page
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    .row.rtl                            
+                        .col-md-6.mb-3
+                            .faq-content
+                                h4.my-3 الأسئلة الشائعة
+                        .col-md-6.mb-3
+                            img.main-img(src="./images/home/sub-2-4.png", alt="", srcset="")
+                        .col-12
+                            .faq-content
+                                .faq-container
+                                    .faq-collapse-panel
+                                        #accordion.panel-group(aria-multiselectable='true', role='tablist')
+                                            // cash-u
+                                            .panel.panel-default.box-shadow
+                                                #cash-u.panel-heading(role='tab')
+                                                    div
+                                                        span كيف أطبع ؟
+                                                    a.collapsed(aria-controls='collapse-cash-u', aria-expanded='true', data-parent='#accordion', data-toggle='collapse', href='#collapse-cash-u')
+                                                #collapse-cash-u.panel-collapse.collapse.in(aria-labelledby='cash-u', role='tabpanel')
+                                                    .panel-body
+                                                        div
+                                                            p  تضم منصة برنت مقدمي خدمات الطباعة في كافة مدن المملكة لتسهيل عملية الطباعة بجودة عالية وسعر مميز مع خدمة التوصيل لباب المنزل
+                                                            p  تضم منصة برنت مقدمي خدمات الطباعة في كافة مدن المملكة لتسهيل عملية الطباعة بجودة عالية وسعر مميز مع خدمة التوصيل لباب المنزل
+                   
+                                            // credit-card
+                                            .panel.panel-default.box-shadow
+                                                #heading-credit-card.panel-heading(role='tab')
+                                                    div
+                                                        span كيف أطبع ؟
+                                                    a.collapsed(aria-controls='collapse-credit-card', aria-expanded='false', data-parent='#accordion', data-toggle='collapse', href='#collapse-credit-card') 
+                                                #collapse-credit-card.panel-collapse.collapse(aria-labelledby='heading-credit-card', role='tabpanel')
+                                                    .panel-body
+                                                        div
+                                                            p  تضم منصة برنت مقدمي خدمات الطباعة في كافة مدن المملكة لتسهيل عملية الطباعة بجودة عالية وسعر مميز مع خدمة التوصيل لباب المنزل
+                                                            p  تضم منصة برنت مقدمي خدمات الطباعة في كافة مدن المملكة لتسهيل عملية الطباعة بجودة عالية وسعر مميز مع خدمة التوصيل لباب المنزل
+                                                                              
+            include pug/layout/footer           
+        include pug/layout/js

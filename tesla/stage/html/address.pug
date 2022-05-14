@@ -1,0 +1,87 @@
+- var pageTitle = 'Account - Address'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body 
+        .page-wrapper.address-page
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    .row
+                        .col-md-12
+                            .spo-container.rtl
+                                h4.sec-font.my-3 حسابي
+                                .inner-menu-container
+                                    include pug/components/user-inner-menu
+                                    .inner-menu-content
+                                        include pug/components/user-top-tabs
+                                        .row.mb-3
+                                            .col-md-12
+                                                button.new-address-btn(data-toggle="modal" data-target="#ADD-EDIT-DELETE")
+                                                    span.icon <i class="fas fa-2x fa-plus-circle"></i>
+                                                    span.text اضافة عنوان جديد
+                                        .row
+                                            .col-md-6.mb-3
+                                                .address-item.box-shadow
+                                                    p Walled Sayed
+                                                    p رقم الجوال
+                                                    p 96625154555
+                                                    p العنوان
+                                                    p المملكةالعربية السعودية - الرياض - شارع العزيزية
+                                                    button.edit(data-toggle="modal" data-target="#ADD-EDIT-DELETE")
+                                                        <i class="fas fa-2x fa-pencil-alt"></i>
+                                                    button.delete(data-toggle="modal" data-target="#ADD-EDIT-DELETE")
+                                                        <i class="far fa-2x fa-trash-alt"></i>
+                                            .col-md-6.mb-3
+                                                .address-item.box-shadow
+                                                    p Walled Sayed
+                                                    p رقم الجوال
+                                                    p 96625154555
+                                                    p العنوان
+                                                    p المملكةالعربية السعودية - الرياض - شارع العزيزية
+                                                    button.edit(data-toggle="modal" data-target="#ADD-EDIT-DELETE")
+                                                        <i class="fas fa-2x fa-pencil-alt"></i>
+                                                    button.delete(data-toggle="modal" data-target="#ADD-EDIT-DELETE")
+                                                        <i class="far fa-2x fa-trash-alt"></i>
+
+
+                // Modal
+                #ADD-EDIT-DELETE.modal.fade.bd-example-modal-lg(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+                    .modal-dialog.modal-dialog-centered.modal-dialog.modal-lg(role='document')
+                        .modal-content.box-shadow
+                            .modal-header.rtl
+                                h5#exampleModalLongTitle.modal-title العنوان
+                                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                                    span(aria-hidden='true') &times;
+                            .modal-body
+                                .rtl
+                                    form
+                                        .form-row
+                                            .col-md-6
+                                                label.f-label(for='username') اسم المستخدم
+                                                input#username.form-control(type='text' required='')
+                                            .col-md-6.mb-5
+                                                label.f-label(for='country') الدولة
+                                                select#country.form-control(required='')
+                                            .col-md-6
+                                                label.f-label(for='phone') رقم الهاتف
+                                                input#phone.form-control(type='tel' name='phone' required='')
+                                            .col-md-6.mb-5
+                                                label.f-label(for='city') الحي أو المدينة
+                                                select#city.form-control(required='')
+                                            .col-md-6
+                                                label.f-label(for='address-1') العنوان
+                                                input#address-1.form-control(type='text' required='')
+                                            .col-md-6
+                                                label.f-label(for='address-2') العنوان
+                                                input#address-2.form-control(type='text' required='')
+                                        button.btn.btn-primary.mt-5.pull-left(type='submit') تحديث 
+                                    
+            include pug/layout/footer           
+        include pug/layout/js

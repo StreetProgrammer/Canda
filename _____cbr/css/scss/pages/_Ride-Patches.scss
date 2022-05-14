@@ -1,0 +1,150 @@
+._Ride-Patches {
+    .container-90 {
+        .boxes {
+            display: flex;
+            flex-direction: column;
+
+            .box {
+                @extend ._brd-box;
+                // @extend .thin;
+                // @extend .lbr;
+                margin-bottom: 1vw;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &.brdr-bottom {
+                    border: 0;
+                    border-bottom: 3px solid var(--gray-8);
+                }
+
+                div {
+                    padding: 1vw 2vw;
+
+
+                    &:nth-child(1) {
+                        // width: 60;
+                    }
+
+                    &:nth-child(2) {
+                        // width: 30;
+                    }
+
+                    &.flex {
+                        width: 47%;
+                        display: flex;
+
+                        &.column {
+                            flex-direction: column;
+                        }
+
+                        img {
+                            max-width: 48%;
+                        }
+                    }
+
+                    h1 {
+                        font-size: 2.7777777777778vw;
+                        font-weight: 700;
+                        color: var(--main-font-color);
+                        font-family: var(--secondary-font);
+                    }
+
+                    h4 {
+                        font-size: 1.3888888888889vw;
+                        font-weight: 600;
+                        color: var(--main-font-color);
+                        font-family: var(--main-font);
+
+                        span {
+                            font-weight: 600;
+                            color: var(--main-color);
+                        }
+
+                        a {
+                            color: inherit;
+                            text-decoration: underline;
+                            transition: all ease-in-out 0.25s;
+
+                            &:hover {
+                                color: var(--main-color);
+                            }
+                        }
+                    }
+
+                    p {
+                        font-size: 1.1111111111111vw;
+                        color: var(--main-font-color);
+                        font-family: var(--main-font);
+
+                        span {
+                            &.crossline {
+                                font-weight: bold;
+                                font-size: 150%;
+                                text-decoration: line-through;
+
+                            }
+
+                            &.red {
+                                color: var(--main-color);
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container-90 {
+            .boxes {
+
+                .box {
+                    flex-direction: column;
+
+                    div {
+                        padding: 1vw 2vw;
+                        width: 100%;
+
+                        h1 {
+                            font-size: 40px
+                        }
+
+                        h4 {
+                            font-size: 20px;
+
+                            span {
+                                font-weight: 600;
+                                color: var(--main-color);
+                            }
+
+                            a {
+                                color: inherit;
+                                text-decoration: underline;
+                                transition: all ease-in-out 0.25s;
+
+                                &:hover {
+                                    color: var(--main-color);
+                                }
+                            }
+                        }
+
+                        p {
+                            font-size: 18px;
+                            color: var(--main-font-color);
+                            font-family: var(--main-font);
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}

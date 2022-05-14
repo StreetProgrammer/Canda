@@ -1,0 +1,193 @@
+body {
+    font-family: 'Fairuz', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.page-wrapper {
+    background-image: url("../images/leftBG.png"), url("../images/rightBG.png");
+    background-repeat: no-repeat;
+    background-position: 0% 0%, 100% 10%;
+    background-size: 600px, 200px;
+    background-color: $bodyBG;
+    // min-height: 100vh;
+}
+
+*::-moz-selection {
+    background: $priFont;
+    color: $white;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: $priFont;
+    color: $white;
+    text-shadow: none;
+}
+
+::selection {
+    background: $priFont;
+    color: $white;
+    text-shadow: none;
+}
+
+*::-webkit-input-placeholder {
+    color: $bodyBG;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+*:-ms-input-placeholder {
+    color: $bodyBG;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+*::-ms-input-placeholder {
+    color: $bodyBG;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+*::placeholder {
+    color: $bodyBG;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* button style */
+
+
+/*------scroll bar---------------------*/
+* {
+    // width: 300px;
+    // height: 100px;
+    // overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border: 0px none $white;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ddd;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #525965;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none $white;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+    background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.btn-primary {
+    background-color: $secFont;
+    border-color: $secFont;
+
+    &:hover {
+        background-color: $to;
+        border-color: $to;
+    }
+}
+
+.form-control {
+    -webkit-box-shadow: 0px 0px 15px 2px #DDDDDD;
+    box-shadow: 0px 0px 15px 2px #DDDDDD;
+}
+
+.btn-outline-primary {
+    border: 1px solid $white;
+    color: $white;
+    background-color: transparent;
+
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 1px 10px 1px #6c757d7d;
+    box-shadow: 0px 1px 10px 1px #6c757d7d;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.white-bg {
+    background-color: $white !important;
+}
+
+.pri-font {
+    color: $priFont;
+}
+
+.sec-font {
+    color: $secFont;
+}
+
+.pull-left {
+    float: left;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+.back-to {
+    padding: 20px 0px;
+    font-weight: bold;
+}
+
+.back-to-bottom {
+    padding: 0px 0px 20px;
+    font-weight: bold;
+}
+
+.back-to,
+.back-to-bottom {
+    a {
+        display: flex;
+
+        span {
+            color: $priFont;
+            padding: 0px 0px 0px 15px;
+            font-size: 20px;
+        }
+    }
+}
+
+.f-label {
+    font-weight: bold;
+    color: $thiFont;
+}

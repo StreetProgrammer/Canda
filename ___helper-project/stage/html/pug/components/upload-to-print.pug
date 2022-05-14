@@ -1,0 +1,93 @@
+// Modal 1
+#print.print-modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.modal-dialog(role='document')
+        .modal-content.box-shadow
+            .modal-header.rtl
+                h5#exampleModalLongTitle.modal-title.text-center ارفع الملف
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') &times;
+            .modal-body
+                .row.rtl
+                    .col-md-12
+                        .note.box-shadow.text-center
+                            p نوع الملف المسموح pdf
+                            p أقصى حجم للمف 50 MB
+                            p اسم الملف لابد أن يخلو من العلامات الأتية (!@#$%&*-)
+                        .drag-drop-area.text-center
+                            #drop-area.text-center
+                                form.my-form
+                                    label(for='fileElem')
+                                        p.text-center
+                                            span.icon <i class="fas fa-file-upload fa-2x"></i>
+                                        p انقر هنا
+                                        p لرفع الملف الذي تريد طباعته
+                                        p بإمكانك رفع عدة ملفات في نفس الوقت
+                                    input#fileElem(type='file', multiple='', accept='application/pdf', onchange='handleFiles(this.files)')
+                            button.btn.btn-primary.mt-3(type='submit') تحديث 
+
+// Modal 2
+#next-step.next-step-modal.modal.fade.bd-example-modal-lg(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.modal-dialog.modal-lg(role='document')
+        .modal-content.box-shadow
+            .modal-header.rtl
+                p#exampleModalLongTitle.modal-title.text-center
+                    span
+                        <i class="fas fa-check-circle"></i>
+                    | Voice.mp3
+                    span تم الرفع بنجاح
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') &times;
+            .modal-body
+                .row.rtl
+                    .col-md-12
+                        .content.text-center
+                            p نوع الملف المسموح pdf
+                            div.flex-inputs
+                                .custom-control.custom-radio.custom-control-inline
+                                    input#Radio1.custom-control-input(type='radio', name='example1', value='customEx')
+                                    label.custom-control-label(for='Radio1') طباعة
+                                .custom-control.custom-radio.custom-control-inline
+                                    input#Radio2.custom-control-input(type='radio', name='example1', value='customEx')
+                                    label.custom-control-label(for='Radio2') ترجمة
+                                .custom-control.custom-radio.custom-control-inline
+                                    input#Radio3.custom-control-input(type='radio', name='example1', value='customEx')
+                                    label.custom-control-label(for='Radio3') كتابة
+                                .custom-control.custom-radio.custom-control-inline
+                                    input#Radio4.custom-control-input(type='radio', name='example1', value='customEx')
+                                    label.custom-control-label(for='Radio4') طباعة
+                                .custom-control.custom-radio.custom-control-inline
+                                    input#Radio5.custom-control-input(type='radio', name='example1', value='customEx')
+                                    label.custom-control-label(for='Radio5') ترجمة
+                                .custom-control.custom-radio.custom-control-inline
+                                    input#Radio6.custom-control-input(type='radio', name='example1', value='customEx')
+                                    label.custom-control-label(for='Radio6') كتابة
+                            button.btn.btn-primary.mt-3(type='submit') التالي 
+
+// Modal 3
+#advertising.advertising-modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.modal-dialog(role='document')
+        .modal-content.box-shadow
+            .modal-header.rtl
+                h5#exampleModalLongTitle.modal-title.text-center خدمات الدعايا
+                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    span(aria-hidden='true') &times;
+            .modal-body
+                .row.rtl
+                    .col-md-4
+                        .note.box-shadow.text-center
+                            a(href="")
+                                img(src="./images/canva1-logo.png", alt="", srcset="")
+                                label تصميم من canva
+                    .col-md-4
+                        .note.box-shadow.text-center
+                            a(href="")
+                                p
+                                    span.icon <i class="fas fa-file-upload fa-2x"></i>
+                                label تصميم من canva
+                    .col-md-4
+                        .note.box-shadow.text-center
+                            a(href="")
+                                img(src="./images/interface.png", alt="", srcset="")
+                                label تصميم من canva
+
+                        

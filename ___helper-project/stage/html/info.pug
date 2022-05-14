@@ -1,0 +1,88 @@
+- var pageTitle = 'Account - Info'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body 
+        .page-wrapper.info-page
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    .row
+                        .col-md-12
+                            .spo-container.rtl
+                                h4.sec-font.my-3 حسابي
+                                .inner-menu-container
+                                    include pug/components/user-inner-menu
+                                    .inner-menu-content
+                                        include pug/components/user-top-tabs
+                                        .box-shadow.mb-3.white-bg
+                                            .col-md-12.border-bottom
+                                                .rtl.white-bg.p-3
+                                                    form
+                                                        .form-row
+                                                            .col-md-6.mb-4
+                                                                label.f-label(for='firstname') الإسم الأول
+                                                                input#firstname.form-control(type='text' required='')
+                                                            .col-md-6.mb-4
+                                                                label.f-label(for='lastname') اسم العائلة
+                                                                input#lastname.form-control(type='text' required='')
+                                                            .col-md-6.mb-4
+                                                                label.f-label(for='phone') رقم الهاتف
+                                                                input#phone.form-control(type='tel' name='phone' required='')
+                                                            .col-md-6.mb-4
+                                                                label.f-label(for='country') الدولة
+                                                                select#country.form-control(required='')
+                                                            .col-md-12
+                                                                label.f-label(for='gender') الجنس
+                                                            .col-md-12.mb-4
+                                                                .custom-control.custom-radio.custom-control-inline
+                                                                    input#male.custom-control-input(type='radio' name='gender')
+                                                                    label.custom-control-label.f-label(for='male') ذكر
+                                                                .custom-control.custom-radio.custom-control-inline
+                                                                    input#female.custom-control-input(type='radio' name='gender')
+                                                                    label.custom-control-label.f-label(for='female') أنثى
+                                                                button.btn.btn-primary.pull-left(type='submit') تحديث      
+                                            .row
+                                                .col-md-6
+                                                    .rtl.white-bg.p-3
+                                                        form
+                                                            .form-row
+                                                                .col-md-12.mb-4
+                                                                    h5.sec-font.bold تحديث البريد الإليكتروني
+                                                                .col-md-12.mb-4
+                                                                    label.f-label(for='email') البريد الإليكتروني
+                                                                    input#email.form-control(type='email' required='')
+                                                                .col-md-12.mb-4
+                                                                    label.f-label(for='new-email') البريد الإليكتروني الجديد
+                                                                    input#new-email.form-control(type='email' required='')
+                                                                .col-md-12.mb-4
+                                                                    label.f-label(for='password') كلمة المرور
+                                                                    input#password.form-control(type='password' name='password' required='')
+                                                                .col-md-12.mb-5
+                                                                    button.btn.btn-primary.pull-left(type='submit') تحديث 
+                                                .col-md-6
+                                                    .rtl.white-bg.p-3
+                                                        form
+                                                            .form-row
+                                                                .col-md-12.mb-4
+                                                                        h5.sec-font.bold تحديث كلمة المرور
+                                                                .col-md-12.mb-4
+                                                                    label.f-label(for='password') كلمة المرور الحالية
+                                                                    input#password.form-control(type='password' name='password' required='')
+                                                                .col-md-12.mb-4
+                                                                    label.f-label(for='password') كلمة المرور الجديدة
+                                                                    input#password.form-control(type='password' name='password' required='')
+                                                                .col-md-12.mb-4
+                                                                    label.f-label(for='password') تأكيدكلمة المرور الجديدة
+                                                                    input#password.form-control(type='password' name='password' required='')
+                                                                .col-md-12.mb-5
+                                                                    button.btn.btn-primary.pull-left(type='submit') تحديث 
+
+            include pug/layout/footer           
+        include pug/layout/js

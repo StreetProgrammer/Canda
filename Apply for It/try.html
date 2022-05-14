@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        /*  range input*/
+        .seekbar {
+            margin: 12px 0;
+            padding: 10px 24px;
+            position: relative;
+        }
+
+        .seekbar-progress {
+            height: 24px;
+            background-color: #f5f5f5;
+            background-image: linear-gradient(to bottom, #ebebeb 0%, #f5f5f5 100%);
+            background-repeat: repeat-x;
+            border-radius: 6px;
+        }
+
+        .seekbar-progress [role="progressbar"] {
+            height: 100%;
+            position: relative;
+            background: #0b661d;
+            border-radius: 6px;
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+        }
+
+        .seekbar-progress [role="progressbar"]:after {
+            content: "+";
+            display: block;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 0px;
+            right: -12px;
+            background-color: #000;
+            color: #FFF;
+            border: 1px solid #999;
+            border-radius: 6px;
+            font-size: 22px;
+            line-height: 1;
+            text-align: center;
+            cursor: pointer;
+        }
+
+
+        .seekbar input[type="range"] {
+            -webkit-appearance: none;
+            width: 100%;
+            /* height: 100%; */
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            background: transparent;
+            outline: 0;
+            border: 0;
+        }
+
+        .seekbar input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            display: block;
+            width: 48px;
+            height: 48px;
+            background-color: transparent;
+        }
+
+        .seekbar input[type="range"]::-moz-range-thumb {
+            display: block;
+            width: 48px;
+            height: 48px;
+            background: transparent;
+            border: 0;
+        }
+
+        .seekbar input[type="range"]::-moz-range-track {
+            background: transparent;
+            border: 0;
+        }
+
+        .seekbar input[type="range"]::-moz-focus-outer {
+            border: 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <select name="months" id="months">
+            <option value="6">6 MONTHS</option>
+            <option value="12">12 MONTHS</option>
+            <option value="18">18 MONTHS</option>
+            <option value="24">24 MONTHS</option>
+            <option value="30">30 MONTHS</option>
+            <option value="36">36 MONTHS</option>
+            <option value="42">42 MONTHS</option>
+            <option value="48">48 MONTHS</option>
+            <option value="54">54 MONTHS</option>
+            <option value="60">60 MONTHS</option>
+            <option value="66">66 MONTHS</option>
+            <option value="72">72 MONTHS</option>
+            <option value="78">78 MONTHS</option>
+            <option value="84">84 MONTHS</option>
+            <option value="90">90 MONTHS</option>
+            <option value="96">96 MONTHS</option>
+        </select>
+
+        <div class="seekbar" style="margin-bottom: 5rem;">
+            <input id="range-1-months" type="range" value="36" min="6" max="96" step="6" />
+            <div id="seekbar-1" class="seekbar-progress">
+                <div role="progressbar" aria-valuemin="6" aria-valuemax="96" aria-valuenow="36" style="width: 36%;">
+                </div>
+            </div>
+
+        </div>
+
+        <input type="text" name="cash" id="cash" value="$20,000,00">
+        <div class="seekbar" style="margin-bottom: 5rem;">
+            <input id="range-2-cash" type="range" value="20000" min="5000" max="100000" step="1000" />
+            <div id="seekbar-2" class="seekbar-progress">
+                <div role="progressbar" aria-valuemin="10000" aria-valuemax="100000" aria-valuenow="20000"
+                    style="width: 30%;">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        function qsa(s) { return document.querySelectorAll(s) }
+        function qs(s) { return document.querySelector(s) }
+
+
+        var handle = qsa('.seekbar input[type="range"]');
+        document.querySelectorAll('.seekbar input[type="range"]').forEach(item => {
+            item.addEventListener('input', function () {
+                // start handle slide 
+                console.log((100 / (item.max / item.step)) * (item.value / item.step));
+                // var x = 100 / (item.max / item.step)
+                var targetAdrress = "#seekbar-" + this.id.split('-')[1] + " div[role='progressbar']";
+                console.log(item.value);
+
+                var target = qs(targetAdrress);
+
+                target.style.width = (100 / (item.max / item.step)) * (item.value / item.step) + '%';
+                target.setAttribute('aria-valuenow', (100 / (item.max / item.step)) * (item.value / item.step));
+                // start handle related input
+                console.log(document.getElementById(this.id.split('-')[2]))
+                if (this.id.split('-')[2] === 'months') {
+                    document.querySelector('#' + this.id.split('-')[2]).value = item.value
+                } else {
+                    console.log(item.value.split("").reverse());
+                    var cashValue1 = item.value.split("").reverse().slice(0, 3).toString().replace(/,/g, '');
+                    var cashValue2 = item.value.split("").reverse().slice(3).reverse().toString().replace(/,/g, '');
+                    console.log('array 1 =>', cashValue1);
+                    console.log('array 2 =>', cashValue2);
+
+                    document.querySelector('#' + this.id.split('-')[2]).value = '$' + cashValue2 + ',' + cashValue1 + ',00'
+                }
+
+                getValues();
+            });
+        })
+
+        $(document).ready(function () {
+
+            $("#months").on("change", function () {
+                var item = $('#range-1-months');
+                item.val($(this).val());
+                var calculatedVal = (100 / (item.attr('max') / item.attr('step'))) * (item.val() / item.attr('step'));
+                console.log(calculatedVal);
+
+                var divItem = $("#seekbar-1 div[role='progressbar']");
+                divItem.css('width', calculatedVal + '%');
+                divItem.attr('aria-valuenow', $(this).val())
+
+                getValues();
+            });
+        });
+
+        $(document).ready(function () {
+            $("#cash").on("change", function () {
+                var err = '';
+                // related range input
+                var rangeInput = $('#range-2-cash');
+                if ($(this).val().toString().length === 0) {
+                    err = 'can not be empty!'
+                }
+                var cashItem = $(this).val().includes('$') ? $(this).val().replace(/\$/g, '') : $(this).val()
+                console.log('cashItem', Number(cashItem));
+
+                if (isNaN(Number(cashItem))) {
+                    err = 'please enter a valid value'
+                }
+                if (cashItem < Number(rangeInput.attr('min')) || cashItem > Number(rangeInput.attr('max'))) {
+                    console.log('out of range');
+                    err = 'out of range'
+                }
+
+                if (err === '') {
+                    var x = parseFloat(cashItem.replace(/,/g, ""))
+                        .toFixed(2)
+                        .toString()
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                    console.log('mmmm', x);
+                    $(this).val('$' + x)
+                    // 
+                    rangeInput.val(Number(cashItem));
+                    var calculatedVal = (100 / (rangeInput.attr('max') / rangeInput.attr('step'))) * (rangeInput.val() / rangeInput.attr('step'));
+                    console.log(calculatedVal);
+
+                    var divItem = $("#seekbar-2 div[role='progressbar']");
+                    divItem.css('width', calculatedVal + '%');
+                    divItem.attr('aria-valuenow', Number(cashItem))
+
+                    getValues();
+                }
+                console.log('err => ', err);
+
+            });
+        });
+
+        function getValues() {
+
+            var cash = document.getElementById('cash').value.includes('$')
+                ? parseFloat(document.getElementById('cash').value.replace(/\$/g, '').replace(/,/g, "")).toFixed(0)
+                : parseFloat(document.getElementById('cash').value.replace(/\$/g, '').replace(/,/g, "")).toFixed(0) // $('#cash').val()
+            console.log('CASH => ', Number(cash));
+
+            var months = document.getElementById('range-1-months').value;//$('#range-1-months').val();
+            console.log('MONTHS => ', months);
+
+            var monthlyInterestRate = (document.getElementById('yourCredit').value / 12) / 100;
+            console.log('Monthly Interest Rate => ', monthlyInterestRate);
+
+            var y = cash * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, months)) / (Math.pow(1 + monthlyInterestRate, months) - 1);
+            console.log('Y = ', y);
+        }
+
+    </script>
+</body>
+
+</html>

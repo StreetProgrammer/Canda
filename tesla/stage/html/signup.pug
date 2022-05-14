@@ -1,0 +1,56 @@
+- var pageTitle = 'التسجيل'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body
+        .page-wrapper.signup-page
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    .signup-container.box-shadow
+                        .signup-form
+                            h2.signup-form-title.text-center إنشاء حساب
+                            .signup-form-body.rtl
+                                h5.text-center.mb-5
+                                    | هل لديك حساب؟ 
+                                    a(href="/signin.html") تسجيل الدخول
+                                form
+                                    .form-row
+                                        .col-md-12.mb-3
+                                            input#first-name.form-control(type='text' placeholder='الإسم' required='')
+                                        .col-md-12.mb-3
+                                            input#last-name.form-control(type='text' placeholder='إسم العائلة' required='')
+                                        .col-md-12.mb-3
+                                            input#phone.form-control(type='tel' name='phone' placeholder='رقم الهاتف' required='')
+                                    .form-row
+                                        .col-md-12
+                                            label.f-label(for='gender') الجنس
+                                        .col-md-12.mb-3
+                                            .custom-control.custom-radio.custom-control-inline
+                                                input#male.custom-control-input(type='radio' name='gender')
+                                                label.custom-control-label.f-label(for='male') ذكر
+                                            .custom-control.custom-radio.custom-control-inline
+                                                input#female.custom-control-input(type='radio' name='gender')
+                                                label.custom-control-label.f-label(for='female') أنثى
+
+                                    .form-row
+                                        .col-md-12.mb-3
+                                            input#email.form-control(type='email' placeholder='البريد الإليكتروني' required='')
+                                        .col-md-12.mb-3
+                                            input#password.form-control(type='password' placeholder='كلمة المرور' required='')
+                                        .col-md-12.mb-3
+                                            input#confirm-password.form-control(type='password' placeholder='تأكيد كلمة المرور' required='')
+                                    p.mb-3 
+                                        | بالنقر على إنشاء حساب في الأسفل فأنت توافق على 
+                                        a(href="http://") الشروط والأحكام
+                                    button.btn.btn-primary.btn-block(type='submit') إنشاء حساب 
+                        .signup-img.hidden-sm
+                                img(src="./images/signupBG.png", alt="", srcset="")     
+            include pug/layout/footer            
+        include pug/layout/js

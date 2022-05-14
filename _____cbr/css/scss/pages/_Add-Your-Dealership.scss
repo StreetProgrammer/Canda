@@ -1,0 +1,152 @@
+._Add-Your-Dealership {
+    .container-90 {
+        .boxes {
+            display: flex;
+            flex-direction: column;
+
+            .box {
+                @extend ._brd-box;
+                @extend .thin;
+                @extend .lbr;
+                margin-bottom: 1vw;
+                display: flex;
+                justify-content: space-between;
+
+                div {
+                    padding: 1vw 2vw;
+                    width: 100%;
+
+                    h1 {
+                        font-size: 2.7777777777778vw;
+                        font-weight: 700;
+                        color: var(--main-font-color);
+                        font-family: var(--secondary-font);
+                    }
+
+                    h4 {
+                        font-size: 1.3888888888889vw;
+                        font-weight: 600;
+                        color: var(--main-font-color);
+                        font-family: var(--main-font);
+
+                        span {
+                            font-weight: 600;
+                            color: var(--main-color);
+                        }
+
+                        a {
+                            color: inherit;
+                            text-decoration: underline;
+                            transition: all ease-in-out 0.25s;
+
+                            &:hover {
+                                color: var(--main-color);
+                            }
+                        }
+                    }
+
+                    p {
+                        font-size: 1.1111111111111vw;
+                        color: var(--main-font-color);
+                        font-family: var(--main-font);
+
+                        span {
+                            &.crossline {
+                                font-weight: bold;
+                                font-size: 150%;
+                                text-decoration: line-through;
+
+                            }
+
+                            &.red {
+                                color: var(--main-color);
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .form-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    font-size: 1.1111111111111vw;
+                    text-align: center;
+                }
+
+                h1 {
+                    font-size: 2.7777777777778vw;
+                    font-weight: 700;
+                    font-family: var(--secondary-font);
+                    color: var(--main-font-color);
+                    text-align: center;
+                }
+
+                >div,
+                >p,
+                >h1 {
+                    width: 80%;
+                }
+
+                >div {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container-90 {
+            .boxes {
+
+                .box {
+                    flex-direction: column;
+
+                    div {
+                        padding: 1vw 2vw;
+                        width: 100%;
+
+                        h1 {
+                            font-size: 40px
+                        }
+
+                        h4 {
+                            font-size: 20px;
+
+                            span {
+                                font-weight: 600;
+                                color: var(--main-color);
+                            }
+
+                            a {
+                                color: inherit;
+                                text-decoration: underline;
+                                transition: all ease-in-out 0.25s;
+
+                                &:hover {
+                                    color: var(--main-color);
+                                }
+                            }
+                        }
+
+                        p {
+                            font-size: 18px;
+                            color: var(--main-font-color);
+                            font-family: var(--main-font);
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}

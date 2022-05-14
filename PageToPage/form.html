@@ -1,0 +1,151 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-horizontal" action="/action_page.php">
+            <style>
+                h3 {
+                    font-size: 24px;
+                    background: #ddd;
+                    padding: 2rem;
+                }
+                
+                .form-control {
+                    height: 5rem;
+                    border-radius: 0px;
+                    border: 1px solid#999;
+                }
+                
+                .checkbox-radio-label {
+                    margin: 2rem;
+                }
+                
+                .checkbox-radio-label span {
+                    transition: all .25s ease-in-out;
+                    background: linear-gradient(to right, #999 50%, white 50%);
+                    background-size: 200% 100%;
+                    background-position: right bottom;
+                    padding: 10px;
+                }
+                
+                .checkbox-radio-label span:hover {
+                    background-position: left bottom;
+                }
+            </style>
+            <h3>Personal Info:</h3>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="First-Name"><span class="req">*</span>Name:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control required" id="First-Name" name="Name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="Home-Phone">Phone:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control required" id="Home-Phone" name="Phone">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="Address">Address:</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control required" id="Address" name="Address">
+                </div>
+            </div>
+
+            <h3>Use:</h3>
+            <div class="form-group">
+
+                <div class="col-sm-offset-1 col-sm-5 col-md-offest-1 col-md-3 col-lg-offset-3 col-lg-3">
+                    <div class="checkbox">
+                        <label class="checkbox-radio-label"><input checked="checked" id="Home" name="Use" type="radio" value="Home">  <span>Home</span></label>
+                    </div>
+                </div>
+
+                <div class="col-sm-offset-1 col-sm-5 col-md-offest-1 col-md-3 col-lg-offset-3 col-lg-3">
+                    <div class="checkbox">
+                        <label class="checkbox-radio-label"><input id="Commercial" name="Use" type="radio" value="Commercial">  <span>Commercial</span></label>
+                    </div>
+                </div>
+
+                <div class="col-sm-offset-1 col-sm-5 col-md-offest-1 col-md-3 col-lg-offset-3 col-lg-3">
+                    <div class="checkbox">
+                        <label class="checkbox-radio-label"><input id="Agriculture" name="Use" type="radio" value="Agriculture">  <span>Agriculture</span></label>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3>Washer or Floor Care Unit:</h3>
+            <div class="form-group">
+
+                <div class="col-sm-offset-1 col-sm-5 col-md-offest-1 col-md-3 col-lg-offset-3 col-lg-3">
+                    <div class="checkbox">
+                        <label class="checkbox-radio-label"><input type="checkbox" name="Floor">  <span>Floor</span></label>
+                    </div>
+                </div>
+
+                <div class="col-sm-offset-1 col-sm-5 col-md-offest-1 col-md-3 col-lg-offset-3 col-lg-3">
+                    <div class="checkbox">
+                        <label class="checkbox-radio-label"><input type="checkbox" name="Scrubber"> <span>Scrubber</span></label>
+                    </div>
+                </div>
+
+                <div class="col-sm-offset-1 col-sm-5 col-md-offest-1 col-md-3 col-lg-offset-3 col-lg-3">
+                    <div class="checkbox">
+                        <label class="checkbox-radio-label"><input type="checkbox" name="Vacuum"> <span>Vacuum</span></label>
+                    </div>
+                </div>
+
+                <div class="col-sm-offset-1 col-sm-5 col-md-offest-1 col-md-3 col-lg-offset-3 col-lg-3">
+                    <div class="checkbox">
+                        <label class="checkbox-radio-label"><input type="checkbox" name="Sweeper">  <span>Sweeper</span></label>
+                    </div>
+                </div>
+
+                <div class="col-sm-offset-1 col-sm-5 col-md-offest-1 col-md-3 col-lg-offset-3 col-lg-3">
+                    <div class="checkbox">
+                        <label class="checkbox-radio-label"><input type="checkbox" name="Carpet Care">  <span>Carpet Care</span></label>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3>Hot or Cold</h3>
+            <div class="form-group">
+
+                <div class="col-sm-offset-1 col-sm-5 col-md-offest-1 col-md-3 col-lg-offset-3 col-lg-3">
+                    <div class="checkbox">
+                        <label class="checkbox-radio-label"><input id="Hot" name="hot-cold" type="radio" value="Hot">  <span>Hot</span></label>
+                    </div>
+                </div>
+
+                <div class="col-sm-offset-1 col-sm-5 col-md-offest-1 col-md-3 col-lg-offset-3 col-lg-3">
+                    <div class="checkbox">
+                        <label class="checkbox-radio-label"><input id="Cold" name="hot-cold" type="radio" value="Cold">  <span>Cold</span></label>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3>Application:</h3>
+            <div class="form-group">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <textarea class="form-control" id="comment" name="Application" rows="3" wrap="virtual"></textarea>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

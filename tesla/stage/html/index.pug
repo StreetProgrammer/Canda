@@ -1,0 +1,73 @@
+- var pageTitle = 'Home Page'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body
+        include pug/layout/navbar
+        include pug/layout/sidebar
+        main.page-content
+        section#section01.demo
+            h1 Scroll Down Button #1
+            a(href='#section02')
+                span
+                | Scroll
+        section#section02.demo
+            h1 Scroll Down Button #2
+            a(href='#section03')
+                span
+                | Scroll
+        section#section03.demo
+            h1 Scroll Down Button #3
+            a(href='#section04')
+                span
+                | Scroll
+        section#section04.demo
+            h1 Scroll Down Button #4
+            a(href='#section05')
+                span
+                | Scroll
+        section#section05.demo
+            h1 Scroll Down Button #5
+            a(href='#section06')
+                span
+                | Scroll
+        section#section06.demo
+            h1 Scroll Down Button #6
+            a(href='#section07')
+                span
+                | Scroll
+        section#section07.demo
+            h1 Scroll Down Button #7
+            a(href='#section08')
+                span
+                span
+                span
+                | Scroll
+        section#section08.demo
+            h1 Scroll Down Button #8
+            a(href='#section09')
+                span
+                | Scroll
+        section#section09.demo
+            h1 Scroll Down Button #9
+            a(href='#section10')
+                span
+                | Scroll
+        section#section10.demo
+            h1 Scroll Down Button #10
+            a(href='#thanks')
+                span
+                | Scroll
+        section#thanks
+            div
+                h2 Thanks!
+                p
+                a(href='https://www.nxworld.net/tips/css-scroll-down-button.html', target='_parent') < Back To Article
+
+            include pug/layout/footer
+        include pug/layout/js

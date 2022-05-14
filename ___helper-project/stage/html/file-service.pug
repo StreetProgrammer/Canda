@@ -1,0 +1,36 @@
+- var pageTitle = 'File - Service'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body 
+        .page-wrapper.file-service
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    .row
+                        .col-md-12
+                            .spo-container.rtl
+                                h4.sec-font.my-3.text-center حسابي
+                                .controls-inner-menu-container
+                                    include pug/components/print-control
+                                    .controls-inner-menu-content
+                                        .row
+                                            .col-md-12.mb-3
+                                                .white-bg.box-shadow.p-5
+                                                    .pdf-container.text-center
+                                                        img.pdf-image.box-shadow(src="./images/pdf-file.png", alt="", srcset="")
+                                                        .pagination-btns.mt-5
+                                                            button.btn.btn-sm.btn-outline-primary الأولى
+                                                            button.btn.btn-sm.btn-outline-primary التالي
+                                                            button.btn.btn-sm.btn-outline-primary السابق
+                                                            button.btn.btn-sm.btn-outline-primary الأخير
+
+                
+            include pug/layout/footer           
+        include pug/layout/js

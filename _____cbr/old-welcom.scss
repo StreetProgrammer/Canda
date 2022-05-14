@@ -1,0 +1,197 @@
+// section 1
+.home-mobile-img-container {
+    border-bottom: 5px solid var(--black);
+    position: relative;
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%), url("/site-uploads/1001368/images/home-hero.jpg");
+    height: 40vw;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (max-width: 520px) {
+        height: 75vw;
+    }
+
+    .content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            color: var(--white);
+            margin: 0;
+            font-size: 4.1666666666667vw;
+            text-align: center;
+            text-shadow: 2px 2px var(--black);
+            text-transform: uppercase;
+            font-family: var(--secondary-font);
+            font-weight: 700;
+        }
+
+        h3 {
+            color: var(--white);
+            font-family: var(--secondary-font);
+            margin: 0;
+            font-size: 2.7777777777778vw;
+            text-align: center;
+            text-shadow: 2px 2px var(--black);
+            font-weight: 500;
+            border-bottom: 1px solid var(--white);
+            margin-bottom: 1vw;
+            padding: 1vw;
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 3vw;
+
+            p {
+                color: var(--secondary-color);
+                font-family: var(--secondary-font);
+                font-size: 1.9444444444444vw;
+            }
+
+            img {}
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        height: 70vw;
+
+        .content {
+            .bottom {
+
+                p {
+                    font-size: 24px;
+                }
+            }
+
+            // h1 {
+            //     font-size: 30px !important;
+            //     margin-bottom: 3vw !important;
+            // }
+
+            // h3 {
+            //     font-size: 25px !important;
+            //     margin-bottom: 3vw !important;
+            //     padding: 2vw !important;
+            // }
+
+        }
+    }
+}
+
+// section 2
+
+// section 3
+.home-breif {
+    width: 95vw;
+    margin: 4vw auto;
+    position: relative;
+
+    >div {
+        &:first-child {
+            max-width: 60%;
+        }
+    }
+
+    // position: absolute;
+    // top: 0;
+    // width: 55%;
+    // height: 110%;
+    // z-index: 9999;
+
+    .top {
+        display: flex;
+
+        img {
+            width: 35%;
+            margin: auto;
+        }
+    }
+
+    &.left2right {
+
+        .content {
+            position: absolute;
+            right: 0;
+
+            .inner {
+                background-color: var(--gray-3);
+                border: 2vw solid var(--white);
+                padding: 2vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h1 {
+                    font-size: 3.4722222222222vw;
+                    font-family: var(--secondary-font);
+                    color: var(--main-font-color);
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 1.1111111111111vw;
+                    font-family: var(--main-font);
+                    color: var(--main-font-color);
+
+                    small {
+                        font-size: 0.83333333333333vw;
+                    }
+                }
+
+                a.btn-anchor {}
+            }
+        }
+    }
+
+    &.right2left {
+        .content {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 55%;
+            height: 110%;
+            z-index: 9999;
+
+            .inner {
+                background-color: var(--gray-3);
+                border: 2vw solid var(--white);
+                padding: 2vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h1 {
+                    font-size: 3.4722222222222vw;
+                    font-family: var(--secondary-font);
+                    color: var(--main-font-color);
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 1.1111111111111vw;
+                    font-family: var(--main-font);
+                    color: var(--main-font-color);
+
+                    small {
+                        font-size: 0.83333333333333vw;
+                    }
+                }
+
+                a.btn-anchor {}
+            }
+        }
+    }
+}

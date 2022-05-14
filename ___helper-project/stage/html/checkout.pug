@@ -1,0 +1,243 @@
+- var pageTitle = 'Checkout'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body 
+        .page-wrapper.checkout-page
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    .row
+                        .col-md-12
+                            .spo-container.rtl
+                                h4.text-center.sec-font.my-3 حسابي
+                                .inner-menu-container
+                                    .inner-menu-content
+                                        .row
+                                            .col-md-12
+                                                .checkout-progress-container.box-shadow
+                                                    ul.order-progress
+                                                        li.active عنوان التوصيل
+                                                            
+                                                        li الفاتورة
+                                                            
+                                                        li الدفع
+                                        .row
+                                            .col-md-12
+                                                .box-shadow.p-5.mb-3.white-bg
+                                                    .row
+                                                        .col-md-2
+                                                            button.new-address-btn(data-toggle="modal" data-target="#ADD-EDIT-DELETE")
+                                                                span.icon <i class="fas fa-2x fa-plus-circle"></i>
+                                                                span.text اضافة عنوان جديد
+                                                        .col-md-5.mb-3
+                                                            label(for="address1")
+                                                                .address-item-with-rbtn.box-shadow
+                                                                    p Walled Sayed
+                                                                    p رقم الجوال
+                                                                    p 96625154555
+                                                                    p العنوان
+                                                                    p المملكةالعربية السعودية - الرياض - شارع العزيزية
+                                                                    .radio-mark   
+                                                                        input.hide#address1(type="radio" name="address-radio-group" checked)
+                                                                        span
+                                                        .col-md-5.mb-3
+                                                            label(for="address2")
+                                                                .address-item-with-rbtn.box-shadow
+                                                                    p Walled Sayed
+                                                                    p رقم الجوال
+                                                                    p 96625154555
+                                                                    p العنوان
+                                                                    p المملكةالعربية السعودية - الرياض - شارع العزيزية
+                                                                    .radio-mark
+                                                                        input.hide#address2(type="radio" name="address-radio-group")
+                                                                        span
+                                                        .col-md-12
+                                                            .bottom-btns
+                                                                .pull-left
+                                                                    button.btn.btn-primary.btn-sm التالي
+
+                                                                .pull-right 
+                                                                    button.btn.btn-primary.btn-sm السابق
+
+                                        
+                                        .row
+                                            .col-md-12
+                                                .box-shadow.mb-3.white-bg
+                                                    .wallet-container
+                                                        .row.controls
+                                                            .col-sm-12.col-md-6.my-2 
+                                                                h4.title الفاتورة
+
+                                                            .col-sm-12.col-md-6.my-2.count-control 
+                                                                .form-row
+                                                                    
+                                                                    .col-8
+                                                                        input.form-control(type='text' placeholder="ادخل كود الخصم")
+                                                                    .col-4
+                                                                        button.btn.btn-primary.btn-sm تطبيق
+
+                                                        .bill-table.my-5.table-responsive-sm
+                                                            table.table.table-responsive-sm
+                                                                thead
+                                                                    tr
+                                                                    th(scope='col') #
+                                                                    th(scope='col') اسم الملف
+                                                                    th(scope='col') الوقت
+                                                                    th(scope='col') المبلغ
+                                                                    th(scope='col') الكمية
+                                                                    th(scope='col') الإجمالي
+                                                                    th(scope='col') خيارات
+                                                                tbody
+                                                                    tr
+                                                                        th(scope='row') 1
+                                                                        td file 1
+                                                                        td 24 ساعة
+                                                                        td 11.50
+                                                                        td 
+                                                                            input.amount(type="number", name="")
+                                                                        td 11.50
+                                                                        td 
+                                                                            span.icon <i class="fas fa-trash-alt"></i>
+                                                                    tr
+                                                                        th(scope='row') 2
+                                                                        td file 2
+                                                                        td 24 ساعة
+                                                                        td 11.50
+                                                                        td 
+                                                                            input.amount(type="number", name="")
+                                                                        td 11.50
+                                                                        td 
+                                                                            span.icon <i class="fas fa-trash-alt"></i>
+                                                                    tr
+                                                                        th(scope='row') 3
+                                                                        td file 3
+                                                                        td 24 ساعة
+                                                                        td 11.50
+                                                                        td 
+                                                                            input.amount(type="number", name="")
+                                                                        td 11.50
+                                                                        td 
+                                                                            span.icon <i class="fas fa-trash-alt"></i>
+                                                            
+                                                            .bill-detail
+                                                                p.title ملخص الطلب
+                                                                .row
+                                                                    .col
+                                                                        p سعر الطباعة
+                                                                        p
+                                                                            small 26.25 ر.س
+                                                                        p سعر التوصيل
+                                                                        p
+                                                                            small 0.42 ر.س
+                                                                        p الإجمالي قبل الخصم
+                                                                        p
+                                                                            small 28.00 ر.س
+                                                                        p الخصم
+                                                                        p
+                                                                            small 00.00 ر.س
+                                                                        p المجموع غير شامل ضريبة القيمة المضافة
+                                                                        p
+                                                                            small 28.00 ر.س
+                                                                        p ضريبة القيمة المضافة
+                                                                        p
+                                                                            small 01.30 ر.س
+                                                                        p المجموع شامل ضريبة القيمة المضافة
+                                                                        p
+                                                                            small 29.30 ر.س
+
+                                                                    .col
+                                                                        p الرقم الضريبي
+                                                                        p
+                                                                            small 310090586400003
+                                                                        p تمت الطباعة بواسطة
+                                                                        p
+                                                                            small وكالة عثمان
+                                                                        p سيستغرق وقت تنفيذ الطلب
+                                                                        p
+                                                                            small 24 ساعة
+
+                                                            .bottom-btns
+                                                                .pull-left
+                                                                    button.btn.btn-primary.btn-sm التالي
+
+                                                                .pull-right 
+                                                                    button.btn.btn-primary.btn-sm السابق
+
+                                        .row
+                                            .col-md-12
+                                                .box-shadow.p-5.mb-3.white-bg
+                                                    .row
+                                                        .col-md-4.mb-3
+                                                            label.parent-label(for="visa")
+                                                                .pay-item-with-rbtn.box-shadow
+                                                                    img(src="./images/credit-card.png", alt="")
+                                                                    .radio-mark   
+                                                                        input.hide#visa(type="radio" name="pay-radio-group" checked)
+                                                                        span
+                                                        .col-md-4.mb-3
+                                                            label.parent-label(for="cash-u")
+                                                                .pay-item-with-rbtn.box-shadow
+                                                                    img(src="./images/cashu.png", alt="")
+                                                                    .radio-mark
+                                                                        input.hide#cash-u(type="radio" name="pay-radio-group")
+                                                                        span
+                                                        .col-md-4.mb-3
+                                                            label.parent-label(for="wallet")
+                                                                .pay-item-with-rbtn.box-shadow
+                                                                    p 
+                                                                        span.icon <i class="fas fa-wallet fa-2x""></i>
+                                                                    p محفظتي
+                                                                    p رصيدي 00.00 ر. س
+                                                                    .radio-mark
+                                                                        input.hide#wallet(type="radio" name="pay-radio-group")
+                                                                        span
+
+                                                        .col-md-12
+                                                            .bottom-btns
+                                                                .pull-left
+                                                                    button.btn.btn-primary.btn-sm التالي
+
+                                                                .pull-right 
+                                                                    button.btn.btn-primary.btn-sm السابق
+
+                // Modal
+                #ADD-EDIT-DELETE.modal.fade.bd-example-modal-lg(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+                    .modal-dialog.modal-dialog-centered.modal-dialog.modal-lg(role='document')
+                        .modal-content.box-shadow
+                            .modal-header.rtl
+                                h5#exampleModalLongTitle.modal-title العنوان
+                                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                                    span(aria-hidden='true') &times;
+                            .modal-body
+                                .rtl
+                                    form
+                                        .form-row
+                                            .col-md-6
+                                                label.f-label(for='username') اسم المستخدم
+                                                input#username.form-control(type='text' required='')
+                                            .col-md-6.mb-5
+                                                label.f-label(for='country') الدولة
+                                                select#country.form-control(required='')
+                                            .col-md-6
+                                                label.f-label(for='phone') رقم الهاتف
+                                                input#phone.form-control(type='tel' name='phone' required='')
+                                            .col-md-6.mb-5
+                                                label.f-label(for='city') الحي أو المدينة
+                                                select#city.form-control(required='')
+                                            .col-md-6
+                                                label.f-label(for='address-1') العنوان
+                                                input#address-1.form-control(type='text' required='')
+                                            .col-md-6
+                                                label.f-label(for='address-2') العنوان
+                                                input#address-2.form-control(type='text' required='')
+                                        button.btn.btn-primary.mt-5.pull-left(type='submit') تحديث 
+                  
+            include pug/layout/footer           
+        include pug/layout/js

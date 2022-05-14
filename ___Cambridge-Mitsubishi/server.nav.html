@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* -------------------------- start side bar --------------------------- */
+
+        .page-wrapper .sidebar-wrapper,
+        .sidebar-wrapper .sidebar-brand>a,
+        .sidebar-wrapper .sidebar-dropdown>a:after,
+        .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before,
+        .sidebar-wrapper ul li a i,
+        .page-wrapper .page-content,
+        .sidebar-wrapper .sidebar-search input.search-menu,
+        .sidebar-wrapper .sidebar-search .input-group-text,
+        .sidebar-wrapper .sidebar-menu ul li a,
+        #show-sidebar,
+        #close-sidebar {
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        /*----------------toggeled sidebar----------------*/
+        .toggled {
+            right: 0px !important;
+            background-color: FFF;
+        }
+
+        /*----------------sidebar-wrapper----------------*/
+        .sidebar-wrapper {
+            width: 300px;
+            height: 100%;
+            max-height: 100%;
+            position: fixed;
+            top: 0;
+            right: -300px;
+            z-index: 999;
+            background-color: #fff;
+            transition: all ease-in-out 300ms;
+        }
+
+        .sidebar-wrapper ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar-wrapper a {
+            text-decoration: none;
+        }
+
+        /*--------------------sidebar-close----------------------*/
+        .sidebar-wrapper .sidebar-brand #close-sidebar {
+            cursor: pointer;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        /*--------------------sidebar-header----------------------*/
+        .sidebar-wrapper .sidebar-header {
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        /*----------------------sidebar-menu-------------------------*/
+        .sidebar-content {
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .sidebar-wrapper .sidebar-menu {
+            padding-bottom: 10px;
+        }
+
+        .sidebar-wrapper .sidebar-menu .header-menu span {
+            font-weight: bold;
+            font-size: 14px;
+            padding: 15px 20px 5px 20px;
+            display: inline-block;
+        }
+
+        .sidebar-wrapper .sidebar-menu ul li .item {
+            display: block;
+            color: #555 !important;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            position: relative;
+            padding: 10px 20px 10px 20px;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        .sidebar-wrapper .sidebar-menu ul li .item:hover {
+            color: #ddd;
+            padding: 10px 20px 10px 40px;
+        }
+
+        .sidebar-wrapper .sidebar-menu .sidebar-dropdown>a::after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: bold;
+            content: "\276F";
+            font-style: normal;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-align: center;
+            background: 0 0;
+            position: absolute;
+            right: 15px;
+            top: 14px;
+            transition: all ease-in-out 300ms;
+        }
+
+        .sidebar-wrapper .sidebar-menu .active>a::after {
+            -ms-transform: rotate(20deg);
+            transform: rotate(90deg);
+        }
+
+        .sidebar-wrapper .sidebar-menu ul li {
+            text-align: center;
+            margin: 5px 20px 5px 20px;
+        }
+
+        .sidebar-wrapper .sidebar-menu .sidebar-submenu {
+            display: none;
+        }
+
+        .sidebar-wrapper .sidebar-menu .sidebar-submenu a {
+            display: block;
+            color: #555 !important;
+            font-size: 14px;
+            font: bold;
+            text-decoration: none;
+            position: relative;
+            padding: 10px 20px 10px 20px;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+
+        .sidebar-wrapper .sidebar-menu .sidebar-submenu a:hover {
+            color: #ddd;
+            padding: 10px 40px 10px 20px;
+            background-color: #000;
+        }
+
+        /* -------------------------- end side bar --------------------------- */
+        .nav-container {
+            display: flex;
+            flex-direction: row;
+            background-color: #222;
+            align-items: center;
+            justify-content: space-between;
+            height: 75px;
+            -ms-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -webkit-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+
+        .fixed-top {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 888;
+            background-color: #222222d1;
+
+        }
+
+        .nav-container .brand {
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            flex: 20%;
+        }
+
+        .nav-container .brand img {
+            height: 65px;
+        }
+
+        .nav-container .brand h2 {
+            color: #fff;
+            font-size: 22px;
+        }
+
+        /* models */
+
+        .nav-container .models {
+            flex: 60%;
+        }
+
+        .nav-container .models .model-nav {
+            list-style: none;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .nav-container .models li {
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #FFF;
+        }
+
+        .nav-container .models li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /*  */
+
+        .nav-container .nav-location-phone {
+            flex: 20%
+        }
+
+        .nav-container .nav-location-phone ul {
+            list-style: none;
+            margin-right: 1.5rem;
+            margin-top: 1.5rem;
+            text-align: end;
+        }
+
+        .nav-container .nav-location-phone ul li {
+            font-weight: bold;
+            padding: 5px 0px;
+            margin: 5px 0px;
+            font-size: 16px;
+        }
+
+        .nav-container .nav-location-phone ul li a {
+            color: #fff;
+            cursor: pointer;
+            transition: all ease-in-out 300ms;
+        }
+
+        .nav-container .nav-location-phone ul li a:hover {
+            color: rgb(89, 89, 89);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <div id="HeaderDiv" class="droppableHtml droppableComp col-md-12 ui-sortable ui-sortable-disabled">
+        <div ppanel="htmlContainer" class="movableHtml" data-component-htmlcontainer="" data-com-id="htmlContainer"
+            id="html_1588990520539" style="min-height:50px;">
+            <div class="contentHtml" style="position: relative;" contenteditable="true">
+                <script type="text/javascript"
+                    front-src="https://sdk.autoverify.com/1a778164-0e15-44cf-b610-7e5886cdcfed/sdk.min.js"></script>
+                <script front-src="/site-uploads/1001200/frontjs/jquery.scrollify.js" type="text/javascript"></script>
+                <script front-src="/site-uploads/1001200/frontjs/main.js" type="text/javascript"></script>
+                <script front-src="https://kit.fontawesome.com/7b566b3ac0.js" crossorigin="anonymous"></script>
+                <!-- start sidebar -->
+                <nav class="sidebar-wrapper" id="sidebar">
+                    <div class="sidebar-content">
+                        <div class="sidebar-brand">
+                            <div id="close-sidebar"><i class="fas fa-times">&nbsp;</i></div>
+                        </div>
+                        <div class="sidebar-menu">
+                            <ul>
+                                <li><a class="item" href="/landing"><span>Home</span></a>
+                                </li>
+                                <li class="sidebar-dropdown"><a class="item" href="#"><span>New
+                                            Vehicles</span></a>
+                                    <div class="sidebar-submenu">
+                                        <ul>
+                                            <li><a href="/Showroom">Showroom
+                                                </a></li>
+                                            <li><a href="/Warranty">Warranty
+                                                </a></li>
+                                            <li><a href="/BUILT-BETTER-BACKED-BETTER">BUILT
+                                                    BETTER, BACKED BETTER </a></li>
+                                            <li><a href="/Rebates">Rebates
+                                                </a></li>
+                                            <li><a href="/s-awc">S-AWC:
+                                                    Super All Wheel Control </a></li>
+                                            <li><a href="/Can-I-Get-Financing">Can I
+                                                    Get Financing </a></li>
+                                            <li><a href="/Value-Your-Trade">Value
+                                                    Your Trade </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-dropdown"><a class="item" href="#"><span>Inventory</span></a>
+                                    <div class="sidebar-submenu">
+                                        <ul>
+                                            <li><a href="/CPO-Program-Details">CPO
+                                                    Program Details </a></li>
+                                            <li><a href="/New-Inventory">New
+                                                    Inventory </a></li>
+                                            <li><a href="/Used-CPO-Inventory">Used /
+                                                    CPO Inventory </a></li>
+                                            <li><a href="/Certified-Pre-Owned-Inventory">Certified
+                                                    Pre-Owned Inventory </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-dropdown"><a class="item" href="#"><span>Parts</span></a>
+                                    <div class="sidebar-submenu">
+                                        <ul>
+                                            <li><a href="/About-Parts">About
+                                                    Parts </a></li>
+                                            <li><a href="/Meet-our-Parts-Staff">Meet our
+                                                    Parts Staff </a></li>
+                                            <li><a href="/Accessory-Warranty">Accessory
+                                                    Warranty </a></li>
+                                            <li><a href="/Contact-Parts">Contact
+                                                    Parts </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-dropdown"><a class="item" href="#"><span>Services</span></a>
+                                    <div class="sidebar-submenu">
+                                        <ul>
+                                            <li><a href="/About-Service">About
+                                                    Service </a></li>
+                                            <li><a href="/Meet-Our-Service-Staff">Meet Our
+                                                    Service Staff </a></li>
+                                            <li><a href="/Schedule-Service-Appointment">Schedule
+                                                    Service Appointment </a></li>
+                                            <li><a href="/Cambridge-Mitsubishi-Vehicle-Spa">Cambridge
+                                                    Mitsubishi Vehicle Spa </a></li>
+                                            <li><a href="/Roadside-Assistance">Roadside
+                                                    Assistance </a></li>
+                                            <li><a href="/Service-Reviews">Service
+                                                    Reviews </a></li>
+                                            <li><a href="/Contact-Service">Contact
+                                                    Service </a></li>
+                                            <li><a href="/Mitsubishi-Ownership-Experience">Mitsubishi
+                                                    Ownership Experience </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-dropdown"><a class="item" href="#"><span>Get
+                                            Pre-Approved</span></a>
+                                    <div class="sidebar-submenu">
+                                        <ul>
+                                            <li><a href="/Credit-Application">Credit
+                                                    Application </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-dropdown"><a class="item" href="#"><span>Specials</span></a>
+                                    <div class="sidebar-submenu">
+                                        <ul>
+                                            <li><a href="/Monthly-Offers">Monthly-Offers </a></li>
+                                            <li><a href="/New-Vehicle-Specials">New
+                                                    Vehicle Specials </a></li>
+                                            <li><a href="/Used-Vehicle-Specials">Used
+                                                    Vehicle Specials </a></li>
+                                            <li><a href="/Parts-Service-Specials">Parts
+                                                    Service Specials </a></li>
+                                            <li><a href="/Mitsubishi-VIP-Program">Mitsubishi
+                                                    VIP Program </a></li>
+                                            <li><a href="/Financing-Available">Financing
+                                                    Available </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-dropdown"><a class="item" href="#"><span>About
+                                            Us</span></a>
+                                    <div class="sidebar-submenu">
+                                        <ul>
+                                            <li><a href="/Who-We-Are">Who We
+                                                    Are </a></li>
+                                            <li><a href="/Map-Directions">Map
+                                                    Directions </a></li>
+                                            <li><a href="/Customer-Reviews">Customer
+                                                    Reviews </a></li>
+                                            <li><a href="/Our-Staff">Our
+                                                    Staff </a></li>
+                                            <li><a href="/Contact-Sales">Contact
+                                                    Sales </a></li>
+                                            <li><a href="/Hours-of-Operation">Hours of
+                                                    Operation </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- sidebar-menu-->
+                    </div>
+                    <!-- sidebar-content-->
+                    <div class="sidebar-footer">
+                        <a href="https://www.facebook.com/mitsubishicambridge/" target="_blank">
+                            <i aria-hidden="true" class="fab fa-2x fa-facebook">&nbsp;</i>
+                        </a>
+                        <a href="https://twitter.com/MitsubishiCamON" target="_blank">
+                            <i aria-hidden="true" class="fab fa-2x fa-twitter">&nbsp;</i>
+                        </a>
+                        <a href="https://www.instagram.com/mitsubishican/?hl=en" target="_blank">
+                            <i aria-hidden="true" class="fab fa-2x fa-instagram">&nbsp;</i>
+                        </a>
+                        <a href="https://www.youtube.com/user/mitsubishicanada" target="_blank">
+                            <i aria-hidden="true" class="fab fa-2x fa-youtube">&nbsp;</i>
+                        </a>
+                    </div>
+                </nav>
+                <!-- end sidebar -->
+                <nav class="nav-container">
+                    <div class="brand">
+                        <img alt="Logo" src="/site-uploads/1001200/Images/logo.png" srcset="">
+                        <!-- <img alt="Logo" src="./logo.png" srcset=""> -->
+                        <h2>Cambridge Mitsubishi</h2>
+                    </div>
+                    <div class="models">
+                        <ul class="model-nav">
+                            <li maodel-name="MIRAGE"><a href="#" class="">MIRAGE</a></li>
+                            <li maodel-name="RVR"><a href="#" class="">RVR</a></li>
+                            <li maodel-name="OUTLANDER" class="active"><a href="#" class="">OUTLANDER</a></li>
+                            <li maodel-name="OUTLANDER PHEV"><a href="#" class="">OUTLANDER PHEV</a></li>
+                            <li maodel-name="ECLIPSE CROSS"><a href="#" class="">ECLIPSE CROSS</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-location-phone">
+                        <ul>
+                            <li>
+                                <a id="show-sidebar">
+                                    <i class="fas fa-2x fa-bars">&nbsp;</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-2x fa-phone-alt">&nbsp;</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-2x fa-map-marker-alt">&nbsp;</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+
+
+
+
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.scrollify.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        jQuery(function ($) {
+            $(window).scroll(function () {
+                var sc = $(window).scrollTop()
+                if (sc > 100) {
+                    $(".nav-container").addClass("fixed-top")
+                } else {
+                    $(".nav-container").removeClass("fixed-top")
+                }
+            });
+            // Sub Menu
+            $(".sidebar-dropdown > a").click(function (e) {
+                e.preventDefault();
+                $(".sidebar-submenu").slideUp(200);
+                if (
+                    $(this)
+                        .parent()
+                        .hasClass("active")
+                ) {
+                    $(".sidebar-dropdown").removeClass("active");
+                    $(this)
+                        .parent()
+                        .removeClass("active");
+                } else {
+                    $(".sidebar-dropdown").removeClass("active");
+                    $(this)
+                        .next(".sidebar-submenu")
+                        .slideDown(200);
+                    $(this)
+                        .parent()
+                        .addClass("active");
+                }
+            });
+            // End Submenu
+            $("#close-sidebar").click(function () {
+                $(".sidebar-wrapper").removeClass("toggled");
+                // $(".nav-location-phone").css("display", "block")
+            });
+            $("#show-sidebar").click(function () {
+                // $(".nav-location-phone").css("display", "none")
+                $(".sidebar-wrapper").addClass("toggled");
+            });
+        });
+    </script>
+</body>
+
+</html>

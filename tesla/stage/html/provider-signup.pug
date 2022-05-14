@@ -1,0 +1,67 @@
+- var pageTitle = 'Provider - Signup'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body 
+        .page-wrapper.pick-page
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    .row.rtl                            
+                        .col-md-6
+                            .pro-signup-breif
+                                h2.map-title.my-3 نقاط الإستلام
+                                h5 اشترك معنا اليوم وكن أحد مقدمين الخدمة في منصة برنت
+                                .map-form
+                                    p.my-3 لتسهيل الحثول عالى المطبوعات أضافت منصة اطبع عدة من مقدمي خدمات الطباعة في المدن المختلفة ليتمكن العملاءمن زيارتها والحصول على مطبوعاتهم باسرع وقت ممكن
+                                    p.my-3 ستصل رسالة لهاتف العميل عند جاهزية مطبوعاتهفي نقطة الإستلام خلال المدة الظاهرة عند الطب. بعد ذلك زيارة نقطة الإستلام والحصول على مطبوعاتهم وذلك بتقديم رقم الطلب
+                                    p.my-3 ملاحظة: الرجاء التأكد من صحة رقم الجوال المدخل أثناء عملية التسجيل
+
+                                
+                        .col-md-6.text-center
+                            .store-image.text-center
+                                img(src="./images/store.png", alt="", srcset="")
+                        .col-12
+                            .pro-signup-form-content
+                                h2.my-3.text-center قدم طلبك الأن
+                                h3.my-3.text-center خاص بشركات الطباعة والنسخ والتصوير
+                                .form.white-bg.box-shadow
+                                    form
+                                        .form-row
+                                            .col-md-6.mb-4
+                                                label.f-label(for='name') الإسم
+                                                input#name.form-control(type='text' required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='phone') رقم الجوال
+                                                input#phone.form-control(type='tel' name='phone' required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='email') البريد الإليكتروني
+                                                input#email.form-control(type='text' required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='tradename') الإسم التجاري
+                                                input#tradename.form-control(type='text' required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='country') الدولة
+                                                select#country.form-control(required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='city') المدينة
+                                                select#city.form-control(required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='password') كلمة المرور
+                                                input#password.form-control(type='password' name='password' required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='password-confirm') تأكيد كلمة المرور
+                                                input#password-confirm.form-control(type='password' name='password' required='')
+                                            .col-md-12.mb-4.text-center
+                                                button.btn.btn-primary(type='submit') إرسال 
+                        
+
+                                    
+            include pug/layout/footer           
+        include pug/layout/js

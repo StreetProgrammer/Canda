@@ -1,0 +1,19 @@
+#showroom_vdp {
+  .title-img-section {
+    .title-div {
+
+    }
+    .image-div {
+
+    }
+  }
+  #model-content {
+    .model-tabs {
+      #details-tabs{
+        &.affix {
+          z-index: 1050;
+        }
+      }
+    }
+  }
+}

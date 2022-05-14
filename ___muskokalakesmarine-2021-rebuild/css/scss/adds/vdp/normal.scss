@@ -1,0 +1,20 @@
+.model-tabs {
+  .tab-content {
+    #model-accordion {
+      .panel {
+        a.accord-btn {
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0) 41.15%, rgba(221, 221, 221, 0.25) 100%);
+          border: 1px solid #DDDDDD;
+          color: var(--black);
+          font-family: 'Oswald';
+          .glyphicon {
+            color: var(--black) !important;
+          }
+        }
+        // .accord-btn .glyphicon {
+        //   color: var(--black);
+        // }
+      }
+    }
+  }
+}

@@ -1,0 +1,187 @@
+// VARIABLES // ============================== //
+$bg-color: #424242;
+$hl-color: #777;
+$muted-color: mix(white, $bg-color, 70%);
+$muted-color: #000;
+$trans-time: 300ms;
+$width: 100%;
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+// FORM // ============================== //
+
+.wrapper {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  .req-p {
+    margin-right: 2vw;
+    text-align: right;
+    font-size: 14px !important;
+    @media screen and (max-width: 767px) {
+      margin: 40px 0;
+    }
+  }
+}
+.group {
+  position: relative;
+  margin: 25px 0;
+  padding: 0;
+  margin-right: 2vw;
+  label.error {
+    top: 100%;
+    color: #ce1f2b;
+    font-size: 16px !important;
+  }
+  @media screen and (max-width: 767px) {
+    margin: 40px 0;
+  }
+
+}
+
+// INPUTS // ============================== //
+textarea {
+  resize: none;
+}
+
+input {
+  background: none;
+  color: $muted-color;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: $width;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid $muted-color;
+  &:focus {
+    outline: none;
+  }
+  &:focus ~ label.m-label,
+  // &:valid ~ label.m-label, 
+  &:not(:placeholder-shown) ~ label.m-label,
+  &.error ~ label.m-label {
+    top: -14px;
+    font-size: 12px;
+    color: $hl-color;
+  }
+  &:focus ~ .bar:before {
+    width: $width;
+  }
+}
+
+textarea {
+  background: none;
+  color: $muted-color;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: $width;
+  border-radius: 0;
+  border: 1px solid $muted-color;
+  &:focus {
+    outline: none;
+  }
+  &:focus ~ label
+  // &:valid ~ label 
+  {
+    top: -14px;
+    font-size: 12px;
+    color: $hl-color;
+  }
+  &:focus ~ .bar:before {
+    width: $width;
+  }
+}
+
+label {
+  color: $muted-color;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: $trans-time ease all;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: $width;
+  &:before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: $hl-color;
+    transition: $trans-time ease all;
+    left: 0%;
+  }
+}
+
+// flex-checkboxes
+.flex-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  .checkboxe-item {
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: center;
+    padding: 10px 0;
+    @media screen and (min-width: 768px) {
+      flex: 1 1 25%;
+    }
+    @media screen and (min-width: 420px) and (max-width: 767px) {
+      flex: 1 1 50%;
+    }
+    .checkbox-lbl {
+      position: relative;
+      top: auto;
+      margin: 0;
+      color: #000;
+      cursor: pointer;
+      pointer-events: all;
+      font-size: 16px;
+    }
+    input[type=checkbox], input[type=radio] {
+      width: auto;
+      margin: 0;
+    }
+  }
+}
+
+#Buttons {
+  float: left;
+  padding: 0;
+  clear: both;
+  padding-bottom: 10px;
+  .SendCopyCheck {
+    display: none;
+  }
+  .btn.btn-default {
+    display: none;
+  }
+
+  .btn.btn-primary {
+    border-radius: 0;
+    background-color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 0 !important;
+    padding: 15px 20px;
+  }
+}
+
+.required-astriks {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

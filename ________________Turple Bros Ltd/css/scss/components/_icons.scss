@@ -1,0 +1,69 @@
+.arrow-right-icon {
+    mask: url(/site-uploads/1001372/images/icons/arrow-right.svg)
+}
+
+.arrow-top-icon {
+    mask: url(/site-uploads/1001372/images/icons/arrow-top.svg)
+}
+
+.arrows-right-icon {
+    mask: url(/site-uploads/1001372/images/icons/arrows-right.svg)
+}
+
+.arrows-icon {
+    mask: url(/site-uploads/1001372/images/icons/arrows.svg)
+}
+
+.car-icon {
+    mask: url(/site-uploads/1001372/images/icons/car.svg)
+}
+
+.motorcycle-icon {
+    mask: url(/site-uploads/1001372/images/icons/motorcycle.svg)
+}
+
+.cart-icon {
+    mask: url(/site-uploads/1001372/images/icons/cart.svg)
+}
+
+.facebook-icon {
+    mask: url(/site-uploads/1001372/images/icons/facebook.svg)
+}
+
+.q-mark-icon {
+    mask: url(/site-uploads/1001372/images/icons/q-mark.svg)
+}
+
+.info-icon {
+    mask: url(/site-uploads/1001372/images/icons/info-icone.svg)
+}
+
+.search-icon {
+    mask: url(/site-uploads/1001372/images/icons/search.svg)
+}
+
+.labtop-orange-icon {
+    mask: url(/site-uploads/1001372/images/icons/labtop-orange-icone.svg)
+}
+
+.mobile-orange-icon {
+    mask: url(/site-uploads/1001372/images/icons/mobile-orange-icone.svg)
+}
+
+.phone-orange-icon {
+    mask: url(/site-uploads/1001372/images/icons/phone-orange-icone.svg)
+}
+
+.icon {
+    width: 1vw;
+    height: 1vw;
+    margin: 0 0.5vw;
+    background: black;
+    mask-size: cover;
+    display: block;
+}
+
+.icon:hover,
+.icon:focus {
+    background: red;
+}

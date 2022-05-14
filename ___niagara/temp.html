@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--  -->
+  <p><br /></p>
+  <div class="container parts-container">
+    <h1 class="page-title">
+      NRC Engine Covers
+    </h1>
+    <div class="container" id="">
+      <div class="pull-right">
+        <div class="parts-thumb">
+          <img alt="HONDA" loading="lazy" src="/site-uploads/1001191/Images/butt1.jpg">
+          </img>
+        </div>
+      </div>
+      <p>
+        NRC (Niagara Race Crafters Inc.) is the World's LARGEST manufacturer of heavy-duty sport bike engine covers.
+        With more than 30 years experience, NRC chose to cast covers. Here are a few reasons why:
+      </p>
+      <h4>
+        NRC covers are stronger!
+      </h4>
+      <p>
+        Manufactured under stringent ISO quality assurance standards, cast alloy grain follows each cover's particular
+        shape, aiding to its strength through profile design and are thicker than stock covers. "Billet" covers have a
+        linear grain only which results in finished product reduced strength and less resistance to cracking.
+      </p>
+      <h4>
+        NRC covers are lighter than billet covers!
+      </h4>
+      <p>
+        Due to each NRC cover's unique three dimensional shape, billet covers often weigh more due to their boxier,
+        straight wall finish, typical of 3 axis rapid CNC machining.
+      </p>
+      <h4>
+        NRC covers cost less!
+      </h4>
+      <p>
+        Cast covers are less expensive to mass produce and yield minimal scrap after machining. Billet covers require an
+        enormous amount of time to machine and the majority of the material goes to scrap. When you consider it takes an
+        8" x 8" x 3" piece of billet stock, weighing approximately 19 lbs., to produce a typical generator cover
+        weighing about 2 lbs., 17 lbs. of billet material and the much longer time it took to CNC machine, goes to
+        scrap. This wasted material cost and extra CNC time result in a more expensive billet cover.
+      </p>
+      <script>
+        $(document).ready(function () {
+          var defaultOpt = "NRC Engine Covers";
+          var fitementMake = $('select#fitementMake');
+          var fitementMakeOpt = Object.keys(window.fitments["NRC Engine Covers"]);
+          fitementMakeOpt.unshift("Select");
+          var fitementMakeOptHtml = ""
+          for (let i = 0; i < fitementMakeOpt.length; i++) {
+            var val = i === 0 ? "0" : fitementMakeOpt[i]
+            fitementMakeOptHtml = fitementMakeOptHtml + '<option value="' + val + '">' + fitementMakeOpt[i] + '<option>'
+          }
+          fitementMake.html(fitementMakeOptHtml)
+          fitementMake.removeAttr('disabled')
+          $('select#fitementType option').filter(function () {
+            return !this.getAttribute('value') || !this.value || $.trim(this.value).length == 0 || $.trim(this.text).length == 0;
+          }).remove();
+          $('select#fitementMake option').filter(function () {
+            return !this.getAttribute('value') || !this.value || $.trim(this.value).length == 0 || $.trim(this.text).length == 0;
+          }).remove();
+        });
+      </script>
+      <div class="fitment-land">
+        {COMP_PLACEHOLDER}
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+
+  <!--  -->
+  <p><br /></p>
+  <div class="container parts-container">
+    <h1 class="page-title">
+      Kawasaki Parts & Accessories
+    </h1>
+    <div class="container" id="">
+      <div class="col-sm-12">
+
+        <h2>
+          <span id="inline-style-2">
+            QUALITY • PERFORMANCE • DURABILITY
+          </span>
+        </h2>
+        <p style="display: none;">
+          Kawasaki Genuine Parts are the only parts on the market specifically engineered and tested to fit your
+          Kawasaki vehicle. They undergo comprehensive evaluation to ensure the highest quality and durability standards
+          to help maximize the life of your vehicle, and give you peace of mind that your Kawasaki is always operating
+          at peak performance. The proper maintenance of your Kawasaki vehicle is the best way to ensure that it
+          operates at its full potential. Whether you work on your vehicle or bring it to an authorized dealer for
+          service, we recommend that you use Kawasaki Genuine Parts.
+        </p>
+        {COMP_PLACEHOLDER}
+      </div>
+      <div class="col-sm-3 " style="display: none;">
+        <div class="parts-thumb pull-right" href="http://kawasakiparts.ca/" rel="nofollow" target="_blank">
+          <img alt="Motorcycle" loading="lazy" src="/site-uploads/1001191/Images/butt5.jpg">
+          <span class="parts-btn hidden">
+            Shop Now !
+          </span>
+          </img>
+        </div>
+      </div>
+    </div>
+    <p>
+    </p>
+    <script>
+      $(document).ready(function () {
+        var defaultOpt = "Accessories";
+        var fitementMake = $('select#fitementMake');
+        var fitementMakeOpt = Object.keys(window.fitments["Accessories"]);
+        fitementMakeOpt.unshift("Select");
+        var fitementMakeOptHtml = ""
+        for (let i = 0; i < fitementMakeOpt.length; i++) {
+          var val = i === 0 ? "0" : fitementMakeOpt[i]
+          fitementMakeOptHtml = fitementMakeOptHtml + '<option value="' + val + '">' + fitementMakeOpt[i] + '<option>'
+        }
+        fitementMake.html(fitementMakeOptHtml)
+        fitementMake.removeAttr('disabled')
+        $('select#fitementType option').filter(function () {
+          return !this.getAttribute('value') || !this.value || $.trim(this.value).length == 0 || $.trim(this.text).length == 0;
+        }).remove();
+        $('select#fitementMake option').filter(function () {
+          return !this.getAttribute('value') || !this.value || $.trim(this.value).length == 0 || $.trim(this.text).length == 0;
+        }).remove();
+      });
+    </script>
+  </div>
+  <!--  -->
+
+</body>
+
+</html>

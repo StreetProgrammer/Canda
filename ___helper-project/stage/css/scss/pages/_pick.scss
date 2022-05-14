@@ -1,0 +1,26 @@
+.map-title {
+    color: $secFont;
+    font-weight: bold;
+}
+
+.map-form {
+    p {
+        color: $thiFont;
+        font-weight: bold;
+    }
+
+    .map-form-content {
+        padding: 1rem;
+        background-color: $white;
+        border: 2px solid $darkWhite;
+    }
+}
+
+.map-image {
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+
+}

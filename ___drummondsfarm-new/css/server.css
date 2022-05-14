@@ -1,0 +1,305 @@
+.fb_iframe_widget {
+  display: block !important;
+}
+
+/** Updates May 28th **/
+.navbar {
+  z-index: 10;
+}
+
+}
+
+#page_50058 #descktop-brands-slider .MS-content .modal {
+  white-space: initial;
+}
+
+#page_50058 .MS-content .close {
+  font-size: 24px !important;
+  color: #000;
+  position: absolute;
+  opacity: 1;
+  top: 0vw;
+  right: 0vw;
+}
+
+#page_50058 .MS-content h5 {
+  font-size: 18px !important;
+  font-weight: 600
+}
+
+#page_50058 .MS-content .modal-body img {
+  margin: 2vw auto;
+}
+
+#page_50058 .MS-content #exampleModalLongTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw 0vw 1vw 0vw;
+  background: #f1f1f1;
+}
+
+#page_50058 .MS-content .modal-body {
+  padding: 2vw !important;
+}
+
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#page_50058 .MS-content .modal {
+  top: 4vw
+}
+
+#page_50058 #descktop-brands-slider .MS-content .item {
+  display: flex;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  height: 4vw;
+  white-space: normal;
+  text-align: center;
+  margin: 15px;
+  border: 1px solid #b5b5b5;
+  background-color: #333;
+  padding: 0vw .2vw;
+  justify-content: center;
+  align-items: center;
+  color: #fff
+}
+
+#page_50058 #descktop-brands-slider .MS-content .item:hover {
+  background-color: #E62129 !important
+}
+
+#page_50058 .MS-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 6vw;
+  overflow: hidden;
+}
+
+.home-cat>div:nth-child(2)>a:before {
+  background-image: url(/site-uploads/1001319/Images/harvisting.jpg);
+}
+
+.home-cat>div:nth-child(3)>a:before {
+  background-image: url(/site-uploads/1001319/Images/haying.jpg);
+}
+
+.home-cat>div:nth-child(4)>a:before {
+  background-image: url(/site-uploads/1001319/Images/utility_1.jpg);
+}
+
+.home-cat>div:nth-child(5)>a:before {
+  background-image: url(/site-uploads/1001319/Images/yardwork.jpg);
+}
+
+.home-cat>div:nth-child(6)>a:before {
+  background-image: url(/site-uploads/1001319/Images/implements.jpg);
+}
+
+.footer-bottom {
+  padding: 1.2vw 4vw;
+  background-color: #000;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+#descktop-brands-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+.cta-btns a i:hover {
+  color: #fff;
+}
+
+#parent .cta-btns a:hover {
+  background: #c7181f !important;
+}
+
+.cta-btns a.main-btn {
+  color: #fff !important;
+}
+
+.breadcrumbParent h1 {
+  text-transform: uppercase;
+}
+
+#side_Taps .QS-link-viewer a {
+  display: block;
+}
+
+.stock-num {
+  width: 11vw !important;
+}
+
+.sp-btn {
+  display: inline-block;
+  background-color: #E62129;
+  font-size: 22px;
+  padding: 1.5vh 2.5vh;
+  margin: 2vh;
+  color: #fff;
+  transition: all 0.2s ease-in
+}
+
+@media (max-width: 767px) {
+  #page_50058 #descktop-brands-slider .MS-content .item {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    overflow: hidden;
+    height: 100%;
+    white-space: normal;
+    text-align: center;
+    margin: 15px;
+    border: 1px solid #b5b5b5;
+    background-color: #fff;
+    padding: 1.6vw 11.6vw .6vw 1vw;
+  }
+
+  #page_50058 .mini-slid .MS-controls button {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    font-size: 4.8vw;
+    color: #aaa;
+    transition: 0.15s linear;
+  }
+
+  #filters select,
+  .sortby-row select,
+  .sortby-row input,
+  .sortby-row li a {
+    font-size: 4vw;
+  }
+
+  .adsSearchButton .glyphicon {
+    font-size: 4.1vw !important;
+  }
+
+  .stock-num {
+    width: 29vw !important;
+  }
+
+  .breadcrumbParent {
+    display: flex !important;
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  .our-price-div .our-price,
+  .retail {
+    font-size: 5.2vw;
+  }
+
+  .model-details-content .request-quote-btn .glyphicon {
+    padding: 2vw;
+  }
+
+  .rt-action-btn .glyphicon {
+    padding: 2vw;
+  }
+}
+
+.panel-group .panel-heading+.panel-collapse>.panel-body,
+.panel-group .panel-heading+.panel-collapse>.list-group {
+  border-top: 1px solid #c51230 !important
+}
+
+.panel-group .panel-footer+.panel-collapse .panel-body {
+  border-bottom: 1px solid #c51230 !important
+}
+
+.panel-default {
+  border-color: none !important
+}
+
+.panel-default>.panel-heading {
+  color: #c51230 !important;
+  background-color: #282828 !important
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+  border-top-color: #ddd
+}
+
+.panel-default>.panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #282828 !important
+}
+
+
+.headBTN {
+  width: 100%;
+  margin: 10px 0;
+  background-color: #262626;
+  color: #FFF;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 3rem;
+  transition: 0.3s ease-in-out;
+}
+
+.headBTN:hover {
+  background-color: #403F3E;
+}
+
+.headBTN:focus {
+  outline-style: none;
+}
+
+.posts_outer {
+  display: none;
+  min-width: 100%;
+}
+
+.posts {
+  background-color: transparent;
+  padding: 10px;
+  display: flex;
+  min-width: 100%;
+  border-radius: 25px;
+}
+
+.posts hr {
+  margin: auto 20px;
+  border-top: 1px solid #ddd;
+}
+
+.posts h2 {
+  font: 5em;
+}
+
+.posts p {
+  font: 5em;
+  margin: 10px 10px;
+}
+
+.posts .inner {
+  background-color: #eee;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .posts h2 {
+    font-size: 3em;
+  }
+
+  .posts p {
+    font: 0.5em;
+    margin: 10px 10px;
+  }
+}

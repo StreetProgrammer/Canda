@@ -1,0 +1,38 @@
+- var pageTitle = 'ADV - Services'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body 
+        .page-wrapper.adv-services-page
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    .row.rtl                            
+                        .col-md-10.offset-md-1.text-center.mb-3.py-5
+                            .choose-service.py-5
+                                h3.my-2 طلب تصميم خاص
+
+                                .links-wrapper.text-center.pt-3
+                                    a.text-center
+                                        img(src="./images/home/sub-2-2.png", alt="", srcset="")
+                                        span خدمات الطباعة
+                                        button.btn.btn-primary.btn-sm(data-toggle="modal" data-target="#print") اختر الخدمة
+                                    a.text-center
+                                        img(src="./images/home/sub-2-3.png", alt="", srcset="")
+                                        span خدمات الدعايا
+                                        button.btn.btn-primary.btn-sm(data-toggle="modal" data-target="#advertising") اختر الخدمة
+                                    a.text-center
+                                        img(src="./images/home/sub-2-4.png", alt="", srcset="")
+                                        span خدمات البحث العلمي
+                                        button.btn.btn-primary.btn-sm اختر الخدمة
+                         
+                include pug/components/upload-to-print
+
+            include pug/layout/footer           
+        include pug/layout/js

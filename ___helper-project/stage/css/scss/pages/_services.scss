@@ -1,0 +1,19 @@
+.service {
+    padding: 1rem;
+    margin: 1rem 0rem;
+
+    img {
+        width: 100px;
+    }
+
+    h4 {
+        color: $secFont;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    p {
+        color: $thiFont;
+        font-size: 80%;
+    }
+}

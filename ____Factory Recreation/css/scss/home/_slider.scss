@@ -1,0 +1,94 @@
+/*Start Slider*/ 
+#comp_1631559189130, #comp_1634590909988, #comp_1634824973793 {
+  @media (max-width: 767px) {
+    display: none;
+  }
+  .container-fluid{
+    background-color: var(--gray-5);
+    padding: 5vw 0px 5vw !important;
+    >.carousel.slide {
+      width: 90%;
+      margin: auto;
+      border: 0.5vw solid var(--black);
+      margin-bottom: -1px;
+    }
+    .carousel-control{
+      position: absolute;
+      opacity: 1;
+      background-image: none;
+      color: rgba(255, 255, 255, 0.7);
+      transition: all ease-in 0.3s;
+      width: 50px;
+      &:hover{
+        color: var(--black);
+        &:after {
+          background-color: var(--main-color);
+          color: var(--white);
+        }
+      }
+      &:after{
+        position: absolute;
+        top: 50%;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--main-color);
+        background-color: var(--white);
+        width: 20px;
+        height: 30px;
+        font-size: 40px;
+        transition: all ease-in-out 0.2s;
+      }
+      &.right{
+        right: 2vw;
+        &:after{
+          font-family: 'Font Awesome 5 Pro';
+          content: "\f138";
+        }
+      }
+      &.left{
+        left: 3vw;
+        &:after{
+          font-family: 'Font Awesome 5 Pro';
+          content: "\f137";
+        }
+      }
+      img{
+        display: none;
+      }
+    }
+    .carousel-indicators{
+      margin-left: 0%;
+      display: none;
+      li {
+        border-radius: 0;
+        width: 2vw;
+        height: 0.5vw;
+        background-color: rgba(207, 207, 207, 0.8);
+        border: 0;
+        margin: 1px;
+        &.active {
+          border-radius: 0;
+          width: 2vw;
+          height: 0.5vw;
+          background-color: var(--secondary-color);
+          border: 0;
+          margin: 1px;
+        }
+      }
+    }
+    .carousel-inner{
+      margin-bottom: -1px;
+      &>.item{
+        &>img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  
+  
+}
+/* End Slider*/

@@ -1,0 +1,112 @@
+- var pageTitle = 'Account - Wallet Add'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body 
+        .page-wrapper.wallet-add-page
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    .row
+                        .col-md-12
+                            .spo-container.rtl
+                                h4.sec-font.my-3 حسابي
+                                .inner-menu-container
+                                    include pug/components/user-inner-menu
+                                    .inner-menu-content
+                                        include pug/components/user-top-tabs
+                                        .back-to
+                                            a(href="")
+                                                span.arrow <i class="fas fa-long-arrow-alt-right"></i>
+                                                | الرجوع إلى طلباتي
+                                        .mb-3
+                                            .wallet-add-container
+                                                .custom-collapse-panel
+                                                    #accordion.panel-group(aria-multiselectable='true', role='tablist')
+                                                        // cash-u
+                                                        .panel.panel-default
+                                                            #cash-u.panel-heading.box-shadow.white-bg(role='tab')
+                                                                div
+                                                                    img(src="./images/cashu.png", alt="", srcset="")
+                                                                    span بطاقة كاش يو
+                                                                a.btn.btn-primary.btn-sm(aria-controls='collapse-cash-u', aria-expanded='true', data-parent='#accordion', data-toggle='collapse', href='#collapse-cash-u') + إضافة مبلغ
+                                                            #collapse-cash-u.panel-collapse.collapse.in(aria-labelledby='cash-u', role='tabpanel')
+                                                                .panel-body
+                                                                    .form-card
+                                                                        .card.card-inner.box-shadow
+                                                                            .card-header 
+                                                                                div
+                                                                                    span.icon <i class="fas fa-wallet"></i>
+                                                                                    span إضافة مبلغ للمحفظة
+                                                                                span.close(close="collapse-cash-u") <i class="fas fa-times"></i>
+                                                                            .card-body
+                                                                                .rtl
+                                                                                    form
+                                                                                        .form-row
+                                                                                            .col-md-6
+                                                                                                label.f-label(for='amount') المبلغ
+                                                                                                input#amount.form-control(type='text' required='')
+                                                                                            .col-md-6.mb-5
+                                                                                                img.pull-left(src="./images/cashu.png", alt="", srcset="")
+                                                                                            .col-md-6
+                                                                                                label.f-label(for='name') اسم صاحب البطاقة
+                                                                                                input#name.form-control(type='text' name='name' required='')
+                                                                                            .col-md-6.mb-5
+                                                                                                label.f-label(for='id-number') رقم البطاقة
+                                                                                                input#id-number.form-control(type='number' required='')
+                                                                                            .col-md-6
+                                                                                                label.f-label(for='expire-date') تاريخ الإنتهاء
+                                                                                                input#expire-date.form-control(type='date' required='')
+                                                                                            .col-md-6
+                                                                                                label.f-label(for='number') الرقم السري
+                                                                                                input#number.form-control(type='text' required='')
+                                                                                        button.btn.btn-primary.btn-block.mt-5(type='submit') إضافة 
+                                                                            
+                                                        // credit-card
+                                                        .panel.panel-default
+                                                            #heading-credit-card.panel-heading.box-shadow.white-bg(role='tab')
+                                                                div
+                                                                    img(src="./images/credit-card.png", alt="")
+                                                                    span بطاقة الإئتمان
+                                                                a.btn.btn-primary.btn-sm.collapsed(aria-controls='collapse-credit-card', aria-expanded='false', data-parent='#accordion', data-toggle='collapse', href='#collapse-credit-card') + إضافة مبلغ 
+                                                            #collapse-credit-card.panel-collapse.collapse(aria-labelledby='heading-credit-card', role='tabpanel')
+                                                                .panel-body
+                                                                    .form-card
+                                                                        .card.card-inner.box-shadow
+                                                                            .card-header 
+                                                                                div
+                                                                                    span.icon <i class="fas fa-wallet"></i>
+                                                                                    span إضافة مبلغ للمحفظة
+                                                                                span.close(close="collapse-credit-card") <i class="fas fa-times"></i>
+                                                                            .card-body
+                                                                                .rtl
+                                                                                    form
+                                                                                        .form-row
+                                                                                            .col-sm-6
+                                                                                                label.f-label(for='amount') المبلغ
+                                                                                                input#amount.form-control(type='text' required='')
+                                                                                            .col-sm-6.mb-5
+                                                                                                img.pull-left(src="./images/visa.png", alt="", srcset="")
+                                                                                            .col-sm-6
+                                                                                                label.f-label(for='name') اسم صاحب البطاقة
+                                                                                                input#name.form-control(type='text' name='name' required='')
+                                                                                            .col-sm-6.mb-5
+                                                                                                label.f-label(for='id-number') رقم البطاقة
+                                                                                                input#id-number.form-control(type='number' required='')
+                                                                                            .col-sm-6
+                                                                                                label.f-label(for='expire-date') تاريخ الإنتهاء
+                                                                                                input#expire-date.form-control(type='date' required='')
+                                                                                            .col-sm-6
+                                                                                                label.f-label(for='number') الرقم السري
+                                                                                                input#number.form-control(type='text' required='')
+                                                                                        button.btn.btn-primary.btn-block.mt-5(type='submit') إضافة 
+                                                                            
+            
+            include pug/layout/footer           
+        include pug/layout/js

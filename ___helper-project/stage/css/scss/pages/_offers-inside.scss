@@ -1,0 +1,29 @@
+.offers-inside-info {
+    .back-to {
+        font-size: 20px;
+
+        span {
+            font-size: 25px;
+            color: $secFont;
+        }
+    }
+
+    h3 {
+        color: $priFont;
+        // font-weight: bold;
+    }
+
+    .info-wrapper {
+        // display: flex;
+        // flex-direction: column;
+
+        img {
+            width: 200px;
+            // margin: auto 20px;
+        }
+
+        p {
+            color: $thiFont;
+        }
+    }
+}

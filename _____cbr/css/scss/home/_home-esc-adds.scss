@@ -1,0 +1,216 @@
+/* start home SRP */
+#comp_1644130664490 {
+  ._comp_1644130664490-container {
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%), url("/site-uploads/1001368/images/home-bg-2.png");
+    padding: 1vw 0;
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        font-family: var(--secondary-font);
+        color: var(--main-font-color);
+        font-weight: 700;
+        font-size: 3.4722222222222vw;
+      }
+    }
+
+    .fitment-land {
+      .fitment-div {
+        width: 90vw;
+        margin: auto;
+
+        #fitmentForm {
+          min-height: 150px;
+
+          .row.drops-box {
+            justify-content: center;
+
+            .fitment-drop {
+              flex: none;
+              min-width: 15vw;
+
+              &:last-child {
+                min-width: auto;
+              }
+
+              button {
+                &.f-button {
+                  &.search {
+                    min-width: auto;
+                  }
+
+                  &.f-reset {
+                    display: none !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .bottom {
+      display: flex;
+      flex-direction: column;
+      border-top: 3px solid var(--main-color);
+      margin: auto;
+      width: 80%;
+      align-items: center;
+
+      h3 {
+        font-family: var(--secondary-font);
+        color: var(--main-font-color);
+        font-weight: 600;
+        font-size: 1.9444444444444vw;
+        text-transform: uppercase;
+      }
+
+      div {
+        display: flex;
+
+        img {
+          width: 65%;
+          flex: 3;
+          margin: 0.5vw 0.5vw;
+        }
+
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0;
+          justify-content: space-between;
+          flex: 2;
+
+          li {
+            width: 28%;
+            display: flex;
+            align-items: center;
+            margin: 0.25vw 0;
+            font-size: 1.1111111111111vw;
+
+            span {
+              &:first-child {
+                @extend .circle-label;
+                position: relative;
+                top: auto;
+                right: auto;
+                width: 2.25vw;
+                height: 2.25vw;
+                margin-right: 0.25vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    ._comp_1644130664490-container {
+      background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%), url("/site-uploads/1001368/images/home-bg-2.png");
+      padding: 1vw 2.5vw;
+
+      .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+          font-family: var(--secondary-font);
+          color: var(--main-font-color);
+          font-weight: 700;
+          font-size: 3.4722222222222vw;
+        }
+      }
+
+      .fitment-land {
+        .fitment-div {
+          width: 90vw;
+          margin: auto;
+
+          #fitmentForm {
+            min-height: 150px;
+
+            .row.drops-box {
+              justify-content: center;
+              margin: 0;
+
+              .fitment-drop {
+                flex: none;
+                min-width: 15vw;
+
+                &:last-child {
+                  min-width: auto;
+                }
+
+                button {
+                  &.f-button {
+                    &.search {
+                      min-width: auto;
+                      margin: auto;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: auto;
+        align-items: center;
+        margin-top: 10px;
+
+        h3 {
+          font-family: var(--secondary-font);
+          color: var(--main-font-color);
+          font-weight: 600;
+          font-size: 18px;
+          text-transform: uppercase;
+        }
+
+        div {
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            width: auto;
+            flex: 3;
+            margin: 0.5vw 0.5vw;
+          }
+
+          ul {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            justify-content: space-between;
+            flex: 2;
+
+            li {
+              font-size: 14px;
+
+              span {
+                &:first-child {
+                  width: 25px;
+                  height: 25px;
+                  margin-right: 2px;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* */

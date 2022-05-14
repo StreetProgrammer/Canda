@@ -1,0 +1,35 @@
+.fileParents_512303199.tz-gallery.justified-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.fileParents_512303199.tz-gallery.justified-gallery a {
+  display: block !important;
+  position: relative;
+  padding: 1vw !important;
+  margin: 0.5vw !important;
+  border: 1px solid #ddd;
+  width: 15% !important;
+  left: auto !important;
+  justify-content: center;
+  align-items: center;
+  height: 10vw !important;
+  overflow: hidden !important;
+}
+
+.fileParents_512303199.tz-gallery.justified-gallery a img {
+  padding: 1vw !important;
+  /* margin: 0.2vw !important;
+    display: block !important; */
+  overflow: hidden !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  margin: auto !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto !important;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        :root {
+            /* --main-color: #ff0; */
+            --main-color: #ff2323;
+        }
+
+        .equipment {
+            border: 3px solid #000;
+            margin: 3vh 0;
+        }
+
+        .equipment a {
+            text-decoration: none;
+        }
+
+        .equipment a:hover {
+            opacity: 0.8;
+            text-decoration: none;
+        }
+
+        .equipment a img {
+            max-width: 100%;
+        }
+
+        .equipment a span.title {
+            text-transform: uppercase;
+            font-size: 3vh;
+            color: #fff;
+            background-color: #000;
+            display: block;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .equipment a span.title span:nth-child(1) {
+            color: var(--main-color);
+        }
+
+        .equipment a span.breif {
+            padding: 0.5vh 3vh;
+            display: block;
+            color: #000;
+            min-height: 8vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="equipment">
+                    <a href="">
+                        <img src="./imgs/new-equipment.jpg" alt="">
+                        <span class="title">
+                            <span>new</span>
+                            <span>equipment</span>
+                        </span>
+                        <span class="breif">
+                            The most productive machines
+                            on the planet.
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="equipment">
+                    <a href="">
+                        <img src="./imgs/used-equipment.jpg" alt="">
+                        <span class="title">
+                            <span>used</span>
+                            <span>equipment</span>
+                        </span>
+                        <span class="breif">
+                            Huge Selection, Huge Deals
+                            Lots of photos and info.
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="equipment">
+                    <a href="">
+                        <img src="./imgs/tech-tips.jpg" alt="">
+                        <span class="title">
+                            <span>tech</span>
+                            <span>tips</span>
+                        </span>
+                        <span class="breif">
+                            - Get the most out of your equipment.
+                            <br>
+                            - Farm more efficiently.
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

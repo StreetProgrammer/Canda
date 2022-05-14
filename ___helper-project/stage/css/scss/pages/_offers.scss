@@ -1,0 +1,70 @@
+.offers-service {
+    h3 {
+        color: $secFont;
+        font-weight: bold;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    .links-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media #{$large_mobile} {
+            flex-direction: column;
+        }
+
+        @media #{$small_mobile} {
+            flex-direction: column;
+        }
+
+        a {
+            cursor: auto;
+            width: 30%;
+            padding: 5px;
+            min-height: 200px;
+            position: relative;
+            border-radius: 10px;
+
+            // @media #{$small_mobile} {
+            //     min-height: 150px;
+            // }
+
+            @media #{$large_mobile} {
+                width: 47%;
+                margin-bottom: 10px;
+            }
+
+            @media #{$small_mobile} {
+                // min-height: 150px;
+                width: 47%;
+                margin-bottom: 10px;
+            }
+
+            img {
+                width: 60%;
+
+                @media #{$small_mobile} {
+                    width: 70%;
+                }
+
+            }
+
+            span {
+                display: block;
+                margin-top: 20px;
+                font-weight: bold;
+                color: $secFont;
+            }
+
+            button {
+                margin-top: 5px;
+
+            }
+        }
+    }
+
+}

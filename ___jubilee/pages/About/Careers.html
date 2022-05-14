@@ -1,0 +1,1260 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>Careers</title>
+  <script
+    src="/minify/?f=/js/jquery/jquery.js,/js/fancybox/jquery.fancybox.js,/js/sweetalert2/dist/sweetalert2.min.js,/js/jquery/jquery.matchHeight.js,/js/jquery/jqvalidate/jquery.validate.min.js,/js/jquery/jqvalidate/jquery.metadata.js,/js/jquery/jquery.form.js,/js/jquery/jquery-ui.js,/js/bootstrap/bootstrap.min.js,/js/bootboxjs/bootbox.js&amp;1593434423"
+    type="text/javascript"></script>
+  <link rel="stylesheet"
+    href="/minify/?f=/js/fancybox/jquery.fancybox.css,/css/front_style.css,/js/sweetalert2/dist/sweetalert2.min.css,/site-uploads/1001271/includes/ihover.css,/site-uploads/1001271/includes/main.css,/js/bootstrap/css/bootstrap.min.css&amp;1608653142"
+    type="text/css">
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="https://www.google.com/s2/favicons?domain_url=simplywebeditor.com"
+    type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="/css/960.php?sid=1001271" rel="stylesheet" type="text/css">
+  <script src="https://maps.google.com/maps/api/js?key=AIzaSyCIUw4Put45r5f4Me5ZSON84FD3s-wRUSE"
+    type="text/javascript"></script>
+  <script type="text/javascript" top="">
+    window.website_settings = { "set_phone_number": "(800) 716-4316", "set_address": "615 Hwy 11\/71 W Fort Frances, ON P9A3N1", "set_phone_number2": "(800) 716-4316", "set_sunday_hours": "Closed", "set_monday_hours": "8:30AM - 5:00PM", "set_tuesday_hours": "8:30AM - 5:00PM", "set_wednesday_hours": "8:30AM - 5:00PM", "set_thursday_hours": "8:30AM - 5:00PM", "set_friday_hours": "8:30AM - 5:00PM", "set_saturday_hours": "     9:00AM - 1:00PM", "website_name": "Badiuk", "conversion_label": "", "google_tag": "" };
+  </script>
+  <style>
+    @media (min-width: 1200px) {
+      .container {
+        width: 1280px;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .container {
+        width: 1280px;
+      }
+    }
+  </style>
+  <style>
+    #LeftDiv,
+    #RightDiv,
+    #CenterDiv,
+    #HeaderDiv,
+    #FooterDiv {
+      min-height: 15vh;
+    }
+
+    .collapse {
+      display: block !important;
+      visibility: visible !important;
+      height: auto !important;
+    }
+
+    .movableComp {
+      position: relative;
+    }
+
+    .centeredOverlay {
+      position: absolute;
+      /*background-color: rgba(255, 0, 0, 0.3);  					dim the background*/
+      display: block !important;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: black;
+      text-align: center;
+      z-index: 999;
+    }
+
+    .cd-product-builder .main-header,
+    .cd-builder-footer {
+      display: none !important;
+    }
+  </style>
+  <script src="//cdn.ckeditor.com/4.11.1/full/ckeditor.js"></script>
+  <style>
+    .cke {
+      visibility: hidden;
+    }
+  </style>
+  <script type="text/javascript">
+    CKEDITOR.on('instanceCreated', function (event) {
+      var editor = event.editor,
+        element = editor.element;
+
+
+      editor.on('configLoaded', function () {
+        editor.config.allowedContent = true;
+        editor.config.enterMode = CKEDITOR.ENTER_SPAN;
+        editor.config.filebrowserBrowseUrl = '/fmanager/index/hideDes/true/sid/1001271';
+        editor.config.filebrowserUploadUrl = '/helper/ck-uploader/type/image/sid/1001271/';
+        editor.config.filebrowserFlashUploadUrl = '/helper/ck-uploader/type/media/sid/1001271/';
+        editor.config.filebrowserImageUploadUrl = '/helper/ck-uploader/type/image/sid/1001271/';
+        editor.config.filebrowserUploadMethod = 'form';
+        //editor.config.extraPlugins='mysave,mailform,cancel';
+        //editor.config.extraPlugins = 'sourcedialog';
+        //editor.config.extraPlugins = 'iframedialog';
+        editor.config.toolbar = [
+
+          ['Source', '-', 'mysave', 'cancel', 'NewPage', 'Preview', '-', 'Templates', 'mailform'],
+          ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Print', 'SpellChecker', 'Scayt'],
+          ['Undo', 'Redo', '-', 'Find', 'Replace', '-', 'SelectAll', 'RemoveFormat'],
+          ['Bold', 'Italic', 'Underline', 'Strike', '-', 'Subscript', 'Superscript'],
+          '/',
+          ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', 'Blockquote', 'CreateDiv'],
+          ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+          ['BidiLtr', 'BidiRtl'],
+          ['Link', 'Unlink', 'Anchor'],
+          ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak'],
+          '/',
+          ['Styles', 'Format', 'Font', 'FontSize'],
+          ['TextColor', 'BGColor'],
+          ['Maximize', 'ShowBlocks', '-', 'About']
+        ];
+
+
+      });
+
+      editor.on('blur', function () {
+        $('.droppableComp ,.droppableHtml').sortable('enable');
+        parent.makeItDirty();
+      });
+      editor.on('focus', function () {
+        $('.droppableComp ,.droppableHtml').sortable('disable');
+      });
+
+    });
+    window.refreshSortable = function (e) {
+
+      var elem = $('div.droppableHtml:data(sortable)');
+      if (elem.length) {
+        $('.droppableComp ,.droppableHtml').sortable('destroy');
+      }
+
+      $('.droppableComp ,.droppableHtml').unbind();
+
+      $('.droppableComp ,.droppableHtml').sortable({
+        connectWith: '.droppableComp ,.droppableHtml',
+        cursor: 'move',
+        revert: true,
+        scroll: true,
+        forcePlaceholderSize: true,
+        placeholder: 'ui-state-highlight',
+        start: function (event, ui) {
+          destroyEditorInstances();
+        },
+        stop: function (event, ui) {
+          CKEDITOR.inlineAll();
+          parent.makeItDirty();
+        },
+      });
+
+    }
+
+    $(function () {
+      //$('.droppableComp ,.droppableHtml').bind('DOMSubtreeModified', refreshSortable);   
+      $('.droppableComp ,.droppableHtml').sortable({
+        connectWith: '.droppableComp ,.droppableHtml',
+        cursor: 'move',
+        revert: true,
+        scroll: true,
+        forcePlaceholderSize: true,
+        placeholder: 'ui-state-highlight',
+        start: function (event, ui) {
+          destroyEditorInstances();
+        },
+        stop: function (event, ui) {
+          CKEDITOR.inlineAll();
+          parent.makeItDirty();
+        },
+      });
+    })
+
+
+    function destroyEditorInstances() {
+      for (var instance in CKEDITOR.instances) {
+        CKEDITOR.instances[instance].destroy();
+
+      }
+    }
+
+    window.refreshEditors = function () {
+
+      destroyEditorInstances();
+      CKEDITOR.inlineAll();
+      return true;
+    }
+    window.getHtml = function () {
+
+      destroyEditorInstances();
+
+      htmlString = $('head')[0].outerHTML + ($('body').html($('#parent')[0].outerHTML)[0].outerHTML);
+      CKEDITOR.inlineAll();
+      return htmlString;
+    }
+    window.setIncludes = function (includes) {
+      if ($.trim(includes)) {
+        $('head .include').remove();
+        $('head').prepend(includes);
+      }
+    }
+
+
+  </script>
+  <script src="/js/custom/front_end.js.php?sid=1001271&amp;pid=45766&amp;time=1608653841"
+    type="text/javascript"></script>
+  <link rel="canonical" href="http://simplywebeditor.com/Careers/">
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Careers",
+            "item": "http://simplywebeditor.com/Careers/"
+        }
+    ]
+}
+</script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2RCKJC5BFW" top=""></script>
+  <script top="">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-2RCKJC5BFW', {
+      groups: 'GA',
+      page_title: 'Careers',
+      page_location: 'http://simplywebeditor.com/Careers/',
+      page_path: '/Home/Careers/',
+    });
+
+  </script>
+  <link href="/css/jquery/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+  <style>
+    #page_45645 #CenterDiv {
+      padding: 0;
+      width: 100% !important;
+    }
+
+    .team-content .name {
+      font-size: 1vw;
+    }
+
+    .team-content .title {
+      font-size: .8vw;
+    }
+
+    .mini-team .picture {
+      display: inline-block;
+      height: 147px;
+      width: 216px;
+      margin-bottom: 3px;
+      z-index: 1;
+      position: relative;
+    }
+
+    .footer-content-container ul li a {
+      text-transform: uppercase;
+    }
+
+    .panel-default {
+      border-color: #ddd;
+      padding: 0 !important;
+    }
+
+    .mini-team:hover .picture::before {
+      height: 100%;
+    }
+
+    .mini-team:hover .picture img {
+      -webkit-box-shadow: 0 0 0 14px #f7f5ec;
+      box-shadow: 0 0 0 14px #f7f5ec;
+      -webkit-transform: scale(0.7);
+      transform: scale(0.7);
+    }
+
+    .mini-team:hover .social {
+      bottom: 0;
+    }
+
+    .our-team .social li a:hover {
+      color: var(--main-color);
+      background-color: #f7f5ec;
+    }
+
+    .mini-team .picture img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      border: 2px solid var(--main-color);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: all 0.9s ease 0s;
+      transition: all 0.9s ease 0s;
+    }
+
+    .mini-team .picture::before {
+      content: "";
+      width: 100%;
+      height: 0;
+      border-radius: 50%;
+      background-color: var(--main-color);
+      position: absolute;
+      bottom: 135%;
+      right: 0;
+      left: 0;
+      opacity: 0.9;
+      -webkit-transform: scale(3);
+      transform: scale(3);
+      -webkit-transition: all 0.3s linear 0s;
+      transition: all 0.3s linear 0s;
+    }
+
+    .mini-team .picture::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: var(--main-color);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .mini-team {
+      padding: 30px 22px 42px;
+      margin-bottom: 30px;
+      background-color: #f7f5ec;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+      height: 16vw;
+    }
+
+    .oem {
+      display: block;
+      margin: 0 auto;
+      padding: 0 7vw;
+    }
+
+    .oem img {
+      width: 20vw;
+      margin: .5vw;
+      padding: 1.5vw;
+    }
+
+    p {
+      margin: 0 0 10px;
+      font-size: 1.1vw;
+    }
+
+    .black-btn a {
+      display: block;
+      margin: 0 auto;
+      font-size: 1.25vw;
+      padding: 20px 20px;
+      background-color: var(--black);
+      max-width: 20vw;
+      text-align: center;
+      color: #ddd;
+      text-transform: uppercase;
+      text-decoration: none;
+      -webkit-transition: all ease-in 0.3s;
+      transition: all ease-in 0.3s;
+    }
+
+    .black-btn a:hover {
+      background-color: var(--main-color);
+      color: var(--black);
+    }
+
+    body {
+      background-image: none !important;
+      background-color: #FFFFFF !important;
+      background-repeat: no-repeat !important;
+    }
+
+    #siteMenu {
+      background-image: none !important;
+      background-color: #FFFFFF !important;
+    }
+
+    .mainMenu li {
+      background-color: #000000 !important;
+      border-color: #FFFFFF !important;
+      text-align: center !important;
+    }
+
+    .mainMenu li li {
+      background-color: #000000 !important;
+      border-color: #FFFFFF !important;
+      text-align: center !important;
+    }
+
+    .mainMenu a,
+    mainMenu a:visited {
+      font-size: 10px !important;
+      font-family: Verdana, Arial, sans-serif !important;
+      font-weight: normal !important;
+      text-decoration: none !important;
+      font-style: normal !important;
+      color: #990000 !important;
+    }
+
+    .mainMenu a:hover {
+      color: #990000 !important;
+      background-color: #000000 !important;
+      border-color: #FFFFFF !important;
+    }
+
+    .ui-layout-pane {
+      background-image: none !important;
+      background-color: #ff0000 !important;
+    }
+
+    .headerFont {
+      background-image: none !important;
+      font-family: Verdana, Arial, sans-serif !important;
+      font-weight: normal !important;
+      text-decoration: none !important;
+      font-style: normal !important;
+      font-size: 10px !important;
+      color: #000000 !important;
+      background-color: #FFFFFF !important;
+    }
+
+    .pragraphFont {
+      font-family: Verdana, Arial, sans-serif !important;
+      font-weight: normal !important;
+      color: #000000 !important;
+      font-size: 10px !important;
+      text-decoration: none !important;
+      font-style: normal !important;
+    }
+
+    .linksFont {
+      font-size: 10px !important;
+      font-family: Verdana, Arial, sans-serif !important;
+      font-weight: normal !important;
+      color: #000000 !important;
+      text-decoration: underline !important;
+      font-style: normal !important;
+    }
+
+    #CenterDiv {
+      width: 90vw;
+      min-height: 30vw;
+      margin: 0 auto;
+      float: none;
+    }
+
+    /*title*/
+    .title-container {
+      padding: 1.5vw 0px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    h1.page-title {
+      background-color: #f6f6f6;
+      width: 100%;
+      padding: 0.5vw 0.5vw 0.5vw 1.2vw;
+      border-left: 0.5vw solid #ffcc00;
+      margin-top: 1vw;
+      margin-bottom: 2vw;
+      font-size: 2.5vw;
+      color: #000000;
+    }
+
+    .title-container h3 {
+      background-color: #f6f6f6;
+      width: 100%;
+      padding: 0.5vw 0.5vw 0.5vw 1.2vw;
+      border-left: 0.5vw solid #ffcc00;
+      margin-top: 1vw;
+      margin-bottom: 2vw;
+      font-size: 2.5vw;
+      color: #000000;
+    }
+
+    .maint-ttl {
+      background-color: #fc0;
+      padding: 1vw;
+      text-align: center;
+    }
+
+    /* Start Our Team */
+    .our-team {
+      padding: 30px 0 40px;
+      margin-bottom: 30px;
+      background-color: #f7f5ec;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .our-team .picture {
+      display: inline-block;
+      height: 230px;
+      width: 230px;
+      margin-bottom: 50px;
+      z-index: 1;
+      position: relative;
+    }
+
+    .our-team .picture::before {
+      content: "";
+      width: 100%;
+      height: 0;
+      border-radius: 50%;
+      background-color: var(--main-color);
+      position: absolute;
+      bottom: 135%;
+      right: 0;
+      left: 0;
+      opacity: 0.9;
+      -webkit-transform: scale(3);
+      transform: scale(3);
+      -webkit-transition: all 0.3s linear 0s;
+      transition: all 0.3s linear 0s;
+    }
+
+    .our-team:hover .picture::before {
+      height: 100%;
+    }
+
+    .our-team:hover .picture img {
+      -webkit-box-shadow: 0 0 0 14px #f7f5ec;
+      box-shadow: 0 0 0 14px #f7f5ec;
+      -webkit-transform: scale(0.7);
+      transform: scale(0.7);
+    }
+
+    .our-team:hover .social {
+      bottom: 0;
+    }
+
+    .our-team .social li a:hover {
+      color: var(--main-color);
+      background-color: #f7f5ec;
+    }
+
+    .our-team .picture::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: var(--main-color);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .our-team .picture img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      border: 2px solid var(--main-color);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: all 0.9s ease 0s;
+      transition: all 0.9s ease 0s;
+    }
+
+    .our-team .title {
+      display: block;
+      font-size: 15px;
+      color: #4e5052;
+      text-transform: capitalize;
+    }
+
+    .our-team .social {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      background-color: var(--main-color);
+      position: absolute;
+      bottom: -100px;
+      left: 0;
+      -webkit-transition: all 0.5s ease 0s;
+      transition: all 0.5s ease 0s;
+    }
+
+    .our-team .social li {
+      display: inline-block;
+    }
+
+    .our-team .social li a {
+      display: block;
+      padding: 10px;
+      font-size: 17px;
+      color: white;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      text-decoration: none;
+    }
+
+    .hours-item-title h3 {
+      margin: 0;
+      font-size: 3vh;
+      margin: 2vh 0;
+      text-align: left;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .map-hours-container .hours-container .hours-item .hours-item-title h3 {
+      margin: 0;
+      font-size: 3vh;
+      margin: 2vh 0;
+      text-align: left;
+    }
+
+    .map-hours-container .hours-container {
+      margin-bottom: 5vw;
+    }
+
+    .map-hours-container .hours-container {
+      display: flex;
+      flex-direction: column;
+      padding: 2vw 3vw;
+    }
+
+    .map-hours-container .hours-container .hours-item .hours-ul {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .map-hours-container .hours-container .hours-item .hours-ul li span:nth-child(1) {
+      float: left;
+      font-weight: bold;
+    }
+
+    .map-hours-container .hours-container .hours-item .hours-ul li span:nth-child(2) {
+      float: right;
+    }
+
+    .map-hours-container .hours-container .hours-item a {
+      margin-bottom: 2vm;
+      width: 2vw;
+      background: var(--main-color);
+      color: #fff;
+      padding: 1vw 2vw;
+      font-size: 2vw;
+      text-decoration: none;
+      transition: all 0.3s linear;
+    }
+
+    .hours-item a {
+      width: 1vw;
+      background: #000000;
+      color: #fff;
+      padding: 2vw 2vw;
+      font-size: 1vw;
+      text-decoration: none;
+      transition: all 0.3s linear;
+    }
+
+    .hours-item a:hover {
+      background: #F1C40F;
+    }
+
+    .map-hours-container .map-container .map-item .map-item-title h3 {
+      margin: 0;
+      color: var(--main-color);
+      font-size: 3vh;
+      margin: 2vh 0;
+      text-align: left;
+    }
+
+    .map-hours-container .map-container .map-item .map-ul {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .map-hours-container .map-container .map-item .map-ul li span {
+      float: left;
+    }
+
+    .map-hours-container .map-container .map-item .map-ul li span a {
+      color: #000000;
+      text-decoration: none;
+      transition: all linear 0.3s;
+    }
+
+    .map-hours-container .map-container .map-item .map-ul li span a:hover {
+      color: var(--main-color);
+    }
+
+    .map-hours-container .map-container .map-item .map iframe {
+      float: left;
+      height: 25vw;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .btn-contact {
+      font-size: 1.25vw;
+      padding: 20px 20px;
+      background-color: var(--black);
+      max-width: 20vw;
+      text-align: center;
+      color: #ddd;
+      text-transform: uppercase;
+      text-decoration: none;
+      -webkit-transition: all ease-in 0.3s;
+      transition: all ease-in 0.3s;
+    }
+
+    .btn-contact:hover {
+      background-color: #fc0;
+    }
+
+    .parts-btn {
+      background-color: #f5f5f5;
+      width: 100%;
+    }
+
+    /* End Our Team */
+  </style>
+  <meta name="generator" content="Created by :Simply Web Editor , simplywebeditor.com">
+  <script type="text/javascript" src="http://cdn.ckeditor.com/4.11.1/full/config.js?t=IA8F"></script>
+  <link rel="stylesheet" type="text/css" href="http://cdn.ckeditor.com/4.11.1/full/skins/moono-lisa/editor.css?t=IA8F">
+  <script type="text/javascript" src="http://cdn.ckeditor.com/4.11.1/full/lang/en.js?t=IA8F"></script>
+  <script type="text/javascript" src="http://cdn.ckeditor.com/4.11.1/full/styles.js?t=IA8F"></script>
+  <link rel="stylesheet" type="text/css"
+    href="http://cdn.ckeditor.com/4.11.1/full/plugins/scayt/skins/moono-lisa/scayt.css">
+  <link rel="stylesheet" type="text/css" href="http://cdn.ckeditor.com/4.11.1/full/plugins/scayt/dialogs/dialog.css">
+  <link rel="stylesheet" type="text/css"
+    href="http://cdn.ckeditor.com/4.11.1/full/plugins/tableselection/styles/tableselection.css">
+  <link rel="stylesheet" type="text/css"
+    href="http://cdn.ckeditor.com/4.11.1/full/plugins/wsc/skins/moono-lisa/wsc.css">
+  <link rel="stylesheet" type="text/css"
+    href="http://cdn.ckeditor.com/4.11.1/full/plugins/copyformatting/styles/copyformatting.css">
+</head>
+
+<body id="page_45766">
+  <div class="container editable-container" id="parent">
+    <div class="row">
+      <div class="droppableHtml droppableComp col-md-12 ui-sortable ui-sortable-disabled" id="HeaderDiv">
+        <div class="movableHtml common_element ui-sortable-handle" id="html_1607601931945" data-com-id="htmlContainer"
+          data-component-htmlcontainer="" ppanel="htmlContainer">
+          <div contenteditable="true" class="contentHtml" style="position: relative;">
+            <script class="ui-sortable-handle" crossorigin="anonymous"
+              front-src="https://kit.fontawesome.com/7b566b3ac0.js"></script>
+            <script class="ui-sortable-handle" crossorigin="anonymous"
+              front-src="/site-uploads/1001271/frontjs/Search_script.js" defer=""></script>
+            <script class="ui-sortable-handle" front-src="/site-uploads/1001271/frontjs/main.js"></script>
+            <script class="ui-sortable-handle" front-src="/site-uploads/1001271/frontjs/sticky-header.js"></script>
+            <div class="header-0-nav">
+              <div class="top">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="logo"><a href="/page/display/?siteId=1001271&amp;pageId=45645"><img alt="logo"
+                          src="/site-uploads/1001271/images/badiuk-logo.png"> </a></div>
+                  </div>
+
+                  <div class="col-sm-9 hidden-xs">
+                    <div class="row header-contact-info">
+                      <div class="col-sm-4">
+                        <div class="contact-info-item">
+                          <h4 class="title">get directions</h4>
+
+                          <div class="inner"><a class="set_address" href="https://goo.gl/maps/ZVoFBjs4fM8ud4mGA">615 Hwy
+                              11/71 W Fort Frances, ON P9A3N1</a> <span class="icon"> <i aria-hidden="true"
+                                class="fas fa-map-marker-alt">&nbsp;</i> </span></div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                        <div class="contact-info-item">
+                          <h4 class="title">opening hours</h4>
+
+                          <div class="inner toggle-hours" id="toggle-hours"><a> <span id="t_hour">Thursday 8:30AM -
+                                5:00PM</span> </a> <span class="icon"> <i aria-hidden="true"
+                                class="fas fa-clock">&nbsp;</i> </span>
+
+                            <ul class="hours-container">
+                              <li class="hour-item"><span>Monday</span> <span class="set_monday_hours">8:30AM -
+                                  5:00PM</span></li>
+                              <li class="hour-item"><span>Tuesday</span> <span class="set_tuesday_hours">8:30AM -
+                                  5:00PM</span></li>
+                              <li class="hour-item"><span>Wednesday</span> <span class="set_wednesday_hours">8:30AM -
+                                  5:00PM</span></li>
+                              <li class="hour-item"><span>Thursday</span> <span class="set_thursday_hours">8:30AM -
+                                  5:00PM</span></li>
+                              <li class="hour-item"><span>Friday</span> <span class="set_friday_hours">8:30AM -
+                                  5:00PM</span></li>
+                              <li class="hour-item"><span>Saturday</span> <span class="set_saturday_hours"> 9:00AM -
+                                  1:00PM</span></li>
+                              <li class="hour-item"><span>Sunday</span> <span class="set_sunday_hours">Closed</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4">
+                        <div class="contact-info-item" id="abId0.598609747609472">
+                          <h3 class="phone"><a class="set_phone_number" href="tel:800-716-4316">(800) 716-4316</a></h3>
+
+                          <div class="inner" id="abId0.01025978551656137">
+                            <div class="input-group" id="abId0.12146404993718796"><input class="form-control"
+                                id="searchbox" type="text"> <span class="input-group-btn"><button
+                                  class="btn btn-default" id="searchbtn" onclick="srch()" type="button"><i
+                                    class="fas fa-search">&nbsp;</i></button> </span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bottom">
+                <div class="movableComp contentComp" data-com-id="Website Menu" data-component-website-menu=""
+                  data-pagecompid="50124" id="comp_1607520067143" ppanel="Website Menu">
+                  <style type="text/css">
+                    #nav_50124 {
+                      background-color: #000000;
+                      border-color: #333333;
+                      color: #333333;
+                      display: block;
+                      float: none;
+                      font-weight: 400;
+                      opacity: 1;
+                      position: relative;
+                      text-decoration-color: #333333;
+                      text-decoration-line: none;
+                      text-decoration-style: solid;
+                    }
+                  </style>
+                  <nav class="navbar navbar-default" id="nav_50124" role="navigation">
+                    <div class="navbar-header"><button class="navbar-toggle" data-target="#navbar-50124"
+                        data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span
+                          class="icon-bar">&nbsp;</span> <span class="icon-bar">&nbsp;</span> <span
+                          class="icon-bar">&nbsp;</span></button>
+                      <div class="other-header-links"><a class="lg-link hidden-xs"
+                          href="https://www.lmgdrc.ca/application/index.asp">get financed</a>
+                        <ul class="sm-list">
+                          <li class="toggle-hours" id="toggle-hours"><a> <i aria-hidden="true"
+                                class="fas fa-clock">&nbsp;</i> </a>
+                            <ul class="hours-container">
+                              <li class="hour-item"><span>Monday</span> <span class="set_monday_hours">8:30AM -
+                                  5:00PM</span></li>
+                              <li class="hour-item"><span>Tuesday</span> <span class="set_tuesday_hours">8:30AM -
+                                  5:00PM</span></li>
+                              <li class="hour-item"><span>Wednesday</span> <span class="set_wednesday_hours">8:30AM -
+                                  5:00PM</span></li>
+                              <li class="hour-item"><span>Thursday</span> <span class="set_thursday_hours">8:30AM -
+                                  5:00PM</span></li>
+                              <li class="hour-item"><span>Friday</span> <span class="set_friday_hours">8:30AM -
+                                  5:00PM</span></li>
+                              <li class="hour-item"><span>Saturday</span> <span class="set_saturday_hours"> 9:00AM -
+                                  1:00PM</span></li>
+                              <li class="hour-item"><span>Sunday</span> <span class="set_sunday_hours">Closed</span>
+                              </li>
+                            </ul>
+                          </li>
+                          <li><a href="https://goo.gl/maps/ZVoFBjs4fM8ud4mGA"><i aria-hidden="true"
+                                class="fas fa-map-marker-alt">&nbsp;</i> </a></li>
+                          <li><a data-target="#searchModal" data-toggle="modal" href=""> <i
+                                class="fas fa-search">&nbsp;</i> </a></li>
+                          <li><a href="tel:800-716-4316"><i aria-hidden="true" class="fas fa-phone-alt">&nbsp;</i> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbar-50124">
+                      <ul class="nav navbar-nav">
+                        <li><a href="/page/display/siteId/1001271/pageId/45645">Home </a></li>
+                        <li class="dropdown"><a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                            data-toggle="dropdown" href="/page/display/siteId/1001271/pageId/45754" role="button">New
+                            Inventory</a>
+                          <ul class="dropdown-menu">
+                            <li><a href="/page/display/siteId/1001271/pageId/45921">Showroom </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45901">Snow </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45737">Utv </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45736">Atv </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45738">Lawn &amp; Garden </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45739">Boats </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45900">Outboards </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45742">Power </a></li>
+                          </ul>
+                        </li>
+                        <li><a href="/page/display/siteId/1001271/pageId/45747">Used Inventory</a></li>
+                        <li><a href="/page/display/siteId/1001271/pageId/45741">Trailers</a></li>
+                        <li class="dropdown"><a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                            data-toggle="dropdown" href="/page/display/siteId/1001271/pageId/45801"
+                            role="button">Service</a>
+                          <ul class="dropdown-menu">
+                            <li><a href="/page/display/siteId/1001271/pageId/45767">Service Department </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45771">Service Appointments </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45791">Clothing and Accessories </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45792">Storage </a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown"><a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                            data-toggle="dropdown" href="/page/display/siteId/1001271/pageId/45922"
+                            role="button">Parts</a>
+                          <ul class="dropdown-menu">
+                            <li><a href="/page/display/siteId/1001271/pageId/45776">Parts Department </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45790">Parts Request </a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown"><a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle"
+                            data-toggle="dropdown" href="/page/display/siteId/1001271/pageId/45784"
+                            role="button">About</a>
+                          <ul class="dropdown-menu">
+                            <li><a href="/page/display/siteId/1001271/pageId/45756">About Us </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45763">Map &amp; Hours </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45766">Careers </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45785">Get a Quote </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45786">Financing </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45755">Staff </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45787">Comercial Sales </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45800">Videos </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45788">Event Calendar </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45789">Employment </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45646">Comercial Sale </a></li>
+                            <li><a href="/page/display/siteId/1001271/pageId/45764">Contact Us </a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="droppableComp droppableHtml hidden ui-sortable ui-sortable-disabled" id="LeftDiv" style=""></div>
+      <div class="droppableComp droppableHtml col-md-8 ui-sortable ui-sortable-disabled" id="CenterDiv" style="">
+        <div class="movableHtml ui-sortable-handle" id="html_1608130968447" data-com-id="htmlContainer"
+          data-component-htmlcontainer="" ppanel="htmlContainer">
+          <div contenteditable="true" class="contentHtml" style="position: relative;">
+            <div class="title-container">
+              <h3>Careers at Badiuk's Powersports</h3>
+            </div>
+
+            <p>SALES PERSON</p>
+
+            <p>Start date mid Februay 2021</p>
+
+            <p>&nbsp;</p>
+
+            <p style="text-align: center;"><img alt="104111119 3344620712294537 2853042633060337913 O 1"
+                src="/site-uploads/1001271/Images/104111119_3344620712294537_2853042633060337913_o_1.png"></p>
+
+            <p style="text-align: center;">&nbsp;</p>
+
+            <p style="text-align: center;">&nbsp;</p>
+
+            <p style="text-align: center;">Asterisk indicates Required Field</p>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" id="headingThree" role="tab">
+                <h4 class="panel-title" style="text-align: center;"><strong><a aria-controls="frontOffice"
+                      aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse"
+                      href="#frontOffice">Marine Mechanic </a></strong></h4>
+              </div>
+
+              <div aria-labelledby="headingThree" class="panel-collapse collapse" id="frontOffice" role="tabpanel">
+                <div class="panel-body">
+                  <div class="row">
+                    <!-- <div class="col-sm-6 col-md-6 col-lg-4"> -->
+                    <p>Job Description</p>
+
+                    <h5><strong>Responsibilities and Duties</strong></h5>
+
+                    <ul>
+                      <li>Diagnose,inspect and test outboard/inboard motors, boats and other marine equipment ( 2 and 4
+                        stoke outboards)</li>
+                      <li>Ability to work on snowmobile, ATV and lawn equipment</li>
+                      <li>Repair and trouble shoot electrical equipment on inboard/outboard boat engines</li>
+                      <li>Communicate effectively with parts team and service writers to ensure repairs are carried out
+                        correctly and the proper parts are ordered</li>
+                      <li>Document inspections, test results and work performed or to be performed as well as hours
+                        worked on customer work orders</li>
+                      <li>Mount motors to boats and operate boats at various speeds on waterways to conduct operational
+                        tests</li>
+                      <li>Maintain an efficient and tidy work area</li>
+                      <li>&nbsp;</li>
+                    </ul>
+
+                    <h5><strong>Experience and Requirements</strong></h5>
+
+                    <ul>
+                      <li>Marine Mechanic experience preferred</li>
+                      <li>Mercury Marine or alternate brand training course would be an asset</li>
+                      <li>Valid Drivers license and boat license</li>
+                      <li>Strong organization and observation skills</li>
+                      <li>Good communication and customer service ability</li>
+                    </ul>
+
+                    <p>Job Type: Full-time , Permanent Monday to Friday (ocassional Saturdays) 8:30 am to 5:00 pm</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>Wages dependent on experience and knowledge</p>
+
+                    <p>Start date mid Februay 2021</p>
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" id="headingThree" role="tab">
+                <h4 class="panel-title" style="text-align: center;"><strong><a aria-controls="frontOffice"
+                      aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse"
+                      href="#frontOffice">Office Assistant </a></strong></h4>
+              </div>
+
+              <div aria-labelledby="headingThree" class="panel-collapse collapse" id="frontOffice" role="tabpanel">
+                <div class="panel-body">
+                  <div class="row">
+                    <!-- <div class="col-sm-6 col-md-6 col-lg-4"> -->
+                    <p>Year-round Position</p>
+
+                    <p>Strong computer skills<br>
+                      Valid drivers license and vehicle<br>
+                      Accounting or bookkeeping experience an asset<br>
+                      &nbsp;<br>
+                      Accounts Payables, Receivables, Daily slips.<br>
+                      <br>
+                      32 -40 hours / week&nbsp;&nbsp;&nbsp; Mon- Fri 8:30-5:00<br>
+                      &nbsp;<br>
+                      Drop off Resume in person to:<br>
+                      Brennen at Badiuk Equipment
+                    </p>
+
+                    <p>Opens in new window</p>
+
+                    <p>PDF Download</p>
+
+                    <p>Word Download</p>
+
+                    <p>Excel Download</p>
+
+                    <p>PowerPoint Download</p>
+
+                    <p>Document Download</p>
+
+                    <p>close carousel</p>
+
+                    <p>&nbsp;</p>
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="droppableComp droppableHtml hidden ui-sortable ui-sortable-disabled" id="RightDiv" style=""></div>
+    </div>
+    <div class="row">
+      <div class="droppableHtml droppableComp col-md-12 ui-sortable ui-sortable-disabled" id="FooterDiv">
+        <div class="movableHtml common_element ui-sortable-handle" id="html_1607447238822" data-com-id="htmlContainer"
+          data-component-htmlcontainer="" ppanel="htmlContainer">
+          <div contenteditable="true" class="contentHtml" style="position: relative;">
+            <!-- start footer -->
+            <div class="footer-content-container">
+              <div class="container footer lg-footer">
+                <div class="col-md-3">
+                  <div class="contact-us">
+                    <h2>CONTACT US</h2>
+
+                    <h4>BADIUK'S POWERSPORTS</h4>
+
+                    <p><span class="set_address">615 Hwy 11/71 W Fort Frances, ON P9A3N1</span></p>
+
+                    <p class="phone"><strong class="set_phone_number">(800) 716-4316</strong></p>
+                    <!-- -->
+
+                    <p><a href="#">MAP &amp; HOURS</a></p>
+                    <!-- -->
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="quick-links">
+                    <h2>QUICK LINKS</h2>
+
+                    <ul class="child">
+                      <li><a href="/page/display/?siteId=1001271&amp;pageId=45754">New Inventory</a></li>
+                      <li><a href="/PRE-OWNED/">PRE-OWNED</a></li>
+                      <li><a href="#">PARTS</a></li>
+                      <li><a href="#">Service</a></li>
+                      <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="opening-hours">
+                    <h2>OPENING HOURS</h2>
+
+                    <div class="hours">
+                      <p class="hour"><strong>Monday to Friday:</strong> <span class="set_monday_hours">8:30AM -
+                          5:00PM</span></p>
+
+                      <p class="hour"><strong>Saturday:</strong> <span class="set_saturday_hours"> 9:00AM -
+                          1:00PM</span></p>
+
+                      <p class="hour"><strong>Sunday:</strong><span class="set_sunday_hours">Closed</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="opening-hours">
+                    <h2>LOCATION</h2>
+
+                    <div class="map"><iframe allowfullscreen="" aria-hidden="false" frameborder="0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2638.3383976088194!2d-93.49226968433462!3d48.60336547926326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52bb7c42b15de45b%3A0x9e78df3b89a74e06!2sBadiuk%20Equipment%20Ltd!5e0!3m2!1sen!2seg!4v1607687387481!5m2!1sen!2seg"
+                        style="border:0;" tabindex="0" width="600"></iframe></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sm-footer"><a class="b-btn btn-primary btn-block upper my-3" href="#">map &amp; hours</a> <a
+                  class="b-btn btn-primary btn-block upper my-3" href="#">contact us</a>
+
+                <div class="hr">&nbsp;</div>
+
+                <div class="fb"><a href="https://www.facebook.com/BadiuksPowersports"><i
+                      class="fab fa-facebook-f">&nbsp;</i> </a></div>
+                <!-- -->
+
+                <div class="panel-group" id="quick-links-accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading b-btn btn-gray btn-block upper my-3"><span aria-expanded="true"
+                        class="panel-title" data-parent="#quick-links-accordion" data-toggle="collapse"
+                        href="#quick-links"><a class="upper" href="#">quick links</a> </span></div>
+
+                    <div class="panel-collapse collapse" id="quick-links">
+                      <div class="panel-body">
+                        <ul class="links">
+                          <li><a class="link" href="#">New Inventory</a></li>
+                          <li><a class="link" href="#">PRE-OWNED</a></li>
+                          <li><a class="link" href="#">PARTS</a></li>
+                          <li><a class="link" href="#">Service</a></li>
+                          <li><a class="link" href="#">CONTACT US</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- -->
+              </div>
+              <!-- start fixed bootom slide up & down -->
+
+              <div class="bottom-fixed">
+                <div class="controller" id="up-down"><span class="down">›</span></div>
+
+                <div class="content"><a class="img" href="/page/display/?siteId=1001271&amp;pageId=45723"><img
+                      alt="Skidoo W" src="/site-uploads/1001271/images/brands/skidoo-w.png"> </a> <a class="img"
+                    href="/page/display/?siteId=1001271&amp;pageId=45732"> <img alt="Seadoo W"
+                      src="/site-uploads/1001271/images/brands/seadoo-w.png"> </a> <a class="img"
+                    href="/page/display/?siteId=1001271&amp;pageId=45734"> <img alt="Canam W"
+                      src="/site-uploads/1001271/images/brands/canam-w.png"> </a></div>
+              </div>
+              <!-- start fixed bootom slide up & down -->
+              <!-- -->
+
+              <div class="side-nav-logos" id="side-navs">
+                <ul>
+                  <li class="fb"><a href="https://www.facebook.com/BadiuksPowersports"><i aria-hidden="true"
+                        class="fab fa-facebook-f">&nbsp;</i> </a></li>
+                  <li class="ski-doo"><a href="/Ski-doo/"><img alt="Skidoo W"
+                        src="/site-uploads/1001271/images/brands/skidoo-w.png"> </a></li>
+                  <li class="sea-doo"><a href="/Sea-doo/"><img alt="Seadoo W"
+                        src="/site-uploads/1001271/images/brands/seadoo-w.png"> </a></li>
+                  <li class="can-am"><a href="/Can-am/"><img src="/site-uploads/1001271/images/brands/canam-w.png"> </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- -->
+
+              <div id="copyright">
+                <div class="container">Copyright© 2020 BADIUK'S POWERSPORTS - AODA Accessible Web Site - Powered
+                  by&nbsp;<img alt="50px Maple Leaf" src="/site-uploads/1001199/Images/50px-Maple_Leaf.png"
+                    style="width: 20px;"> <a href="https://turnkeywebsolutions.com" target="_blank">Turn Key Web
+                    Solutions</a> - <a href="/privacy-Policy">Privacy Policy</a> - <a data-target="#Login-form"
+                    data-toggle="modal" data-whatever="@mdo" href="#" type="button">Dealer Performance Login</a></div>
+
+                <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade inline-style-21"
+                  id="Login-form" role="dialog" tabindex="-1">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal"
+                          type="button"><span aria-hidden="true">×</span></button>
+
+                        <h4 class="modal-title" id="exampleModalLabel">Dealer Performance Login</h4>
+                      </div>
+
+                      <div class="modal-body">
+                        <form abframeid="iframe.0.785550755987551" abineguid="5A3879D9777C43A78D6EF19514608EC0"
+                          action="https://equipmentsearch.com/index/login/" class="container-fluid" id="loginform"
+                          method="post" name="login" target="_blank">
+                          <div class="form-group">
+                            <div class="col-xs-8 form-group"><label class="sr-only" for="username">First
+                                Name</label><input class="form-control input-sm" id="exampleInputEmail1" name="username"
+                                placeholder="Username" title="username" type="text"></div>
+
+                            <div class="col-xs-8 form-group"><label class="sr-only" for="password">First
+                                Name</label><input class="form-control input-sm" id="exampleInputPassword1"
+                                name="password" placeholder="Password" title="password" type="password"></div>
+
+                            <div class="col-xs-12" id="inline-style-91"><br>
+                              <input class="submit btn-danger btn-sm" id="inline-style-92" type="submit" value="Login">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -->
+
+              <div aria-hidden="true" aria-labelledby="searchModal" class="modal" id="searchModal" role="dialog"
+                tabindex="-1">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content" id="abId0.6682955498302792">
+                    <div class="modal-body heading_font" id="abId0.12285550559553049">
+                      <div class="input-group" id="abId0.12146404993718796"><input class="form-control"
+                          id="sm-searchbox" type="text"> <span class="input-group-btn"><button class="btn btn-default"
+                            id="sm-searchbtn" type="button"><i class="fas fa-search">&nbsp;</i></button> </span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -->
+            </div>
+            <!-- end footer -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

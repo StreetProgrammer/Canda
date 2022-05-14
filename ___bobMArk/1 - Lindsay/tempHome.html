@@ -1,0 +1,277 @@
+<div class="SW-container">
+    <a class="search-btn-toggle-btn hidden-xs" data-target="#searchModal" data-toggle="modal" href="">
+        <span>
+            <i class="fas fa-search">&nbsp;</i>
+        </span>
+        <span id="searchNow" class="hidden-xs">Search Now</span>
+    </a>
+
+    <div class="phones-locations-container">
+        <div class="phones">
+            <a class="visible-xs" data-target="#searchModal" data-toggle="modal" href="#">
+                <span>
+                    <i class="fas fa-search">&nbsp;</i>
+                </span>
+            </a>
+        </div>
+        <div class="phones">
+            <a class="visible-xs">
+                <span>
+                    <i class="fas fa-phone fa-flip-horizontal">&nbsp;</i>
+                </span>
+            </a>
+            <div class="phones-container">
+                <a href="tel:(705) 324-2221">
+                    <span>
+                        <i class="fas fa-phone fa-flip-horizontal">&nbsp;</i>
+                    </span>
+                    <span>
+                        LINDSAY
+                    </span>
+                </a>
+                <a href="tel:(705) 653-3700">
+                    <span>
+                        <i class="fas fa-phone fa-flip-horizontal">&nbsp;</i>
+                    </span>
+                    <span>
+                        CAMPBELLFORD
+                    </span>
+                </a>
+                <a href="tel:(705) 357-3121">
+                    <span>
+                        <i class="fas fa-phone fa-flip-horizontal">&nbsp;</i>
+                    </span>
+                    <span>
+                        SUNDERLAND
+                    </span>
+                </a>
+                <a href="tel:613-354-9244">
+                    <span>
+                        <i class="fas fa-phone fa-flip-horizontal">&nbsp;</i>
+                    </span>
+                    <span>
+                        NAPANEE
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="locations visible-xs">
+            <a class="visible-xs">
+                <span>
+                    LINDSAY
+                </span>
+                <span>
+                    <i class="fas fa-angle-double-down">&nbsp;</i>
+                </span>
+            </a>
+            <div class="locations-container">
+                <a class="active" href="https://goo.gl/maps/tT5Jj1wV9XuZfhpk9">
+                    <span>
+
+                        <i class="fas fa-map-marker">&nbsp;</i>
+                    </span>
+                    <span>
+                        LINDSAY
+                    </span>
+                </a>
+                <a href="https://bobmarkcampbellford.com/">
+                    <span>
+
+                        <i class="fas fa-map-marker">&nbsp;</i>
+                    </span>
+                    <span>
+                        CAMPBELLFORD
+                    </span>
+                </a>
+                <a href="https://bobmarksunderland.com/">
+                    <span>
+
+                        <i class="fas fa-map-marker">&nbsp;</i>
+                    </span>
+                    <span>
+                        SUNDERLAND
+                    </span>
+                </a>
+                <a href="https://bobmarknapanee.com/">
+                    <span>
+
+                        <i class="fas fa-map-marker">&nbsp;</i>
+                    </span>
+                    <span>
+                        NAPANEE
+                    </span>
+                </a>
+            </div>
+        </div>
+        <span class="visible-xs pl-5">Now Viewing</span>
+    </div>
+
+</div>
+<style>
+    .SW-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .SW-container a {
+        cursor: pointer;
+    }
+
+    .search-btn-toggle-btn {
+        text-decoration: none;
+        color: var(--main-blue-color);
+        font-size: 1.75vw;
+        transition: all ease-in-out 0.3s;
+        padding: 0.85vw 1vw;
+        margin-right: 4.5vw;
+        background-color: var(--light-yellow-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-btn-toggle-btn #searchNow {
+        font-size: 1vw;
+        font-weight: bold;
+    }
+
+    .search-btn-toggle-btn:hover {
+        background-color: var(--main-blue-color);
+        color: var(--light-yellow-color);
+    }
+
+    .search-btn-toggle-btn span.toggle {
+        position: absolute;
+        right: 0;
+        visibility: hidden;
+        transition: all ease-in-out 0.3s;
+        font-size: 1.75rem;
+        height: 0;
+        opacity: 0;
+    }
+
+    .search-btn-toggle-btn:hover span.toggle {
+        visibility: visible;
+        padding-left: 0.5em;
+        opacity: 1;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .SW-container {
+            height: 50px !important;
+        }
+
+        .search-btn-toggle-btn {
+            position: relative;
+            /* display: flex !important; */
+            align-items: baseline;
+            flex-direction: row;
+            padding: 0vw 1vw;
+            font-size: 3.25vw;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .phones-locations-container {
+            display: none;
+        }
+
+        .phones-locations-container .phones,
+        .phones-locations-container .locations {
+            display: none;
+        }
+    }
+
+
+    .phones-locations-container {
+        display: flex;
+        margin-left: 10px;
+        align-items: center;
+
+    }
+
+    .phones-locations-container .phones .phones-container,
+    .phones-locations-container .locations .locations-container {
+        display: none;
+    }
+
+    .phones-locations-container .phones {
+        border-right: 2px solid var(--main-blue-color);
+        position: relative;
+    }
+
+    .phones-locations-container .phones>a {
+        color: var(--main-blue-color);
+        background-color: var(--light-yellow-color);
+        padding: 5px 10px;
+        font-size: 20px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .phones-locations-container .locations {
+            background-color: var(--light-yellow-color);
+            padding: 5px 10px;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+    }
+
+    .phones-locations-container .locations>a {
+        width: 110px;
+        display: flex !important;
+        justify-content: space-around;
+        color: #000;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .phones-locations-container .locations:focus .locations-container,
+    .phones-locations-container .locations:hover .locations-container {
+        display: flex;
+    }
+
+    .phones-locations-container .phones:focus .phones-container,
+    .phones-locations-container .phones:hover .phones-container {
+        display: flex;
+    }
+
+    .phones-locations-container .locations .locations-container,
+    .phones-locations-container .phones .phones-container {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #FFF;
+        z-index: 999;
+        max-width: 250px !important;
+        width: 200px;
+        flex-direction: column;
+        background-color: var(--light-yellow-color);
+        border-top: 2px solid var(--main-blue-color);
+    }
+
+    .phones-container a,
+    .locations-container a {
+        border-bottom: 1px solid var(--main-blue-color);
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .phones-container a:hover,
+    .locations-container a:hover,
+    .locations-container a.active {
+        background-color: var(--main-blue-color);
+        color: #FFF;
+    }
+
+    .phones-locations-container span.visible-xs.pl-5 {
+        color: #FFF;
+        font-weight: 600;
+        font-size: 18px;
+    }
+</style>

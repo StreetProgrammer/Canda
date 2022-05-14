@@ -1,0 +1,22 @@
+- var pageTitle = '404'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body 
+        .page-wrapper.404-page
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    ._404-container
+                        h1.main_title_404 404
+                        h4.sub_title_404 حدث خطأ ما
+                        img(src="./images/404.png", alt="", srcset="") 
+                                    
+            include pug/layout/footer           
+        include pug/layout/js

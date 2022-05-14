@@ -1,0 +1,157 @@
+._brd-box {
+    border: 3px solid var(--gray-8);
+    padding: 1vw;
+
+    &.thin {
+        border-width: 1px;
+    }
+
+    &.lbr {
+        border-left: 3px solid var(--main-color);
+    }
+
+    &.lbs {
+        border-left: 3px solid var(--secondary-color);
+    }
+}
+
+
+._gray-bg {
+    padding: 1vw;
+    background-color: var(--gray-3);
+
+    h4 {
+        font-size: 1.5277777777778vw;
+    }
+
+    h5 {
+        font-size: 1.25vw;
+    }
+
+    p {
+        font-size: 1.1111111111111vw;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-between;
+
+        li {
+            width: 47%;
+            display: flex;
+            align-items: center;
+            margin: 0.25vw 0;
+            font-size: 1.1111111111111vw;
+
+            span {
+                &:first-child {
+                    @extend .circle-label;
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    width: 2.25vw;
+                    height: 2.25vw;
+                    margin-right: 0.25vw;
+                }
+            }
+        }
+    }
+
+    img {
+        &.w-100 {
+            width: 100%;
+        }
+    }
+
+}
+
+._gray-bg-sm {
+    padding: 1vw;
+    background-color: var(--gray-3);
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-between;
+
+        li {
+            width: 47%;
+            display: flex;
+            align-items: center;
+            margin: 0.25vw 0;
+            font-size: 1.1111111111111vw;
+
+            span {
+                &:first-child {
+                    @extend .circle-label;
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    width: 2.25vw;
+                    height: 2.25vw;
+                    margin-right: 0.25vw;
+                }
+            }
+        }
+    }
+
+    img {
+        &.w-100 {
+            width: 100%;
+        }
+    }
+}
+
+// font weights 
+.w {
+    &100 {
+        font-weight: 100 !important;
+    }
+
+    &200 {
+        font-weight: 200 !important;
+    }
+
+    &300 {
+        font-weight: 300 !important;
+    }
+
+    &400 {
+        font-weight: 400 !important;
+    }
+
+    &500 {
+        font-weight: 500 !important;
+    }
+
+    &600 {
+        font-weight: 600 !important;
+    }
+
+    &700 {
+        font-weight: 700 !important;
+    }
+
+    &800 {
+        font-weight: 800 !important;
+    }
+
+    &900 {
+        font-weight: 900 !important;
+    }
+}

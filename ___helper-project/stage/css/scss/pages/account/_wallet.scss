@@ -1,0 +1,97 @@
+.wallet-container {
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    padding: 20px;
+
+    .controls {
+        // display: flex;
+        // justify-content: space-between;
+
+        // @media #{$small_mobile} {
+        //     flex-direction: column;
+        // }
+
+        .search {
+
+            // flex: 33%;
+
+            // @media #{$small_mobile} {
+            //     flex: 100%;
+            // }
+
+            .form-row {
+                label {
+                    line-height: 2;
+                }
+
+                .form-control {
+                    height: 30px;
+                }
+            }
+        }
+
+        .add {
+            // flex: 20%;
+        }
+
+        .count-control {
+            // flex: 23%;
+
+            @media #{$small_mobile} {
+                flex: 100%;
+            }
+
+            .form-row {
+                label {
+                    line-height: 2;
+                }
+
+                .form-control {
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    .wallet-table,
+    .orders-table {
+        @media #{$small_mobile} {
+            max-width: 70vw;
+        }
+
+        table {
+            @media #{$small_mobile} {
+                overflow-x: scroll;
+            }
+
+            thead {
+                color: $secFont;
+            }
+
+            .preview {
+                color: $thiFont;
+            }
+
+            .inprogress {
+                color: $priFont
+            }
+
+            .completed {
+                color: $secFont
+            }
+        }
+
+        .pagination {
+
+            .prev,
+            .next {
+                padding: 10px;
+
+                span {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

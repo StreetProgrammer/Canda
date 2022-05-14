@@ -1,0 +1,56 @@
+- var pageTitle = 'R - Order'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body 
+        .page-wrapper.r-order-page
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    .row.rtl                            
+                        .col-md-12.text-center.mb-3
+                            .r-order-info
+                                img(src="./images/home/sub-2-4.png", alt="", srcset="")
+                                h3.my-3 خدمات البحث العلمي
+                        .col-12
+                            .r-order-form-content
+                                .form.white-bg.box-shadow
+                                    form
+                                        .form-row
+                                            .col-md-6.mb-4
+                                                label.f-label(for='name') الإسم
+                                                input#name.form-control(type='text' required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='phone') رقم الجوال
+                                                input#phone.form-control(type='tel' name='phone' required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='email') البريد الإليكتروني
+                                                input#email.form-control(type='text' required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='tradename') الإسم التجاري
+                                                input#tradename.form-control(type='text' required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='country') الدولة
+                                                select#country.form-control(required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='city') المدينة
+                                                select#city.form-control(required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='password') كلمة المرور
+                                                input#password.form-control(type='password' name='password' required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='password-confirm') تأكيد كلمة المرور
+                                                input#password-confirm.form-control(type='password' name='password' required='')
+                                            .col-md-12.mb-4.text-center
+                                                button.btn.btn-primary(type='submit') إرسال 
+                        
+
+                                    
+            include pug/layout/footer           
+        include pug/layout/js

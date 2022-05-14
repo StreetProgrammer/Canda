@@ -1,0 +1,72 @@
+body {
+  background-image: none !important;
+  background-color: #FFFFFF !important;
+  background-repeat: no-repeat !important;
+}
+
+#siteMenu {
+  background-image: none !important;
+  background-color: #FFFFFF !important;
+}
+
+.mainMenu li {
+  background-color: #000000 !important;
+  border-color: #FFFFFF !important;
+  text-align: center !important;
+}
+
+.mainMenu li li {
+  background-color: #000000 !important;
+  border-color: #FFFFFF !important;
+  text-align: center !important;
+}
+
+.mainMenu a,
+mainMenu a:visited {
+  font-size: 10px !important;
+  font-family: Verdana, Arial, sans-serif !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+  font-style: normal !important;
+  color: #990000 !important;
+}
+
+.mainMenu a:hover {
+  color: #990000 !important;
+  background-color: #000000 !important;
+  border-color: #FFFFFF !important;
+}
+
+.ui-layout-pane {
+  background-image: none !important;
+  background-color: #ff0000 !important;
+}
+
+.headerFont {
+  background-image: none !important;
+  font-family: Verdana, Arial, sans-serif !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+  font-style: normal !important;
+  font-size: 10px !important;
+  color: #000000 !important;
+  background-color: #FFFFFF !important;
+}
+
+.pragraphFont {
+  font-family: Verdana, Arial, sans-serif !important;
+  font-weight: normal !important;
+  color: #000000 !important;
+  font-size: 10px !important;
+  text-decoration: none !important;
+  font-style: normal !important;
+}
+
+.linksFont {
+  font-size: 10px !important;
+  font-family: Verdana, Arial, sans-serif !important;
+  font-weight: normal !important;
+  color: #000000 !important;
+  text-decoration: underline !important;
+  font-style: normal !important;
+}

@@ -1,0 +1,9 @@
+$font_path: '../fonts/';
+
+@font-face {
+    font-family: "Fairuz";
+    src: local("Fairuz"), local("Fairuz"),
+        url($font_path+"Fairuz-Normal.otf") format("truetype");
+    font-style: bold;
+    font-weight: 200;
+}

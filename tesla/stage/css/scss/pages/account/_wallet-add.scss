@@ -1,0 +1,134 @@
+.wallet-add-container {
+    .custom-collapse-panel {
+        .panel-default {
+            margin: 10px auto;
+
+            .panel-heading {
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                div {
+                    img {
+                        height: 25px;
+                    }
+
+                    span {
+                        padding: 0 10px;
+                        color: $thiFont;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .panel-body {
+                .form-card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 100%;
+                    text-align: center;
+                    margin: 1% 0;
+                    min-height: 200px;
+                    align-items: center;
+
+                    .card-inner {
+                        width: 80%;
+                        border-radius: 0px;
+                        background-color: $darkWhite;
+
+                        .card-header {
+                            position: relative;
+                            background-color: $darkWhite;
+
+                            div {
+                                color: $secFont;
+
+                                span {
+                                    font-weight: bold;
+                                }
+
+                                .icon {
+                                    color: $priFont;
+                                    margin: 0px 10px;
+                                }
+                            }
+
+                            .close {
+                                position: absolute;
+                                left: 10px;
+                                top: 10px;
+                                cursor: pointer;
+                                font-size: 16px;
+                            }
+                        }
+
+                        .card-body {
+                            label {
+                                font-weight: bold;
+                                color: $thiFont;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // .custom-collapse-panel .panel-default {
+    //     margin: 10px auto;
+
+    // }
+
+    // .custom-collapse-panel .panel-default>.panel-heading {
+    //     padding: 10px;
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+
+    //     div {
+    //         img {
+    //             height: 25px;
+    //         }
+
+    //         span {
+    //             padding: 0 10px;
+    //             color: $thiFont;
+    //             font-weight: bold;
+    //         }
+    //     }
+    // }
+
+    .custom-collapse-panel .panel-heading a {
+        // padding: 5px;
+        // display: inline-block;
+        // width: 100%;
+        // background-color: #FFF;
+        // color: #555;
+        // position: relative;
+        // text-decoration: none;
+    }
+
+    // .custom-collapse-panel .panel-title {
+    //     font-size: 26px !important;
+    // }
+
+    // .custom-collapse-panel .panel-heading a:after {
+    //     font-family: "FontAwesome";
+    //     content: "-";
+    //     position: absolute;
+    //     right: 20px;
+    //     font-size: 40px;
+    //     top: 50%;
+    //     line-height: 1;
+    //     margin-top: -20px;
+    //     font-weight: bold;
+    // }
+
+    // .custom-collapse-panel .panel-heading a.collapsed:after {
+    //     content: "+";
+    // }
+}

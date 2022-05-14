@@ -1,0 +1,19 @@
+.canva {
+    img {
+        width: 75px;
+
+    }
+
+    h4 {
+        color: $secFont;
+        font-weight: bold;
+    }
+
+    .iframe-wrapper {
+        margin-top: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

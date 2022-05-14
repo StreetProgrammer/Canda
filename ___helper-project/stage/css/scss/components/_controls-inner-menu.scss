@@ -1,0 +1,186 @@
+.spo-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 2rem;
+
+    @media #{$tab} {
+        margin: 1rem 0rem;
+    }
+
+    .controls-inner-menu-container {
+        display: flex;
+        flex: 100%;
+
+        @media #{$tab} {
+            flex-direction: column;
+        }
+
+        .controls-inner-menu {
+            flex: 32%;
+            background-color: $white;
+            margin: 0rem 1.5rem;
+
+            @media #{$tab} {
+                display: flex;
+                flex-direction: row;
+                margin: 1.5rem 0rem;
+            }
+
+            .controls-content {
+                padding: 10px;
+                flex-wrap: wrap;
+                display: flex;
+
+                .title {
+                    color: $secFont;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    flex: 100%;
+
+                    span {
+                        font-size: 22px;
+                        margin: 0px 0px 0px 5px;
+                    }
+
+                }
+
+                .control-item {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    min-width: 100%;
+
+                    @media #{$tab} {
+                        flex: 47%;
+                        min-width: auto;
+                    }
+
+                    // @media #{$large_mobile} {
+    //     flex: 100%;
+    //     min-width: auto;
+    // }
+
+                    @media #{$small_mobile} {
+                        flex: 100%;
+                        min-width: auto;
+                    }
+
+                    p {
+                        color: $thiFont;
+                        font-weight: bold;
+                    }
+
+                    .from-to {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 5px;
+
+                        span {
+                            padding: 0px 0px 0px 10px;
+                        }
+
+                        .form-control {
+                            height: 30px;
+                        }
+                    }
+
+                    .flex-inputs {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+
+                        .custom-control {
+                            flex: 25%;
+
+                            .borderd-label-before {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                padding: 2px;
+                                border-radius: 5px;
+                                border: 1px solid $thiFont;
+                                cursor: pointer;
+
+                                p {
+                                    margin-bottom: 0rem;
+                                }
+
+                                img {
+                                    max-width: 90px;
+                                }
+                            }
+
+                            input[type="radio"]:checked+label,
+                            input[type="checkbox"]:checked+label {
+                                color: $secFont;
+                            }
+
+                            input[type="radio"]:checked+.borderd-label {
+                                padding: 2px;
+                                border-radius: 5px;
+                                border: 1px solid $secFont;
+                            }
+
+                            .custom-control-label,
+                            .borderd-label {
+                                font-size: 12px;
+                                font-weight: bold;
+                                color: $thiFont;
+                                cursor: pointer;
+                            }
+
+                            .fixed-width {
+                                min-width: 60px;
+                                text-align: center;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    .controls-inner-menu-content {
+        flex: 64%;
+
+        .pdf-container {
+            // max-width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .pdf-image {
+                max-width: 400px;
+
+                @media #{$large_mobile} {
+                    max-width: 300px;
+                }
+
+                @media #{$small_mobile} {
+                    max-width: 200px;
+                }
+            }
+
+            .pagination-btns {
+                display: flex;
+                justify-content: center;
+
+                button {
+                    border-color: #24b5e5;
+                    color: #24b5e5;
+                    margin: 2px;
+                    font-size: 10px;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+
+            }
+        }
+    }
+}

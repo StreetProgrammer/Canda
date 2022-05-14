@@ -1,0 +1,43 @@
+.message
+#chatWidget.chat-widget
+  //- chat toggle
+  input#chat-widget-toggle.chat-widget-toggle(type='checkbox')
+  //- chat close button
+  
+  .chat-box.box-shadow
+    //- chat user info
+    //- .chat-avatar-box
+    //-   img.chat-avatar(src='https://cdn.pixabay.com/photo/2017/08/30/17/27/business-woman-2697954_960_720.jpg')
+    .chat-message-box
+      //- chat header
+      .chat-header
+        h1.chat-title
+          span.chat-title-primary مزود خدمة
+        label.close(title='close chat', for='chat-widget-toggle') 
+          <i class="fas fa-times"></i>
+      //- chat message
+      .chat-messages
+        .chat-messages-content
+          .chat-message.-left
+            .chat-message-text
+              | Lorem ipsum dolor sit amet.
+          .chat-message.-right
+            .chat-message-text
+              | Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+          .chat-message.-right
+            .chat-message-text
+              | Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+          .chat-message.-left
+            .chat-message-text
+              | Lorem ipsum dolor sit amet.
+          
+            
+      //- chat input box
+      .chat-form-box
+        form#chat-form.chat-form(name='chat-form')
+          input.chat-form-input(type='text', placeholder='your message....')
+          button.chat-form-button(title='send message', type='submit')
+            span <i class="fas fa-2x fa-paperclip"></i>
+  //- chat open button
+  label.chat-widget-button.chat-open-button(title='open chat', for='chat-widget-toggle')
+    <i class="far fa-2x fa-comments"></i>

@@ -1,0 +1,16 @@
+
+/* only for staff contact models form */ 
+/* #page_49743 => the ID of the staff page body tag*/
+#page_49743 {
+  #staff-modal {
+    padding: 5px;
+    span.position {
+      padding-bottom: 5px;
+    }
+
+    .adForm input, .adForm textarea, .adForm select {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+}

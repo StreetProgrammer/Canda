@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        #AWC {
+            /* position: relative; */
+        }
+
+        #AWC .carousel-inner {
+            min-height: 400px;
+        }
+
+        #AWC .left-a {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            z-index: 9999;
+        }
+
+        #AWC .right-a {
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            z-index: 9999;
+        }
+
+        #AWC .carousel-inner .item .flex-slider-item {
+            display: flex
+        }
+
+        #AWC .carousel-inner .item .flex-slider-item .img-div {
+            flex: 0 48%;
+        }
+
+        #AWC .carousel-inner .item .flex-slider-item .desc-div {
+            flex: 0 48%;
+        }
+
+        #AWC .carousel-inner .item .flex-slider-item .img-div img {
+            max-width: 100%;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!--  -->
+            <div class="col-md-12">
+                <div id="AWC" class="carousel slide" data-ride="carousel" data-interval="false" data-ride="carousel"
+                    data-pause="hover">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#AWC" data-slide-to="0" class="active"></li>
+                        <li data-target="#AWC" data-slide-to="1"></li>
+                    </ol>
+
+                    <a class="left-a" href="#AWC" data-slide="prev">
+                        <span>
+                            < </span>
+                    </a>
+                    <a class="right-a" href="#AWC" data-slide="next">
+                        <span>
+                            >
+                        </span>
+                    </a>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="flex-slider-item">
+                                <div class="img-div">
+                                    <img class="hidden-sm" src="./New Vehicles/_slider-RVR-Angled-Image.png"
+                                        alt="Los Angeles">
+                                    <img class="hidden-lg" src="./New Vehicles/_slider-RVR-AWC-mobile.jpg"
+                                        alt="Los Angeles">
+                                </div>
+                                <div class="desc-div">
+                                    <h1>Driver Selectable Modes</h1>
+                                    <p>
+                                        Mitsubishi Motors’ All-Wheel Control system puts YOU in control, with the
+                                        ability to choose how engaged the system is. There are three settings available
+                                        at the touch of a button, optimizing your preference between fuel economy and
+                                        4-Wheel Drive capability without compromising safety.
+                                    </p>
+                                    <h1>RVR</h1>
+                                    <p>
+                                        2-Wheel Drive: keeps the vehicle in Front-Wheel Drive regardless of driving
+                                        conditions, for economical driving on normal dry roads and freeways.
+                                        <br>
+                                        4-Wheel Drive Auto: offers a well-balanced 4-Wheel Drive performance, resulting
+                                        in enhanced fuel efficiency, traction, high-speed stability and predictable
+                                        handling based on road and driving conditions.
+                                        <br>
+                                        4-Wheel Drive Lock: increased torque is applied to the rear wheels, helping the
+                                        vehicle enhance performance on slippery surfaces, such as on snow-covered roads
+                                        or sand.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item active">
+                                <div class="flex-slider-item">
+                                    <div class="desc-div">
+                                        <h1>Driver Selectable Modes</h1>
+                                        <p>
+                                            Mitsubishi Motors’ All-Wheel Control system puts YOU in control, with the
+                                            ability to choose how engaged the system is. There are three settings
+                                            available
+                                            at the touch of a button, optimizing your preference between fuel economy
+                                            and
+                                            4-Wheel Drive capability without compromising safety.
+                                        </p>
+                                        <h1>RVR</h1>
+                                        <p>
+                                            2-Wheel Drive: keeps the vehicle in Front-Wheel Drive regardless of driving
+                                            conditions, for economical driving on normal dry roads and freeways.
+                                            <br>
+                                            4-Wheel Drive Auto: offers a well-balanced 4-Wheel Drive performance,
+                                            resulting
+                                            in enhanced fuel efficiency, traction, high-speed stability and predictable
+                                            handling based on road and driving conditions.
+                                            <br>
+                                            4-Wheel Drive Lock: increased torque is applied to the rear wheels, helping
+                                            the
+                                            vehicle enhance performance on slippery surfaces, such as on snow-covered
+                                            roads
+                                            or sand.
+                                        </p>
+                                    </div>
+                                    <div class="img-div">
+                                        <img class="hidden-sm" src="./New Vehicles/_slider-Outlander-Angled-Image.png"
+                                            alt="Los Angeles">
+                                        <img class="hidden-lg" src="./New Vehicles/_slider-Outlander-AWC-mobile.jpg"
+                                            alt="Los Angeles">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <!-- <a class="left" href="#AWC" data-slide="prev">-</a>
+                <a class="right" href="#AWC" data-slide="next">+</a> -->
+
+                <!-- <a class="left carousel-control" href="#AWC" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#AWC" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a> -->
+            </div>
+            <!--  -->
+            <div class="col-md-12">
+                <h1>Hello World</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+</body>
+
+</html>

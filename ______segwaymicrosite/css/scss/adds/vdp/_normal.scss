@@ -1,0 +1,129 @@
+#normal_vdp {
+  padding-top: 2vw;
+
+  .back-btn {
+    display: none;
+  }
+
+  .stock-num {
+    display: none;
+  }
+
+  .model-tabs {
+    .tab-content {
+      #model-accordion {
+        .panel {
+          a.accord-btn {
+            // background: linear-gradient(180deg, rgba(255, 255, 255, 0) 41.15%, rgba(221, 221, 221, 0.25) 100%);
+            background-color: var(--header-dark-bg) !important;
+            border: 1px solid #DDDDDD;
+            color: var(--white) !important;
+            font-family: Poppins;
+            padding-left: 3vw;
+            position: relative;
+
+            &::before {
+              position: absolute;
+              content: "-";
+              left: 1.5vw;
+
+            }
+
+            &.collapsed {
+              background-color: var(--gray-11) !important;
+              color: var(--black) !important;
+
+              &::before {
+                position: absolute;
+                content: "+";
+              }
+            }
+
+
+            .glyphicon {
+              color: var(--gray-82) !important;
+              display: none;
+            }
+          }
+
+          // .accord-btn .glyphicon {
+          //   color: var(--black);
+          // }
+        }
+      }
+    }
+  }
+
+  .price-box {
+    .our-price-div {
+      float: right;
+      align-items: center;
+
+      .our-price {
+        font-size: 0;
+        margin: 0 1vw;
+
+        &:before {
+          content: "Price";
+          font-size: 30px;
+          font-family: Poppins;
+          font-weight: 600;
+          color: var(--secondary-color);
+        }
+      }
+
+      .primary {
+        color: var(--black);
+        font-family: Poppins;
+        font-weight: 600;
+      }
+    }
+
+    .excludes {
+      display: none;
+    }
+  }
+
+  .dropdown.open {
+    .dropdown-menu.model-shareble {
+      display: flex;
+
+      li {
+        a {
+          padding: 0;
+
+          &:hover,
+          &:focus {
+            background-color: var(--gray);
+          }
+        }
+      }
+    }
+  }
+
+  .right-cta-buttons {
+    padding: 1vw;
+    border: 1px solid var(--gray);
+
+    .rt-action-btn {}
+  }
+
+  .affix {
+    .CTA-box {
+      .rt-action-btn {
+        margin: 0 !important;
+        transition: all ease-in-out 0.2s;
+
+        &:hover {
+          background-color: #616365 !important;
+          color: var(--white) !important;
+
+          span {
+            background-color: inherit !important;
+            color: inherit !important;
+          }
+        }
+      }
+    }
+  }
+}

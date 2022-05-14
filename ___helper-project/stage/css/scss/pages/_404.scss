@@ -1,0 +1,35 @@
+._404-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .main_title_404 {
+        color: $secFont;
+        font-size: 5rem;
+        font-weight: bold;
+    }
+
+    .sub_title_404 {
+        color: $priFont;
+        font-weight: bold;
+
+    }
+
+    img {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        max-width: 700px;
+
+        @media #{$tab} {
+            max-width: 600px;
+        }
+
+        @media #{$large_mobile} {
+            max-width: 500px;
+        }
+
+        @media #{$small_mobile} {
+            max-width: 350px;
+        }
+    }
+}

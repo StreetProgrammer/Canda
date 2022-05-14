@@ -1,0 +1,240 @@
+.home-main-sec {
+    display: flex;
+    height: 50vw;
+    position: relative;
+
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+        height: 65vw;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        height: 80vw;
+    }
+
+    @media screen and (max-width: 767px) {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .item {
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-top: 5px solid;
+        flex: 1 1 33%;
+
+        &:nth-child(1) {
+            background-image: url('/site-uploads/1001359/images/snarler-bg.jpg');
+        }
+
+        &:nth-child(2) {
+            background-image: url('/site-uploads/1001359/images/villain-bg.jpg');
+            border-left: 5px solid;
+            border-right: 5px solid;
+        }
+
+        &:nth-child(3) {
+            background-image: url('/site-uploads/1001359/images/fugleman-bg.jpg');
+        }
+
+        .outer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+            padding: 0 0 4vw;
+
+            img {
+                width: 15vw;
+                transition: all ease-in-out 0.2s;
+
+                &.model {}
+
+                &.white-logo {}
+
+                &.red-logo {
+                    display: none;
+                }
+            }
+        }
+
+        .item__overlay {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 0%;
+            background: radial-gradient(50% 50% at 50% 50%, #F1F1F1 58.85%, #D5D5D5 100%);
+            transition: all ease-in-out 0.25s;
+            padding: 3vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h4 {}
+
+            img {}
+
+            a {
+                width: 100%;
+                border: 1px solid #333;
+                color: #333;
+                border-radius: 5px;
+                padding: 0.75vw;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                transition: all ease-in-out 0.2s;
+                margin-top: 4vw;
+
+                * {
+                    z-index: 2;
+                }
+
+                i {
+                    transition: all ease-in-out 0.2s;
+                    padding-right: 1vw;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 100%;
+                    background-color: var(--main-color);
+                    transition: all ease-in-out 0.2s;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    color: var(--white);
+
+                    &::before {
+                        right: 0%;
+                    }
+
+                    i {
+                        padding-right: 0vw;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .outer {
+                img {
+                    &.model {
+                        width: 20vw;
+                    }
+
+                    &.white-logo {
+                        display: none;
+                    }
+
+                    &.red-logo {
+                        display: block;
+                    }
+                }
+            }
+
+            .item__overlay {
+                height: 100%;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            flex: unset;
+            height: 80vh;
+
+            .item__overlay {
+                padding: 0vw;
+                visibility: hidden;
+
+                a {
+                    margin-top: 5vw;
+                    padding: 4vw;
+                    font-size: 18px;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: var(--white);
+
+                        &::before {
+                            right: 0%;
+                        }
+
+                        i {
+                            padding-right: 0vw;
+                        }
+                    }
+                }
+            }
+
+            .outer {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                z-index: 2;
+                padding: 0 0 4vw;
+                background-image: url('/site-uploads/1001359/images/shape.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                img {
+                    width: 150px;
+                    transition: all ease-in-out 0.2s;
+
+                    &.model {}
+
+                    &.white-logo {}
+
+                    &.red-logo {
+                        display: none;
+                    }
+                }
+            }
+
+            &:hover {
+                .outer {
+                    img {
+                        &.model {
+                            width: 200px;
+                        }
+                    }
+                }
+
+                .item__overlay {
+                    height: 100%;
+                    padding: 5vw;
+                    visibility: visible;
+                }
+            }
+
+        }
+    }
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('/site-uploads/1001359/images/shape.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15vw;
+    }
+}

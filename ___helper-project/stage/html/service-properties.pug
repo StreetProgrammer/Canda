@@ -1,0 +1,29 @@
+- var pageTitle = 'Service - Properties'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body 
+        .page-wrapper.service-properties
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    .row
+                        .col-md-12
+                            .spo-container.rtl
+                                h4.sec-font.my-3.text-center حسابي
+                                .controls-inner-menu-container
+                                    include pug/components/translation-control
+                                    .controls-inner-menu-content
+                                        .row
+                                            .col-md-12.mb-3
+                                                .white-bg.box-shadow.p-5
+                                                    .pdf-container.text-center
+                                                        img.pdf-image.box-shadow(src="./images/audio.png", alt="", srcset="")
+            include pug/layout/footer           
+        include pug/layout/js

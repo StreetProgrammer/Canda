@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Start SiteMenu Search /  */
+        .search-div {
+            margin-top: .3vw;
+            clear: both;
+        }
+
+        #searchbox {
+            width: 80%;
+            float: right;
+            border-radius: 0;
+            outline: none;
+            border: none;
+            height: auto;
+            padding: 1vw !important;
+            font-size: 1.5vw !important;
+            outline: none;
+            border-top-left-radius: .5vw;
+            border-bottom-left-radius: .5vw;
+        }
+
+        #searchbtn {
+            float: right;
+            border-radius: 0;
+            margin: 0px !important;
+            background-color: #f4712b !important;
+            outline: none;
+            border: none;
+            box-shadow: none;
+            text-shadow: none;
+            padding: .85vw 2vw .85vw 1vw;
+            outline: none;
+            border-top-right-radius: .5vw;
+            border-bottom-right-radius: .5vw;
+        }
+
+        #searchbtn:hover {
+            background-color: #eb421b !important;
+        }
+
+        #searchbtn .glyphicon {
+            width: 1.2vw;
+            font-size: 2vw;
+            padding: 0;
+            border: 0;
+            color: #f1f1f1;
+            outline: none;
+        }
+
+        .menu-search {
+            margin-right: 5.5vw;
+            padding: .8vw;
+            margin-top: .5vw;
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .menu-search:hover,
+        .menu-search:focus {
+            background-color: #f4712b;
+            color: #fff;
+        }
+
+        .menu-search span.glyphicon {
+            font-size: 1.6vw;
+        }
+
+        #searchModal .modal-content {
+            border: none;
+            background-color: transparent;
+            background: none;
+            box-shadow: none;
+        }
+
+        #searchModal .modal-dialog {
+            margin-top: 20%;
+            width: 50% !important;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #searchModal .modal-open .modal {
+            padding-right: 0;
+        }
+
+        .modal-open {
+            overflow-y: scroll;
+        }
+
+        /* End SiteMenu Search /  */
+    </style>
+</head>
+
+<body>
+    <!--  -->
+    <a class="menu-search" href="" data-toggle="modal" data-target="#searchModal">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+    </a>
+    <!--  -->
+
+    <!--  -->
+    <div aria-labelledby="searchModal" class="modal" id="searchModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="abId0.6682955498302792">
+                <div class="modal-body heading_font" id="abId0.12285550559553049">
+                    <div class="search-div" id="abId0.8170903198832127">
+                        <button class="btn btn-default" id="searchbtn" onclick="srch()" type="button">
+                            <span class="glyphicon glyphicon-search">&nbsp;</span>
+                        </button>
+                        <input class="form-control" id="searchbox" placeholder="Search for..." type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+</body>
+
+<!--  -->
+
+<!--  -->
+
+</html>

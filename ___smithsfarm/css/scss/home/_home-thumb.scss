@@ -1,0 +1,104 @@
+#html_1562227614665 {
+  background-color: var(--gray-2);
+  @media screen and (max-width: 767px){
+    background-color: var(--gray-3);
+  }
+  .home-thumbs {
+    padding: 2vw 0;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      li {
+        float: left;
+        padding: 8px 20px;
+        @media screen and (min-width: 768px) and (max-width: 991px){
+          width: 25%
+        }
+        @media screen and (max-width: 767px){
+          width: 100%
+        }
+        a{
+          display: block;
+          text-decoration: none;
+          transition: all ease-in-out 0.2s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          @media screen and (max-width: 767px){
+            flex-direction: row;
+            justify-content: inherit;
+            width: 100%;
+            background-color: var(--white);
+            padding: 0px 10px;
+            border: 1px solid var(--gray-2);
+          }
+          img {
+            max-height: 100px;
+            @media screen and (max-width: 767px){
+              width: auto;
+            }
+            @media screen and (max-width: 520px){
+              width: 20vw;
+            }
+          }
+          .thumbs-txt {
+            display: block;
+            font-weight: bold;
+            text-align: center;
+            color: var(--black);
+            text-transform: uppercase;
+            margin-top: 1vw;
+            transition: all ease-in-out .2s;
+            @media screen and (max-width: 767px){
+              margin-left: 2vw;
+              margin-top: 0vw;
+            }
+          }
+          &:hover {
+            .thumbs-txt {
+              color: var(--secondary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.home-thumbs ul {
+  
+}
+
+.home-thumbs li {
+  
+}
+
+.home-thumbs a {
+  
+}
+
+.home-thumbs a img {
+  
+}
+
+.home-thumbs a .thumbs-txt {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  color: #00529c
+}
+
+.home-thumbs a:hover .thumbs-txt {
+  color: #ee2a2d
+}
+
+@media only screen and (max-width:768px) {
+  .home-thumbs li {
+    width: 50%;
+  }
+}

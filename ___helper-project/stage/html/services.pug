@@ -1,0 +1,45 @@
+- var pageTitle = 'Provider - Services'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body 
+        .page-wrapper.info-page
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    .row
+                        .col-md-12
+                            .spo-container.rtl
+                                h4.sec-font.my-3 مزود الخدمة
+                                .inner-menu-container
+                                    include pug/components/provider-inner-menu
+                                    .inner-menu-content
+                                        .back-to-bottom
+                                            a(href="")
+                                                span.arrow <i class="fas fa-long-arrow-alt-right"></i>
+                                                | الرجوع إلى طلباتي
+                                            .row.my-3.text-center
+                                                .col-md-4
+                                                    .service.white-bg.box-shadow
+                                                        img(src="./images/home/sub-2-2.png", alt="", srcset="") 
+                                                        h4 طباعة ونسخ
+                                                        p نقدم خدمات الطباعة والنسخ بأعلى جودة وسرعة في التنفيذ
+                                                .col-md-4
+                                                    .service.white-bg.box-shadow
+                                                        img(src="./images/home/sub-2-2.png", alt="", srcset="") 
+                                                        h4 طباعة ونسخ
+                                                        p نقدم خدمات الطباعة والنسخ بأعلى جودة وسرعة في التنفيذ
+                                                .col-md-4
+                                                    .service.white-bg.box-shadow
+                                                        img(src="./images/home/sub-2-2.png", alt="", srcset="") 
+                                                        h4 طباعة ونسخ
+                                                        p نقدم خدمات الطباعة والنسخ بأعلى جودة وسرعة في التنفيذ
+
+            include pug/layout/footer           
+        include pug/layout/js

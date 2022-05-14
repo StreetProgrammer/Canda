@@ -1,0 +1,64 @@
+#normal_vdp {
+  .stock-num{
+    
+  }
+  .model-tabs {
+    .tab-content {
+      #model-accordion {
+        .panel {
+          a.accord-btn {
+            // background: linear-gradient(180deg, rgba(255, 255, 255, 0) 41.15%, rgba(221, 221, 221, 0.25) 100%);
+            background-color: var(--body) !important;
+            border: 1px solid #DDDDDD;
+            color: var(--gray-2) !important;
+            font-family: 'Oswald';
+            .glyphicon {
+              color: var(--gray-2) !important;
+            }
+          }
+          // .accord-btn .glyphicon {
+          //   color: var(--black);
+          // }
+        }
+      }
+    }
+  }
+  .price-box {
+    .our-price-div {
+      float: right;
+      align-items: center;
+      .our-price {
+        font-size: 0;
+        margin: 0 1vw;
+        &:before {
+          content: "Price";
+          font-size: 30px;
+          font-family: 'Oswald';
+          font-weight: 600;
+          color: var(--secondary-color);
+        }
+      }
+      .primary {
+        color: var(--black);
+        font-family: 'Oswald';
+        font-weight: 600;
+      }
+    }
+    .excludes {
+      display: none;
+    }
+  }
+  .dropdown.open {
+    .dropdown-menu.model-shareble {
+      display: flex;
+      li {
+        a {
+          padding: 0;
+          &:hover, &:focus {
+            background-color: var(--gray);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.apparel_accessories {
+  width: 90vw !important;
+  .category-container {
+      margin: 15px 0;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;    .cover {
+      position: relative;
+      min-height: 20vw;
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-size: cover;
+      transition: all ease-in-out 0.25s;
+      cursor: pointer;
+      &._1{
+        background-image: url("/site-uploads/1001296/images/Shop-In-Stock-Deals.png");
+      }
+      &._2{
+        background-image: url("/site-uploads/1001296/images/Oem-Apparel-Accessories.png");
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 10px;
+        width: 50%;
+        background-color: var(--main-color);
+        transition: all ease-in-out 0.25s;
+      }
+      &:hover {
+        &:before {
+          left: 50%;
+        }
+      }
+      a {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 2vw;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all ease-in-out 0.25s;
+        span:nth-child(1) {
+          color: #FFF;
+          text-shadow: 1px 1px #757575;
+          font-weight: 600;
+          font-size: 2vw;
+          transition: all ease-in-out 0.25s;
+        }
+        span:nth-child(2) {
+          color: #CFCFCF;
+          border: 1px solid #CFCFCF;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.5vw;
+          transition: all ease-in-out 0.25s;
+          i {
+            transform: rotate(35deg);
+          }
+        }
+      }
+    }
+    .brands {
+      display: flex;
+      // a {
+      //   transition: all ease-in-out 0.25s;
+      //   &:hover {
+      //     opacity: 0.5;
+      //     transform: scale(0.9);
+      //   }
+      // }
+      a {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 2vw;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all ease-in-out 0.25s;
+        span:nth-child(1) {
+          color: var(--body);
+          text-shadow: 1px 1px #757575;
+          font-weight: 600;
+          font-size: 2vw;
+          transition: all ease-in-out 0.25s;
+        }
+        span:nth-child(2) {
+          color: #CFCFCF;
+          border: 1px solid #CFCFCF;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.5vw;
+          transition: all ease-in-out 0.25s;
+          i {
+            transform: rotate(35deg);
+          }
+        }
+      }
+    }
+  }
+}

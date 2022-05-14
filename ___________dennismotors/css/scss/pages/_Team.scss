@@ -1,0 +1,232 @@
+._Team {
+    .container-90 {
+        .boxes {
+            display: flex;
+            flex-direction: column;
+
+            .box {
+                @extend ._brd-box;
+                @extend .thin;
+                @extend .lbs;
+                margin-bottom: 1vw;
+                display: flex;
+                justify-content: space-between;
+                // align-items: center;
+
+                div {
+                    padding: 1vw 2vw;
+
+
+                    &:nth-child(1) {
+                        flex: 3;
+
+                        // width: 60;
+                        ul {
+                            padding: 0;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        flex: 1;
+
+                        // width: 30;
+                        img {
+                            width: 100%;
+                            border: 2px solid var(--secondary-color);
+                            border-radius: 50%;
+                            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+                        }
+
+                        p {
+                            font-size: 1.1111111111111vw;
+                            font-family: var(--main-font);
+                            text-align: center;
+                            margin-top: 2vw;
+                            font-weight: 600;
+                            color: var(--secondary-color);
+                        }
+                    }
+
+                    &.flex {
+                        width: 47%;
+                        display: flex;
+
+                        &.column {
+                            flex-direction: column;
+                        }
+
+                        img {
+                            max-width: 48%;
+                        }
+                    }
+
+                    h1 {
+                        font-size: 2.7777777777778vw;
+                        font-weight: 700;
+                        color: var(--main-font-color);
+                        font-family: var(--secondary-font);
+                    }
+
+                    h4 {
+                        font-size: 1.3888888888889vw;
+                        font-weight: 600;
+                        color: var(--main-font-color);
+                        font-family: var(--main-font);
+
+                        span {
+                            font-weight: 600;
+                            color: var(--main-color);
+                        }
+
+                        a {
+                            color: inherit;
+                            text-decoration: underline;
+                            transition: all ease-in-out 0.25s;
+
+                            &:hover {
+                                color: var(--main-color);
+                            }
+                        }
+                    }
+
+
+                    p {
+                        font-size: 1.1111111111111vw;
+                        color: var(--main-font-color);
+                        font-family: var(--main-font);
+
+                        span {
+                            &.crossline {
+                                font-weight: bold;
+                                font-size: 150%;
+                                text-decoration: line-through;
+
+                            }
+
+                            &.red {
+                                color: var(--main-color);
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                    ul.score {
+                        display: flex;
+
+                        li {
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            h2 {
+                                font-size: 2.75vw;
+                            }
+
+                            p {
+                                color: var(--secondary-color);
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container-90 {
+            .boxes {
+
+                .box {
+                    flex-direction: column;
+
+                    div {
+                        padding: 1vw 2vw;
+                        width: 100%;
+
+                        &:nth-child(1) {
+                            flex: 3;
+
+                            ul {
+                                padding: 1vw 20px;
+                                list-style: circle;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            flex: 1;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+
+                            img {
+                                width: 100%;
+                                max-width: 250px;
+                            }
+
+                            p {
+                                font-size: 18px;
+                            }
+                        }
+
+                        h1 {
+                            font-size: 40px
+                        }
+
+                        h4 {
+                            font-size: 20px;
+
+                            span {
+                                font-weight: 600;
+                                color: var(--main-color);
+                            }
+
+                            a {
+                                color: inherit;
+                                text-decoration: underline;
+                                transition: all ease-in-out 0.25s;
+
+                                &:hover {
+                                    color: var(--main-color);
+                                }
+                            }
+                        }
+
+                        p {
+                            font-size: 18px;
+                            color: var(--main-font-color);
+                            font-family: var(--main-font);
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+
+                        ul.score {
+                            flex-direction: column;
+
+                            li {
+                                flex: 1;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                h2 {
+                                    font-size: 22px;
+                                }
+
+                                p {
+                                    color: var(--secondary-color);
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}

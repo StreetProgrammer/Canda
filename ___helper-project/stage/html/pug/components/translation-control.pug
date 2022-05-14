@@ -1,0 +1,47 @@
+.controls-inner-menu.box-shadow
+    .controls-content
+        p.title 
+            span
+                <i class="fas fa-check-circle"></i>
+            | Voice.mp3
+        .control-item
+            p   لغة الترجمة
+            .from-to
+                span من
+                select.form-control(required='')
+            .from-to
+                span إلى
+                select.form-control(required='')
+        .control-item
+            p   نوع الترجمة
+            div.flex-inputs
+                .custom-control.custom-radio.custom-control-inline
+                    input#Radio1.custom-control-input(type='radio', name='example1', value='customEx')
+                    label.custom-control-label(for='Radio1') كتابة
+                .custom-control.custom-radio.custom-control-inline
+                    input#Radio2.custom-control-input(type='radio', name='example1', value='customEx')
+                    label.custom-control-label(for='Radio2') تنسيق
+                .custom-control.custom-radio.custom-control-inline
+                    input#Radio3.custom-control-input(type='radio', name='example1', value='customEx')
+                    label.custom-control-label(for='Radio3') تفريغ صوتي 
+        .control-item
+            p   نوع الترجمة
+            div.flex-inputs
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#checkbox.custom-control-input(type='checkbox', name='example2', value='customEx')
+                    label.custom-control-label(for='checkbox') ترجمة
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#checkbox2.custom-control-input(type='checkbox', name='example2', value='customEx')
+                    label.custom-control-label(for='checkbox2') ترجمة
+        .control-item
+            p   نوع الترجمة
+            div.flex-inputs
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#Radio4.hide(type='radio', name='example3', value='customEx')
+                    label.borderd-label(for='Radio4') ترجمة
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#Radio5.hide(type='radio', name='example3', value='customEx')
+                    label.borderd-label(for='Radio5') ترجمة
+
+        button.btn.btn-primary.btn-block.btn-sm أضف الأمر
+

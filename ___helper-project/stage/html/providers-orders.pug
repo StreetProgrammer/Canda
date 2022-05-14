@@ -1,0 +1,95 @@
+- var pageTitle = 'Account - Wallet'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body 
+        .page-wrapper.404-page
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    .row
+                        .col-md-12
+                            .spo-container.rtl
+                                h4.sec-font.my-3 مزود خدمة
+                                .inner-menu-container
+                                    include pug/components/provider-inner-menu
+                                    .inner-menu-content
+                                        .row
+                                            .col-md-12
+                                                .box-shadow.mb-3.white-bg
+                                                    .wallet-container
+                                                        .row.controls
+                                                            .col-sm-12.col-md-6.my-2.search
+                                                                .form-row
+                                                                    .col-2
+                                                                        label ابحث
+                                                                    .col-7
+                                                                        input.form-control(type='text')
+
+                                                            .col-sm-12.col-md-6.my-2.count-control 
+                                                                .form-row
+                                                                    .col-2
+                                                                        label اظهر
+                                                                    .col-7
+                                                                        select.form-control(type='text')
+                                                                    .col-2
+                                                                        label مدخلات
+
+                                                        .wallet-table.my-5.table-responsive-sm
+                                                            table.table.table-responsive-sm
+                                                                thead
+                                                                    tr
+                                                                    th(scope='col') #
+                                                                    th(scope='col') رقم الطلب
+                                                                    th(scope='col') الحالة
+                                                                    th(scope='col') التسليم
+                                                                    th(scope='col') المبلغ
+                                                                    th(scope='col') التاريخ
+                                                                    th(scope='col') تفاصيل الطلب
+
+                                                                tbody
+                                                                    tr
+                                                                        th(scope='row') 1
+                                                                        td 560
+                                                                        td.preview قيد المراجعه
+                                                                        td تم
+                                                                        td 100
+                                                                        td 20/04/2020
+                                                                        td عرض التفاصيل
+                                                                        
+                                                                    tr
+                                                                        th(scope='row') 2
+                                                                        td 600
+                                                                        td.inprogress قيد التنفيذ
+                                                                        td تم
+                                                                        td 100
+                                                                        td 20/04/2020
+                                                                        td عرض التفاصيل
+                                                                        
+                                                                    tr
+                                                                        th(scope='row') 3
+                                                                        td 640
+                                                                        td.completed تم التسليم
+                                                                        td تم
+                                                                        td 100
+                                                                        td 20/04/2020
+                                                                        td عرض التفاصيل
+                                                                        
+                                                            .pagination
+                                                                a.prev 
+                                                                    span.icon <i class="fas fa-chevron-right"></i>
+                                                                    | السابق
+
+                                                                a.next 
+                                                                    | التالي
+                                                                    span.icon <i class="fas fa-chevron-left"></i>
+                                                                
+
+            include pug/layout/footer           
+        include pug/layout/js

@@ -1,0 +1,130 @@
+- var pageTitle = 'Home Page'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body
+        .page-wrapper.home-page
+            include pug/layout/navbar
+            include pug/layout/sidebar
+            main.page-content
+                section.main-1
+                    .container
+                        .row.rtl
+                            .col-md-7
+                                .sub-1-right
+                                    h3.pt-5 إطبع أونلاين
+                                    h3.pt-3 خدماتنا تصلك أينما كنت
+                                    p.bold.py-4 تضم منصة برنت مقدمي خدمات الطباعة في كافة مدن المملكة لتسهيل عملية الطباعة بجودة عالية وسعر مميز مع خدمة التوصيل لباب المنزل
+                                    p.bold.text-center
+                                        a.btn.btn-outline-primary.mb-3(href="/signup.html") إبدأ الأن
+                                    .img-wrapper.text-center
+                                        img(src="./images/home/sub-1-2.png", alt="", srcset="")
+                            .col-md-5
+                                .sub-1-left
+                                    .img-wrapper.text-center
+                                        img(src="./images/home/sub-1-1.png", alt="", srcset="")
+                        .row.rtl.pt-5
+                            .col-md-7
+                                .sub-2-right
+                                    h2.pt-5 
+                                        | لا 
+                                        small.bold تشيل هم بعد اليوم
+                                    h2.pt-1 
+                                        | مع 
+                                        small.bold خدماتنا كل حلولك عندنا
+                                    .links-wrapper.text-center.pt-5
+                                        a.text-center(href="#")
+                                            img(src="./images/home/sub-2-2.png", alt="", srcset="")
+                                            span خدمات الطباعة
+                                        a.text-center(href="#")
+                                            img(src="./images/home/sub-2-3.png", alt="", srcset="")
+                                            span خدمات الدعايا
+                                        a.text-center(href="#")
+                                            img(src="./images/home/sub-2-4.png", alt="", srcset="")
+                                            span خدمات البحث العلمي
+                            .col-md-5
+                                .sub-2-left
+                                    .img-wrapper.text-center
+                                        img(src="./images/home/sub-2-1.png", alt="", srcset="")
+                        .row.rtl.py-5
+                            .col-md-6.py-5
+                                .sub-3-right
+                                    h2.pt-5 عرض اليوم
+                                    h3.pt-1 خصم خاص على الطباعة 
+                                    p.bold.py-4 تضم منصة برنت مقدمي خدمات الطباعة في كافة مدن المملكة لتسهيل عملية الطباعة بجودة عالية وسعر مميز مع خدمة التوصيل لباب المنزل
+                                    a.btn.btn-primary.mb-3(href="/signup.html") إقرأ المزيد
+                                    
+                            .col-md-6.py-5
+                                .sub-3-left
+                                    .img-wrapper.text-center
+                                        img(src="./images/home/sub-3-2.png", alt="", srcset="")
+                                        img(src="./images/home/sub-3-1.png", alt="", srcset="")
+                                        
+                section.main-2
+                    .container
+                        .row.rtl.py-5
+                            .col-md-6
+                                .sub-4-left
+                                    .img-wrapper.text-center
+                                        img(src="./images/home/sub-4-1.png", alt="", srcset="")
+                            .col-md-6.py-5
+                                .sub-4-right
+                                    h3.pt-1 من نحن 
+                                    p.py-4 تضم منصة برنت مقدمي خدمات الطباعة في كافة مدن المملكة لتسهيل عملية الطباعة بجودة عالية وسعر مميز مع خدمة التوصيل لباب المنزل
+                                    a.btn.btn-primary.mb-3(href="/signup.html") إقرأ المزيد
+
+                section.main-3
+                    .container
+                        .row.rtl
+                            .col-md-6
+                                .sub-5-right
+                                    h3.pt-5 الأسئلة الشائعة
+                                    .questions-wrapper
+                                        div.my-4.p-2
+                                            h4 كيف أطبع ؟
+                                            p.bold.py-2 تضم منصة برنت مقدمي خدمات الطباعة في كافة مدن المملكة لتسهيل عملية الطباعة بجودة عالية وسعر مميز مع خدمة التوصيل لباب المنزل
+                                        div.my-4.p-2
+                                            h4 كيف أطبع ؟
+                                            p.bold.py-2 تضم منصة برنت مقدمي خدمات الطباعة في كافة مدن المملكة لتسهيل عملية الطباعة بجودة عالية وسعر مميز مع خدمة التوصيل لباب المنزل
+
+                            .col-md-6
+                                .sub-5-left
+                                    .img-wrapper.text-center.pt-5
+                                        img(src="./images/home/sub-5-1.png", alt="", srcset="")
+                        .row.rtl.pt-5
+                            .col-md-7
+                                .sub-6-right
+                                    .img-wrapper.text-center.pt-5
+                                        img(src="./images/home/sub-6-1.png", alt="", srcset="")
+                            .col-md-5
+                                .sub-6-left
+                                    h3.pt-5 اتصل بنا
+                                    .info-wrapper
+                                        p.bold.py-2
+                                            span.icon <i class="fas fa-map-marker-alt fa-2x"></i>
+                                            span.px-3 تضم منصة برنت مقدمي خدمات الطباعة في كافة مدن المملكة لتسهيل عملية الطباعة بجودة عالية وسعر مميز مع خدمة التوصيل لباب المنزل
+                                        p.bold.py-2
+                                            span.icon <i class="fas fa-envelope fa-2x"></i>
+                                            span.px-3 info@spo-e.com
+                                        p.bold.py-2
+                                            span.icon <i class="fas fa-phone-square-alt fa-2x"></i>
+                                            span.px-3 966521324563
+                        .row.rtl.py-5
+                            .col-md-6.py-5
+                                .sub-7-right
+                                    h3.pt-5 كن مزود خدمة
+                                    p.bold.py-4 تضم منصة برنت مقدمي خدمات الطباعة في كافة مدن المملكة لتسهيل عملية الطباعة بجودة عالية وسعر مميز مع خدمة التوصيل لباب المنزل
+                                    a.btn.btn-primary.mb-3(href="/signup.html") إشترك الأن
+                                    
+                            .col-md-6.py-5
+                                .sub-7-left
+                                    .img-wrapper.text-center
+                                        img(src="./images/home/sub-7-1.png", alt="", srcset="")
+                                        
+            include pug/layout/footer
+        include pug/layout/js

@@ -1,0 +1,26 @@
+.modal-content {
+    border-radius: 0px;
+    border: 1px solid $thiFont !important;
+
+    .modal-header {
+        position: relative;
+        border-bottom: 0px;
+
+        .modal-title {
+            color: $secFont;
+            font-weight: bold;
+        }
+
+        .close {
+            position: absolute;
+            padding: 0rem 0rem;
+            left: 10px;
+            top: 20px;
+            color: $thiFont;
+
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+}

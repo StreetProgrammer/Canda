@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--  -->
+  <div class="collapsed-content">
+    <div class="new_social">
+      <a href="https://www.facebook.com/mountainmitsubishi/"><span><i class="fab fa-facebook-f">&nbsp;</i></span></a>
+      <a href="https://twitter.com/MitsubishiCAN"><span><i class="fab fa-twitter">&nbsp;</i></span></a>
+      <a href="https://www.instagram.com/mountain_mitsubishi/"><span><i class="fab fa-instagram">&nbsp;</i></span></a>
+      <a href="https://www.youtube.com/channel/UCwRpoIAXG1--23_-rya3jHQ"><span><i
+            class="fab fa-youtube">&nbsp;</i></span></a>
+    </div>
+  </div>
+
+  <style>
+    .collapsed-content {
+      display: none;
+      float: left;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      padding: 0vw 2vw;
+    }
+
+    @media (max-width: 767px) {
+      .collapsed-content {
+        display: flex;
+      }
+    }
+
+    .collapsed-content .new_social a {
+      width: 6vw;
+      height: 6vw;
+      font-size: 3.5vw;
+      margin: 0 1vw;
+    }
+
+    @media (max-width: 576px) {
+      .collapsed-content .new_social a {
+        width: 8vw;
+        height: 8vw;
+        font-size: 3.5vw;
+        margin: 0 1vw;
+      }
+    }
+  </style>
+  <!--  -->
+</body>
+
+</html>

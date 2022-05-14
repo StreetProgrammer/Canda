@@ -1,0 +1,309 @@
+// 
+.checkout-progress-container {
+    background: #FFF;
+    min-height: 80px;
+    padding: 10px;
+    margin: 10px auto;
+
+    .order-progress {
+        text-align: center;
+
+        li {
+            list-style: none;
+            float: right;
+            width: 33.3333%;
+            position: relative;
+            text-align: center;
+            font-weight: bold;
+
+            &:before {
+                content: '\2713';
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 16px;
+                font-weight: bold;
+                color: $white;
+                display: block;
+                margin: 0 auto 10px auto;
+                border-radius: 50%;
+                background-color: $thiFont;
+                letter-spacing: 0px;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 90%;
+                height: 3px;
+                top: 15px;
+                left: -45%;
+                background-color: $thiFont;
+                // z-index: -1;
+            }
+
+            &:last-child:after {
+                content: none;
+            }
+
+            &.active {
+                color: $secFont;
+
+
+                &:after {
+                    border-color: #ccc;
+                    background-color: $secFont;
+                }
+
+                &:before {
+                    border-color: #ccc;
+                    background-color: $secFont;
+                }
+            }
+        }
+    }
+}
+
+//
+
+.wallet-container {
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    padding: 20px;
+
+    .controls {
+        .title {
+
+            color: $secFont;
+            font-weight: bold;
+        }
+
+        .count-control {
+
+            @media #{$small_mobile} {
+                flex: 100%;
+            }
+
+            .form-row {
+                label {
+                    line-height: 2;
+                }
+
+                .form-control {
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    .wallet-table,
+    .orders-table,
+    .bill-table {
+        @media #{$small_mobile} {
+            max-width: 70vw;
+        }
+
+        table {
+            @media #{$small_mobile} {
+                overflow-x: scroll;
+            }
+
+            thead {
+                color: $secFont;
+            }
+
+            .amount {
+                max-width: 70px;
+                border-radius: 5px;
+                border: 1px solid $thiFont;
+                background-color: $darkWhite;
+                text-align: center;
+            }
+
+            .icon {
+                color: $priFont;
+                cursor: pointer;
+                transition: all ease-in-out 300ms;
+
+                &:hover {
+                    color: $secFont;
+                }
+            }
+
+        }
+
+        .bill-detail {
+            .title {
+                font-weight: bold;
+                color: $secFont;
+            }
+
+            p {
+                font-weight: bold;
+                margin: 0;
+
+                small {
+                    color: $thiFont;
+                }
+            }
+
+
+        }
+
+    }
+}
+
+
+.address-item-with-rbtn {
+    background-color: $white;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #efefef;
+    }
+
+    p {
+        color: $thiFont;
+        margin: 0.5rem;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    p:nth-child(1) {
+        color: $secFont;
+    }
+
+    .radio-mark {
+        position: absolute;
+        left: 10px;
+        border: 0px;
+        background: transparent;
+        color: $thiFont;
+        position: absolute;
+        top: 15px;
+    }
+
+    input[type="radio"]+span {
+        position: relative;
+        color: $priFont;
+        height: 25px;
+        width: 25px;
+        border: 1px solid #777;
+        border-radius: 50%;
+        display: inline-block;
+        transition: all ease-in-out 300ms;
+    }
+
+    input[type="radio"]:checked+span {
+
+        color: $priFont;
+        height: 25px;
+        width: 25px;
+        background-color: $secFont;
+        border-radius: 50%;
+        display: inline-block;
+
+        &:after {
+            content: "\2713";
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-weight: bold;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+}
+
+.parent-label {
+    width: 100%;
+
+    .pay-item-with-rbtn {
+        height: 200px;
+        background-color: $white;
+        position: relative;
+        padding: 10px;
+        cursor: pointer;
+        text-align: center;
+
+        img {
+            width: 130px;
+            margin-top: 2rem;
+        }
+
+        ;
+
+        &:hover {
+            background-color: #efefef;
+        }
+
+        p {
+
+            .icon {
+                font-size: 25px;
+            }
+        }
+
+        p:nth-child(1) {
+            margin-top: 2rem;
+            color: $priFont
+        }
+
+        p:nth-child(2) {
+            color: $secFont;
+            font-weight: bold;
+        }
+
+        .radio-mark {
+            position: absolute;
+            right: 10px;
+            border: 0px;
+            background: transparent;
+            color: $thiFont;
+            position: absolute;
+            top: 15px;
+        }
+
+        input[type="radio"]+span {
+            position: relative;
+            color: $priFont;
+            height: 25px;
+            width: 25px;
+            border: 1px solid #777;
+            border-radius: 50%;
+            display: inline-block;
+            transition: all ease-in-out 300ms;
+        }
+
+        input[type="radio"]:checked+span {
+
+            color: $priFont;
+            height: 25px;
+            width: 25px;
+            background-color: $secFont;
+            border-radius: 50%;
+            display: inline-block;
+
+            &:after {
+                content: "\2713";
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-weight: bold;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+    }
+}
+
+
+
+.bottom-btns {
+    display: block;
+}

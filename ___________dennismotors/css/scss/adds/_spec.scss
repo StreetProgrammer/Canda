@@ -1,0 +1,41 @@
+/***************************/ 
+
+.modal-item-overview {
+  display: flex;
+  padding: 2vw;
+  @media screen and (max-width: 767px){
+    flex-direction: column;
+  }
+  .img-container {
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    img {
+      width: 70%;
+      height: auto;
+      max-width: 200px;
+    }
+  }
+  .values {
+    flex: 1 1 60%;
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--main-color);
+    }
+    .item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      border-bottom: 1px solid #ddd;
+      padding: 1vw;
+      @media screen and (max-width: 767px) {
+        padding: 2vw;
+      }
+      .value {
+        text-align: right;
+      }
+    }
+  }
+}

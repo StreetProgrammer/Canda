@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Start Form -->
+    <div class="adForm container-fluid">
+        <h2 class="col-sm-12">Contact Information</h2>
+
+        <div class="col-sm-6 formField"><label class="sr-only" for="exampleInputEmail3">First Name</label> <input
+                class="required adpage_formbox detailsFormFirstName1" id="Name" name="fName" placeholder="First Name"
+                title="First Name" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-sm-6 formField"><label class="sr-only" for="exampleInputEmail3">Last Name</label> <input
+                class="required adpage_formbox detailsFormFirstName1" id="Name" name="lName" placeholder="Last Name"
+                title="Last Name" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-sm-6 formField"><label class="sr-only" for="exampleInputEmail3">Email</label> <input
+                class="required email adpage_formbox detailsFormEmail1" idd="email" name="email" placeholder="Email"
+                title="email" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-sm-6 formField"><label class="sr-only" for="exampleInputEmail3">City</label> <input
+                class="required adpage_formbox detailsFormFirstName1" idd="City" name="City" placeholder="City"
+                title="City" type="text" /></div>
+
+        <div class="col-sm-6 formField"><label class="sr-only" for="exampleInputEmail3">Province</label> <input
+                class="required adpage_formbox detailsFormFirstName1" idd="Province" name="Province"
+                placeholder="Province" title="Province" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="formField col-xs-6"><label class="sr-only" for="exampleInputEmail3">Rate Your Experience</label>
+            <select aria-invalid="false" class="valid" name="Select A Location" placeholder="Select A Location">
+                <option value="">Select A Location</option>
+                <option>Maxwell Farm Service</option>
+                <option>Iron Inventory Inc.</option>
+            </select></div>
+
+        <div class="keep-anonymous col-md-12"><input class="mail-rec" id="keep-anonymous" name="year" type="checkbox"
+                value="anonymous" /> <label for="mail" style="font-size: 17px;font-weight: 400;">Please Keep me
+                Anonymous</label></div>
+
+        <div class="formField col-md-12" style="margin-bottom: -7px;font-size: 17px;">
+            <div class="newlabel placeholder">May We Contact You Via E-mail About Your Comments?</div>
+            <input aria-label="Allow Contact" checked="checked" name="allowcontact" type="radio" value="1" />Yes <input
+                aria-label="Don't Allow Contact" name="allowcontact" type="radio" value="0" />No
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-12" style="font-size: 17px;">
+            <div class="newlabel placeholder">May We Use Your Comments as a Testimonial?</div>
+            <input aria-label="Allow Comments" checked="checked" name="allowcomments" type="radio" value="1" />Yes
+            <input aria-label="Don't Allow Comments" name="allowcomments" type="radio" value="0" />No
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <h2 class="col-sm-12">Please Rate Your Experience</h2>
+
+        <h4 class="col-sm-12">Five stars is the highest rating</h4>
+
+        <div class="formField col-md-6">
+            <div class="newlabel placeholder" style="font-size: 18px;padding:0">Your Purchase</div>
+            <select aria-invalid="false" aria-label="Your Purchase" class="valid" name="ratepurchase">
+                <option value="0">N/A</option>
+                <option value="5">5 Star</option>
+                <option value="4">4 Star</option>
+                <option value="3">3 Star</option>
+                <option value="2">2 Star</option>
+                <option value="1">1 Star</option>
+            </select>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-6">
+            <div class="newlabel placeholder" style="font-size: 18px;padding:0">Sales</div>
+            <select aria-invalid="false" aria-label="Your Purchase" class="valid" name="ratepurchase">
+                <option value="0">N/A</option>
+                <option value="5">5 Star</option>
+                <option value="4">4 Star</option>
+                <option value="3">3 Star</option>
+                <option value="2">2 Star</option>
+                <option value="1">1 Star</option>
+            </select>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-6">
+            <div class="newlabel placeholder" style="font-size: 18px;padding:0">Financing and Insurance</div>
+            <select aria-invalid="false" aria-label="Your Purchase" class="valid" name="ratepurchase">
+                <option value="0">N/A</option>
+                <option value="5">5 Star</option>
+                <option value="4">4 Star</option>
+                <option value="3">3 Star</option>
+                <option value="2">2 Star</option>
+                <option value="1">1 Star</option>
+            </select>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-6">
+            <div class="newlabel placeholder" style="font-size: 18px;padding:0">Service</div>
+            <select aria-invalid="false" aria-label="Your Purchase" class="valid" name="ratepurchase">
+                <option value="0">N/A</option>
+                <option value="5">5 Star</option>
+                <option value="4">4 Star</option>
+                <option value="3">3 Star</option>
+                <option value="2">2 Star</option>
+                <option value="1">1 Star</option>
+            </select>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-6">
+            <div class="newlabel placeholder" style="font-size: 18px;padding:0">Parts</div>
+            <select aria-invalid="false" aria-label="Your Purchase" class="valid" name="ratepurchase">
+                <option value="0">N/A</option>
+                <option value="5">5 Star</option>
+                <option value="4">4 Star</option>
+                <option value="3">3 Star</option>
+                <option value="2">2 Star</option>
+                <option value="1">1 Star</option>
+            </select>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-6">
+            <div class="newlabel placeholder" style="font-size: 18px;padding:0">Accessories</div>
+            <select aria-invalid="false" aria-label="Your Purchase" class="valid" name="ratepurchase">
+                <option value="0">N/A</option>
+                <option value="5">5 Star</option>
+                <option value="4">4 Star</option>
+                <option value="3">3 Star</option>
+                <option value="2">2 Star</option>
+                <option value="1">1 Star</option>
+            </select>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-6">
+            <div class="newlabel placeholder" style="font-size: 18px;padding:0">Overall Dealership Experience</div>
+            <select aria-invalid="false" aria-label="Your Purchase" class="valid" name="ratepurchase">
+                <option value="0">N/A</option>
+                <option value="5">5 Star</option>
+                <option value="4">4 Star</option>
+                <option value="3">3 Star</option>
+                <option value="2">2 Star</option>
+                <option value="1">1 Star</option>
+            </select>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <h4 class="col-sm-12">How did you hear about us?</h4>
+
+        <div class="formField col-md-4" style="margin-top: -5px;"><input aria-label="TV" name="aboutustv"
+                placeholder="TV" type="checkbox" value="1" />
+            <div class="aboutlabel placeholder">TV</div>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-4" style="margin-top: -5px;"><input aria-label="TV" name="aboutustv"
+                placeholder="Radio" type="checkbox" value="1" />
+            <div class="aboutlabel placeholder">Radio</div>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-4" style="margin-top: -5px;"><input aria-label="TV" name="aboutustv"
+                placeholder="Newspaper" type="checkbox" value="1" />
+            <div class="aboutlabel placeholder">Newspaper</div>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-4" style="margin-top: -5px;"><input aria-label="TV" name="aboutustv"
+                placeholder="Friend" type="checkbox" value="1" />
+            <div class="aboutlabel placeholder">Friend</div>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-4" style="margin-top: -5px;"><input aria-label="TV" name="aboutustv"
+                placeholder="Phonebook" type="checkbox" value="1" />
+            <div class="aboutlabel placeholder">Phonebook</div>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-4" style="margin-top: -5px;"><input aria-label="TV" name="aboutustv"
+                placeholder="Billboard" type="checkbox" value="1" />
+            <div class="aboutlabel placeholder">Billboard</div>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-4" style="margin-top: -5px;"><input aria-label="TV" name="aboutustv"
+                placeholder="Search" type="checkbox" value="1" />
+            <div class="aboutlabel placeholder">Search</div>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-4" style="margin-top: -5px;"><input aria-label="TV" name="aboutustv"
+                placeholder="Dealer Locator" type="checkbox" value="1" />
+            <div class="aboutlabel placeholder">Dealer Locator</div>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-4" style="margin-top: -5px;"><input aria-label="TV" name="aboutustv"
+                placeholder="Internet" type="checkbox" value="1" />
+            <div class="aboutlabel placeholder">Internet</div>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-md-4" style="margin-top: -5px;"><input aria-label="TV" name="aboutustv"
+                placeholder="Other" type="checkbox" value="1" />
+            <div class="aboutlabel placeholder">Other</div>
+            <input class="tb" name="What_tractors" placeholder="Other" style="width: 350px;height: 35px;" type="text"
+                value="" />
+        </div>
+
+        <div class="formRequired FormRequiredField">&nbsp;</div>
+
+        <div class="formField col-md-4" style="margin-top: -5px;"><input aria-label="TV" name="aboutustv"
+                placeholder="Social Media" type="checkbox" value="1" />
+            <div class="aboutlabel placeholder">Social Media</div>
+
+            <div class="formRequired FormRequiredField">&nbsp;</div>
+        </div>
+
+        <div class="formField col-xs-12"><label class="sr-only" for="exampleInputEmail3">Comments</label><textarea
+                class="adpage_formbox detailsFormComment1" idd="Comments" name="Comments" placeholder="Comments"
+                rows="4" title="Comments"></textarea></div>
+    </div>
+    <!--End Form  -->
+
+    <p>
+        <style type="text/css">
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            textarea,
+            select {
+                float: none;
+            }
+
+            .newlabel {
+                display: inline;
+                padding: 0.2em 25px 0.3em;
+                /* font-size: 75%; */
+                /* font-weight: 700; */
+                line-height: 1;
+                /* color: #fff; */
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: baseline;
+                border-radius: 0.25em;
+            }
+
+            .aboutlabel {
+                display: inline;
+                padding: 0.2em 0px 0.3em;
+                font-size: 18px;
+                line-height: 1;
+                /* color: #fff; */
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: baseline;
+                border-radius: 0.25em;
+                margin-left: -10px;
+            }
+
+            .formField {
+                position: relative;
+                margin-top: 5px;
+            }
+
+            .formField .formRequired,
+            label.error {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 10px;
+                height: 40px;
+                line-height: 40px;
+                margin-top: 0;
+                margin-bottom: auto;
+                font-size: 16px;
+            }
+
+            label.error {
+                padding-right: 15px;
+            }
+
+            .adForm h2 {
+                font-size: 26px;
+                padding: 15px;
+                border-top: 1px solid #dedede;
+                text-align: center;
+            }
+
+            form button,
+            form .btn {
+                background-color: #d0112b;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #ed2742;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                color: #ffffff;
+            }
+
+            button:hover,
+            .btn:hover,
+            button:focus,
+            .btn:focus {
+                background-color: #ec1431;
+                color: #000000;
+            }
+
+            .adForm input,
+            .adForm textarea,
+            .adForm select {
+                width: 100%;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #ebebeb;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                background-color: #f2f2f2;
+                color: #000000 !important;
+                font-size: 16px;
+                outline: none;
+                padding-top: 10px;
+                padding-right: 20px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                resize: none;
+                max-width: 100%;
+                min-width: 200px;
+            }
+
+            input:hover,
+            textarea:hover,
+            select:hover,
+            input:focus,
+            textarea:focus,
+            select:focus {
+                background-color: #d6d6d6;
+                color: #000000;
+            }
+
+            ::-webkit-input-placeholder {
+                /* WebKit browsers */
+                color: #000000;
+                color: rgba(0, 0, 0, 0.85);
+            }
+
+            :-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: #000000;
+                color: rgba(0, 0, 0, 0.85);
+            }
+
+            ::-moz-placeholder {
+                /* Mozilla Firefox 19+ */
+                color: #000000;
+                color: rgba(0, 0, 0, 0.85);
+            }
+
+            :-ms-input-placeholder {
+                /* Internet Explorer 10+ */
+                color: #000000;
+                color: rgba(0, 0, 0, 0.85);
+            }
+
+            input[type="checkbox"],
+            input[type="radio"] {
+                width: auto;
+                min-width: 35px;
+                margin-bottom: 15px;
+                display: inline-block;
+            }
+
+            .seperator {
+                border-bottom: 1px solid #e2e2e2;
+                margin: 30px auto;
+            }
+
+            form .lead-button,
+            form .btn.btn-default,
+            form .btn.btn-primary {
+                text-transform: uppercase;
+                border-width: 0;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                color: #ffffff;
+                text-align: center;
+                font-size: 18px;
+                padding-top: 15px;
+                padding-right: 30px;
+                padding-bottom: 15px;
+                padding-left: 30px;
+                display: block;
+                margin: 5px;
+                font-weight: normal;
+                float: left;
+            }
+        </style>
+    </p>
+
+
+</body>
+
+</html>

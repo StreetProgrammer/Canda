@@ -1,0 +1,135 @@
+.parts-vdp {
+    .back-btn {}
+
+    .gallery-price-setion {
+        #ad-left-content {
+
+            .lSAction>.lSPrev,
+            .lSAction>.lSNext {
+                background: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #ddd;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                background-color: var(--main-color);
+                color: var(--white);
+                transition: all ease-in-out 0.2s;
+                opacity: 1;
+
+                @media screen and (max-width: 600px) {
+                    width: 30px;
+                    height: 30px;
+                    opacity: 0.6;
+                    color: var(--main-color);
+                    background-color: var(--white);
+                    border: 1px solid var(--main-color);
+                }
+
+                &:hover {
+                    color: var(--main-color);
+                    background-color: var(--white);
+                    border: 1px solid var(--main-color);
+                    text-decoration: none;
+                }
+            }
+
+            .lSAction>.lSPrev {
+                left: 0%;
+
+                &:before {
+                    font-family: 'Glyphicons Halflings';
+                }
+            }
+
+            .lSAction>.lSNext {
+                right: 0%;
+
+                &:before {
+                    font-family: 'Glyphicons Halflings';
+                }
+            }
+
+            .img-tag {
+                @media screen and (max-width: 600px) {
+                    left: 0;
+                    top: 20px;
+                    width: 80px;
+                    padding: 0;
+                }
+            }
+        }
+
+        #ad-right-content {
+            .model-title {}
+
+            .available {}
+
+            .right-cta-buttons {
+                #qautity-add-box {
+                    .simpleCart_quantityBox {}
+
+                    .ecomm-btn {
+                        color: var(--body) !important;
+
+                        &:hover {
+                            color: var(--white) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .model-tabs {
+        .panel {
+            .panel-heading {
+                .panel-title {
+                    .js-tabcollapse-panel-heading {
+                        background-color: var(--body) !important;
+                        border: 1px solid #DDDDDD;
+                        color: var(--gray-2) !important;
+                        font-family: "Poppins", sans-serif !important;
+
+                        .glyphicon {
+                            color: var(--gray-2) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    #qautity-add-box .simpleCart_quantityBox div {
+        @media screen and (max-width: 600px) {
+            height: 100%;
+
+        }
+    }
+
+    .model-title {
+        color: var(--black);
+
+        @media screen and (max-width: 600px) {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+    }
+
+    #parts .ecomm-btn {
+        color: var(--gray-8) !important;
+        background-color: unset !important;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 41.15%, rgba(221, 221, 221, 0.25) 100%);
+
+        &:hover {
+            span {
+                background-color: transparent !important;
+                color: inherit !important;
+            }
+        }
+    }
+}

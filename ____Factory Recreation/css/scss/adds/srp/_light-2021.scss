@@ -1,0 +1,411 @@
+.light2021 {
+  padding: 0 !important;
+  /* products */
+  #products {
+    @media screen and (min-width: 768px) and (max-width: 960px) {
+      width: 100%;
+    }
+
+    .sortby-row {
+      div[class*="col-xs"], span[class*="col-xs"] {
+        border: 1px solid #CFCFCF;
+        padding: 0;
+        margin-left: 5px;
+        margin-right: 5px;
+        @media screen and (max-width: 767px) {
+          margin-bottom: 3vw;
+          &.pagination-box {
+            width: 100%;
+            ul.pagination {
+              justify-content: center;
+            }
+          }
+        }
+      }
+      .filter-ttl.filter-xs-btn {
+        color: var(--main-color);
+      }
+      #keyWordsSection {
+        .checklist-filter {
+          form {
+            input#search {
+
+              &:focus,
+              &:focus-visible {
+                outline: none;
+              }
+            }
+
+            .adsSearchButton {
+              color: #5E5E5E !important;
+              background-color: var(--white) !important;
+              border: 1px solid var(--border-color) !important;
+
+              span {}
+            }
+          }
+        }
+      }
+      .order-drop {
+        .sort-btn {
+          color: #5E5E5E !important;
+          background-color: var(--white) !important;
+          border: 1px solid var(--border-color) !important;
+
+          @media screen and (max-width: 767px) {
+            padding: 0 2vw;
+            font-size: 18px;
+          }
+        }
+      }
+      .pagination-box {
+        .pagination {
+          li {
+            margin: 0 5px;
+            a {
+              margin: 0;
+            }
+          }
+        }
+      }
+      .layout_view {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+      }
+    }
+
+    .list-group-item,
+    .grid-group-item {
+      .thumb.card {
+        .img-event {}
+
+        .caption.card-body {
+          .model-title {
+            .model-title-link {
+              color: var(--black);
+              transition: all ease-in-out 0.2s;
+
+              &:hover {
+                color: var(--main-color);
+                opacity: 0.8;
+              }
+            }
+
+            .share-btn {
+              @media screen and (max-width: 991px) {
+                font-size: 16px;
+              }
+
+              &:hover {
+                color: inherit !important;
+                opacity: 0.8;
+              }
+            }
+          }
+
+          .cta-btns {
+            a.quote {
+              background-color: var(--secondary-color) !important;
+              color: var(--gray-4) !important;
+              background: linear-gradient(180deg, #FFFFFF 0%, #F1F1F1 100%);
+              transition: all ease-in-out 0.2s;
+              border: 1px solid var(--gray-2) !important;
+              border-radius: 5px !important;
+              order: 3;
+              flex: 1 1 45%;
+              max-width: 50%;
+              margin: 1.25%;
+              flex-basis: auto;
+              padding: 8px 5px;
+              height: auto;
+              i {
+                color: inherit !important;
+                background-color: var(--secondary-color) !important;
+                background: inherit;
+                transition: all ease-in-out 0.2s;
+              }
+
+              &:hover {
+                background-color: var(--main-color) !important;
+                background: var(--main-color) !important;
+                color: var(--white) !important;
+
+                i {
+                  background-color: var(--main-color) !important;
+                  background: var(--main-color) !important;
+                  color: var(--white) !important;
+                }
+              }
+            }
+
+            a.call-now {
+              color: var(--gray-4) !important;
+              transition: all ease-in-out 0.2s;
+              background: linear-gradient(180deg, #FFFFFF 0%, #F1F1F1 100%);
+              border: 1px solid var(--gray-2) !important;
+              border-radius: 5px !important;
+              flex: 1 1 45%;
+              max-width: 50%;
+              margin: 1.25%;
+              i {
+                color: var(--gray-4);
+                transition: all ease-in-out 0.2s;
+              }
+
+              &:hover {
+                background-color: var(--main-color) !important;
+                background: var(--main-color) !important;
+                color: var(--white) !important;
+
+                i {
+                  background-color: var(--main-color);
+                  color: var(--white);
+                }
+              }
+            }
+
+            a.View-Details {
+              color: var(--gray-4) !important;
+              background-color: var(--white) !important;
+              background: linear-gradient(180deg, #FFFFFF 0%, #F1F1F1 100%);
+              transition: all ease-in-out 0.2s;
+              border: 1px solid var(--gray-2) !important;
+              border-radius: 5px !important;
+              order: -1;
+              flex: 1 1 100%;
+              i {
+                color: var(--main-color) !important;
+                transition: all ease-in-out 0.2s;
+              }
+
+              &:hover {
+                background-color: var(--white) !important;
+                background: var(--white) !important;
+                color: var(--main-color) !important;
+
+                i {
+                  background-color: var(--white) !important;
+                  background: var(--white) !important;
+                  color: var(--main-color) !important;
+                }
+              }
+
+              /* new style */
+              color: var(--white) !important;
+              background: none;
+              background-color: var(--main-color) !important;
+              transition: all ease-in-out 0.2s;
+              border-radius: 5px !important;
+              order: -1;
+              flex: 1 1 100%;
+              i {
+                color: var(--white) !important;
+                background-color: var(--main-color) !important;
+                transition: all ease-in-out 0.2s;
+                font-size: 200%;
+              }
+            }
+
+            // 
+            a.View-Details {
+              font-size: 1vw ;
+              text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.3);
+              @media screen and (min-width: 768px) and (max-width: 991px){
+                font-size: 12px;
+              }
+              @media screen and (max-width: 767px){
+                font-size: 12px;
+              }
+            }
+            a.call-now, a.main-btn.quote {
+              font-size: 1vw ;
+              text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.3);
+              @media screen and (min-width: 768px) and (max-width: 991px){
+                font-size: 12px;
+              }
+              @media screen and (max-width: 767px){
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+        .specs-btn-parent {
+          &:before, &:after {
+            bottom: -5px;
+            background-color: #CFCFCF !important;
+            background: #CFCFCF !important;
+
+          }
+          .specs-btn {
+            color: var(--body);
+            transition: all ease-in-out 0.2s;
+            background-color: var(--white);
+            border: 2px solid #ddd;
+            &:hover {
+              color: var(--main-color);
+              opacity: 0.8;
+            }
+          }
+        }
+
+        .open-item-specs {
+          a.View-Details {
+            color: var(--main-color) !important;
+            background-color: var(--white) !important;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.01) 75%, rgba(0, 0, 0, 0.05) 100%);
+            transition: all ease-in-out 0.2s;
+
+            span {
+              color: var(--main-color) !important;
+              transition: all ease-in-out 0.2s;
+            }
+
+            &:hover {
+              background-color: var(--main-color) !important;
+              color: var(--white) !important;
+
+              span {
+                background-color: var(--main-color) !important;
+                color: var(--white) !important;
+              }
+            }
+          }
+        }
+        .price-oem {
+          .show-item {
+            .ttl {
+              color: var(--main-color);
+              margin-bottom: 1vw;
+            }
+          }
+        }
+      }
+      .thumb{
+        .collapse {
+          background-color: #dddddde6;
+        }
+      }
+    }
+  }
+
+  /* Filters */
+  #filters {
+    &.staticFilterContainer {
+      .filters-panel {
+        .filters-inner {
+          .filter-ttl {
+            font-size: 1vw;
+            background: none !important;
+            @media screen and (max-width: 960px){
+              font-size: 4.3vw;
+            }
+            .filter-ontrol-btns {
+              display: none;
+            }
+          }
+          .filter-collapse-container {
+            &.active-filter-container {
+              span.badge.badge-light {
+                color: var(--white);
+                background-color: #FF0000;
+              }
+            }
+    
+            a.filter-collapse {
+              color: var(--body);
+              transition: all ease-in-out 0.2s;
+    
+              &:hover {
+                color: var(--main-color);
+                padding-left: 5px;
+              }
+            }
+    
+            .filters-panel {
+              .filters-inner {
+                .filter-ttl {
+                  .filter-ontrol-btns {
+                    .filter-close-btn {
+                      color: var(--black);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      /* Price */
+      .Price {
+        .well {
+          .checklist-filter {
+            p {
+              input {
+                color: var(--white) !important;
+              }
+            }
+          }
+        }
+      }
+
+      /* Odometer */
+      .Odometer {
+        .well {
+          .checklist-filter {
+            p {
+              input {
+                color: var(--white) !important;
+              }
+            }
+          }
+        }
+      }
+
+      /* Year */
+      .Year {
+        .well {
+          .checklist-filter {
+            p {
+              input {
+                color: var(--white) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  #share-modal {
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          button.close {
+            background-color: transparent !important;
+            background: transparent;
+            color: var(--black) !important;
+          }
+        }
+        .modal-body#share-box {
+          .social-icons {
+            li {
+              a {
+                color: var(--main-color);
+                transition: all ease-in-out 0.2s;
+      
+                &:hover {
+                  color: var(--main-color);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
+}

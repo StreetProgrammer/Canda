@@ -1,0 +1,109 @@
+#comp_1645538161816 {
+    .container.main-container {
+        width: 90%;
+        padding: 0;
+
+        #products {
+            .sortby-row {
+                display: flex;
+
+                >*:not(.col-sm-4) {
+                    display: none;
+                }
+
+                >.col-sm-4,
+                .row {
+                    margin: auto;
+                    min-width: 40%;
+
+                    ul.pagination {
+                        li {
+                            &.active {
+                                a {
+                                    background-color: var(--main-color);
+                                    border-color: var(--main-color);
+
+                                    &:hover {
+                                        color: var(--main-color);
+                                        background-color: #FFF;
+                                        border: 1px solid var(--gray-8);
+                                    }
+                                }
+                            }
+
+                            a {
+                                border: 1px solid var(--gray-8);
+
+                                &:hover {
+                                    color: var(--main-color);
+                                    background-color: #FFF;
+                                    border: 1px solid var(--gray-8);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .row {
+                margin: auto;
+                min-width: 40%;
+
+                ul.pagination {
+                    li {
+                        &.active {
+                            a {
+                                background-color: var(--main-color);
+                                border-color: var(--main-color);
+
+                                &:hover {
+                                    color: var(--main-color);
+                                    background-color: #FFF;
+                                    border: 1px solid var(--gray-8);
+                                }
+                            }
+                        }
+
+                        a {
+                            border: 1px solid var(--gray-8);
+
+                            &:hover {
+                                color: var(--main-color);
+                                background-color: #FFF;
+                                border: 1px solid var(--gray-8);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .item {
+                .thumb.card {
+                    border: 3px solid var(--gray-8);
+                    border-left: 3px solid var(--main-color);
+                    background: #FFF;
+
+                    .img-event {
+                        display: none;
+                    }
+
+                    .caption {
+                        .title-specs {
+                            h2 {
+                                display: none;
+                            }
+
+                            .date-row {
+                                display: none;
+                            }
+
+                            .stock-num {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,3668 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="keywords"
+    content="Turn Key Web Solutions provides Dealers and Original Equipment Manufacturers with complete web site solutions, Web design and e-commerce development tools">
+  <meta name="description"
+    content="Turn Key Web Solutions provides Dealers and Original Equipment Manufacturers with complete solutions, Web design and e-commerce development tools">
+  <title>Turn Key Web Solutions provides target specific, web based business solutions</title>
+  <script async="" src="https://static-v.tawk.to/709/app.js" charset="UTF-8" crossorigin="*"></script>
+  <script async="" src="https://static-v.tawk.to/709/app.js" charset="UTF-8" crossorigin="*"></script>
+  <script async="" src="https://embed.tawk.to/5e74e8cd8d24fc226588f567/default" charset="UTF-8"
+    crossorigin="*"></script>
+  <script
+    src="/minify/?f=/js/jquery/jquery.js,/js/fancybox/jquery.fancybox.js,/js/sweetalert2/sweetalert2.all.min.js,/js/jquery/jquery.matchHeight.js,/js/jquery/jqvalidate/jquery.validate.min.js,/js/jquery/jqvalidate/jquery.metadata.js,/js/jquery/jquery.form.js,/js/jquery/jquery-ui.js,/js/bootboxjs/bootbox.js&amp;1614106169"
+    type="text/javascript"></script>
+  <style>
+    .swal2-popup.swal2-toast {
+      flex-direction: row;
+      align-items: center;
+      width: auto;
+      padding: .625em;
+      overflow-y: hidden;
+      background: #fff;
+      box-shadow: 0 0 .625em #d9d9d9
+    }
+
+    .swal2-popup.swal2-toast .swal2-header {
+      flex-direction: row;
+      padding: 0
+    }
+
+    .swal2-popup.swal2-toast .swal2-title {
+      flex-grow: 1;
+      justify-content: flex-start;
+      margin: 0 .6em;
+      font-size: 1em
+    }
+
+    .swal2-popup.swal2-toast .swal2-footer {
+      margin: .5em 0 0;
+      padding: .5em 0 0;
+      font-size: .8em
+    }
+
+    .swal2-popup.swal2-toast .swal2-close {
+      position: static;
+      width: .8em;
+      height: .8em;
+      line-height: .8
+    }
+
+    .swal2-popup.swal2-toast .swal2-content {
+      justify-content: flex-start;
+      padding: 0;
+      font-size: 1em
+    }
+
+    .swal2-popup.swal2-toast .swal2-icon {
+      width: 2em;
+      min-width: 2em;
+      height: 2em;
+      margin: 0
+    }
+
+    .swal2-popup.swal2-toast .swal2-icon .swal2-icon-content {
+      display: flex;
+      align-items: center;
+      font-size: 1.8em;
+      font-weight: 700
+    }
+
+    @media all and (-ms-high-contrast:none),
+    (-ms-high-contrast:active) {
+      .swal2-popup.swal2-toast .swal2-icon .swal2-icon-content {
+        font-size: .25em
+      }
+    }
+
+    .swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring {
+      width: 2em;
+      height: 2em
+    }
+
+    .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+      top: .875em;
+      width: 1.375em
+    }
+
+    .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {
+      left: .3125em
+    }
+
+    .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {
+      right: .3125em
+    }
+
+    .swal2-popup.swal2-toast .swal2-actions {
+      flex-basis: auto !important;
+      width: auto;
+      height: auto;
+      margin: 0 .3125em;
+      padding: 0
+    }
+
+    .swal2-popup.swal2-toast .swal2-styled {
+      margin: .125em .3125em;
+      padding: .3125em .625em;
+      font-size: 1em
+    }
+
+    .swal2-popup.swal2-toast .swal2-styled:focus {
+      box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(100, 150, 200, .5)
+    }
+
+    .swal2-popup.swal2-toast .swal2-success {
+      border-color: #a5dc86
+    }
+
+    .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line] {
+      position: absolute;
+      width: 1.6em;
+      height: 3em;
+      transform: rotate(45deg);
+      border-radius: 50%
+    }
+
+    .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left] {
+      top: -.8em;
+      left: -.5em;
+      transform: rotate(-45deg);
+      transform-origin: 2em 2em;
+      border-radius: 4em 0 0 4em
+    }
+
+    .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right] {
+      top: -.25em;
+      left: .9375em;
+      transform-origin: 0 1.5em;
+      border-radius: 0 4em 4em 0
+    }
+
+    .swal2-popup.swal2-toast .swal2-success .swal2-success-ring {
+      width: 2em;
+      height: 2em
+    }
+
+    .swal2-popup.swal2-toast .swal2-success .swal2-success-fix {
+      top: 0;
+      left: .4375em;
+      width: .4375em;
+      height: 2.6875em
+    }
+
+    .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line] {
+      height: .3125em
+    }
+
+    .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip] {
+      top: 1.125em;
+      left: .1875em;
+      width: .75em
+    }
+
+    .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long] {
+      top: .9375em;
+      right: .1875em;
+      width: 1.375em
+    }
+
+    .swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip {
+      -webkit-animation: swal2-toast-animate-success-line-tip .75s;
+      animation: swal2-toast-animate-success-line-tip .75s
+    }
+
+    .swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long {
+      -webkit-animation: swal2-toast-animate-success-line-long .75s;
+      animation: swal2-toast-animate-success-line-long .75s
+    }
+
+    .swal2-popup.swal2-toast.swal2-show {
+      -webkit-animation: swal2-toast-show .5s;
+      animation: swal2-toast-show .5s
+    }
+
+    .swal2-popup.swal2-toast.swal2-hide {
+      -webkit-animation: swal2-toast-hide .1s forwards;
+      animation: swal2-toast-hide .1s forwards
+    }
+
+    .swal2-container {
+      display: flex;
+      position: fixed;
+      z-index: 1060;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: .625em;
+      overflow-x: hidden;
+      transition: background-color .1s;
+      -webkit-overflow-scrolling: touch
+    }
+
+    .swal2-container.swal2-backdrop-show,
+    .swal2-container.swal2-noanimation {
+      background: rgba(0, 0, 0, .4)
+    }
+
+    .swal2-container.swal2-backdrop-hide {
+      background: 0 0 !important
+    }
+
+    .swal2-container.swal2-top {
+      align-items: flex-start
+    }
+
+    .swal2-container.swal2-top-left,
+    .swal2-container.swal2-top-start {
+      align-items: flex-start;
+      justify-content: flex-start
+    }
+
+    .swal2-container.swal2-top-end,
+    .swal2-container.swal2-top-right {
+      align-items: flex-start;
+      justify-content: flex-end
+    }
+
+    .swal2-container.swal2-center {
+      align-items: center
+    }
+
+    .swal2-container.swal2-center-left,
+    .swal2-container.swal2-center-start {
+      align-items: center;
+      justify-content: flex-start
+    }
+
+    .swal2-container.swal2-center-end,
+    .swal2-container.swal2-center-right {
+      align-items: center;
+      justify-content: flex-end
+    }
+
+    .swal2-container.swal2-bottom {
+      align-items: flex-end
+    }
+
+    .swal2-container.swal2-bottom-left,
+    .swal2-container.swal2-bottom-start {
+      align-items: flex-end;
+      justify-content: flex-start
+    }
+
+    .swal2-container.swal2-bottom-end,
+    .swal2-container.swal2-bottom-right {
+      align-items: flex-end;
+      justify-content: flex-end
+    }
+
+    .swal2-container.swal2-bottom-end>:first-child,
+    .swal2-container.swal2-bottom-left>:first-child,
+    .swal2-container.swal2-bottom-right>:first-child,
+    .swal2-container.swal2-bottom-start>:first-child,
+    .swal2-container.swal2-bottom>:first-child {
+      margin-top: auto
+    }
+
+    .swal2-container.swal2-grow-fullscreen>.swal2-modal {
+      display: flex !important;
+      flex: 1;
+      align-self: stretch;
+      justify-content: center
+    }
+
+    .swal2-container.swal2-grow-row>.swal2-modal {
+      display: flex !important;
+      flex: 1;
+      align-content: center;
+      justify-content: center
+    }
+
+    .swal2-container.swal2-grow-column {
+      flex: 1;
+      flex-direction: column
+    }
+
+    .swal2-container.swal2-grow-column.swal2-bottom,
+    .swal2-container.swal2-grow-column.swal2-center,
+    .swal2-container.swal2-grow-column.swal2-top {
+      align-items: center
+    }
+
+    .swal2-container.swal2-grow-column.swal2-bottom-left,
+    .swal2-container.swal2-grow-column.swal2-bottom-start,
+    .swal2-container.swal2-grow-column.swal2-center-left,
+    .swal2-container.swal2-grow-column.swal2-center-start,
+    .swal2-container.swal2-grow-column.swal2-top-left,
+    .swal2-container.swal2-grow-column.swal2-top-start {
+      align-items: flex-start
+    }
+
+    .swal2-container.swal2-grow-column.swal2-bottom-end,
+    .swal2-container.swal2-grow-column.swal2-bottom-right,
+    .swal2-container.swal2-grow-column.swal2-center-end,
+    .swal2-container.swal2-grow-column.swal2-center-right,
+    .swal2-container.swal2-grow-column.swal2-top-end,
+    .swal2-container.swal2-grow-column.swal2-top-right {
+      align-items: flex-end
+    }
+
+    .swal2-container.swal2-grow-column>.swal2-modal {
+      display: flex !important;
+      flex: 1;
+      align-content: center;
+      justify-content: center
+    }
+
+    .swal2-container.swal2-no-transition {
+      transition: none !important
+    }
+
+    .swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal {
+      margin: auto
+    }
+
+    @media all and (-ms-high-contrast:none),
+    (-ms-high-contrast:active) {
+      .swal2-container .swal2-modal {
+        margin: 0 !important
+      }
+    }
+
+    .swal2-popup {
+      display: none;
+      position: relative;
+      box-sizing: border-box;
+      flex-direction: column;
+      justify-content: center;
+      width: 32em;
+      max-width: 100%;
+      padding: 1.25em;
+      border: none;
+      border-radius: 5px;
+      background: #fff;
+      font-family: inherit;
+      font-size: 1rem
+    }
+
+    .swal2-popup:focus {
+      outline: 0
+    }
+
+    .swal2-popup.swal2-loading {
+      overflow-y: hidden
+    }
+
+    .swal2-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1.8em
+    }
+
+    .swal2-title {
+      position: relative;
+      max-width: 100%;
+      margin: 0 0 .4em;
+      padding: 0;
+      color: #595959;
+      font-size: 1.875em;
+      font-weight: 600;
+      text-align: center;
+      text-transform: none;
+      word-wrap: break-word
+    }
+
+    .swal2-actions {
+      display: flex;
+      z-index: 1;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 1.25em auto 0;
+      padding: 0 1.6em
+    }
+
+    .swal2-actions:not(.swal2-loading) .swal2-styled[disabled] {
+      opacity: .4
+    }
+
+    .swal2-actions:not(.swal2-loading) .swal2-styled:hover {
+      background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1))
+    }
+
+    .swal2-actions:not(.swal2-loading) .swal2-styled:active {
+      background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2))
+    }
+
+    .swal2-loader {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 2.2em;
+      height: 2.2em;
+      margin: 0 1.875em;
+      -webkit-animation: swal2-rotate-loading 1.5s linear 0s infinite normal;
+      animation: swal2-rotate-loading 1.5s linear 0s infinite normal;
+      border-width: .25em;
+      border-style: solid;
+      border-radius: 100%;
+      border-color: #2778c4 transparent #2778c4 transparent
+    }
+
+    .swal2-styled {
+      margin: .3125em;
+      padding: .625em 1.1em;
+      box-shadow: none;
+      font-weight: 500
+    }
+
+    .swal2-styled:not([disabled]) {
+      cursor: pointer
+    }
+
+    .swal2-styled.swal2-confirm {
+      border: 0;
+      border-radius: .25em;
+      background: initial;
+      background-color: #2778c4;
+      color: #fff;
+      font-size: 1.0625em
+    }
+
+    .swal2-styled.swal2-deny {
+      border: 0;
+      border-radius: .25em;
+      background: initial;
+      background-color: #d14529;
+      color: #fff;
+      font-size: 1.0625em
+    }
+
+    .swal2-styled.swal2-cancel {
+      border: 0;
+      border-radius: .25em;
+      background: initial;
+      background-color: #757575;
+      color: #fff;
+      font-size: 1.0625em
+    }
+
+    .swal2-styled:focus {
+      outline: 0;
+      box-shadow: 0 0 0 3px rgba(100, 150, 200, .5)
+    }
+
+    .swal2-styled::-moz-focus-inner {
+      border: 0
+    }
+
+    .swal2-footer {
+      justify-content: center;
+      margin: 1.25em 0 0;
+      padding: 1em 0 0;
+      border-top: 1px solid #eee;
+      color: #545454;
+      font-size: 1em
+    }
+
+    .swal2-timer-progress-bar-container {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: .25em;
+      overflow: hidden;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px
+    }
+
+    .swal2-timer-progress-bar {
+      width: 100%;
+      height: .25em;
+      background: rgba(0, 0, 0, .2)
+    }
+
+    .swal2-image {
+      max-width: 100%;
+      margin: 1.25em auto
+    }
+
+    .swal2-close {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      right: 0;
+      align-items: center;
+      justify-content: center;
+      width: 1.2em;
+      height: 1.2em;
+      padding: 0;
+      overflow: hidden;
+      transition: color .1s ease-out;
+      border: none;
+      border-radius: 5px;
+      background: 0 0;
+      color: #ccc;
+      font-family: serif;
+      font-size: 2.5em;
+      line-height: 1.2;
+      cursor: pointer
+    }
+
+    .swal2-close:hover {
+      transform: none;
+      background: 0 0;
+      color: #f27474
+    }
+
+    .swal2-close:focus {
+      outline: 0;
+      box-shadow: inset 0 0 0 3px rgba(100, 150, 200, .5)
+    }
+
+    .swal2-close::-moz-focus-inner {
+      border: 0
+    }
+
+    .swal2-content {
+      z-index: 1;
+      justify-content: center;
+      margin: 0;
+      padding: 0 1.6em;
+      color: #545454;
+      font-size: 1.125em;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+      word-wrap: break-word
+    }
+
+    .swal2-checkbox,
+    .swal2-file,
+    .swal2-input,
+    .swal2-radio,
+    .swal2-select,
+    .swal2-textarea {
+      margin: 1em auto
+    }
+
+    .swal2-file,
+    .swal2-input,
+    .swal2-textarea {
+      box-sizing: border-box;
+      width: 100%;
+      transition: border-color .3s, box-shadow .3s;
+      border: 1px solid #d9d9d9;
+      border-radius: .1875em;
+      background: inherit;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .06);
+      color: inherit;
+      font-size: 1.125em
+    }
+
+    .swal2-file.swal2-inputerror,
+    .swal2-input.swal2-inputerror,
+    .swal2-textarea.swal2-inputerror {
+      border-color: #f27474 !important;
+      box-shadow: 0 0 2px #f27474 !important
+    }
+
+    .swal2-file:focus,
+    .swal2-input:focus,
+    .swal2-textarea:focus {
+      border: 1px solid #b4dbed;
+      outline: 0;
+      box-shadow: 0 0 0 3px rgba(100, 150, 200, .5)
+    }
+
+    .swal2-file::-moz-placeholder,
+    .swal2-input::-moz-placeholder,
+    .swal2-textarea::-moz-placeholder {
+      color: #ccc
+    }
+
+    .swal2-file:-ms-input-placeholder,
+    .swal2-input:-ms-input-placeholder,
+    .swal2-textarea:-ms-input-placeholder {
+      color: #ccc
+    }
+
+    .swal2-file::placeholder,
+    .swal2-input::placeholder,
+    .swal2-textarea::placeholder {
+      color: #ccc
+    }
+
+    .swal2-range {
+      margin: 1em auto;
+      background: #fff
+    }
+
+    .swal2-range input {
+      width: 80%
+    }
+
+    .swal2-range output {
+      width: 20%;
+      color: inherit;
+      font-weight: 600;
+      text-align: center
+    }
+
+    .swal2-range input,
+    .swal2-range output {
+      height: 2.625em;
+      padding: 0;
+      font-size: 1.125em;
+      line-height: 2.625em
+    }
+
+    .swal2-input {
+      height: 2.625em;
+      padding: 0 .75em
+    }
+
+    .swal2-input[type=number] {
+      max-width: 10em
+    }
+
+    .swal2-file {
+      background: inherit;
+      font-size: 1.125em
+    }
+
+    .swal2-textarea {
+      height: 6.75em;
+      padding: .75em
+    }
+
+    .swal2-select {
+      min-width: 50%;
+      max-width: 100%;
+      padding: .375em .625em;
+      background: inherit;
+      color: inherit;
+      font-size: 1.125em
+    }
+
+    .swal2-checkbox,
+    .swal2-radio {
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      color: inherit
+    }
+
+    .swal2-checkbox label,
+    .swal2-radio label {
+      margin: 0 .6em;
+      font-size: 1.125em
+    }
+
+    .swal2-checkbox input,
+    .swal2-radio input {
+      margin: 0 .4em
+    }
+
+    .swal2-input-label {
+      display: flex;
+      justify-content: center;
+      margin: 1em auto
+    }
+
+    .swal2-validation-message {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      margin: 0 -2.7em;
+      padding: .625em;
+      overflow: hidden;
+      background: #f0f0f0;
+      color: #666;
+      font-size: 1em;
+      font-weight: 300
+    }
+
+    .swal2-validation-message::before {
+      content: "!";
+      display: inline-block;
+      width: 1.5em;
+      min-width: 1.5em;
+      height: 1.5em;
+      margin: 0 .625em;
+      border-radius: 50%;
+      background-color: #f27474;
+      color: #fff;
+      font-weight: 600;
+      line-height: 1.5em;
+      text-align: center
+    }
+
+    .swal2-icon {
+      position: relative;
+      box-sizing: content-box;
+      justify-content: center;
+      width: 5em;
+      height: 5em;
+      margin: 1.25em auto 1.875em;
+      border: .25em solid transparent;
+      border-radius: 50%;
+      font-family: inherit;
+      line-height: 5em;
+      cursor: default;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none
+    }
+
+    .swal2-icon .swal2-icon-content {
+      display: flex;
+      align-items: center;
+      font-size: 3.75em
+    }
+
+    .swal2-icon.swal2-error {
+      border-color: #f27474;
+      color: #f27474
+    }
+
+    .swal2-icon.swal2-error .swal2-x-mark {
+      position: relative;
+      flex-grow: 1;
+      zoom: 1
+    }
+
+    .swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+      display: block;
+      position: absolute;
+      top: 2.3125em;
+      width: 2.9375em;
+      height: .3125em;
+      border-radius: .125em;
+      background-color: #f27474
+    }
+
+    .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {
+      left: 1.0625em;
+      transform: rotate(45deg)
+    }
+
+    .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {
+      right: 1em;
+      transform: rotate(-45deg)
+    }
+
+    .swal2-icon.swal2-error.swal2-icon-show {
+      -webkit-animation: swal2-animate-error-icon .5s;
+      animation: swal2-animate-error-icon .5s
+    }
+
+    .swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark {
+      -webkit-animation: swal2-animate-error-x-mark .5s;
+      animation: swal2-animate-error-x-mark .5s
+    }
+
+    .swal2-icon.swal2-warning {
+      border-color: #facea8;
+      color: #f8bb86
+    }
+
+    .swal2-icon.swal2-info {
+      border-color: #9de0f6;
+      color: #3fc3ee
+    }
+
+    .swal2-icon.swal2-question {
+      border-color: #c9dae1;
+      color: #87adbd
+    }
+
+    .swal2-icon.swal2-success {
+      border-color: #a5dc86;
+      color: #a5dc86
+    }
+
+    .swal2-icon.swal2-success [class^=swal2-success-circular-line] {
+      position: absolute;
+      width: 3.75em;
+      height: 7.5em;
+      transform: rotate(45deg);
+      border-radius: 50%
+    }
+
+    .swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left] {
+      top: -.4375em;
+      left: -2.0635em;
+      zoom: 1;
+      transform: rotate(-45deg);
+      transform-origin: 3.75em 3.75em;
+      border-radius: 7.5em 0 0 7.5em
+    }
+
+    .swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right] {
+      top: -.6875em;
+      left: 1.875em;
+      zoom: 1;
+      transform: rotate(-45deg);
+      transform-origin: 0 3.75em;
+      border-radius: 0 7.5em 7.5em 0
+    }
+
+    .swal2-icon.swal2-success .swal2-success-ring {
+      position: absolute;
+      z-index: 2;
+      top: -.25em;
+      left: -.25em;
+      box-sizing: content-box;
+      width: 100%;
+      height: 100%;
+      zoom: 1;
+      border: .25em solid rgba(165, 220, 134, .3);
+      border-radius: 50%
+    }
+
+    .swal2-icon.swal2-success .swal2-success-fix {
+      position: absolute;
+      z-index: 1;
+      top: .5em;
+      left: 1.625em;
+      width: .4375em;
+      height: 5.625em;
+      zoom: 1;
+      transform: rotate(-45deg)
+    }
+
+    .swal2-icon.swal2-success [class^=swal2-success-line] {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      height: .3125em;
+      zoom: 1;
+      border-radius: .125em;
+      background-color: #a5dc86
+    }
+
+    .swal2-icon.swal2-success [class^=swal2-success-line][class$=tip] {
+      top: 2.875em;
+      left: .8125em;
+      width: 1.5625em;
+      transform: rotate(45deg)
+    }
+
+    .swal2-icon.swal2-success [class^=swal2-success-line][class$=long] {
+      top: 2.375em;
+      right: .5em;
+      width: 2.9375em;
+      transform: rotate(-45deg)
+    }
+
+    .swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip {
+      -webkit-animation: swal2-animate-success-line-tip .75s;
+      animation: swal2-animate-success-line-tip .75s
+    }
+
+    .swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long {
+      -webkit-animation: swal2-animate-success-line-long .75s;
+      animation: swal2-animate-success-line-long .75s
+    }
+
+    .swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right {
+      -webkit-animation: swal2-rotate-success-circular-line 4.25s ease-in;
+      animation: swal2-rotate-success-circular-line 4.25s ease-in
+    }
+
+    .swal2-progress-steps {
+      flex-wrap: wrap;
+      align-items: center;
+      max-width: 100%;
+      margin: 0 0 1.25em;
+      padding: 0;
+      background: inherit;
+      font-weight: 600
+    }
+
+    .swal2-progress-steps li {
+      display: inline-block;
+      position: relative
+    }
+
+    .swal2-progress-steps .swal2-progress-step {
+      z-index: 20;
+      flex-shrink: 0;
+      width: 2em;
+      height: 2em;
+      border-radius: 2em;
+      background: #2778c4;
+      color: #fff;
+      line-height: 2em;
+      text-align: center
+    }
+
+    .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {
+      background: #2778c4
+    }
+
+    .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step {
+      background: #add8e6;
+      color: #fff
+    }
+
+    .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line {
+      background: #add8e6
+    }
+
+    .swal2-progress-steps .swal2-progress-step-line {
+      z-index: 10;
+      flex-shrink: 0;
+      width: 2.5em;
+      height: .4em;
+      margin: 0 -1px;
+      background: #2778c4
+    }
+
+    [class^=swal2] {
+      -webkit-tap-highlight-color: transparent
+    }
+
+    .swal2-show {
+      -webkit-animation: swal2-show .3s;
+      animation: swal2-show .3s
+    }
+
+    .swal2-hide {
+      -webkit-animation: swal2-hide .15s forwards;
+      animation: swal2-hide .15s forwards
+    }
+
+    .swal2-noanimation {
+      transition: none
+    }
+
+    .swal2-scrollbar-measure {
+      position: absolute;
+      top: -9999px;
+      width: 50px;
+      height: 50px;
+      overflow: scroll
+    }
+
+    .swal2-rtl .swal2-close {
+      right: auto;
+      left: 0
+    }
+
+    .swal2-rtl .swal2-timer-progress-bar {
+      right: 0;
+      left: auto
+    }
+
+    @supports (-ms-accelerator:true) {
+      .swal2-range input {
+        width: 100% !important
+      }
+
+      .swal2-range output {
+        display: none
+      }
+    }
+
+    @media all and (-ms-high-contrast:none),
+    (-ms-high-contrast:active) {
+      .swal2-range input {
+        width: 100% !important
+      }
+
+      .swal2-range output {
+        display: none
+      }
+    }
+
+    @-webkit-keyframes swal2-toast-show {
+      0% {
+        transform: translateY(-.625em) rotateZ(2deg)
+      }
+
+      33% {
+        transform: translateY(0) rotateZ(-2deg)
+      }
+
+      66% {
+        transform: translateY(.3125em) rotateZ(2deg)
+      }
+
+      100% {
+        transform: translateY(0) rotateZ(0)
+      }
+    }
+
+    @keyframes swal2-toast-show {
+      0% {
+        transform: translateY(-.625em) rotateZ(2deg)
+      }
+
+      33% {
+        transform: translateY(0) rotateZ(-2deg)
+      }
+
+      66% {
+        transform: translateY(.3125em) rotateZ(2deg)
+      }
+
+      100% {
+        transform: translateY(0) rotateZ(0)
+      }
+    }
+
+    @-webkit-keyframes swal2-toast-hide {
+      100% {
+        transform: rotateZ(1deg);
+        opacity: 0
+      }
+    }
+
+    @keyframes swal2-toast-hide {
+      100% {
+        transform: rotateZ(1deg);
+        opacity: 0
+      }
+    }
+
+    @-webkit-keyframes swal2-toast-animate-success-line-tip {
+      0% {
+        top: .5625em;
+        left: .0625em;
+        width: 0
+      }
+
+      54% {
+        top: .125em;
+        left: .125em;
+        width: 0
+      }
+
+      70% {
+        top: .625em;
+        left: -.25em;
+        width: 1.625em
+      }
+
+      84% {
+        top: 1.0625em;
+        left: .75em;
+        width: .5em
+      }
+
+      100% {
+        top: 1.125em;
+        left: .1875em;
+        width: .75em
+      }
+    }
+
+    @keyframes swal2-toast-animate-success-line-tip {
+      0% {
+        top: .5625em;
+        left: .0625em;
+        width: 0
+      }
+
+      54% {
+        top: .125em;
+        left: .125em;
+        width: 0
+      }
+
+      70% {
+        top: .625em;
+        left: -.25em;
+        width: 1.625em
+      }
+
+      84% {
+        top: 1.0625em;
+        left: .75em;
+        width: .5em
+      }
+
+      100% {
+        top: 1.125em;
+        left: .1875em;
+        width: .75em
+      }
+    }
+
+    @-webkit-keyframes swal2-toast-animate-success-line-long {
+      0% {
+        top: 1.625em;
+        right: 1.375em;
+        width: 0
+      }
+
+      65% {
+        top: 1.25em;
+        right: .9375em;
+        width: 0
+      }
+
+      84% {
+        top: .9375em;
+        right: 0;
+        width: 1.125em
+      }
+
+      100% {
+        top: .9375em;
+        right: .1875em;
+        width: 1.375em
+      }
+    }
+
+    @keyframes swal2-toast-animate-success-line-long {
+      0% {
+        top: 1.625em;
+        right: 1.375em;
+        width: 0
+      }
+
+      65% {
+        top: 1.25em;
+        right: .9375em;
+        width: 0
+      }
+
+      84% {
+        top: .9375em;
+        right: 0;
+        width: 1.125em
+      }
+
+      100% {
+        top: .9375em;
+        right: .1875em;
+        width: 1.375em
+      }
+    }
+
+    @-webkit-keyframes swal2-show {
+      0% {
+        transform: scale(.7)
+      }
+
+      45% {
+        transform: scale(1.05)
+      }
+
+      80% {
+        transform: scale(.95)
+      }
+
+      100% {
+        transform: scale(1)
+      }
+    }
+
+    @keyframes swal2-show {
+      0% {
+        transform: scale(.7)
+      }
+
+      45% {
+        transform: scale(1.05)
+      }
+
+      80% {
+        transform: scale(.95)
+      }
+
+      100% {
+        transform: scale(1)
+      }
+    }
+
+    @-webkit-keyframes swal2-hide {
+      0% {
+        transform: scale(1);
+        opacity: 1
+      }
+
+      100% {
+        transform: scale(.5);
+        opacity: 0
+      }
+    }
+
+    @keyframes swal2-hide {
+      0% {
+        transform: scale(1);
+        opacity: 1
+      }
+
+      100% {
+        transform: scale(.5);
+        opacity: 0
+      }
+    }
+
+    @-webkit-keyframes swal2-animate-success-line-tip {
+      0% {
+        top: 1.1875em;
+        left: .0625em;
+        width: 0
+      }
+
+      54% {
+        top: 1.0625em;
+        left: .125em;
+        width: 0
+      }
+
+      70% {
+        top: 2.1875em;
+        left: -.375em;
+        width: 3.125em
+      }
+
+      84% {
+        top: 3em;
+        left: 1.3125em;
+        width: 1.0625em
+      }
+
+      100% {
+        top: 2.8125em;
+        left: .8125em;
+        width: 1.5625em
+      }
+    }
+
+    @keyframes swal2-animate-success-line-tip {
+      0% {
+        top: 1.1875em;
+        left: .0625em;
+        width: 0
+      }
+
+      54% {
+        top: 1.0625em;
+        left: .125em;
+        width: 0
+      }
+
+      70% {
+        top: 2.1875em;
+        left: -.375em;
+        width: 3.125em
+      }
+
+      84% {
+        top: 3em;
+        left: 1.3125em;
+        width: 1.0625em
+      }
+
+      100% {
+        top: 2.8125em;
+        left: .8125em;
+        width: 1.5625em
+      }
+    }
+
+    @-webkit-keyframes swal2-animate-success-line-long {
+      0% {
+        top: 3.375em;
+        right: 2.875em;
+        width: 0
+      }
+
+      65% {
+        top: 3.375em;
+        right: 2.875em;
+        width: 0
+      }
+
+      84% {
+        top: 2.1875em;
+        right: 0;
+        width: 3.4375em
+      }
+
+      100% {
+        top: 2.375em;
+        right: .5em;
+        width: 2.9375em
+      }
+    }
+
+    @keyframes swal2-animate-success-line-long {
+      0% {
+        top: 3.375em;
+        right: 2.875em;
+        width: 0
+      }
+
+      65% {
+        top: 3.375em;
+        right: 2.875em;
+        width: 0
+      }
+
+      84% {
+        top: 2.1875em;
+        right: 0;
+        width: 3.4375em
+      }
+
+      100% {
+        top: 2.375em;
+        right: .5em;
+        width: 2.9375em
+      }
+    }
+
+    @-webkit-keyframes swal2-rotate-success-circular-line {
+      0% {
+        transform: rotate(-45deg)
+      }
+
+      5% {
+        transform: rotate(-45deg)
+      }
+
+      12% {
+        transform: rotate(-405deg)
+      }
+
+      100% {
+        transform: rotate(-405deg)
+      }
+    }
+
+    @keyframes swal2-rotate-success-circular-line {
+      0% {
+        transform: rotate(-45deg)
+      }
+
+      5% {
+        transform: rotate(-45deg)
+      }
+
+      12% {
+        transform: rotate(-405deg)
+      }
+
+      100% {
+        transform: rotate(-405deg)
+      }
+    }
+
+    @-webkit-keyframes swal2-animate-error-x-mark {
+      0% {
+        margin-top: 1.625em;
+        transform: scale(.4);
+        opacity: 0
+      }
+
+      50% {
+        margin-top: 1.625em;
+        transform: scale(.4);
+        opacity: 0
+      }
+
+      80% {
+        margin-top: -.375em;
+        transform: scale(1.15)
+      }
+
+      100% {
+        margin-top: 0;
+        transform: scale(1);
+        opacity: 1
+      }
+    }
+
+    @keyframes swal2-animate-error-x-mark {
+      0% {
+        margin-top: 1.625em;
+        transform: scale(.4);
+        opacity: 0
+      }
+
+      50% {
+        margin-top: 1.625em;
+        transform: scale(.4);
+        opacity: 0
+      }
+
+      80% {
+        margin-top: -.375em;
+        transform: scale(1.15)
+      }
+
+      100% {
+        margin-top: 0;
+        transform: scale(1);
+        opacity: 1
+      }
+    }
+
+    @-webkit-keyframes swal2-animate-error-icon {
+      0% {
+        transform: rotateX(100deg);
+        opacity: 0
+      }
+
+      100% {
+        transform: rotateX(0);
+        opacity: 1
+      }
+    }
+
+    @keyframes swal2-animate-error-icon {
+      0% {
+        transform: rotateX(100deg);
+        opacity: 0
+      }
+
+      100% {
+        transform: rotateX(0);
+        opacity: 1
+      }
+    }
+
+    @-webkit-keyframes swal2-rotate-loading {
+      0% {
+        transform: rotate(0)
+      }
+
+      100% {
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes swal2-rotate-loading {
+      0% {
+        transform: rotate(0)
+      }
+
+      100% {
+        transform: rotate(360deg)
+      }
+    }
+
+    body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+      overflow: hidden
+    }
+
+    body.swal2-height-auto {
+      height: auto !important
+    }
+
+    body.swal2-no-backdrop .swal2-container {
+      top: auto;
+      right: auto;
+      bottom: auto;
+      left: auto;
+      max-width: calc(100% - .625em * 2);
+      background-color: transparent !important
+    }
+
+    body.swal2-no-backdrop .swal2-container>.swal2-modal {
+      box-shadow: 0 0 10px rgba(0, 0, 0, .4)
+    }
+
+    body.swal2-no-backdrop .swal2-container.swal2-top {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+
+    body.swal2-no-backdrop .swal2-container.swal2-top-left,
+    body.swal2-no-backdrop .swal2-container.swal2-top-start {
+      top: 0;
+      left: 0
+    }
+
+    body.swal2-no-backdrop .swal2-container.swal2-top-end,
+    body.swal2-no-backdrop .swal2-container.swal2-top-right {
+      top: 0;
+      right: 0
+    }
+
+    body.swal2-no-backdrop .swal2-container.swal2-center {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%)
+    }
+
+    body.swal2-no-backdrop .swal2-container.swal2-center-left,
+    body.swal2-no-backdrop .swal2-container.swal2-center-start {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%)
+    }
+
+    body.swal2-no-backdrop .swal2-container.swal2-center-end,
+    body.swal2-no-backdrop .swal2-container.swal2-center-right {
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%)
+    }
+
+    body.swal2-no-backdrop .swal2-container.swal2-bottom {
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+
+    body.swal2-no-backdrop .swal2-container.swal2-bottom-left,
+    body.swal2-no-backdrop .swal2-container.swal2-bottom-start {
+      bottom: 0;
+      left: 0
+    }
+
+    body.swal2-no-backdrop .swal2-container.swal2-bottom-end,
+    body.swal2-no-backdrop .swal2-container.swal2-bottom-right {
+      right: 0;
+      bottom: 0
+    }
+
+    @media print {
+      body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+        overflow-y: scroll !important
+      }
+
+      body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true] {
+        display: none
+      }
+
+      body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container {
+        position: static !important
+      }
+    }
+
+    body.swal2-toast-shown .swal2-container {
+      background-color: transparent
+    }
+
+    body.swal2-toast-shown .swal2-container.swal2-top {
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+
+    body.swal2-toast-shown .swal2-container.swal2-top-end,
+    body.swal2-toast-shown .swal2-container.swal2-top-right {
+      top: 0;
+      right: 0;
+      bottom: auto;
+      left: auto
+    }
+
+    body.swal2-toast-shown .swal2-container.swal2-top-left,
+    body.swal2-toast-shown .swal2-container.swal2-top-start {
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 0
+    }
+
+    body.swal2-toast-shown .swal2-container.swal2-center-left,
+    body.swal2-toast-shown .swal2-container.swal2-center-start {
+      top: 50%;
+      right: auto;
+      bottom: auto;
+      left: 0;
+      transform: translateY(-50%)
+    }
+
+    body.swal2-toast-shown .swal2-container.swal2-center {
+      top: 50%;
+      right: auto;
+      bottom: auto;
+      left: 50%;
+      transform: translate(-50%, -50%)
+    }
+
+    body.swal2-toast-shown .swal2-container.swal2-center-end,
+    body.swal2-toast-shown .swal2-container.swal2-center-right {
+      top: 50%;
+      right: 0;
+      bottom: auto;
+      left: auto;
+      transform: translateY(-50%)
+    }
+
+    body.swal2-toast-shown .swal2-container.swal2-bottom-left,
+    body.swal2-toast-shown .swal2-container.swal2-bottom-start {
+      top: auto;
+      right: auto;
+      bottom: 0;
+      left: 0
+    }
+
+    body.swal2-toast-shown .swal2-container.swal2-bottom {
+      top: auto;
+      right: auto;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+
+    body.swal2-toast-shown .swal2-container.swal2-bottom-end,
+    body.swal2-toast-shown .swal2-container.swal2-bottom-right {
+      top: auto;
+      right: 0;
+      bottom: 0;
+      left: auto
+    }
+
+    body.swal2-toast-column .swal2-toast {
+      flex-direction: column;
+      align-items: stretch
+    }
+
+    body.swal2-toast-column .swal2-toast .swal2-actions {
+      flex: 1;
+      align-self: stretch;
+      height: 2.2em;
+      margin-top: .3125em
+    }
+
+    body.swal2-toast-column .swal2-toast .swal2-loading {
+      justify-content: center
+    }
+
+    body.swal2-toast-column .swal2-toast .swal2-input {
+      height: 2em;
+      margin: .3125em auto;
+      font-size: 1em
+    }
+
+    body.swal2-toast-column .swal2-toast .swal2-validation-message {
+      font-size: 1em
+    }
+  </style>
+  <link rel="stylesheet"
+    href="/minify/?f=/js/fancybox/jquery.fancybox.css,/css/front_style.css,/site-uploads/1001315/includes/animate.min.css,/site-uploads/1001315/includes/bootstrap-theme.min.css,/site-uploads/1001315/includes/bootstrap.css,/site-uploads/1001315/includes/cehckboxes.css,/site-uploads/1001315/includes/colorbox.css,/site-uploads/1001315/includes/elastic_grid.css,/site-uploads/1001315/includes/font-awesome.min.css,/site-uploads/1001315/includes/front_css.css,/site-uploads/1001315/includes/owl.carousel.css,/site-uploads/1001315/includes/owl.transitions.css,/site-uploads/1001315/includes/set2.css&amp;1617721981"
+    type="text/css">
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "http://simplywebeditor.com",
+    "url": "http://simplywebeditor.com",
+    "name": "ESC Admin",
+    "description": "",
+    "telephone": "",
+    "logo": "https://equipmentsearch.com/uploadedimages/1/logo/1.jpg",
+    "image": "https://equipmentsearch.com/uploadedimages/1/logo/1.jpg",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "",
+        "addressRegion": "",
+        "postalCode": "",
+        "addressCountry": {
+            "name": "Canada",
+            "@type": "Country"
+        }
+    }
+}
+</script>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="https://www.google.com/s2/favicons?domain_url=simplywebeditor.com"
+    type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="/css/960.php?sid=1001315" rel="stylesheet" type="text/css">
+  <script src="https://maps.google.com/maps/api/js?key=AIzaSyCIUw4Put45r5f4Me5ZSON84FD3s-wRUSE"
+    type="text/javascript"></script>
+  <script type="text/javascript" top="">
+    window.website_settings = { "website_name": "Turnkey Web Solutions 2021", "conversion_label": "", "google_tag": "" };
+  </script>
+  <style>
+    @media (min-width: 1200px) {
+      .container {
+        width: 960px;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .container {
+        width: 960px;
+      }
+    }
+  </style>
+  <style>
+    #LeftDiv,
+    #RightDiv,
+    #CenterDiv,
+    #HeaderDiv,
+    #FooterDiv {
+      min-height: 15vh;
+    }
+
+    .collapse {
+      display: block !important;
+      visibility: visible !important;
+      height: auto !important;
+    }
+
+    .movableComp {
+      position: relative;
+    }
+
+    .centeredOverlay {
+      position: absolute;
+      /*background-color: rgba(255, 0, 0, 0.3);  					dim the background*/
+      display: block !important;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: black;
+      text-align: center;
+      z-index: 999;
+    }
+
+    .cd-product-builder .main-header,
+    .cd-builder-footer {
+      display: none !important;
+    }
+  </style>
+  <script src="//cdn.ckeditor.com/4.11.1/full/ckeditor.js"></script>
+  <style>
+    .cke {
+      visibility: hidden;
+    }
+  </style>
+  <script type="text/javascript">
+    CKEDITOR.on('instanceCreated', function (event) {
+      var editor = event.editor,
+        element = editor.element;
+
+
+      editor.on('configLoaded', function () {
+        editor.config.allowedContent = true;
+        editor.config.enterMode = CKEDITOR.ENTER_SPAN;
+        editor.config.filebrowserBrowseUrl = '/fmanager/index/hideDes/true/sid/1001315';
+        editor.config.filebrowserUploadUrl = '/helper/ck-uploader/type/image/sid/1001315/';
+        editor.config.filebrowserFlashUploadUrl = '/helper/ck-uploader/type/media/sid/1001315/';
+        editor.config.filebrowserImageUploadUrl = '/helper/ck-uploader/type/image/sid/1001315/';
+        editor.config.filebrowserUploadMethod = 'form';
+        //editor.config.extraPlugins='mysave,mailform,cancel';
+        //editor.config.extraPlugins = 'sourcedialog';
+        //editor.config.extraPlugins = 'iframedialog';
+        editor.config.toolbar = [
+
+          ['Source', '-', 'mysave', 'cancel', 'NewPage', 'Preview', '-', 'Templates', 'mailform'],
+          ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Print', 'SpellChecker', 'Scayt'],
+          ['Undo', 'Redo', '-', 'Find', 'Replace', '-', 'SelectAll', 'RemoveFormat'],
+          ['Bold', 'Italic', 'Underline', 'Strike', '-', 'Subscript', 'Superscript'],
+          '/',
+          ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', 'Blockquote', 'CreateDiv'],
+          ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+          ['BidiLtr', 'BidiRtl'],
+          ['Link', 'Unlink', 'Anchor'],
+          ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak'],
+          '/',
+          ['Styles', 'Format', 'Font', 'FontSize'],
+          ['TextColor', 'BGColor'],
+          ['Maximize', 'ShowBlocks', '-', 'About']
+        ];
+
+
+      });
+
+      editor.on('blur', function () {
+        $('.droppableComp ,.droppableHtml').sortable('enable');
+        parent.makeItDirty();
+      });
+      editor.on('focus', function () {
+        $('.droppableComp ,.droppableHtml').sortable('disable');
+      });
+
+    });
+    window.refreshSortable = function (e) {
+
+      var elem = $('div.droppableHtml:data(sortable)');
+      if (elem.length) {
+        $('.droppableComp ,.droppableHtml').sortable('destroy');
+      }
+
+      $('.droppableComp ,.droppableHtml').unbind();
+
+      $('.droppableComp ,.droppableHtml').sortable({
+        connectWith: '.droppableComp ,.droppableHtml',
+        cursor: 'move',
+        revert: true,
+        scroll: true,
+        forcePlaceholderSize: true,
+        placeholder: 'ui-state-highlight',
+        start: function (event, ui) {
+          destroyEditorInstances();
+        },
+        stop: function (event, ui) {
+          CKEDITOR.inlineAll();
+          parent.makeItDirty();
+        },
+      });
+
+    }
+
+    $(function () {
+      //$('.droppableComp ,.droppableHtml').bind('DOMSubtreeModified', refreshSortable);   
+      $('.droppableComp ,.droppableHtml').sortable({
+        connectWith: '.droppableComp ,.droppableHtml',
+        cursor: 'move',
+        revert: true,
+        scroll: true,
+        forcePlaceholderSize: true,
+        placeholder: 'ui-state-highlight',
+        start: function (event, ui) {
+          destroyEditorInstances();
+        },
+        stop: function (event, ui) {
+          CKEDITOR.inlineAll();
+          parent.makeItDirty();
+        },
+      });
+    })
+
+
+    function destroyEditorInstances() {
+      for (var instance in CKEDITOR.instances) {
+        CKEDITOR.instances[instance].destroy();
+
+      }
+    }
+
+    window.refreshEditors = function () {
+
+      destroyEditorInstances();
+      CKEDITOR.inlineAll();
+      return true;
+    }
+    window.getHtml = function () {
+
+      destroyEditorInstances();
+
+      htmlString = $('head')[0].outerHTML + ($('body').html($('#parent')[0].outerHTML)[0].outerHTML);
+      CKEDITOR.inlineAll();
+      return htmlString;
+    }
+    window.setIncludes = function (includes) {
+      if ($.trim(includes)) {
+        $('head .include').remove();
+        $('head').prepend(includes);
+      }
+    }
+
+
+  </script>
+  <script src="/js/custom/front_end.js.php?sid=1001315&amp;pid=48123&amp;time=1618490219"
+    type="text/javascript"></script>
+  <link rel="canonical" href="http://simplywebeditor.com/">
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "http://simplywebeditor.com/"
+        }
+    ]
+}
+</script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2RCKJC5BFW" top=""></script>
+  <script top="">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-2RCKJC5BFW', {
+      groups: 'GA',
+      page_title: 'Home',
+      page_location: 'http://simplywebeditor.com/',
+      page_path: '/Home/',
+    });
+
+  </script>
+  <link href="/css/jquery/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+  <script src="/site-uploads/1001315/includes/bootstrap.js" type="text/javascript"></script>
+  <script src="/site-uploads/1001315/includes/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/site-uploads/1001315/includes/get-querystring.js" type="text/javascript"></script>
+  <script src="/site-uploads/1001315/includes/html5shiv.js" type="text/javascript"></script>
+  <script src="/site-uploads/1001315/includes/jquery.ba-cond.min.js" type="text/javascript"></script>
+  <script src="/site-uploads/1001315/includes/jquery.inview.min.js" type="text/javascript"></script>
+  <script src="/site-uploads/1001315/includes/jquery.isotope.min.js" type="text/javascript"></script>
+  <script src="/site-uploads/1001315/includes/jquery.prettyPhoto.js" type="text/javascript"></script>
+  <script src="/site-uploads/1001315/includes/jquery.slitslider.js" type="text/javascript"></script>
+  <script src="/site-uploads/1001315/includes/main.js" type="text/javascript"></script>
+  <script src="/site-uploads/1001315/includes/modernizr.custom.41014.js" type="text/javascript"></script>
+  <script src="/site-uploads/1001315/includes/mousescroll.js" type="text/javascript"></script>
+  <script src="/site-uploads/1001315/includes/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="/site-uploads/1001315/includes/smoothscroll.js" type="text/javascript"></script>
+  <script src="/site-uploads/1001315/includes/wow.min.js" type="text/javascript"></script>
+  <style>
+    .mobile-header-buttons {
+      background-color: #a30201;
+      margin-bottom: 5px;
+    }
+
+    .mobile-header-buttons a {
+      color: #fff;
+      display: inline-block;
+      padding: 10px;
+    }
+
+    .mobile-header-buttons a.login-btn {
+      position: relative;
+      top: -10px;
+    }
+
+    .mobile-header-buttons .bg-ttl {
+      font-size: 20px;
+    }
+
+    .covid-btn-box .login-btn {
+      display: block;
+      border-left: solid 1px #fff;
+      line-height: 67px;
+      padding: 12px 15px;
+    }
+
+    .face-partner {
+      margin: 0.8vw 0;
+      width: 9vw;
+    }
+
+    .navbar-header {
+      float: right
+    }
+
+    .covid-btn-box {
+      position: absolute;
+      background: #ce202a;
+      z-index: 1;
+      padding: 10px;
+      color: #fff;
+      border-radius: 0 0 15px 15px;
+      right: 5%;
+      font-size: 18px;
+    }
+
+    .covid-btn-box a {
+      color: #fff;
+      padding: 0px 15px;
+      float: right;
+      text-decoration: none;
+    }
+
+    .bg-ttl {
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 1;
+    }
+
+    .support-title {
+      background-image: url(/site-uploads/1001041/Images/Turnkey_support_bg.jpg);
+      color: #ce202a;
+      padding: 82px;
+      font-size: 48px;
+      font-weight: bold;
+      font-family: ubuntu;
+      margin: 0;
+    }
+
+    .formsParent {
+      max-width: 1280px;
+      margin: 0 auto !important;
+      float: none !important;
+    }
+
+    body {
+      background-image: none !important;
+      background-repeat: no-repeat !important;
+      font-family: Ubuntu;
+    }
+
+    body * {
+      font-family: Ubuntu;
+    }
+
+    #siteMenu {
+      background-image: none !important;
+      background-color: #FFFFFF !important;
+    }
+
+    .mainMenu li {
+      background-color: #000000 !important;
+      border-color: #FFFFFF !important;
+      text-align: center !important;
+    }
+
+    .mainMenu li li {
+      background-color: #000000 !important;
+      border-color: #FFFFFF !important;
+      text-align: center !important;
+    }
+
+    .mainMenu a,
+    mainMenu a:visited {
+      font-size: 10px !important;
+      font-family: Verdana, Arial, sans-serif !important;
+      font-weight: normal !important;
+      text-decoration: none !important;
+      font-style: normal !important;
+      color: #ce202a !important;
+    }
+
+    .mainMenu a:hover {
+      color: #ce202a !important;
+      background-color: #000000 !important;
+      border-color: #FFFFFF !important;
+    }
+
+    .ui-layout-pane {
+      background-image: url(/images/uploads/body_bg3_1.jpg) !important;
+      background-color: #fdfdfd !important;
+    }
+
+    .headerFont {
+      background-image: none !important;
+      font-family: Verdana, Arial, sans-serif !important;
+      font-weight: normal !important;
+      text-decoration: none !important;
+      font-style: normal !important;
+      font-size: 10px !important;
+      color: #000000 !important;
+      background-color: #FFFFFF !important;
+    }
+
+    .pragraphFont {
+      font-family: Verdana, Arial, sans-serif !important;
+      font-weight: normal !important;
+      color: #000000 !important;
+      font-size: 10px !important;
+      text-decoration: none !important;
+      font-style: normal !important;
+    }
+
+    .linksFont {
+      font-size: 10px !important;
+      font-family: Verdana, Arial, sans-serif !important;
+      font-weight: normal !important;
+      color: #000000 !important;
+      text-decoration: underline !important;
+      font-style: normal !important;
+    }
+
+    .tabContent textarea {
+      color: #000 !important;
+    }
+
+    body {
+      background-image: none !important;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    #parent {
+      width: 100% !important;
+    }
+
+    #HeaderDiv {
+      width: 100% !important;
+      background-image: none !important;
+    }
+
+    #CenterDiv {
+      width: 100% !important;
+      background-color: #fff !important;
+      padding: 0;
+    }
+
+    #FooterDiv {
+      width: 100% !important;
+      background-color: #231f20 !important;
+      background-image: none !important;
+    }
+
+    #FooterDiv>div {
+      float: none;
+    }
+
+    .container {
+      width: 1280px;
+    }
+
+    .row .container {
+      max-width: 1280px;
+      width: 100%;
+    }
+
+    .row {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .pages-thumb {
+      border-bottom: 2px solid #b72127;
+    }
+
+    .login-area {
+      background-color: #262626;
+    }
+
+    .login-area.btn-danger:hover {
+      background-color: green !important;
+      border-color: #007200;
+    }
+
+    .pages-thumb img {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    h2 {
+      line-height: 1.2;
+    }
+
+    #CenterDiv ul {
+      list-style: disc;
+    }
+
+    #CenterDiv>div {
+      float: none;
+    }
+
+    .cont a {
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+
+    .cont h1 {
+      margin: 35px 0;
+    }
+
+    #marketing,
+    #marketing2 {
+      color: #1f1f1f;
+      padding: 60px 0px 60px 0px;
+    }
+
+    #marketing .back {
+      position: absolute;
+      top: -30px;
+    }
+
+    #marketing {
+      background-color: #f1f1f1;
+    }
+
+    #marketing2 {
+      background-color: #fff;
+    }
+
+    #marketing h1,
+    #marketing2 h1 {
+      font-size: 34px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0px 0px 60px 0px;
+    }
+
+    #marketing h1.color {
+      font-size: 48px;
+      font-weight: bold;
+      color: #b72127;
+      margin-bottom: 30px;
+    }
+
+    #marketing h2,
+    #marketing2 h2 {
+      font-size: 28px;
+    }
+
+    #marketing h2.subtitle {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    #marketing .col,
+    #marketing2 .col {
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 22px;
+    }
+
+    #marketing .col-md-6,
+    #marketing2 .col-md-6 {
+      width: 50%;
+    }
+
+    #marketing .col-md-12 {
+      width: 100%;
+    }
+
+    #marketing .row,
+    #marketing2 .row {
+      background-color: #fff;
+      padding: 40px 30px 30px 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    #marketing .row span,
+    #marketing2 .row span {
+      display: block;
+    }
+
+    #marketing span.title,
+    #marketing2 span.title {
+      font-size: 28px;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    #marketing .price,
+    #marketing2 .price {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    #marketing a,
+    #marketing2 a {
+      color: #1f1f1f;
+      text-decoration: underline;
+    }
+
+    #marketing a:hover,
+    #marketing a:focus,
+    #marketing2 a:hover,
+    #marketing2 a:focus {
+      color: #b72127;
+      text-decoration: none;
+    }
+
+    #marketing a.link {
+      text-decoration: underline;
+      font-weight: bold;
+      color: #1aa260;
+    }
+
+    #marketing a.link:hover,
+    #marketing a.link:focus {
+      text-decoration: underline !important;
+      color: #248157;
+    }
+
+    #marketing .note {
+      font-size: 22px;
+      padding: 0px 30px 30px 30px;
+    }
+
+    #marketing ol {
+      list-style: decimal;
+      padding-left: 15px;
+    }
+
+    #marketing ol li,
+    #marketing ul li {
+      padding-bottom: 15px;
+    }
+
+    #marketing ul {
+      list-style: disc;
+      padding-left: 15px;
+    }
+
+    #marketing #myForm input,
+    #marketing #myForm textarea {
+      background: none repeat scroll 0 0 #f8f5f5;
+      border: 1px solid #ccc;
+      color: #898989;
+      min-height: 40px;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    #marketing #myForm textarea {
+      height: 200px;
+    }
+
+    #marketing #myForm label {
+      font-size: 18px;
+      font-weight: normal;
+    }
+
+    #marketing #myForm .formLabel {
+      width: 200px;
+      text-align: right;
+      padding-right: 30px;
+    }
+
+    .see-more {
+      color: #fff;
+      background-color: #a30201;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+      width: 125px;
+      font-size: 14px;
+    }
+
+    .features .row {
+      padding: 25px 10px;
+    }
+
+    .features .row img {
+      max-width: 100%;
+    }
+
+    .features p {
+      font-size: 14px;
+    }
+
+    .section {
+      padding: 10px;
+    }
+
+    .slder:after {
+      background-image: url(/site-uploads/1001041/Images/slider-after.png);
+      width: 100%;
+      margin-top: -50px;
+      z-index: 9;
+    }
+
+    .titt {
+      color: #000;
+    }
+
+    .slide-wrapper {
+      width: 100% !important;
+      background-color: #242424 !important;
+    }
+
+    .advanced-slider {
+      width: 100% !important;
+    }
+
+    .slide {
+      background-position: center !important;
+      background-size: auto 587px !important;
+    }
+
+    .slice {
+      width: 100% !important;
+      background-position: center !important;
+      background-size: auto 587px !important
+    }
+
+    .thumbnail {
+      text-decoration: none !important;
+    }
+
+    .thumbs-txt {
+      background-color: #eeeeee;
+      border: 1px solid #d8d8d8;
+      color: #404040;
+      display: block;
+      margin-top: 4px;
+      padding: 7px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .thumbs-txt:hover {
+      color: #fff;
+      background-color: #c20607;
+    }
+
+    .logos-box li {
+      list-style: none;
+      float: left;
+      padding: 10px 30px;
+      height: 100px;
+      line-height: 100px;
+    }
+
+    .logos-box img {
+      max-height: 100%;
+    }
+
+    .dem-text {
+      display: none;
+    }
+
+    .sec_1 {
+      height: 140px;
+      padding-top: 20px;
+      line-height: 100px;
+    }
+
+    .Sec3 .col-md-5 {
+      width:  !important;
+    }
+
+    .titt_1 {
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .sec_1 a {
+      text-decoration: none;
+    }
+
+    .sec_1 a:hover span {
+      color: red;
+    }
+
+    .testmonials a {
+      color: #b72127;
+    }
+
+    .testmonials hr {
+      border-color: #555;
+    }
+
+    .testmonials h3 {
+      font-weight: bold;
+    }
+
+    #comp_1553870926640 {
+      background-color: #dedede;
+    }
+
+    .theatre.tutorials {
+      padding: 20px 40px;
+      color: #000;
+      text-align: left;
+      overflow: scroll;
+      line-height: 2;
+    }
+
+    .tutorials h1 {
+      color: #ce202a;
+    }
+
+    .tutorials ol {
+      padding: 10px 20px;
+    }
+
+    .theatre.tutorials ol li {
+      list-style: decimal;
+    }
+
+    @media only screen and (max-width: 975px) {
+      .titt_1 {
+        font-size: 18px;
+      }
+
+      .thumb_1 {
+        padding-top: 5px;
+        border-top: 1px solid #fff;
+        border-right: 0px;
+      }
+    }
+
+    .nivo-nextNav {
+      background-image: url(/site-uploads/1001041/Images/arrows_R.png);
+      display: block;
+      width: 44px;
+      height: 30px;
+      background-repeat: no-repeat;
+    }
+
+    .nivo-prevNav {
+      background-image: url(/site-uploads/1001041/Images/arrows_1.png);
+      display: block;
+      width: 44px;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    @media screen and (min-width: 992px) {
+      .navbar {
+        border: 0;
+      }
+
+      .navbar-nav li a {
+        font-weight: normal;
+        padding: 2vw .35vw;
+        font-size: 0.85vw;
+        border-top: 4px solid #fff;
+      }
+
+      .navbar-nav li a:hover {
+        border-top: 4px solid #b80201;
+      }
+
+      .top-header {
+        border-bottom: 2px solid #bd1312;
+        background-color: #fff;
+      }
+
+      .top-header .dropdown-menu li a {
+        border-top: 0;
+        padding: 5px;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+      }
+
+      .top-header .dropdown-menu li a:hover {
+        color: #ff7878;
+      }
+
+      .top-header .dropdown-menu {
+        padding: 10px 15px;
+        min-width: 770px;
+      }
+
+      .top-header .dropdown-menu li ul {
+        border-right: 1px dotted #2f2f2f;
+        margin-right: 10px;
+        padding: 0 5px 0 0;
+      }
+
+      .top-header .dropdown-menu h3 {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 14px !important;
+      }
+
+      .top-header .dropdown-menu li ul li {
+        display: block;
+        font-weight: 300;
+        list-style: none outside none;
+        min-width: 240px;
+        padding-bottom: 6px;
+      }
+
+      .top-header nav .dropdown .dropdown-menu li div div:last-child ul {
+        border-right: medium none;
+        margin-right: 0;
+        padding-right: 0;
+      }
+
+      .top-header nav .dropdown .dropdown-menu li div div {
+        float: left;
+        width: 33.3333%;
+      }
+
+      .top-addresss {
+        margin-top: 25px;
+        line-height: 2;
+      }
+
+      .navbar {
+        box-shadow: none;
+        margin: 0px;
+        text-transform: uppercase;
+        text-alignment: center;
+      }
+
+      .navbar-nav li {
+        padding-right: 15px;
+      }
+
+      .dropdown-menu li:hover .sub-menu {
+        visibility: visible;
+      }
+
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 1570px) {
+      .navbar-nav li a {
+        font-size: 0.85vw;
+      }
+
+      .navbar-nav li {
+        padding-right: 5px;
+      }
+    }
+
+    @media only screen and (max-width: 959px) {
+      .logos-box li {
+        padding: 8px;
+      }
+
+      .navbar-nav li a {
+        color: #ffffff !important;
+      }
+
+      .navbar-default {
+        background-image: linear-gradient(to bottom, #575757 0%, #3d3d3d 100%);
+        background-repeat: repeat-x;
+        border-radius: 0;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 5px rgba(0, 0, 0, 0.075);
+        background-color: #3d3d3d;
+        border-color: #2c2c2c;
+      }
+
+      .slide {
+        background-position: center !important;
+        background-size: 100% !important;
+      }
+
+      .slice {
+        background-position: center !important;
+        background-size: 100% !important;
+      }
+
+      #siteMenu {
+        position: static;
+      }
+
+      .navbar-nav li a {
+        font-size: 5vw;
+      }
+
+      .navbar-header {
+        float: none
+      }
+
+      #HeaderDiv img {
+        position: relative !important;
+      }
+    }
+
+    @import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic);
+
+    @media screen and (max-width: 992px) {
+      .section img {}
+    }
+
+    @font-face {
+      font-family: 'Ubuntu';
+      src: url('/site-uploads/1001041/fonts/ubuntu-regular-webfont.woff') format('woff'),
+        /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('/site-uploads/1001041/fonts/Ubuntu-Regular.ttf') format('truetype');
+      /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    }
+  </style>
+  <meta name="generator" content="Created by :Simply Web Editor , simplywebeditor.com">
+  <script type="text/javascript" src="http://cdn.ckeditor.com/4.11.1/full/config.js?t=IA8F"></script>
+  <link rel="stylesheet" type="text/css" href="http://cdn.ckeditor.com/4.11.1/full/skins/moono-lisa/editor.css?t=IA8F">
+  <script type="text/javascript" src="http://cdn.ckeditor.com/4.11.1/full/lang/en.js?t=IA8F"></script>
+  <script type="text/javascript" src="http://cdn.ckeditor.com/4.11.1/full/styles.js?t=IA8F"></script>
+  <link rel="stylesheet" type="text/css"
+    href="http://cdn.ckeditor.com/4.11.1/full/plugins/scayt/skins/moono-lisa/scayt.css">
+  <link rel="stylesheet" type="text/css" href="http://cdn.ckeditor.com/4.11.1/full/plugins/scayt/dialogs/dialog.css">
+  <link rel="stylesheet" type="text/css"
+    href="http://cdn.ckeditor.com/4.11.1/full/plugins/tableselection/styles/tableselection.css">
+  <link rel="stylesheet" type="text/css"
+    href="http://cdn.ckeditor.com/4.11.1/full/plugins/wsc/skins/moono-lisa/wsc.css">
+  <link rel="stylesheet" type="text/css"
+    href="http://cdn.ckeditor.com/4.11.1/full/plugins/copyformatting/styles/copyformatting.css">
+  <script type="text/javascript" charset="UTF-8"
+    src="https://maps.google.com/maps-api-v3/api/js/44/10/common.js"></script>
+  <script type="text/javascript" charset="UTF-8"
+    src="https://maps.google.com/maps-api-v3/api/js/44/10/util.js"></script>
+  <style type="text/css">
+    @keyframes tawkMaxOpen {
+      0% {
+        opacity: 0;
+        transform: translate(0, 30px);
+        ;
+      }
+
+      to {
+        opacity: 1;
+        transform: translate(0, 0px);
+      }
+    }
+
+    @-moz-keyframes tawkMaxOpen {
+      0% {
+        opacity: 0;
+        transform: translate(0, 30px);
+        ;
+      }
+
+      to {
+        opacity: 1;
+        transform: translate(0, 0px);
+      }
+    }
+
+    @-webkit-keyframes tawkMaxOpen {
+      0% {
+        opacity: 0;
+        transform: translate(0, 30px);
+        ;
+      }
+
+      to {
+        opacity: 1;
+        transform: translate(0, 0px);
+      }
+    }
+
+    #cBgUPjY-1618490501443 {
+      outline: none !important;
+      visibility: visible !important;
+      resize: none !important;
+      box-shadow: none !important;
+      overflow: visible !important;
+      background: none !important;
+      opacity: 1 !important;
+      filter: alpha(opacity=100) !important;
+      -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity1) !important;
+      -moz-opacity: 1 !important;
+      -khtml-opacity: 1 !important;
+      top: auto !important;
+      right: 10px !important;
+      bottom: 90px !important;
+      left: auto !important;
+      position: fixed !important;
+      border: 0 !important;
+      min-height: 0 !important;
+      min-width: 0 !important;
+      max-height: none !important;
+      max-width: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      -moz-transition-property: none !important;
+      -webkit-transition-property: none !important;
+      -o-transition-property: none !important;
+      transition-property: none !important;
+      transform: none !important;
+      -webkit-transform: none !important;
+      -ms-transform: none !important;
+      width: auto !important;
+      height: auto !important;
+      display: none !important;
+      z-index: 2000000000 !important;
+      background-color: transparent !important;
+      cursor: auto !important;
+      float: none !important;
+      border-radius: unset !important;
+      pointer-events: auto !important
+    }
+
+    #IpPhSOs-1618490501446.open {
+      animation: tawkMaxOpen .25s ease !important;
+    }
+  </style>
+  <script async="" src="https://embed.tawk.to/5e74e8cd8d24fc226588f567/default?refresh=true&amp;v=698" charset="UTF-8"
+    crossorigin="*" id="TawkScript-1618494709406"></script>
+</head>
+
+<body id="page_48123">
+  <div id="parent" class="editable-container">
+    <div class="row">
+      <div id="HeaderDiv" class="droppableHtml onlyHtml col-md-12 ui-sortable ui-sortable-disabled">
+        <div id="html_1407871461308" class="movableHtml common_element ui-sortable-handle"
+          data-component-htmlcontainer="" data-com-id="htmlContainer" ppanel="htmlContainer">
+          <div contenteditable="true" class="contentHtml" style="position: relative;">
+            <div>
+              <style type="text/css">
+                .__2020_py-10 {
+                  padding-top: 2rem !important;
+                  padding-bottom: 4rem !important;
+                }
+
+                .__2020_bb {
+                  border-bottom: 1px solid #000;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+        <div id="html_1409852884323" class="movableHtml common_element ui-sortable-handle"
+          data-component-htmlcontainer="" data-com-id="htmlContainer" ppanel="htmlContainer">
+          <div contenteditable="true" class="contentHtml" style="position: relative;">
+            <div class="row login-area" style="min-height:32px; margin:0; padding:5px;">
+              <div class="container-fluid">
+                <div class="col-md-3 col-xs-10 col-md-offset-8 text-right phone"><strong>Sales: </strong>1-888-795-2876
+                </div>
+
+                <div class="col-md-3 hidden-xs text-right phone"><strong>&nbsp;&nbsp;&nbsp; Support:</strong>
+                  1-888-849-5601</div>
+              </div>
+            </div>
+            <style type="text/css">
+              .phone {
+                color: #fff;
+                font-size: 16px;
+              }
+            </style>
+          </div>
+        </div>
+        <div id="html_1334682497443" class="movableHtml common_element ui-sortable-handle"
+          data-component-htmlcontainer="" data-com-id="htmlContainer" ppanel="htmlContainer">
+          <div contenteditable="true" class="contentHtml" style="position: relative;">
+            <div class="container-fluid top-header" style="padding:0; margin:0;">
+              <div class="row" style="padding:0; margin:0;">
+                <div class="container-fluid" style="padding:0; margin:0;">
+                  <div class="col-md-4 text-center">
+                    <div><a href="/Home/"><img alt="Turn Key Web Solutions"
+                          src="/site-uploads/1001315/Images/turnkey_web_solutions_logo_small.png"></a></div>
+
+                    <div class="visible-xs mobile-header-buttons"><a class="covid-btn"
+                        href="/page/display/?siteId=1001041&amp;pageId=40570"><span class="bg-ttl">COVID-19</span>
+                        <span>Update Your Website</span></a> <a class="login-btn" data-target="#Login-form"
+                        data-toggle="modal" data-whatever="@mdo" href="#" type="button"> <span class="bg-ttl">Dealer
+                          Login</span></a></div>
+                  </div>
+
+                  <div class="col-md-11" style="padding:0; margin:0; margin-top:0px;">
+                    <div>
+                      <nav class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header"><button class="navbar-toggle"
+                            data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span
+                              class="sr-only">Toggle navigation</span> <span class="icon-bar">&nbsp;</span> <span
+                              class="icon-bar">&nbsp;</span> <span class="icon-bar">&nbsp;</span></button><a
+                            class="visible-xs" href="tel:1-888-849-5601"
+                            style="padding:10px; color:#fff; line-height: 1.7; font-size: 16px"><strong>Support:</strong>1-888-849-5601</a>
+                          <img alt="Facebook Marketing Partner S" class="face-partner hidden-xs"
+                            src="/site-uploads/1001315/Images/facebook_marketing_partner-s.png">
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          <ul class="nav navbar-nav">
+                            <li><a href="/Home/">Home</a></li>
+                            <li class="hidden"><a href="/Company/">Company</a></li>
+                            <li class="dropdown" style="text-align: left;"><a class="dropdown-toggle"
+                                data-toggle="dropdown" href="#">Company</a>
+                              <ul
+                                class="wow fadeInDown animated animated dropdown-menu animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated"
+                                style="visibility: visible; animation-name: undefined; min-width: 200px;">
+                                <li><a href="/Company/">About Us</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown" style="text-align: left;"><a class="dropdown-toggle"
+                                data-toggle="dropdown" href="#">Products</a>
+                              <ul
+                                class="wow fadeInDown animated animated dropdown-menu animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated animated"
+                                style="visibility: visible; animation-name: undefined;">
+                                <li>
+                                  <div>
+                                    <h3 class="hidden-xs"><span style="font-size:14px;">Products</span></h3>
+
+                                    <div>
+                                      <ul>
+                                        <li>
+                                          <a href="/Dealer-Websites/">Dealer Websites </a>
+                                        </li>
+                                        <li>
+                                          <a href="/Inventory/">Inventory Management</a>
+                                        </li>
+                                        <li>
+                                          <a href="/New-Products/">New Products / Short Lines</a>
+                                        </li>
+                                        <li>
+                                          <a href="/Search-Engine-Optimization/">Search Engine Optimization</a>
+                                        </li>
+                                        <li>
+                                          <a href="/Dealer-Training/">Dealer Training</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+
+                                    <div>
+                                      <ul>
+                                        <li>
+                                          <a href="/Lead-Management/">Lead Management</a>
+                                        </li>
+                                        <li>
+                                          <a href="/Hosting-Web%20Mail/">Hosting / Web Mail</a>
+                                        </li>
+                                        <li>
+                                          <a href="/Ecommerce/">Ecommerce</a>
+                                        </li>
+                                        <li>
+                                          <a href="/Mobile-Scalable-PDA-Websites/">Mobile / Scalable PDA Websites</a>
+                                        </li>
+                                        <li>
+                                          <a href="/Reporting-and-Statistics/">Reporting and Statistics</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+
+                                    <div>
+                                      <ul>
+                                        <li>
+                                          <a href="/Video-Enhanced-Inventory/">Video Enhanced Inventory</a>
+                                        </li>
+                                        <li>
+                                          <a href="/National-Marketing-Programs/">National Marketing Programs</a>
+                                        </li>
+                                        <li>
+                                          <a href="/Multiposting-Options/">Multiposting Options</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+                            <li><a href="/Portfolio-new/">Portfolio</a></li>
+                            <li><a href="/Inventory/">Inventory</a></li>
+                            <li><a href="/OEM-Programs/">OEM Programs</a></li>
+                            <li><a href="/Book_a_Demo/">Schedule a Demo</a></li>
+                            <li><a href="/Contact/">Contact Us</a></li>
+                            <li><a href="/Support-Center/">Support</a></li>
+                            <li>
+                              <!--<a href="http://www.facebook.com/turnkeywebsolutions" target="_blank">
+<img alt="Facebook" alt="Fb Logo" alt="Fb Logo" alt="Fb Logo" alt="Fb Logo" src="/site-uploads/1001315/Images/fb_logo.jpg" /></a>-->
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                      </nav>
+                    </div>
+                  </div>
+                  <!-- /.container-fluid -->
+                </div>
+
+                <div class="covid-btn-box hidden-xs">
+                  <a class="login-btn" data-target="#Login-form" data-toggle="modal" data-whatever="@mdo" href="#"
+                    type="button">
+                    <span class="bg-ttl">Dealer Login</span>
+                  </a>
+                  <a class="covid-btn" href="/Covid19/"> <span class="bg-ttl">COVID-19</span> <span>Update Your
+                      Website</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: none;">
+              <style type="text/css">
+                .txt-box input {
+                  border-radius: 5px;
+                  height: 24px;
+                  margin: 3px;
+                }
+
+                .txt-box input[type="submit"]:hover {
+                  color: #ffcd11;
+                }
+
+                .txt-box a {
+                  color: #ffcd11;
+                  margin: 4px;
+                  display: block;
+                }
+
+                .navbar-default .navbar-nav>li>a {
+                  color: #888;
+                }
+
+                .navbar {
+                  visibility: visible;
+                }
+
+                @media only screen and (max-width:760px) {
+                  .navbar {
+                    margin: 0;
+                  }
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div id="LeftDiv" class="droppableComp droppableHtml col-md-2 hidden ui-sortable ui-sortable-disabled" style="">
+      </div>
+      <div id="CenterDiv" class="droppableComp droppableHtml col-md-12 ui-sortable ui-sortable-disabled" style="">
+        <div ppanel="Slider" class="movableComp contentComp ui-sortable-handle" data-pagecompid="53781"
+          data-component-slider="" data-com-id="Slider" id="comp_1550858652214">
+          <div class="container-fluid" style="padding:0">
+            <div class="carousel slide" data-ride="carousel" id="carousel-53781" data-interval="4000">
+              <ol class="carousel-indicators">
+                <li data-slide-to="0" data-target="#carousel-53781" class=""></li>
+                <li data-slide-to="1" data-target="#carousel-53781" class=""></li>
+                <li data-slide-to="2" data-target="#carousel-53781" class=""></li>
+                <li data-slide-to="3" data-target="#carousel-53781" class=""></li>
+                <li data-slide-to="4" data-target="#carousel-53781" class="active"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <a target="_self" href="https://turnkeywebsolutions.com/covid19" class="item">
+                  <img loading="eager" style="margin:0 auto;" src="/site-uploads/1001041/Slider/COVID19.jpg"
+                    alt="COVID19.jpg"></a>
+                <a target="_blank" href="https://turnkeywebsolutions.com/Book_a_Demo/" class="item">
+                  <img loading="eager" style="margin:0 auto;"
+                    src="/site-uploads/1001041/Slider/DMS-Integration-Turn-Key-Web-Solutions.png"
+                    alt="DMS-Integration-Turn-Key-Web-Solutions.png"></a>
+                <a target="_blank" href="https://turnkeywebsolutions.com/Book_a_Demo/" class="item">
+                  <img loading="eager" style="margin:0 auto;"
+                    src="/site-uploads/1001041/Slider/ECommerce-Total-Solutions-Turn-Key-Web-Solutions.png"
+                    alt="ECommerce-Total-Solutions-Turn-Key-Web-Solutions.png"></a>
+                <a target="_blank" href="https://turnkeywebsolutions.com/Book_a_Demo/" class="item">
+                  <img loading="eager" style="margin:0 auto;"
+                    src="/site-uploads/1001041/Slider/third-party-syndication-Turn-Key-Web-Solutions.png"
+                    alt="third-party-syndication-Turn-Key-Web-Solutions.png"></a>
+                <a target="_self" href="https://turnkeywebsolutions.com/Book_a_Demo/" class="item active">
+                  <img loading="eager" style="margin:0 auto;" src="/site-uploads/1001041/Slider/turnkey features.jpg"
+                    alt="turnkey features.jpg"></a>
+              </div>
+              <a class="left carousel-control" data-slide="prev" href="#carousel-53781" role="button">
+                <img loading="eager" src="/images/arrows_l.png"
+                  style="left: 50px; margin-top: 70%; position: absolute;"></a>
+              <a class="right carousel-control" data-slide="next" href="#carousel-53781" role="button">
+                <img loading="eager" src="/images/arrows_r.png"
+                  style="right: 50px; margin-top: 70%; position: absolute;"></a>
+            </div>
+          </div>
+        </div>
+        <div id="html_1468416112117" class="movableHtml ui-sortable-handle" data-component-htmlcontainer=""
+          data-com-id="htmlContainer" ppanel="htmlContainer">
+          <div contenteditable="true" class="contentHtml" style="position: relative;">
+            <div>
+              <style type="text/css">
+                #main-slider {
+                  overflow: hidden;
+                }
+
+                #main-slider .item {
+                  height: 558px;
+                  background-repeat: no-repeat;
+                  background-position: 50% 0;
+                  background-size: cover;
+                }
+
+                #main-slider .slider-inner {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  color: #fff;
+                }
+
+                #main-slider .slider-inner h2 {
+                  margin-top: 180px;
+                  font-size: 36px;
+                  line-height: 1;
+                  text-transform: uppercase;
+                  color: #fff;
+                }
+
+                #main-slider .slider-inner h2>span {
+                  color: #a30201;
+                }
+
+                #main-slider .slider-inner .btn {
+                  margin-top: 10px;
+                }
+
+                #main-slider .owl-prev,
+                #main-slider .owl-next {
+                  position: absolute;
+                  top: 50%;
+                  background-color: rgba(0, 0, 0, 0.2);
+                  color: #fff;
+                  font-size: 30px;
+                  display: inline-block;
+                  margin-top: -35px;
+                  height: 70px;
+                  width: 70px;
+                  line-height: 70px;
+                  text-align: center;
+                  border-radius: 100px;
+                  z-index: 5;
+                  -webkit-transition: background-color 400ms;
+                  transition: background-color 400ms;
+                }
+
+                #main-slider .owl-prev:hover,
+                #main-slider .owl-next:hover {
+                  background-color: #a30201;
+                }
+
+                #main-slider .owl-prev {
+                  left: -35px;
+                  text-indent: 14px;
+                }
+
+                #main-slider .owl-next {
+                  right: -35px;
+                  text-indent: -14px;
+                }
+
+                #bar {
+                  width: 0%;
+                  max-width: 100%;
+                  height: 4px;
+                  background: #a30201;
+                  position: absolute;
+                  top: 0;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+        <div id="html_1409110727726" class="movableHtml ui-sortable-handle" data-component-htmlcontainer=""
+          data-com-id="htmlContainer" ppanel="htmlContainer">
+          <div contenteditable="true" class="contentHtml" style="position: relative;">
+            <div class="welcome-msg text-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 col-md-offset-2">
+                    <p><br>
+                      <span style="font-size:24px;"><strong>Why choose a TurnKey <em>Dealer P</em></strong></span> <span
+                        style="font-size:24px;"> <strong> <em>erformance</em> Website?</strong></span>
+                    </p>
+
+                    <ul>
+                      <li><span style="font-size:26px;"><strong>More Leads</strong></span></li>
+                      <li><span style="font-size:26px;"><strong>Easy To Edit</strong></span></li>
+                      <li><span style="font-size:26px;"><strong>Great Value</strong></span></li>
+                      <li><span style="font-size:26px;"><strong>No Monthly Fees - Canadian Dollars!</strong></span></li>
+                    </ul>
+                  </div>
+
+                  <p>&nbsp;</p>
+
+                  <p>&nbsp;</p>
+                </div>
+              </div>
+
+              <div>&nbsp;</div>
+            </div>
+
+            <div style="display: none; text-align: center;">
+              <style type="text/css">
+                .welcome-msg {
+                  background-color: #a30201;
+                  color: #fff;
+                  font-size: 22px;
+                }
+
+                .welcome-msg ul li {
+                  list-style-image: url(/site-uploads/1000823/Images/true.png);
+                  margin: 0 30px;
+                }
+
+                @media only screen and (max-width:760px) {
+                  .welcome-msg {
+                    font-size: 16px;
+                  }
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+        <div id="html_1409110583753" class="movableHtml ui-sortable-handle" data-component-htmlcontainer=""
+          data-com-id="htmlContainer" ppanel="htmlContainer">
+          <div contenteditable="true" class="contentHtml" style="position: relative;">
+            <div class="features container-fluid" style="background-color:#fff;">
+              <div class="row col-md-offset-1">
+                <div class="col-md-5 section wow fadeInLeft animated animated"
+                  style="visibility: visible; animation-name: undefined;"><img alt="Section1b_1" class="hidden-xs"
+                    src="/site-uploads/1001315/Images/Section1b_1.png"> <img alt="Section1_mobile" class="visible-xs"
+                    src="/site-uploads/1001315/Images/Section1_mobile.png">
+                  <h2>Dealer Pro V5.0</h2>
+
+                  <p>Our easy-to-use Dealer Pro Editor V5.0 makes it easy to create, edit, or add your inventory quickly
+                    and easily. Furthermore never worry about your New OEM products again. We create, enhance and keep
+                    those lines up to date as often as required. We offer one on one Dealer Pro Editor V5.0 support and
+                    training so that changing to a new enviroment is worry free.<br>
+                    &nbsp;</p>
+
+                  <p><a class="see-more" href="/Mobile-Scalable-PDA-Websites/" target="_self">Find
+                      out&nbsp; More..</a></p>
+                </div>
+
+                <div class="col-md-5 section wow fadeInDown animated animated"
+                  style="visibility: visible; animation-name: undefined;"><img alt="Section2b" class="hidden-xs"
+                    src="/site-uploads/1001315/Images/Section2b.png"> <img alt="SmallSmartPhone2b" class="visible-xs"
+                    src="/site-uploads/1001315/Images/SmallSmartPhone2b.png">
+                  <h2>Manage Inventory</h2>
+
+                  <p>Our easy-to-use Dealer Pro Editor V5.0 makes it easy to create, edit, or add your inventory quickly
+                    and easily. Furthermore never worry about your New OEM products again. We create, enhance and keep
+                    those lines up to date as often as required.&nbsp; We offer one on one Dealer Pro Editor V5.0
+                    support and training so that changing to a new environment is worry free.<br>
+                    &nbsp;</p>
+
+                  <p><a class="see-more" href="/Inventory/" target="_self">Find
+                      out&nbsp; More..</a></p>
+                </div>
+
+                <div class="col-md-5 section wow fadeInRight animated animated"
+                  style="visibility: visible; animation-name: undefined;"><img alt="Section4b" class="hidden-xs"
+                    src="/site-uploads/1001315/Images/Section4b.png"> <img alt="SmallSmartPhone4b" class="visible-xs"
+                    src="/site-uploads/1001315/Images/SmallSmartPhone4b.png">
+                  <h2>Support / Client Care</h2>
+
+                  <p dir="ltr" id="docs-internal-guid-4c66122f-7fff-da5c-b34a-4d27cba3b269"
+                    style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">
+                    <meta charset="utf-8">What happens after the sale is critical, it is easy to promise the moon and
+                    not deliver. Client care is exactly that - working with each client to better understand their needs
+                    and requirements.&nbsp; You are fully trained on how to use your new website and how to keep things
+                    current. We even provide easy how-to videos for reference. In today's business environment having
+                    the right solution and customer care is expected.
+                  </p>
+
+                  <p>&nbsp;</p>
+
+                  <p><a class="see-more" href="/Dealer-Training/" target="_self">Find
+                      out&nbsp; More..</a></p>
+                </div>
+              </div>
+
+              <div class="row col-md-offset-1">
+                <div class="col-md-5 section wow fadeInLeft animated animated"
+                  style="visibility: visible; animation-name: undefined;"><img alt="Section5b" class="hidden-xs"
+                    src="/site-uploads/1001315/Images/Section5b.png"> <img alt="SmallSmartPhone5b" class="visible-xs"
+                    src="/site-uploads/1001315/Images/SmallSmartPhone5b.png">
+                  <h2>Google SEO</h2>
+
+                  <p>Google Search engine optimization is not only critical but mandatory in today's competitive
+                    business environment. Getting the right dealership website solution provider is key to your success,
+                    for today tomorrow and beyond. Many dealership solution providers use automated submission services,
+                    we do not,&nbsp; SEO optimization is critical to your success. Your Dealer Performance package
+                    includes everything you need to track and better understand your customers and their traffic
+                    patterns.</p>
+
+                  <p><a class="see-more" href="/Search-Engine-Optimization/" target="_self">Find
+                      out&nbsp; More..</a></p>
+                </div>
+
+                <div class="col-md-5 section wow fadeInDown animated animated"
+                  style="visibility: visible; animation-name: undefined;"><img alt="Section6b" class="hidden-xs"
+                    src="/site-uploads/1001315/Images/Section6b.png"> <img alt="SmallSmartPhone6b" class="visible-xs"
+                    src="/site-uploads/1001315/Images/SmallSmartPhone6b.png">
+                  <h2>CMS</h2>
+
+                  <p>Gone are the days of having to wait for someone to make a change! Easily change your hours, add
+                    specials, update inventories whatever we have the right solution at a price point that makes
+                    sense.<br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    &nbsp;
+                  </p>
+
+                  <p><a class="see-more" href="/Dealer-Training/" target="_self">Find
+                      out&nbsp; More..</a></p>
+                </div>
+
+                <div class="col-md-5 section wow fadeInRight animated animated"
+                  style="visibility: visible; animation-name: undefined;"><img alt="Section3b" class="hidden-xs"
+                    src="/site-uploads/1001315/Images/25-years-David-Purdy-2019_1.png"
+                    style="width: 488px; height: 195px;"> <img alt="SmallSmartPhone3b" class="visible-xs"
+                    src="/site-uploads/1001315/Images/SmallSmartPhone3b.png">
+                  <p><br>
+                    We deliver cost effective dealership website solutions. Don't be fooled by dealer website solution
+                    providers south of the border! Many of our most recent customers are leaving those providers for not
+                    only price, but service after the sale. We are Canadian and proud to offer our solutions worldwide
+                    to dealers, OEM's, and businesses of all types.<br>
+                    <br>
+                    <br>
+                    &nbsp;
+                  </p>
+
+                  <p><a class="see-more" href="/Contact/" target="_self">Find
+                      out&nbsp; More..</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <style type="text/css">
+                .see-more {
+                  color: #fff;
+                  background-color: #a30201;
+                  padding: 10px;
+                  text-decoration: none;
+                  display: block;
+                  width: 125px;
+                  font-size: 14px;
+                }
+
+                .features .row {
+                  padding: 25px 10px;
+                }
+
+                .features .row img {
+                  max-width: 100%;
+                }
+
+                .features p {
+                  font-size: 14px;
+                }
+
+                .section {
+                  padding: 10px;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+        <div id="html_1334677745869" class="movableHtml ui-sortable-handle" data-component-htmlcontainer=""
+          data-com-id="htmlContainer" ppanel="htmlContainer">
+          <div contenteditable="true" class="contentHtml" style="position: relative;">
+            <div class="sect5 stripes" style="position:relative;">
+              <div>
+                <div class="box box1 wow fadeInLeft animated animated"
+                  style="visibility: visible; animation-name: undefined;">
+                  <div class="thumb_1" style="background-image:url(/site-uploads/1000440/Images/thumb1.jpg);"><a
+                      href="/Dealer-Performance-Powersports/"><span class="titt_1"
+                        style="text-shadow:1px 2px 3px #000;">POWERSPORTS</span></a>
+                    <p class="cont"><a href="/Dealer-Performance-Powersports/"><span>Yamaha<br>
+                          Kawasaki<br>
+                          BRP<br>
+                          Honda </span><br>
+                        <br>
+                        <span class="more">More Now</span> </a></p>
+                  </div>
+                </div>
+
+                <div class="box box2 wow fadeInRight animated animated"
+                  style="visibility: visible; animation-name: undefined;">
+                  <div class="thumb_1" style="background-image:url(/site-uploads/1000440/Images/thumb2.jpg);"><a
+                      href="/Dealer-Performance-Agriculture/"><span class="titt_1"
+                        style="text-shadow:1px 2px 3px #000;">Agriculture</span></a>
+
+                    <p class="cont"><a href="/Dealer-Performance-Agriculture/"><span>John Deere<br>
+                          newholland<br>
+                          Farm-Fleet<br>
+                          Case IH </span><br>
+                        <br>
+                        <span class="more">More Now</span> </a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box box3 wow fadeInLeft animated animated"
+                style="visibility: visible; animation-name: undefined;">
+                <div class="thumb_1" style="background-image:url(/site-uploads/1000440/Images/thumb3.jpg);"><a
+                    href="/Dealer-Performance-Truck-and-Trailer/"><span class="titt_1"
+                      style="text-shadow:1px 2px 3px #000;">Truck AND Trailer</span></a>
+
+                  <p class="cont"><a href="/Dealer-Performance-Truck-and-Trailer/"><span>Freightliner<br>
+                        UTILITY<br>
+                        VolvO<br>
+                        Mack</span><br>
+                      <br>
+                      <span class="more">More Now</span> </a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box box4 wow fadeInRight animated animated"
+              style="visibility: visible; animation-name: undefined;">
+              <div class="thumb_1" style="background-image:url(/site-uploads/1000440/Images/thumb4.jpg);"><a
+                  href="/Dealer-Performance-Marine/"><span class="titt_1"
+                    style="text-shadow:1px 2px 3px #000;">Marine</span></a>
+
+                <p class="cont"><a href="/Dealer-Performance-Marine/"><span>princecraft<br>
+                      Mercury<br>
+                      Yamaha<br>
+                      Stingray </span><br>
+                    <br>
+                    <span class="more">More Now</span> </a></p>
+              </div>
+            </div>
+
+            <div class="box box5 wow fadeInLeft animated animated"
+              style="visibility: visible; animation-name: undefined;">
+              <div class="thumb_1" style="background-image:url(/site-uploads/1000440/Images/thumb5.jpg);"><a
+                  href="/Dealer-Performance-Equipment/"><span class="titt_1"
+                    style="text-shadow:1px 2px 3px #000;">Equipment</span></a>
+
+                <p class="cont"><a href="/Dealer-Performance-Equipment/"><span>Bay-Lynx<br>
+                      JCB<br>
+                      Komatsu<br>
+                      bobcat </span><br>
+                    <br>
+                    <span class="more">More Now</span> </a></p>
+              </div>
+            </div>
+
+            <div class="box box6 wow fadeInRight animated animated"
+              style="visibility: visible; animation-name: undefined;">
+              <div class="thumb_1" style="background-image:url(/site-uploads/1000440/Images/thumb6.jpg);"><a
+                  href="/Dealer-Performance-Lawngarden/"><span class="titt_1" style="text-shadow:1px 2px 3px #000;">LAWN
+                    AND GARDEN</span></a>
+
+                <p class="cont"><a href="/Dealer-Performance-Lawngarden/"><span>Husqvarna<br>
+                      stihl<br>
+                      Honda</span><br>
+                    echo<br>
+                    <br>
+                    <span class="more">More Now</span> </a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="html_1409110898869" class="movableHtml ui-sortable-handle" data-component-htmlcontainer=""
+          data-com-id="htmlContainer" ppanel="htmlContainer">
+          <div contenteditable="true" class="contentHtml" style="position: relative;">
+            <div>
+              <style type="text/css">
+                .featured {
+                  position: absolute;
+                  background-image: url(/images/uploads/body_bg3_1.jpg);
+                  text-align: center;
+                  margin: 0px;
+                }
+
+                @media only screen and (max-width:760px) {
+                  .featured {
+                    position: relative;
+                  }
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+        <div id="html_1408333915289" class="movableHtml common_element ui-sortable-handle"
+          data-component-htmlcontainer="" data-com-id="htmlContainer" ppanel="htmlContainer">
+          <div contenteditable="true" class="contentHtml" style="position: relative;">
+            <div class="red-ttl"><a href="/Contact/" style="color:#fff">GET IN
+                TOUCH</a></div>
+            <style type="text/css">
+              .red-ttl {
+                background-color: #b72127;
+                color: #fff;
+                padding: 43px;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 34px;
+                font-weight: bold;
+              }
+            </style>
+          </div>
+        </div>
+        <div id="html_1467389733545" class="movableHtml ui-sortable-handle" data-component-htmlcontainer=""
+          data-com-id="htmlContainer" ppanel="htmlContainer">
+          <div contenteditable="true" class="contentHtml" style="position: relative;">
+            <div>
+              <style type="text/css">
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="RightDiv" class="droppableComp droppableHtml col-md-2 hidden ui-sortable ui-sortable-disabled" style="">
+      </div>
+    </div>
+    <div class="row">
+      <div id="FooterDiv" class="droppableHtml onlyHtml col-md-12 ui-sortable ui-sortable-disabled">
+        <div class="movableHtml common_element ui-sortable-handle" id="html_1334676252956"
+          data-component-htmlcontainer="" data-com-id="htmlContainer" ppanel="htmlContainer">
+          <div contenteditable="true" class="contentHtml" style="position: relative;">
+            <div class="container footer-menu">
+              <div class="row">
+                <div class="col-md-10">
+                  <h3>Products</h3>
+
+                  <div class="row">
+                    <div class="col-md-4"><img alt="Turn Key Web Solutions"
+                        src="/site-uploads/1001315/Images/turnkey_web_solutions_logo_on_black_1.jpg"
+                        style="width: 180px;"></div>
+
+                    <div class="col-md-4">
+                      <ul>
+                        <li>
+                          <a href="/Dealer-Websites/">Dealer Websites </a>
+                        </li>
+                        <li>
+                          <a href="/Inventory/">Inventory Management</a>
+                        </li>
+                        <li>
+                          <a href="/New-Products/">New Products / Short Lines</a>
+                        </li>
+                        <li>
+                          <a href="/Search-Engine-Optimization/">Search Engine Optimization</a>
+                        </li>
+                        <li>
+                          <a href="/Dealer-Training/">Dealer Training</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="Login-form"
+                      role="dialog" style="display: none;" tabindex="-1">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal"
+                              type="button"><span aria-hidden="true">×</span></button>
+
+                            <h4 class="modal-title" id="exampleModalLabel">Dealer Performance Login</h4>
+                          </div>
+
+                          <div class="modal-body">
+                            <form abframeid="iframe.0.39047811231300766" abineguid="4E6FA673E7214F7DB74BDD0900BE9F18"
+                              action="https://equipmentsearch.com/index/login/" class="container-fluid" id="loginform"
+                              method="post" name="login" pwmfilled="yes" target="_blank">
+                              <div class="form-group">
+                                <div class="col-xs-8 form-group"><input class="form-control input-sm"
+                                    id="exampleInputEmail1" name="username" placeholder="Username"></div>
+
+                                <div class="col-xs-8 form-group"><input class="form-control input-sm"
+                                    id="exampleInputPassword1" name="password" placeholder="Password" type="password">
+                                </div>
+
+                                <div class="col-xs-12" id="inline-style-91"><br>
+                                  <input class="submit btn-danger btn-sm" id="inline-style-92" type="submit"
+                                    value="Login">
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <ul>
+                        <li>
+                          <a href="/Lead-Management/">Lead Management</a>
+                        </li>
+                        <li>
+                          <a href="/Hosting-Web%20Mail/">Hosting / Web Mail</a>
+                        </li>
+                        <li>
+                          <a href="/Ecommerce/">
+                            <span id="inline-style-59">Ecommerce</span></a>
+                        </li>
+                        <li>
+                          <a href="/Mobile-Scalable-PDA-Websites/">
+                            <span id="inline-style-60">Mobile / Scalable PDA Websites</span></a>
+                        </li>
+                        <li>
+                          <a href="/Reporting-and-Statistics/">
+                            <span id="inline-style-61">Reporting and Statistics</span></a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                      <ul>
+                        <li>
+                          <a href="/Video-Enhanced-Inventory/">Video Enhanced Inventory</a>
+                        </li>
+                        <li>
+                          <a href="/National-Marketing-Programs/">National Marketing Programs</a>
+                        </li>
+                        <li>
+                          <a href="/Multiposting-Options/">Multiposting Options</a>
+                        </li>
+                        <li>
+                          <a href="/Portfolio-new/">Portfolio</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-offset-1 col-md-5">
+                  <h3>Call US</h3>
+
+                  <div>
+                    <div class="col-xs-14 col-md-15"><span style="font-family:arial,helvetica,sans-serif;"><strong><span
+                            style="font-size: 16px;">Start Marketing Now 888.795.2876</span></strong></span><br>
+                      <img alt="maple_leaf" href="https://client.turnkeywebsolutions.com/images/maple_leaf.svg"
+                        src="/site-uploads/1001315/Images/Canada.png" style="float: right;" xlink:=""> <em>Canada's
+                        Premier Business Solution Provider</em><br>
+                      &nbsp;<img src="/site-uploads/1001315/Images/facebook_marketing_partner-s.png"
+                        style="width: 140px; margin:10px 0;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row" style="padding-top: 15px; ">
+                <div class="text-center" style="font-size:12px; text-transform:capitalize"><br>
+                  &nbsp;Copyright 2021 - Turn Key Web Solutions -&nbsp;<span> Google Inc. All rights reserved. Google
+                    and the Google Logo are registered trademarks of Google Inc</span>. <a href="/privacy-policy/"
+                    style="color:#fff;">Privacy Policy</a></div>
+              </div>
+            </div>
+
+            <div style="display: none;">
+              <style type="text/css">
+                .footer-menu {
+                  color: #dedede;
+                  text-transform: uppercase;
+                }
+
+                .footer-menu h3 {
+                  border-bottom: 1px solid #9c9c9c;
+                }
+
+                .footer-menu ul {
+                  padding: 0px;
+                }
+
+                .footer-menu li a {
+                  color: #dedede;
+                  text-decoration: none;
+                  font-size: 12px;
+                }
+
+                .footer-menu li a:hover {
+                  color: #f30007;
+                }
+
+                .footer-menu li {
+                  padding-top: 5px;
+                }
+
+                .affliates li,
+                .affliates img,
+                .affliates svg {
+                  height: 30px;
+                }
+              </style>
+              <!--Start of Tawk.to Script-->
+              <script type="text/javascript">
+                var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+                (function () {
+                  var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                  s1.async = true;
+                  s1.src = 'https://embed.tawk.to/5e74e8cd8d24fc226588f567/default';
+                  s1.charset = 'UTF-8';
+                  s1.setAttribute('crossorigin', '*');
+                  s0.parentNode.insertBefore(s1, s0);
+                })();
+              </script>
+              <!--End of Tawk.to Script-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

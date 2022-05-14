@@ -1,0 +1,705 @@
+.parts-vdp {
+    width: 90vw;
+
+    .back-btn {
+        color: var(--main-color);
+        font-size: 1.25vw;
+
+        .glyphicon {
+            color: var(--main-color);
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+
+    .gallery-price-setion {
+        display: flex;
+        margin: auto;
+
+        #ad-left-content {
+            margin-right: 0.5vw;
+            border: 1px solid var(--gray-8);
+
+            .lSAction>.lSPrev,
+            .lSAction>.lSNext {
+                background: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #ddd;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                background-color: var(--main-color);
+                color: var(--white);
+                transition: all ease-in-out 0.2s;
+                opacity: 1;
+
+                @media screen and (max-width: 600px) {
+                    width: 30px;
+                    height: 30px;
+                    opacity: 0.6;
+                    color: var(--main-color);
+                    background-color: var(--white);
+                    border: 1px solid var(--main-color);
+                }
+
+                &:hover {
+                    color: var(--main-color);
+                    background-color: var(--white);
+                    border: 1px solid var(--main-color);
+                    text-decoration: none;
+                }
+            }
+
+            .lSAction>.lSPrev {
+                left: 0%;
+
+                &:before {
+                    font-family: 'Glyphicons Halflings';
+                }
+            }
+
+            .lSAction>.lSNext {
+                right: 0%;
+
+                &:before {
+                    font-family: 'Glyphicons Halflings';
+                }
+            }
+
+            .img-tag {
+                display: none;
+
+                @media screen and (max-width: 600px) {
+                    left: 0;
+                    top: 20px;
+                    width: 80px;
+                    padding: 0;
+                }
+            }
+
+            .lslide.active {
+                border: 0;
+            }
+
+
+        }
+
+        #ad-right-content {
+            margin-left: 0.5vw;
+            border: 1px solid var(--gray-8);
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            background-color: var(--gray-3);
+
+            select#colors-drop,
+            select#size-drop {
+                background-color: var(--white);
+            }
+
+            .model-title {
+                display: block !important;
+                color: var(--main-color);
+                font-size: 1.8055555555556;
+            }
+
+            .parts-price-box {
+                border-bottom: 1px solid var(--gray-8);
+                margin-bottom: 2vw;
+                padding-bottom: 1vw;
+
+                .parts-price-div {
+                    display: flex;
+                    // justify-content: flex-end;
+                    color: var(--main-color);
+                    font-family: var(--main-font);
+                    font-size: 1.5277777777778vw;
+                    font-weight: 600;
+
+                    span {
+                        font-family: var(--main-font);
+
+                        &.our-price {
+                            color: var(--main-font-color);
+                        }
+
+                        &.primary {
+                            color: var(--gray-222);
+                        }
+                    }
+                }
+            }
+
+            .available {
+                display: none;
+            }
+
+            .right-cta-buttons {
+                // border-bottom: 1px solid var(--gray-8);
+                margin-bottom: 2vw;
+                padding-bottom: 1vw;
+
+                #qautity-add-box {
+                    display: flex;
+
+                    .simpleCart_quantityBox {
+                        flex: 1;
+                        margin-right: 1vw;
+                    }
+
+                    .ecomm-btn {
+                        flex: 2;
+                        color: var(--white) !important;
+                        background-color: var(--main-color);
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-family: var(--main-font);
+                        font-size: 1.1111111111111vw;
+
+                        span {
+                            color: var(--white) !important;
+                            background-color: var(--main-color);
+
+                        }
+
+                        &:hover {
+                            color: var(--white) !important;
+                        }
+                    }
+                }
+            }
+
+            .quote-btn {
+                background-color: var(--gray-8);
+                color: var(--main-font-color);
+                font-size: 1.1111111111111vw;
+                font-family: var(--main-font);
+                font-weight: 500;
+            }
+
+            .rt-specs-box {
+                display: none;
+            }
+        }
+    }
+
+    .model-tabs {
+        margin: 1.2vw .5vw 0 0;
+        width: 100%;
+        float: left;
+        padding: 0;
+        // border: 1px solid #d5d5d5;
+
+        #detals-tabs {
+            // display: none;
+            width: 100%;
+            padding: 0;
+        }
+
+        .tab-content {
+            .tab-pane {
+                font-family: var(--main-font);
+                font-size: 1.1111111111111vw;
+            }
+        }
+
+        .panel {
+            .panel-heading {
+                .panel-title {
+                    .js-tabcollapse-panel-heading {
+                        background-color: var(--body) !important;
+                        border: 1px solid #DDDDDD;
+                        color: var(--gray-2) !important;
+                        font-family: "Barlow", sans-serif !important;
+
+                        .glyphicon {
+                            color: var(--gray-2) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    #qautity-add-box .simpleCart_quantityBox div {
+        @media screen and (max-width: 600px) {
+            height: 100%;
+
+        }
+    }
+
+    .model-title {
+        display: none;
+        color: var(--black);
+
+        @media screen and (max-width: 600px) {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+    }
+
+    // for this website
+    ._added-content {
+        border-top: 1px solid var(--gray-8);
+        margin: 1vw 0;
+        padding: 1vw;
+
+        p {
+            font-family: var(--main-font);
+            font-size: 1.1111111111111vw;
+            color: var(--gray-222);
+
+            &:nth-child(1) {
+                font-weight: 600;
+
+                i {
+                    color: #66BC29;
+                }
+            }
+
+            &:nth-child(2) {
+                font-weight: 400;
+            }
+        }
+
+        a {
+            font-family: var(--main-font);
+            font-size: 1.1111111111111vw;
+            color: var(--gray-222);
+            font-weight: 400;
+        }
+
+        @media screen and (max-width: 767px) {
+            p {
+                font-size: 16px;
+            }
+
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        .gallery-price-setion {
+            flex-wrap: wrap;
+
+            #ad-left-content {
+                margin-right: 0vw;
+                width: 100%;
+
+                .lSAction>.lSPrev,
+                .lSAction>.lSNext {
+                    background: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #ddd;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    background-color: var(--main-color);
+                    color: var(--white);
+                    transition: all ease-in-out 0.2s;
+                    opacity: 1;
+
+                    @media screen and (max-width: 600px) {
+                        width: 30px;
+                        height: 30px;
+                        opacity: 0.6;
+                        color: var(--main-color);
+                        background-color: var(--white);
+                        border: 1px solid var(--main-color);
+                    }
+
+                    &:hover {
+                        color: var(--main-color);
+                        background-color: var(--white);
+                        border: 1px solid var(--main-color);
+                        text-decoration: none;
+                    }
+                }
+
+                .lSAction>.lSPrev {
+                    left: 0%;
+
+                    &:before {
+                        font-family: 'Glyphicons Halflings';
+                    }
+                }
+
+                .lSAction>.lSNext {
+                    right: 0%;
+
+                    &:before {
+                        font-family: 'Glyphicons Halflings';
+                    }
+                }
+
+                .img-tag {
+                    display: none;
+
+                    @media screen and (max-width: 600px) {
+                        left: 0;
+                        top: 20px;
+                        width: 80px;
+                        padding: 0;
+                    }
+                }
+            }
+
+            #ad-right-content {
+                margin-left: 0vw;
+                width: 100%;
+                margin-top: 2vw;
+
+                select#colors-drop,
+                select#size-drop {
+                    background-color: var(--white);
+                }
+
+                .model-title {
+                    display: flex !important;
+                }
+
+                .parts-price-box {
+                    border-bottom: 1px solid var(--gray-8);
+                    // margin-bottom: 2vw;
+                    // padding-bottom: 1vw;
+
+                    .parts-price-div {
+                        font-size: 18px;
+                    }
+                }
+
+                .available {
+                    display: none;
+                }
+
+                .right-cta-buttons {
+                    // border-bottom: 1px solid var(--gray-8);
+                    // margin-bottom: 2vw;
+                    // padding-bottom: 1vw;
+
+                    #qautity-add-box {
+                        display: flex;
+
+                        .simpleCart_quantityBox {
+                            flex: 1;
+
+                            .form-inline {
+                                width: 100%;
+
+                                .form-group {
+                                    flex: 1;
+                                }
+                            }
+                        }
+
+                        .ecomm-btn {
+                            font-size: 16px;
+
+                            span {
+                                color: var(--white) !important;
+                                background-color: var(--main-color);
+
+                            }
+
+                            &:hover {
+                                color: var(--white) !important;
+                            }
+                        }
+                    }
+                }
+
+                .quote-btn {
+                    font-size: 16px;
+                }
+
+                .rt-specs-box {
+                    display: none;
+                }
+            }
+        }
+
+        .model-tabs {
+            margin: 1.2vw .5vw 0 0;
+            width: 100%;
+            float: left;
+            border: 1px solid #d5d5d5;
+
+            #detals-tabs {
+                display: none;
+            }
+
+            .tab-content {}
+
+            .panel {
+                .panel-heading {
+                    .panel-title {
+                        .js-tabcollapse-panel-heading {
+                            background-color: var(--body) !important;
+                            border: 1px solid #DDDDDD;
+                            color: var(--gray-2) !important;
+                            font-family: "Barlow", sans-serif !important;
+
+                            .glyphicon {
+                                color: var(--gray-2) !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        #qautity-add-box .simpleCart_quantityBox div {
+            @media screen and (max-width: 600px) {
+                height: 100%;
+
+            }
+        }
+
+        .model-title {
+            // display: none;
+            color: var(--main-color);
+
+            @media screen and (max-width: 600px) {
+                font-size: 2rem;
+                font-weight: 500;
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .gallery-price-setion {
+            flex-wrap: wrap;
+
+            #ad-left-content {
+                margin-right: 0vw;
+                width: 100%;
+
+                .lSAction>.lSPrev,
+                .lSAction>.lSNext {
+                    background: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #ddd;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    background-color: var(--main-color);
+                    color: var(--white);
+                    transition: all ease-in-out 0.2s;
+                    opacity: 1;
+
+                    @media screen and (max-width: 600px) {
+                        width: 30px;
+                        height: 30px;
+                        opacity: 0.6;
+                        color: var(--main-color);
+                        background-color: var(--white);
+                        border: 1px solid var(--main-color);
+                    }
+
+                    &:hover {
+                        color: var(--main-color);
+                        background-color: var(--white);
+                        border: 1px solid var(--main-color);
+                        text-decoration: none;
+                    }
+                }
+
+                .lSAction>.lSPrev {
+                    left: 0%;
+
+                    &:before {
+                        font-family: 'Glyphicons Halflings';
+                    }
+                }
+
+                .lSAction>.lSNext {
+                    right: 0%;
+
+                    &:before {
+                        font-family: 'Glyphicons Halflings';
+                    }
+                }
+
+                .img-tag {
+                    display: none;
+
+                    @media screen and (max-width: 600px) {
+                        left: 0;
+                        top: 20px;
+                        width: 80px;
+                        padding: 0;
+                    }
+                }
+
+                .parts-price-box {
+                    // border-bottom: 1px solid var(--gray-8);
+                    margin-bottom: 2vw;
+                    padding-bottom: 1vw;
+
+                    .parts-price-div {
+                        font-size: 18px;
+                        // display: flex;
+                        // justify-content: flex-end;
+                        // padding: 0 2vw;
+                        // color: var(--main-color);
+                    }
+                }
+
+                .ecomm-box {
+                    .ecomm-btns {
+                        #qautity-add-box {
+                            .simpleCart_quantityBox {
+                                padding: 0;
+
+                                div {
+                                    margin: 0;
+                                }
+                            }
+
+                            .ecomm-btn {
+                                flex: 2;
+                                color: var(--white) !important;
+                                background-color: var(--main-color);
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                font-family: var(--main-font);
+                                margin: 0;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            #ad-right-content {
+                margin-left: 0vw;
+                width: 100%;
+                margin-top: 2vw;
+
+                .model-title {
+                    display: block !important;
+                }
+
+                .parts-price-box {
+                    border-bottom: 1px solid var(--gray-8);
+                    margin-bottom: 2vw;
+                    padding-bottom: 1vw;
+
+                    .parts-price-div {
+                        font-size: 18px;
+                    }
+                }
+
+                .available {
+                    display: none;
+                }
+
+                .right-cta-buttons {
+                    // border-bottom: 1px solid var(--gray-8);
+                    // margin-bottom: 2vw;
+                    // padding-bottom: 1vw;
+
+                    #qautity-add-box {
+                        display: flex;
+
+                        .simpleCart_quantityBox {
+                            flex: 1;
+
+                            .form-inline {
+                                width: 100%;
+
+                                .form-group {
+                                    flex: 1;
+                                }
+                            }
+                        }
+
+                        .ecomm-btn {
+                            font-size: 16px;
+
+                            span {
+                                color: var(--white) !important;
+                                background-color: var(--main-color);
+
+                            }
+
+                            &:hover {
+                                color: var(--white) !important;
+                            }
+                        }
+                    }
+                }
+
+                .quote-btn {
+                    font-size: 16px;
+                }
+
+                .rt-specs-box {
+                    display: none;
+                }
+            }
+        }
+
+        .model-tabs {
+            margin: 1.2vw .5vw 0 0;
+            width: 100%;
+            float: left;
+            border: 1px solid #d5d5d5;
+
+            #detals-tabs {
+                display: none;
+            }
+
+            .tab-content {}
+
+            .panel {
+                .panel-heading {
+                    .panel-title {
+                        .js-tabcollapse-panel-heading {
+                            background-color: var(--body) !important;
+                            border: 1px solid #DDDDDD;
+                            color: var(--gray-2) !important;
+                            font-family: "Barlow", sans-serif !important;
+
+                            .glyphicon {
+                                color: var(--gray-2) !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        #qautity-add-box .simpleCart_quantityBox div {
+            @media screen and (max-width: 600px) {
+                height: 100%;
+
+            }
+        }
+
+        .model-title {
+            display: none;
+            color: var(--black);
+
+            @media screen and (max-width: 600px) {
+                font-size: 2rem;
+                font-weight: 500;
+            }
+
+        }
+    }
+}

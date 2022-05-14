@@ -1,0 +1,113 @@
+.breadcrumbParent {
+    // background-color: #EEEEEE;
+    // border-left: 5px solid var(--main-color);
+    // border-top: 1px solid #ddd;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/site-uploads/1001189/Images/banner-products.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 60px;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 5vw;
+    margin-bottom: 2vw;
+    font-weight: 600;
+    position: relative;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15%);
+
+    &::after {
+        // width: 1.8vw;
+        // height: 1.8vw;
+        // background-color: #EEE;
+        // top: calc(100% - 0.9vw);
+        // left: 10vw;
+        // content: "\00a0";
+        // display: block;
+        // position: absolute;
+        // transform: rotate(135deg) skew(0deg);
+        // -moz-transform: rotate(135deg) skew(0deg);
+        // -ms-transform: rotate(135deg) skew(0deg);
+        // -o-transform: rotate(135deg) skew(0deg);
+        // -webkit-transform: rotate(135deg) skew(0deg);
+        // box-shadow: 2px -2px 2px 0 rgba(178, 178, 178, 0.40%);
+    }
+}
+
+.breadcrumbParent h2 {
+    font-weight: bold;
+    font-size: 1.65vw;
+    text-transform: uppercase;
+    margin: 0 !important;
+    flex: 1;
+    margin: 1.1vw 0;
+}
+
+.breadcrumbParent .breadcrumb {
+    font-size: 1.25vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    background-color: transparent;
+
+    a {
+        color: #FFF;
+    }
+}
+
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "|" !important;
+}
+
+.breadcrumbParent h2 {
+    color: #FFF;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .breadcrumbParent h2 {
+        font-size: 2vw;
+    }
+
+    .breadcrumbParent .breadcrumb {
+        font-size: 1.5vw;
+        margin-right: 2vw;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .breadcrumbParent h2 {
+        font-size: 2.5vw;
+    }
+
+    .breadcrumbParent .breadcrumb {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .breadcrumbParent h2 {
+        font-size: 18px;
+    }
+
+    .breadcrumbParent .breadcrumb {
+        font-size: 14px;
+    }
+}
+
+// hide it in some pages  //
+
+#page_38935 {
+    #parent {
+
+        .breadcrumbParent {
+            display: none !important;
+        }
+
+    }
+
+}
+
+/* end breadcrumbParent */

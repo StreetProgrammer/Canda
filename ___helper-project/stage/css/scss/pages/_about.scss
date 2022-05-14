@@ -1,0 +1,25 @@
+.about-breif {
+    h4 {
+        color: $secFont;
+        font-weight: bold;
+    }
+
+    h5 {
+        color: $priFont;
+        font-weight: bold;
+    }
+
+    p {
+        color: #777;
+        font-weight: bold;
+    }
+}
+
+.store-image {
+    max-width: 100%;
+
+    img {
+        width: 50%;
+    }
+
+}

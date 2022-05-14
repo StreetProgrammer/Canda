@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Document</title>
+  <title>Document</title>
+</head>
+<style>
+  #Buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #Buttons .SendCopyCheck {
+    flex: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #Buttons .SendCopyCheck input,
+  #Buttons .SendCopyCheck label {
+    margin: 0;
+  }
+
+  #Buttons .btn.btn-default,
+  #Buttons .btn.btn-primary {
+    flex: 0 0 45%;
+  }
+
+  @media screen and (max-width: 767px) {}
+</style>
+
+<body>
+  <!-- Start -->
+  <div class="container">
+    <!-- start First Row -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="blue-bar">
+          <i class="fa fa-car"></i>
+          <h4>
+            What vehicle will you be servicing?
+          </h4>
+        </div>
+      </div><!-- /.col-md-12 -->
+
+
+      <!--  -->
+      <div class="col-md-4">
+        <div class="form-group">
+          <div class="input-container">
+            <label class="sr-only" for="Year">Year</label>
+            <select aria-invalid="false" class="form-control required" name="year" placeholder="Year">
+              <option value="">Year</option>
+              <option value="2004">2004</option>
+              <option value="2005">2005</option>
+              <option value="2006">2006</option>
+              <option value="2007">2007</option>
+              <option value="2008">2008</option>
+              <option value="2009">2009</option>
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="Other">Other</option>
+            </select>
+            <span class="required-astriks">*</span>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-md-4">
+        <div class="form-group">
+          <div class="input-container">
+            <label class="sr-only" for="Make">Make</label>
+            <select aria-invalid="false" class="form-control required" name="Make" placeholder="Make">
+              <option value="">Make</option>
+              <option value="Hyundai">Hyundai</option>
+              <option value="Other">Other</option>
+            </select>
+            <span class="required-astriks">*</span>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-md-4">
+        <div class="form-group">
+          <div class="input-container">
+            <label class="sr-only" for="Model">Model</label>
+            <select aria-invalid="false" class="form-control required" name="Model" placeholder="Model">
+              <option value="">Model</option>
+              <option value="Accent">Accent</option>
+              <option value="Elantra">Elantra</option>
+              <option value="Elantra GT">Elantra GT</option>
+              <option value="Elantra Hybrid">Elantra Hybrid</option>
+              <option value="Equus">Equus</option>
+              <option value="Genesis Coupe">Genesis Coupe</option>
+              <option value="Genesis Sedan">Genesis Sedan</option>
+              <option value="IONIQ Electric">IONIQ Electric</option>
+              <option value="IONIQ Electric Plus">IONIQ Electric Plus</option>
+              <option value="IONIQ Hybrid">IONIQ Hybrid</option>
+              <option value="Kona">Kona</option>
+              <option value="Kona Electric">Kona Electric</option>
+              <option value="Odyssey">Odyssey</option>
+              <option value="Palisade">Palisade</option>
+              <option value="Santa Fe">Santa Fe</option>
+              <option value="Santa Fe Hybrid">Santa Fe Hybrid</option>
+              <option value="Santa Fe Sport">Santa Fe Sport</option>
+              <option value="Santa Fe XL">Santa Fe XL</option>
+              <option value="Sonata">Sonata</option>
+              <option value="Sonata Hybrid">Sonata Hybrid</option>
+              <option value="Sonata Plug-In Hybrid">Sonata Plug-In Hybrid</option>
+              <option value="Tucson">Tucson</option>
+              <option value="Veloster">Veloster</option>
+              <option value="Veloster N">Veloster N</option>
+              <option value="Venue">Venue</option>
+              <option value="Other">Other</option>
+            </select>
+            <span class="required-astriks">*</span>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+
+      <!--  -->
+      <!-- <div class="col-md-4">
+      <div class="form-group">
+        <div class="input-container">
+          <label class="sr-only" for="Year">Year</label>
+          <input type="text" class="form-control required" placeholder="Year" name="year">
+          <span class="required-astriks">*</span>
+        </div>
+      </div>
+    </div> -->
+      <!-- /.col-md-4 -->
+      <!-- <div class="col-md-4">
+      <div class="form-group">
+        <div class="input-container">
+          <label class="sr-only" for="Make">Make</label>
+          <input type="text" class="form-control required" placeholder="Make" name="make">
+          <span class="required-astriks">*</span>
+        </div>
+      </div>
+    </div> -->
+      <!-- /.col-md-4 -->
+
+      <!-- <div class="col-md-4">
+      <div class="form-group">
+        <div class="input-container">
+          <label class="sr-only" for="Model">Model</label>
+          <input type="text" class="form-control required" placeholder="Model" name="model">
+          <span class="required-astriks">*</span>
+        </div>
+      </div>
+    </div> -->
+      <!-- /.col-md-4 -->
+      <div class="col-md-6">
+        <div class="form-group">
+          <div>
+            <label class="sr-only" for="Mileage">Mileage</label>
+            <input type="text" class="form-control" placeholder="Mileage" name="mileage">
+          </div>
+        </div>
+      </div><!-- /.col-md-4 -->
+      <div class="col-md-6">
+        <div class="form-group">
+          <div class="input-container">
+            <label class="sr-only" for="VIN Number">VIN Number</label>
+            <input type="text" class="form-control" placeholder="VIN Number" name="vin_number">
+          </div>
+        </div>
+      </div><!-- /.col-md-4 -->
+      <!--  -->
+      <div class="col-md-12 flex align-center">
+        <div class="col-xs-12 col-sm-8 col-md-6">
+          <h3> Would you like a complimentary vehicle appraisal? </h3>
+        </div><!-- /.col-sm-6 -->
+
+        <div class="col-xs-6 col-sm-2 col-md-3 ">
+          <div class="form-group">
+            <div class="input-container brdr">
+              <label><input type="radio" name="complimentary vehicle appraisal?" value="Yes">Yes</label>
+            </div>
+          </div>
+        </div><!-- /.col-sm-3 -->
+        <div class="col-xs-6 col-sm-2 col-md-3">
+          <div class="form-group">
+            <div class="input-container brdr">
+              <label><input type="radio" name="complimentary vehicle appraisal?" value="No">No</label>
+            </div>
+          </div>
+
+        </div><!-- /.col-md-3 -->
+      </div>
+      <!--  -->
+    </div><!-- /.row -->
+    <!-- End First Row -->
+
+
+    <!-- start Second Row -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="blue-bar">
+          <i class="fa fa-tachometer"></i>
+          <h4>
+            Choose Vehicle Services Required
+          </h4>
+        </div>
+      </div><!-- /.col-md-12 -->
+
+
+      <div class="col-md-12">
+        <div class="check-container" style="display: flex;flex-wrap: wrap;">
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB1" name="CB1" id="CB1">
+            <label for="CB1">
+              <img src="/site-uploads/1001199/Images/calander.png">
+              <h5>Scheduled Maintenance</h5>
+              <p>Vehicle maintenance</p>
+            </label>
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB2" name="CB2" id="CB2">
+            <label for="CB2">
+              <img src="/site-uploads/1001199/Images/oil.png">
+              <h5>Oil Change</h5>
+              <p>Oil & Filter Change</p>
+            </label>
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB3" name="CB3" id="CB3">
+            <label for="CB3">
+              <img src="/site-uploads/1001199/Images/flush.png">
+              <h5>System Flush</h5>
+              <p>Brake, Transmission, etc.</p>
+            </label>
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB4" name="CB4" id="CB4">
+            <label for="CB4">
+              <img src="/site-uploads/1001199/Images/tire.png">
+              <h5>Tire Swap</h5>
+              <p>Seasonal swap & Storage</p>
+            </label>
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB5" name="CB5" id="CB5">
+            <label for="CB5">
+              <img src="/site-uploads/1001199/Images/engine.png">
+              <h5>Engine</h5>
+              <p>Engine Running Problems</p>
+            </label>
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB6" name="CB6" id="CB6">
+            <label for="CB6">
+              <img src="/site-uploads/1001199/Images/check-engine.png">
+              <h5>Check Engine Light</h5>
+              <p>Check engine light is on</p>
+            </label>
+
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB7" name="CB7" id="CB7">
+            <label for="CB7">
+              <img src="/site-uploads/1001199/Images/brake.png">
+              <h5>Transmission</h5>
+              <p>Problems/Break Change</p>
+            </label>
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB8" name="CB8" id="CB8">
+            <label for="CB8">
+              <img src="/site-uploads/1001199/Images/abs.png">
+              <h5>ABS Light</h5>
+              <p>ABS Light is On</p>
+            </label>
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB9" name="CB9" id="CB9">
+            <label for="CB9">
+              <img src="/site-uploads/1001199/Images/light.png">
+              <h5>light</h5>
+              <p>Bulb/Lighting Concern</p>
+            </label>
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB10" name="CB10" id="CB10">
+            <label for="CB10">
+              <img src="/site-uploads/1001199/Images/exhaust.png">
+              <h5>Exhaust</h5>
+              <p>Exaust/Muffler Problems</p>
+            </label>
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB11" name="CB11" id="CB11">
+            <label for="CB11">
+              <img src="/site-uploads/1001199/Images/electric.png">
+              <h5>Electrical</h5>
+              <p>Electrical System Issue</p>
+            </label>
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB12" name="CB12" id="CB12">
+            <label for="CB12">
+              <img src="/site-uploads/1001199/Images/wheel.png">
+              <h5>Tire Concerns</h5>
+              <p>Mount, Balance, Concerns</p>
+            </label>
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB13" name="CB13" id="CB13">
+            <label for="CB13">
+              <img src="/site-uploads/1001199/Images/air.png">
+              <h5>Heating/Air</h5>
+              <p>Heating or Air Conditioning</p>
+            </label>
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB14" name="CB14" id="CB14">
+            <label for="CB14">
+              <img src="/site-uploads/1001199/Images/paint.png">
+              <h5>Paint Repair</h5>
+              <p>Scratches and Touchups</p>
+            </label>
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB15" name="CB15" id="CB15">
+            <label for="CB15">
+              <img src="/site-uploads/1001199/Images/steering.png">
+              <h5>Steering</h5>
+              <p>Problems with Steering</p>
+            </label>
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB16" name="CB16" id="CB16">
+            <label for="CB16">
+              <img src="/site-uploads/1001199/Images/detail.png">
+              <h5>Detail Service</h5>
+              <p>Car Wash / Detail</p>
+            </label>
+          </div>
+
+          <div class="flex-unit">
+            <input type="checkbox" value="Selected - CB17" name="CB17" id="CB17">
+            <label for="CB17">
+              <img src="/site-uploads/1001199/Images/wrench.png">
+              <h5>Other</h5>
+              <p>Describe Issue Below</p>
+            </label>
+          </div>
+
+        </div>
+      </div><!-- /.col-md-12 -->
+
+      <div class="col-md-12">
+        <h4>
+          <strong>
+            Do you have any comments or other work required?
+          </strong>
+        </h4>
+        <div class="form-group">
+          <div class="input-container">
+            <label class="sr-only" for="Comments">Comments</label>
+            <textarea class="form-control" name="textarea-name">                            </textarea>
+          </div>
+        </div>
+      </div><!-- /.col-md-12 -->
+
+    </div><!-- /.row -->
+    <!-- End Second Row -->
+
+
+    <!-- start Third Row -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="blue-bar">
+          <i class="fa fa-calendar"></i>
+          <h4>
+            Appointment Details
+          </h4>
+        </div>
+      </div><!-- /.col-md-12 -->
+      <div class="col-md-3">
+        <div class="form-group">
+          <div class="input-container">
+            <label class="sr-only" for="Select Preferred Date">Select Preferred Date</label>
+            <input type="text" class="form-control required date" placeholder="Select Preferred Date" name="date">
+            <span class="required-astriks">*</span>
+          </div>
+        </div>
+      </div><!-- /.col-md-3 -->
+      <div class="col-md-3">
+        <div class="form-group">
+          <div class="input-container">
+            <label class="sr-only" for="Enter Ideal Time">Enter Ideal Time</label>
+            <input type="text" class="form-control required time" placeholder="Enter Ideal Time" name="time">
+            <span class="required-astriks">*</span>
+          </div>
+        </div>
+      </div><!-- /.col-md-3 -->
+      <div class="col-md-3">
+        <div class="form-group">
+          <div class="input-container">
+            <label class="sr-only" for="Select Preferred Date">Select Preferred Date</label>
+            <input type="text" class="form-control required date" placeholder="Select Preferred Date"
+              name="alternative_Date">
+            <span class="required-astriks">*</span>
+          </div>
+        </div>
+      </div><!-- /.col-md-3 -->
+      <div class="col-md-3">
+        <div class="form-group">
+          <div class="input-container">
+            <label class="sr-only" for="Alternate Ideal Time">Alternate Ideal Time</label>
+            <input type="text" class="form-control required time" placeholder="Alternate Ideal Time"
+              name="alternative_Time">
+            <span class="required-astriks">*</span>
+          </div>
+        </div>
+      </div><!-- /.col-md-3 -->
+
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="form-group">
+          <div class="input-container brdr">
+            <label><input type="radio" name="optradio" value="Request Pickup">Request Pickup</label>
+          </div>
+        </div>
+      </div><!-- /.col-xs-12 col-sm-6 col-md-3 -->
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="form-group">
+          <div class="input-container brdr">
+            <label><input type="radio" name="optradio" value="Request Drop Off">Request Drop Off</label>
+          </div>
+        </div>
+      </div><!-- /.col-xs-12 col-sm-6 col-md-3 -->
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="form-group">
+          <div class="input-container brdr">
+            <label><input type="radio" name="optradio" value="Request Rental Service">Request Rental Service</label>
+          </div>
+        </div>
+      </div><!-- /.col-xs-12 col-sm-6 col-md-3 -->
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="form-group">
+          <div class="input-container brdr">
+            <label><input type="radio" name="optradio" value="I will wait in the lounge">I will wait in the
+              lounge</label>
+          </div>
+        </div>
+      </div><!-- /.col-md-3 -->
+      <!-- /.col-md-3 -->
+    </div><!-- /.row -->
+    <!-- End Third Row -->
+
+
+    <!-- start Fourth Row -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="blue-bar">
+          <i class="fa fa-user"></i>
+          <h4>
+            Contact Information
+          </h4>
+        </div>
+      </div><!-- /.col-md-12 -->
+      <div class="col-md-3">
+        <div class="form-group">
+          <div class="input-container">
+            <label class="sr-only" for="First Name">First Name</label>
+            <input type="text" class="form-control required" placeholder="First Name" name="first_name">
+            <span class="required-astriks">*</span>
+          </div>
+        </div>
+      </div><!-- /.col-md-3 -->
+      <div class="col-md-3">
+        <div class="form-group">
+          <div class="input-container">
+            <label class="sr-only" for="Last Name">Last Name</label>
+            <input type="text" class="form-control required time" placeholder="Last Name" name="last_name">
+            <span class="required-astriks">*</span>
+          </div>
+        </div>
+      </div><!-- /.col-md-3 -->
+      <div class="col-md-3">
+        <div class="form-group">
+          <div class="input-container">
+            <label class="sr-only" for="Email Address">Email Address</label>
+            <input type="email" class="form-control required email" placeholder="Email Address" name="email">
+            <span class="required-astriks">*</span>
+          </div>
+        </div>
+      </div><!-- /.col-md-3 -->
+      <div class="col-md-3">
+        <div class="form-group">
+          <div class="input-container">
+            <label class="sr-only" for="Phone Number">Phone Number</label>
+            <input type="text" class="form-control required phone" placeholder="Phone Number" name="phone">
+            <span class="required-astriks">*</span>
+          </div>
+        </div>
+      </div><!-- /.col-md-3 -->
+
+      <div class="col-xs-12 col-md-6">
+        <h3> How would you like to be contacted? </h3>
+      </div><!-- /.col-md-6 -->
+
+      <div class="col-xs-4 col-md-2">
+        <div class="form-group">
+          <div class="input-container brdr">
+            <label><input type="radio" name="contacted" value="By-Phone">By Phone</label>
+          </div>
+        </div>
+      </div><!-- /.col-md-3 -->
+      <div class="col-xs-4 col-md-2">
+        <div class="form-group">
+          <div class="input-container brdr">
+            <label><input type="radio" name="contacted" value="By-Email">By Email</label>
+          </div>
+        </div>
+
+      </div><!-- /.col-md-3 -->
+      <div class="col-xs-4 col-md-2">
+        <div class="form-group">
+          <div class="input-container brdr">
+            <label><input type="radio" name="contacted" value="By-Text">By Text</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-12">
+        <div class="form-group">
+          <div>
+            <label><input type="checkbox" name="agree-rec" checked=""> I agree to receive occasional
+              promotion, newsletter, safety and recall communications from Newmarket Hyundai.
+              Consent can be withdrawn at any time. </label>
+          </div>
+        </div>
+      </div><!-- /.col-md-12 -->
+      <!-- /.row -->
+      <!-- End Third Row -->
+
+
+    </div>
+
+
+    <style>
+      .blue-bar {
+        align-items: center;
+        background-color: #0A2972;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+        margin-top: 0;
+        min-height: 3em;
+        padding: 10px;
+        color: #FFF
+      }
+
+      .blue-bar h4 {
+        margin-left: 10px;
+      }
+
+      .blue-bar i {
+        font-size: 18px
+      }
+
+      .input-container {
+        position: relative;
+      }
+
+      .required-astriks {
+        color: #0A2972;
+        font-size: 18px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+
+      .nopad {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      /*  */
+      input[type="checkbox"][id^="CB"] {
+        display: none;
+      }
+
+      label {
+        border: 1px solid #fff;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      label:before {
+        background-color: white;
+        color: white;
+        content: " ";
+        display: block;
+        border-radius: 50%;
+        border: 1px solid grey;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 28px;
+        transition-duration: 0.4s;
+        transform: scale(0);
+
+      }
+
+      label img {
+        height: 100px;
+        width: 100px;
+        transition-duration: 0.2s;
+        transform-origin: 50% 50%;
+      }
+
+      :checked+label {
+        opacity: 0.8;
+      }
+
+      :checked+label:before {
+        content: "+";
+        background-color: #0A2972;
+        transform: scale(1);
+      }
+
+      :checked+label img {
+        transform: scale(0.9);
+        z-index: -1;
+      }
+
+      .check-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 5px 5px 5px 5px;
+      }
+
+      .flex-unit {
+        flex: 0 0 48%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: 2px solid #ddd;
+        margin: 5px 0px;
+        position: relative;
+      }
+
+      @media screen and (min-width: 521px) and (max-width: 767px) {
+        .flex-unit {
+          flex: 0 45%;
+        }
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        .flex-unit {
+          flex: 0 27%;
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        .flex-unit {
+          flex: 0 23%;
+        }
+      }
+
+      .flex-unit img {
+        width: 64px;
+        height: 64px;
+      }
+
+      /*  */
+      .form-control {
+        border-radius: 0px;
+        height: 40px;
+        border: 1px solid #0a2972;
+      }
+
+      .form-control:focus {
+        border: 2px solid #0a2972;
+      }
+
+      textarea {
+        height: 150px !important;
+      }
+
+      .btn-primary,
+      .btn-default {
+        color: #fff;
+        background-color: #0a2972;
+        border-color: #0a2972;
+        border-radius: 0px;
+        padding: 15px 25px;
+        font-size: 18px;
+        margin: 10px;
+      }
+
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .align-center {
+        align-items: center;
+      }
+
+      .brdr {
+        border-radius: 0px;
+        height: 40px;
+        border: 1px solid #0a2972;
+      }
+
+      .p-0 {
+        padding: 0;
+      }
+
+      @media screen and (max-width: 600px) {
+
+        label {
+          padding: 5px;
+          font-size: 15px;
+        }
+      }
+    </style>
+    <script>
+
+    </script>
+    <!-- End -->
+  </div>
+</body>
+
+</html>

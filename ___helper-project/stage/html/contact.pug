@@ -1,0 +1,69 @@
+- var pageTitle = 'Contact'
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include pug/layout/styles
+        title #{pageTitle}
+    body 
+        .page-wrapper.contact-page
+            include pug/layout/sidebar
+            include pug/layout/navbar
+            main.page-content
+                .container
+                    .row.rtl                            
+                        .col-md-6
+                            .contact-info
+                                h3.pt-5 اتصل بنا
+                                .info-wrapper
+                                    p.bold.py-2
+                                        span.icon <i class="fas fa-map-marker-alt fa-2x"></i>
+                                        span.px-3 تضم منصة برنت مقدمي خدمات الطباعة في كافة مدن المملكة لتسهيل عملية الطباعة بجودة عالية وسعر مميز مع خدمة التوصيل لباب المنزل
+                                    p.bold.py-2
+                                        span.icon <i class="fas fa-envelope fa-2x"></i>
+                                        span.px-3 info@spo-e.com
+                                    p.bold.py-2
+                                        span.icon <i class="fas fa-phone-square-alt fa-2x"></i>
+                                        span.px-3 966521324563
+                                
+                        .col-md-6.text-center.my-5
+                            .store-image.text-center
+                                img(src="./images/home/sub-6-1.png", alt="", srcset="")
+                        .col-12
+                            .contact-form-content
+                                .form.white-bg.box-shadow
+                                    form
+                                        .form-row
+                                            .col-md-6.mb-4
+                                                label.f-label(for='name') الإسم
+                                                input#name.form-control(type='text' required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='phone') رقم الجوال
+                                                input#phone.form-control(type='tel' name='phone' required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='email') البريد الإليكتروني
+                                                input#email.form-control(type='text' required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='tradename') الإسم التجاري
+                                                input#tradename.form-control(type='text' required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='country') الدولة
+                                                select#country.form-control(required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='city') المدينة
+                                                select#city.form-control(required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='password') كلمة المرور
+                                                input#password.form-control(type='password' name='password' required='')
+                                            .col-md-6.mb-4
+                                                label.f-label(for='password-confirm') تأكيد كلمة المرور
+                                                input#password-confirm.form-control(type='password' name='password' required='')
+                                            .col-md-12.mb-4.text-center
+                                                button.btn.btn-primary(type='submit') إرسال 
+                        
+
+                                    
+            include pug/layout/footer           
+        include pug/layout/js

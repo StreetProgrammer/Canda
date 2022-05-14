@@ -1,0 +1,127 @@
+#comp_1610881308210, #comp_1611551591295 {
+  >.container-fluid {
+    width: 90vw;
+    padding-right: 30px;
+    padding-left: 30px;
+    @media screen and (max-width: 767px){
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    >.carousel.slide {
+      border-bottom: 0.5vw solid var(--black);
+      margin-bottom: -1px;
+    }
+  }
+  .carousel-inner {
+    margin-bottom: -1px;
+    a:nth-child(1) {
+      .carousel-caption {
+        &>div {
+         left: 0;
+         right: 60%;
+        }
+      }
+    }
+    a:nth-child(2) {
+      .carousel-caption {
+        &>div {
+         left: 60%;
+         right: 0;
+        }
+      }
+    }
+    .carousel-caption {
+      right: 0% !important;
+      left: 0 !important;
+      top: 0 !important;
+      bottom: 0 !important;
+      padding: 0;
+      &>div {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2vw 1vw;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+  .carousel-indicators{
+    margin-left: 10%;
+    margin-bottom: 0;
+    bottom: 0.5vw;
+    right: 2%;
+    left: auto !important;
+    width: auto;
+    li {
+      border-radius: 0;
+      width: 2vw;
+      height: 0.5vw;
+      background-color: rgba(207, 207, 207, 0.8);
+      border: 0;
+      margin: 1px;
+      border: 1px solid var(--black);
+      &.active {
+        border-radius: 0;
+        width: 2vw;
+        height: 0.5vw;
+        background-color: var(--secondary-color);
+        border: 0;
+        margin: 1px;
+      }
+    }
+  }
+  .carousel-control{
+    position: absolute;
+    opacity: 1;
+    background-image: none;
+    color: var(--main-color);
+    transition: all ease-in 0.3s;
+    width: 50px;
+    &:hover{
+      color: var(--secondary-color);
+    }
+    &:after{
+      position: absolute;
+      top: 33%;
+      font-size: 5vw;
+      font-weight: bold;
+    }
+    img{
+      display: none;
+    }
+    &.right{
+      right: 1vw;
+      &:after{
+        right: 0;
+        content: "\203A";
+        display: inline-block;
+      }
+    }
+    &.left{
+      left: 1vw;
+      &:after{
+        left: 0;
+        content: "\2039";
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.kawasaki-note {
+  padding: 1vw 2vw;
+  font-size: 2vw;
+}
+
+.mv-slider-note{
+  padding: 1vw 2vw;
+  font-size: 2vw;
+  strong {
+    font-size: 2.5vw;
+    font-weight: bold;
+  }
+}

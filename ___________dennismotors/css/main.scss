@@ -1,0 +1,91 @@
+/* start root */
+:root {
+  // colors
+  --main-color: #FF1A22;
+  --secondary-color: #DDDDDD;
+  --main-font-color: #333;
+  --gray-222: #222222;
+  --trans-m-color: #DDDDDD;
+  --body: #282828;
+  --gray: #DDD;
+  --gray-2: #CFCFCF;
+  --gray-3: #F1F1F1;
+  --gray-4: #5E5E5E;
+  --gray-5: #313131;
+  --gray-6: #7A7A7A;
+  --gray-7: #D2D2D2;
+  --gray-8: #D5D5D5;
+  --gray-9: #2F2F2F;
+  --gray-10: #F9F9F9;
+  --gray-11: #555555;
+  --gray-12: #777777;
+  --footer-gray: #1A1A1A;
+  --black: #000;
+  --white: #fff;
+  --facebook: #4267B2;
+  --twitter: #1DA1F2;
+  --instagram: #FB3958;
+  --linkedin: #0E76A8;
+  // Fonts
+  --main-font: "Barlow", sans-serif !important;
+  --secondary-font: "Barlow Condensed", sans-serif !important;
+}
+
+// #HeaderDiv,
+// #FooterDiv,
+// #parent {
+//   width: 100%;
+// }
+
+// #CenterDiv {
+//   padding: 0;
+// }
+
+// #CenterDiv {
+//   width: 100% !important;
+//   margin: 0px auto;
+//   min-height: 400px !important;
+//   overflow: hidden;
+//   background-color: transparent !important;
+//   color: #1a1a1a !important;
+//   float: none;
+// }
+
+// div[ppanel=Forms] {
+//   width: 90vw !important;
+//   margin: 0 auto !important;
+//   float: unset !important
+// }
+
+
+/* end root */
+
+
+
+
+// body {
+//   font-family: var(--main-font) !important;
+// }
+
+/* Compnent */
+// @import "./scss/global-classes";
+@import "./scss/components/import";
+
+// home
+// @import "./scss/home/header";
+// @import "./scss/home/slider";
+// @import "./scss/home/home-thumb";
+// @import "./scss/home/shop-online";
+// @import "./scss/home/home-esc-adds";
+
+// @import "./scss/home/welcome";
+// @import "./scss/home/footer";
+
+// Pages
+// @import "./scss/pages/import";
+
+// Inventory
+@import "./scss/adds/import";
+
+/* Compnent */
+// @import "./scss/brands-slider";

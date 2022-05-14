@@ -1,0 +1,254 @@
+:root {
+    --main-color: #ED0000;
+}
+
+.preowned {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 3vh;
+}
+
+#ad-right-content .right-cta-buttons {
+    background-color: transparent;
+}
+
+.nav-location-phone ul li {
+    text-align: center;
+}
+
+/* Start build and Price  */
+.cd-builder-steps section::after {
+    display: none;
+}
+
+.cd-product-builder .cd-builder-footer {
+    background-color: #000;
+}
+
+.cd-product-builder .cd-builder-secondary-nav .next {
+    background-color: var(--main-color);
+}
+
+.cd-product-builder .cd-builder-secondary-nav .next:hover {
+    background: #f94d4d;
+}
+
+.cd-product-builder .step-1 .cd-builder-secondary-nav .next {
+    background: rgba(146, 146, 146, 0.5);
+}
+
+.cd-product-builder .cd-step-content .options-list>li.selected {
+    border-color: var(--main-color)
+}
+
+.cd-product-builder .cd-builder-steps .models-list .selected.loaded .radio::before,
+.cd-product-builder .cd-step-content .selected .radio::before,
+.cd-product-builder .cd-step-content .selected .check::before {
+    background: var(--main-color);
+    border-color: #d21111;
+}
+
+.cd-product-builder td.highlight,
+.cd-product-builder th.highlight {
+    background-color: #000;
+    border-top: 1px solid #545454;
+}
+
+th.text-center.trimcell {
+    font-size: 16px;
+    color: var(--main-color);
+}
+
+.cd-product-builder .color-primary {
+    color: var(--main-color) !important;
+}
+
+.cd-builder-main-nav .active a {
+    color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+
+.cd-builder-main-nav a:hover {
+    color: var(--main-color) !important;
+}
+
+.cd-product-builder .panel-primary {
+    border-color: #000;
+}
+
+.cd-product-builder .financingPlans .selected {
+    border-color: var(--main-color);
+}
+
+.cd-product-builder #summaryForm .panel .blue h3,
+.cd-product-builder .financingPlans .panel .blue h3 {
+    color: var(--main-color) !important;
+}
+
+.cd-product-builder .panel hr {
+    border-color: #989898;
+}
+
+.cd-product-builder .main-header::after {
+    display: none;
+}
+
+.cd-product-builder .cd-step-content {
+    padding: 50px 0 140px;
+}
+
+.cd-product-builder .nav-tabs--primary>li.active>a {
+    color: var(--main-color) !important;
+}
+
+.cd-product-builder .nav-tabs--primary>li.active>a:after {
+    background-color: var(--main-color);
+}
+
+/* Start build and Price  */
+
+/* start styles for new mountain like orillia */
+.global-header .top-global-header .brand {
+    padding: 1vh;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.global-header .top-global-header .brand a {
+    color: #000 !important;
+}
+
+.global-header .top-global-header .brand img {
+    width: 20vh;
+}
+
+.global-header .top-global-header .brand h2 {
+    font-size: 4vh;
+}
+
+.global-header .top-global-header .address-hours {
+    background-color: var(--main-color);
+    color: #FFF;
+    padding: 2vh 2vh;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 3% 100%, 0% 50%);
+
+}
+
+@media only screen and (min-width: 991px) {
+    .larg-pr-0 {
+        padding-right: 0px !important;
+    }
+
+    .larg-pr-0 .row.larg-ml-0 {
+        margin-left: 0px !important;
+    }
+
+    .larg-pr-0 .larg-ml-0 .col-md-8 {
+        padding: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .global-header .top-global-header .brand {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .global-header .top-global-header .address-hours {
+        clip-path: none;
+        padding: 1vh 1vh;
+        margin-bottom: 1vh;
+        text-align: center;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a,
+    .navbar-default .navbar-nav .dropdown .dropdown-menu>li>a {
+        text-align: left;
+    }
+}
+
+.global-header .top-global-header .address-hours i {
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+.global-header .top-global-header .address-hours span {
+    font-weight: bold;
+}
+
+.global-header .top-global-header .phone {
+    padding: 4vh 2vh;
+}
+
+.global-header .top-global-header .phone .icon i {
+    float: left;
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 6px;
+    width: 41px;
+    font-size: 24px;
+    margin-right: 10px;
+    color: var(--main-color);
+}
+
+.global-header .top-global-header .phone .title {
+    font-size: 2.5vh;
+    color: var(--main-color);
+}
+
+.global-header .top-global-header .phone .phone_number {
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.welcom-and-tabs>h2 {
+    margin-bottom: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 5vh;
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-family: Oswald;
+}
+
+.welcom-and-tabs h2 span {
+    color: var(--main-color) !important;
+}
+
+/* .welcom-and-tabs ul {
+    background-color: #000;
+    font-family: Oswald;
+}
+
+.welcom-and-tabs ul {
+    background-color: #FFF !important;
+} */
+
+.welcom-and-tabs ul.dark {
+    background-color: #000 !important;
+}
+
+.welcom-and-tabs .nav-tabs>li.active>a,
+.welcom-and-tabs .nav-tabs>li.active>a:hover,
+.welcom-and-tabs .nav-tabs>li.active>a:focus,
+.welcom-and-tabs .nav-tabs>li>a:hover {
+    background-color: #FFF !important;
+    color: var(--main-color) !important;
+}
+
+.welcom-and-tabs .nav-tabs>li>a {
+    border-radius: 0;
+    font-size: 2.5vh;
+    color: #FFF;
+    transition: all ease-in-out 0.3s;
+}
+
+
+/* end styles for new mountain like orillia */

@@ -1,0 +1,170 @@
+:root {
+  --main-color: #C8C2AB;
+  --secondary-color: #CAAB37;
+  --black: #000;
+  --gray: #ddd;
+  --white: #fff;
+}
+  .header-0-nav{
+    padding: 0;
+    border-bottom: 5px solid #000;
+    box-sizing: border-box;
+    &.sticky-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      .top {
+        display: none;
+      }
+    }
+  }
+  .top{
+    position: relative;
+    background-image: linear-gradient(top, #c4ba9b 0%, #d6cfb9 40%);
+    background-image: url(http://sturgesscycle.simplywebeditor.com/site-uploads/1001285/images/top-header-bg.png);
+    background-size: cover;
+    background-position: center;
+    @media screen and (max-width: 767px) {
+      background-position: 90% 0%;
+      padding: 5px 15px;
+    }
+    .mobile-contact{
+      display: none;
+      @media (max-width: 767px) {
+        display: flex;
+        position: absolute;
+        right: 20%;
+        margin: 10px;
+        width: 100px;
+        justify-content: space-around;
+        a{
+          font-size: 25px;
+          padding: 5px;
+          border: 3px solid;
+          width: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          transition: all ease-in 0.25s;
+          color: var(--black);
+          border-color: var(--black);
+          &:hover {
+            color: var(--secondary-color);
+            border-color: var(--secondary-color);
+          }
+        }
+      }
+      @media (max-width: 520px) { 
+        right: 10%;
+        width: 75px;
+        a{
+          font-size: 20px;
+          padding: 5px;
+          border: 3px solid;
+          width: 35px;
+        }
+      }
+      @media (max-width: 420px) { 
+        right: 5%;
+        width: 75px;
+        a{
+          font-size: 20px;
+          padding: 5px;
+          border: 3px solid;
+          width: 35px;
+        }
+      }
+    }
+    .content{
+      display: flex;
+      width: 75%;
+      justify-content: space-around;
+      padding: 0.5vw 4vw;
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        padding: 1.5vw 4vw;
+      }
+      @media screen and (max-width: 767px) {
+        padding: 2vw 0;
+      }
+      .logo{
+        flex: 1 1 50%;
+        img {
+          width: 25vw;
+          max-width: 350px;
+          min-width: 250px;
+          @media screen and (max-width: 767px) {
+            width: 200px;
+          }
+          @media screen and (max-width: 420px) {
+            width: 175px;
+          }
+        }
+      }
+      .contact-container{
+        display: flex;
+        justify-content: space-between;
+        flex: 1 1 50%;
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+        .location{
+          a{
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            span:nth-child(1) {
+              color: var(--black);
+              font-size: 1.5vw;
+              font-weight: bold;
+              border-bottom: 2px solid var(--black);
+              margin-bottom: 0.5vw;
+              @media screen and (min-width: 768px) and (max-width: 991px) {
+                font-size: 2vw;
+              }
+            }
+            span:nth-child(2) {
+              color: var(--black);
+              text-align: right;
+              font-size: 1.25vw;
+              font-weight: 600;
+              @media screen and (min-width: 768px) and (max-width: 991px) {
+                font-size: 1.75vw;
+              }
+            }
+          }
+
+        }
+        .contact{
+          a{
+            text-decoration: none;
+            display: flex;
+            span:nth-child(1){
+              color: var(--black);
+              font-size: 1.5vw;
+              font-weight: bold;
+              border-bottom: 2px solid var(--black);
+              margin-bottom: 1vw;
+              @media screen and (min-width: 768px) and (max-width: 991px) {
+                font-size: 2vw;
+              }
+            }
+          }
+          .social-cart{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            a{
+              font-size: 1.5vw;
+              color: var(--black);
+              @media screen and (min-width: 768px) and (max-width: 991px) {
+                font-size: 2.25vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

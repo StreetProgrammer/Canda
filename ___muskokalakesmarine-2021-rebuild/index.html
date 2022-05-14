@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    .modal-item-overview {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 2vw;
+    }
+
+    @media screen and (max-width: 767px) {
+      .modal-item-overview {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+    }
+
+    .modal-item-overview .img-container {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+      flex: 1 1 30%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+    }
+
+    .modal-item-overview .img-container img {
+      width: 70%;
+      height: auto;
+      max-width: 200px;
+    }
+
+    .modal-item-overview .values {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+      flex: 1 1 60%;
+    }
+
+    .modal-item-overview .values .title {
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--main-color);
+    }
+
+    .modal-item-overview .values .item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      font-size: 12px;
+      border-bottom: 1px solid #ddd;
+      padding: 1vw;
+    }
+
+    @media screen and (max-width: 767px) {
+      .modal-item-overview .values .item {
+        padding: 2vw;
+      }
+    }
+
+    .modal-item-overview .values .item .value {
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- main wrapper -->
+  <div class="container">
+    <div class="row">
+
+      <!-- item -->
+      <div class="col-md-12 modal-item-overview">
+        <div class="img-container">
+          <img
+            src="https://assets.cnhindustrial.com/nhag/nar/assets/Tractors/t4f-series/tractors-and-telehandlers-t4-90f.jpg"
+            alt="">
+        </div>
+        <div class="values">
+          <div class="title">T4.90F</div>
+          <div class="item">
+            <div class="key">Engine</div>
+            <div class="value">84 gross engine hp / 75 PTO hp</div>
+          </div>
+          <div class="item">
+            <div class="key">Minimum overall width</div>
+            <div class="value">61.7 in (1569 mm) (varies by tire size)</div>
+          </div>
+          <div class="item">
+            <div class="key">Minimum height</div>
+            <div class="value">To Cab 96.5 in (2425 mm) <br>To ROPS 89.6 in (2275 mm)</div>
+          </div>
+          <div class="item">
+            <div class="key">Operator Station</div>
+            <div class="value">Cab or Rollbar</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- item -->
+      <div class="col-md-12 modal-item-overview">
+        <div class="img-container">
+          <img
+            src="https://assets.cnhindustrial.com/nhag/nar/assets/Tractors/t4f-series/tractors-and-telehandlers-t4-90f.jpg"
+            alt="">
+        </div>
+        <div class="values">
+          <div class="title">T4.90F</div>
+          <div class="item">
+            <div class="key">Engine</div>
+            <div class="value">84 gross engine hp / 75 PTO hp</div>
+          </div>
+          <div class="item">
+            <div class="key">Minimum overall width</div>
+            <div class="value">61.7 in (1569 mm) (varies by tire size)</div>
+          </div>
+          <div class="item">
+            <div class="key">Minimum height</div>
+            <div class="value">To Cab 96.5 in (2425 mm) <br>To ROPS 89.6 in (2275 mm)</div>
+          </div>
+          <div class="item">
+            <div class="key">Operator Station</div>
+            <div class="value">Cab or Rollbar</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+.controls-inner-menu.box-shadow
+    .controls-content
+        p.title 
+            span
+                <i class="fas fa-check-circle"></i>
+            | File.pdf
+        .control-item
+            p   حجم الورق
+            div.flex-inputs
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#size1.hide(type='radio', name='example1', value='customEx')
+                    label.borderd-label.borderd-label-before(for='size1') A4
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#size2.hide(type='radio', name='example1', value='customEx')
+                    label.borderd-label.borderd-label-before(for='size2') A4
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#size3.hide(type='radio', name='example1', value='customEx')
+                    label.borderd-label.borderd-label-before(for='size3') A4
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#size4.hide(type='radio', name='example1', value='customEx')
+                    label.borderd-label.borderd-label-before(for='size4') A4
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#size5.hide(type='radio', name='example1', value='customEx')
+                    label.borderd-label.borderd-label-before(for='size5') A4
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#size6.hide(type='radio', name='example1', value='customEx')
+                    label.borderd-label.borderd-label-before(for='size6') A4
+        .control-item
+            p   نوع الورق
+            div.flex-inputs
+                .custom-control.custom-radio.custom-control-inline
+                    input#Radio1.custom-control-input(type='radio', name='example1', value='customEx')
+                    label.custom-control-label(for='Radio1') عادي
+                .custom-control.custom-radio.custom-control-inline
+                    input#Radio2.custom-control-input(type='radio', name='example1', value='customEx')
+                    label.custom-control-label(for='Radio2') لامع
+                .custom-control.custom-radio.custom-control-inline
+                    input#Radio3.custom-control-input(type='radio', name='example1', value='customEx')
+                    label.custom-control-label(for='Radio3') مقوى 
+        .control-item
+            p   لون الطباعة
+            div.flex-inputs
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#checkbox.custom-control-input(type='checkbox', name='example2', value='customEx')
+                    label.custom-control-label(for='checkbox') أبيض وأسود
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#checkbox2.custom-control-input(type='checkbox', name='example2', value='customEx')
+                    label.custom-control-label(for='checkbox2') ألوان
+        .control-item
+            p   جوانب الطباعة
+            div.flex-inputs
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#faces1.hide(type='radio', name='faces', value='customEx')
+                    label.borderd-label.borderd-label-before.fixed-width(for='faces1') وجه
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#faces2.hide(type='radio', name='faces', value='customEx')
+                    label.borderd-label.borderd-label-before.fixed-width(for='faces2') وجهين
+        .control-item
+            p   خيارات التغليف
+            div.flex-inputs
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#Radio4.hide(type='radio', name='example3', value='customEx')
+                    label.borderd-label.borderd-label-before(for='Radio4')
+                        img(src="./images/with.png", alt="", srcset="")
+                        p بدون تغليف 
+                        p عدد الأوراق 
+                        p غير محدود
+
+
+                .custom-control.custom-checkbox.custom-control-inline
+                    input#Radio5.hide(type='radio', name='example3', value='customEx')
+                    label.borderd-label.borderd-label-before(for='Radio5') 
+                        img(src="./images/without.png", alt="", srcset="")
+                        p سلك
+                        p عدد الأوراق 
+                        p 2 إلى 300
+
+        button.btn.btn-primary.btn-block.btn-sm أضف الأمر الطباعة
+

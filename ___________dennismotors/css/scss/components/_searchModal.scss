@@ -1,0 +1,113 @@
+#searchModal {
+    .modal-dialog {
+        margin: 30px auto;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        width: 75%;
+
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+
+        .modal-content {
+            border: 0;
+            border-radius: 0;
+
+            .modal-body {
+                padding: 0;
+
+                .input-group {
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+                    outline: none;
+
+                    .form-control {
+                        width: 100%;
+                        height: 5vw;
+                        border-radius: 0;
+                        font-size: 2vw;
+                        font-weight: 600;
+                        margin: 0;
+
+                        @media (max-width: 767px) {
+                            height: 10vw;
+                            font-size: 20px;
+                        }
+                    }
+
+                    .input-group-btn {
+                        width: 5vw;
+
+                        @media (max-width: 767px) {
+                            width: 10vw;
+                        }
+
+                        button {
+                            height: 5vw;
+                            width: 5vw;
+                            border-radius: 0;
+                            background-color: var(--main-color);
+                            color: var(--white);
+                            transition: all ease-in-out 0.2s;
+
+                            @media (max-width: 767px) {
+                                height: 10vw;
+                                width: 10vw;
+                                padding: 0;
+                            }
+
+                            &:hover {
+                                color: var(--main-color);
+                                background-color: var(--white);
+                            }
+
+                            i {
+                                font-size: 2vw;
+
+                                @media (max-width: 767px) {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .search-list {
+                    margin: 0;
+                    transition: all ease-in-out 0.15s;
+                    transform: rotateY(90deg);
+                    height: 0;
+
+                    &.show {
+                        transform: rotateY(0deg);
+                    }
+
+                    li {
+                        a {
+                            cursor: pointer;
+                            color: var(--main-color);
+                            background-color: var(--white);
+                            display: block;
+                            padding: 5px;
+                            font-size: 1.4vw;
+                            font-weight: 600;
+                            transition: all ease-in-out 0.25s;
+
+                            @media (max-width: 767px) {
+                                font-size: 14px;
+                            }
+
+                            &:hover {
+                                background-color: var(--main-color);
+                                color: var(--white);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

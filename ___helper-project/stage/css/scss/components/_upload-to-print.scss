@@ -1,0 +1,147 @@
+.print-modal {
+    .modal-header {
+        h5 {
+            width: 100%;
+        }
+    }
+
+    .modal-body {
+        .note {
+            background-color: #dddddd69;
+            padding: 10px;
+
+            p {
+                color: $thiFont;
+                font-weight: bold;
+            }
+        }
+
+        .drag-drop-area {
+            #drop-area {
+                border: 2px dashed #ccc;
+                border-radius: 20px;
+                // width: 480px;
+                // font-family: sans-serif;
+                margin: 10px auto;
+                padding: 20px;
+            }
+
+            #drop-area.highlight {
+                border-color: purple;
+            }
+
+            p {
+                margin-top: 0;
+            }
+
+            .my-form {
+                margin-bottom: 10px;
+                text-align: center;
+
+                label {
+                    cursor: pointer;
+
+                    p:nth-child(1) {
+                        color: $priFont;
+                    }
+
+                    p {
+                        color: $thiFont;
+                        margin: 0rem;
+                    }
+                }
+
+            }
+
+            #gallery {
+                margin-top: 10px;
+            }
+
+            #gallery img {
+                width: 150px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+
+            .button {
+                display: inline-block;
+                padding: 10px;
+                background: #ccc;
+                cursor: pointer;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+
+            .button:hover {
+                background: #ddd;
+            }
+
+            #fileElem {
+                display: none;
+            }
+
+        }
+    }
+}
+
+.next-step-modal {
+    .modal-header {
+        p {
+            span:nth-child(2) {
+                color: $thiFont;
+                padding: 0px 10px;
+
+            }
+        }
+    }
+
+    .modal-body {
+        .content {
+            p {
+                color: $secFont;
+            }
+        }
+    }
+}
+
+
+.advertising-modal {
+    .modal-header {
+
+        h5 {
+            width: 100%;
+        }
+    }
+
+    .modal-body {
+        .note {
+            border: 1px solid $thiFont;
+            min-height: 150px;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 15px;
+
+                img {
+                    max-width: 50px;
+                }
+
+                label {
+                    color: $thiFont;
+                    margin-top: 10px;
+                }
+            }
+
+            p {
+                .icon {
+                    color: $priFont;
+                }
+            }
+
+
+        }
+    }
+}
