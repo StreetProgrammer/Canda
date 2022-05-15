@@ -1,5 +1,5 @@
 /*Start Slider*/
-#comp_1650062241590 {
+#comp_1652577902224 {
 
 
   .container-fluid {
@@ -76,9 +76,9 @@
     }
 
     .carousel-control {
-      display: none;
+      // display: none;
       position: absolute;
-      opacity: 1;
+      opacity: 0.7;
       background-image: none;
       color: rgba(255, 255, 255, 0.7);
       transition: all ease-in 0.3s;

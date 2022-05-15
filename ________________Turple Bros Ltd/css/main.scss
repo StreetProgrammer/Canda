@@ -6,7 +6,7 @@
   --secondary-color: #29324E;
   --main-font-color: #333;
   --gray-222: #222222;
-  --trans-m-color: #dea731b8;
+  --trans-m-color: #FAB637;
   --body: #282828;
   --gray: #DDD;
   --gray-2: #CFCFCF;
@@ -277,34 +277,6 @@ h4.bg-title {
 
 /* Compnent */
 @import "./scss/brands-slider";
-
-
-.brands-flex-llist {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-
-  li {
-    flex: 1 1 24%;
-    text-align: center;
-    padding: 15px;
-    max-width: 24%;
-
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-      flex: 1 1 30%;
-      max-width: 30%;
-    }
-
-    @media screen and (max-width: 767px) {
-      flex: 1 1 45%;
-      max-width: 45%;
-    }
-  }
-}
-
 
 
 
@@ -1075,4 +1047,3 @@ img.black-white {
     padding-left: 1vw !important;
   }
 }
-
