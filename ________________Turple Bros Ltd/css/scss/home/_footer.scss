@@ -76,7 +76,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background: var(--black-2);
+  background: var(--gray-9);
   width: 100%;
   // border-top: 5px solid var(--black-2);
 }
@@ -113,7 +113,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 100%;
+      width: 75%;
+      // padding-bottom: 50px;
     }
 
     display: none;
@@ -127,82 +128,53 @@
 
     .panel-group {
       width: 100%;
-      padding: 0;
-      margin-bottom: 0;
 
       .panel.panel-default {
         background-color: transparent;
         border: 0;
-        margin: 0 !important;
 
         .panel-heading {
-          margin: 0 !important;
+          margin: 0;
           background-image: none;
+          background-color: var(--gray-15);
+          color: var(--gray-8);
           transition: all ease-in-out 0.3s;
           padding: 0;
-          color: var(--black);
-          background-color: transparent;
 
           &:hover {
-            // color: var(--white);
-            // background-color: var(--black);
+            color: var(--gray-15);
+            background-color: var(--gray-8);
           }
 
           .panel-title {
             a {
-              display: flex;
-              align-items: center;
-              justify-content: center;
+              display: block;
               text-decoration: none;
-              padding: 15px;
-              font-family: var(--main-font);
-              color: var(--white);
-              border-bottom: 2px solid var(--main-color);
-              // background-color: var(--gray-3);
-              font-weight: 700;
-              font-size: 24px;
-              width: 80%;
-              margin: auto;
-
-              i {
-                font-size: 50%;
-                margin-left: 5px;
-
-                &.mr-2 {
-                  font-size: 150%;
-                }
-              }
+              padding: 10px;
+              font-family: var(--main-font) !important;
+              font-weight: 600;
+              font-size: 16px;
 
               &:hover,
               &:focus {
-                color: var(--main-color);
-                // background-color: var(--white);
+                color: var(--black);
+                background-color: var(--white);
               }
             }
           }
-
-        }
-
-        &:last-child {
-          .panel-title {
-            a {
-              border-bottom: 0;
-            }
-          }
-
         }
 
         .panel-body {
           padding: 5px;
           padding: 5px 15px;
-          background-color: var(--white);
+          background-color: var(--black);
 
           .links {
             li {
               margin: 10px 0;
 
               .link {
-                color: var(--main-font-color);
+                color: var(--white);
                 transition: all ease-in-out 0.3s;
                 position: relative;
                 font-size: 18px;
@@ -221,26 +193,6 @@
                     left: 0;
                   }
                 }
-              }
-            }
-          }
-
-          .logos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-
-            a {
-              flex: 33%;
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: space-between;
-              align-items: center;
-
-              img {
-                margin: auto;
-                min-width: 150px;
-
               }
             }
           }
@@ -506,8 +458,8 @@
 .footer-content-container h2 {
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--gray-3);
-  font-size: 2.0833333333333vw;
+  color: var(--gray-8);
+  font-size: 1.6666666666667vw;
   padding-bottom: .75vw;
   font-family: var(--main-font);
 
@@ -552,7 +504,7 @@
 }
 
 .footer-content-container p {
-  color: var(--main-font-color);
+  color: var(--gray-8);
 }
 
 .footer-content-container .lg-footer .contact-us a:hover {
@@ -642,7 +594,7 @@
 .footer-content-container .hours .hour,
 .footer-content-container p a {
   font-size: 1.1111111111111vw;
-  color: var(--main-font-color);
+  color: var(--gray-8);
   font-weight: 500;
   text-transform: capitalize;
 
@@ -745,7 +697,7 @@
 }
 
 .footer-content-container ul li a {
-  color: var(--gray-3);
+  color: var(--gray-8);
   text-decoration: none;
   transition: all .2s ease-in-out;
   font-size: 1.25vw;
@@ -971,7 +923,7 @@
 .footer-bottom {
   width: 100%;
   padding: 1.2vw 4vw;
-  background-color: var(--black);
+  background-color: var(--gray-15);
   font-size: 1.25vw;
   font-family: var(--main-font);
   text-transform: uppercase;

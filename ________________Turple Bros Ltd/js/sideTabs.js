@@ -1,6 +1,6 @@
 // to put left and right fixed menus under header
 $(function () {
-  var x = '3.22222222222vw';
+  var x = '3.4722222222222vw';
   $('#sideTabs .tab-link').each(function (index) {
     // $(this).css({ "left": "-60px" });
     $(this).css({

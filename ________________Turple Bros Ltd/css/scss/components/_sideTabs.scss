@@ -1,7 +1,7 @@
 /* start root */
 :root {
-    --width: 3.22222222222vw;
-    --height: 3.22222222222vw;
+    --width: 3.4722222222222vw;
+    --height: 3.4722222222222vw;
     --space: 0.1vw;
 }
 
@@ -144,37 +144,37 @@
 
         &:nth-child(2) {
             z-index: 8;
-            top: calc((var(--height) * 2) + (var(--space) * 1));
+            top: calc((var(--height) * 1) + (var(--space) * 1));
         }
 
         &:nth-child(3) {
             z-index: 7;
             // top: 10.4vw;
-            top: calc((var(--height) * 4) + (var(--space) * 2));
+            top: calc((var(--height) * 2) + (var(--space) * 2));
         }
 
         &:nth-child(4) {
             z-index: 6;
             // top: 15.60vw;
-            top: calc((var(--height) * 5) + (var(--space) * 3));
+            top: calc((var(--height) * 3) + (var(--space) * 3));
         }
 
         &:nth-child(5) {
             z-index: 5;
             // top: 20.8vw;
-            top: calc((var(--height) * 6) + (var(--space) * 4));
+            top: calc((var(--height) * 4) + (var(--space) * 4));
         }
 
         &:nth-child(6) {
             z-index: 4;
             // top: 26vw;
-            top: calc((var(--height) * 7) + (var(--space) * 5));
+            top: calc((var(--height) * 5) + (var(--space) * 5));
         }
 
         &:nth-child(7) {
             z-index: 3;
             // top: 31.2vw;
-            top: calc((var(--height) * 8) + (var(--space) * 6));
+            top: calc((var(--height) * 6) + (var(--space) * 6));
         }
     }
 
@@ -229,6 +229,18 @@
         &.linkedin {
             &:hover {
                 background-color: var(--linkedin);
+            }
+        }
+
+        &.youtube {
+            &:hover {
+                background-color: var(--youtube);
+            }
+        }
+
+        &.cart {
+            &:hover {
+                background-color: var(--main-color);
             }
         }
 
