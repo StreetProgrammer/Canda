@@ -874,102 +874,102 @@ img.black-white {
 /******* End Service-&-Parts ******/
 
 /******* Start Financing ******/
-#home-banner-accordion {
-  margin: 2vw 5vw 2vw;
+// #home-banner-accordion {
+//   // margin: 2vw 5vw 2vw;
 
-  .panel {
-    margin-top: 0;
-    border-radius: 0;
-    border: 0;
-    border-bottom: 1px solid var(--gray-6);
+//   .panel {
+//     margin-top: 0;
+//     border-radius: 0;
+//     border: 0;
+//     border-bottom: 1px solid var(--gray-6);
 
-    .panel-heading {
-      margin: 0;
-      padding: 0;
+//     .panel-heading {
+//       margin: 0;
+//       padding: 0;
 
-      .panel-title {
-        display: block;
+//       .panel-title {
+//         display: block;
 
-        >a {
-          display: flex;
-          padding: 2vw;
-          background-color: var(--gray-5);
-          color: var(--main-color);
-          justify-content: space-between;
-          align-items: center;
-          text-decoration: none;
-          transition: all ease-in-out 0.25s;
+//         >a {
+//           display: flex;
+//           padding: 2vw;
+//           background-color: var(--gray-5);
+//           color: var(--main-color);
+//           justify-content: space-between;
+//           align-items: center;
+//           text-decoration: none;
+//           transition: all ease-in-out 0.25s;
 
-          &:after {
-            font-family: "FontAwesome";
-            font-size: 60%;
-            content: "\f068";
-          }
+//           &:after {
+//             font-family: "FontAwesome";
+//             font-size: 60%;
+//             content: "\f068";
+//           }
 
-          &:hover {
-            text-decoration: none;
-            color: var(--gray-5);
-            background-color: var(--main-color);
-          }
-        }
+//           &:hover {
+//             text-decoration: none;
+//             color: var(--gray-5);
+//             background-color: var(--main-color);
+//           }
+//         }
 
-        &.collapsed {
-          >a {
-            color: var(--gray-3);
+//         &.collapsed {
+//           >a {
+//             color: var(--gray-3);
 
-            &:after {
-              content: "\f067";
-            }
-          }
-        }
-      }
-    }
+//             &:after {
+//               content: "\f067";
+//             }
+//           }
+//         }
+//       }
+//     }
 
-    .panel-collapse {
-      .panel-body {
-        padding: 0;
+//     .panel-collapse {
+//       .panel-body {
+//         padding: 0;
 
-        ul.links {
-          padding: 0;
-          margin: 0;
+//         ul.links {
+//           padding: 0;
+//           margin: 0;
 
-          li {
-            a {
-              display: flex;
-              padding: 2vw;
-              background-color: var(--gray-3);
-              color: var(--gray-6);
-              border-bottom: 1px solid var(--gray-7);
-              justify-content: space-between;
-              align-items: center;
-              text-decoration: none;
-              transition: all ease-in-out 0.25s;
+//           li {
+//             a {
+//               display: flex;
+//               padding: 2vw;
+//               background-color: var(--gray-3);
+//               color: var(--gray-6);
+//               border-bottom: 1px solid var(--gray-7);
+//               justify-content: space-between;
+//               align-items: center;
+//               text-decoration: none;
+//               transition: all ease-in-out 0.25s;
 
-              &:hover {
-                color: var(--gray-3);
-                background-color: var(--gray-6);
-                text-decoration: none;
-                padding-left: 3vw;
-              }
+//               &:hover {
+//                 color: var(--gray-3);
+//                 background-color: var(--gray-6);
+//                 text-decoration: none;
+//                 padding-left: 3vw;
+//               }
 
-              &:after {
-                font-family: "FontAwesome";
-                font-size: 75%;
-                content: "\f054";
-              }
+//               &:after {
+//                 font-family: "FontAwesome";
+//                 font-size: 75%;
+//                 content: "\f054";
+//               }
 
-              &.find {
-                &:after {
-                  content: "\f002";
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
+//               &.find {
+//                 &:after {
+//                   content: "\f002";
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 [data-href] {
   cursor: pointer;

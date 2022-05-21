@@ -227,11 +227,13 @@
               font-family: var(--secondary-font) !important;
               font-weight: 500;
               transition: all ease-in-out 0.2s;
+              min-height: 40px;
 
               i {
                 background-color: var(--gray-8) !important;
                 color: var(--gray-222) !important;
                 transition: all ease-in-out 0.2s;
+                font-size: inherit;
               }
 
               &:hover {
