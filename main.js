@@ -126,8 +126,10 @@ function comCC24StartFunctioning(scriptSource) {
     scrDynamicHeadAttr.setAttribute('type', 'text/javascript');
     scrHeadAttr = document.getElementsByTagName('head')[0];
     scrHeadAttr.insertBefore(scrDynamicHeadAttr, scrHeadAttr.firstChild);
+    console.log("gava");
 }
 comCC24StartFunctioning(window.location.protocol + "//service11.carchat24.com/VisitorManager/Scripts/comCC24DomReady.js");
+
 
 
 
