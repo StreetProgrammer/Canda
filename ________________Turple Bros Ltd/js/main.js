@@ -2,7 +2,7 @@
 
 /*handle phone numbers anchor href attr*/
 $(document).ready(function () {
-  var tel_1 = 'tel:4033465238';
+  var tel_1 = 'tel:403-346-5238';
   $('body').find('a.tel-1').attr('href', tel_1);
   var tel_2 = '';
   $('body').find('a.tel-2').removeAttr('href');
