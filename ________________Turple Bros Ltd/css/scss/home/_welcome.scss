@@ -2,6 +2,21 @@
   ._hidden-in-home {
     display: none;
   }
+
+  ._brands {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 6vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    .footer-content-container {
+      margin-bottom: 6vw;
+    }
+  }
 }
 
 ._brands {
