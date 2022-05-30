@@ -408,13 +408,13 @@
                 >a {
                   text-decoration: none;
                   color: var(--main-color);
-                  background-color: var(--white);
+                  background-color: var(--black);
 
                   &:hover,
                   &:focus,
                   &:active {
                     background-color: var(--main-color);
-                    color: var(--white);
+                    color: var(--black);
                   }
                 }
               }
@@ -422,7 +422,7 @@
               >li {
                 >a {
                   text-decoration: none;
-                  color: var(--white);
+                  color: var(--black);
                   background-color: var(--main-color);
                   font-size: 16px;
                   padding: 16px 10px;
@@ -434,7 +434,7 @@
                   &:hover,
                   &:focus {
                     color: var(--main-color);
-                    background-color: var(--white);
+                    background-color: var(--black);
                   }
                 }
 
@@ -451,8 +451,7 @@
 
                     >a {
                       text-transform: uppercase;
-                      color: var(--white);
-                      font-size: 1.1;
+                      color: var(--black);
                       font-weight: 600;
                       padding: 10px;
                       text-decoration: none;
@@ -460,7 +459,7 @@
 
                       &:hover {
                         color: var(--main-color);
-                        background-color: var(--white);
+                        background-color: var(--black);
                         padding-left: 15px;
                       }
                     }
@@ -479,13 +478,13 @@
 
                 >a {
                   background-color: var(--main-color);
-                  color: var(--white);
+                  color: var(--black);
                   text-decoration: none;
 
                   &:hover,
                   &:focus,
                   &:active {
-                    background-color: var(--white);
+                    background-color: var(--black);
                     color: var(--main-color);
                   }
                 }

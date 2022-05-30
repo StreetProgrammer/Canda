@@ -150,7 +150,8 @@
               font-size: 1.1111111111111vw;
               font-family: var(--main-font) !important;
               font-weight: 400;
-              text-decoration: underline !important;
+              // text-decoration: underline !important;
+              line-height: 1.25;
               transition: all ease-in-out 0.2s;
 
               &:hover {

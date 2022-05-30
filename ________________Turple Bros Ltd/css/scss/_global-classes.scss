@@ -1,6 +1,8 @@
 /* global */
 .container-90 {
     width: 92vw !important;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
 
     &.padd-0 {
         div[class^='col-'] {

@@ -242,6 +242,22 @@
             &:hover {
                 background-color: var(--main-color);
             }
+
+            span {
+
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                background-color: var(--main-color);
+                color: var(--white);
+                width: 1.3vw;
+                height: 1.3vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                font-size: 60%;
+            }
         }
 
         i {

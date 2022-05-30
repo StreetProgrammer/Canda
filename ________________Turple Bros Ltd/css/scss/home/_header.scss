@@ -318,8 +318,9 @@
             }
 
             @media (max-width: 420px) {
-              padding: 25px 5px;
-              width: 80px;
+              padding: 25px 10px;
+              width: 15vw;
+              max-width: 50px;
 
               img {
                 max-width: 55% !important;
@@ -328,9 +329,11 @@
 
             position: relative;
             float: right;
-            padding: 25px 25px;
+            padding: 25px 10px;
+            width: 15vw;
+            max-width: 50px;
             margin: 0px;
-            background-color: transparent;
+            background-color: var(--gray-15);
             background-image: none;
             border: 0px;
             display: flex;
@@ -372,7 +375,7 @@
 
           .navbar-nav {
             &>li:nth-child(1) {
-              order: 2 !important;
+              // order: 2 !important;
               min-width: 20%;
 
               a {
@@ -402,12 +405,12 @@
             }
 
             &>li:nth-child(odd) {
-              order: 1;
+              // order: 1;
 
             }
 
             &>li:nth-child(even) {
-              order: 3;
+              // order: 3;
 
               ul.dropdown-menu {
                 right: 0 !important;
@@ -443,7 +446,7 @@
                   background-color: var(--main-color);
                   font-size: 16px;
                   padding: 16px 10px;
-                  font-family: 'Barlow';
+                  font-family: var(--main-font);
                   font-weight: 400;
                   text-transform: uppercase;
                   transition: all ease-in-out 0.3s;
@@ -1153,6 +1156,7 @@
           width: auto;
           height: auto;
           background-color: var(--white);
+          padding: 10px;
 
           img {
             max-width: 120px;
@@ -1163,10 +1167,16 @@
             position: absolute;
             top: 0;
             right: 0;
-            left: 85%;
+            // left: 85%;
+            // height: 100%;
+            // width: 30% !important;
+            // transform: skewX(20deg);
+
+
+            left: 90%;
             height: 100%;
-            width: 30% !important;
-            transform: skewX(20deg);
+            width: 20% !important;
+            transform: skewX(15deg);
             background-color: #FFF;
           }
         }
@@ -1207,7 +1217,7 @@
       }
 
       a {
-        padding: 10px;
+        padding: 0px;
         font-size: 16px !important;
         color: var(--gray-3);
         width: 50px;

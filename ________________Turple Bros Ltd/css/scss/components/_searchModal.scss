@@ -49,8 +49,8 @@
                             height: 5vw;
                             width: 5vw;
                             border-radius: 0;
-                            background-color: var(--main-color);
-                            color: var(--white);
+                            background-color: var(--main-color) !important;
+                            color: var(--white) !important;
                             border: 0;
                             transition: all ease-in-out 0.2s;
 
@@ -61,8 +61,8 @@
                             }
 
                             &:hover {
-                                color: var(--main-color);
-                                background-color: var(--white);
+                                color: var(--main-color) !important;
+                                background-color: var(--white) !important;
                             }
 
                             i {

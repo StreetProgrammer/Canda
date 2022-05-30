@@ -1,0 +1,45 @@
+.page-with-videos {
+    .container-90 {
+        .row {
+            >div {
+                margin-bottom: 2vw;
+
+                .content {
+                    border: 1px solid var(--gray-7);
+                    background-color: var(--trans-m-color);
+                    height: 100%;
+
+                    h3 {
+                        color: var(--gray-9);
+                        font-weight: 600;
+                        font-size: 1.75vw;
+                        text-transform: uppercase;
+                    }
+
+                    p {}
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container-90 {
+            .row {
+                >div {
+                    margin-bottom: 10px;
+
+                    .content {
+                        height: 100%;
+
+                        h3 {
+                            font-size: 18px;
+                        }
+
+                        p {}
+                    }
+                }
+            }
+        }
+    }
+
+}
