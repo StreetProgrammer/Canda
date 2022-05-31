@@ -1,0 +1,264 @@
+.top-header-information-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.top-header-information-container .top-portion-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 5px;
+  width: 100%;
+}
+
+.top-header-information-container .top-portion-wrapper .primary-logo-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  min-height: 60px;
+  width: 33.333333%;
+}
+
+.top-header-information-container .top-portion-wrapper .primary-logo-container .logo-anchor {
+  display: block;
+}
+
+.top-header-information-container .top-portion-wrapper .primary-logo-container .logo-anchor .primary-logo {
+  width: 100%;
+  max-height: 80px;
+  display: block;
+  height: auto;
+  margin: 0;
+}
+
+.top-header-information-container .top-portion-wrapper .hours-button-address-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-left: 10px;
+  padding-right: 45px;
+}
+
+.top-header-information-container .top-portion-wrapper .hours-button-address-container .address-container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+}
+
+.top-header-information-container .top-portion-wrapper .hours-button-address-container .address-container .store-name {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 0;
+}
+
+.top-header-information-container .top-portion-wrapper .hours-button-address-container .address-container .ga-address-header {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.top-header-information-container .top-portion-wrapper .hours-button-address-container .view-hours-button-container {
+  display: none;
+}
+
+.top-header-information-container .top-portion-wrapper .hours-button-address-container .view-hours-button-container .view-hours-button {
+  background-color: #0A2972;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 5px;
+  letter-spacing: 0.6px;
+  line-height: 14px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.top-header-information-container .top-portion-wrapper .phone-number-button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 60px;
+  position: absolute;
+  right: 55px;
+  top: 5px;
+  width: 42px;
+  z-index: 1;
+}
+
+.top-header-information-container .top-portion-wrapper .phone-number-button h3 {
+  background-color: #0A2972;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  margin: 0;
+  padding: 8px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.top-header-information-container .top-portion-wrapper .phone-number-button .phone-anchor {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: thin solid #e6e5e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 100%;
+  outline: none;
+  padding: 14px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.top-header-information-container .top-portion-wrapper .phone-number-button .phone-anchor .phone-label {
+  color: #333;
+  font-family: Lato, Arial, sans-serif;
+  margin-right: 5px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.top-header-information-container .top-portion-wrapper .phone-number-button .phone-anchor .phone-label .colon {
+  display: inline-block;
+}
+
+.top-header-information-container .top-portion-wrapper .phone-number-button .phone-anchor .phone-number {
+  color: #333;
+  font-family: Lato, Arial, sans-serif;
+}
+
+.top-header-information-container .top-portion-wrapper .phone-number-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 60px;
+  position: absolute;
+  right: 55px;
+  top: 5px;
+  width: 42px;
+  z-index: 1;
+}
+
+.top-header-information-container .top-portion-wrapper .phone-number-container h3 {
+  background-color: #0A2972;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  margin: 0;
+  padding: 8px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.top-header-information-container .top-portion-wrapper .phone-number-container .phone-anchor {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: thin solid #e6e5e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 100%;
+  outline: none;
+  padding: 14px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.top-header-information-container .top-portion-wrapper .phone-number-container .phone-anchor .phone-label {
+  color: #333;
+  font-family: Lato, Arial, sans-serif;
+  margin-right: 5px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.top-header-information-container .top-portion-wrapper .phone-number-container .phone-anchor .phone-label .colon {
+  display: inline-block;
+}
+
+.top-header-information-container .top-portion-wrapper .phone-number-container .phone-anchor .phone-number {
+  color: #333;
+  font-family: Lato, Arial, sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

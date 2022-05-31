@@ -1,34 +1,41 @@
 /* Boxes */
 #boxes {
-  font-family: "Roboto", "Roboto Condensed", sans-serif !important;
+  font-family: 'Roboto', 'Roboto Condensed', sans-serif !important;
   text-transform: uppercase;
   padding: 0px;
 }
+
 #boxes .fancy-collapse-panel {
   margin-bottom: 20px;
 }
+
 #boxes .fancy-collapse-panel .panel-group {
   margin-bottom: 20px;
 }
+
 #boxes .fancy-collapse-panel .panel-group .panel.panel-default {
   margin-bottom: 0;
   border-radius: 4px;
   border-color: var(--main-color);
   padding: 0 !important;
 }
+
 #boxes .fancy-collapse-panel .panel-group .panel.panel-default .panel-heading {
   padding: 0;
 }
+
 #boxes .fancy-collapse-panel .panel-group .panel.panel-default .panel-heading .panel-title {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
   color: inherit;
 }
+
 #boxes .fancy-collapse-panel .panel-group .panel.panel-default .panel-heading .panel-title a {
   padding: 20px;
   background-color: var(--main-color);
   color: var(--white);
+  -webkit-transition: all ease-in 0.3s;
   transition: all ease-in 0.3s;
   text-transform: uppercase;
   font-size: 2vw;
@@ -36,15 +43,18 @@
   text-decoration: none;
   display: block;
 }
+
 @media screen and (max-width: 767px) {
   #boxes .fancy-collapse-panel .panel-group .panel.panel-default .panel-heading .panel-title a {
     font-size: 18px;
   }
 }
+
 #boxes .fancy-collapse-panel .panel-group .panel.panel-default .panel-heading .panel-title a:hover {
   background-color: var(--main-color);
   color: var(--white);
 }
+
 #boxes a.item, #boxes div.item {
   cursor: pointer;
   background-color: #1a1a1a;
@@ -54,60 +64,82 @@
   margin-bottom: 30px;
   position: relative;
   font-size: 1.45vw;
-  font-family: "Roboto", "Roboto Condensed", sans-serif !important;
+  font-family: 'Roboto', 'Roboto Condensed', sans-serif !important;
   font-weight: 400;
 }
+
 @media screen and (max-width: 991px) {
   #boxes a.item, #boxes div.item {
     font-size: 2vw;
   }
 }
+
 #boxes a.item:hover, #boxes a.item:focus, #boxes div.item:hover, #boxes div.item:focus {
   text-decoration: none;
   background-color: #12579a;
   color: #fff;
 }
+
 #boxes a.item:hover > span, #boxes a.item:focus > span, #boxes div.item:hover > span, #boxes div.item:focus > span {
   height: 100%;
   background-color: #ec1d22d9;
   text-shadow: 2px 2px var(--black);
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 18px;
 }
+
 #boxes a.item:hover > span span.title, #boxes a.item:focus > span span.title, #boxes div.item:hover > span span.title, #boxes div.item:focus > span span.title {
   color: var(--white) !important;
   background-color: transparent;
 }
+
 #boxes a.item img, #boxes div.item img {
   width: 100%;
 }
+
 #boxes a.item > span, #boxes div.item > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 25%;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: var(--body);
+  -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
 }
+
 #boxes div.item > span a.inner-link {
   display: none;
 }
+
 #boxes div.item:hover > span, #boxes div.item:focus > span {
   font-size: 18px;
 }
+
 #boxes div.item:hover > span span.title, #boxes div.item:focus > span span.title {
   display: none;
 }
+
 #boxes div.item:hover > span a.inner-link, #boxes div.item:focus > span a.inner-link {
   width: 100%;
   padding: 10px;
+  -webkit-transition: all linear 0.2s;
   transition: all linear 0.2s;
   display: block;
 }
+
 #boxes div.item:hover > span a.inner-link:hover, #boxes div.item:focus > span a.inner-link:hover {
   background-color: var(--main-color);
   color: var(--white);
@@ -124,4 +156,5 @@
   min-height: 200px;
 }
 
-/**********************************//*# sourceMappingURL=main.css.map */
+/**********************************/
+/*# sourceMappingURL=main.css.map */

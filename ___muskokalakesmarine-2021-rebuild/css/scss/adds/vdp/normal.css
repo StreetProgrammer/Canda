@@ -1,9 +1,12 @@
 .model-tabs .tab-content #model-accordion .panel a.accord-btn {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(41.15%, rgba(255, 255, 255, 0)), to(rgba(221, 221, 221, 0.25)));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 41.15%, rgba(221, 221, 221, 0.25) 100%);
   border: 1px solid #DDDDDD;
   color: var(--black);
-  font-family: "Oswald";
+  font-family: 'Oswald';
 }
+
 .model-tabs .tab-content #model-accordion .panel a.accord-btn .glyphicon {
   color: var(--black) !important;
-}/*# sourceMappingURL=normal.css.map */
+}
+/*# sourceMappingURL=normal.css.map */
