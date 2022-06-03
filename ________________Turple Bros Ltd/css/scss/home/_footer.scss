@@ -89,6 +89,14 @@
   flex-wrap: wrap;
 
   @media screen and (min-width: 992px) {
+    .col-md-3 {
+      border-right: 1px solid rgba(207, 207, 207, 0.5);
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
     // .col-md-3 {
     //   width: 20%;
     // }
@@ -493,7 +501,7 @@
 
 
 .footer-content-container p {
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-size: 1.25vw;
 }
 

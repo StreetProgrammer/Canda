@@ -90,10 +90,27 @@
             }
 
 
-            .hours {
+            &.hours {
               ul {
                 margin: 0;
                 padding: 0;
+
+                li {
+                  padding: 0.25vw 1vw;
+                  display: flex;
+                  justify-content: space-between;
+                  min-width: 20vw;
+                  font-size: 1.1111111111vw;
+                  background-color: var(--main-color);
+                  color: var(--white);
+                  transition: all ease-in-out 0.25s;
+
+                  &:hover {
+                    color: var(--main-color);
+                    background-color: var(--white);
+                  }
+
+                }
 
                 a.dropdown-toggle {
 
@@ -156,8 +173,6 @@
             }
           }
         }
-
-
 
         a.descktop-dealer-partner {
           position: absolute;
@@ -643,6 +658,18 @@
           }
         }
       }
+    }
+
+    a.shop-online-btn {
+      width: 100%;
+      background-color: var(--main-color);
+      color: #fff;
+      padding: 2vw;
+      font-size: 5vw;
+      text-align: center;
+      font-weight: bold;
+      position: relative;
+      z-index: 2;
     }
 
     // .bottom {

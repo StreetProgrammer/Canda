@@ -73,6 +73,17 @@ $(document).ready(function () {
   /* End Change site menu content for mobile */
 });
 
+$(document).ready(function () {
+  $('.nav.navbar-nav')
+    .find('>li a')
+    .on('click', function (e) {
+      e.preventDefault();
+      window.location.href = $(this).attr('href');
+    });
+
+  /* End Change site menu content for mobile */
+});
+
 $('.letters-list a').click(function (e) {
   e.preventDefault();
   var divId = $(this).attr('href');
