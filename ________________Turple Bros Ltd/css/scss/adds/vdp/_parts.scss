@@ -12,6 +12,11 @@
         #ad-left-content {
             margin-right: 0.5vw;
             border: 1px solid var(--gray-8);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+
+            .rmv-ph-padding {
+                padding: 0;
+            }
 
             .lSAction>.lSPrev,
             .lSAction>.lSNext {
@@ -46,7 +51,7 @@
             }
 
             .lSAction>.lSPrev {
-                left: 50%;
+                left: 0%;
 
                 &:before {
                     font-family: 'Glyphicons Halflings';
@@ -54,7 +59,7 @@
             }
 
             .lSAction>.lSNext {
-                right: 50%;
+                right: 0%;
 
                 &:before {
                     font-family: 'Glyphicons Halflings';
@@ -78,6 +83,7 @@
             border: 1px solid var(--gray-8);
             padding-top: 1vw;
             padding-bottom: 1vw;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 
             select#colors-drop,
             select#size-drop {
@@ -88,7 +94,7 @@
 
             .parts-price-box {
                 // border-bottom: 1px solid var(--gray-8);
-                margin-bottom: 2vw;
+                margin-bottom: 1vw;
                 padding-bottom: 1vw;
 
                 .parts-price-div {
@@ -96,18 +102,19 @@
                     // justify-content: flex-end;
                     color: var(--main-color);
                     font-family: var(--main-font);
-                    font-size: 1.5277777777778vw;
-                    font-weight: 600;
+                    font-size: 1.6666666666667vw;
+                    font-weight: 700;
 
                     span {
                         font-family: var(--main-font);
+                        color: var(--main-font-color);
 
                         &.our-price {
-                            color: var(--main-font-color);
+                            color: var(--main-color);
                         }
 
                         &.primary {
-                            color: var(--secondary-color);
+                            color: var(--main-color);
                         }
                     }
                 }
@@ -161,7 +168,35 @@
             }
 
             .rt-specs-box {
-                display: none;
+                // display: none;
+                background-color: transparent;
+                padding: 0;
+                margin: auto 1vw;
+
+                .specs-row {
+                    display: flex;
+                    margin: 0;
+
+                    &.model {
+                        display: none;
+                    }
+
+                    &.saletype {
+                        display: none;
+                    }
+
+                    &.color {
+                        display: none;
+                    }
+
+                    &.Packagecontains {
+                        display: none;
+                    }
+
+                    >div {
+                        flex: 1;
+                    }
+                }
             }
         }
     }

@@ -135,6 +135,8 @@
           .cta-btns {
             >a {
               font-family: var(--main-font);
+              height: auto !important;
+              padding: 1.75vw;
 
               &.main-btn {
                 color: var(--white);
@@ -155,6 +157,10 @@
                 i {
                   color: var(--main-color);
                 }
+              }
+
+              &.call-now {
+                display: none;
               }
 
             }
