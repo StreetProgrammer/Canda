@@ -76,7 +76,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background: var(--black-2);
+  background: var(--secondary-color);
   width: 100%;
   // border-top: 5px solid var(--black-2);
 }
@@ -506,8 +506,8 @@
 .footer-content-container h2 {
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--gray-3);
-  font-size: 2.0833333333333vw;
+  color: var(--gray-8);
+  font-size: 1.6666666666667vw;
   padding-bottom: .75vw;
   font-family: var(--main-font);
 
@@ -552,7 +552,7 @@
 }
 
 .footer-content-container p {
-  color: var(--main-font-color);
+  color: var(--gray-8);
 }
 
 .footer-content-container .lg-footer .contact-us a:hover {
@@ -642,7 +642,7 @@
 .footer-content-container .hours .hour,
 .footer-content-container p a {
   font-size: 1.1111111111111vw;
-  color: var(--main-font-color);
+  color: var(--gray-8);
   font-weight: 500;
   text-transform: capitalize;
 
@@ -748,7 +748,7 @@
   color: var(--gray-3);
   text-decoration: none;
   transition: all .2s ease-in-out;
-  font-size: 1.25vw;
+  font-size: 1.1111111111111vw;
   text-transform: capitalize;
   font-weight: 400;
 }
@@ -1104,31 +1104,64 @@
 }
 
 
-  .footer-content {
-    display: flex;
-    justify-content: space-evenly ;
-    align-items: center;
-    background-color: var(--main-color);
-    
+  
+  .footer-content-container .opening-hours {
+    p {
+      color: var(--gray-8)
+    }
+    p .phone {
+      color: var(--gray-8);
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+li {
+  margin-right: 0.1vw;
+}
+    }
+  }
 
-    h3 {
+  .top-footer {
+    width: 100%;
+    min-height: 7.8472222222222vw;
+    background-color: var(--main-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+   
+    @media screen  and (max-width:767px) {
+      flex-direction: column;
+      
+    }
+    .text {
+      color: var(--white);
+      flex: 1;
+      h4 {
+        color: var(--white);
+        font-weight:700;
+        font-size: 1.5277777777778vw;
+      }
+      p {
+        color: var(--white);
+        font-weight:400;
+        font-size:1.1111111111111vw;
+      }
+    }
+.form {
+ flex: 0.5;
+}
+
+    .form :first-child {
+       border-radius: 20px;
+       border: 0;
+    }
+    .form :nth-child(2) {
+      border-radius: 20px;
+      border: 0;
+      background-color: var(--secondary-color) ;
       color: var(--white);
     }
-  p {
-    color: var(--white);
   }
-  form :first-child {
-    border-radius: 20px;
-    border: 0;
-    width: 26.32vw;
-  }
-  form :last-child {
-    border-radius: 20px;
-    border: 0;
-    background-color: var(--secondary-color);
-    color: var(--white);
-    margin-left: -2vw;
-    padding-right: 2vw;
-    padding-left: 2vw;
-  }
-  }
+
