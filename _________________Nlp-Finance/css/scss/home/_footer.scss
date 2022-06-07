@@ -1102,3 +1102,33 @@
     }
   }
 }
+
+
+  .footer-content {
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    background-color: var(--main-color);
+    
+
+    h3 {
+      color: var(--white);
+    }
+  p {
+    color: var(--white);
+  }
+  form :first-child {
+    border-radius: 20px;
+    border: 0;
+    width: 26.32vw;
+  }
+  form :last-child {
+    border-radius: 20px;
+    border: 0;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    margin-left: -2vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+  }
+  }
