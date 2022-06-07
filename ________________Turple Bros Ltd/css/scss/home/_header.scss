@@ -390,7 +390,7 @@
 
           .navbar-nav {
             &>li:nth-child(1) {
-              // order: 2 !important;
+              order: 2 !important;
               min-width: 20%;
 
               a {
@@ -420,12 +420,12 @@
             }
 
             &>li:nth-child(odd) {
-              // order: 1;
+              order: 1;
 
             }
 
             &>li:nth-child(even) {
-              // order: 3;
+              order: 3;
 
               ul.dropdown-menu {
                 right: 0 !important;
