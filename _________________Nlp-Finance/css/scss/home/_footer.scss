@@ -1132,23 +1132,27 @@
 
 .top-footer {
   width: 100%;
-  min-height: 7.8472222222222vw;
+  min-height: 113px;
   background-color: var(--main-color);
+  padding: 0 6vw;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 2vw;
+  
 
   @media screen and (max-width:767px) {
     flex-direction: column;
-
+    .text {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .form {
+      margin-bottom: 30px;
+    }
   }
 
   .text {
     color: var(--white);
-    flex: 1;
-
     h4 {
       color: var(--white);
       font-weight: 700;
@@ -1163,18 +1167,29 @@
   }
 
   .form {
-    flex: 0.5;
+    
+    form {
+      display: flex;
+    :first-child{
+      height: 25px;
+      border-radius: 20px;
+      border: none;
+      flex: 2;
+    }
+    :nth-child(2) {
+      height: 25px;
+      border-radius: 20px;
+      border: none;
+      background-color: var(--secondary-color);
+      color: var(--white);
+      margin-left: -3vw;
+      padding: 0 2vw;
+      flex:1;
+    }   
   }
+}
+}
 
-  .form :first-child {
-    border-radius: 20px;
-    border: 0;
-  }
-
-  .form :nth-child(2) {
-    border-radius: 20px;
-    border: 0;
-    background-color: var(--secondary-color);
-    color: var(--white);
-  }
+.footer-content-container .bor {
+  border-right: 1px solid #555555;
 }
