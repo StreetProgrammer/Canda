@@ -190,13 +190,22 @@
       }
     }
 
-
-    // 
-
-
-    // 
-
-
+    .ecomm-box {
+      .ecomm-btns {
+        .ecomm-btn {
+          &.add-to-cart-product.deposit-to-cart {
+            border-radius: 0;
+            text-align: unset;
+            font-weight: 500;
+            font-size: 1.0416666666667vw;
+            text-transform: uppercase;
+            background-color: var(--main-color);
+            color: var(--white);
+            transition: all ease-in-out 0.25s;
+          }
+        }
+      }
+    }
   }
 
   #model-right-content {
@@ -323,6 +332,36 @@
     }
   }
 
+  .deposit-info.modal {
+    .modal-content {
+      padding: 2vw 2vw;
+
+      h3 {
+        margin-top: 0;
+        font-size: 2vw;
+      }
+
+      p {
+        font-size: 1.25vw;
+      }
+
+      .modal-footer {
+        padding: 1vw 0 0 0;
+
+        button {
+          color: var(--white) !important;
+          min-width: 25%;
+          font-size: 1.25vw;
+
+          &:hover {
+            color: var(--main-color) !important;
+            background-color: var(--white);
+          }
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 767px) {
     div.back-btn {
       font-size: 16px;
@@ -352,16 +391,36 @@
         margin: 0;
       }
 
+      .ecomm-box {
+        .ecomm-btns {
+          .ecomm-btn {
+            &.add-to-cart-product.deposit-to-cart {
+              border-radius: 0;
+              text-align: unset;
+              font-weight: 500;
+              font-size: 16px;
+              text-transform: uppercase;
+              background-color: var(--main-color);
+              color: var(--white);
+              transition: all ease-in-out 0.25s;
+            }
+          }
+        }
+      }
+
+
       .price-box {
+        display: flex;
+
         .our-price-div {
           float: right;
           align-items: center;
-          font-size: 1.3888888888889vw;
+          font-size: 16px;
           color: var(--main-color);
 
           .our-price {
             font-size: 0;
-            margin: 0 1vw;
+            margin: 0 0vw;
             font-weight: 600;
 
             &:before {
@@ -373,11 +432,16 @@
 
           .primary {
             font-size: 16px;
+            // font-weight: 600;
           }
         }
 
+        .savings {
+          display: none;
+        }
+
         .excludes {
-          // display: none;
+          display: none;
         }
       }
 
@@ -398,7 +462,7 @@
           }
 
           &.request-quote-btn {
-            background-color: var(--main-color);
+            background-color: var(--gray-9);
             color: var(--white);
           }
 
@@ -449,6 +513,53 @@
           }
         }
       }
+
+
+      .gallery {
+        .lSSlideOuter {
+          &.vertical {}
+
+          .lSSlideWrapper {
+            >ul {}
+
+            .lSAction>.lSPrev,
+            .lSAction>.lSNext {
+
+              &::before {}
+            }
+
+            .lSAction>.lSPrev {
+
+              &:before {}
+            }
+
+            .lSAction>.lSNext {
+
+              &:before {}
+            }
+
+          }
+        }
+
+        .img-tag {
+          top: 80%;
+          left: 0;
+          transform: rotate(0deg);
+          font-family: var(--main-font);
+          height: auto;
+          background-color: rgba(0, 153, 0, 0.8);
+          font-size: 16px !important;
+          padding: 0.25vw;
+          width: 130px !important;
+
+          &::after {
+            content: "";
+            width: 20%;
+          }
+        }
+      }
+
+
     }
 
     #model-right-content {
@@ -546,6 +657,29 @@
             &:focus {
               background-color: var(--gray);
             }
+          }
+        }
+      }
+    }
+
+    .deposit-info.modal {
+      .modal-content {
+        padding: 10px 10px;
+
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .modal-footer {
+          padding: 1vw 0 0 0;
+
+          button {
+            min-width: 25%;
+            font-size: 16px;
           }
         }
       }

@@ -14,7 +14,7 @@
 .to-up-container {
   position: relative;
   height: 70px;
-  background-color: var(--white);
+  background-color: transparent;
   display: flex;
   flex-direction: row-reverse;
   padding: 1vw;
@@ -59,12 +59,12 @@
   }
 }
 
-#page_54258 {
+#page_54953 {
   .to-up-container {
-    background-color: var(--main-color);
+    // background-color: var(--main-color);
 
     a.to-up {
-      color: var(--gray-8);
+      color: var(--white);
     }
   }
 }
@@ -1104,64 +1104,77 @@
 }
 
 
-  
-  .footer-content-container .opening-hours {
-    p {
-      color: var(--gray-8)
-    }
-    p .phone {
-      color: var(--gray-8);
-    }
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-li {
-  margin-right: 0.1vw;
-}
-    }
+
+.footer-content-container .opening-hours {
+  p {
+    color: var(--gray-8)
   }
 
-  .top-footer {
-    width: 100%;
-    min-height: 7.8472222222222vw;
-    background-color: var(--main-color);
+  p .phone {
+    color: var(--gray-8);
+  }
+
+  .social-icons {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-   
-    @media screen  and (max-width:767px) {
-      flex-direction: column;
-      
-    }
-    .text {
-      color: var(--white);
-      flex: 1;
-      h4 {
-        color: var(--white);
-        font-weight:700;
-        font-size: 1.5277777777778vw;
-      }
-      p {
-        color: var(--white);
-        font-weight:400;
-        font-size:1.1111111111111vw;
+
+    li {
+      // margin-right: 0.1vw;
+
+      a {
+        padding: 1vw;
+        border: 1px solid var(--gray-6);
       }
     }
-.form {
- flex: 0.5;
+  }
 }
 
-    .form :first-child {
-       border-radius: 20px;
-       border: 0;
-    }
-    .form :nth-child(2) {
-      border-radius: 20px;
-      border: 0;
-      background-color: var(--secondary-color) ;
+.top-footer {
+  width: 100%;
+  min-height: 7.8472222222222vw;
+  background-color: var(--main-color);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw;
+
+  @media screen and (max-width:767px) {
+    flex-direction: column;
+
+  }
+
+  .text {
+    color: var(--white);
+    flex: 1;
+
+    h4 {
       color: var(--white);
+      font-weight: 700;
+      font-size: 1.5277777777778vw;
+    }
+
+    p {
+      color: var(--white);
+      font-weight: 400;
+      font-size: 1.1111111111111vw;
     }
   }
 
+  .form {
+    flex: 0.5;
+  }
+
+  .form :first-child {
+    border-radius: 20px;
+    border: 0;
+  }
+
+  .form :nth-child(2) {
+    border-radius: 20px;
+    border: 0;
+    background-color: var(--secondary-color);
+    color: var(--white);
+  }
+}

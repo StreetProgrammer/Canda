@@ -73,6 +73,7 @@ $(document).ready(function () {
   /* End Change site menu content for mobile */
 });
 
+// make parent main nav links clickable
 $(document).ready(function () {
   $('.nav.navbar-nav')
     .find('>li a')
@@ -94,4 +95,26 @@ $('.letters-list a').click(function (e) {
     },
     'slow'
   );
+});
+
+// remove "this" from Normal VDP share btn
+
+$(document).ready(function () {
+  if ($('#normal_vdp').length) {
+    var shareContainer1 = $('.CTA-box .dropdown');
+    var oldshareContainer1Content = shareContainer1.html();
+    var newshareContainer1Content = oldshareContainer1Content.replace(
+      'Share this',
+      'Share'
+    );
+    shareContainer1.html(newshareContainer1Content);
+
+    var shareContainer2 = $('.right-cta-buttons .dropdown');
+    var oldshareContainer2Content = shareContainer2.html();
+    var newshareContainer2Content = oldshareContainer2Content.replace(
+      'Share this',
+      'Share'
+    );
+    shareContainer2.html(newshareContainer2Content);
+  }
 });

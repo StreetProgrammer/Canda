@@ -137,6 +137,8 @@
         left: 0;
         transition: all ease-in-out .5s;
 
+        padding: 0 !important;
+
         &:nth-child(1) {
             z-index: 9;
             top: 0;

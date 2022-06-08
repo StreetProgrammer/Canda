@@ -54,7 +54,8 @@
                 left: 0%;
 
                 &:before {
-                    font-family: 'Glyphicons Halflings';
+                    font-family: "FontAwesome" !important;
+                    content: "\f053";
                 }
             }
 
@@ -62,7 +63,8 @@
                 right: 0%;
 
                 &:before {
-                    font-family: 'Glyphicons Halflings';
+                    font-family: "FontAwesome" !important;
+                    content: "\f054";
                 }
             }
 

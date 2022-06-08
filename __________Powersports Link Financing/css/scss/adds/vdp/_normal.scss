@@ -191,6 +191,31 @@
     }
   }
 
+  .dealer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .d-logo {
+      max-width: 75%;
+    }
+
+    .d-Location {}
+
+    .d-filter {
+      border-radius: 0;
+      text-align: unset;
+      font-weight: 500;
+      font-size: 1.0416666666667vw;
+      text-transform: uppercase;
+      background-color: var(--gray-8);
+      color: var(--secondary-color);
+      width: 100%;
+      padding: 18px 30px;
+    }
+  }
+
   @media screen and (max-width: 767px) {
     div.back-btn {
       font-size: 16px;
@@ -419,4 +444,6 @@
       }
     }
   }
+
+
 }
