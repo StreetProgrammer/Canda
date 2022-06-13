@@ -349,6 +349,7 @@
             align-items: center;
             justify-content: space-around;
             border-radius: 0;
+            font-size: 20px;
 
             &:hover,
             &:focus {
@@ -365,6 +366,12 @@
               height: 5px;
               border-radius: 1px;
               background-color: var(--main-color);
+            }
+
+            span {
+              &:last-child {
+                font-size: 60%;
+              }
             }
           }
         }
@@ -823,7 +830,7 @@
     }
 
     li {
-      // flex: 1;
+      flex: 1;
       display: flex;
       justify-content: center;
 
@@ -887,11 +894,18 @@
         width: 30px;
         height: 30px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        width: 100%;
+        align-items: center;
         align-items: center;
         text-align: center;
         text-decoration: none;
         transition: all ease-in 0.3s;
+
+        span {
+          font-size: 60%;
+        }
 
         @media screen and (max-width: 520px) {
           font-size: 20px;

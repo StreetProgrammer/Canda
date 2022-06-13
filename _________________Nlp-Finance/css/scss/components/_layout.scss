@@ -155,3 +155,15 @@
         font-weight: 900 !important;
     }
 }
+
+.Under-Construction {
+    h3 {
+        margin-top: 5vw;
+        text-align: center;
+        color: var(--gray-222);
+
+        span {
+            color: var(--main-color);
+        }
+    }
+}
