@@ -17,6 +17,8 @@
     .top {
       // background-color: var(--white);
       background-image: url("/site-uploads/1001383/images/top-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
 
       .descktop {
         @media screen and (max-width: 767px) {

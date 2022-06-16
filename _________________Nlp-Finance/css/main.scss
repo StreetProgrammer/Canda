@@ -54,6 +54,13 @@
   float: none;
 }
 
+// [remove padding at home]
+#page_54953 {
+  #CenterDiv {
+    padding: 0;
+  }
+}
+
 div[ppanel=Forms] {
   width: 90vw !important;
   margin: 0 auto !important;
@@ -984,9 +991,4 @@ img.black-white {
 
 [data-href] {
   cursor: pointer;
-}
-
-/** Bitrix Forms **/
-.adForm * {
-  font-family: var(--main-font) !important;
 }

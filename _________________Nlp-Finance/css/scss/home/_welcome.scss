@@ -1,8 +1,15 @@
 :root {
+  --circle_toggler_width_desktop: 7vw;
+  --circle_toggler_height_desktop: var(--circle_toggler_width_desktop);
+  --border-width_desktop: calc(var(--circle_toggler_height_desktop) / 3);
+  --circle-height_desktop: calc(var(--circle_toggler_width_desktop) * 3 + var(--circle_toggler_width_desktop) * 1.5);
+
   --circle_toggler_width: 20vw;
   --circle_toggler_height: var(--circle_toggler_width);
   --border-width: calc(var(--circle_toggler_height) / 3);
   --circle-height: calc(var(--circle_toggler_width) * 3 + var(--circle_toggler_width) * 1.5);
+
+
 }
 
 .main-home-content {
@@ -226,6 +233,97 @@
     align-items: center;
 
     img {}
+
+    .circle-wrapper {
+      position: relative;
+      border-radius: 50%;
+      background-color: #FFF;
+      height: var(--circle-height_desktop);
+      width: var(--circle-height_desktop);
+      border: var(--border-width_desktop) solid #E5E5E5;
+      margin: 5vw auto;
+      padding: 5vw;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      position: absolute;
+      right: -5vw;
+
+      .inner-content {
+        h3 {
+          text-align: center;
+          font-size: 18px;
+          font-weight: 700;
+          color: var(--gray-9);
+        }
+
+        p {
+          text-align: center;
+          font-size: 16px;
+          font-weight: 400;
+          color: var(--gray-9);
+        }
+      }
+
+      a.toggler {
+        width: var(--circle_toggler_width_desktop);
+        height: var(--circle_toggler_height_desktop);
+        min-width: auto !important;
+        background-color: var(--white);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transition: all ease-in-out 0.25s;
+
+        &.active {
+          background-color: var(--main-color);
+        }
+
+        &:nth-of-type(1) {
+          top: -15%;
+          left: 55%;
+          transform: translate(-50%, 0vw);
+        }
+
+        &:nth-of-type(2) {
+          top: -10%;
+          left: 15%;
+          transform: translate(-35%, 0vw);
+        }
+
+        &:nth-of-type(3) {
+          top: 20%;
+          left: -15%;
+          transform: translate(10%, 0vw);
+        }
+
+        &:nth-of-type(4) {
+          top: 55%;
+          left: 0%;
+          transform: translate(-50%, 0vw);
+
+        }
+
+        &:nth-of-type(5) {
+          top: 85%;
+          left: 25%;
+          transform: translate(-60%, 0vw);
+        }
+
+        &:nth-of-type(6) {
+          top: 90%;
+          left: 60%;
+          transform: translate(-60%, 0vw);
+        }
+
+        img {
+          max-width: 60%;
+        }
+      }
+    }
   }
 
   /*--------------*/

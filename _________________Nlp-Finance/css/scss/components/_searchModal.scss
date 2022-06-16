@@ -40,6 +40,7 @@
 
                     .input-group-btn {
                         width: 5vw;
+                        background-color: var(--main-color);
 
                         @media (max-width: 767px) {
                             width: 10vw;
@@ -61,8 +62,8 @@
                             }
 
                             &:hover {
-                                color: var(--main-color);
-                                background-color: var(--white);
+                                // color: var(--main-color);
+                                // background-color: var(--white);
                             }
 
                             i {

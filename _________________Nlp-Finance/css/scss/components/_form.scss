@@ -1,0 +1,37 @@
+/** Forms **/
+.adForm * {
+    font-family: var(--main-font) !important;
+}
+
+#page_55461 {
+    .formsParent {
+        border: 1px solid #D5D5D5;
+        margin: 1vw 5vw 5vw 5vw;
+        width: 80vw;
+
+        #Buttons {
+            width: 100%;
+
+            .btn {
+                &.btn-default {
+                    display: none !important;
+                }
+
+                &.btn-primary {
+                    margin: auto !important;
+                    font-size: 0;
+                    border-radius: 0 !important;
+                    max-width: 200px;
+
+                    &::after {
+                        content: "Submit My ad";
+                        text-transform: uppercase;
+                        font-size: 1.25vw;
+                    }
+                }
+
+            }
+
+        }
+    }
+}

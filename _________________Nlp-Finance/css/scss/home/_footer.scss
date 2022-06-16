@@ -878,8 +878,8 @@
               }
 
               &:hover {
-                color: var(--main-color);
-                background-color: var(--white);
+                background-color: var(--main-color) !important;
+                color: var(--white) !important;
               }
 
               i {
