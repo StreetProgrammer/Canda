@@ -1,5 +1,62 @@
 .full-width-banner {
+    position: relative;
+
     img {
         width: 100%;
+    }
+
+    .content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            color: var(--white);
+            font-size: 4vw;
+        }
+
+        p {
+            color: var(--white);
+            font-size: 2vw;
+        }
+
+        a {
+            width: 30%;
+        }
+
+    }
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-height: 50vh;
+            width: auto;
+            max-width: unset;
+        }
+
+        .content {
+            align-items: center;
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            a {
+                width: 70%;
+            }
+        }
     }
 }

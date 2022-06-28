@@ -72,7 +72,8 @@
 
                 >span {
                     color: var(--main-color);
-                    padding: 1vw;
+                    padding: 0.5vw;
+                    line-height: 1;
 
                     &:last-child {
                         color: var(--white);
@@ -81,7 +82,7 @@
                         background-color: var(--secondary-color);
                         display: flex;
                         justify-content: space-between;
-
+                        padding: 1vw;
 
                         &::before {
                             content: "Price";

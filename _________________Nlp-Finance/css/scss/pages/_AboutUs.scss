@@ -1,39 +1,122 @@
 ._about-us-content {
+    h3 {
+        margin: 0;
+        color: var(--secondary-color);
+        font-size: 2vw;
+    }
+
     .container-90 {
-        p {
-            font-size: 1.75vw;
-        }
+        .card {
+            border: 1px solid var(--gray-8);
+            padding: 2vw;
+            margin: 2vw 0;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
-        .content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
 
-            img {}
 
-            p {
-                font-size: 1.5vw;
+            &.team-member {
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    width: 23%;
+                    border-radius: 10px;
+                    border: 1px solid #ddd;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                }
+
+                >div {
+                    width: 73%;
+
+                    p {
+                        font-size: 1.1111111111vw;
+
+                        &.name {
+                            font-size: 1.25vw;
+                            color: var(--main-color);
+                        }
+
+                        &.title {
+                            font-size: 1.25vw;
+                        }
+                    }
+                }
             }
         }
     }
 
     @media screen and (max-width: 767px) {
+        h3 {
+            font-size: 18px;
+        }
+
         .container-90 {
-            p {
-                font-size: 18px;
+            .card {
+                padding: 10px;
+                margin: 10px 0;
+
+                &.team-member {
+                    flex-direction: column;
+
+                    img {
+                        width: 40%;
+                        margin: auto;
+                    }
+
+                    >div {
+                        width: 100%;
+
+                        p {
+                            font-size: 16px;
+
+                            &.name {
+                                font-size: 18px;
+                            }
+
+                            &.title {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
             }
+        }
+    }
 
-            .content {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+    @media screen and (max-width: 540px) {
+        h3 {
+            font-size: 18px;
+        }
 
-                img {}
+        .container-90 {
+            .card {
+                padding: 10px;
+                margin: 10px 0;
 
-                p {
-                    font-size: 16px;
+                &.team-member {
+                    flex-direction: column;
+
+                    img {
+                        width: 50%;
+                        margin: auto;
+                    }
+
+                    >div {
+                        width: 100%;
+
+                        p {
+                            font-size: 16px;
+
+                            &.name {
+                                font-size: 18px;
+                            }
+
+                            &.title {
+                                font-size: 18px;
+                            }
+                        }
+                    }
                 }
             }
         }

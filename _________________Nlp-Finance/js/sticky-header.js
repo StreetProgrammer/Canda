@@ -1,6 +1,5 @@
 var centerDivMargin;
 $(function () {
-  var main_logo = $('.menu-lg-logo-link img');
   var bookNowBtn = $('.other-header-links .lg-content .book-now');
   var breadcrumbParent = $('.breadcrumbParent');
   centerDivMargin = $('.header-1-nav').innerHeight() - 0;
@@ -18,7 +17,6 @@ $(function () {
       $('.header-1-nav').addClass('sticky-header');
       $('.menu-lg-logo-link').addClass('toggle');
 
-      main_logo.attr('src', '/site-uploads/1001372/images/SSRRS_Logo 1.svg');
       bookNowBtn.css({
         'background-color': 'var(--secondary-color)',
         color: 'var(--white',
@@ -34,7 +32,6 @@ $(function () {
     } else {
       $('.header-1-nav').removeClass('sticky-header');
       $('.menu-lg-logo-link').removeClass('toggle');
-      main_logo.attr('src', '/site-uploads/1001372/images/svg-main-logo.svg');
       bookNowBtn.removeAttr('style');
       $('#CenterDiv').css({
         'margin-top': 0,
@@ -44,10 +41,3 @@ $(function () {
     }
   });
 });
-
-// if ($('#51785').length || $('#51810').length || $('#51810').length) {
-//   $(document).ajaxComplete(function () {
-//     centerDivMargin = $('.header-1-nav').innerHeight() - 0;
-//     console.log("2 centerDivMargin => ", centerDivMargin);
-//   });
-// }

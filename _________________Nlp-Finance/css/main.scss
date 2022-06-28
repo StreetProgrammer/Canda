@@ -45,7 +45,8 @@
 
 #CenterDiv {
   width: 100% !important;
-  padding: 2vw 0 0 0;
+  // padding: 2vw 0 0 0;
+  padding: 0;
   margin: 0px auto;
   min-height: 400px !important;
   overflow: hidden;
@@ -142,6 +143,7 @@ body {
 
 .dealerAdsViewContainer {
   width: 90vw !important;
+  margin-top: 2vw;
 
   @media screen and (max-width: 767px) {
     width: 95vw !important;
@@ -151,6 +153,7 @@ body {
 
   .row {
     margin: 0;
+    width: 100%;
   }
 }
 
@@ -991,4 +994,28 @@ img.black-white {
 
 [data-href] {
   cursor: pointer;
+}
+
+// NLP Financing Only
+
+.modal-dialog {
+  &.modal-lg {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 20vw auto;
+  }
+}
+
+#comp_1655849980756 {
+  overflow: auto;
+
+  .adForm input {
+    width: 100%;
+  }
 }

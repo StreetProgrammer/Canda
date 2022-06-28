@@ -1,6 +1,7 @@
 .light2021 {
   padding: 0 !important;
   width: 90vw;
+  margin-top: 1vw;
 
   /* products */
   #products {
@@ -472,6 +473,117 @@
 
 // order filters for mobile 
 @media screen and (max-width: 767px) {
+  #filters {
+    &.staticFilterContainer {
+      &.open {}
+
+      .filters-panel {
+        .filters-inner {
+          .filter-ttl {
+            display: flex !important;
+
+            .filter-ontrol-btns {
+              display: flex !important;
+
+              .reset.button,
+              .filter-close-btn {
+                color: var(--black);
+              }
+            }
+          }
+
+          .filter-collapse-container {
+
+            &.active-filter-container {
+              a.filter-collapse {}
+
+              span.badge.badge-light {}
+
+              .icon {}
+
+              #ActiveFiltersSection {
+                .static-filter-active-main {
+                  .static-filter-active-container {}
+                }
+              }
+            }
+
+            a.filter-collapse {
+
+              &:hover {}
+
+
+            }
+
+            &::before {}
+
+            .filters-panel {
+              .filters-inner {
+                .filter-ttl {
+                  .filter-ontrol-btns {
+                    .filter-close-btn {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .well {
+
+        .checklist-filter {
+          >ul {
+            >li {
+
+              label {
+
+                span.filter-count {
+
+                  .c-arr {}
+                }
+              }
+            }
+          }
+        }
+      }
+
+      /* Price */
+      .Price {
+        .well {
+          .checklist-filter {
+            p {
+              input {}
+            }
+          }
+        }
+      }
+
+      /* Odometer */
+      .Odometer {
+        .well {
+          .checklist-filter {
+            p {
+              input {}
+            }
+          }
+        }
+      }
+
+      /* Year */
+      .Year {
+        .well {
+          .checklist-filter {
+            p {
+              input {}
+            }
+          }
+        }
+      }
+    }
+
+  }
+
   #products {
     .row.sortby-row {
       justify-content: space-between;

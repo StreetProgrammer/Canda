@@ -3,6 +3,7 @@
   font-family: var(--main-font);
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2vw;
 
   div.back-btn {
     font-size: 1.1111111111111vw;
@@ -211,7 +212,7 @@
 
   #model-right-content {
     #right-cta-buttons {
-      padding: 1vw;
+      padding: 0vw;
       background: var(--white);
       border: 1px solid var(--gray-8);
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
@@ -235,7 +236,10 @@
       }
 
       .price-box {
+        // display: none;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         .our-price-div {
           float: right;
@@ -316,6 +320,39 @@
         }
       }
 
+      .loan-calculator {
+        .form-group {
+          button {
+            border-radius: 5px;
+            padding: 0.75vw 1vw;
+            border: 0;
+            transition: all ease-in-out 0.25s;
+
+            &#loan-submit {
+              background-color: var(--main-color);
+              color: var(--white);
+              width: 65%;
+
+              &:hover {
+                color: var(--main-color);
+                background-color: var(--white);
+              }
+            }
+
+            &#loan-reset {
+              background-color: var(--gray-6);
+              color: var(--white);
+              width: 25%;
+
+              &:hover {
+                color: var(--gray-6);
+                background-color: var(--white);
+              }
+            }
+          }
+        }
+      }
+
     }
   }
 
@@ -363,6 +400,33 @@
           }
         }
       }
+    }
+  }
+
+  .dealer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-3);
+    padding: 1vw;
+
+    .d-logo {
+      max-width: 75%;
+    }
+
+    .d-Location {}
+
+    .d-filter {
+      border-radius: 0;
+      text-align: unset;
+      font-weight: 500;
+      font-size: 1.0416666666667vw;
+      text-transform: uppercase;
+      background-color: var(--gray-8);
+      color: var(--secondary-color);
+      width: 90%;
+      padding: 18px 30px;
     }
   }
 
@@ -572,7 +636,7 @@
 
     #model-right-content {
       #right-cta-buttons {
-        padding: 1vw;
+        padding: 0vw;
         background: var(--white);
         border: 1px solid var(--gray-8);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);

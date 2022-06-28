@@ -54,7 +54,7 @@ $(document).ready(function () {
       $('.nav.navbar-nav')
         .find('>li:nth-child(1) a')
         .html(
-          '<img src="/site-uploads/1001398/images/logo.svg" style="margin: 1px;max-width: 95%;">'
+          '<img src="/site-uploads/1001398/images/logo.svg" class="nav-desktop-logo" style="margin: 1px;max-width: 95%;">'
         );
     } else {
       $('.nav.navbar-nav').find('>li:nth-child(1) a').html(oldContent);

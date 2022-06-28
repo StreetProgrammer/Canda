@@ -45,6 +45,14 @@
           font-size: 1.3888888888889vw;
         }
 
+        &:nth-child(2) {
+          border-right: 1px solid var(--gray-16);
+        }
+
+        &:nth-child(3) {
+          border-left: 1px solid var(--gray-16);
+        }
+
         img {
           margin: 0.5vw;
         }

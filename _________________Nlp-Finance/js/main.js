@@ -30,9 +30,15 @@ $(document).ready(function () {
 /* Start Handle Fake anchors */
 $(function () {
   $('[data-href]').on('click', function (e) {
+    var target = $(this).attr('target') || undefined;
     if (!e.target.matches('a')) {
+      console.log('target => ', target);
       var href = $(this).data('href');
-      window.location = href;
+      if (target === 'blank') {
+        window.open(href, target);
+      } else {
+        window.location = href;
+      }
     }
   });
 });
@@ -106,3 +112,19 @@ $(function () {
   });
 });
 /* End  */
+
+// Newsletter Form logic
+$(function () {
+  $('#__newsletter-toggler').on('click', function (e) {
+    e.preventDefault();
+    var validRegex =
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var email = $('#__newsletter-email-input').val();
+    if (email.length === 0 || !email.match(validRegex)) {
+      alert('Please enter a valid email');
+    } else {
+      $('#comp_1655849980756 input#email').val(email);
+      $('#__newsletter-form').modal();
+    }
+  });
+});
