@@ -17,7 +17,7 @@
   --gray-9: #2F2F2F;
   --gray-10: #F9F9F9;
   --gray-11: #555555;
-  --gray-12: #777777;
+  --gray-12: #333333;
   --footer-gray: #1A1A1A;
   --black: #000;
   --white: #fff;
@@ -6500,6 +6500,49 @@ h4.bg-title {
 }
 
 /**/
+.sidebar-left {
+  width: 8vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--gray-222);
+  z-index: 99999;
+}
+
+.sidebar-left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+}
+
+.sidebar-left ul li {
+  border-bottom: 1px solid var(--gray-12);
+  padding: 1vw;
+  -webkit-transition: 00.3s ease;
+  transition: 00.3s ease;
+}
+
+.sidebar-left ul li:hover {
+  background-color: var(--main-color);
+}
+
+.sidebar-left ul li a span {
+  font-size: 0.83333333333333vw;
+  font-weight: 700;
+  color: var(--gray-8);
+  display: block;
+}
+
 .__site-inner-pages-panel .container-90 .panel-default {
   border-radius: 0px;
   font-family: var(--secondary-font);
