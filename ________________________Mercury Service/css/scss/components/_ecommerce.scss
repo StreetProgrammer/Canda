@@ -1,0 +1,21 @@
+#CenterDiv {
+    >.col-md-12.well.well-lg {
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+
+        >.row {
+            margin: 0;
+        }
+
+        .panel.panel-default,
+        .panel.panel-info {
+            border-radius: 0;
+
+            .btn {
+                min-width: 130px;
+                padding: 10px 15px !important;
+            }
+        }
+    }
+}

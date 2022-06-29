@@ -1,0 +1,420 @@
+:root {
+    --left-fixed-menu-width: 6.9444444444444vw;
+    --bg: #000;
+}
+
+#parent>div.row {
+    @media screen and (min-width: 768px) {
+        margin-left: var(--left-fixed-menu-width);
+    }
+}
+
+.container-90,
+.footer-content-container .footer,
+.formsParent .adForm,
+#comp_1648263954270,
+.parts2021,
+.parts-vdp {
+    @media screen and (min-width: 768px) {
+        width: calc(95vw - var(--left-fixed-menu-width)) !important;
+    }
+}
+
+.header-2-nav {
+    @media screen and (min-width: 768px) {
+        .bottom {
+            width: var(--left-fixed-menu-width);
+            background-color: var(--bg);
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 9999;
+
+            .main-logo {
+                padding: 1.3888888888889vw 2.0833333333333vw;
+
+                a {
+                    width: 100%;
+                    display: block;
+                    margin: auto;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .navbar-default {
+                .navbar-collapse {
+                    padding: 0;
+                    background-color: transparent !important;
+
+                    .navbar-nav {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100% !important;
+
+                        >li {
+                            height: auto !important;
+
+                            >a {
+                                justify-content: space-between !important;
+                                background-color: transparent;
+                                padding: 0.75vw 0 !important;
+                                margin: 0 2.0833333333333vw;
+                                font-family: var(--secondary-font);
+                                font-size: 1.25vw;
+                                color: var(--gray-8) !important;
+                                font-weight: 600;
+                                transition: all ease-in-out 0.25s;
+
+                                &:hover {
+                                    color: var(--main-color) !important;
+                                    background-color: transparent !important;
+                                }
+
+                                &::after {
+                                    font-family: "FontAwesome";
+                                    content: "\f054";
+                                    font-weight: 300;
+                                    font-size: 70%;
+                                }
+
+                                .caret {
+                                    display: none;
+                                }
+                            }
+
+                            .dropdown-menu {
+                                display: flex;
+                                position: fixed;
+                                left: var(--left-fixed-menu-width);
+                                z-index: 9999;
+                                width: 20vw;
+                                background-color: #F9F9F9 !important;
+                                flex-direction: column;
+                                top: 0 !important;
+                                bottom: 0;
+                                padding: 0 0vw;
+                                height: 0vh;
+                                width: 0vw;
+                                min-width: 0 !important;
+                                opacity: 0;
+                                transition: all ease-in-out 0.25s;
+
+                                li {
+                                    a {
+                                        display: none;
+                                        // margin: 0 1vw;
+                                        border-bottom: 1px solid var(--gray-8);
+                                        background-color: transparent !important;
+                                        text-transform: capitalize !important;
+                                    }
+                                }
+
+
+                            }
+
+                            &:hover {
+                                .dropdown-menu {
+                                    left: var(--left-fixed-menu-width);
+                                    opacity: 1;
+                                    height: 100vh;
+                                    width: var(--left-fixed-menu-width);
+
+                                    >li {
+                                        a {
+                                            display: block;
+                                            margin: 0 1vw;
+                                        }
+                                    }
+                                }
+                            }
+
+                         
+
+                            &:nth-last-child(1),
+                            &:nth-last-child(2),
+                            &:nth-last-child(3) {
+                                >a {
+                                    &::before {
+                                        font-family: "FontAwesome";
+                                        font-weight: 300;
+                                        font-size: 70%;
+                                    }
+                                }
+                            }
+
+                            &:nth-last-child(1) {
+                                >a {
+                                    &::before {
+                                        content: "\f007";
+                                    }
+                                }
+                            }
+
+                            &:nth-last-child(2) {
+                                >a {
+                                    &::before {
+                                        content: "\f05a";
+                                    }
+                                }
+                            }
+
+                            &:nth-last-child(3) {
+                                >a {
+                                    border-top: 1px solid var(--gray-11);
+
+                                    &::before {
+                                        content: "\f002";
+                                    }
+                                }
+                            }
+
+                            &.mega-menu {
+
+                                .dropdown-menu {
+
+                                    // style for added by script
+                                    &.mega-level-2 {
+                                        overflow-y: scroll;
+                                        height: 100vh;
+
+                                        .level-2-hdr {
+                                            display: none;
+
+                                            >div {
+                                                &:nth-child(1) {
+                                                    position: relative;
+                                                    padding: 1.25vw 2vw;
+                                                    margin-bottom: 1vw;
+                                                    font-size: 1.6666666666667vw;
+                                                    font-weight: 600;
+                                                    font-family: var(--secondary-font);
+
+                                                    &::after {
+                                                        width: 70%;
+                                                        height: 0.5vw;
+                                                        background-color: var(--main-color);
+                                                        top: calc(100% - 10px);
+                                                        left: 0;
+                                                        content: "";
+                                                        display: block;
+                                                        position: absolute;
+                                                    }
+                                                }
+
+                                                &:nth-child(2) {
+                                                    a {
+                                                        color: var(--main-font-color);
+                                                        background-image: none !important;
+                                                        font-size: 1vw;
+                                                        font-weight: 500;
+                                                        padding: 10px;
+                                                        text-decoration: none;
+                                                        transition: all ease-in-out 0.3s;
+                                                        border-bottom: 1px solid var(--gray-8);
+                                                        text-transform: capitalize !important;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        >ul {
+                                            padding: 0 0;
+
+                                            li {
+
+                                                a {
+                                                    color: var(--main-font-color);
+                                                    background-image: none !important;
+                                                    font-size: 1vw;
+                                                    font-weight: 500;
+                                                    padding: 10px;
+                                                    text-decoration: none;
+                                                    transition: all ease-in-out 0.3s;
+                                                }
+
+                                                &.level-2-li {
+                                                    a {
+                                                        position: relative;
+                                                        padding: 1.25vw 2vw;
+                                                        margin: 0 !important;
+                                                        margin-bottom: 1vw;
+                                                        font-size: 1.6666666666667vw;
+                                                        font-weight: 600;
+                                                        font-family: var(--secondary-font);
+                                                        border: 0;
+
+                                                        &::after {
+                                                            width: 70%;
+                                                            height: 0.5vw;
+                                                            background-color: var(--main-color);
+                                                            top: calc(100% - 10px);
+                                                            left: 0;
+                                                            content: "";
+                                                            display: block;
+                                                            position: absolute;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    .dropdown-menu {
+
+                                        // 
+                                        &.mega-level-2 {
+                                            .level-2-hdr {
+                                                >div {
+                                                 
+
+                                                    &:nth-child(2) {
+                                                        a {
+                                                            display: block;
+                                                            margin: 0 1vw;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            >ul {
+
+                                                li {
+                                                    a {
+                                                        display: block;
+                                                        margin: 0 1vw;
+                                                    }
+                                                }
+
+                                            }
+                                        }
+
+                                        // 
+                                    }
+                                }
+                            }
+
+                            // btn added by script
+                            .got-questions {
+                                background-color: var(--main-color) !important;
+                                text-align: center;
+                                margin: 5vw 0;
+                                transition: all ease-in-out 0.2s;
+
+                                i {
+                                    margin-right: 1vw;
+                                }
+
+                                &:hover {
+                                    background-color: transparent !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .social {
+                padding-top: 1vw;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                padding: 1.3888888888889vw 2.0833333333333vw;
+
+                a {
+                    font-size: 1.5vw;
+                    color: var(--gray-3);
+                    margin-right: 1vw;
+                    transition: all ease-in-out 0.25s;
+
+                    &:hover {
+                        color: var(--main-color) !important;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .main-logo {
+            display: none;
+        }
+
+        .social {
+            display: none;
+        }
+
+        .mega-menu {
+
+            .dropdown-menu {
+
+                // style for added by script
+                &.mega-level-2 {
+                    overflow-y: scroll;
+                    height: 100vh;
+
+                    .level-2-hdr {
+                        display: none;
+                    }
+
+                    >ul {
+                        padding: 0 0;
+
+                        li {
+                            a {
+                                color: var(--black);
+                                background-image: none !important;
+                                font-size: 16px;
+                                font-weight: 500;
+                                padding: 10px;
+                                text-decoration: none;
+                                transition: all ease-in-out 0.3s;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            &:hover {
+                .dropdown-menu {
+
+                    // 
+                    &.mega-level-2 {
+                        .level-2-hdr {
+                            >div {
+                              
+
+                                &:nth-child(2) {
+                                    a {
+                                        display: block;
+                                        margin: 0 1vw;
+                                    }
+                                }
+                            }
+                        }
+
+                        >ul {
+
+                            li {
+                                a {
+                                    display: block;
+                                    margin: 0 1vw;
+                                }
+                            }
+
+                        }
+                    }
+
+                    // 
+                }
+            }
+        }
+    }
+}
