@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="wrapper row">
+    <div class="wrapper row" id="post-ad-wrapper">
         <div class="col-xs-12 col-md-12">
             <p class="req-p">*Required fields</p>
         </div>
@@ -73,16 +73,12 @@
         </div>
 
         <div class="col-xs-12  col-sm-12">
-            <div class="group borderd">
-                <span>Attach Files</span>
-                <input type="file" name="images" id="images" accept="image/*" class="hidden" multiple />
-                <label class="file-input-label" for="images"><i class="fas fa-plus">&nbsp;</i> Select a
-                    file</label>
-            </div>
-            <p>Please be sure to upload a minimum of 4 images. </p>
+            <div class="group borderd"><span>Attach Files</span> <input accept="image/*" class="required limitphotos"
+                    id="images" multiple="multiple" name="images" type="file" /> <label class="file-input-label hidden"
+                    for="images"><i class="fas fa-plus">&nbsp;</i> Select a file</label></div>
+
+            <p>Please be sure to upload a minimum of 4 images.</p>
         </div>
-
-
         <!--  -->
         <style type="text/css">
             *,
@@ -338,9 +334,53 @@
                 left: 10%;
                 color: red;
             }
+
+            #imgList li {
+                display: flex !important;
+                flex-direction: column;
+                align-items: center;
+            }
         </style>
         <!--  -->
+        <script>
+            $(function () {
+                setTimeout(() => {
+                    const targetNode = document.getElementById('Filelist');
+                    const config = {
+                        attributes: true,
+                        childList: true,
+                        subtree: true
+                    };
+
+                    var fireErr = false;
+                    var formBtn = $('input[type=submit]');
+                    const callback = function (mutationList, observer) {
+                        // Use traditional 'for loops' for IE 11
+                        for (const mutation of mutationList) {
+                            if (mutation.type === 'childList') {
+                                console.log('A child node has been added or removed.');
+                                if ($('#imgList').length && $('ul#imgList li').length < 4 &&
+                                    fireErr === false) {
+                                    console.log($('ul#imgList li').length, formBtn);
+                                    alert("Please be sure to upload a minimum of 4 images.");
+                                    formBtn.attr("disabled", true);
+                                    fireErr = true
+                                }
+                                if ($('#imgList').length && $('ul#imgList li').length >= 4) {
+                                    formBtn.attr("disabled", false);
+                                }
+                            }
+                        }
+                        fireErr = false
+                    };
+                    const observer = new MutationObserver(callback);
+                    observer.observe(targetNode, config);
+
+                }, 1000);
+            });
+        </script>
     </div>
+
 
 
 </body>

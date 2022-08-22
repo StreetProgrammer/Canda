@@ -1,10 +1,21 @@
+// @font-face {
+//   font-family: 'D-DIN-PRO';
+//   src: url(/site-uploads/1001418/fonts/D-DIN-PRO-400-Regular.otf);
+//   src: url(/site-uploads/1001418/fonts/D-DIN-PRO-500-Medium.otf);
+//   src: url(/site-uploads/1001418/fonts/D-DIN-PRO-600-SemiBold.otf);
+//   src: url(/site-uploads/1001418/fonts/D-DIN-PRO-700-Bold.otf);
+//   src: url(/site-uploads/1001418/fonts/D-DIN-PRO-800-ExtraBold.otf);
+//   src: url(/site-uploads/1001418/fonts/D-DIN-PRO-900-Heavy.otf);
+// }
+
 /* start root */
 :root {
   // colors
-  --main-color: #D52B1E   ;
+  --main-color: #D52B1E;
   --secondary-color: #01A6E0;
   --main-font-color: #333;
   --gray-222: #222222;
+  --gray-111: #111111;
   --trans-m-color: #dea731b8;
   --body: #282828;
   --gray: #DDD;
@@ -27,7 +38,7 @@
   --instagram: #FB3958;
   --linkedin: #0E76A8;
   // Fonts
-  --main-font:'D-DIN-PRO', sans-serif !important;
+  --main-font: 'D-DIN-PRO', sans-serif !important;
   --secondary-font: "Open Sans", sans-serif !important;
 
 }

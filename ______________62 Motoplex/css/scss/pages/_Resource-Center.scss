@@ -1,0 +1,101 @@
+.__site-inner-pages-panel {
+    .container-90 {
+        .panel-default {
+            border-radius: 0px;
+            font-family: var(--secondary-font);
+
+            .panel-heading {
+                padding: 0%;
+
+                .panel-title {
+                    a {
+                        display: block;
+                        padding: 2vw;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-family: var(--secondary-font);
+                        color: var(--gray-222);
+                        background-color: var(--gray-3);
+                        font-weight: 700;
+                        font-size: 2vw;
+                        text-decoration: none;
+                        transition: all ease-in-out 0.25s;
+
+                        &:hover {}
+                    }
+                }
+            }
+
+            .panel-body {
+                .categories-container-item {
+                    height: 100%;
+
+                    a.cat {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-family: var(--main-font);
+                        color: var(--gray-222);
+                        font-size: 1.1111111111111vw;
+
+                        img {
+                            height: 20vw;
+                            width: 100%;
+                        }
+
+                        span {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            padding: 1vw;
+                            background-color: var(--main-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container-90 {
+            .panel-default {
+                border-radius: 0px;
+                font-family: var(--secondary-font);
+
+                .panel-heading {
+                    padding: 0%;
+
+                    .panel-title {
+                        a {
+                            padding: 10px;
+                            font-size: 20px;
+
+                            &:hover {}
+                        }
+                    }
+                }
+
+                .panel-body {
+                    .categories-container-item {
+                        height: 100%;
+
+                        a.cat {
+                            font-size: 16px;
+
+                            img {
+                                height: auto;
+                                width: 100%;
+                            }
+
+                            span {
+                                width: 100%;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

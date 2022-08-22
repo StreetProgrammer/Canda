@@ -1,0 +1,158 @@
+#comp_1652490650470 {
+    // max-width: 90vw;
+    // margin: 0vw auto;
+    // float: none !important;
+    max-width: 100vw;
+    padding: 1vw 5vw;
+    float: none !important;
+    background-color: var(--gray-3);
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    .row {
+        margin: auto;
+    }
+
+    ul {
+        display: flex;
+        height: auto !important;
+        margin: 5.5555555555556vw auto;
+
+        &.lSPager.lSpg {
+            display: none;
+        }
+
+        li {
+            border: 0.5px solid #ddd;
+            margin: 0 2vw !important;
+            font-family: var(--main-font);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 0.41666666666667vw;
+            overflow: hidden;
+            background-color: var(--white);
+
+            a.randomAdDetails {
+                // padding: 0;
+
+                img {
+                    // width: 20vw;
+                    // height: 13.888888888889vw;
+                    height: 10vw;
+                    width: auto;
+
+                }
+
+                .thumbnailStatus {
+                    display: none;
+                    position: absolute !important;
+                    top: 15px;
+                    bottom: auto;
+                    left: 0px;
+                    border-radius: 0;
+                    border-top-right-radius: 25px;
+                    border-bottom-right-radius: 25px;
+                    width: 40% !important;
+                    background-color: rgba(0, 153, 0, 0.8) !important;
+                    font-size: 1.2vw;
+                    ;
+                }
+            }
+
+            .text-info {
+                color: var(--gray-222);
+            }
+
+            div:last-child {
+                margin: 1vw 0 0 0;
+
+                >span {
+                    color: var(--main-color);
+                    padding: 1vw;
+
+                    &:last-child {
+                        color: var(--white);
+                        font-family: var(--main-font);
+                        font-weight: 400;
+                        background-color: var(--gray-15);
+                        display: flex;
+                        justify-content: space-between;
+
+
+                        &::before {
+                            content: "Price";
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .lSAction {
+
+        .lSPrev:after,
+        .lSNext:after {
+            font-size: 3vw;
+            font-weight: 300;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lSPrev:before,
+        .lSNext:before {
+            // display: none !important;
+        }
+
+        .lSPrev {
+            opacity: 1;
+            text-decoration: none;
+            background-image: none;
+            // background-color: var(--white);
+            color: var(--gray-222);
+            // border: .05px solid var(--gray-8);
+            // box-shadow: -1px 0px 4px rgba(0, 0, 0, 0.15);
+            width: 4.1666666666667vw;
+            height: 4.1666666666667vw;
+            left: 0;
+
+            &:hover {
+                color: #000040;
+                background-color: #F1F1F1;
+            }
+
+            &:after {
+                content: url(/site-uploads/1001387/images/svg/arrows-left-icon.svg);
+            }
+        }
+
+        .lSNext {
+            opacity: 1;
+            text-decoration: none;
+            background-image: none;
+            // background-color: var(--white);
+            color: var(--gray-222);
+            // border: .05px solid var(--gray-8);
+            // box-shadow: -1px 0px 4px rgba(0, 0, 0, 0.15);
+            width: 4.1666666666667vw;
+            height: 4.1666666666667vw;
+            right: 0;
+
+            &:hover {
+                color: #000040;
+                background-color: #F1F1F1;
+            }
+
+            &:after {
+                content: url(/site-uploads/1001387/images/svg/arrows-right-icon.svg);
+                // background-image: url(/site-uploads/1001387/images/svg/arrows-right.svg);
+            }
+        }
+    }
+}

@@ -118,3 +118,18 @@ $(document).ready(function () {
     shareContainer2.html(newshareContainer2Content);
   }
 });
+
+// append custom content to ADS Page [SRP & VDP]
+$(document).ready(function () {
+  if ($('[ppanel="ESC Ads"]').length) {
+    console.log('we are in ADS Page');
+    var centerDiv = $('#CenterDiv');
+    var txt =
+      'All prices do NOT include freight, PDI, Tire Recycle, manufacture surcharges, or GST. We do try our best to keep prices accurate, but mistakes do happen, if there is a discrepancy between in-store and online prices, in-store prices will be used';
+    centerDiv.append(
+      '<div class="container container-90"> <p class="col-sm-12">' +
+        txt +
+        '</p></div>'
+    );
+  }
+});

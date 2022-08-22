@@ -1,0 +1,11 @@
+.dirt-bike-guide {
+    h3 {
+        font-size: 2vw;
+    }
+
+    @media screen and (max-width: 767px) {
+        h3 {
+            font-size: 26px;
+        }
+    }
+}

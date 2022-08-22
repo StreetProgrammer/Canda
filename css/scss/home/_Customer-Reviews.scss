@@ -1,0 +1,95 @@
+._Customer-Reviews {
+    background-color: var(--main-color);
+    padding: 4vw 0;
+
+    .container {
+        .row {
+            h2 {
+                font-weight: 600;
+                font-size: 2.3611111111111vw;
+                color: var(--white);
+                text-align: center;
+                margin: 0 0 2vw 0;
+                text-transform: uppercase;
+            }
+
+            .quote {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--white);
+                font-size: 2.5vw;
+            }
+
+            .carousel.slide {
+                color: var(--white);
+            }
+
+            .review {
+                p {
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 1.1111111111111vw;
+
+                    &.review {
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .controls {
+                display: none;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    background-image: none;
+                    position: unset;
+                    width: auto;
+                    box-shadow: none;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container {
+            padding: 0;
+
+            .row {
+                margin: 0;
+
+                h2 {
+                    font-weight: 600;
+                    font-size: 24px;
+
+                }
+
+                .quote {
+                    font-size: 5vw;
+                    flex: 1;
+                    max-width: 5%;
+                }
+
+                .review {
+                    p {
+                        text-align: center;
+                        font-weight: 600;
+                        font-size: 16px;
+
+                        &.review {
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                .col-xs-10.col-md-10 {
+                    max-width: 80%;
+                }
+
+            }
+        }
+
+    }
+}

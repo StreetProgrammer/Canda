@@ -1,5 +1,5 @@
 /*Start Slider*/
-#comp_1648048599153 {
+#comp_1656766405969 {
 
 
   .container-fluid {
@@ -62,7 +62,7 @@
     }
 
     .carousel-control {
-      display: none;
+      // display: none;
       position: absolute;
       opacity: 1;
       background-image: none;
@@ -118,6 +118,7 @@
     }
 
     .carousel-indicators {
+      display: none;
       margin-left: 0%;
       // display: none;
       transform: translate(-50%);

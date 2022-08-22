@@ -1,8 +1,67 @@
 ._dealer-partner {
-    .container-90 {}
+    .container-90 {
+
+        h2,
+        h3 {
+            color: var(--black);
+        }
+
+        h2 {
+            border-bottom: 2px solid;
+            padding-bottom: 1vw;
+        }
+
+        ol {
+            list-style: decimal;
+
+            ol {
+                list-style: lower-alpha;
+            }
+        }
+
+        .content {
+            .apply {
+                display: flex;
+                flex-direction: column;
+                background-color: var(--main-color);
+                color: var(--white);
+                width: 20%;
+                padding: 1vw;
+                align-items: center;
+                font-size: 1.3vw;
+                font-weight: 700;
+            }
+        }
+
+        .youtube-link {
+            font-size: 7vw;
+        }
+
+        video {
+            width: 100%;
+        }
+    }
 
     @media screen and (max-width: 767px) {
-        .container-90 {}
+        .container-90 {
+
+            .content {
+                .apply {
+                    min-width: 225px;
+                    font-size: 18px;
+                    margin: 30px auto;
+                    padding: 5px;
+                }
+            }
+
+            .youtube-link {
+                font-size: 60px;
+            }
+
+            video {
+                width: 100%;
+            }
+        }
     }
 
 }

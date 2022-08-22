@@ -12,7 +12,7 @@
 .container-90,
 .footer-content-container .footer,
 .formsParent .adForm,
-#comp_1648263954270,
+#comp_1656770070828,
 .parts2021,
 .parts-vdp {
     @media screen and (min-width: 768px) {
@@ -20,9 +20,9 @@
     }
 }
 
-.header-2-nav {
+.header-3-nav {
     @media screen and (min-width: 768px) {
-        .bottom {
+        .left {
             width: var(--left-fixed-menu-width);
             background-color: var(--bg);
             position: fixed;
@@ -132,7 +132,7 @@
                                 }
                             }
 
-                         
+
 
                             &:nth-last-child(1),
                             &:nth-last-child(2),
@@ -272,7 +272,7 @@
                                         &.mega-level-2 {
                                             .level-2-hdr {
                                                 >div {
-                                                 
+
 
                                                     &:nth-child(2) {
                                                         a {
@@ -389,7 +389,7 @@
                     &.mega-level-2 {
                         .level-2-hdr {
                             >div {
-                              
+
 
                                 &:nth-child(2) {
                                     a {

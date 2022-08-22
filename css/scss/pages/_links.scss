@@ -1,0 +1,36 @@
+// Official Rules Page
+.links-page {
+  .brands {
+    .brands-flex-list {
+      width: 92vw;
+      margin: auto;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+
+      li {
+        flex: 1 1 24%;
+        text-align: center;
+        padding: 1vw;
+        max-width: 24%;
+
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+          flex: 1 1 30%;
+          max-width: 30%;
+        }
+
+        @media screen and (max-width: 767px) {
+          flex: 1 1 45%;
+          max-width: 45%;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {}
+
+  @media screen and (max-width: 767px) {}
+}
