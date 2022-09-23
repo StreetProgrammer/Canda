@@ -183,3 +183,21 @@ $(document).ready(function () {
   }, 10000);
 });
 /* Start Handle adding "Got Questions?" link to the menu */
+
+/* Start Handle change text in "eshop/checkout" */
+$(document).ready(function () {
+  console.log('=> ', window.location.href);
+  if (window.location.href.includes('/eshop/checkout')) {
+    setTimeout(() => {
+      $('[data-method="Local Pickup"]').attr('data-method', 'Taha');
+      var oldcontent = $('[data-method="Taha"]').parent().html();
+      var newcontent = oldcontent.replace(
+        'Local Pickup',
+        "in-store pick up at Lockhart's Odyssey"
+      );
+      $('[data-method="Taha"]').parent().html(newcontent);
+      $('[data-method="Taha"]').attr('data-method', 'Local Pickup');
+    }, 5000);
+  }
+});
+/* Start Handle change text in "eshop/checkout" */

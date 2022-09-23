@@ -1,0 +1,42 @@
+._about-us-content {
+    .container-90 {
+        p {
+            font-size: 1.75vw;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {}
+
+            p {
+                font-size: 1.5vw;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container-90 {
+            p {
+                font-size: 18px;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {}
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}

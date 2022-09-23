@@ -546,7 +546,7 @@
                       background-color: var(--gray-3);
                       color: var(--main-font-color);
                       background-image: none !important;
-                      font-size: 1vw;
+                      font-size: 1.25vw;
                       font-weight: 500;
                       padding: 10px;
                       text-decoration: none;
@@ -807,7 +807,7 @@
           position: relative;
           display: flex;
           flex-direction: column;
-          width: auto;
+          width: 15vh;
           height: auto;
           // background-color: var(--white);
           font-size: 14px;
@@ -818,6 +818,10 @@
 
           i {
             font-size: 200%;
+          }
+
+          img {
+            max-height: 100%;
           }
         }
 
@@ -831,7 +835,7 @@
             align-items: center;
 
             img {
-              max-width: 100px;
+              max-width: 100%;
             }
 
             &::after {

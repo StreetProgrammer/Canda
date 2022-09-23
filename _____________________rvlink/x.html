@@ -1,0 +1,375 @@
+<div class="wrapper row" id="post-ad-wrapper">
+    <div class="col-xs-12 col-md-12">
+        <p class="req-p">*Required fields</p>
+    </div>
+
+    <div class="col-xs-12 col-sm-12">
+        <div class="group"><input class="required" name="Name" placeholder=" " type="text" /> <label
+                class="m-label">Name</label> <span class="required-astriks">*</span></div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12">
+        <div class="group"><input class="email required" name="Email" placeholder=" " type="text" /> <label
+                class="m-label">Email</label> <span class="required-astriks">*</span></div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12">
+        <div class="group"><input class="required" name="Address" placeholder=" " type="text" /> <label
+                class="m-label">Address</label> <span class="required-astriks">*</span></div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12">
+        <div class="group"><input class="required" name="Phone Number" placeholder=" " type="text" /> <label
+                class="m-label">Phone Number</label> <span class="required-astriks">*</span></div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12">
+        <div class="group">
+            <h4 class="text-center">Ad Information</h4>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+        <div class="group"><input name="Title" placeholder=" " type="text" /> <label class="m-label">Title</label> <span
+                class="required-astriks">*</span></div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">&nbsp;</div>
+
+    <div class="col-xs-12 col-sm-6">
+        <div class="group"><input name="Price" placeholder=" " type="text" /> <label class="m-label">Price</label> <span
+                class="required-astriks">*</span></div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+        <div class="group"><input name="Year" placeholder=" " type="text" /> <label class="m-label">Year</label> <span
+                class="required-astriks">*</span></div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+        <div class="group"><input name="Make" placeholder=" " type="text" /> <label class="m-label">Make</label> <span
+                class="required-astriks">*</span></div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+        <div class="group"><input name="Model" placeholder=" " type="text" /> <label class="m-label">Model</label> <span
+                class="required-astriks">*</span></div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12">
+        <div class="group"><textarea name="Description" rows="5" type="textarea"></textarea><label>Description</label>
+        </div>
+    </div>
+
+    <div class="col-xs-12  col-sm-12">
+        <div class="group borderd">
+            <span>Attach Files</span>
+            <input accept="image/*" class="required limitphotos" id="images" name="images" type="file" />
+            <label class="file-input-label hidden" for="images">
+                <i class="fas fa-plus">&nbsp;</i> Select a file
+            </label>
+        </div>
+
+        <p>Please be sure to upload a minimum of 4 images.</p>
+    </div>
+    <!--  -->
+    <style type="text/css">
+        *,
+        :before,
+        :after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            margin: 0 !important;
+            padding: 0 !important;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .wrapper p {
+            color: #2D2D2D;
+            font-weight: 400;
+        }
+
+        .wrapper .req-p {
+            margin-right: 2vw;
+            text-align: right;
+            font-size: 14px !important;
+        }
+
+        @media screen and (max-width: 767px) {
+            .wrapper .req-p {
+                margin: 40px 0;
+            }
+        }
+
+        .group {
+            position: relative;
+            margin: 25px 0;
+            padding: 0;
+            margin-right: 2vw;
+        }
+
+        .group.borderd {
+            border: 1px solid #E5E5E5;
+            border-radius: 4px;
+            min-height: 100px;
+            height: 10vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1.25vw;
+        }
+
+        .group.borderd label {
+            position: unset;
+            cursor: pointer;
+            width: 150px;
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 10px 5px;
+            text-align: center;
+            color: #2D2D2D;
+        }
+
+        .group label,
+        .group h4 {
+            color: #7A7A7A
+        }
+
+        .group label.error {
+            top: 100%;
+            color: #ce1f2b;
+            font-size: 16px !important;
+        }
+
+        @media screen and (max-width: 767px) {
+            .group {
+                margin: 25px 0;
+            }
+        }
+
+        .group textarea {
+            resize: none;
+            color: #7A7A7A;
+            border: 0;
+            border-bottom: 1px solid #7A7A7A;
+        }
+
+        input {
+            background: none;
+            color: #7A7A7A;
+            font-size: 18px;
+            padding: 10px 10px 10px 5px;
+            display: block;
+            width: 100%;
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid #7A7A7A;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        input:focus~label.m-label,
+        input:not(:placeholder-shown)~label.m-label,
+        input.error~label.m-label {
+            top: -14px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        input:focus~.bar:before {
+            width: 100%;
+        }
+
+        textarea {
+            background: none;
+            color: #000;
+            font-size: 18px;
+            padding: 10px 10px 10px 5px;
+            display: block;
+            width: 100%;
+            border-radius: 0;
+            border: 1px solid #000;
+        }
+
+        textarea:focus {
+            outline: none;
+        }
+
+        textarea:focus~label {
+            top: -14px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        textarea:focus~.bar:before {
+            width: 100%;
+        }
+
+        label {
+            color: #000;
+            font-size: 16px;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+            left: 5px;
+            top: 10px;
+            -webkit-transition: 300ms ease all;
+            transition: 300ms ease all;
+        }
+
+        .bar {
+            position: relative;
+            display: block;
+            width: 100%;
+        }
+
+        .bar:before {
+            content: '';
+            height: 2px;
+            width: 0;
+            bottom: 0px;
+            position: absolute;
+            background: #777;
+            -webkit-transition: 300ms ease all;
+            transition: 300ms ease all;
+            left: 0%;
+        }
+
+        .flex-checkboxes {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        .flex-checkboxes .checkboxe-item {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            justify-self: center;
+            padding: 10px 0;
+        }
+
+        @media screen and (min-width: 768px) {
+            .flex-checkboxes .checkboxe-item {
+                -webkit-box-flex: 1;
+                -ms-flex: 1 1 25%;
+                flex: 1 1 25%;
+            }
+        }
+
+        @media screen and (min-width: 420px) and (max-width: 767px) {
+            .flex-checkboxes .checkboxe-item {
+                -webkit-box-flex: 1;
+                -ms-flex: 1 1 50%;
+                flex: 1 1 50%;
+            }
+        }
+
+        .flex-checkboxes .checkboxe-item .checkbox-lbl {
+            position: relative;
+            top: auto;
+            margin: 0;
+            color: #000;
+            cursor: pointer;
+            pointer-events: all;
+            font-size: 16px;
+        }
+
+        .flex-checkboxes .checkboxe-item input[type=checkbox],
+        .flex-checkboxes .checkboxe-item input[type=radio] {
+            width: auto;
+            margin: 0;
+        }
+
+        #Buttons {
+            float: left;
+            padding: 0;
+            clear: both;
+            padding-bottom: 10px;
+        }
+
+        #Buttons .SendCopyCheck {
+            display: none;
+        }
+
+        #Buttons .btn.btn-default {
+            display: none;
+        }
+
+        #Buttons .btn.btn-primary {
+            border-radius: 0;
+            background-color: #000;
+            font-size: 18px;
+            text-transform: uppercase;
+            border: 0 !important;
+            padding: 15px 20px;
+        }
+
+        .required-astriks {
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            color: red;
+        }
+
+        #imgList li {
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+    <!--  -->
+    <script>
+        $(function () {
+            setTimeout(() => {
+                const targetNode = document.getElementById('Filelist');
+                const config = {
+                    attributes: true,
+                    childList: true,
+                    subtree: true
+                };
+
+                var fireErr = false;
+                var formBtn = $('input[type=submit]');
+                const callback = function (mutationList, observer) {
+                    // Use traditional 'for loops' for IE 11
+                    for (const mutation of mutationList) {
+                        if (mutation.type === 'childList') {
+                            console.log('A child node has been added or removed.');
+                            if ($('#imgList').length && $('ul#imgList li').length < 4 &&
+                                fireErr === false) {
+                                console.log($('ul#imgList li').length, formBtn);
+                                alert("Please be sure to upload a minimum of 4 images.");
+                                formBtn.attr("disabled", true);
+                                fireErr = true
+                            }
+                            if ($('#imgList').length && $('ul#imgList li').length >= 4) {
+                                formBtn.attr("disabled", false);
+                            }
+                        }
+                    }
+                    fireErr = false
+                };
+                const observer = new MutationObserver(callback);
+                observer.observe(targetNode, config);
+
+            }, 1000);
+        });
+    </script>
+</div>
