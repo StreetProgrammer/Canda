@@ -1,0 +1,177 @@
+.header {
+    background-color: var(--dark-gray);
+
+    .header-container {
+        display: flex;
+
+        .header-logo {}
+
+        .header-phone-address {
+            // padding-left: 4vw;
+
+            flex: 1 1 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            max-width: 25%;
+
+            .phone-no {
+                a {
+                    font-weight: 700;
+                    color: var(--gray-3);
+                    font-size: 2.5vw;
+                    margin-bottom: 0.5vw;
+                    display: block;
+                }
+            }
+
+            .address {
+                a {
+                    font-size: 0.97222222222222vw;
+                    color: var(--gray-8);
+                    text-align: right;
+                    display: flex;
+                }
+            }
+        }
+
+        .header-social-hours {
+            .hours {
+                border-bottom: 1px solid var(--gray-8);
+                margin-bottom: 1vw;
+
+                ul {
+                    padding: 0;
+
+                    li.dropdown {
+                        a.dropdown-toggle {
+                            display: flex;
+                            flex-direction: column;
+                            color: var(--gray-8);
+                            align-items: center;
+
+                            .hours-ttl {
+                                font-size: 1.25vw;
+                                font-weight: 700;
+                            }
+
+                            #t_hour {
+                                font-size: 0.97222222222222vw;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .top-hours {
+                            margin: 0;
+                            padding: 0;
+                            border-radius: 0;
+                            border: 0;
+                            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+                            li {
+                                min-width: 275px;
+                                background-color: var(--white);
+                                color: var(--main-color);
+                                padding: 0.5vw 1vw;
+                                display: flex;
+                                justify-content: space-between;
+                                transition: all ease-in-out 0.2s;
+                                font-size: 1vw;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .social {
+                display: flex;
+                justify-content: space-around;
+
+                a {
+                    color: var(--gray-8);
+
+                    i {
+                        color: inherit;
+                    }
+                }
+            }
+        }
+
+        .yamaha-logo {
+            a {
+                display: flex;
+                flex-direction: column;
+                color: var(--gray-8);
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    margin-bottom: 0.5vw;
+                }
+            }
+        }
+    }
+}
+
+#footer-mobile {
+    .yamaha-dealer {
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+
+            span {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            img {
+                max-width: 50%;
+                aspect-ratio: 3/1;
+            }
+        }
+    }
+}
+
+.parts-brands a {
+    display: block;
+    border: 0.1vw solid #ccc;
+    padding: 1.2vw;
+    line-height: 8vw;
+    margin-bottom: 2vw;
+}
+
+.Under-Construction {
+    h3 {
+        margin-top: 5vw;
+        text-align: center;
+        color: var(--gray-222);
+
+        span {
+            color: var(--main-color);
+        }
+    }
+}
+
+.container-90 {
+    width: 90vw !important;
+
+    &.padd-0 {
+        div[class^='col-'] {
+            padding: 0;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 95vw !important;
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+    }
+
+    .row {
+        margin: 0;
+    }
+}
