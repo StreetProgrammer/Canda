@@ -6,8 +6,8 @@
     <meta name="keywords" content="">
     <title>Seamasters | Master the water</title>
     <script type="text/javascript" async=""
-        src="https://www.gstatic.com/recaptcha/releases/vP4jQKq0YJFzU6e21-BGy3GP/recaptcha__en.js"
-        crossorigin="anonymous" integrity="sha384-vs3dl3wt0sr1NSmWE/o2E71r7EDd6e3fFXEmu4tyET7uqtZw1URcwd3+DYJQtrMg">
+        src="https://www.gstatic.com/recaptcha/releases/NJPGLzpIZgjszqyOymHUP0XR/recaptcha__en.js"
+        crossorigin="anonymous" integrity="sha384-ALtiHf0DOZRoBKnCKTk/SlH3koiTb5V8tXxijiVbKfgMusXfsD91H2zPixteloxy">
     </script>
     <script type="text/javascript" async=""
         src="https://www.googletagmanager.com/gtag/js?id=G-VS1J9H8TT6&amp;l=dataLayer&amp;cx=c"></script>
@@ -1665,6 +1665,15 @@
     <script type="text/javascript" top="">
         window.website_settings = {
             "set_enable_ecommerce": "1",
+            "set_monday_hours": "8 am to 5 pm",
+            "set_tuesday_hours": "8 am to 5 pm",
+            "set_wednesday_hours": "8 am to 5 pm",
+            "set_thursday_hours": "8 am to 5 pm",
+            "set_friday_hours": "8 am to 5 pm",
+            "set_sunday_hours": "Closed",
+            "set_saturday_hours": "Closed",
+            "set_phone_number": "(902) 468-2029",
+            "set_phone_number2": "(902) 468-5143",
             "website_name": "Seamasters Marine Services",
             "conversion_label": "",
             "google_tag": "G-VS1J9H8TT6"
@@ -1843,7 +1852,7 @@
             }
         }
     </script>
-    <script src="/js/custom/front_end.js.php?sid=1001404&amp;pid=55560&amp;time=1665523801" type="text/javascript">
+    <script src="/js/custom/front_end.js.php?sid=1001404&amp;pid=55560&amp;time=1666889868" type="text/javascript">
     </script>
     <link rel="canonical" href="http://simplywebeditor.com/We-Buy-Boats/">
     <script type="application/ld+json">
@@ -1917,6 +1926,14 @@
             width: 100%;
             flex-wrap: wrap;
             transform: none !important
+        }
+
+        .summerText {
+            display: none;
+        }
+
+        .cke_editable .slider-overlay {
+            display: none;
         }
 
         div#html_1662748797522 {
@@ -2084,6 +2101,10 @@
         }
 
         @media(max-width:767px) {
+            #quote-form {
+                width: 100% !important;
+            }
+
             .shopping-cart {
                 font-size: 4.8vw !important;
             }
@@ -2149,7 +2170,7 @@
             left: auto !important;
             background-repeat: no-repeat;
             background: #fff;
-            background-size: 1.251303441084463vw;
+            background-size: 1.25130344084463vw;
             padding: 2.25vw;
             background-position: 50% !important;
             box-shadow: 0px 10px 10px #00000029;
@@ -2256,7 +2277,8 @@
 
         #page_55562 .blueText,
         #page_55563 .blueText,
-        #page_55567 .blueText {
+        #page_55567 .blueText,
+        .blueText {
             color: #294383;
             font-size: 2.5vw;
         }
@@ -2265,7 +2287,8 @@
 
             #page_55562 .blueText,
             #page_55563 .blueText,
-            #page_55567 .blueText {
+            #page_55567 .blueText,
+            .blueText {
                 font-size: 6.5vw;
             }
         }
@@ -3507,7 +3530,7 @@
         .video-image {
             position: relative;
             overflow: hidden;
-            z-index: -1;
+            z-index: 0;
         }
 
         .video-image {
@@ -3524,8 +3547,7 @@
         }
 
         .slider-container {
-            position: absolute;
-            height: 41vw;
+            height: auto;
             width: 100%;
             top: 0;
             left: 0;
@@ -3565,7 +3587,7 @@
         }
 
         .serviceText {
-            background-image: url(/site-uploads/1001404/Images/image_12.png)
+            background-image: url(/site-uploads/1001404/Images/image_12.png);
         }
 
         .contactUs {
@@ -3578,23 +3600,47 @@
             background-position: center;
         }
 
-        .slider-overlay {
+        .serviceText,
+        .contactUs,
+        .family-txt {
+            background-image: unset !important;
+        }
+
+        #comp_1665443331193 .carousel.slide::before {
+            display: block;
+            content: "";
+            width: 100%;
             position: absolute;
             height: 75%;
             z-index: 1;
             top: 25%;
-            /*background-image: linear-gradient(180deg, #DDAF8800 0%, #F5EBE2FC 76%, #F7F7F7 100%); old style */
-            background-image: linear-gradient(180deg, #DDAF8800 40%, #F5EBE2FC 96%, #F7F7F7 100%);
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(247, 247, 247, 0)), to(#f7f7f7));
+            background-image: linear-gradient(180deg, rgba(247, 247, 247, 0), #f7f7f7);
             background-position: 0% 0%;
             background-repeat: no-repeat;
             background-size: 100%;
-            /* background-image: url("../images/seamasters-summerdreams@2x.png"), linear-gradient(180deg, #DDAF8800 0%, #F5EBE2FC 76%, #F7F7F7 100%); */
+        }
+
+        .slider-overlay {
+            display: block;
+            content: "";
+            width: 100%;
+            position: absolute;
+            height: 75%;
+            z-index: 1;
+            top: 25%;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(247, 247, 247, 0)), to(#f7f7f7));
+            background-image: linear-gradient(180deg, rgba(247, 247, 247, 0), #f7f7f7);
+            background-position: 0% 0%;
+            background-repeat: no-repeat;
+            background-size: 100%;
         }
 
         .slider-content,
         .video-content {
             z-index: 1;
             margin-top: -11vw;
+            position: relative;
         }
 
         .video-play {
@@ -3606,6 +3652,7 @@
             transform: translate(-50%, -50%);
             box-shadow: 0px 10px 20px #00000029;
             transition: 0.2s opacity;
+            background: #f7f7f7;
         }
 
         .video-play i {
@@ -3621,6 +3668,16 @@
         }
 
         /*brands*/
+        #page_55116 .brand-shop {
+            margin-top: 8.3333333333333vw;
+        }
+
+        @media screen and (max-width :768px) {
+            #page_55116 .brand-shop {
+                margin-top: 25vw;
+            }
+        }
+
         .brand-shop h2,
         .featured-product h2 {
             letter-spacing: 0.15vw;
@@ -3866,6 +3923,7 @@
         #searchbtn,
         .modal-content {
             border-radius: 0.5rem;
+            height: 100%;
         }
 
         #searchbox {
@@ -3898,7 +3956,7 @@
             }
 
             .staff {
-                margin-top: 70vw;
+                margin-top: 10vw;
             }
 
             .navbar-toggle {
@@ -4027,7 +4085,7 @@
             /*shops by brands*/
             .brand-shop h2,
             .featured-product h2 {
-                margin-bottom: 3vw;
+                margin-bottom: 8vw;
             }
 
             .brand-item {
@@ -4323,6 +4381,7 @@
             background-color: white !important;
             padding: 2vw 1.5vw !important;
             margin-bottom: 1vw !important;
+            /*max-width: 20vw !important;*/
         }
 
         #comp_1653986545925 ul li .text-info {
@@ -4436,11 +4495,11 @@
             font-family: 'Open Sans', sans-serif;
         }
 
-        .add-to-cart-btn.deposit-to-cart {
+        .add-to-cart-btn {
             background-color: #3a9648 !important;
         }
 
-        .add-to-cart-btn.deposit-to-cart:hover {
+        .add-to-cart-btn:hover {
             background-position: right bottom;
             opacity: 0.8
         }
@@ -4497,6 +4556,90 @@
                 padding: 15px 0px !important;
             }
         }
+
+        ._topSec .video-image {
+            margin: 0 !important;
+        }
+
+        @media (min-width: 768px) {
+            ._flex-container.contactUsContent {
+                max-width: 50vw;
+                margin: 4vw auto;
+            }
+
+            ._flex-container.contactUsContent h3 {
+                padding: 2vw 0vw 0vw !important
+            }
+
+            ._flex-container.contactUsContent .content-wrapper {
+                margin-top: 2vw;
+                font-size: 1.2vw
+            }
+
+            ._flex-container.contactUsContent .content-wrapper>div {
+                margin-bottom: 2vw
+            }
+
+            ._flex-container.contactUsContent .content-wrapper b {
+                font-weight: bold
+            }
+
+            .contactUsContent hr {
+                border-top: 1px solid #979797;
+                width: 60%
+            }
+        }
+
+        @media (max-width: 767px) {
+            ._flex-container.contactUsContent {
+                max-width: 90%;
+                margin: auto
+            }
+
+            ._flex-container.contactUsContent h3 {
+                padding: 2vw 0vw 0vw !important
+            }
+
+            ._flex-container.contactUsContent .content-wrapper {
+                margin-top: 2vw;
+                font-size: 16px
+            }
+
+            ._flex-container.contactUsContent .content-wrapper>div {
+                margin-bottom: 2vw
+            }
+
+            ._flex-container.contactUsContent .content-wrapper b {
+                font-weight: bold
+            }
+
+            .contactUsContent hr {
+                border-top: 1px solid #979797;
+                width: 90%
+            }
+        }
+
+        ._404-container>div {
+            width: 80%;
+            margin: 5vw auto auto auto;
+            background-color: #E8E8E8;
+            padding: 2vw;
+            border-radius: 20px
+        }
+
+        ._404-container>div p {
+            text-align: center;
+            color: #231f20;
+            font-family: GilroyBold
+        }
+
+        ._404-container>div p a {
+            text-decoration: underline
+        }
+
+        #quote-form {
+            width: 35.5vw !important;
+        }
     </style>
     <meta name="generator" content="Created by :Simply Web Editor , simplywebeditor.com">
     <script type="text/javascript" src="http://cdn.ckeditor.com/4.11.1/full/config.js?t=IA8F"></script>
@@ -4513,9 +4656,9 @@
         href="http://cdn.ckeditor.com/4.11.1/full/plugins/wsc/skins/moono-lisa/wsc.css">
     <link rel="stylesheet" type="text/css"
         href="http://cdn.ckeditor.com/4.11.1/full/plugins/copyformatting/styles/copyformatting.css">
-    <script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/50/8/common.js">
+    <script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/50/11/common.js">
     </script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/50/8/util.js">
+    <script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/50/11/util.js">
     </script>
 </head>
 
@@ -4523,7 +4666,7 @@
     id="page_55560">
     <div id="parent" class="editable-container">
         <div class="row">
-            <div id="HeaderDiv" class="droppableHtml droppableComp col-md-12 ui-sortable">
+            <div id="HeaderDiv" class="droppableHtml droppableComp col-md-12 ui-sortable ui-sortable-disabled">
                 <div ppanel="htmlContainer" class="movableHtml common_element ui-sortable-handle"
                     data-component-htmlcontainer="" data-com-id="htmlContainer" id="html_1653986400014">
                     <div contenteditable="true" class="contentHtml" style="position: relative;">
@@ -4543,7 +4686,6 @@
                                                     EVENTS</a></li>
                                             <li class="pl-1 pr-1"><a href="/WE-BUY-BOATS">WE BUY BOATS</a></li>
                                             <li class="pl-1 pr-1"><a href="/FINANCING">FINANCING</a></li>
-                                            <li class="pl-1 pr-1"><a href="/ABOUT">ABOUT</a></li>
                                             <li class="pl-1 pr-1"><a href="/CONTACT-US">CONTACT US</a></li>
                                         </ul>
                                     </div>
@@ -4555,6 +4697,8 @@
                             </div>
                         </div>
                         <!-- Header Top End-->
+
+                        <p>&nbsp;</p>
                     </div>
                 </div>
                 <div ppanel="Website Menu" class="movableComp contentComp common_element ui-sortable-handle"
@@ -4655,8 +4799,6 @@
                                             <a href="/page/display/siteId/1001404/pageId/56601">Workboats </a></li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="/page/display/siteId/1001404/pageId/56599">Parts &amp; Accessories</a></li>
                                 <li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                                         aria-expanded="false" href="/page/display/siteId/1001404/pageId/57381">Customer
@@ -4667,9 +4809,13 @@
                                         <li>
                                             <a href="/page/display/siteId/1001404/pageId/55560">We Buy Boats </a></li>
                                         <li>
-                                            <a href="/page/display/siteId/1001404/pageId/55764">Sales </a></li>
+                                            <a href="/page/display/siteId/1001404/pageId/58312">Sales </a></li>
                                         <li>
-                                            <a href="/page/display/siteId/1001404/pageId/55766">Warranty </a></li>
+                                            <a href="/page/display/siteId/1001404/pageId/58313">Warranty </a></li>
+                                        <li>
+                                            <a href="/page/display/siteId/1001404/pageId/58314">Returns </a></li>
+                                        <li>
+                                            <a href="/page/display/siteId/1001404/pageId/58315">FAQs </a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
@@ -4681,7 +4827,7 @@
                                             <a href="/page/display/siteId/1001404/pageId/58307">News &amp; Events </a>
                                         </li>
                                         <li>
-                                            <a href="/page/display/siteId/1001404/pageId/58306">Our Story </a></li>
+                                            <a href="/page/display/siteId/1001404/pageId/58760">Our Story </a></li>
                                         <li>
                                             <a href="/page/display/siteId/1001404/pageId/58305">Careers </a></li>
                                         <li>
@@ -4699,29 +4845,53 @@
             </div>
         </div>
         <div class="row">
-            <div id="LeftDiv" class="droppableComp droppableHtml col-md-2 ui-sortable hidden" style=""></div>
-            <div id="CenterDiv" class="droppableComp droppableHtml col-md-12 ui-sortable" style="">
-
+            <div id="LeftDiv" class="droppableComp droppableHtml col-md-2 ui-sortable hidden ui-sortable-disabled"
+                style=""></div>
+            <div id="CenterDiv" class="droppableComp droppableHtml col-md-12 ui-sortable ui-sortable-disabled" style="">
                 <div ppanel="htmlContainer" class="movableHtml ui-sortable-handle" data-component-htmlcontainer=""
                     data-com-id="htmlContainer" id="html_1655725548320">
                     <div contenteditable="true" class="contentHtml" style="position: relative;">
                         <div class="w-100 mb-8 relative _topSec">
-                            <div class="relative"><img alt="2021 AR195 Sapphire Action 10@2x" class="w-100"
-                                    loading="lazy" src="/site-uploads/1001404/Images/image_20.png">
+                            <div class="video-image relative m-0"><img alt="2021 AR195 Sapphire Action 10@2x"
+                                    class="w-100" loading="lazy" src="/site-uploads/1001404/Images/We Buy Boats.jpg">
                                 <div class="slider-overlay absolute w-100 h-100">&nbsp;</div>
 
                                 <div class="serviceText absolute w-100">&nbsp;</div>
+                            </div>
+
+                            <div class="video-content txt-c pl-8 pr-8">
+
+                            </div>
+
+                            <div class="video-content txt-c pl-8 pr-8">
+                                <p class="text-darker font-size-xl gilroy-bold col_7 m-auto">Looking to sell a used
+                                    boat?
+                                </p>
+
+                                <h2 class="text-darker font-size-md gilroy mb-1 blueText">
+                                    We Buy Boats
+                                </h2>
+                                <p>
+
+                                    <br>
+                                    Do you have a barnicle collector at your house? We'd love to see it! Schedule an
+                                    assessment from our team and we'd be happy to provide a fair value quote for the
+                                    purchase of your vessel. <strong>We only accept models that are no more than 10
+                                        years old.</strong><br>
+                                    <br>
+                                    Submit an assessment request below and our team will follow up to confirm an
+                                    appointment time. We look forward to hearing from you:
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div ppanel="htmlContainer" class="movableHtml ui-sortable-handle" data-component-htmlcontainer=""
-                    data-com-id="htmlContainer" id="html_1665524030868" style="min-height:50px;">
-                    <div class="contentHtml" contenteditable="true" style="position: relative;">
+                    data-com-id="htmlContainer" id="html_1665524030868">
+                    <div contenteditable="true" class="contentHtml" style="position: relative;">
                         <div class="_flex-container">
-
                             <div class="wpb_wrapper topda col-md-12 col-xs-12">
-                                <h1 style="text-align: center;">We Buy Boats</h1>
+                                <h1 class="hidden" style="text-align: center;">We Buy Boats</h1>
                             </div>
                         </div>
                     </div>
@@ -4751,11 +4921,11 @@
                             }
 
 
-                            $('#form_6345e05943f14').validate({
+                            $('#form_635ab88c8c42b').validate({
                                 submitHandler: function (e) {
                                     //e.preventDefault();
                                     var g_recaptcha_response = $(
-                                        '#form_6345e05943f14 .g-recaptcha-response').val();
+                                        '#form_635ab88c8c42b .g-recaptcha-response').val();
 
                                     if (!g_recaptcha_response && 1) {
                                         Swal.fire({
@@ -4779,10 +4949,10 @@
                                                 'send_to': 'GT'
                                             });
                                         }
-                                        var comId = $('#form_6345e05943f14').find('.comp_id').val();
+                                        var comId = $('#form_635ab88c8c42b').find('.comp_id').val();
 
                                         var data = new FormData(document.getElementById(
-                                            'form_6345e05943f14'));
+                                            'form_635ab88c8c42b'));
                                         //console.log(window.AttachmentArray,data );
                                         //var files = {};
                                         //files = [];
@@ -4856,7 +5026,7 @@
                         })
                     </script>
                     <div class="formsParent">
-                        <form class="myForm" id="form_6345e05943f14" onsubmit="return false;" novalidate="novalidate">
+                        <form class="myForm" id="form_635ab88c8c42b" onsubmit="return false;" novalidate="novalidate">
                             <!-- Start Form -->
                             <div class="adForm container-fluid">
                                 <h2 class="col-sm-12">Contact Information</h2>
@@ -5102,10 +5272,11 @@
                     </div>
                 </div>
             </div>
-            <div id="RightDiv" class="droppableComp droppableHtml col-md-2 ui-sortable hidden" style=""></div>
+            <div id="RightDiv" class="droppableComp droppableHtml col-md-2 ui-sortable hidden ui-sortable-disabled"
+                style=""></div>
         </div>
         <div class="row">
-            <div id="FooterDiv" class="droppableHtml droppableComp col-md-12 ui-sortable">
+            <div id="FooterDiv" class="droppableHtml droppableComp col-md-12 ui-sortable ui-sortable-disabled">
                 <div ppanel="htmlContainer" class="movableHtml common_element ui-sortable-handle"
                     data-component-htmlcontainer="" data-com-id="htmlContainer" id="html_1655725004424">
                     <div contenteditable="true" class="contentHtml" style="position: relative;">
@@ -5179,27 +5350,27 @@
                                                     <tbody>
                                                         <tr>
                                                             <td><strong class="gilroy-bold pr-2">Monday</strong></td>
-                                                            <td><span class="set_monday_hours gilroy">8:00 am - 5:00
+                                                            <td><span class="set_monday_hours gilroy">8 am to 5
                                                                     pm</span></td>
                                                         </tr>
                                                         <tr>
                                                             <td><strong class="gilroy-bold pr-2">Tuesday</strong></td>
-                                                            <td><span class="set_tuesday_hours gilroy">8:00 am - 5:00
+                                                            <td><span class="set_tuesday_hours gilroy">8 am to 5
                                                                     pm</span></td>
                                                         </tr>
                                                         <tr>
                                                             <td><strong class="gilroy-bold pr-2">Wednesday</strong></td>
-                                                            <td><span class="set_wednesday_hours gilroy">8:00 am - 5:00
+                                                            <td><span class="set_wednesday_hours gilroy">8 am to 5
                                                                     pm</span></td>
                                                         </tr>
                                                         <tr>
                                                             <td><strong class="gilroy-bold pr-2">Thursday</strong></td>
-                                                            <td><span class="set_thursday_hours gilroy">8:00 am - 5:00
+                                                            <td><span class="set_thursday_hours gilroy">8 am to 5
                                                                     pm</span></td>
                                                         </tr>
                                                         <tr>
                                                             <td><strong class="gilroy-bold pr-2">Friday</strong></td>
-                                                            <td><span class="set_friday_hours gilroy">8:00 am - 5:00
+                                                            <td><span class="set_friday_hours gilroy">8 am to 5
                                                                     pm</span></td>
                                                         </tr>
                                                         <tr>
@@ -5325,13 +5496,16 @@
                                         <ul>
                                             <li class="p-1/2"><a href="/News-&amp;-Events">News &amp; Events</a></li>
                                             <li class="p-1/2"><a
-                                                    href="/page/display/?siteId=1001404&amp;pageId=55762">Our Story</a>
+                                                    href="/page/display/?siteId=1001404&amp;pageId=58760">Our Story</a>
                                             </li>
                                             <li class="p-1/2"><a
-                                                    href="/page/display/?siteId=1001404&amp;pageId=55763">Careers</a>
+                                                    href="/page/display/?siteId=1001404&amp;pageId=58305">Careers</a>
                                             </li>
                                             <li class="p-1/2"><a
-                                                    href="/page/display/?siteId=1001404&amp;pageId=55563">Contact Us</a>
+                                                    href="/page/display/?siteId=1001404&amp;pageId=58144">Promotions</a>
+                                            </li>
+                                            <li class="p-1/2"><a
+                                                    href="/page/display/?siteId=1001404&amp;pageId=57382">Contact Us</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -5350,15 +5524,15 @@
                                                     href="/page/display/?siteId=1001404&amp;pageId=55560">We Buy
                                                     Boats</a></li>
                                             <li class="p-1/2"><a
-                                                    href="/page/display/?siteId=1001404&amp;pageId=55764">Sales</a></li>
+                                                    href="/page/display/?siteId=1001404&amp;pageId=58312">Sales</a></li>
                                             <li class="p-1/2"><a
-                                                    href="/page/display/?siteId=1001404&amp;pageId=55765">Returns</a>
+                                                    href="/page/display/?siteId=1001404&amp;pageId=58314">Returns</a>
                                             </li>
                                             <li class="p-1/2"><a
-                                                    href="/page/display/?siteId=1001404&amp;pageId=55766">Warranty</a>
+                                                    href="/page/display/?siteId=1001404&amp;pageId=58313">Warranty</a>
                                             </li>
                                             <li class="p-1/2"><a
-                                                    href="/page/display/?siteId=1001404&amp;pageId=55767">FAQs</a></li>
+                                                    href="/page/display/?siteId=1001404&amp;pageId=58315">FAQs</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -5392,7 +5566,7 @@
                                             <div class="search-content d_flex f_ver-c f_hor-b"><input
                                                     class="pt-1 pb-1 text-secondary" id="searchbox"
                                                     placeholder="What are you looking for?" type="text"><button
-                                                    class="p-1 text-secondary" id="searchbtn" onclick="srch2()"
+                                                    class="p-1 text-secondary" id="searchbtn" onclick="srch()"
                                                     type="button"><i aria-hidden="true"
                                                         class="fas fa-search text-secondary">&nbsp;</i></button></div>
 

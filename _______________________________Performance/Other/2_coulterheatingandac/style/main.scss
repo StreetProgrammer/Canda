@@ -1,0 +1,61 @@
+:root {
+  /*colors*/
+  --main-color: #DB0A00;
+  --secondary-color: #29324E;
+  --main-font-color: #333;
+  --gray-222: #222222;
+  --trans-m-color: #dea731b8;
+  --body: #282828;
+  --gray: #DDD;
+  --gray-2: #CFCFCF;
+  --gray-3: #F1F1F1;
+  --gray-4: #5E5E5E;
+  --gray-5: #313131;
+  --gray-6: #7A7A7A;
+  --gray-7: #D2D2D2;
+  --gray-8: #D5D5D5;
+  --gray-9: #2D2D2D;
+  --gray-10: #F9F9F9;
+  --gray-11: #555;
+  --gray-12: #777;
+  --gray-13: #E5E5E5;
+  --gray-14: #64656A;
+  --footer-gray: #1A1A1A;
+  --black: #000;
+  --black-2: #0C1421;
+  --white: #fff;
+  --facebook: #4267B2;
+  --twitter: #1DA1F2;
+  --instagram: #FB3958;
+  --linkedin: #0E76A8;
+
+  --yamaha-red: #D52B1E;
+  --black: #000;
+  --y-gray-4: #bcbdbc;
+  --y-gray-10: #616365;
+  --racing-blue: #0a2d82;
+  /* Fonts*/
+}
+
+.carousel-inner {
+  a {
+    img {
+      aspect-ratio: 256/75;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+
+/*end forms */
+
+.map-img {
+  aspect-ratio: 3/2;
+  width: 100%;
+  height: 100%;
+}
+
+@import "./yamaha";
+@import "./scss/normal";
+@import "./scss/light-2021";

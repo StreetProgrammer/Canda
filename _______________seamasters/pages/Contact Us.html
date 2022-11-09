@@ -1852,7 +1852,7 @@
             }
         }
     </script>
-    <script src="/js/custom/front_end.js.php?sid=1001404&amp;pid=55563&amp;time=1665678684" type="text/javascript">
+    <script src="/js/custom/front_end.js.php?sid=1001404&amp;pid=55563&amp;time=1666632274" type="text/javascript">
     </script>
     <link rel="canonical" href="http://simplywebeditor.com/Contact-Us/">
     <script type="application/ld+json">
@@ -3574,7 +3574,7 @@
         }
 
         .serviceText {
-            background-image: url(/site-uploads/1001404/Images/image_12.png)
+            background-image: url(/site-uploads/1001404/Images/image_12.png);
         }
 
         .contactUs {
@@ -3587,17 +3587,22 @@
             background-position: center;
         }
 
+        .serviceText,
+        .contactUs,
+        .family-txt {
+            background-image: unset !important;
+        }
+
         .slider-overlay {
             position: absolute;
             height: 75%;
             z-index: 1;
             top: 25%;
-            /*background-image: linear-gradient(180deg, #DDAF8800 0%, #F5EBE2FC 76%, #F7F7F7 100%); old style */
-            background-image: linear-gradient(180deg, #DDAF8800 40%, #F5EBE2FC 96%, #F7F7F7 100%);
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(247, 247, 247, 0)), to(#f7f7f7));
+            background-image: linear-gradient(180deg, rgba(247, 247, 247, 0), #f7f7f7);
             background-position: 0% 0%;
             background-repeat: no-repeat;
             background-size: 100%;
-            /* background-image: url("../images/seamasters-summerdreams@2x.png"), linear-gradient(180deg, #DDAF8800 0%, #F5EBE2FC 76%, #F7F7F7 100%); */
         }
 
         .slider-content,
@@ -3615,6 +3620,7 @@
             transform: translate(-50%, -50%);
             box-shadow: 0px 10px 20px #00000029;
             transition: 0.2s opacity;
+            background: #f7f7f7;
         }
 
         .video-play i {
@@ -4036,7 +4042,7 @@
             /*shops by brands*/
             .brand-shop h2,
             .featured-product h2 {
-                margin-bottom: 3vw;
+                margin-bottom: 8vw;
             }
 
             .brand-item {
@@ -4332,6 +4338,7 @@
             background-color: white !important;
             padding: 2vw 1.5vw !important;
             margin-bottom: 1vw !important;
+            max-width: 20vw !important;
         }
 
         #comp_1653986545925 ul li .text-info {
@@ -4482,21 +4489,6 @@
             width: 70vw;
         }
 
-        @media (min-width: 768px) {
-            ._flex-container.contactUsContent {
-                max-width: 70vw;
-                margin: auto
-            }
-
-            ._flex-container.contactUsContent .content-wrapper b {
-                font-weight: bold
-            }
-
-            ._flex-container.contactUsContent hr {
-                border-top: 1px solid #979797
-            }
-        }
-
         @media(max-width:767px) {
             #detailsParentDiv .ad-details-content {
                 width: 90vw;
@@ -4521,6 +4513,86 @@
                 padding: 15px 0px !important;
             }
         }
+
+        ._topSec .video-image {
+            margin: 0 !important;
+        }
+
+        @media (min-width: 768px) {
+            ._flex-container.contactUsContent {
+                max-width: 50vw;
+                margin: 4vw auto;
+            }
+
+            ._flex-container.contactUsContent h3 {
+                padding: 2vw 0vw 0vw !important
+            }
+
+            ._flex-container.contactUsContent .content-wrapper {
+                margin-top: 2vw;
+                font-size: 1.2vw
+            }
+
+            ._flex-container.contactUsContent .content-wrapper>div {
+                margin-bottom: 2vw
+            }
+
+            ._flex-container.contactUsContent .content-wrapper b {
+                font-weight: bold
+            }
+
+            .contactUsContent hr {
+                border-top: 1px solid #979797;
+                width: 60%
+            }
+        }
+
+        @media (max-width: 767px) {
+            ._flex-container.contactUsContent {
+                max-width: 90%;
+                margin: auto
+            }
+
+            ._flex-container.contactUsContent h3 {
+                padding: 2vw 0vw 0vw !important
+            }
+
+            ._flex-container.contactUsContent .content-wrapper {
+                margin-top: 2vw;
+                font-size: 16px
+            }
+
+            ._flex-container.contactUsContent .content-wrapper>div {
+                margin-bottom: 2vw
+            }
+
+            ._flex-container.contactUsContent .content-wrapper b {
+                font-weight: bold
+            }
+
+            .contactUsContent hr {
+                border-top: 1px solid #979797;
+                width: 90%
+            }
+        }
+
+        ._404-container>div {
+            width: 80%;
+            margin: 5vw auto auto auto;
+            background-color: #E8E8E8;
+            padding: 2vw;
+            border-radius: 20px
+        }
+
+        ._404-container>div p {
+            text-align: center;
+            color: #231f20;
+            font-family: GilroyBold
+        }
+
+        ._404-container>div p a {
+            text-decoration: underline
+        }
     </style>
     <meta name="generator" content="Created by :Simply Web Editor , simplywebeditor.com">
     <script type="text/javascript" src="http://cdn.ckeditor.com/4.11.1/full/config.js?t=IA8F"></script>
@@ -4537,10 +4609,6 @@
         href="http://cdn.ckeditor.com/4.11.1/full/plugins/wsc/skins/moono-lisa/wsc.css">
     <link rel="stylesheet" type="text/css"
         href="http://cdn.ckeditor.com/4.11.1/full/plugins/copyformatting/styles/copyformatting.css">
-    <script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/50/9/common.js">
-    </script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/50/9/util.js">
-    </script>
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1078.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1065.0"
@@ -4733,22 +4801,18 @@
                 <div ppanel="htmlContainer" class="movableHtml ui-sortable-handle" data-component-htmlcontainer=""
                     data-com-id="htmlContainer" id="html_1655725548320">
                     <div contenteditable="true" class="contentHtml" style="position: relative;">
-                        <div class="w-100 mt-8 mb-8 relative contactSec">
-                            <div class="relative"><img alt="2021 AR195 Sapphire Action 10@2x" class="w-100"
-                                    loading="lazy" src="/site-uploads/1001404/Images/image_13.png">
+                        <div class="w-100 mb-8 relative _topSec">
+                            <div class="video-image relative m-0">
+                                <img alt="2021 AR195 Sapphire Action 10@2x" class="w-100" loading="lazy"
+                                    src="/site-uploads/1001404/Images/Contact.jpg">
                                 <div class="slider-overlay absolute w-100 h-100">&nbsp;</div>
 
                                 <div class="contactUs absolute w-100">&nbsp;</div>
                             </div>
 
-                            <div class="video-content txt-c gilroy-bold pl-8 pr-8">
-                                <h2 class="text-darker font-size-xl mb-1 blueText">Contact us</h2>
-
-                                <p class="text-darker font-size-md gilroy col_7 m-auto">Pellentesque eget interdum
-                                    lacus. Sed cursus odio ut sagittis hendrerit. Fusce mattis orci sit amet eros
-                                    sollicitudin tincidunt. Nam volutpat neque vitae velit congue vehicula. Mauris quis
-                                    libero at lorem rutrum venenatis. Phasellus vulputate a urna non tempus. Vestibulum
-                                    ac egestas risus.</p>
+                            <div class="video-content txt-c pl-8 pr-8">
+                                <h2 class="text-darker font-size-md gilroy mb-1">Secondary Text</h2>
+                                <p class="text-darker font-size-xl gilroy-bold col_7 m-auto">Main Text</p>
                             </div>
                         </div>
                     </div>
@@ -4762,8 +4826,7 @@
                             </div>
 
                             <div class="wpb_wrapper col-md-6 col-xs-12 content-wrapper">
-                                <div>
-                                    <b>DARTMOUTH</b>
+                                <div><b>DARTMOUTH</b>
 
                                     <p>100 Marketplace Drive, Dartmouth, NS B3B 0M8</p>
 
@@ -4772,18 +4835,16 @@
                                     <p>Fax: (902) 468-5143</p>
                                 </div>
 
-                                <div>
-                                    <b>Hours:</b>
+                                <div><b>Hours:</b>
 
-                                    <p>Monday to Friday: <span class="set_monday_hours">&nbsp;</span></p>
+                                    <p>Monday to Friday: <span class="set_monday_hours">8 am to 5 pm</span></p>
 
-                                    <p>Saturday: <span class="set_sunday_hours">&nbsp;</span></p>
+                                    <p>Saturday: <span class="set_sunday_hours">Closed</span></p>
                                 </div>
                             </div>
 
                             <div class="wpb_wrapper col-md-6 col-xs-12 content-wrapper">
-                                <div>
-                                    <b>SAINT JOHN</b>
+                                <div><b>SAINT JOHN</b>
 
                                     <p>901 Ashburn Road, Saint John, NB E2K 5J9</p>
 
@@ -4791,12 +4852,12 @@
 
                                     <p>Fax: (506) 633-0520</p>
                                 </div>
-                                <div>
-                                    <b>Hours:</b>
 
-                                    <p>Monday to Friday: <span class="set_monday_hours">&nbsp;</span></p>
+                                <div><b>Hours:</b>
 
-                                    <p>Saturday: <span class="set_sunday_hours">&nbsp;</span></p>
+                                    <p>Monday to Friday: <span class="set_monday_hours">8 am to 5 pm</span></p>
+
+                                    <p>Saturday: <span class="set_sunday_hours">Closed</span></p>
                                 </div>
                             </div>
                         </div>
@@ -4831,11 +4892,11 @@
                             }
 
 
-                            $('#form_6348324eb2387').validate({
+                            $('#form_6356ca52d6f1e').validate({
                                 submitHandler: function (e) {
                                     //e.preventDefault();
                                     var g_recaptcha_response = $(
-                                        '#form_6348324eb2387 .g-recaptcha-response').val();
+                                        '#form_6356ca52d6f1e .g-recaptcha-response').val();
 
                                     if (!g_recaptcha_response && 1) {
                                         Swal.fire({
@@ -4859,10 +4920,10 @@
                                                 'send_to': 'GT'
                                             });
                                         }
-                                        var comId = $('#form_6348324eb2387').find('.comp_id').val();
+                                        var comId = $('#form_6356ca52d6f1e').find('.comp_id').val();
 
                                         var data = new FormData(document.getElementById(
-                                            'form_6348324eb2387'));
+                                            'form_6356ca52d6f1e'));
                                         //console.log(window.AttachmentArray,data );
                                         //var files = {};
                                         //files = [];
@@ -4936,7 +4997,7 @@
                         })
                     </script>
                     <div class="formsParent">
-                        <form class="myForm" id="form_6348324eb2387" onsubmit="return false;" novalidate="novalidate">
+                        <form class="myForm" id="form_6356ca52d6f1e" onsubmit="return false;" novalidate="novalidate">
                             <div class="adForm container-fluid">
                                 <h2 class="col-sm-12">Contact Information</h2>
                                 <div class="col-sm-6 formField"><label class="sr-only" for="exampleInputEmail3">First

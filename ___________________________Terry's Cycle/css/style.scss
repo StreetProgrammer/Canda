@@ -1,20 +1,3 @@
-@font-face {
-    font-family: 'DIN';
-    src: url(/site-uploads/1001379/Fonts/DIN.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'DIN'Bold;
-    src: url(/site-uploads/1001379/Fonts/DIN-PRO-700-Bold.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'DIN'Normal;
-    src: url(/site-uploads/1001379/Fonts/DINMedium.ttf) format('truetype');
-}
-
-
-
 :root {
     --main-color: #D52B1E;
     --secondary-color: #DDDDDD;
@@ -72,6 +55,74 @@
 body {
     font-size: 1vw;
     height: auto !important;
+
+    a {
+        color: var(--main-color);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--black);
+        }
+    }
+
+    p {
+        font-size: 1.25vw;
+        font-family: var(--main-font);
+
+        @media screen and (max-width: 776px) {
+            font-size: 16px;
+        }
+
+        &.gray {
+            color: var(--gray-4);
+        }
+    }
+
+    ul,
+    li {
+        font-size: 1.25vw;
+        font-family: var(--main-font);
+
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            font-size: 1.75vw;
+        }
+
+        @media screen and (max-width: 776px) {
+            font-size: 16px;
+        }
+    }
+
+    h4 {
+        font-size: 1.5vw;
+
+        @media screen and (max-width: 776px) {
+            font-size: 18px;
+        }
+    }
+
+    h3 {
+        font-size: 1.75vw;
+
+        @media screen and (max-width: 776px) {
+            font-size: 20px;
+        }
+    }
+
+    h2 {
+        font-size: 2vw;
+
+        @media screen and (max-width: 776px) {
+            font-size: 22px;
+        }
+    }
+
+    h1 {
+        font-size: 2.25vw;
+
+        @media screen and (max-width: 776px) {
+            font-size: 24px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -81,6 +132,7 @@ body {
 
     .breadcrumbParent {
         display: block !important;
+        margin-bottom: 5vw;
     }
 
     .breadcrumbParent .breadcrumb {
@@ -103,7 +155,7 @@ body {
         margin-top: 20px;
     }
 
-    #nav_63648 {
+    #nav_63720 {
         background-color: #fff !important;
     }
 
@@ -818,6 +870,7 @@ a {
 
 .header-container img {
     width: 10vw;
+    height: 100%;
 }
 
 .header-container i {
@@ -841,6 +894,7 @@ a {
 
 .header-logo img {
     width: 19vw;
+    height: 100%;
 }
 
 @media(max-width:767px) {
@@ -925,7 +979,7 @@ a {
     }
 }
 
-#nav_63648 {
+#nav_63720 {
     width: 100% !important;
     background: #000000;
 }
@@ -936,7 +990,7 @@ a {
 
 .navbar-nav {
     flex-direction: row;
-    margin: 0 4vw;
+    margin: 0 3vw;
     width: 100% !important
 }
 
@@ -945,15 +999,14 @@ a {
     margin: 0 !important
 }
 
-#nav_63648 li a {
+#nav_63720 li a {
     color: #D5D5D5;
     font-weight: 700;
     text-shadow: none !important;
     text-transform: uppercase;
     transition: .3s border ease-out;
-    padding: 1.4vw 2.25vw;
+    padding: 1.4vw 2vw;
     font-size: 1.1vw;
-    font-family: DIN Bold;
 }
 
 @media (min-width:767px) {
@@ -1005,7 +1058,7 @@ a {
 }
 
 @media (max-width: 767px) {
-    #nav_63648 li a {
+    #nav_63720 li a {
         font-size: 4vw !important;
         padding: 2.5vw 2.8vw !important;
         // text-align: end;
@@ -1314,7 +1367,7 @@ a {
     position: relative;
 }
 
-.description-section a.youtube {
+.description-section a._youtube {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1417,6 +1470,7 @@ a {
 
 .description-section .col-md-6 img {
     width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 770px) {
@@ -1602,6 +1656,7 @@ a {
     margin: auto;
     display: block;
     width: 1.8vw;
+    height: 100%;
 }
 
 .side-nav-logos ul li span {
@@ -1853,6 +1908,10 @@ strong {
 
 .footer-bottom__elem a {
     color: #dedede;
+
+    &::hover {
+        color: var(--white);
+    }
 }
 
 .footer-bottom p,
@@ -2099,6 +2158,14 @@ strong {
 }
 
 /*breadcrumb */
+
+/* breadcrumbParent hidden in home page */
+#page_57999 {
+    .breadcrumbParent {
+        display: none;
+    }
+}
+
 .breadcrumbParent {
     min-height: 60px;
     display: flex;
@@ -2108,6 +2175,7 @@ strong {
     padding: 1.2vw 5vw;
     font-weight: 600;
     background: #F1F1F1;
+    margin-bottom: 2vw;
 }
 
 .breadcrumbParent h2 {
@@ -2541,7 +2609,7 @@ strong {
 #normal_vdp .rt-action-btn,
 #normal_vdp .accord-btn {
     padding: 0.6vw;
-    color: #333333 !important;
+    color: var(--black) !important;
     border-radius: 0px !important;
     text-align: left;
     padding: 1vw 2vw;
@@ -2550,6 +2618,10 @@ strong {
     background: linear-gradient(180deg, #FFFFFF 0%, #F1F1F1 100%);
     border: 1px solid #CFCFCF;
     font-family: DIN Bold !important;
+
+    &.request-quote-btn {
+        color: var(--white) !important;
+    }
 
 }
 
@@ -2631,7 +2703,9 @@ strong {
 }
 
 .price-box .primary {
-    color: #000 !important;
+    color: var(--black) !important;
+    font-family: var(--main-font);
+    text-transform: uppercase;
 }
 
 .back-btn {
@@ -2653,6 +2727,14 @@ strong {
 .model-details-content {
     padding: 3vw !important;
     width: 92vw !important;
+
+    .img-tag {
+        transform: rotate(0deg) !important;
+        background-color: #4AAD04 !important;
+        top: 20px !important;
+        left: 2% !important;
+        width: auto !important;
+    }
 }
 
 .stock-num span {

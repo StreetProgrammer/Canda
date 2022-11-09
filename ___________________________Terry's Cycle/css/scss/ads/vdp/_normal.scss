@@ -1,0 +1,449 @@
+#normal_vdp {
+  width: 90vw;
+  font-family: var(--main-font);
+  display: flex;
+  flex-wrap: wrap;
+
+  div.back-btn {
+    font-size: 1.1111111111111vw;
+    font-weight: 500;
+    width: 50%;
+    border: 1px solid var(--gray-8);
+    border-right: 0;
+    border-bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 0.5vw 1vw;
+
+    a {
+      color: var(--secondary-color);
+
+      span {
+        color: inherit;
+      }
+    }
+  }
+
+  .stock-num {
+    color: var(--secondary-color);
+    font-size: 1.1111111111111vw;
+    font-weight: 500;
+    width: calc(16.66666667% - 25px);
+    border: 1px solid var(--gray-8);
+    border-left: 0;
+    border-bottom: 0;
+    text-align: right;
+    padding: 0.5vw 1vw;
+  }
+
+  #model-left-content {
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 15px;
+
+    .rmv-ph-padding {
+      border: 1px solid var(--gray-8);
+      margin: 0;
+    }
+
+    .model-tabs {
+      .tab-content {
+        #model-accordion {
+          .panel {
+            a.accord-btn {
+              // background: linear-gradient(180deg, rgba(255, 255, 255, 0) 41.15%, rgba(221, 221, 221, 0.25) 100%);
+              background-color: var(--secondary-color) !important;
+              border: 1px solid #DDDDDD;
+              color: var(--gray-2) !important;
+              // font-family: Barlow;
+              font-weight: 600;
+              font-size: 1.1111111111111vw;
+
+              .glyphicon {
+                color: var(--gray-2) !important;
+                display: none;
+              }
+
+              &::before {
+                content: "\f068";
+                font-family: "FontAwesome";
+                margin-right: 1vw;
+                font-size: 75%;
+              }
+
+              &.collapsed {
+                background-color: var(--gray-8) !important;
+                color: var(--secondary-color) !important;
+
+                &::before {
+                  content: "\f067";
+                  font-family: "FontAwesome";
+                }
+              }
+            }
+
+            // .accord-btn .glyphicon {
+            //   color: var(--black);
+            // }
+          }
+        }
+      }
+    }
+  }
+
+  #model-right-content {
+    #right-cta-buttons {
+      padding: 1vw;
+      background: var(--white);
+      border: 1px solid var(--gray-8);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+
+      .price-box {
+        .our-price-div {
+          float: right;
+          align-items: center;
+          font-size: 1.3888888888889vw;
+          color: var(--main-color);
+
+          .our-price {
+            font-size: 0;
+            margin: 0 1vw;
+            font-weight: 600;
+
+            &:before {
+              // content: "Price";
+              font-weight: 600;
+              color: var(--secondary-color);
+            }
+          }
+
+          .primary {
+            font-size: 1.3888888888889vw;
+            // font-weight: 600;
+          }
+        }
+
+        .excludes {
+          display: none;
+        }
+      }
+
+      .CTA-box {
+        a.rt-action-btn {
+          border-radius: 0;
+          text-align: unset;
+          font-weight: 500;
+          font-size: 1.0416666666667vw;
+          text-transform: uppercase;
+          background-color: var(--gray-8);
+          color: var(--secondary-color);
+          transition: all ease-in-out 0.25s;
+
+          span {
+            color: inherit;
+            background-color: inherit;
+          }
+
+          &.request-quote-btn {
+            background-color: var(--main-color);
+            color: var(--white);
+          }
+
+          // hidden
+          &.contact-us-btn,
+          &.view-preowned,
+          &.book-demo {
+            display: none;
+          }
+
+        }
+
+        >.dropdown {
+          >a {
+            border-radius: 0;
+            text-align: unset;
+            font-weight: 500;
+            font-size: 1.0416666666667vw;
+            text-transform: uppercase;
+            background-color: var(--gray-8);
+            color: var(--secondary-color);
+          }
+        }
+      }
+
+    }
+  }
+
+  .dropdown.open {
+    .dropdown-menu.model-shareble {
+      display: flex;
+
+      li {
+        a {
+          padding: 0;
+
+          &:hover,
+          &:focus {
+            background-color: var(--gray);
+          }
+        }
+      }
+    }
+  }
+
+  .dealer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .d-logo {
+      // max-width: 75%;
+    }
+
+    .d-Location {}
+
+    .d-filter {
+      border-radius: 0;
+      text-align: unset;
+      font-weight: 500;
+      font-size: 1.0416666666667vw;
+      text-transform: uppercase;
+      background-color: var(--gray-8);
+      color: var(--secondary-color);
+      width: 100%;
+      padding: 18px 30px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    div.back-btn {
+      font-size: 16px;
+      width: 50%;
+
+      a {
+        color: var(--secondary-color);
+
+        span {
+          color: inherit;
+        }
+      }
+    }
+
+    .stock-num {
+      color: var(--secondary-color);
+      font-size: 16px;
+      width: 50%;
+      padding: 0.5vw 1vw;
+    }
+
+    #model-left-content {
+      padding-right: 0;
+
+      .rmv-ph-padding {
+        border: 1px solid var(--gray-8);
+        margin: 0;
+      }
+
+      .price-box {
+        .our-price-div {
+          float: right;
+          align-items: center;
+          font-size: 1.3888888888889vw;
+          color: var(--main-color);
+
+          .our-price {
+            font-size: 0;
+            margin: 0 1vw;
+            font-weight: 600;
+
+            &:before {
+              // content: "Price";
+              font-weight: 600;
+              color: var(--secondary-color);
+            }
+          }
+
+          .primary {
+            font-size: 16px;
+          }
+        }
+
+        .excludes {
+          // display: none;
+        }
+      }
+
+      .right-cta-buttons {
+        a.rt-action-btn {
+          border-radius: 0;
+          text-align: unset;
+          font-weight: 500;
+          font-size: 16px;
+          text-transform: uppercase;
+          background-color: var(--gray-8);
+          color: var(--secondary-color);
+          transition: all ease-in-out 0.25s;
+
+          span {
+            color: inherit;
+            background-color: inherit;
+          }
+
+          &.request-quote-btn {
+            background-color: var(--main-color);
+            color: var(--white);
+          }
+
+          // hidden
+          &.contact-us-btn,
+          &.view-preowned,
+          &.book-demo {
+            display: none;
+          }
+
+        }
+
+        >.dropdown {
+          >a {
+            border-radius: 0;
+            text-align: unset;
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+            background-color: var(--gray-8);
+            color: var(--secondary-color);
+          }
+        }
+      }
+
+      .model-tabs {
+        .tab-content {
+          #model-accordion {
+            .panel {
+              a.accord-btn {
+                font-size: 16px;
+
+                .glyphicon {
+                  color: var(--gray-2) !important;
+                  display: none;
+                }
+
+                &::before {
+                  font-size: 75%;
+                }
+
+                &.collapsed {
+
+                  &::before {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #model-right-content {
+      #right-cta-buttons {
+        padding: 1vw;
+        background: var(--white);
+        border: 1px solid var(--gray-8);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+
+        .price-box {
+          .our-price-div {
+            float: right;
+            align-items: center;
+            font-size: 1.3888888888889vw;
+            color: var(--main-color);
+
+            .our-price {
+              font-size: 0;
+              margin: 0 1vw;
+              font-weight: 600;
+
+              &:before {
+                // content: "Price";
+                font-weight: 600;
+                color: var(--secondary-color);
+              }
+            }
+
+            .primary {
+              font-size: 1.3888888888889vw;
+              // font-weight: 600;
+            }
+          }
+
+          .excludes {
+            display: none;
+          }
+        }
+
+        .CTA-box {
+          a.rt-action-btn {
+            border-radius: 0;
+            text-align: unset;
+            font-weight: 500;
+            font-size: 1.0416666666667vw;
+            text-transform: uppercase;
+            background-color: var(--gray-8);
+            color: var(--secondary-color);
+            transition: all ease-in-out 0.25s;
+
+            span {
+              color: inherit;
+              background-color: inherit;
+            }
+
+            &.request-quote-btn {
+              background-color: var(--main-color);
+              color: var(--white);
+            }
+
+            // hidden
+            &.contact-us-btn,
+            &.view-preowned,
+            &.book-demo {
+              display: none;
+            }
+
+          }
+
+          >.dropdown {
+            >a {
+              border-radius: 0;
+              text-align: unset;
+              font-weight: 500;
+              font-size: 1.0416666666667vw;
+              text-transform: uppercase;
+              background-color: var(--gray-8);
+              color: var(--secondary-color);
+            }
+          }
+        }
+
+      }
+    }
+
+    .dropdown.open {
+      .dropdown-menu.model-shareble {
+        display: flex;
+
+        li {
+          a {
+            padding: 0;
+
+            &:hover,
+            &:focus {
+              background-color: var(--gray);
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}

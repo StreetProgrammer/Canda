@@ -1,0 +1,22 @@
+.carousel-inner {
+    >a {
+        >img {
+            aspect-ratio: 256/75;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+/*end forms */
+
+.map-img {
+    aspect-ratio: 3/2;
+    width: 100%;
+    height: 100%;
+}
+
+@import "./yamaha";
+@import "./scss/normal";
+@import "./scss/light-2021";
