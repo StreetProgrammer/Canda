@@ -39,3 +39,18 @@ $(function () {
 /* End Handle Fake anchors */
 
 // Website Scripts
+$(function () {
+  // setTimeout(() => {
+  //   if ($('#scroller').length) {
+  //     var slider = $('#scroller').lightSlider();
+  //     var sliderElm = $('#scroller');
+  //     console.log(slider, sliderElm);
+  //     sliderElm.mouseenter(function () {
+  //       slider.pause();
+  //     });
+  //     sliderElm.mouseleave(function () {
+  //       slider.play();
+  //     });
+  //   }
+  // }, 2000);
+});
