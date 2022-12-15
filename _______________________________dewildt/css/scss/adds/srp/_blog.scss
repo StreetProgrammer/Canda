@@ -1,0 +1,328 @@
+.blog-srp {
+    width: 90% !important;
+    padding: 0;
+
+    #products {
+        width: 100%;
+
+        .sortby-row {
+            display: flex;
+
+            >*:not(.col-sm-4) {
+                // display: none;
+            }
+
+            >.col-sm-4,
+            .row {
+                margin: auto;
+                min-width: 40%;
+
+                ul.pagination {
+                    li {
+                        &.active {
+                            a {
+                                background-color: var(--main-color);
+                                border-color: var(--main-color);
+
+                                &:hover {
+                                    color: var(--main-color);
+                                    background-color: #FFF;
+                                    border: 1px solid var(--gray-8);
+                                }
+                            }
+                        }
+
+                        a {
+                            border: 1px solid var(--gray-8);
+
+                            &:hover {
+                                color: var(--main-color);
+                                background-color: #FFF;
+                                border: 1px solid var(--gray-8);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .hidden-xs {
+                width: auto;
+                margin: 0 !important;
+
+                .pull-right {
+
+                    .list-grid-btn {
+                        display: flex;
+
+                        button {
+                            border-color: var(--main-color);
+                            margin: 0 0.5vw 0 0.5vw !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .row {
+            margin: auto;
+            min-width: 40%;
+
+            ul.pagination {
+                li {
+                    &.active {
+                        a {
+                            background-color: var(--main-color);
+                            border-color: var(--main-color);
+
+                            &:hover {
+                                color: var(--main-color);
+                                background-color: #FFF;
+                                border: 1px solid var(--gray-8);
+                            }
+                        }
+                    }
+
+                    a {
+                        border: 1px solid var(--gray-8);
+
+                        &:hover {
+                            color: var(--main-color);
+                            background-color: #FFF;
+                            border: 1px solid var(--gray-8);
+                        }
+                    }
+                }
+            }
+        }
+
+        .item {
+            .thumb.card {
+                border: 3px solid var(--gray-8);
+                border-left: 3px solid var(--main-color);
+                background: #FFF;
+
+                .img-event {
+                    // display: none;
+                }
+
+                .caption {
+                    .title-specs {
+                        h2 {
+                            display: none;
+                        }
+
+                        .date-row {
+                            display: none;
+                        }
+
+                        .stock-num {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #filters {
+        width: 20%;
+        border: 1px solid #DDD;
+        padding: 0 !important;
+        display: none;
+
+        &.modern {
+            &.open {
+                background-color: var(--gray-3);
+            }
+
+            .filters-panel {
+                .filters-inner {
+                    border: 0 !important;
+                    padding: 0;
+
+                    .filter-ttl {
+                        font-size: 1vw;
+                        background: none !important;
+                        display: none;
+
+                        @media screen and (max-width: 960px) {
+                            font-size: 4.3vw;
+                        }
+
+                        .filter-ontrol-btns {
+                            display: none;
+                        }
+                    }
+
+                    .filters-tools {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 0;
+
+                        button {
+                            width: 50%;
+                            padding: 1vw;
+                            transition: all ease-in-out 0.25s;
+
+                            &:hover {
+                                background-color: var(--main-color);
+                                color: var(--white);
+                            }
+                        }
+                    }
+
+                    .filter-collapse-container {
+                        padding: 0;
+
+                        &.active-filter-container {
+                            a.filter-collapse {
+                                background-color: var(--secondary-color);
+                                color: var(--gray-8);
+                            }
+
+                            span.badge.badge-light {
+                                color: var(--white);
+                                // background-color: #FF0000;
+                                background-color: var(--main-color);
+                            }
+
+                            .icon {
+                                background: none !important;
+                            }
+
+                            #ActiveFiltersSection {
+                                .static-filter-active-main {
+                                    .static-filter-active-container {
+                                        margin: auto;
+                                    }
+                                }
+                            }
+                        }
+
+                        a.filter-collapse {
+                            color: var(--secondary-color);
+                            background-color: var(--gray-8);
+                            font-weight: 600;
+                            font-size: 0.97222222222222vw;
+                            transition: all ease-in-out 0.2s;
+                            padding: 1vw;
+
+                            &:hover {
+                                color: var(--main-color);
+                                padding-left: 5px;
+                            }
+
+                            @media screen and (max-width: 767px) {
+                                font-size: 16px;
+                            }
+                        }
+
+                        &::before {
+                            display: none;
+                        }
+
+                        .filters-panel {
+                            .filters-inner {
+                                .filter-ttl {
+                                    .filter-ontrol-btns {
+                                        .filter-close-btn {
+                                            color: var(--black);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .well {
+                margin: 0;
+                padding: 0;
+
+                .checklist-filter {
+                    >ul {
+                        >li {
+                            // height: 45px;
+                            // flex-basis: 47%;
+
+                            label {
+                                position: relative;
+                                width: 100%;
+                                height: 100%;
+                                background-color: var(--gray-3);
+                                border-bottom: 1px solid var(--white);
+                                padding: 0.5vw;
+                                margin: 0;
+                                font-size: 0.97222222222222vw;
+                                color: var(--secondary-color);
+                                font-weight: 400;
+
+                                @media screen and (max-width: 767px) {
+                                    font-size: 14px;
+                                }
+
+                                span.filter-count {
+                                    position: absolute;
+                                    right: 10px;
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    background-color: var(--gray-8);
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    display: none;
+
+                                    .c-arr {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* Price */
+            .Price {
+                .well {
+                    .checklist-filter {
+                        p {
+                            input {
+                                color: var(--white) !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* Odometer */
+            .Odometer {
+                .well {
+                    .checklist-filter {
+                        p {
+                            input {
+                                color: var(--white) !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* Year */
+            .Year {
+                .well {
+                    .checklist-filter {
+                        p {
+                            input {
+                                color: var(--white) !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,257 @@
+/*Start Slider*/
+#comp_1669245649752 {
+
+  width: 75%;
+
+  .container-fluid {
+    // background-color: var(--gray-5);
+    // padding: 5vw 0px 5vw !important;
+
+    >.carousel.slide {
+      width: calc(92% - 3px);
+      margin: auto;
+      // border: 0.5vw solid var(--black);
+      margin-bottom: -1px;
+      position: relative;
+
+      .content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+          font-family: var(--secondary-font);
+          color: var(--white);
+          text-shadow: 1px 1px var(--black);
+          margin: 0;
+          font-size: 3.4722222222222vw;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+
+        h3 {
+          font-family: var(--secondary-font);
+          text-shadow: 1px 1px var(--black);
+          color: var(--white);
+          margin: 0;
+          font-size: 1.5277777777778vw;
+          text-align: center;
+          font-weight: 500;
+          margin-bottom: 1vw;
+          padding: 1vw;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-family: 'Roboto';
+        }
+
+        a {
+          min-width: 20%;
+          font-weight: 500;
+          padding: 10px 35px !important;
+        }
+
+        .btns {
+          display: flex;
+
+          a {
+            margin: 1vw;
+            border-radius: 5px;
+
+            @media screen and (min-width: 1600px) {
+              font-size: 1vw;
+            }
+          }
+        }
+      }
+    }
+
+    .carousel-control {
+      display: none;
+      position: absolute;
+      opacity: 1;
+      background-image: none;
+      color: rgba(255, 255, 255, 0.7);
+      transition: all ease-in 0.3s;
+      width: 50px;
+
+      &:hover {
+        color: var(--black);
+
+        &:after {
+          background-color: var(--main-color);
+          color: var(--white);
+        }
+      }
+
+      &:after {
+        position: absolute;
+        top: 50%;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--main-color);
+        background-color: var(--white);
+        width: 20px;
+        height: 30px;
+        font-size: 40px;
+        transition: all ease-in-out 0.2s;
+      }
+
+      &.right {
+        right: 2vw;
+
+        &:after {
+          font-family: 'Font Awesome 5 Pro';
+          content: "\f138";
+        }
+      }
+
+      &.left {
+        left: 3vw;
+
+        &:after {
+          font-family: 'Font Awesome 5 Pro';
+          content: "\f137";
+        }
+      }
+
+      img {
+        display: none;
+      }
+    }
+
+    .carousel-indicators {
+      margin-left: 0%;
+      display: none;
+
+      li {
+        border-radius: 0;
+        width: 2vw;
+        height: 0.5vw;
+        background-color: rgba(207, 207, 207, 0.8);
+        border: 0;
+        margin: 1px;
+
+        &.active {
+          border-radius: 0;
+          width: 2vw;
+          height: 0.5vw;
+          background-color: var(--secondary-color);
+          border: 0;
+          margin: 1px;
+        }
+      }
+    }
+
+    .carousel-inner {
+      margin-bottom: -1px;
+
+      &>.item {
+        &>img {
+          width: 100%;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          // background-color: rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+
+    .container-fluid {
+
+      >.carousel.slide {
+
+        .content {
+          justify-content: space-between;
+          padding: 60px 20px;
+
+          img {
+            max-width: 25%;
+            margin-bottom: 10px;
+          }
+
+          h1 {
+            font-size: 26px;
+          }
+
+          h3 {
+            font-size: 16px;
+          }
+
+          a {
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .carousel-control {
+
+        &:hover {
+
+          &:after {}
+        }
+
+        &:after {}
+
+        &.right {
+
+          &:after {}
+        }
+
+        &.left {
+
+          &:after {}
+        }
+
+        img {}
+      }
+
+      .carousel-indicators {
+
+        li {
+
+          &.active {}
+        }
+      }
+
+      .carousel-inner {
+        height: 400px;
+
+        &>.item {
+          height: 100%;
+
+          &>img {
+            height: 100%;
+          }
+
+          &:after {}
+        }
+      }
+    }
+  }
+}
+
+/* End Slider*/

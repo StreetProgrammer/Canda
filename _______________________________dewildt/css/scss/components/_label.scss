@@ -1,0 +1,22 @@
+.circle-label {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    border-radius: 50%;
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: var(--main-font-color);
+    color: var(--gray-3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 75%;
+
+    &.red {
+        background-color: var(--main-color);
+        width: 3vw;
+        height: 3vw;
+        font-size: 100%;
+
+    }
+}

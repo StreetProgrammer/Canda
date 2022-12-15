@@ -1871,7 +1871,7 @@
             }
         }
     </script>
-    <script src="/js/custom/front_end.js.php?sid=1001404&amp;pid=55116&amp;time=1667400216" type="text/javascript">
+    <script src="/js/custom/front_end.js.php?sid=1001404&amp;pid=55116&amp;time=1669324430" type="text/javascript">
     </script>
     <link rel="canonical" href="http://simplywebeditor.com/">
     <script type="application/ld+json">
@@ -1912,6 +1912,7 @@
             "GAGT": ["G-VS1J9H8TT6", "G-2RCKJC5BFW"]
         };
     </script> <!-- Start Include -->
+    <script top="" front-src="/site-uploads/1001404/frontjs/speed.js" defer="defer"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap"
@@ -1924,12 +1925,18 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <script top="" src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> <!-- EOF Include -->
+    <meta name="google-site-verification" content="g8xpMrBesJLvBkIkgdlBDUfW-t1Mpq-Q-IA70uGdgvA">
     <style>
         .cke_editable .category-wrapper.swiper-wrapper {
             display: flex;
             width: 100%;
             flex-wrap: wrap;
             transform: none !important
+        }
+
+        .cke_editable .slider-content,
+        .cke_editable .video-content {
+            margin-top: 0
         }
 
         .summerText {
@@ -1956,7 +1963,7 @@
 
         .wpb_wrapper.col-md-6.col-xs-12 h3,
         .wpb_wrapper.col-md-12.col-xs-12 h3 {
-            padding: 4vw 0vw;
+            padding: 2vw 0vw;
             font-weight: 700;
             font-size: 20px;
             color: var(--secondary-blue);
@@ -2032,13 +2039,19 @@
             /*    .navbar .nav li:nth-child(5), .navbar .nav li:nth-child(6), .navbar .nav li:nth-child(7) {    display: none;    */
         }
 
-        #page_55562 .swiper-slide img {
+        body {
+            font-size: 4.25vw;
+        }
+
+        #page_55562 .swiper-slide img,
+        #page_58760 .swiper-slide img {
             max-height: 23.9vw;
             min-height: 23.9vw
         }
         }
 
-        #page_55562 .swiper-slide:hover {
+        #page_55562 .swiper-slide:hover,
+        #page_58760 .swiper-slide:hover {
             transform: translateY(0vw);
         }
 
@@ -2125,7 +2138,8 @@
             margin-right: 35vw;
         }
 
-        #page_55562 .swiper-button-next {
+        #page_55562 .swiper-button-next,
+        #page_58760 .swiper-button-next {
             top: 49% !important;
             border-radius: 0.5rem;
             right: 22vw !important;
@@ -2134,7 +2148,9 @@
         }
 
         @media(max-width:767px) {
-            #page_55562 .swiper-button-next {
+
+            #page_55562 .swiper-button-next,
+            #page_58760 .swiper-button-next {
                 top: 0vw !important;
                 border-radius: 0.5rem;
                 right: -21vw !important;
@@ -2143,7 +2159,8 @@
             }
         }
 
-        #page_55562 .swiper-button-prev {
+        #page_55562 .swiper-button-prev,
+        #page_58760 .swiper-button-prev {
             top: 49% !important;
             right: auto !important;
             left: 22vw !important;
@@ -2152,7 +2169,9 @@
         }
 
         @media(max-width:767px) {
-            #page_55562 .swiper-button-prev {
+
+            #page_55562 .swiper-button-prev,
+            #page_58760 .swiper-button-prev {
                 right: auto !important;
                 left: 4vw !important;
                 position: relative !important;
@@ -2165,7 +2184,8 @@
             }
         }
 
-        #page_55562 .swiper-button-next i {
+        #page_55562 .swiper-button-next i,
+        #page_58760 .swiper-button-next i {
             right: 12vw !important;
             left: auto !important;
             background-repeat: no-repeat;
@@ -2180,17 +2200,20 @@
             transition: 0.2s all !important;
         }
 
-        #page_55562 .swiper-button-next i:before {
+        #page_55562 .swiper-button-next i:before,
+        #page_58760 .swiper-button-next i:before {
             position: relative;
             right: 0.5vw;
         }
 
-        #page_55562 .swiper-button-prev i:before {
+        #page_55562 .swiper-button-prev i:before,
+        #page_58760 .swiper-button-prev i:before {
             position: relative;
             right: 0.5vw;
         }
 
-        #page_55562 .swiper-button-prev i {
+        #page_55562 .swiper-button-prev i,
+        #page_58760 .swiper-button-prev i {
             right: auto !important;
             left: 12vw !important;
             background-repeat: no-repeat;
@@ -2252,30 +2275,36 @@
 
             .adForm.container-fluid input,
             .adForm.container-fluid textarea,
-            .adForm.container-fluid select {
+            .adForm.container-fluid select,
+            .adForm.container-fluid label {
                 font-size: 4vw !important;
             }
         }
 
         /*about */
         #page_55562 .aboutSec,
+        #page_58760 .aboutSec,
         #page_55563 .contactSec,
         #page_55567 .serviceSec,
         ._topSec {
             margin-top: 0;
         }
 
-        #page_55562 .video-play {
+        #page_55562 .video-play,
+        #page_58760 .video-play {
             top: 26%;
         }
 
         @media(max-width:767px) {
-            #page_55562 .video-play {
+
+            #page_55562 .video-play,
+            #page_58760 .video-play {
                 top: 10%;
             }
         }
 
         #page_55562 .blueText,
+        #page_58760 .blueText,
         #page_55563 .blueText,
         #page_55567 .blueText,
         .blueText {
@@ -2287,6 +2316,7 @@
         @media(max-width:767px) {
 
             #page_55562 .blueText,
+            #page_58760 .blueText,
             #page_55563 .blueText,
             #page_55567 .blueText,
             .blueText {
@@ -2294,7 +2324,8 @@
             }
         }
 
-        #page_55562 .quoteSection {
+        #page_55562 .quoteSection,
+        #page_58760 .quoteSection {
             font-size: 2.5vw;
             max-width: 59%;
             margin: 2vw auto;
@@ -2302,19 +2333,24 @@
         }
 
         @media(max-width:767px) {
-            #page_55562 .quoteSection {
+
+            #page_55562 .quoteSection,
+            #page_58760 .quoteSection {
                 font-size: 6.5vw;
                 max-width: 100%;
             }
         }
 
-        #page_55562 .careersAboutSec {
+        #page_55562 .careersAboutSec,
+        #page_58760 .careersAboutSec {
             max-width: 70%;
             margin: 2vw auto;
         }
 
         @media(max-width:767px) {
-            #page_55562 .careersAboutSec {
+
+            #page_55562 .careersAboutSec,
+            #page_58760 .careersAboutSec {
                 margin-top: -10vw;
             }
         }
@@ -2373,7 +2409,7 @@
         }
 
         /*------------------------------------*\       $Reset   \*------------------------------------*/
-        html,
+        htm,
         body,
         div,
         span,
@@ -2457,8 +2493,6 @@
             margin: 0;
             padding: 0;
             border: 0;
-            font-size: 100%;
-            font: inherit;
             vertical-align: baseline;
             box-sizing: border-box;
         }
@@ -2481,7 +2515,8 @@
         body {
             line-height: 1.6;
             font-family: Gilroy;
-            background-color: var(--light-color)
+            background-color: var(--light-color);
+            font-size: 1.1470281543274243vw;
         }
 
         ol,
@@ -3685,7 +3720,7 @@
         }
 
         .brand-item {
-            width: 12vw;
+            width: 15vw;
         }
 
         /*categories slider */
@@ -3701,7 +3736,8 @@
 
         .category-item img {
             border-radius: 0.5rem;
-            width: 100%;
+            width: 100% !important;
+            height: 100% !important;
             object-fit: cover;
             aspect-ratio: 3/4;
         }
@@ -4646,6 +4682,21 @@
         #quote-form {
             width: 35.5vw !important;
         }
+
+        .lin-hgt-1 {
+            line-height: 1;
+        }
+
+        .subscribe-input,
+        .subscribe-input :hover,
+        .subscribe-input:focus {
+            background-color: unset;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+            color: white;
+            transition: 0.2s letter-spacing;
+        }
     </style>
     <meta name="generator" content="Created by :Simply Web Editor , simplywebeditor.com">
     <script type="text/javascript" src="http://cdn.ckeditor.com/4.11.1/full/config.js?t=IA8F"></script>
@@ -4662,9 +4713,9 @@
         href="http://cdn.ckeditor.com/4.11.1/full/plugins/wsc/skins/moono-lisa/wsc.css">
     <link rel="stylesheet" type="text/css"
         href="http://cdn.ckeditor.com/4.11.1/full/plugins/copyformatting/styles/copyformatting.css">
-    <script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/50/11/common.js">
+    <script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/51/1/common.js">
     </script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/50/11/util.js">
+    <script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/51/1/util.js">
     </script>
 </head>
 
@@ -4681,13 +4732,14 @@
                             <div class="show">
                                 <div class="text-secondary font-size-sm d_flex f_hor-b f_ver-c">
                                     <div class="font-normal">
-                                        <p>Message or alert can go here, <span class="txt-underline"> <a href="">link to
-                                                    products or blog posts</a></span></p>
+                                        <p>Featured Product:&nbsp;<a
+                                                href="https://seamasters.ca/New-Pleasure/adid/21533726/Grady-White-Freedom-Saint-John-NB/">
+                                                <span class="txt-underline">Grady White Freedom 275</span></a></p>
                                     </div>
 
                                     <div class="font-bold">
                                         <ul class="d_flex">
-                                            <li class="pl-1 pr-1"><a
+                                            <li class="pl-1 pr-1 hidden"><a
                                                     href="/page/display/?siteId=1001404&amp;pageId=56743">NEWS &amp;
                                                     EVENTS</a></li>
                                             <li class="pl-1 pr-1"><a href="/WE-BUY-BOATS">WE BUY BOATS</a></li>
@@ -4763,11 +4815,21 @@
                                         <li>
                                             <a href="/page/display/siteId/1001404/pageId/56357">Pre Owned </a></li>
                                         <li>
-                                            <a href="/page/display/siteId/1001404/pageId/56358">Pleasure </a></li>
-                                        <li>
                                             <a href="/page/display/siteId/1001404/pageId/55571">Luxury </a></li>
                                         <li>
                                             <a href="/page/display/siteId/1001404/pageId/56362">Watersports </a></li>
+                                        <li>
+                                            <a href="/page/display/siteId/1001404/pageId/59246">Inflatable Boats </a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/display/siteId/1001404/pageId/59247">Fiberglass Boats </a>
+                                        </li>
+                                        <li>
+                                            <a href="/page/display/siteId/1001404/pageId/59249">Pontoon Boats </a></li>
+                                        <li>
+                                            <a href="/page/display/siteId/1001404/pageId/59248">Fishing Boats </a></li>
+                                        <li>
+                                            <a href="/page/display/siteId/1001404/pageId/59240">Electronics </a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
@@ -4802,8 +4864,6 @@
                                             <a href="/page/display/siteId/1001404/pageId/58313">Finance &amp; Protection
                                             </a></li>
                                         <li>
-                                            <a href="/page/display/siteId/1001404/pageId/58314">Returns </a></li>
-                                        <li>
                                             <a href="/page/display/siteId/1001404/pageId/55560">We Buy Boats </a></li>
                                     </ul>
                                 </li>
@@ -4813,12 +4873,7 @@
                                         Us<span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a href="/page/display/siteId/1001404/pageId/58307">News &amp; Events </a>
-                                        </li>
-                                        <li>
                                             <a href="/page/display/siteId/1001404/pageId/58760">Our Story </a></li>
-                                        <li>
-                                            <a href="/page/display/siteId/1001404/pageId/58305">Careers </a></li>
                                         <li>
                                             <a href="/page/display/siteId/1001404/pageId/55563">Contact Us </a></li>
                                     </ul>
@@ -4858,7 +4913,7 @@
                     <div contenteditable="true" class="contentHtml" style="position: relative;">
                         <div class="slider-container w-100">
                             <div class="slider-image">
-                                <!-- <img alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" src="./assets/images/2021_AR195_Sapphire_Action_10@2x.png" class="w-100"> -->
+                                <!-- <img alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" alt="2021 AR195 Sapphire Action 10@2x" src="./assets/images/2021_AR195_Sapphire_Action_10@2x.png" class="w-100"> -->
                                 <div class="hidden slider-overlay absolute w-100 h-100">&nbsp;</div>
 
                                 <div class="hidden summer-dreams absolute w-100">&nbsp;</div>
@@ -4872,7 +4927,7 @@
 
                                 <div class="row-custom f_hor-c mt-1 f_ver-c f-dir"><button
                                         class="mr-2 btn-custom btn-red mt-4 bg-red text-secondary font-size-sm font-bold p-2 pl-4 pr-4"
-                                        onclick="location.href='/Pleasure/'">PLEASURE</button><button
+                                        onclick="location.href='/New-Pleasure/'">PLEASURE</button><button
                                         class="btn-custom btn-transparent mt-4 text-gray font-size-sm font-bold p-2 pl-4 pr-4"
                                         onclick="location.href='/New-Commercial/'">COMMERCIAL</button></div>
                             </div>
@@ -4920,7 +4975,7 @@
                     </script>
                     <script>
                         window.detailsStyle = 'color-is-000000-then-background-color-is-000000-then-font-family-';
-                        window.detailsDisplay = 'normal';
+                        window.detailsDisplay = 'seamaster_units_vdp';
                         window.paramDetailsHeader = 'show';
                         window.taxesDisplay = 'none';
                         window.ESCADSdealerId = '8906';
@@ -4999,35 +5054,9 @@
                                             style="transition-duration: 400ms; transition-timing-function: ease;">
                                             <ul id="scroller"
                                                 class="zz gallery list-unstyled lightSlider lsGrab lSSlide"
-                                                style="width: 3034.4px; transform: translate3d(-1706.85px, 0px, 0px); height: 239.288px; padding-bottom: 0%;">
+                                                style="width: 3226.25px; transform: translate3d(-1814.77px, 0px, 0px); height: 253.031px; padding-bottom: 0%;">
                                                 <li align="center" class="clone left"
-                                                    style="width: 179.65px; margin-right: 10px;">
-                                                    <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/21533898/">
-                                                        <img loading="eager" border="0" width="200" photo_width="228"
-                                                            photo_height="99" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/19339868.jpg?width=200"></a>
-                                                    <div>
-                                                        <span class="text-info center-block text-center">Starcraft SL 14
-                                                        </span>
-                                                        <span class="text-info center-block text-center">
-                                                            <span>Contact for price</span> </span></div>
-                                                </li>
-                                                <li align="center" class="clone left"
-                                                    style="width: 179.65px; margin-right: 10px;">
-                                                    <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/21533816/">
-                                                        <img loading="eager" border="0" width="200" photo_width="1321"
-                                                            photo_height="590" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/19376325.jpg?width=200"></a>
-                                                    <div>
-                                                        <span class="text-info center-block text-center">Sylvan L-3 DLZ
-                                                            BAR </span>
-                                                        <span class="text-info center-block text-center">
-                                                            <span>Contact for price</span> </span></div>
-                                                </li>
-                                                <li align="center" class="clone left"
-                                                    style="width: 179.65px; margin-right: 10px;">
+                                                    style="width: 191.641px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
                                                         href="/randoms/itemid/21455045/">
                                                         <img loading="eager" border="0" width="200" photo_width="768"
@@ -5044,33 +5073,33 @@
                                                             <span>$2000.00</span> </span></div>
                                                 </li>
                                                 <li align="center" class="clone left"
-                                                    style="width: 179.65px; margin-right: 10px;">
+                                                    style="width: 191.641px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/24957128/">
+                                                        href="/randoms/itemid/24957129/">
                                                         <img loading="eager" border="0" width="200" photo_width="768"
                                                             photo_height="622" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/23298415_6.jpg?width=200"></a>
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/23299082_6.jpg?width=200"></a>
                                                     <div>
                                                         <span class="text-info center-block text-center">2023 Yamaha 195
-                                                            FSH Sport Black </span>
+                                                            FSH Sport Mist Grey </span>
                                                         <span class="text-info center-block text-center">
                                                             <span>Contact for price</span> </span></div>
                                                 </li>
                                                 <li align="center" class="clone left"
-                                                    style="width: 179.65px; margin-right: 10px;">
+                                                    style="width: 191.641px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/21533743/">
-                                                        <img loading="eager" border="0" width="200" photo_width="1366"
-                                                            photo_height="545" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/21361613_1.jpg?width=200"></a>
+                                                        href="/randoms/itemid/21533816/">
+                                                        <img loading="eager" border="0" width="200" photo_width="1321"
+                                                            photo_height="590" alt="Random Advertisment"
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/19376325.jpg?width=200"></a>
                                                     <div>
-                                                        <span class="text-info center-block text-center">2022 Skeeter
-                                                            FXR21 APEX </span>
+                                                        <span class="text-info center-block text-center">Sylvan L-3 DLZ
+                                                            BAR </span>
                                                         <span class="text-info center-block text-center">
                                                             <span>Contact for price</span> </span></div>
                                                 </li>
-                                                <li align="center" class="lslide"
-                                                    style="width: 179.65px; margin-right: 10px;">
+                                                <li align="center" class="clone left"
+                                                    style="width: 191.641px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
                                                         href="/randoms/itemid/23800044/">
                                                         <img loading="eager" border="0" width="200" photo_width="768"
@@ -5082,34 +5111,34 @@
                                                         <span class="text-info center-block text-center">
                                                             <span>Contact for price</span> </span></div>
                                                 </li>
-                                                <li align="center" class="lslide"
-                                                    style="width: 179.65px; margin-right: 10px;">
+                                                <li align="center" class="clone left"
+                                                    style="width: 191.641px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/21533898/">
-                                                        <img loading="eager" border="0" width="200" photo_width="228"
-                                                            photo_height="99" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/19339868.jpg?width=200"></a>
+                                                        href="/randoms/itemid/24957128/">
+                                                        <img loading="eager" border="0" width="200" photo_width="768"
+                                                            photo_height="622" alt="Random Advertisment"
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/23298415_6.jpg?width=200"></a>
                                                     <div>
-                                                        <span class="text-info center-block text-center">Starcraft SL 14
-                                                        </span>
+                                                        <span class="text-info center-block text-center">2023 Yamaha 195
+                                                            FSH Sport Black </span>
                                                         <span class="text-info center-block text-center">
                                                             <span>Contact for price</span> </span></div>
                                                 </li>
                                                 <li align="center" class="lslide"
-                                                    style="width: 179.65px; margin-right: 10px;">
+                                                    style="width: 191.641px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/21533816/">
-                                                        <img loading="eager" border="0" width="200" photo_width="1321"
-                                                            photo_height="590" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/19376325.jpg?width=200"></a>
+                                                        href="/randoms/itemid/24962757/">
+                                                        <img loading="eager" border="0" width="200" photo_width="1366"
+                                                            photo_height="1024" alt="Random Advertisment"
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/24962466.jpg?width=200"></a>
                                                     <div>
-                                                        <span class="text-info center-block text-center">Sylvan L-3 DLZ
-                                                            BAR </span>
+                                                        <span class="text-info center-block text-center">Jeanneau NC 795
+                                                            SPORT SERIES 2 </span>
                                                         <span class="text-info center-block text-center">
                                                             <span>Contact for price</span> </span></div>
                                                 </li>
                                                 <li align="center" class="lslide"
-                                                    style="width: 179.65px; margin-right: 10px;">
+                                                    style="width: 191.641px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
                                                         href="/randoms/itemid/21455045/">
                                                         <img loading="eager" border="0" width="200" photo_width="768"
@@ -5124,35 +5153,35 @@
                                                         </span>
                                                         <span class="text-info center-block text-center">
                                                             <span>$2000.00</span> </span></div>
+                                                </li>
+                                                <li align="center" class="lslide"
+                                                    style="width: 191.641px; margin-right: 10px;">
+                                                    <a class="randomAdDetails  center-block text-center"
+                                                        href="/randoms/itemid/24957129/">
+                                                        <img loading="eager" border="0" width="200" photo_width="768"
+                                                            photo_height="622" alt="Random Advertisment"
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/23299082_6.jpg?width=200"></a>
+                                                    <div>
+                                                        <span class="text-info center-block text-center">2023 Yamaha 195
+                                                            FSH Sport Mist Grey </span>
+                                                        <span class="text-info center-block text-center">
+                                                            <span>Contact for price</span> </span></div>
+                                                </li>
+                                                <li align="center" class="lslide"
+                                                    style="width: 191.641px; margin-right: 10px;">
+                                                    <a class="randomAdDetails  center-block text-center"
+                                                        href="/randoms/itemid/21533816/">
+                                                        <img loading="eager" border="0" width="200" photo_width="1321"
+                                                            photo_height="590" alt="Random Advertisment"
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/19376325.jpg?width=200"></a>
+                                                    <div>
+                                                        <span class="text-info center-block text-center">Sylvan L-3 DLZ
+                                                            BAR </span>
+                                                        <span class="text-info center-block text-center">
+                                                            <span>Contact for price</span> </span></div>
                                                 </li>
                                                 <li align="center" class="lslide active"
-                                                    style="width: 179.65px; margin-right: 10px;">
-                                                    <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/24957128/">
-                                                        <img loading="eager" border="0" width="200" photo_width="768"
-                                                            photo_height="622" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/23298415_6.jpg?width=200"></a>
-                                                    <div>
-                                                        <span class="text-info center-block text-center">2023 Yamaha 195
-                                                            FSH Sport Black </span>
-                                                        <span class="text-info center-block text-center">
-                                                            <span>Contact for price</span> </span></div>
-                                                </li>
-                                                <li align="center" class="lslide"
-                                                    style="width: 179.65px; margin-right: 10px;">
-                                                    <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/21533743/">
-                                                        <img loading="eager" border="0" width="200" photo_width="1366"
-                                                            photo_height="545" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/21361613_1.jpg?width=200"></a>
-                                                    <div>
-                                                        <span class="text-info center-block text-center">2022 Skeeter
-                                                            FXR21 APEX </span>
-                                                        <span class="text-info center-block text-center">
-                                                            <span>Contact for price</span> </span></div>
-                                                </li>
-                                                <li align="center" class="clone right"
-                                                    style="width: 179.65px; margin-right: 10px;">
+                                                    style="width: 191.641px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
                                                         href="/randoms/itemid/23800044/">
                                                         <img loading="eager" border="0" width="200" photo_width="768"
@@ -5164,34 +5193,34 @@
                                                         <span class="text-info center-block text-center">
                                                             <span>Contact for price</span> </span></div>
                                                 </li>
-                                                <li align="center" class="clone right"
-                                                    style="width: 179.65px; margin-right: 10px;">
+                                                <li align="center" class="lslide"
+                                                    style="width: 191.641px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/21533898/">
-                                                        <img loading="eager" border="0" width="200" photo_width="228"
-                                                            photo_height="99" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/19339868.jpg?width=200"></a>
+                                                        href="/randoms/itemid/24957128/">
+                                                        <img loading="eager" border="0" width="200" photo_width="768"
+                                                            photo_height="622" alt="Random Advertisment"
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/23298415_6.jpg?width=200"></a>
                                                     <div>
-                                                        <span class="text-info center-block text-center">Starcraft SL 14
-                                                        </span>
+                                                        <span class="text-info center-block text-center">2023 Yamaha 195
+                                                            FSH Sport Black </span>
                                                         <span class="text-info center-block text-center">
                                                             <span>Contact for price</span> </span></div>
                                                 </li>
                                                 <li align="center" class="clone right"
-                                                    style="width: 179.65px; margin-right: 10px;">
+                                                    style="width: 191.641px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/21533816/">
-                                                        <img loading="eager" border="0" width="200" photo_width="1321"
-                                                            photo_height="590" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/19376325.jpg?width=200"></a>
+                                                        href="/randoms/itemid/24962757/">
+                                                        <img loading="eager" border="0" width="200" photo_width="1366"
+                                                            photo_height="1024" alt="Random Advertisment"
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/24962466.jpg?width=200"></a>
                                                     <div>
-                                                        <span class="text-info center-block text-center">Sylvan L-3 DLZ
-                                                            BAR </span>
+                                                        <span class="text-info center-block text-center">Jeanneau NC 795
+                                                            SPORT SERIES 2 </span>
                                                         <span class="text-info center-block text-center">
                                                             <span>Contact for price</span> </span></div>
                                                 </li>
                                                 <li align="center" class="clone right"
-                                                    style="width: 179.65px; margin-right: 10px;">
+                                                    style="width: 191.641px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
                                                         href="/randoms/itemid/21455045/">
                                                         <img loading="eager" border="0" width="200" photo_width="768"
@@ -5208,15 +5237,41 @@
                                                             <span>$2000.00</span> </span></div>
                                                 </li>
                                                 <li align="center" class="clone right"
-                                                    style="width: 179.65px; margin-right: 10px;">
+                                                    style="width: 191.641px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/24957128/">
+                                                        href="/randoms/itemid/24957129/">
                                                         <img loading="eager" border="0" width="200" photo_width="768"
                                                             photo_height="622" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/23298415_6.jpg?width=200"></a>
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/23299082_6.jpg?width=200"></a>
                                                     <div>
                                                         <span class="text-info center-block text-center">2023 Yamaha 195
-                                                            FSH Sport Black </span>
+                                                            FSH Sport Mist Grey </span>
+                                                        <span class="text-info center-block text-center">
+                                                            <span>Contact for price</span> </span></div>
+                                                </li>
+                                                <li align="center" class="clone right"
+                                                    style="width: 191.641px; margin-right: 10px;">
+                                                    <a class="randomAdDetails  center-block text-center"
+                                                        href="/randoms/itemid/21533816/">
+                                                        <img loading="eager" border="0" width="200" photo_width="1321"
+                                                            photo_height="590" alt="Random Advertisment"
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/19376325.jpg?width=200"></a>
+                                                    <div>
+                                                        <span class="text-info center-block text-center">Sylvan L-3 DLZ
+                                                            BAR </span>
+                                                        <span class="text-info center-block text-center">
+                                                            <span>Contact for price</span> </span></div>
+                                                </li>
+                                                <li align="center" class="clone right"
+                                                    style="width: 191.641px; margin-right: 10px;">
+                                                    <a class="randomAdDetails  center-block text-center"
+                                                        href="/randoms/itemid/23800044/">
+                                                        <img loading="eager" border="0" width="200" photo_width="768"
+                                                            photo_height="622" alt="Random Advertisment"
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8906/23544566_3.jpg?width=200"></a>
+                                                    <div>
+                                                        <span class="text-info center-block text-center">2023 Yamaha
+                                                            Super jet White </span>
                                                         <span class="text-info center-block text-center">
                                                             <span>Contact for price</span> </span></div>
                                                 </li>
@@ -5254,7 +5309,8 @@
                                         class="brand-item" href="/page/display/?siteId=1001404&amp;pageId=56369"> <img
                                             alt="Image 2@2x" class="w-75"
                                             src="/site-uploads/1001404/images/Image 2@2x.png"> </a> <a
-                                        class="brand-item" href=""> <img alt="Garmin Logo Version 01 Sm" class="w-75"
+                                        class="brand-item" href="/page/display/?siteId=1001404&amp;pageId=56375"> <img
+                                            alt="Garmin Logo Version 01 Sm" class="w-75"
                                             src="/site-uploads/1001404/images/garmin-logo__version-01-sm.svg"> </a> <a
                                         class="brand-item" href="/page/display/?siteId=1001404&amp;pageId=56367"> <img
                                             alt="Image 6@2x" class="w-75"
@@ -5263,7 +5319,11 @@
                                             src="/site-uploads/1001404/Images/skeeter-logo.png"></a> <a
                                         class="brand-item" href="/page/display/?siteId=1001404&amp;pageId=57906"> <img
                                             alt="Sea Fox" class="w-75"
-                                            src="/site-uploads/1001404/Images/logo12.png"></a></div>
+                                            src="/site-uploads/1001404/Images/logo12.png"></a> <a class="brand-item"
+                                        href="/prestige/"> <img alt="prestige" class="w-75"
+                                            src="/site-uploads/1001404/Images/logo-large2.png"></a> <a
+                                        class="brand-item" href="/zodiac-mil-pro/"> <img alt="zodiacmilpro" class="w-75"
+                                            src="/site-uploads/1001404/Images/logo-milpro-default2.png"></a></div>
                             </div>
                         </div>
                         <!-- Brands End -->
@@ -5350,8 +5410,7 @@
                                         data-swiper-slide-index="2" role="group"
                                         style="width: 356.444px; margin-right: 30px;"><a
                                             href="http://seamasters.simplywebeditor.com/Luxury/"><img
-                                                src="/site-uploads/1001404/images/image 3.png" style="height: 100%;">
-                                        </a>
+                                                src="/site-uploads/1001404/Images/seamaster-luxury.jpg"> </a>
 
                                         <div class="absolute category-heading w-100">
                                             <h3 class="font-size-lg gilroy-bold text-secondary pl-2 pt-4 pb-4 col_8"><a
@@ -5362,9 +5421,10 @@
 
                                     <div aria-label="4 / 8" class="category-item shadow swiper-slide h-100"
                                         data-swiper-slide-index="3" role="group"
-                                        style="width: 356.444px; margin-right: 30px;"><a href=""> <img
-                                                src="/site-uploads/1001404/images/image 4.png" style="height: 100%;">
-                                        </a>
+                                        style="width: 356.444px; margin-right: 30px;"><a
+                                            href="/page/display/?siteId=1001404&amp;pageId=59240"><img
+                                                src="/site-uploads/1001404/Images/seamaster-tech.jpg"
+                                                style="width: 278px; height: 332px;"> </a>
 
                                         <div class="absolute category-heading w-100">
                                             <h3 class="font-size-lg gilroy-bold text-secondary pl-2 pt-4 pb-4 col_8"><a
@@ -5377,8 +5437,7 @@
                                         data-swiper-slide-index="4" role="group"
                                         style="width: 356.444px; margin-right: 30px;"><a
                                             href="http://seamasters.simplywebeditor.com/Protection/"><img
-                                                src="/site-uploads/1001404/images/image 5.png" style="height: 100%;">
-                                        </a>
+                                                src="/site-uploads/1001404/Images/seamaster-protection.jpg"> </a>
 
                                         <div class="absolute category-heading w-100">
                                             <h3 class="font-size-lg gilroy-bold text-secondary pl-2 pt-4 pb-4 col_8"><a
@@ -5466,14 +5525,14 @@
                             <div class="featured-product m-8 gilroy-bold">
                                 <div class="featured-product_content">
                                     <h2 class="txt-c font-size-md text-darker">FEATURED PRODUCT<br>
+                                        <br>
                                         &nbsp;</h2>
 
-                                    <div style="padding-bottom:120px;">
-                                        <p class="fx txt-c">GRADY WHITE</p>
+                                    <div style="padding-bottom: 25vw;">
+                                        <p class="fx txt-c lin-hgt-1">GRADY WHITE</p>
                                     </div>
                                     <img alt="Grady White" class="d_flex m-auto"
-                                        src="/site-uploads/1001404/Images/GradyWhite-crop.png"
-                                        style="height: 300px; width: 937px;">
+                                        src="/site-uploads/1001404/Images/GradyWhite-crop.png">
                                 </div>
 
                                 <div class="w-100 waverunners">
@@ -5534,32 +5593,48 @@
             <div id="FooterDiv" class="droppableHtml droppableComp col-md-12 ui-sortable ui-sortable-disabled">
                 <div ppanel="htmlContainer" class="movableHtml common_element ui-sortable-handle"
                     data-component-htmlcontainer="" data-com-id="htmlContainer" id="html_1655725004424">
-                    <div contenteditable="true" class="contentHtml" style="position: relative;">
+                    <div contenteditable="true" class="contentHtml cke_focus" style="position: relative;">
                         <div>
                             <!-- Footer -->
                             <!-- Footer Top -->
                             <div class="col_custom-5 m-auto text-darker font-bold relative footer-top">
-                                <div class="txt-c font-size-xxl"><a class="m-1/2"> <i
-                                            class="fab fa-instagram social-icon text-red">&nbsp;</i></a> <a
-                                        class="m-1/2"> <i class="fab fa-youtube social-icon text-red">&nbsp;</i></a>
-                                </div>
+                                <div class="txt-c font-size-xxl"><a class="m-1/2"
+                                        href="https://www.facebook.com/seamastersmarine" target="_blank"><i
+                                            class="fab fa-facebook-square social-icon text-red">&nbsp;</i></a> <a
+                                        class="m-1/2" href="https://www.instagram.com/seamastersmarine/"
+                                        target="_blank"> <i class="fab fa-instagram social-icon text-red">&nbsp;</i></a>
+                                    <a class="hidden m-1/2"> <i
+                                            class="fab fa-youtube social-icon text-red">&nbsp;</i></a></div>
 
                                 <div class="txt-c m-1 font-size-sm gilroy-bold">
                                     <p class="latest-products">Keep up to date on the latest news &amp; products</p>
                                 </div>
 
-                                <div id="mc_embed_signup" class="mt-2 mb-2 m-auto">
-
-
-                                    <form
+                                <div class="mt-2 mb-2 m-auto" id="mc_embed_signup">
+                                    <form abframeid="iframe.0.22924951958167683"
+                                        abineguid="8F9D719869C1411F83D29FD60D9F3913"
                                         action="https://seamasters.us21.list-manage.com/subscribe/post?u=83af619eeec99586c7bd47d8a&amp;id=d4635fe37e&amp;f_id=00e4c1e1f0"
-                                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                                        target="_blank" novalidate
-                                        class="validate row-custom subscribe-container shadow">
-                                        <div class="col_7 bg-red d_flex f_hor-c p-1/2">
-                                            <input class="pl-5 p-2 w-100 font-size-md subscribe-input required email"
-                                                placeholder="Enter email address..." required="" type="email" value=""
-                                                name="EMAIL" id="mce-EMAIL" required></div>
+                                        class="validate row-custom subscribe-container shadow"
+                                        id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form"
+                                        novalidate="" target="_blank">
+                                        <div class="col_7 bg-red d_flex f_hor-c p-1/2"><input
+                                                class="pl-5 p-2 w-100 font-size-md subscribe-input required email"
+                                                id="mce-EMAIL" name="EMAIL" placeholder="Enter email address..."
+                                                required="" type="email" value="">
+                                            <div class="pwm-field-icon" id="pwm-inline-icon-84369"
+                                                style="position: absolute !important; width: 18px !important; height: 18px !important; min-height: 0px !important; min-width: 0px !important; z-index: 2147483645 !important; box-shadow: none !important; box-sizing: content-box !important; background: none !important; border: none !important; padding: 0px !important; cursor: pointer !important; outline: none !important; margin-top: 26.7617px; margin-left: 160.406px;">
+                                                <svg style="display: inline-block !important; width: 16px !important; height: 16px !important; fill: rgb(230, 0, 23) !important; margin-top: 0.5px !important; position: absolute !important; top: 0px !important; left: 0px !important;"
+                                                    viewBox="0 0 40 64">
+                                                    <g>
+                                                        <path
+                                                            d="m20,28.12a33.78,33.78 0 0 1 13.36,2.74a22.18,22.18 0 0 1 0.64,5.32c0,9.43 -5.66,17.81 -14,20.94c-8.34,-3.13 -14,-11.51 -14,-20.94a22.2,22.2 0 0 1 0.64,-5.32a33.78,33.78 0 0 1 13.36,-2.74m0,-28.12c-8.82,0 -14,7.36 -14,16.41l0,5.16c2,-1.2 2,-1.49 5,-2.08l0,-3.08c0,-6.21 2.9,-11.41 8.81,-11.41l0.19,0c6.6,0 9,4.77 9,11.41l0,3.08c3,0.58 3,0.88 5,2.08l0,-5.16c0,-9 -5.18,-16.41 -14,-16.41l0,0zm0,22c-6.39,0 -12.77,0.67 -18.47,4a31.6,31.6 0 0 0 -1.53,9.74c0,13.64 8.52,25 20,28.26c11.48,-3.27 20,-14.63 20,-28.26a31.66,31.66 0 0 0 -1.54,-9.77c-5.69,-3.3 -12.08,-4 -18.47,-4l0,0l0.01,0.03z">
+                                                        </path>
+                                                        <path
+                                                            d="m21.23,39.5a2.81,2.81 0 0 0 1.77,-2.59a2.94,2.94 0 0 0 -3,-2.93a3,3 0 0 0 -3,3a2.66,2.66 0 0 0 1.77,2.48l-1.77,4.54l6,0l-1.77,-4.5z">
+                                                        </path>
+                                                    </g>
+                                                </svg></div>
+                                        </div>
 
                                         <div class="col_5 bg-primary d_flex f_ver-c p-1/2">
                                             <p><button
@@ -5699,12 +5774,12 @@
                                             <li class="p-1/2"><a
                                                     href="/page/display/?siteId=1001404&amp;pageId=55571">Luxury</a>
                                             </li>
-                                            <li class="p-1/2"><a
+                                            <li class="p-1/2 hidden"><a
                                                     href="/page/display/?siteId=1001404&amp;pageId=56359">Motors</a>
                                             </li>
-                                            <li class="p-1/2"><a href="/Pumps-&amp;-Generators-Pleasure/">Pumps &amp;
-                                                    Generators</a></li>
-                                            <li class="p-1/2"><a
+                                            <li class="p-1/2 hidden"><a href="/Pumps-&amp;-Generators-Pleasure/">Pumps
+                                                    &amp; Generators</a></li>
+                                            <li class="p-1/2 hidden"><a
                                                     href="/page/display/?siteId=1001404&amp;pageId=56365">Safety</a>
                                             </li>
                                             <li class="p-1/2"><a
@@ -5728,12 +5803,12 @@
                                             <li class="p-1/2"><a
                                                     href="/page/display/?siteId=1001404&amp;pageId=56364">Inflatable
                                                     Liferafts</a></li>
-                                            <li class="p-1/2"><a
+                                            <li class="p-1/2 hidden"><a
                                                     href="/page/display/?siteId=1001404&amp;pageId=56491">Motors</a>
                                             </li>
-                                            <li class="p-1/2"><a href="/Pumps-&amp;-Generators-Commercial/">Pumps &amp;
-                                                    Generators</a></li>
-                                            <li class="p-1/2"><a
+                                            <li class="p-1/2 hidden"><a href="/Pumps-&amp;-Generators-Commercial/">Pumps
+                                                    &amp; Generators</a></li>
+                                            <li class="p-1/2 hidden"><a
                                                     href="/page/display/?siteId=1001404&amp;pageId=56365">Safety</a>
                                             </li>
                                             <li class="p-1/2"><a
@@ -5746,14 +5821,15 @@
                                         <h3 class="font-size-md gilroy-bold pb-1 p-1/2">ABOUT US</h3>
 
                                         <ul>
-                                            <li class="p-1/2"><a href="/News-&amp;-Events">News &amp; Events</a></li>
+                                            <li class="p-1/2 hidden"><a href="/News-&amp;-Events">News &amp; Events</a>
+                                            </li>
                                             <li class="p-1/2"><a
                                                     href="/page/display/?siteId=1001404&amp;pageId=58760">Our Story</a>
                                             </li>
-                                            <li class="p-1/2"><a
+                                            <li class="p-1/2 hidden"><a
                                                     href="/page/display/?siteId=1001404&amp;pageId=58305">Careers</a>
                                             </li>
-                                            <li class="p-1/2"><a
+                                            <li class="p-1/2 hidden"><a
                                                     href="/page/display/?siteId=1001404&amp;pageId=58144">Promotions</a>
                                             </li>
                                             <li class="p-1/2"><a
@@ -5773,18 +5849,18 @@
                                                     href="/page/display/?siteId=1001404&amp;pageId=55561">Financing</a>
                                             </li>
                                             <li class="p-1/2"><a
-                                                    href="/page/display/?siteId=1001404&amp;pageId=55560">We Buy
-                                                    Boats</a></li>
-                                            <li class="p-1/2"><a
                                                     href="/page/display/?siteId=1001404&amp;pageId=58312">Sales</a></li>
-                                            <li class="p-1/2"><a
+                                            <li class="p-1/2 hidden"><a
                                                     href="/page/display/?siteId=1001404&amp;pageId=58314">Returns</a>
                                             </li>
                                             <li class="p-1/2"><a
-                                                    href="/page/display/?siteId=1001404&amp;pageId=58313">Warranty</a>
-                                            </li>
-                                            <li class="p-1/2"><a
+                                                    href="/page/display/?siteId=1001404&amp;pageId=58313">Finance &amp;
+                                                    Protection</a></li>
+                                            <li class="p-1/2 hidden"><a
                                                     href="/page/display/?siteId=1001404&amp;pageId=58315">FAQs</a></li>
+                                            <li class="p-1/2"><a
+                                                    href="/page/display/?siteId=1001404&amp;pageId=55560">We Buy
+                                                    Boats</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -5799,11 +5875,57 @@
                                         style="width: 50%;"></div>
 
                                 <div class="txt-c show"><span>© 2022 Seamasters Services Ltd. | <a href="">Privacy
-                                            Policy</a> | <a href="">Terms &amp; Conditions</a> </span></div>
+                                            Policy</a> | <a data-target="#Login-form" data-toggle="modal"
+                                            data-whatever="@mdo" href="#" type="button">Dealer Login</a> | <a
+                                            href="">Terms &amp; Conditions</a> </span></div>
 
                                 <div class="txt-c hide">
                                     <p class="mb-2"><span>© 2022 Seamasters Services Ltd. </span></p>
                                     <span><a href="">Privacy Policy</a> | <a href="">Terms &amp; Conditions</a> </span>
+                                </div>
+                                <div class="co-logo hidden">
+                                    <a href="https://turnkeywebsolutions.com/" target="_blank">
+
+                                        <img alt="Turnkey Web Solutions" loading="lazy"
+                                            src="/site-uploads/1001404/imagesfooter-logo.svg">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade"
+                                id="Login-form" role="dialog" tabindex="-1">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header"><button aria-label="Close" class="close"
+                                                data-dismiss="modal" type="button"><span
+                                                    aria-hidden="true">×</span></button>
+
+                                            <h4 class="modal-title" id="exampleModalLabel">Dealer Login</h4>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <form abframeid="iframe.0.46425468032754047"
+                                                abineguid="34E4F5CAE1BF4C00A8FDDE82143A3FE0"
+                                                action="https://equipmentsearch.com/index/login/"
+                                                class="container-fluid" id="loginform" method="post" name="login"
+                                                pwmfilled="auto" rel="nofollow" target="_blank">
+                                                <div class="form-group">
+                                                    <div class="col-xs-8 form-group"><input
+                                                            class="form-control input-sm" id="exampleInputEmail1"
+                                                            name="username" placeholder="Username"></div>
+
+                                                    <div class="col-xs-8 form-group"><input
+                                                            class="form-control input-sm" id="exampleInputPassword1"
+                                                            name="password" placeholder="Password" type="password">
+                                                    </div>
+
+                                                    <div class="col-xs-12"><br>
+                                                        <input class="submit btn-danger btn-sm" type="submit"
+                                                            value="Login"></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Footer Bottom End -->
@@ -5852,7 +5974,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <script front-src="/site-uploads/1001404/frontjs/main.js"></script>
+                            <script front-src="/site-uploads/1001404/frontjs/main_v2.js"></script>
                             <script front-src="/site-uploads/1001404/frontjs/code.js"></script>
                             <!--end search modal-->
                         </div>

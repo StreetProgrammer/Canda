@@ -1,0 +1,188 @@
+._home-boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    &._90 {
+        width: 92%;
+        margin: auto;
+    }
+
+    .box {
+        position: relative;
+        margin-bottom: 1px;
+        transition: all ease-in-out 0.25s;
+
+        * {
+            transition: all ease-in-out 0.25s;
+        }
+
+        &._50 {
+            width: 50%;
+        }
+
+        &._30 {
+            width: 33.33333%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--white);
+        }
+
+        .content {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 35%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--white);
+            border: 1px solid var(--white);
+            border-top: 0;
+
+            span {
+                font-weight: 600;
+                font-size: 0.97222222222222vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                &::after {
+                    content: "";
+                    border-bottom: 3px solid;
+                    width: 30%;
+                    margin-top: 0.5vw;
+                    border-radius: 4px;
+
+                }
+
+                &.title {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 1.75vw;
+
+                    &.lower {
+                        text-transform: none;
+                    }
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .inner-content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                color: var(--white);
+            }
+
+            img {
+                width: 30%;
+                height: auto;
+                border: 0;
+            }
+        }
+
+        &:hover {
+            background-color: #000000;
+
+            img {
+                opacity: 0.5;
+            }
+
+            .inner-content {
+                opacity: 1;
+            }
+        }
+
+        &.with_hover {
+            &:hover {
+                .content {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 92%;
+        margin: auto;
+
+        &._90 {
+            width: 92%;
+            margin: auto;
+        }
+
+        .box {
+            position: relative;
+            margin-bottom: 1px;
+
+            &._50 {
+                width: 100%;
+            }
+
+            &._30 {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                border: 1px solid var(--white);
+            }
+
+            .content {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                height: 35%;
+                background-color: rgba(0, 0, 0, 0.7);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: var(--white);
+                border: 1px solid var(--white);
+                border-top: 0;
+
+                span {
+                    font-size: 12px;
+
+                    &::after {
+                        content: "";
+                        // border: 2px solid;
+                        width: 30%;
+                        margin-top: 0.5vw;
+                        border-radius: 4px;
+
+                    }
+
+                    &.title {
+                        font-size: 18px;
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
