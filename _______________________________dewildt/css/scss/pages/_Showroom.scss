@@ -7,7 +7,6 @@
             display: flex;
             padding: 0;
             margin: 0;
-
             li {
                 // margin: 0 35px 20px;
                 padding: 1.5vw;
@@ -15,7 +14,6 @@
                 flex: 1;
                 width: 19%;
                 flex: 0 1 19%;
-
                 a {
                     position: relative;
                     display: flex;
@@ -24,12 +22,10 @@
                     color: var(--body);
                     // height: 15vw;
                     transition: all ease-in-out 0.2s;
-
                     &:hover {
                         border: solid 4px var(--main-color);
                         text-decoration: none;
                     }
-
                     &::before {
                         content: "";
                         display: block;
@@ -43,7 +39,6 @@
                         background-size: cover;
                         transition: all ease-in-out 0.2;
                     }
-
                     .content {
                         position: absolute;
                         z-index: 1;
@@ -61,20 +56,16 @@
                         padding: 0.5vw;
                         color: var(--white);
                         font-weight: bold;
-
                         span {
-
                             &:nth-child(2) {}
                         }
                     }
-
                     img {
                         width: 100%;
                     }
                 }
             }
         }
-
         @media screen and (max-width: 767px) {
             ul {
                 flex-wrap: wrap;
@@ -83,12 +74,10 @@
                 display: flex;
                 padding: 0;
                 margin: 0;
-
                 li {
                     margin: 0;
                     width: 46%;
                     flex: 0 1 46%;
-
                     a {
                         position: relative;
                         display: flex;
@@ -97,12 +86,10 @@
                         color: var(--white);
                         // height: 145px;
                         transition: all ease-in-out 0.2s;
-
                         &:hover {
                             border: solid 4px var(--main-color);
                             text-decoration: none;
                         }
-
                         .content {
                             z-index: 1;
                             display: flex;
@@ -113,14 +100,160 @@
                             font-family: var(--secondary-font);
                             font-size: 3vw;
                             padding: 1.5vw;
-
                             span {
                                 &:nth-child(1) {
                                     font-size: 36px;
                                 }
-
                                 &:nth-child(2) {
                                     font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content-Winterizations {
+    .index-ctas {
+        >ul {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            >li {
+                // margin: 0 35px 20px;
+                padding: 1.5vw;
+                width: auto;
+                flex: 1;
+                width: 30%;
+                flex: 0 1 30%;
+                >a,
+                >div {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    border: solid 4px var(--body);
+                    color: var(--body);
+                    // height: 15vw;
+                    transition: all ease-in-out 0.2s;
+                    &:hover {
+                        border: solid 4px var(--main-color);
+                        text-decoration: none;
+                    }
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        transition: all ease-in-out 0.2;
+                    }
+                    .content {
+                        position: absolute;
+                        z-index: 1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        // height: 100%;
+                        font-family: var(--secondary-font);
+                        font-size: 1.25vw;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        top: 50%;
+                        background-color: rgba(0, 0, 0, 0.7);
+                        padding: 2vw;
+                        color: var(--white);
+                        font-weight: bold;
+                        span {
+                            text-align: center;
+                        }
+                        ul {
+                            visibility: hidden;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0;
+                            margin: auto;
+                            li {
+                                display: block;
+                                a {
+                                    color: var(--white);
+                                    font-size: 1.0666666666667vw;
+                                }
+                            }
+                        }
+                    }
+                    img {
+                        width: 100%;
+                        // filter: blur(5px);
+                    }
+                    * {
+                        transition: all ease-in-out 0.2s;
+                    }
+                    &:hover {
+                        .content {
+                            top: 0;
+                            ul {
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 767px) {
+            >ul {
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                padding: 0;
+                margin: 0;
+                >li {
+                    margin: 0;
+                    width: 46%;
+                    flex: 0 1 46%;
+                    >a,
+                    >div {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        border: solid 4px var(--white);
+                        color: var(--white);
+                        // height: 145px;
+                        transition: all ease-in-out 0.2s;
+                        &:hover {
+                            border: solid 4px var(--main-color);
+                            text-decoration: none;
+                        }
+                        .content {
+                            z-index: 1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            // height: 100%;
+                            font-family: var(--secondary-font);
+                            font-size: 3vw;
+                            padding: 1.5vw;
+                            ul {
+                                li {
+                                    a {
+                                        font-size: 3vw;
+                                    }
                                 }
                             }
                         }
