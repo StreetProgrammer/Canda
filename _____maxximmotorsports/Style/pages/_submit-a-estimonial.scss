@@ -1,0 +1,107 @@
+#page_66171 #CenterDiv {
+    min-height: 40em;
+}
+
+#star-rating {
+    text-align: center;
+    margin: 0 auto;
+    font-family: var(--main-font);
+    font-size: 1vw;
+    color: #222;
+    .reviewsHeader {
+        background-color: #fff;
+        padding: 2em;
+        .title {
+            font-size: 1.8em;
+            font-weight: bold;
+            padding-top: 0.2em;
+        }
+    }
+    .content {
+        padding: 0 3em 3em 3em;
+        .description {
+            line-height: 1.5em;
+        }
+        .rating {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 20em;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            margin: 1em auto 3em auto;
+            padding-left: 2.5vw;
+            position: relative;
+            input {
+                display: none;
+            }
+            label {
+                font-family: Arial;
+                font-size: 4vw;
+                -webkit-transition: 0.2s ease;
+                transition: 0.2s ease;
+                color: #d5d5d5;
+                margin-left: -1em;
+                position: relative;
+                cursor: pointer;
+                &:hover {
+                    color: darkorange;
+                    -webkit-transition: 0.2s ease;
+                    transition: 0.2s ease;
+                }
+                &::before {
+                    content: "\f005";
+                    font-family: "Font Awesome 5 Pro";
+                    position: absolute;
+                    top: 0px;
+                    line-height: 1.2em;
+                }
+            }
+            .selectRating {
+                position: absolute;
+                width: 100%;
+                top: 8.5vw;
+                font-size: 1.4em;
+            }
+        }
+        .hiddenDiv {
+            display: none;
+            a {
+                display: inline-block;
+                border: 0.2vw solid #337ab7;
+                padding: 1em;
+                margin: 1.5em;
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        font-size: 16px;
+    }
+}
+
+#displayReviewLink,
+#displayForm {
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    width: 90%;
+    left: 5%;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    padding-bottom: 7.5em;
+    p {
+        padding: 2em 0;
+    }
+}
+
+#star-rating .rating label:hover~.star {
+    color: orange;
+}

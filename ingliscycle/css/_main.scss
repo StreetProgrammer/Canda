@@ -1,0 +1,11 @@
+.carousel-control.left:before {
+    content: "\f053";
+    top: 7em;
+    left: -3.5em;
+}
+
+.carousel-control.right:before {
+    content: "\f054";
+    top: 7em;
+    right: -3.5em;
+}

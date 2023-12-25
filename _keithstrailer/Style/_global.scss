@@ -1,0 +1,167 @@
+:root {
+    --black: #000;
+    --white: #FFF;
+    --darkgrey: #1C1C1C;
+    --grey: #333;
+    --grey-2: #F0F0F0;
+    --lightgrey: #D5D5D5;
+    --main-color: #026BA8;
+    --secondary-color: #038BDA;
+    --main-font: Poppins, sans-serif !important;
+    --main-font-bold: Poppins, sans-serif !important;
+    --body-font: Poppins, sans-serif !important;
+}
+
+html {
+    -webkit-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: 1.1vw;
+    line-height: 1.4;
+    background-color: #fff !important;
+    color: var(--black);
+    padding: 0 !important;
+
+    @media screen and (max-width: 767px) {
+        font-size: 16px;
+    }
+}
+
+#CenterDiv,
+#HeaderDiv,
+#FooterDiv {
+    min-height: auto;
+}
+
+body #CenterDiv {
+    width: 100% !important;
+    height: auto !important;
+}
+
+body#page_65474 #CenterDiv {
+    padding: 0 !important;
+}
+
+body #CenterDiv {
+    padding: 0 4em 3em 4em !important;
+
+    @media screen and (max-width: 767px) {
+        padding: 0 1em 3em 1em !important;
+    }
+}
+
+.container,
+.container-fluid,
+.contentComp .container-fluid {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--main-font-bold) !important;
+    text-transform: uppercase;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.5em;
+
+    @media (max-width: 769px) {
+        font-size: 26px;
+    }
+}
+
+h2 {
+    font-size: 1.8em;
+
+    @media (max-width: 769px) {
+        font-size: 22px;
+    }
+}
+
+h3 {
+    font-size: 1.4em;
+
+    @media (max-width: 769px) {
+        font-size: 20px;
+    }
+}
+
+h4 {
+    font-size: 1.3em;
+
+    @media (max-width: 769px) {
+        font-size: 18px;
+    }
+}
+
+h5 {
+    font-size: 1.2em;
+
+    @media (max-width: 769px) {
+        font-size: 17px;
+    }
+}
+
+h6 {
+    font-size: 1.1em;
+
+    @media (max-width: 769px) {
+        font-size: 16px;
+    }
+}
+
+
+/* global in inner pages */
+
+.topBanner {
+    border-bottom: 4px solid var(--main-color);
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+a {
+    &._action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1em auto 1em;
+        width: 25%;
+        background-color: var(--main-color);
+        color: var(--white);
+        padding: 0.75em 1em;
+        font-size: 1.5em;
+        transition: all ease-in-out 0.2s;
+
+        &:hover {
+            color: var(--main-color);
+            background-color: var(--white);
+            text-decoration: none;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &._action {
+            width: 85%;
+        }
+    }
+}
+
+.adForm input,
+.adForm textarea,
+.adForm select {
+    font-size: 1em !important;
+}

@@ -1,0 +1,25 @@
+.promotions-srp {
+    #products {
+        .count-row {}
+
+        .item {
+            .thumb {
+                .caption {
+                    .cta-btns {
+                        .main-btn {
+                            color: var(--black);
+                            background-color: var(--white);
+
+                            &:hover {
+                                color: var(--black);
+                                background-color: var(--white);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .right-form {}
+}

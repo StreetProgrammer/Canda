@@ -1,0 +1,89 @@
+._winners {
+    .container {
+        .row {
+            h1 {
+                font-weight: 700;
+                font-family: var(--secondary-font);
+                color: var(--main-font-color);
+                font-size: 3.4722222222222vw;
+                text-transform: uppercase;
+                margin-top: 0;
+                text-align: center;
+            }
+
+            .winners_container {
+                h2 {
+                    font-weight: 700;
+                    font-family: var(--secondary-font);
+                    color: var(--main-font-color);
+                    font-size: 2.4722222222222vw;
+                    text-transform: uppercase;
+                    margin-top: 0;
+                    text-align: center;
+                }
+
+                ._winners_box {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+
+                    ._winner {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+                        padding: 1vw;
+                        background-color: var(--gray-3);
+                        width: 30%;
+                        margin: 1vw;
+
+                        p {
+                            font-weight: bold;
+                            text-align: center;
+
+                            &.name {
+                                color: var(--main-font-color);
+                            }
+
+                            &.prize {
+                                color: var(--main-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container {
+            .row {
+                h1 {
+                    font-size: 28px;
+                }
+
+                .winners_container {
+                    h2 {
+                        font-size: 20px;
+                    }
+
+                    ._winners_box {
+                        justify-content: center;
+
+                        ._winner {
+                            padding: 1vw;
+                            width: 90%;
+                            margin: 1vw;
+
+                            p {
+                                &.name {}
+
+                                &.prize {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

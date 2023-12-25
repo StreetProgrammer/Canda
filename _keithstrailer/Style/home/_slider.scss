@@ -1,0 +1,45 @@
+#comp_1702575060769 {
+    .carousel {
+        .carousel-indicators {
+            display: none;
+        }
+
+        .carousel-inner {
+            a.item {
+                img {
+                    height: 30vw;
+                }
+            }
+
+            .carousel-caption {}
+        }
+
+        .carousel-control {
+            &.left {}
+
+            &.right {}
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .carousel {
+            .carousel-indicators {}
+
+            .carousel-inner {
+                a.item {
+                    img {
+                        height: 80vw;
+                    }
+                }
+
+                .carousel-caption {}
+            }
+
+            .carousel-control {
+                &.left {}
+
+                &.right {}
+            }
+        }
+    }
+}

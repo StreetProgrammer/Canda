@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Start Form -->
+    <div class="adForm container-fluid">
+        <h2 class="col-sm-12">Contact Information</h2>
+
+        <div class="col-sm-6 formField"><label class="sr-only" for="exampleInputEmail3">First Name </label> <input
+                class="required adpage_formbox detailsFormFirstName1" id="firstName" name="firstName"
+                placeholder="First Name" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-sm-6 formField"><label class="sr-only" for="exampleInputEmail3">Last Name </label> <input
+                class="required adpage_formbox detailsFormLastName1" id="lastName" name="lastName"
+                placeholder="Last Name" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-sm-6 formField"><label class="sr-only" for="exampleInputEmail3">Email </label> <input
+                class="required email adpage_formbox detailsFormEmail1" id="email" name="email" placeholder="Email"
+                type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-sm-6 formField"><label class="sr-only" for="exampleInputEmail3">Phone </label> <input
+                class="required adpage_formbox detailsFormPhone1" id="Phone" name="Phone" placeholder="Phone"
+                type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-sm-6 formField"><label class="sr-only" for="exampleInputEmail3">Address </label> <input
+                class="required adpage_formbox detailsFormFirstName1" id="address" name="address" placeholder="Address"
+                type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+
+        <h2 class="col-sm-12">Consignment information</h2>
+
+        <div class="col-sm-6 formField"><label class="sr-only" for="exampleInputEmail3">Year </label> <input
+                class="required adpage_formbox detailsFormLastName1" id="Year" name="Year" placeholder="Year"
+                type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-sm-6 formField"><label class="sr-only" for="exampleInputEmail3">Make </label> <input
+                class="required adpage_formbox detailsFormFirstName1" id="Make" name="Make" placeholder="Make"
+                type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-sm-6 formField"><label class="sr-only" for="Model">Model </label> <input
+                class="required adpage_formbox detailsFormFirstName1" id="Vin" name="Model" placeholder="Model"
+                type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-sm-6 formField"><label class="sr-only" for="exampleInputEmail3">Location </label> <input
+                class="required adpage_formbox detailsFormFirstName1" id="Location" name="Location"
+                placeholder="Location" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <h2 class="col-sm-12">Comments</h2>
+
+        <div class="col-sm-12 formField"><label class="sr-only" for="exampleInputEmail3">Tell us about your RV
+                : </label><textarea class="required adpage_formbox detailsFormComment1" id="What_kind" name="What_Kind"
+                placeholder="What kind of parts are needed? " rows="4"></textarea></div>
+    </div>
+    <!--End Form  -->
+
+    <p>
+        <style type="text/css">
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            textarea,
+            select {
+                float: none;
+            }
+
+            .formField {
+                margin-bottom: 10px;
+                position: relative;
+            }
+
+            .formField .formRequired,
+            label.error {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 30px;
+                height: 40px;
+                line-height: 40px;
+                margin-top: 0;
+                margin-bottom: auto;
+                font-size: 16px;
+                font-family: arial;
+                color: red;
+            }
+
+            label.error {
+                padding-right: 15px;
+            }
+
+            .adForm h2 {
+                font-size: 26px;
+                padding: 15px;
+                border-top: 1px solid #dedede;
+                text-align: center;
+                font-family: Oswald;
+            }
+
+            .adForm button,
+            .adForm .btn {
+                background-color: #d0112b;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #ed2742;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                color: #ffffff;
+            }
+
+            .adForm button:hover,
+            .adForm .btn:hover,
+            .adForm button:focus,
+            .adForm .btn:focus {
+                background-color: #ec1431;
+                color: #000000;
+            }
+
+            .adForm input,
+            .adForm textarea,
+            .adForm select {
+                width: 100%;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #ebebeb;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                background-color: #f2f2f2;
+                color: #000000;
+                font-size: 1.25vw;
+                outline: none;
+                padding-top: 10px;
+                padding-right: 20px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                resize: none;
+                max-width: 100%;
+                min-width: 200px;
+            }
+
+            .adForm input:hover,
+            .adForm textarea:hover,
+            .adForm select:hover,
+            .adForm input:focus,
+            .adForm textarea:focus,
+            .adForm select:focus {
+                background-color: #d6d6d6;
+                color: #000000;
+            }
+
+            ::-webkit-input-placeholder {
+                /* WebKit browsers */
+                color: #000000;
+                color: rgba(0, 0, 0, 0.85);
+            }
+
+            :-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: #000000;
+                color: rgba(0, 0, 0, 0.85);
+            }
+
+            ::-moz-placeholder {
+                /* Mozilla Firefox 19+ */
+                color: #000000;
+                color: rgba(0, 0, 0, 0.85);
+            }
+
+            :-ms-input-placeholder {
+                /* Internet Explorer 10+ */
+                color: #000000;
+                color: rgba(0, 0, 0, 0.85);
+            }
+
+            input[type="checkbox"],
+            input[type="radio"] {
+                width: auto;
+                display: inline-block;
+            }
+
+            .seperator {
+                border-bottom: 1px solid #e2e2e2;
+                margin: 30px auto;
+            }
+
+            .adForm .lead-button,
+            .adForm .btn-default,
+            .adForm .btn-primary {
+                text-transform: uppercase;
+                border-width: 0;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                color: #ffffff;
+                text-align: center;
+                font-size: 18px;
+                padding-top: 15px;
+                padding-right: 30px;
+                padding-bottom: 15px;
+                padding-left: 30px;
+                display: block;
+                margin: 5px;
+                font-weight: normal;
+                float: left;
+            }
+
+            @media (max-width: 768px) {
+
+                .adForm input,
+                .adForm textarea,
+                .adForm select {
+                    font-size: 2vw;
+                }
+
+                @media (max-width: 576px) {
+
+                    .adForm input,
+                    .adForm textarea,
+                    .adForm select {
+                        font-size: 2.5vw;
+                    }
+                }
+
+                @media (max-width: 393px) {
+
+                    .adForm input,
+                    .adForm textarea,
+                    .adForm select {
+                        font-size: 3.5vw;
+                    }
+                }
+        </style>
+    </p>
+
+
+
+
+</body>
+
+</html>

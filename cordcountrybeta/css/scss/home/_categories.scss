@@ -1,0 +1,89 @@
+._home_categories_container {
+    min-height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.94) 0%, rgba(1, 50, 69, 0.94) 58.33%, rgba(0, 0, 0, 0.94) 100%);
+    background-size: cover;
+    position: relative;
+    padding: 5vw 0vw;
+
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 5vw;
+
+        li {
+            margin: 1vw 0 5vw 1vw;
+            flex: 1 1 30%;
+
+            &:nth-child(1) {
+                margin-left: 0;
+            }
+
+            a {
+                display: flex;
+                flex-direction: column;
+                background-color: var(--black);
+                align-items: center;
+                padding: 1vw 1vw 5vw 1vw;
+                border: 3px solid var(--third-color);
+                position: relative;
+
+                ._title {
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    color: var(--white);
+                    font-size: 1.6666666666667vw;
+                }
+
+                ._sub_title {
+                    text-transform: uppercase;
+                    color: var(--third-color);
+                    font-size: 1.1111111111111vw;
+                }
+
+                img {
+                    position: absolute;
+                    width: 65%;
+                    top: 50%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 5vw;
+
+            li {
+                margin: 1vw 0 5vw 1vw;
+                flex: 1 1 50%;
+
+                &:nth-child(1) {
+                    margin-left: 0;
+                }
+
+                a {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+
+                    ._title {
+                        font-size: 15px;
+                    }
+
+                    // ._sub_title {
+                    //     text-transform: uppercase;
+                    //     color: var(--third-color);
+                    //     font-size: 1.1111111111111vw;
+                    // }
+                    img {
+                        position: unset;
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+}

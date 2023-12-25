@@ -1,0 +1,21 @@
+._forms_links {
+    .container {
+        >div {
+            a {
+                padding: 2vw;
+                background: #fdfdfd;
+                color: #000;
+                border-radius: 12px;
+                margin-bottom: 2vw;
+                display: block;
+                text-align: center;
+                transition: all ease-in-out 0.2s;
+                border: 3px solid;
+                &:hover {
+                    color: #08A95E;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

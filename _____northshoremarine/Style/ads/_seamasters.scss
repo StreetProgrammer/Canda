@@ -1,0 +1,183 @@
+/* SRP */
+
+.seamaster-srp {
+    .sortby-row {
+        .order-drop {
+            display: none;
+        }
+        .list-grid-btn {
+            .btn {
+                color: var(--main-color);
+            }
+        }
+    }
+    #filters {
+        .filters-panel {
+            .filters-inner {
+                background-color: #E8E8E8;
+                padding: 0em;
+                .filter-ttl {}
+                .filter-collapse-container {
+                    margin: 0 10px;
+                    padding: 0;
+                    a.filter-collapse {}
+                    .collapse {
+                        ul.modernFilter {
+                            li {
+                                justify-content: space-between;
+                                label {
+                                    width: 100%;
+                                    justify-content: space-between;
+                                    input {
+                                        width: 2em !important;
+                                        height: 2em !important;
+                                        margin: 0.25em 0.5em 0.25em 0em;
+                                    }
+                                    span {
+                                        &.filter-text {
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            white-space: nowrap;
+                                            width: 70%;
+                                        }
+                                        &.filter-count {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #products {
+        justify-content: space-between;
+        .item {
+            background-color: var(--white);
+            width: 31%;
+            margin: 0.5em;
+            .price-oem {
+                color: var(--main-color);
+            }
+            .cta-btns a.main-btn {
+                background-color: var(--main-color);
+                color: var(--white);
+                max-width: 43%;
+                border-radius: 3px;
+            }
+            // .cta-btns .quote {
+            //     display: none;
+            // }
+        }
+    }
+}
+
+#page_66669,
+#page_66670,
+#page_66671 {
+    .seamaster-srp #products .item .instock-tag {
+        display: none;
+    }
+    .seamaster-srp #products .item .cta-btns .quote {
+        display: none;
+    }
+}
+
+// Blog SRP
+.blog-srp-header {
+    h2 {
+        font-size: 3.5em;
+        text-transform: none;
+        padding: 12vw 50vw 3vw 4.5vw;
+    }
+    div.cta-btns {
+        width: auto;
+        .View-Details {
+            border-radius: 0;
+            padding: 0.75em 2.5em;
+            width: 10em;
+        }
+    }
+}
+
+.blog-srp {
+    #products {
+        padding: 3em 8em;
+        .categories-filter {
+            #filters {
+                display: none;
+            }
+            .item {
+                .thumb {
+                    border-bottom: 2px solid #D5D5D5;
+                    .img-event {}
+                    .caption {
+                        div.cta-btns {
+                            width: auto;
+                            .View-Details {
+                                border-radius: 0;
+                                padding: 0.75em 2.5em;
+                                width: 10em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#page_66738 {
+    #CenterDiv {
+        padding: 0 !important;
+    }
+}
+
+
+/* VDP */
+
+#seamaster_vdp {
+    .vdp-header {
+        .back-btn {}
+        .model-title {
+            text-align: center;
+        }
+    }
+    #model-left-content {}
+    #model-right-content {
+        .price-box {
+            .our-price-div {
+                .main-vdp-btn {
+                    padding: 1em 1.25em;
+                    border-radius: 0;
+                    font-size: 1em;
+                }
+            }
+        }
+        .CTA-box {
+            .rt-action-btn {
+                color: var(--grey-3);
+                font-size: 1em;
+                &::before {
+                    font-family: "Font Awesome 5 Pro";
+                    margin-right: 0.5em;
+                }
+                &.request-quote-btn {
+                    &::before {
+                        content: "\f27a";
+                    }
+                }
+                &.get-financed {
+                    &::before {
+                        content: "\f155";
+                    }
+                }
+                &.trade-btn {
+                    &::before {
+                        content: "\f362";
+                    }
+                }
+            }
+        }
+    }
+}

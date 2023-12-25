@@ -1,0 +1,167 @@
+#normal_vdp {
+    .back-btn {
+        position: absolute;
+        width: 59.65%;
+        background-color: #fff;
+        z-index: 2;
+        margin-left: 0.15em;
+
+        .model-action-btn {
+            width: 100%;
+            color: #000;
+            font-size: .9em;
+            padding: 1em;
+            display: block;
+            border: 0.01em solid #d5d5d5;
+
+            .glyphicon.glyphicon-chevron-left {
+                color: #616365 !important;
+            }
+        }
+    }
+
+    .stock-num {
+        position: absolute;
+        z-index: 3;
+        right: 38%;
+        margin-top: 1em;
+        font-size: .9em;
+    }
+
+    #model-left-content {
+        padding: 0;
+        padding-right: 1em;
+
+        .rmv-ph-padding {
+            max-width: 98.8% !important;
+            width: 100%;
+            padding: 0 !important;
+
+            .gallery {
+                border: 0.01em solid #d5d5d5;
+                margin-top: 3em;
+
+                .panel-body {
+                    .img-thumbnail-for-jQ {
+                        position: relative;
+                        overflow: hidden;
+
+                        .lSSlideOuter {
+                            overflow: hidden;
+                            user-select: none;
+
+                            .lSSlideWrapper {
+                                max-width: 100%;
+                                overflow: hidden;
+
+                                .lSAction {
+                                    >.lSPrev {
+                                        left: 2em;
+
+                                        &::before {
+                                            content: "\e257";
+                                        }
+                                    }
+
+                                    >.lSNext {
+                                        right: 2em;
+
+                                        &::before {
+                                            content: "\e258";
+                                        }
+                                    }
+
+                                    >.lSPrev,
+                                    >.lSNext {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-color: var(--main-color);
+                                        border-radius: 50%;
+
+                                        &::before {
+                                            display: block;
+                                            position: relative;
+                                            top: 0;
+                                            right: 0;
+                                            font-family: "Glyphicons Halflings";
+                                            color: #fff;
+                                            background-color: var(--second-color);
+                                            padding: 0.3em 0 0.3em 0.5em;
+                                            opacity: 1;
+                                            font-size: 1.2em;
+                                            height: 2em;
+                                            width: 2em;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .lSPager.lSGallery {
+                                border-top: 0.01em solid #d5d5d5;
+                                margin-top: 0 !important;
+                                min-width: 100% !important;
+
+                                li {
+                                    border-radius: 0;
+
+                                    &.active {
+                                        border: 2px solid var(--main-color);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #model-right-content {
+        #right-cta-buttons {
+            background-color: #f0f0f0;
+            padding: 0;
+            width: auto !important;
+
+            .price-box {
+                padding: 1em 2em !important;
+            }
+
+            .CTA-box {
+                padding: 0 2em 2em 2em;
+
+                a {
+                    font-family: var(--main-font-bold);
+                    font-weight: 700;
+                    font-size: .9em;
+                    text-transform: uppercase;
+                    text-align: left;
+                    background-color: #d5d5d5;
+                    color: var(--block);
+                    border-radius: 0;
+                    padding: 1em 1.5em;
+                    margin: 0.4em 0;
+
+                    .glyphicon {
+                        width: 1.8em;
+                        font-size: 1em;
+                        background-color: inherit;
+                        color: var(--main-color);
+                    }
+
+                    &.request-quote-btn {
+                        background-color: var(--main-color);
+                        color: var(--white);
+
+                        .glyphicon {
+                            background-color: var(--main-color);
+                            color: var(--white);
+                        }
+                    }
+                }
+
+                &.dropdown.open {}
+            }
+        }
+    }
+}

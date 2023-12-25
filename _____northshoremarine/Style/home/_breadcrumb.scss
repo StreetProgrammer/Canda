@@ -1,0 +1,53 @@
+.breadcrumbParent {
+    border-bottom: solid .01em #D5D5D5;
+    position: relative;
+    background-color: var(--grey-4);
+    background-size: cover;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    padding: 1.5em 4em !important;
+    margin-bottom: 3em;
+    z-index: 2;
+
+    &::after {
+        width: 7em;
+        height: 0.2em;
+        background-color: var(--main-color);
+        top: 100%;
+        left: 0;
+        content: "";
+        display: block;
+        position: absolute;
+    }
+
+    h1 {
+        font-weight: 700;
+        margin: 0;
+        flex: 1;
+        font-size: 1.6em;
+        color: var(--grey-3);
+    }
+
+    .breadcrumb {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+        background-color: transparent;
+        padding-right: 0;
+
+        .breadcrumb-item {
+            a {
+                color: var(--grey-3);
+            }
+        }
+    }
+}
+
+#page_66243 {
+    #comp_1700502817902 {
+        display: none;
+    }
+}

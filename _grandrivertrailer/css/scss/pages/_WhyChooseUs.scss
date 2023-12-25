@@ -1,0 +1,50 @@
+._why_choose_us {
+    .breif {
+        ._features {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 3vw 0;
+            padding: 0;
+
+            li {
+                flex: 1 1 30%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 1vw;
+
+                i {
+                    margin-right: 1vw;
+                    color: var(--main-color);
+                    font-size: 1.5vw;
+                }
+
+                p {
+                    font-size: 1.1vw;
+                    text-align: left;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .breif {
+            ._features {
+                li {
+                    flex: 1 1 100%;
+                    align-items: baseline;
+                    margin-bottom: 3vw;
+
+                    i {
+                        margin-right: 1vw;
+                        font-size: 18px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

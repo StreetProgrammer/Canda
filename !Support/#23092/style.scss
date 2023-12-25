@@ -1,0 +1,210 @@
+#page_52400,
+
+/*only for John Deere*/
+
+#page_52399,
+
+/*only for John Deere*/
+
+#page_49200,
+#page_49522,
+#page_49523,
+#page_49322,
+#page_54991,
+#page_49323,
+#page_54984,
+#page_49324,
+#page_49325,
+#page_49326 {
+    .topnav {
+        justify-content: space-between;
+
+        .logo-links-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                &.firstlogo {
+                    padding-left: 1vw;
+
+                    .global {
+                        display: none;
+                    }
+                }
+
+                &.secondlogo {
+                    border-right: 1px solid #676767;
+                }
+
+                &.john-deere-only {
+                    display: flex;
+                    height: 70%;
+                    justify-content: center;
+                    align-items: center;
+                    padding-right: 1vw;
+                }
+
+                img.john-deere-only {
+                    display: block;
+                    max-height: 5vw;
+                }
+            }
+        }
+
+        .mainlogo1 {
+            margin-left: 0;
+            margin-right: 0;
+
+            .alignadd {
+                a {
+                    &:nth-child(2) {
+                        color: #FFFFFF;
+                        background-color: #000000;
+                        transition: all ease-in-out 0.2s;
+
+                        i {
+                            color: #FFFFFF;
+                            background-color: #000000;
+                            transition: all ease-in-out 0.2s;
+                        }
+
+                        &:hover {
+                            // background-color: #FFFFFF;
+                            color: #000000;
+
+                            i {
+                                background-color: #FFFFFF;
+                                color: #000000 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .mainlogo2 {
+            .formtop {
+                >button {
+                    color: #FFFFFF;
+                    background-color: #000000;
+                    transition: all ease-in-out 0.2s;
+
+                    span {
+                        color: inherit !important;
+                        transition: all ease-in-out 0.2s;
+                    }
+
+                    &:hover {
+                        background-color: #FFFFFF;
+                        color: #000000;
+
+                        span {
+                            background-color: #FFFFFF;
+                            color: #000000 !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mainlogo3 {
+            margin-left: 0;
+
+            .hourtop {
+                height: 100%;
+
+                .houers {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: space-between;
+
+                    >a.toggle-hours-list {
+                        font-weight: bold;
+                        font-size: 2vw;
+                        text-align: right;
+                        color: #fff;
+                        border-bottom: 0.11vw solid rgba(207, 207, 207, 0.5);
+                        padding-bottom: 1vw;
+                    }
+                }
+            }
+
+            .formtop {
+                display: none;
+            }
+        }
+
+        .mainlogo4 {
+            margin: 0;
+        }
+
+        @media screen and (max-width: 767px) {
+            .mainlogo1 {
+                .mobile-only {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .navbar {
+        .navbar-header {
+            float: right;
+            margin: auto;
+            display: flex;
+            padding: 0.75vw 0vw;
+
+            .formtop.desktop-only {
+                display: flex;
+                margin: auto 2vw;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            background-color: #262626 !important;
+
+            .navbar-header {
+                .formtop.desktop-only {
+                    display: none;
+                }
+            }
+
+            .navbar-toggle {
+                background-color: #262626 !important;
+            }
+        }
+    }
+}
+
+.topnav {
+    .logo-links-wrapper {
+        a {
+            &.firstlogo {
+                .global {
+                    display: block;
+                }
+            }
+
+            &.secondlogo {}
+
+            &.john-deere-only {
+                display: none;
+            }
+
+            img.john-deere-only {
+                display: none;
+            }
+        }
+    }
+}
+
+.navbar {
+    .navbar-header {
+        .formtop.desktop-only {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,135 @@
+// ._home_welcome {
+//     display: flex;
+//     flex-wrap: wrap;
+//     .content {
+//         width: 50%;
+//         padding: 5vw 3vw;
+//         display: flex;
+//         flex-direction: column;
+//         h1 {
+//             font-size: 2.7777777778vw;
+//             font-weight: bold;
+//             color: var(--main-color);
+//             text-transform: uppercase;
+//         }
+//         p {
+//             color: var(--secondary-color);
+//             font-weight: 400;
+//             font-size: 1.1111111111111vw;
+//         }
+//         a {
+//             color: var(--white);
+//             background-color: var(--secondary-color);
+//             padding: 1vw;
+//             margin: 2vw 0vw 0vw 0vw;
+//             width: 50%;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             font-size: 1.1111111111111vw;
+//             font-weight: 800;
+//         }
+//     }
+//     img {
+//         width: 50%;
+//     }
+//     @media screen and (max-width: 767px) {
+//         background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 52%, rgba(255, 255, 255, 0.89) 52%), url(/site-uploads/1001480/images/mobile_bg.jpg);
+//         .content {
+//             width: 100%;
+//             padding: 5vw 10vw;
+//             display: flex;
+//             flex-direction: column;
+//             h1 {
+//                 font-size: 26px;
+//                 text-align: center;
+//             }
+//             p {
+//                 font-size: 14px;
+//             }
+//             a {
+//                 color: var(--white);
+//                 background-color: var(--secondary-color);
+//                 padding: 10px;
+//                 margin: 2vw 0vw 0vw 0vw;
+//                 width: 100%;
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 font-size: 14px;
+//                 font-weight: 800;
+//             }
+//         }
+//     }
+// }
+// ._review_placholder {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     h1 {
+//         font-weight: 800;
+//         font-size: 2.5vw;
+//         color: var(--secondary-color);
+//         text-align: center;
+//     }
+//     p {
+//         font-weight: 400;
+//         font-size: 1.1805555555556vw;
+//     }
+//     ._review_imgs {
+//         margin: 3vw 5vw;
+//     }
+//     @media screen and (max-width: 767px) {
+//         h1 {
+//             font-size: 22px;
+//         }
+//         p {
+//             font-size: 17px;
+//         }
+//         ._review_imgs {
+//             margin: 3vw 5vw;
+//         }
+//     }
+// }
+// ._candian_made {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 5vw;
+//     img {
+//         margin-bottom: 1vw;
+//     }
+//     h2 {
+//         color: var(--secondary-color);
+//         font-weight: 500;
+//         font-size: 1.6666666666667vw;
+//     }
+//     p {
+//         font-size: 1.0416666666667vw;
+//         font-weight: 500;
+//         color: var(--secondary-color);
+//         padding: 0 5vw;
+//         text-align: center;
+//         &.note {
+//             font-weight: 800;
+//             margin-top: 2vw;
+//         }
+//     }
+//     @media screen and (max-width: 767px) {
+//         img {
+//             width: 40%;
+//         }
+//         h2 {
+//             font-size: 18px;
+//         }
+//         p {
+//             font-size: 15px;
+//             font-weight: 400;
+//             &.note {
+//                 margin-top: 12px;
+//             }
+//         }
+//     }
+// }

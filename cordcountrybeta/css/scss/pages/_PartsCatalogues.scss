@@ -1,0 +1,30 @@
+._parts_catalogues {
+    .container {
+        .row {
+            ._item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid var(--gray-8);
+                padding: 2vw;
+                margin: 2vw 0;
+
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container {
+            .row {
+                ._item {
+                    margin: 5vw 0;
+
+                    img {}
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,305 @@
+// Official Rules Page
+._financing {
+  h2 {
+    color: var(--secondary-color);
+  }
+
+  .row.flex-row {
+    margin: 2vw 0;
+  }
+
+  .options_list {
+    padding: 0;
+
+    li {
+      display: flex;
+
+      span {
+        color: var(--main-color);
+        margin-right: 1vw;
+      }
+    }
+  }
+
+  .card {
+    padding: 1vw;
+    background-color: var(--gray-3);
+    margin: 1vw 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    &.review {
+      background-color: var(--gray-3);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.5vw;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    &.what_we_finance {
+      overflow: hidden;
+      position: relative;
+      height: 100%;
+      padding: 0;
+
+      img {
+        height: 100%;
+      }
+
+      span {
+        &.title {
+          position: absolute;
+          padding: 1vw;
+          background-color: #D71920BF;
+          color: var(--white);
+          text-align: center;
+          width: 75%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          font-size: 1.25vw;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &.work_with_us {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+
+      i {
+        font-size: 3vw;
+        color: var(--main-color);
+      }
+
+      h3 {
+        text-align: center;
+        font-size: 1.5vw;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+    ._section {
+      justify-content: space-between;
+
+      >img {
+        width: 47%;
+      }
+
+      >p {
+        width: 47%;
+      }
+    }
+
+    .financeit-link {
+      display: block;
+      margin: 2vw 0;
+      text-align: center;
+
+      img {
+        width: 50%;
+      }
+    }
+
+
+  }
+
+  .application {
+    background-color: var(--main-color);
+    padding: 2vw 5vw;
+    margin: 2vw 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3,
+    p {
+      color: var(--white);
+    }
+
+    a {
+      max-height: 50px;
+    }
+  }
+
+  #PartneredDealers {
+    ol {}
+
+    .carousel-inner {
+      .item {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          li {
+            width: 25%;
+
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              img {
+                max-height: 150px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .carousel-control {
+      // display: none;
+      position: absolute;
+      opacity: 1;
+      background-image: none;
+      color: rgba(255, 255, 255, 0.7);
+      transition: all ease-in 0.3s;
+      width: 50px;
+
+      &:hover {
+        color: var(--black);
+
+        &:after {
+          background-color: var(--main-color);
+          color: var(--white);
+        }
+      }
+
+      &:after {
+        position: absolute;
+        top: 50%;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--main-color);
+        background-color: var(--white);
+        width: 20px;
+        height: 30px;
+        font-size: 40px;
+        transition: all ease-in-out 0.2s;
+      }
+
+      &.right {
+        right: 2vw;
+
+        &:after {
+          font-family: 'Font Awesome 5 Pro';
+          content: "\f138";
+        }
+      }
+
+      &.left {
+        left: 3vw;
+
+        &:after {
+          font-family: 'Font Awesome 5 Pro';
+          content: "\f137";
+        }
+      }
+
+      img {
+        display: none;
+      }
+    }
+  }
+
+
+  @media screen and (max-width: 767px) {
+    h2 {}
+
+    .row.flex-row {
+      margin: 10px 0;
+
+      [class^="col-"] {
+        margin: 10px 0;
+      }
+    }
+
+    .options_list {
+      li {
+        span {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .card {
+      border-radius: 10px;
+
+      &.review {
+        padding: 10px;
+      }
+
+      &.what_we_finance {
+
+        img {
+          height: 100%;
+        }
+
+        span {
+          &.title {
+            width: 75%;
+            font-size: 18px;
+          }
+        }
+      }
+
+      &.work_with_us {
+
+        i {
+          font-size: 20px;
+          color: var(--main-color);
+        }
+
+        h3 {
+          text-align: center;
+          font-size: 20px;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+
+      ._section {
+        justify-content: space-between;
+
+        >img {
+          width: 100%;
+        }
+
+        >p {
+          width: 100%;
+        }
+      }
+
+      .financeit-link {
+
+        img {
+          width: 75%;
+        }
+      }
+    }
+
+    .application {
+      flex-direction: column;
+
+      h3,
+      p {}
+
+      a {}
+    }
+  }
+}

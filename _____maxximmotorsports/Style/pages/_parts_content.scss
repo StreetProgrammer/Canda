@@ -1,0 +1,40 @@
+.parts_content {
+    .container {
+        h1 {}
+        p {}
+        ul {
+            padding: 0;
+            margin: 0;
+            line-height: 1.75;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li {
+                width: 45%;
+                display: flex;
+                align-items: center;
+                &::before {
+                    content: '\f35a';
+                    font-family: "Font Awesome 5 Pro";
+                    margin-right: 0.5em;
+                    font-size: 1.4em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--main-color);
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .container {
+            h1 {}
+            p {}
+            ul {
+                li {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}

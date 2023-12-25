@@ -1,0 +1,327 @@
+.top_banner_section {
+    background-image: url('/site-uploads/1001508/images/NORTH SHORE MARINE LTD.-1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 4em 6em 15em;
+    min-height: 35em;
+    padding: 0em;
+    position: relative;
+
+    ul {
+        position: absolute;
+        top: 75%;
+        left: 10%;
+        right: 10%;
+        margin: 0;
+        padding: 1em;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            list-style: none;
+
+            a {
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                padding: 0.5vw;
+                transition: all ease-in-out 0.2s;
+
+                img {
+                    width: 8em;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 5em 2em;
+        min-height: 15em;
+
+        ul {
+            flex-wrap: wrap;
+            top: auto;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            li {
+                width: 30%;
+
+                a {
+                    justify-content: center;
+
+                    img {
+                        width: 5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home_categories {
+    padding: 2em 3em;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0;
+
+        li {
+            margin: 0 1em;
+            width: 30%;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
+                color: var(--darkgrey);
+                font-weight: 700;
+                transition: var(--transition);
+                position: relative;
+
+                * {
+                    transition: var(--transition);
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 50%;
+                    background: url('/site-uploads/1001508/images/home-bg-1.jpg');
+                    background-size: cover;
+                    border-radius: 5px;
+                }
+
+                span {
+                    z-index: 2;
+
+                    &:nth-child(1) {
+                        padding: 1em 2em;
+                        color: var(--grey-4);
+                    }
+
+                    &:nth-child(2) {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 80%;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        padding: 1em 2em;
+                        color: var(--grey-3);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        &::after {
+                            content: "";
+                            width: 50%;
+                            border-bottom: 2px solid var(--grey-3);
+                            margin-bottom: 0.75em;
+                        }
+                    }
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    opacity: 0.8;
+
+                    span {
+                        &:nth-child(1) {}
+
+                        &:nth-child(2) {
+                            img {
+                                filter: drop-shadow(2px 4px 6px black);
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            color: var(--secondary-color);
+
+                            &::after {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 1em;
+
+        ul {
+            justify-content: space-between;
+
+            li {
+                margin: 0;
+                width: 47%;
+
+                a {
+
+                    // display: flex;
+                    // flex-direction: column;
+                    // justify-content: center;
+                    // align-items: center;
+                    // text-transform: uppercase;
+                    // color: var(--darkgrey);
+                    // font-weight: 700;
+                    // transition: var(--transition);
+                    // position: relative;
+                    // * {
+                    //     transition: var(--transition);
+                    // }
+                    &::after {
+                        border-radius: 5px;
+                    }
+
+                    span {
+
+                        // z-index: 2;
+                        &:nth-child(1) {
+                            padding: 0.5em 1em;
+                            // color: var(--grey-4);
+                        }
+
+                        // &:nth-child(2) {
+                        //     display: flex;
+                        //     justify-content: center;
+                        //     align-items: center;
+                        //     img {
+                        //         width: 80%;
+                        //     }
+                        // }
+                        &:nth-child(3) {
+                            padding: 0.25em 2em;
+                            // color: var(--grey-3);
+                            // display: flex;
+                            // flex-direction: column;
+                            // align-items: center;
+                            // &::after {
+                            //     content: "";
+                            //     width: 50%;
+                            //     border-bottom: 2px solid var(--grey-3);
+                            //     margin-bottom: 0.75em;
+                            // }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.home_know_us {
+    background-image: linear-gradient(to top, rgba(247, 247, 247, 1), rgba(247, 247, 247, 0.5), rgba(247, 247, 247, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('/site-uploads/1001508/images/NORTH SHORE MARINE LTD.-2.jpg');
+    background-size: cover;
+    padding: 4em 6em 15em;
+    min-height: 45em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+
+    h1 {
+        font-weight: 700;
+        font-size: 3.5em;
+        color: var(--grey-4);
+        margin-bottom: 0.5em;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.75em;
+        margin-bottom: 2em;
+        color: var(--grey-4);
+        max-width: 90%;
+        text-align: center;
+    }
+
+    a {
+        color: var(--grey-4);
+        background-color: var(--grey-3);
+        border-radius: 0;
+        padding: 0.75em 1em;
+        text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 1em;
+
+        h1 {
+            font-size: 2.2em;
+            text-align: center;
+        }
+
+        p {}
+
+        a {}
+    }
+}
+
+._section_title {
+    h2 {
+        color: var(--grey-3);
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-size: 2.4em;
+        font-weight: 700;
+        text-transform: none;
+
+        &::before,
+        &::after {
+            content: "";
+            height: 0.08em;
+            position: absolute;
+            background: var(--grey-3);
+            width: calc(50% - 9em);
+            margin-top: 0.7em;
+        }
+
+        &::before {
+            left: 4em;
+        }
+
+        &::after {
+            right: 4em;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        h2 {
+            font-size: 1.4em;
+
+            &::before,
+            &::after {
+                content: "";
+                height: 0.08em;
+                width: calc(30% - 2em);
+            }
+
+            &::before {
+                left: 1em;
+            }
+
+            &::after {
+                right: 1em;
+            }
+        }
+    }
+}

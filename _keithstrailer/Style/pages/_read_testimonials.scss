@@ -1,0 +1,18 @@
+.testimonial-list {
+    padding: 0;
+    .testimonial {
+        margin: 1em 0;
+        background-color: var(--grey-2);
+        padding: 1em;
+        .testimonial-rating {
+            display: flex;
+            align-items: center;
+            margin: 0 0 1em;
+            .testimonial-overall-rating {
+                .rating-value {
+                    color: var(--secondary-color);
+                }
+            }
+        }
+    }
+}

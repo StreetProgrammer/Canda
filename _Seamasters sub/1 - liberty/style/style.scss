@@ -1,0 +1,237 @@
+/* Start Header */
+
+.navbar-header {
+    .col_custom-3 {
+        padding: 0 0 0 4vw;
+
+        a {
+            img {
+                height: 5vw;
+                width: auto;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .col_custom-3 {
+            padding: 0 0 0 4vw;
+
+            a {
+                img {
+                    height: auto;
+                    width: 30vw;
+                }
+            }
+        }
+    }
+}
+
+
+/* End Header */
+
+
+/* Start Home */
+
+.featured-product {
+    .featured-product_content {
+        h2 {}
+
+        div {}
+
+        img {
+            width: 70%;
+        }
+
+        .waverunners {
+            h3 {}
+
+            div {
+                a {}
+            }
+        }
+    }
+}
+
+
+/* End Home */
+
+
+/* Start Footer */
+
+.footer-items_continer {
+    ._contact {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* End Footer */
+
+
+/* Start Inner Pages */
+
+
+/* Start News & Events */
+
+
+/* Start Seamaster SRP  */
+
+.seamaster-srp {
+    font-family: 'Unica One', cursive !important;
+
+    .reset.button {
+        color: var(--primary-red);
+        ;
+    }
+
+    .list-grid-btn .btn {
+        color: var(--black);
+    }
+
+    .regular-checkbox:checked:after {
+        background-color: var(--primary-red);
+    }
+
+    .cta-btns a {
+        border-radius: 0 !important;
+        font-family: 'Unica One', cursive !important;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+
+    .cta-btns a.main-btn {
+        background-color: var(--black);
+    }
+
+    @media screen and (max-width: 767px) {
+        .filters-inner .filter-collapse-container {
+            background-color: var(--black);
+        }
+    }
+
+    .cta-ttl-pr .price {
+        font-family: 'Unica One', cursive !important;
+        text-transform: uppercase;
+        color: var(--primary-red);
+        margin-bottom: 10px;
+    }
+
+    .grid-group-item.cta-btns {
+        text-transform: uppercase;
+    }
+
+    .main-container a:hover,
+    .main-container a:active,
+    .main-container a:focus {
+        color: var(--primary-red);
+    }
+
+    .checklist-filter ul {
+        text-transform: uppercase;
+    }
+}
+
+.blog-srp-header {
+    h2 {
+        font-family: 'Unica One', cursive !important;
+        text-transform: uppercase;
+
+        .cta-btns {
+            a {
+                font-family: 'Unica One', cursive !important;
+                border-radius: 0;
+                background-color: #d52b1e;
+            }
+        }
+    }
+}
+
+.blog-srp.main-container {
+    #products {
+        #filters {
+            .filters-panel {
+                .filters-inner {
+                    .filter-collapse {
+                        text-transform: uppercase;
+                        color: var(--primary-red);
+                    }
+                }
+            }
+
+            .filter-collapse-container {
+                color: var(--primary-red);
+            }
+        }
+
+        .item {
+            .thumb.card {
+                .caption.model-specs {
+                    .title-specs {
+                        .list-title.model-title {
+                            .model-title-link.pushstate {
+                                font-family: 'Unica One', cursive !important;
+                            }
+                        }
+                    }
+
+                    .cta-btns {
+                        a {
+                            font-family: 'Unica One', cursive !important;
+                            border-radius: 0;
+                            background-color: #d52b1e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* End Seamaster SRP  */
+
+
+/* Start Seamaster VDP  */
+
+#seamaster_vdp {
+    font-family: 'Unica One', cursive !important;
+
+    #model-right-content {
+        .model-right-title {
+            font-family: 'Unica One', cursive !important;
+        }
+
+        #right-cta-buttons {
+            .CTA-box {
+                a {
+                    font-family: 'Unica One', cursive !important;
+                    color: #231f20;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    .model-details-content {
+        p {
+            font-family: Gilroy;
+        }
+    }
+
+    .model-tabs {
+        .tab-content {
+            .accord-btn {
+                font-family: 'Unica One', cursive !important;
+                text-transform: uppercase;
+            }
+
+            .panel-collapse {
+                font-family: Gilroy;
+            }
+        }
+    }
+}
+
+
+/* End Seamaster VDP  */

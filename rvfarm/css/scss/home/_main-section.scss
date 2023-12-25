@@ -1,0 +1,116 @@
+/* Homepage Welcome */
+
+._main_section {
+    #welcome {
+        background-color: #1c1c1c;
+        color: #f1f1f1;
+        overflow: hidden;
+        padding: 0;
+        display: flex;
+
+        .image {
+            padding: 0;
+            width: 50%;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .content {
+            padding: 3em 4em 3em 3em;
+            width: 50%;
+            font-size: .97em;
+
+            h1 {
+                line-height: 1.2;
+                font-family: var(--main-font-bold);
+                color: var(--gray-3);
+                font-weight: 700;
+                font-size: 2.4305555555556vw;
+                text-transform: uppercase;
+                margin: 0 0 2vw 0;
+
+                &::after {
+                    width: 2em;
+                    height: 0.1em;
+                    background-color: var(--main-color);
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    margin-top: .1em;
+                }
+            }
+
+            h3 {
+                color: var(--gray-3);
+                font-weight: 600;
+                font-size: 1.25vw;
+                margin: 0 0 2vw 0;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 1.0416666666667vw;
+            }
+
+            .btn-link {
+                text-align: left;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        #welcome {
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0 0 1em 0;
+
+            .image {
+                width: 100%;
+                padding: 0 1.5em;
+
+                img {}
+            }
+
+            .content {
+                padding: 2em;
+                width: 100%;
+                font-size: .97em;
+
+                h1 {
+                    font-weight: 700;
+                    font-size: 25px;
+                    text-align: center;
+                    margin: 0 0 5vw 0;
+
+                    &::after {
+                        width: 2em;
+                        height: 0.1em;
+                        background-color: var(--main-color);
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        margin-top: .1em;
+                        left: 50%;
+                        transform: translate(-50%, 0%);
+                    }
+                }
+
+                h3 {
+                    font-size: 16px;
+                    margin: 3vw 0;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                .btn-link {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

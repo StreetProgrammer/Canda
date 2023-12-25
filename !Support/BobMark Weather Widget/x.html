@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        $("#HowlongatCurrentResidenceYears").change(function () {
+            if ($("#HowlongatCurrentResidenceYears").val() < 2 && $("#HowlongatCurrentResidenceMonths").val() <
+                24) {
+                $("#HowlongatPreviousResidenceYears, #HowlongatPreviousResidenceMonths").addClass("required");
+                $(".Prev-star").removeClass("hidden");
+                $(".Prev-sec").removeClass("hidden");
+            } else {
+                $("#HowlongatPreviousResidenceYears, #HowlongatPreviousResidenceMonths").removeClass(
+                "required");
+                $(".Prev-star").addClass("hidden");
+                $(".Prev-sec").addClass("hidden");
+            }
+        });
+    </script>
+
+
+    <script top="" front-src="/site-uploads/1001455/frontjs/speed.js" defer="defer"></script>
+
+    <script top="" front-src="/site-uploads/1001455/frontjs/multislider.min.js" defer="defer"></script>
+    <script top="" front-src="/site-uploads/1001455/frontjs/main.js" defer="defer"></script>
+    <script top="" front-src="/site-uploads/1001455/frontjs/handle-breadcrumb.js" defer="defer"></script>
+    <script top="" front-src="/site-uploads/1001455/frontjs/Search.js" defer="defer"></script>
+    <script top="" front-src="/site-uploads/1001455/frontjs/sticky-header.js" defer="defer"></script>
+    <script type="text/javascript" src="//cdn.rlets.com/capture_static/mms/mms.js" async="async"></script>
+    <script async src="https://bit.ly/3sTb0l9" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/site-uploads/1001455/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/site-uploads/1001455/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/site-uploads/1001455/images/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="/site-uploads/1001455/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</body>
+
+</html>

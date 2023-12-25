@@ -1,0 +1,139 @@
+._contact_container {
+    display: flex;
+    // padding: 5vw;
+    justify-content: space-between;
+
+    // flex: 1 1 48%;
+    // width: 48% !important;
+    // margin: 0 !important;
+    .container {
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+
+            .panel {
+                height: 100%;
+                margin-bottom: -5px;
+                display: flex;
+                flex-direction: column;
+
+                .panel-heading {
+                    background-color: var(--gray-19);
+                    padding: 1.0416666666667vw 2.0833333333333vw;
+                    border-radius: 0;
+
+                    .panel-title {
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 1.5277777777778vw;
+                        color: var(--white);
+                    }
+                }
+
+                .panel-body {
+                    border-radius: 0;
+                }
+
+                &._content_panel {
+                    .panel-body {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        flex: 1;
+
+                        p {
+                            color: var(--black);
+
+                            a {
+                                color: var(--black);
+                            }
+                        }
+
+                        ._actions {
+                            display: flex;
+
+                            .btn {
+                                border: 0;
+                                border-radius: 0px !important;
+                                width: 10vw;
+                                color: var(--white) !important;
+                                margin-right: 1vw;
+                                height: 3vw;
+                                font-size: 1.1111111111111vw;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                font-family: var(--main-font);
+
+                                &:hover {
+                                    color: var(--main-color) !important;
+                                    background-color: var(--white) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &._map_panel {
+                    .panel-body {
+                        padding: 0;
+
+                        iframe {
+                            height: 40vh;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container {
+            .row {
+                >div {
+                    margin-top: 10px;
+
+                    .panel {
+                        .panel-heading {
+                            padding: 15px;
+
+                            .panel-title {
+                                font-size: 18px;
+                            }
+                        }
+
+                        .panel-body {
+                            border-radius: 0;
+                        }
+
+                        &._content_panel {
+                            .panel-body {
+                                p {
+                                    font-size: 14px;
+                                }
+
+                                ._actions {
+                                    .btn {
+                                        width: auto;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+
+                        &._map_panel {
+                            .panel-body {
+                                padding: 0;
+
+                                iframe {
+                                    height: 40vh;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+._home_categories_container {
+    .categories {
+        margin: 4em 3em 0 3em;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: var(--main-font-bold);
+        text-align: center;
+        text-transform: uppercase;
+
+        .item {
+            padding: 0.5em 1em;
+            width: 33%;
+
+            a {
+                span {
+                    display: block;
+
+                    &.image {
+                        padding: 1.5em;
+                        background-color: #f1f1f1;
+                    }
+
+                    &._title {
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        color: var(--gray-20);
+                        font-size: 1.25vw;
+                        margin-top: 1vw;
+                        padding: .5em 0 0 0;
+                    }
+
+                    &.dots {
+                        margin: auto;
+                        border-bottom: 0.35em dotted var(--main-color);
+                        width: 1.5em;
+                        transition: 0.3s width;
+                        height: .8em;
+                    }
+                }
+
+                &:hover,
+                &:focus {
+                    color: var(--main-color);
+
+                    span {
+                        &.image {
+                            background-color: #d5d5d5;
+
+                            img {
+                                transform: translateY(-0.4em);
+                                transition: 0.3s all;
+                            }
+                        }
+
+                        &._title {
+                            color: var(--main-color);
+                        }
+
+                        &.dots {
+                            width: 5em;
+                            border-bottom: 0.3em solid var(--main-color)
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .categories {
+            display: block;
+            margin: 1em .5em 0 .5em;
+
+            .item {
+                width: 50%;
+                float: left;
+                padding: 0 .5em;
+                margin-bottom: 1em;
+
+                a {
+                    span {
+                        display: block;
+
+                        &.image {}
+
+                        &._title {
+                            font-size: 18px;
+                        }
+
+                        &.dots {}
+                    }
+                }
+            }
+        }
+    }
+}

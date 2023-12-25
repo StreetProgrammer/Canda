@@ -1,0 +1,80 @@
+._Map_Hours_Container {
+    display: flex;
+    flex-wrap: wrap;
+    .left-reset {
+        padding-left: 0 !important;
+        .panel-section {
+            height: 100%;
+            >div {
+                padding: 1em;
+            }
+        }
+    }
+    .right-reset {
+        padding-right: 0 !important;
+    }
+    .panel-section {
+        border: 0.01em solid #d5d5d5;
+        margin-bottom: 1.5em;
+        h2 {
+            margin: 0;
+            background-color: var(--main-color);
+            color: var(--white);
+            font-size: 1.4em;
+            padding: 0.5em 1em;
+        }
+        iframe {
+            width: 100%;
+            min-height: 13em;
+        }
+        .hours-list {
+            padding: 0;
+            margin: 0;
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .left-reset {
+            width: 100%;
+            padding: 1em 0;
+            .panel-section {
+                height: 100%;
+                >div {
+                    padding: 1em;
+                }
+            }
+        }
+        .right-reset {
+            width: 100%;
+            padding: 1em 0;
+        }
+        .panel-section {
+            border: 0.01em solid #d5d5d5;
+            margin-bottom: 1.5em;
+            h2 {
+                margin: 0;
+                background-color: var(--main-color);
+                color: var(--white);
+                font-size: 1.4em;
+                padding: 0.5em 1em;
+            }
+            iframe {
+                width: 100%;
+                min-height: 13em;
+            }
+            .hours-list {
+                padding: 0;
+                margin: 0;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

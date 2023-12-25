@@ -1,0 +1,101 @@
+#showroom {
+    .main-title {
+        text-align: center;
+
+        span {
+            font-size: 1.5vw;
+            padding: 0 2vw;
+            font-family: var(--main-font-bold);
+            color: var(--black);
+        }
+    }
+
+    .title {
+        border-bottom: 1px solid var(--gray-8);
+        text-align: center;
+
+        span {
+            font-size: 1.8055555556vw;
+            font-family: var(--main-font-bold);
+            color: var(--black);
+            border-bottom: 5px solid var(--main-color);
+            padding: 0 2vw;
+        }
+    }
+
+    .item {
+        margin-bottom: 2em;
+        width: 20%;
+
+        a {
+            background-color: var(--white);
+            display: block;
+            text-align: center;
+
+            img {
+                padding: 0 1.2em;
+                width: 80%;
+            }
+
+            span {
+                display: block;
+                background-color: var(--body);
+                color: var(--white);
+                font-family: var(--main-font-bold);
+                text-transform: uppercase;
+                padding: 1em;
+                transition: all ease-in-out 0.2s;
+            }
+
+            &:hover {
+                text-decoration: none;
+
+                span {
+                    background-color: var(--main-color);
+                }
+            }
+        }
+
+        &.full-width {
+            a {
+                img {
+                    padding: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .main-title {
+            span {
+                font-size: 20px;
+                padding: 0 2vw;
+            }
+        }
+
+        .title {
+            border-bottom: 1px solid var(--gray-8);
+
+            span {
+                font-size: 18px;
+                padding: 0 2vw;
+            }
+        }
+
+        .item {
+            margin-bottom: 2em;
+            width: 100%;
+
+            a {
+                img {}
+
+                span {}
+
+                &:hover {
+                    span {}
+                }
+            }
+        }
+    }
+}

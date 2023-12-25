@@ -1,0 +1,63 @@
+#page_50119 {
+  #descktop-global-brands-slider {
+    display: none;
+  }
+}
+.brands-slider {
+  border-bottom: 3.5px solid var(--main-color);
+  .items-slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    #descktop-home-brands-slider, #descktop-global-brands-slider {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 90vw;
+      .MS-controls {
+        button {
+          position: relative;
+          border: none;
+          background-color: transparent;
+          outline: 0;
+          font-size: 1.8vw;
+          color: #aaa;
+          transition: 0.15s linear;
+          @media screen and (max-width: 767px){
+            font-size: 20px;
+          }
+        }
+      }
+      .MS-content {
+        white-space: nowrap;
+        overflow: hidden;
+        .item {
+          display: inline-block;
+          position: relative;
+          vertical-align: top;
+          overflow: hidden;
+          height: 100%;
+          white-space: normal;
+          text-align: center;
+          margin: 15px;
+          // border: 1px solid #b5b5b5;
+          background-color: #fff;
+          padding: .6vw 1.6vw;
+          font-size: 1.5vw;
+          cursor: pointer;
+          color: #aaa;
+          transition: 0.3s color ease-in;
+          img {
+            max-width: 10vw;
+            transition: all ease-in 0.3s;
+            @media screen and (max-width: 767px){
+              max-width: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

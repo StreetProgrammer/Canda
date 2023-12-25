@@ -1,0 +1,44 @@
+#showroom {
+    .item {
+        margin-bottom: 2em;
+        a {
+            background-color: #f0f0f0;
+            display: block;
+            text-align: center;
+            img {
+                width: 100%;
+                padding: 0;
+            }
+            span {
+                display: block;
+                background-color: #000;
+                color: #fff;
+                font-family: var(--main-font-bold);
+                text-transform: uppercase;
+                padding: 1em;
+                &.item-logo {
+                    position: absolute;
+                    background-color: #000;
+                    background-color: #ffffff7a;
+                    right: 1em;
+                    padding: 0;
+                    border-bottom-left-radius: 0.5em;
+                    img {
+                        padding: 1em 1em;
+                        height: 100%;
+                        width: 10em;
+                    }
+                    &:hover {
+                        background-color: #fff;
+                    }
+                }
+            }
+            &:hover,
+            &:focus {
+                span {
+                    background-color: var(--main-color);
+                }
+            }
+        }
+    }
+}

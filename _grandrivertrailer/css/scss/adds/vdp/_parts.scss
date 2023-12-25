@@ -1,0 +1,668 @@
+.parts-vdp {
+    width: 90vw;
+
+    .back-btn {
+        display: none;
+    }
+
+    .gallery-price-setion {
+        display: flex;
+        margin: auto;
+
+        #ad-left-content {
+            margin-right: 0.5vw;
+            border: 1px solid var(--gray-8);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+
+            .rmv-ph-padding {
+                padding: 0;
+            }
+
+            .lSAction>.lSPrev,
+            .lSAction>.lSNext {
+                background: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #ddd;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                background-color: var(--main-color);
+                color: var(--white);
+                transition: all ease-in-out 0.2s;
+                opacity: 1;
+
+                @media screen and (max-width: 600px) {
+                    width: 30px;
+                    height: 30px;
+                    opacity: 0.6;
+                    color: var(--main-color);
+                    background-color: var(--white);
+                    border: 1px solid var(--main-color);
+                }
+
+                &:hover {
+                    color: var(--main-color);
+                    background-color: var(--white);
+                    border: 1px solid var(--main-color);
+                    text-decoration: none;
+                }
+            }
+
+            .lSAction>.lSPrev {
+                left: 0%;
+
+                &:before {
+                    font-family: "FontAwesome" !important;
+                    content: "\f053";
+                }
+            }
+
+            .lSAction>.lSNext {
+                right: 0%;
+
+                &:before {
+                    font-family: "FontAwesome" !important;
+                    content: "\f054";
+                }
+            }
+
+            .img-tag {
+                display: none;
+
+                @media screen and (max-width: 600px) {
+                    left: 0;
+                    top: 20px;
+                    width: 80px;
+                    padding: 0;
+                }
+            }
+        }
+
+        #ad-right-content {
+            margin-left: 0.5vw;
+            border: 1px solid var(--gray-8);
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+
+            select#colors-drop,
+            select#size-drop {
+                background-color: var(--white);
+            }
+
+            .model-title {}
+
+            .parts-price-box {
+                // border-bottom: 1px solid var(--gray-8);
+                margin-bottom: 1vw;
+                padding-bottom: 1vw;
+
+                .parts-price-div {
+                    display: flex;
+                    // justify-content: flex-end;
+                    color: var(--main-color);
+                    font-family: var(--main-font);
+                    font-size: 1.6666666666667vw;
+                    font-weight: 700;
+
+                    span {
+                        font-family: var(--main-font);
+                        color: var(--main-font-color);
+
+                        &.our-price {
+                            color: var(--main-color);
+                        }
+
+                        &.primary {
+                            color: var(--main-color);
+                        }
+                    }
+                }
+            }
+
+            .available {
+                // display: none;
+            }
+
+            .right-cta-buttons {
+                // border-bottom: 1px solid var(--gray-8);
+                margin-bottom: 2vw;
+                padding-bottom: 1vw;
+
+                #qautity-add-box {
+                    display: flex;
+
+                    .simpleCart_quantityBox {
+                        flex: 2;
+                        margin-right: 1vw;
+                    }
+
+                    .ecomm-btn {
+                        flex: 2;
+                        color: var(--white) !important;
+                        background-color: var(--main-color);
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-family: var(--main-font);
+                        font-size: 1.1111111111111vw;
+
+                        span {
+                            color: var(--white) !important;
+                            background-color: var(--main-color);
+
+                        }
+
+                        &:hover {
+                            color: var(--white) !important;
+                        }
+                    }
+                }
+            }
+
+            .quote-btn {
+                background-color: var(--gray-8);
+                color: var(--main-font-color);
+                font-size: 1.1111111111111vw;
+                font-family: var(--main-font);
+                font-weight: 500;
+            }
+
+            .rt-specs-box {
+                // display: none;
+                background-color: transparent;
+                padding: 0;
+                margin: auto 1vw;
+
+                .specs-row {
+                    display: flex;
+                    margin: 0;
+
+                    &.model {
+                        display: none;
+                    }
+
+                    &.saletype {
+                        display: none;
+                    }
+
+                    &.color {
+                        display: none;
+                    }
+
+                    &.Packagecontains {
+                        display: none;
+                    }
+
+                    >div {
+                        flex: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .model-tabs {
+        margin: 1.2vw .5vw 0 0;
+        width: 66%;
+        float: left;
+        border: 1px solid #d5d5d5;
+
+        #detals-tabs {
+            display: none;
+        }
+
+        .tab-content {}
+
+        .panel {
+            .panel-heading {
+                .panel-title {
+                    .js-tabcollapse-panel-heading {
+                        background-color: var(--body) !important;
+                        border: 1px solid #DDDDDD;
+                        color: var(--gray-2) !important;
+                        font-family: "Barlow", sans-serif !important;
+
+                        .glyphicon {
+                            color: var(--gray-2) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    #qautity-add-box .simpleCart_quantityBox div {
+        @media screen and (max-width: 600px) {
+            height: 100%;
+
+        }
+    }
+
+    .model-title {
+        display: none;
+        color: var(--black);
+
+        @media screen and (max-width: 600px) {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        .gallery-price-setion {
+            flex-wrap: wrap;
+
+            #ad-left-content {
+                margin-right: 0vw;
+                width: 100%;
+
+                .lSAction>.lSPrev,
+                .lSAction>.lSNext {
+                    background: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #ddd;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    background-color: var(--main-color);
+                    color: var(--white);
+                    transition: all ease-in-out 0.2s;
+                    opacity: 1;
+
+                    @media screen and (max-width: 600px) {
+                        width: 30px;
+                        height: 30px;
+                        opacity: 0.6;
+                        color: var(--main-color);
+                        background-color: var(--white);
+                        border: 1px solid var(--main-color);
+                    }
+
+                    &:hover {
+                        color: var(--main-color);
+                        background-color: var(--white);
+                        border: 1px solid var(--main-color);
+                        text-decoration: none;
+                    }
+                }
+
+                .lSAction>.lSPrev {
+                    left: 0%;
+
+                    &:before {
+                        font-family: 'Glyphicons Halflings';
+                    }
+                }
+
+                .lSAction>.lSNext {
+                    right: 0%;
+
+                    &:before {
+                        font-family: 'Glyphicons Halflings';
+                    }
+                }
+
+                .img-tag {
+                    display: none;
+
+                    @media screen and (max-width: 600px) {
+                        left: 0;
+                        top: 20px;
+                        width: 80px;
+                        padding: 0;
+                    }
+                }
+            }
+
+            #ad-right-content {
+                margin-left: 0vw;
+                width: 100%;
+                margin-top: 2vw;
+
+                select#colors-drop,
+                select#size-drop {
+                    background-color: var(--white);
+                }
+
+                .model-title {}
+
+                .parts-price-box {
+                    // border-bottom: 1px solid var(--gray-8);
+                    // margin-bottom: 2vw;
+                    // padding-bottom: 1vw;
+
+                    .parts-price-div {
+                        font-size: 18px;
+                    }
+                }
+
+                .available {
+                    display: none;
+                }
+
+                .right-cta-buttons {
+                    // border-bottom: 1px solid var(--gray-8);
+                    // margin-bottom: 2vw;
+                    // padding-bottom: 1vw;
+
+                    #qautity-add-box {
+                        display: flex;
+
+                        .simpleCart_quantityBox {
+                            flex: 2;
+
+                            .form-inline {
+                                width: 100%;
+
+                                .form-group {
+                                    flex: 1;
+                                }
+                            }
+                        }
+
+                        .ecomm-btn {
+                            font-size: 16px;
+
+                            span {
+                                color: var(--white) !important;
+                                background-color: var(--main-color);
+
+                            }
+
+                            &:hover {
+                                color: var(--white) !important;
+                            }
+                        }
+                    }
+                }
+
+                .quote-btn {
+                    font-size: 16px;
+                }
+
+                .rt-specs-box {
+                    display: none;
+                }
+            }
+        }
+
+        .model-tabs {
+            margin: 1.2vw .5vw 0 0;
+            width: 100%;
+            float: left;
+            border: 1px solid #d5d5d5;
+
+            #detals-tabs {
+                display: none;
+            }
+
+            .tab-content {}
+
+            .panel {
+                .panel-heading {
+                    .panel-title {
+                        .js-tabcollapse-panel-heading {
+                            background-color: var(--body) !important;
+                            border: 1px solid #DDDDDD;
+                            color: var(--gray-2) !important;
+                            font-family: "Barlow", sans-serif !important;
+
+                            .glyphicon {
+                                color: var(--gray-2) !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        #qautity-add-box .simpleCart_quantityBox div {
+            @media screen and (max-width: 600px) {
+                height: 100%;
+
+            }
+        }
+
+        .model-title {
+            display: none;
+            color: var(--black);
+
+            @media screen and (max-width: 600px) {
+                font-size: 2rem;
+                font-weight: 500;
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .gallery-price-setion {
+            flex-wrap: wrap;
+
+            #ad-left-content {
+                margin-right: 0vw;
+                width: 100%;
+
+                .lSAction>.lSPrev,
+                .lSAction>.lSNext {
+                    background: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #ddd;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    background-color: var(--main-color);
+                    color: var(--white);
+                    transition: all ease-in-out 0.2s;
+                    opacity: 1;
+
+                    @media screen and (max-width: 600px) {
+                        width: 30px;
+                        height: 30px;
+                        opacity: 0.6;
+                        color: var(--main-color);
+                        background-color: var(--white);
+                        border: 1px solid var(--main-color);
+                    }
+
+                    &:hover {
+                        color: var(--main-color);
+                        background-color: var(--white);
+                        border: 1px solid var(--main-color);
+                        text-decoration: none;
+                    }
+                }
+
+                .lSAction>.lSPrev {
+                    left: 0%;
+
+                    &:before {
+                        font-family: 'Glyphicons Halflings';
+                    }
+                }
+
+                .lSAction>.lSNext {
+                    right: 0%;
+
+                    &:before {
+                        font-family: 'Glyphicons Halflings';
+                    }
+                }
+
+                .img-tag {
+                    display: none;
+
+                    @media screen and (max-width: 600px) {
+                        left: 0;
+                        top: 20px;
+                        width: 80px;
+                        padding: 0;
+                    }
+                }
+
+                .parts-price-box {
+                    // border-bottom: 1px solid var(--gray-8);
+                    margin-bottom: 2vw;
+                    padding-bottom: 1vw;
+
+                    .parts-price-div {
+                        font-size: 18px;
+                        // display: flex;
+                        // justify-content: flex-end;
+                        // padding: 0 2vw;
+                        // color: var(--main-color);
+                    }
+                }
+
+                .ecomm-box {
+                    .ecomm-btns {
+                        #qautity-add-box {
+                            .simpleCart_quantityBox {
+                                padding: 0;
+
+                                div {
+                                    margin: 0;
+                                }
+                            }
+
+                            .ecomm-btn {
+                                flex: 2;
+                                color: var(--white) !important;
+                                background-color: var(--main-color);
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                font-family: var(--main-font);
+                                margin: 0;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            #ad-right-content {
+                margin-left: 0vw;
+                width: 100%;
+                margin-top: 2vw;
+
+                .model-title {}
+
+                .parts-price-box {
+                    border-bottom: 1px solid var(--gray-8);
+                    margin-bottom: 2vw;
+                    padding-bottom: 1vw;
+
+                    .parts-price-div {
+                        font-size: 18px;
+                    }
+                }
+
+                .available {
+                    // display: none;
+                }
+
+                .right-cta-buttons {
+                    // border-bottom: 1px solid var(--gray-8);
+                    // margin-bottom: 2vw;
+                    // padding-bottom: 1vw;
+
+                    #qautity-add-box {
+                        display: flex;
+
+                        .simpleCart_quantityBox {
+                            flex: 2;
+
+                            .form-inline {
+                                width: 100%;
+
+                                .form-group {
+                                    flex: 1;
+                                }
+                            }
+                        }
+
+                        .ecomm-btn {
+                            font-size: 16px;
+
+                            span {
+                                color: var(--white) !important;
+                                background-color: var(--main-color);
+
+                            }
+
+                            &:hover {
+                                color: var(--white) !important;
+                            }
+                        }
+                    }
+                }
+
+                .quote-btn {
+                    font-size: 16px;
+                }
+
+                .rt-specs-box {
+                    display: none;
+                }
+            }
+        }
+
+        .model-tabs {
+            margin: 1.2vw .5vw 0 0;
+            width: 100%;
+            float: left;
+            border: 1px solid #d5d5d5;
+
+            #detals-tabs {
+                display: none;
+            }
+
+            .tab-content {}
+
+            .panel {
+                .panel-heading {
+                    .panel-title {
+                        .js-tabcollapse-panel-heading {
+                            background-color: var(--body) !important;
+                            border: 1px solid #DDDDDD;
+                            color: var(--gray-2) !important;
+                            font-family: "Barlow", sans-serif !important;
+
+                            .glyphicon {
+                                color: var(--gray-2) !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        #qautity-add-box .simpleCart_quantityBox div {
+            @media screen and (max-width: 600px) {
+                height: 100%;
+
+            }
+        }
+
+        .model-title {
+            display: none;
+            color: var(--black);
+
+            @media screen and (max-width: 600px) {
+                font-size: 2rem;
+                font-weight: 500;
+            }
+
+        }
+    }
+}

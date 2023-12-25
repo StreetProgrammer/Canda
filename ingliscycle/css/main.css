@@ -1,0 +1,34 @@
+.carousel-control.left:before {
+  content: '\f053';
+  top: 7em;
+  left: -3.5em;
+}
+
+.carousel-control.right:before {
+  content: '\f054';
+  top: 7em;
+  right: -3.5em;
+}
+
+#comp_1691679528215 .lSAction .lSPrev:after {
+  content: '\e003';
+  font-family: 'Font Awesome Kit';
+}
+
+#comp_1691679528215 .lSAction .lSNext:after {
+  content: '\e000';
+  font-family: 'Font Awesome Kit';
+}
+
+#normal_vdp .ecomm-box .ecomm-btns .ecomm-btn.deposit-to-cart:before {
+  font-family: 'Font Awesome 5 Pro';
+  content: '\f07a';
+}
+
+#normal_vdp .lSAction .lSPrev::before {
+  content: '\e257';
+}
+
+#normal_vdp .lSAction .lSNext::before {
+  content: '\e258';
+}

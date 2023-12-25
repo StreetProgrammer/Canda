@@ -1,0 +1,335 @@
+.item-shippable {
+  display: none;
+}
+
+#page_53726 .thumb.card .collapse {
+  display: block;
+}
+
+.list-group-item .quick-box {
+  padding: 0.5vw 1vw 1vw 1vw !important;
+}
+
+.regLinks h1,
+.rules-regulations h1 {
+  margin-bottom: 1.5vw;
+}
+
+.regLinks a,
+.rules-regulations a {
+  color: #000;
+  display: block;
+  border-bottom: 1px solid #d5d5d5;
+  padding: 0.5vw;
+}
+
+.model-specs .comment {
+  max-height: none;
+}
+
+.price .ttl,
+.model-title-link {
+  color: #1b519e !important;
+}
+
+.thumb .thumbStatus {
+  display: none;
+}
+
+.btn.btn-warning {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+#HeaderDiv .header-1-nav.sticky-header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+#comp_1646090247477,
+.call-now,
+.quote,
+#ad-right-content .model-title,
+#ad-right-content .manufacturer,
+#page_53736 .c-date,
+#page_53736 #filters,
+#page_53736 #products .sortby-row,
+#page_53737 .c-date,
+#page_53737 #filters,
+#page_53737 #products .sortby-row,
+.thumb.card .add-to-cart-product,
+.thumb.card .spec-col.Taxes,
+.thumb.card .spec-col.Price.Description,
+.filter-ttl,
+.thumb.card .specs-btn-parent,
+.layout_view {
+  display: none !important;
+}
+
+#page_53736 #products,
+#page_53737 #products {
+  width: 100% !important;
+}
+
+.home-courses-title h3 {
+  margin: 3vw;
+}
+
+@media (max-width: 767px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #HeaderDiv
+    .header-1-nav
+    .bottom
+    .navbar-default
+    .navbar-collapse
+    .navbar-nav
+    > li
+    > a {
+    color: var(--black);
+  }
+  #imageGallery .lslide {
+    height: auto !important;
+    padding-top: 20px;
+  }
+  .parts-price-div {
+    text-align: center;
+  }
+  .parts-vdp .gallery-price-setion #ad-right-content {
+    padding: 20px;
+  }
+  #qautity-add-box {
+    padding: 0 20px 10px 20px;
+  }
+  .parts-vdp .model-tabs {
+    padding: 0;
+    margin: 15px 0 0 0;
+    border: none;
+  }
+  .filter-ttl,
+  .light2021
+    #filters.staticFilterContainer
+    .filters-panel
+    .filters-inner
+    .filter-ttl
+    .filter-ontrol-btns,
+  .thumb.card .specs-btn-parent {
+    display: block !important;
+  }
+  .light2021
+    #products
+    .grid-group-item
+    .thumb.card
+    .specs-btn-parent
+    .specs-btn {
+    background-color: transparent;
+    border: none;
+  }
+  .light2021
+    #products
+    .list-group-item
+    .thumb.card
+    .open-item-specs
+    a.View-Details,
+  .light2021
+    #products
+    .grid-group-item
+    .thumb.card
+    .open-item-specs
+    a.View-Details {
+    left: 0 !important;
+  }
+  .adsResetButton {
+    display: none !important;
+  }
+  .filter-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .grid-group-item .model-title {
+    margin: 10px 0 20px 0;
+  }
+}
+
+@media (min-width: 991px) {
+  #HeaderDiv
+    .header-1-nav
+    .bottom
+    .navbar-default
+    .navbar-collapse
+    .navbar-nav {
+    width: 75%;
+  }
+  .parts2021 {
+    width: 92vw;
+  }
+  body {
+    background-image: none !important;
+    background-color: #ffffff !important;
+    background-repeat: no-repeat !important;
+  }
+  #siteMenu {
+    background-image: none !important;
+    background-color: #ffffff !important;
+  }
+  .mainMenu li {
+    background-color: #000000 !important;
+    border-color: #ffffff !important;
+    text-align: center !important;
+  }
+  .mainMenu li li {
+    background-color: #000000 !important;
+    border-color: #ffffff !important;
+    text-align: center !important;
+  }
+  .mainMenu a,
+  mainMenu a:visited {
+    font-size: 10px !important;
+    font-family: Verdana, Arial, sans-serif !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+    font-style: normal !important;
+    color: #990000 !important;
+  }
+  .mainMenu a:hover {
+    color: #990000 !important;
+    background-color: #000000 !important;
+    border-color: #ffffff !important;
+  }
+  .ui-layout-pane {
+    background-image: none !important;
+    background-color: #ff0000 !important;
+  }
+  .headerFont {
+    background-image: none !important;
+    font-family: Verdana, Arial, sans-serif !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+    font-style: normal !important;
+    font-size: 10px !important;
+    color: #000000 !important;
+    background-color: #ffffff !important;
+  }
+  .pragraphFont {
+    font-family: Verdana, Arial, sans-serif !important;
+    font-weight: normal !important;
+    color: #000000 !important;
+    font-size: 10px !important;
+    text-decoration: none !important;
+    font-style: normal !important;
+  }
+  .linksFont {
+    font-size: 10px !important;
+    font-family: Verdana, Arial, sans-serif !important;
+    font-weight: normal !important;
+    color: #000000 !important;
+    text-decoration: underline !important;
+    font-style: normal !important;
+  }
+  .light2021 {
+    width: 92vw;
+  }
+  .cta-btns a.main-btn {
+    background-color: #01a6e0;
+    color: #fff;
+    border-radius: 0;
+  }
+  .cta-btns a i {
+    color: #01a6e0;
+  }
+  .specs-btn span {
+    background-color: #eaeaea;
+  }
+  .specs-btn-parent:after {
+    background: #e0e0e0;
+  }
+  .specs-btn-parent:before {
+    background: #e0e0e0;
+  }
+  .price-box {
+    color: #01a6e0;
+  }
+  .request-quote-btn {
+    background-color: #01a6e0;
+  }
+  .model-details-content .glyphicon {
+    color: #01a6e0;
+  }
+  #qautity-add-box {
+    display: flrx;
+    flex-direction: column;
+  }
+  #home.ad-overview * {
+    font-family: var(--main-font) !important;
+  }
+  ._Registration .box a {
+    color: var(--gray-222);
+  }
+  ._Registration .box ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ._Registration .box ul li {
+    flex: 1;
+  }
+  /* Task #22762 */
+  .parts-vdp #qautity-add-box .btn.btn-primary {
+    display: none !important;
+  }
+  .cart-action-btn.cartCheckout,
+  .login-screen .submit-btn {
+    background-color: var(--main-color);
+    color: var(--black);
+    font-weight: 600;
+    padding: 0.75vw 1.25vw;
+    font-size: 1.25vw;
+    font-family: var(--secondary-font);
+    padding: 0.5vw 1vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+    background-image: none;
+  }
+  .home-who-we-are .content {
+    margin-top: 2vw;
+  }
+  .home-who-we-are .content .words h1 {
+    margin-top: 0;
+  }
+  .model-details-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #detailsParentDiv .about-risk {
+    background-color: var(--gray-222);
+    padding: 3vw;
+  }
+  #detailsParentDiv .about-risk h4 {
+    color: var(--gray-3);
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 1.5277777777778vw;
+  }
+  #detailsParentDiv .about-risk p {
+    color: var(--gray-3);
+    font-size: 1.1111111111111vw;
+    font-weight: 500;
+    border-bottom: 1px solid 777777;
+    margin-bottom: 1vw;
+    padding-bottom: 1vw;
+  }
+}

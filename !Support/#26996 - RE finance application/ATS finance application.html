@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Start Form -->
+    <div class="adForm container-fluid" id="_mainFormWrapper">
+        <h1 class="col-xs-12 col-sm-12 remv" style="text-align: center;">New Loan Application</h1>
+
+        <h2 class="col-xs-12 col-sm-12 remv">Product Information</h2>
+
+        <div class="form-check col-sm-6 col-xs-6 remv">
+            <input checked="checked" class="_Applicant_Type form-check-input" id="flexRadioDefault1"
+                name="Applicant Type" type="radio" value="Individual Applicant" />
+            <label class="form-check-label" for="flexRadioDefault1"> Individual Applicant</label>
+        </div>
+
+        <div class="form-check col-sm-6 col-xs-6 remv">
+            <input class="_Applicant_Type form-check-input" id="flexRadioDefault2" name="Applicant Type" type="radio"
+                value="Joint Applicant" />
+            <label class="form-check-label" for="flexRadioDefault2"> Joint Applicant</label>
+        </div>
+
+        <div class="form-check col-sm-6 col-xs-6 remv">
+            <input class="form-check-input" id="flexRadioDefault3" name="condition" type="radio" value="New" />
+            <label class="form-check-label" for="flexRadioDefault3">New</label>
+        </div>
+
+        <div class="form-check col-sm-6 col-xs-6 _add_content_1 remv"><input class="form-check-input"
+                id="flexRadioDefault4" name="condition" type="radio" value="Used" /> <label class="form-check-label"
+                for="flexRadioDefault4">Used</label></div>
+        <!--  -->
+
+        <div class="form-check col-sm-6 col-xs-6 remv">
+            <input class="_Purpose_Of_Use form-check-input" id="Purpose_Of_Use_1" name="Purpose Of Use" type="radio"
+                value="Consumer / Personal / Household Use" />
+            <label class="form-check-label" for="Purpose_Of_Use_1">Consumer / Personal / Household Use</label></div>
+
+        <div class="form-check col-sm-6 col-xs-6 remv _add_content_3">
+            <input class="_Purpose_Of_Use form-check-input" id="Purpose_Of_Use_2" name="Purpose Of Use" type="radio"
+                value="Commercial/Business Use" /> <label class="form-check-label"
+                for="Purpose_Of_Use_2">Commercial/Business Use</label></div>
+
+        <div class="col-xs-12 col-sm-12 formField _add_content_4 remv">
+            <label class="sr-only" for="exampleInputEmail3">Amount Requested</label> <input
+                class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true" id="Amount Requested"
+                name="Amount Requested" placeholder="Amount Requested" spellcheck="false" title="Amount Requested"
+                type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <h2 class="col-xs-12 col-sm-12 canToggle" data-content="Second Applicant">Primary Applicant</h2>
+
+        <div class="col-xs-12 col-sm-12 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Social
+                Security </label> <input class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true"
+                id="Social Security" name="Social-Security" placeholder="Social Security" spellcheck="false"
+                title="Social Security" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle"><label class="sr-only" for="exampleInputEmail3">First
+                Name</label> <input class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true"
+                id="First Name" name="First-Name" placeholder="First Name" spellcheck="false" title="First Name"
+                type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Middle
+                Name</label> <input class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true"
+                id="Middle Name" name="Middle-Name" placeholder="Middle Name" spellcheck="false" title="Middle Name"
+                type="text" /></div>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle">
+            <label class="sr-only" for="exampleInputEmail3">Last Name</label>
+            <input class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true" id="Last Name"
+                name="Last-Name" placeholder="Last Name" spellcheck="false" title="Last Name" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Select
+                Suffix</label> <select aria-invalid="false" class="valid" name="Select Suffix"
+                placeholder="Select Suffix">
+                <option value="">Select Suffix</option>
+                <option>SR.</option>
+                <option>JR.</option>
+                <option>|</option>
+                <option>||</option>
+                <option>|||</option>
+                <option>|V</option>
+                <option>V</option>
+                <option>V|</option>
+                <option>V||</option>
+                <option>V|||</option>
+                <option>|X</option>
+            </select></div>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle"><label class="sr-only" for="exampleInputEmail3">* Present
+                Street
+                Address (Not P.O. Box) </label> <input class="required adpage_formbox detailsFormFirstName1"
+                data-ms-editor="true" id="Present Street Address" name="Present Street Address"
+                placeholder="Present Street Address" spellcheck="false" title="Present Street Address" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle"><label class="sr-only" for="exampleInputEmail3">City</label>
+            <input class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true" false="" id="City"
+                name="City" placeholder="City" spellcheck="false" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle"><label class="sr-only"
+                for="exampleInputEmail3">State</label> <select aria-invalid="false" class="required   valid"
+                name="State" placeholder="State" required="">
+                <option value="">State</option>
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Delaware</option>
+                <option>District of Columbia</option>
+                <option>Florida</option>
+                <option>Georgia</option>
+                <option>Hawaii</option>
+                <option>Idaho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option>Kansas</option>
+                <option>Kentucky</option>
+                <option>Louisiana</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississippi</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New Jersey</option>
+                <option>New Mexico</option>
+                <option>New York</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+                <option>Ohio</option>
+                <option>Oklahoma</option>
+                <option>Oregon</option>
+                <option>Pennsylvania</option>
+                <option>Rhode Island</option>
+                <option>South Carolina</option>
+                <option>South Dakota</option>
+                <option>Tennessee</option>
+                <option>Texas</option>
+                <option>Utah</option>
+                <option>Vermont</option>
+                <option>Virginia</option>
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>
+            </select>
+
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Zip</label>
+            <input class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true" false="" id="Zip"
+                name="Zip" placeholder="Zip" spellcheck="false" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Date of
+                Birth</label> <input class="date required adpage_formbox detailsFormFirstName1 hasDatepicker"
+                data-ms-editor="true" id="Date of Birth" name="Date-of-Birth" placeholder="Date of Birth"
+                spellcheck="false" title="Date of Birth" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <h2 class="col-xs-12 col-sm-12 canToggle">Mailing Information</h2>
+
+        <div class="col-xs-12 col-sm-12 formField canToggle"><input data-gtm-form-interact-field-id="3" name="Mailing"
+                required="" type="checkbox" /> <b>Mailing address is different from primary account address</b></div>
+
+        <div class="col-xs-12 col-sm-6 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Mailing
+                Address </label> <input class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true"
+                id="Present Street Address" name="Mailing Address" placeholder="Mailing Address" spellcheck="false"
+                title="Mailing Address" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Mailing
+                Address City </label> <input class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true"
+                false="" id="Mailing Address City" name="Mailing Address City" placeholder="Mailing Address City"
+                spellcheck="false" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 formField canToggle"><label class="sr-only"
+                for="exampleInputEmail3">State</label> <select aria-invalid="false" class="required   valid"
+                name="Mailing Address State" placeholder="Mailing Address State" required="">
+                <option value="">State</option>
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Delaware</option>
+                <option>District of Columbia</option>
+                <option>Florida</option>
+                <option>Georgia</option>
+                <option>Hawaii</option>
+                <option>Idaho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option>Kansas</option>
+                <option>Kentucky</option>
+                <option>Louisiana</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississippi</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New Jersey</option>
+                <option>New Mexico</option>
+                <option>New York</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+                <option>Ohio</option>
+                <option>Oklahoma</option>
+                <option>Oregon</option>
+                <option>Pennsylvania</option>
+                <option>Rhode Island</option>
+                <option>South Carolina</option>
+                <option>South Dakota</option>
+                <option>Tennessee</option>
+                <option>Texas</option>
+                <option>Utah</option>
+                <option>Vermont</option>
+                <option>Virginia</option>
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>
+            </select>
+
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Mailing
+                Address Zip </label> <input class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true"
+                false="" id="Mailing Address Zip" name="Mailing Address Zip" placeholder="Mailing Address Zip"
+                spellcheck="false" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <h2 class="col-xs-12 col-sm-12 canToggle">Contact Information</h2>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle"><label class="sr-only"
+                for="exampleInputEmail3">Select</label> <select aria-invalid="false" class="valid" name="Select1"
+                placeholder="Select">
+                <option value="">Residential Status</option>
+                <option>Own/Buying</option>
+                <option>Renting</option>
+                <option>Other</option>
+                <option>Living Rent Free</option>
+            </select></div>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Monthly
+                Housing/Rent
+                Payment </label> <input class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true"
+                id="Monthly Housing/Rent Payment" name="Monthly Housing/Rent Payment"
+                placeholder="Monthly Housing/Rent Payment" spellcheck="false" title="Monthly Housing/Rent Payment"
+                type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Years at
+                Residence </label> <input class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true"
+                id="Years at Residence" name="Years at Residence" placeholder="Years at Residence" spellcheck="false"
+                title="Years at Residence" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Applicant
+                Email Address </label> <input class="required adpage_formbox detailsFormFirstName1"
+                data-ms-editor="true" id="Applicant Email Address" name="Applicant Email Address"
+                placeholder="Applicant Email Address" spellcheck="false" title="Applicant Email Address" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Home
+                Phone</label> <input class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true"
+                id="Home Phone" name="Home Phone" placeholder="Home Phone" spellcheck="false" title="Home Phone"
+                type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Mobile
+                Phone</label> <input class="adpage_formbox detailsFormFirstName1" data-ms-editor="true"
+                id="Mobile Phone" name="Mobile Phone" placeholder="Mobile Phone" spellcheck="false" title="Mobile Phone"
+                type="text" /></div>
+
+        <h2 class="col-xs-12 col-sm-12 canToggle">Employer Information</h2>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Employment
+                Status </label> <select aria-invalid="false" class="valid _Employment_Status" name="Employment Status"
+                placeholder="Employment Status">
+                <option value="">Select Employment Status</option>
+                <option>Retired</option>
+                <option>Employed</option>
+                <option>Unemployed</option>
+            </select></div>
+
+        <div class="col-xs-12 col-sm-4 formField canToggle _add_content_2"><label class="sr-only"
+                for="exampleInputEmail3">Monthly Gross </label> <input
+                class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true" id="Monthly Gross"
+                name="Monthly Gross" placeholder="Monthly Gross" spellcheck="false" title="Monthly Gross" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <h2 class="col-xs-12 col-sm-12 canToggle">Nearest Relative Information</h2>
+
+        <div class="col-xs-12 col-sm-6 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Nearest
+                Relative&#39;s Name </label> <input class="required adpage_formbox detailsFormFirstName1"
+                data-ms-editor="true" id="Nearest Relative's Name" name="Nearest Relative's Name"
+                placeholder="Nearest Relative's Name" spellcheck="false" title="Nearest Relative's Name" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Nearest
+                Relative&#39;s City </label> <input class="required adpage_formbox detailsFormFirstName1"
+                data-ms-editor="true" id="Nearest Relative's City" name="Nearest Relative's City"
+                placeholder="Nearest Relative's City" spellcheck="false" title="Nearest Relative's City" type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Nearest
+                Relative&#39;s State </label> <select aria-invalid="false" class="required   valid"
+                name="Nearest Relative's State" placeholder="Nearest Relative's State" required="">
+                <option value="">Nearest Relative&#39;s State</option>
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Delaware</option>
+                <option>District of Columbia</option>
+                <option>Florida</option>
+                <option>Georgia</option>
+                <option>Hawaii</option>
+                <option>Idaho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option>Kansas</option>
+                <option>Kentucky</option>
+                <option>Louisiana</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississippi</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New Jersey</option>
+                <option>New Mexico</option>
+                <option>New York</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+                <option>Ohio</option>
+                <option>Oklahoma</option>
+                <option>Oregon</option>
+                <option>Pennsylvania</option>
+                <option>Rhode Island</option>
+                <option>South Carolina</option>
+                <option>South Dakota</option>
+                <option>Tennessee</option>
+                <option>Texas</option>
+                <option>Utah</option>
+                <option>Vermont</option>
+                <option>Virginia</option>
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>
+            </select>
+
+            <div class="formRequired">*</div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 formField canToggle"><label class="sr-only" for="exampleInputEmail3">Nearest
+                Relative&#39;s Phone Number </label> <input class="required adpage_formbox detailsFormFirstName1"
+                data-ms-editor="true" id="Nearest Relative's Phone Number" name="Nearest Relative's Phone Number"
+                placeholder="Nearest Relative's Phone Number" spellcheck="false" title="Nearest Relative's Phone Number"
+                type="text" />
+            <div class="formRequired">*</div>
+        </div>
+
+        <h2 class="col-xs-12 col-sm-12 secondApplicantBeforeMe remv">Agreements</h2>
+
+        <div class="col-xs-12 col-sm-12 formField remv"><input data-gtm-form-interact-field-id="5" name="Agreements"
+                required="" type="checkbox" /> <b> <span> By checking this box you agree that you have read and
+                    acknowledge the following disclosures <a
+                        href="https://prequalify.sheffieldFinancial.com/Apply/PreQualApplication/disclosure/Agreement-To-Receive-Electronic-Communication?dealer=26934"
+                        target="_blank">E-Sign Act Disclosure</a> , <a
+                        href="https://prequalify.sheffieldFinancial.com/Apply/PreQualApplication/disclosure/General-Application-Disclosure?dealer=26934"
+                        target="_blank">General Application Disclosures</a> , <a
+                        href="https://prequalify.sheffieldFinancial.com/Apply/PreQualApplication/disclosure/COPPA-Disclosure?dealer=26934"
+                        target="_blank">COPPA Disclosure</a> and <a
+                        href="https://www.truist.com/content/dam/truist-bank/us/en/documents/footer/privacy-policy-truist-english.pdf"
+                        target="_blank">Truist&#39;s Privacy Policy</a> . </span> </b></div>
+    </div>
+    <!--End Form  -->
+
+    <p>
+        <style type="text/css">
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            textarea,
+            select {
+                float: none;
+            }
+
+            .formField {
+                position: relative;
+            }
+
+            .formField .formRequired,
+            label.error {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 20px;
+                height: 40px;
+                line-height: 40px;
+                margin-top: 0;
+                margin-bottom: auto;
+                font-size: 16px;
+                font-family: arial;
+            }
+
+            label.error {
+                padding-right: 15px;
+            }
+
+            .adForm h2 {
+                font-size: 26px;
+                padding: 15px;
+                border-top: 1px solid #dedede;
+                text-align: center;
+                font-family: Oswald;
+            }
+
+            form button,
+            form .btn {
+                background-color: #d0112b;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #ed2742;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                color: #ffffff;
+            }
+
+            button:hover,
+            .btn:hover,
+            button:focus,
+            .btn:focus {
+                background-color: #ec1431;
+                color: #000000;
+            }
+
+            /* .adForm .formField.col-xs-12,
+                                .adForm .formField.col-sm-12 {
+                                    padding: 0;
+                                } */
+
+            .adForm input,
+            .adForm textarea,
+            .adForm select {
+                width: 100%;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #ebebeb;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                background-color: #f2f2f2;
+                color: #000 !important;
+                font-size: 1.25vw;
+                outline: none;
+                padding-top: 10px;
+                padding-right: 20px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                resize: none;
+                max-width: 100%;
+                min-width: 200px;
+            }
+
+            input:hover,
+            textarea:hover,
+            select:hover,
+            input:focus,
+            textarea:focus,
+            select:focus {
+                background-color: #d6d6d6;
+                color: #000000;
+            }
+
+            ::-webkit-input-placeholder {
+                /* WebKit browsers */
+                color: #000000;
+                color: rgba(0, 0, 0, 0.85);
+            }
+
+            :-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: #000000;
+                color: rgba(0, 0, 0, 0.85);
+            }
+
+            ::-moz-placeholder {
+                /* Mozilla Firefox 19+ */
+                color: #000000;
+                color: rgba(0, 0, 0, 0.85);
+            }
+
+            :-ms-input-placeholder {
+                /* Internet Explorer 10+ */
+                color: #000000;
+                color: rgba(0, 0, 0, 0.85);
+            }
+
+            input[type="checkbox"],
+            input[type="radio"] {
+                width: auto;
+                display: inline-block;
+            }
+
+            .seperator {
+                border-bottom: 1px solid #e2e2e2;
+                margin: 30px auto;
+            }
+
+            form .lead-button,
+            form .btn.btn-default,
+            form .btn.btn-primary {
+                text-transform: uppercase;
+                border-width: 0;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                color: #ffffff;
+                text-align: center;
+                font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+                font-size: 18px;
+                padding-top: 15px;
+                padding-right: 30px;
+                padding-bottom: 15px;
+                padding-left: 30px;
+                display: block;
+                margin: 5px;
+                font-weight: normal;
+                float: left;
+            }
+
+            @media screen and (max-width: 767px) {
+
+                .adForm input,
+                .adForm textarea,
+                .adForm select {
+                    font-size: 16px;
+                }
+            }
+
+            .adForm input,
+            .adForm textarea,
+            .adForm select {
+                min-width: 30px;
+            }
+
+            .adForm.container-fluid {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        </style>
+        <script>
+            $(document).on('change', '._Applicant_Type', function () {
+                if ($(this).val() === 'Joint Applicant') {
+
+                    var content =
+                        '<div class="col-xs-12 col-sm-12 formField __joint_credit_checkbox"><input name="apply" checked disabled required="" type="checkbox"><b> We intend to apply for joint credit</b></div>';
+
+                    $(content).insertAfter('._add_content_1');
+                    var newContent = "";
+
+                    if ($("#hiddenTemp .remv").length) {
+                        $("#hiddenTemp .remv").remove();
+                        $('#hiddenTemp .__joint_credit_checkbox').remove();
+                        var newFormFieldWappers = $("#hiddenTemp").find('.formField');
+                        var newFormCheckWappers = $("#hiddenTemp").find('.form-check');
+
+                        console.log({
+                            newFormCheckWappers
+                        });
+
+                        /* add title to this section */
+                        $('#hiddenTemp').prepend(
+                            '<h2 class="col-xs-12 col-sm-12 canToggle">Second Applicant Information</h2>'
+                        );
+                        var mainTitle = $("#hiddenTemp").find(`[data-content="Second Applicant"]`);
+                        mainTitle.html(mainTitle.attr("data-content"));
+
+                        /*switch temp class "canToggle" to "_canRmove" */
+                        $("#hiddenTemp .canToggle").addClass("_canRmove");
+                        $("#hiddenTemp ._canRmove").removeClass("canToggle");
+
+                        $.each(newFormFieldWappers, function (index, el) {
+                            $(el).children().each(function (idx, innerEl) {
+                                if ($(innerEl).is("input")) {
+                                    $(innerEl).attr("id", "Second Applicant " + $(innerEl).attr(
+                                        "id"));
+                                    $(innerEl).attr("name", "Second-Applicant-" + $(innerEl)
+                                        .attr(
+                                            "name"));
+                                    $(innerEl).attr("placeholder", "Second Applicant " + $(
+                                            innerEl)
+                                        .attr("placeholder"));
+                                    $(innerEl).attr("title", "Second Applicant " + $(innerEl)
+                                        .attr(
+                                            "title"));
+                                } else if ($(innerEl).is("label")) {
+                                    $(innerEl).html("Second Applicant " + $(innerEl).html());
+                                }
+                            })
+                        });
+                        newContent = $("#hiddenTemp").html()
+                    } else {
+                        newContent = $("#hiddenTemp").html()
+                    }
+                    $(newContent).insertBefore(".secondApplicantBeforeMe");
+
+                } else {
+                    $('.__joint_credit_checkbox').remove();
+                    $('#_mainFormWrapper ._canRmove').remove();
+                }
+            });
+
+            $('._Employment_Status').on('change', function () {
+                if ($(this).val() === 'Employed') {
+
+                    var content =
+                        "<div class='col-xs-12 col-sm-4 formField __Employer_Information'><label class='sr-only' for='exampleInputEmail3'>Current Employer&#39;s Name</label><input class='required adpage_formbox detailsFormFirstName1' data-ms-editor='true' id='Current Employer'\''s Name' name='Current Employer'\''s Name' placeholder='Current Employer'\''s Name' spellcheck='false' title='Current Employer'\''s Name' type='text'> <div class='formRequired'>*</div> </div> <div class='col-xs-12 col-sm-4 formField __Employer_Information'> <label class='sr-only' for='exampleInputEmail3'>Current Employer&#39;s City</label> <input class='required adpage_formbox detailsFormFirstName1' data-ms-editor='true' id='Current Employer'\''s City' name='Current Employer'\''s City' placeholder='Current Employer'\''s City' spellcheck='false' title='Current Employer'\''s City' type='text' > <div class='formRequired'>*</div> </div> <div class='col-xs-12 col-sm-4 formField __Employer_Information'> <label class='sr-only' for='exampleInputEmail3'>Years at Employment</label> <input class='required adpage_formbox detailsFormFirstName1' data-ms-editor='true' id='Years at Employment' name='Years at Employment' placeholder='Years at Employment spellcheck='false' title='Years at Employment' type='text' > <div class='formRequired'>*</div> </div> <div class='col-xs-12 col-sm-4 formField __Employer_Information'> <label class='sr-only' for='exampleInputEmail3'>Work Phone</label> <input class='required adpage_formbox detailsFormFirstName1' data-ms-editor='true' id='Work Phone2' name='Work Phone2' placeholder='Work Phone' spellcheck='false' title='Work Phone' type='text'><div class='formRequired'>*</div></div>";
+
+                    $(content).insertAfter('._add_content_2');
+                } else {
+                    $('.__Employer_Information').remove();
+                }
+            });
+
+
+            $('._Purpose_Of_Use').on('change', function () {
+                console.log(" here => ", $(this).val());
+                if ($(this).val() === 'Commercial/Business Use') {
+
+                    var content =
+                        '<div class="form-check col-sm-6 col-xs-6 __Customer_Business_Information"><input class="___Loan_in_Business_Name form-check-input" id="_Loan_in_Business_Name" name="Loan in Business Name" type="checkbox" value="Yes" > <label class="form-check-label" for="_Loan_in_Business_Name">Loan in Business Name</label></div>';
+
+                    $(content).insertAfter('._add_content_3');
+                } else {
+                    $('.__Customer_Business_Information').remove();
+                }
+            });
+
+            $(document).on('change', '#_Loan_in_Business_Name', function () {
+                console.log(" here => ", $(this).val());
+                if ($(this).is(":checked")) {
+
+                    var content =
+                        '<h2 class="col-xs-12 col-sm-12 __Customer_Business_Information _last">Customer Business Information</h2> <div class="form-check col-sm-6 col-xs-6 __Customer_Business_Information  _last"> <input class="form-check-input" id="SSN-radio" name="Company-SSN-Or-EIN" type="radio" value="SSN"> <label class="form-check-label" for="SSN-radio">SSN</label> </div> <div class="form-check col-sm-6 col-xs-6 __Customer_Business_Information  _last"> <input class="form-check-input" id="EIN-radio" name="Company-SSN-Or-EIN" type="radio" value="EIN" > <label class="form-check-label" for="EIN-radio">EIN</label></div><div class="col-xs-12 col-sm-6 formField __Customer_Business_Information  _last"> <label class="sr-only" for="exampleInputEmail3">Company SSN/EIN</label> <input class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true" id="Social Security" name="Company SSN/EIN" placeholder="Company SSN/EIN" spellcheck="false" title="Company SSN/EIN" type="text" > <div class="formRequired">*</div></div> <div class="col-xs-12 col-sm-6 formField __Customer_Business_Information  _last"> <label class="sr-only" for="exampleInputEmail3">Company Name</label> <input class="required adpage_formbox detailsFormFirstName1" data-ms-editor="true" id="Social Security" name="Company Name" placeholder="Company Name" spellcheck="false" title="Company Name" type="text" > <div class="formRequired">*</div></div>';
+
+                    $(content).insertAfter('._add_content_4');
+                } else {
+                    $('.__Customer_Business_Information._last').remove();
+                }
+            });
+
+            /* 
+            class=secondApplicantBeforeMe
+            */
+
+            $(function () {
+                // 1 - get #_mainFormWrapper content 
+                var mainFormWrapperHtml = $('#_mainFormWrapper').html();
+                // 2 - create hidden element #hiddenTemp
+                $(".formsParent").append('<div id="hiddenTemp" class="hidden"></div>');
+                // 3 - fill #hiddentemp with #_mainFormWrapper content
+                $('#hiddenTemp').html(mainFormWrapperHtml)
+                /* Apeend updated html to current form */
+
+
+            });
+        </script>
+    </p>
+
+
+
+</body>
+
+</html>

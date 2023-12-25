@@ -1,0 +1,148 @@
+._Warranty {
+    .container {
+        .panel-group {
+            .panel-default {
+                .panel-heading {
+                    background-color: var(--black);
+                    color: var(--white);
+                    padding: 0;
+
+                    .panel-title {
+                        font-size: 2vw;
+                        text-transform: uppercase;
+                        font-weight: 800;
+                        padding: 0;
+
+                        a {
+                            display: block;
+                            padding: 2vw;
+                        }
+                    }
+                }
+
+                .panel-body {
+                    h4 {
+                        font-size: 1.5vw;
+                        text-align: center;
+                    }
+
+                    ._item {
+                        display: flex;
+                        flex-wrap: wrap;
+                        border-top: 1px solid var(--gray);
+                        padding: 1vw 0.5vw;
+
+                        ._left {
+                            width: 20%;
+                            font-weight: 700;
+                            font-size: 1.25vw;
+                        }
+
+                        ._right {
+                            width: 80%;
+
+                            p {
+                                font-weight: 500;
+                                font-size: 1.25vw;
+                            }
+                        }
+
+                        ._bottom {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            a {
+                                background-color: var(--main-color);
+                                font-family: var(--main-font-bold);
+                                text-transform: uppercase;
+                                color: #fff;
+                                padding: 1em 4em;
+                                border: 0.01em solid var(--main-color);
+                                border-radius: 0 !important;
+                            }
+                        }
+                    }
+
+                    ._action {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-top: 1px solid var(--gray);
+                        padding: 1vw 0;
+
+                        a {
+                            background-color: var(--main-color);
+                            font-family: var(--main-font-bold);
+                            text-transform: uppercase;
+                            color: #fff;
+                            padding: 1em 4em;
+                            border: 0.01em solid var(--main-color);
+                            border-radius: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container {
+            .panel-group {
+                .panel-default {
+                    .panel-heading {
+                        .panel-title {
+                            font-size: 4vw;
+
+                            a {
+                                display: block;
+                                padding: 12px;
+                            }
+                        }
+                    }
+
+                    .panel-body {
+                        h4 {
+                            font-size: 3.5vw;
+                            margin: 5px;
+                        }
+
+                        ._item {
+                            flex-direction: column;
+                            padding: 1vw 0.5vw;
+
+                            ._left {
+                                width: 100%;
+                                font-size: 3vw;
+                            }
+
+                            ._right {
+                                width: 100%;
+
+                                p {
+                                    font-size: 3vw;
+                                }
+                            }
+
+                            ._bottom {
+                                a {
+                                    padding: 0.8em 2em;
+                                    font-size: .9em;
+                                }
+                            }
+                        }
+
+                        ._action {
+                            a {
+                                padding: 0.8em 2em;
+                                font-size: .9em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

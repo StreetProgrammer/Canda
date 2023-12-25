@@ -1,0 +1,182 @@
+.btn {
+    transition: all ease-in-out 0.3s;
+    padding: 15px 15px !important;
+    border-radius: 30px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    &.btn-primary {
+        background-color: var(--main-color) !important;
+        border-color: var(--main-color) !important;
+        color: var(--white) !important;
+
+        span.icon {
+            background-color: var(--white) !important;
+        }
+
+        &:hover {
+            background-color: var(--white) !important;
+            border-color: var(--main-color) !important;
+            color: var(--main-color) !important;
+
+            span.icon {
+                background-color: var(--main-color) !important;
+            }
+        }
+    }
+
+    &.btn-default {
+        background-color: var(--main-color) !important;
+        border-color: var(--main-font-color) !important;
+        color: var(--main-font-color) !important;
+
+        span.icon {
+            background-color: var(--main-font-color) !important;
+        }
+
+        &:hover {
+            background-color: var(--white) !important;
+
+            // border-color: var(--main-color) !important;
+            // color: var(--main-color) !important;
+            span.icon {
+                background-color: var(--main-font-color) !important;
+            }
+        }
+    }
+
+    &.btn-success {}
+
+    &.btn-info {
+        background-color: var(--gray-3);
+        border-color: var(--gray-8);
+        color: var(--main-font-color) !important;
+
+        span.icon {
+            background-color: var(--main-font-color) !important;
+        }
+
+        &:hover {
+            background-color: var(--white) !important;
+            border-color: var(--main-color) !important;
+            color: var(--main-color) !important;
+
+            span.icon {
+                background-color: var(--main-color) !important;
+            }
+        }
+    }
+
+    &.btn-warning {
+        background-color: var(--secondary-color) !important;
+        border-color: var(--secondary-color) !important;
+        color: var(--white) !important;
+
+        span.icon,
+        span.glyphicon {
+            background-color: var(--secondary-color) !important;
+        }
+
+        &:hover {
+            background-color: var(--white) !important;
+            border-color: var(--secondary-color) !important;
+            color: var(--secondary-color) !important;
+
+            span.icon {
+                background-color: var(--secondary-color) !important;
+            }
+        }
+    }
+
+    &.btn-danger {
+        background-color: var(--main-font-color);
+        border-color: var(--gray-8);
+        color: var(--gray-3) !important;
+
+        span.icon {
+            background-color: var(--gray-3) !important;
+        }
+
+        &:hover {
+            background-color: var(--white) !important;
+            border-color: var(--main-color) !important;
+            color: var(--main-color) !important;
+
+            span.icon {
+                background-color: var(--main-color) !important;
+            }
+        }
+    }
+
+    &.btn-link {}
+
+    &.btn-trans {
+        background-color: transparent !important;
+        border-color: var(--white) !important;
+        color: var(--white) !important;
+
+        span.icon {
+            background-color: var(--white) !important;
+        }
+
+        &:hover {
+            background-color: var(--white) !important;
+            border-color: var(--main-color) !important;
+            color: var(--main-color) !important;
+
+            span.icon {
+                background-color: var(--main-color) !important;
+            }
+        }
+    }
+
+    &._16 {
+        font-size: 1.1111111111111vw;
+
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+
+    &._18 {
+        font-size: 1.25vw;
+
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+        }
+    }
+
+    &._20 {
+        font-size: 1.3888888888889vw;
+
+        @media screen and (max-width: 767px) {
+            font-size: 20px;
+        }
+    }
+
+    &._22 {
+        font-size: 1.5277777777778vw;
+
+        @media screen and (max-width: 767px) {
+            font-size: 22px;
+        }
+    }
+}
+
+
+.b-btn {
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 5px;
+    border-radius: 0px !important;
+    transition: all ease-in 0.3s;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
