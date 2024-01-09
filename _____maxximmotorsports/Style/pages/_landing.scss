@@ -1,0 +1,279 @@
+#page_66916 {
+
+    // hide top header
+    #html_1703261595014 {
+        display: none;
+    }
+
+    // hide menu
+    #comp_1703261608355 {
+        display: none;
+    }
+
+    // hide breadcrumb
+    #comp_1703261635016 {
+        display: none;
+    }
+
+    // hide some of footer
+    #html_1703261876111 {
+        .to-up-container {
+            display: none;
+        }
+
+        #footer {
+            display: none;
+        }
+    }
+
+    #parent {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+
+        >.row {
+            &:nth-child(1) {
+                display: none;
+            }
+
+            &:nth-child(2) {
+                flex: 1;
+            }
+        }
+
+        #CenterDiv {
+            padding: 3em 10em 5em 10em !important;
+            height: 100% !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    ._landing {
+        .content_container {
+            margin: 0em 10em;
+            position: relative;
+
+            .logo {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 50%;
+                    margin-bottom: 5em;
+                }
+            }
+
+            .col-sm-6.col-xs-12 {
+                .main {
+                    border: 1px solid #8E8E8E;
+                    position: relative;
+
+                    .inner_content {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #8e8e8e4f;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .top {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            h5 {}
+
+                            a {
+                                background-color: var(--main-color);
+                                color: var(--black);
+                                padding: 0.5em 1em;
+                                border-radius: 2em;
+                                transition: all ease-in-out 0.2s;
+
+                                &:hover {
+                                    color: var(--main-color);
+                                    background-color: var(--black);
+                                }
+                            }
+                        }
+
+                        hr {
+                            width: 100%;
+                            border-color: #8E8E8E;
+                        }
+
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            li {
+                                width: 45%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                a {
+                                    transition: all ease-in-out 0.2s;
+
+                                    img {
+                                        // width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 991px) and (max-width: 1600px) {
+        #parent {
+            >.row {
+                &:nth-child(1) {}
+
+                &:nth-child(2) {}
+            }
+
+            #CenterDiv {}
+        }
+
+        ._landing {
+            .content_container {
+                margin: 0em 2em;
+
+                .logo {
+                    img {}
+                }
+
+                .col-sm-6.col-xs-12 {
+                    .main {
+                        .inner_content {
+                            .top {
+                                h5 {}
+
+                                a {
+                                    &:hover {}
+                                }
+                            }
+
+                            hr {}
+
+                            ul {
+                                li {
+                                    a {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 990px) {
+        #parent {
+            >.row {
+                &:nth-child(1) {}
+
+                &:nth-child(2) {}
+            }
+
+            #CenterDiv {
+                padding: 3em 5em 5em 5em !important;
+            }
+        }
+
+        ._landing {
+            .content_container {
+                margin: 0em 0em;
+
+                .logo {
+                    img {}
+                }
+
+                .col-sm-6.col-xs-12 {
+                    .main {
+                        .inner_content {
+                            .top {
+                                h5 {}
+
+                                a {
+                                    &:hover {}
+                                }
+                            }
+
+                            hr {}
+
+                            ul {
+                                li {
+                                    a {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        #parent {
+            height: auto;
+
+            >.row {
+                &:nth-child(1) {}
+
+                &:nth-child(2) {}
+            }
+
+            #CenterDiv {
+                padding: 3em 0em 5em 0em !important;
+            }
+        }
+
+        ._landing {
+            .content_container {
+                margin: 0em 1em;
+
+                .logo {
+                    img {
+                        width: 80%;
+                        margin-bottom: 3em;
+                    }
+                }
+
+                .col-sm-6.col-xs-12 {
+                    margin-bottom: 2em;
+
+                    .main {
+                        .inner_content {
+                            .top {
+                                h5 {}
+
+                                a {
+                                    &:hover {}
+                                }
+                            }
+
+                            hr {}
+
+                            ul {
+                                li {
+                                    a {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
