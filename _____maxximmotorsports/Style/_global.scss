@@ -91,6 +91,7 @@
 #html_1684951165252,
 #html_1684954862081 {
     width: 55% !important;
+    min-height: 60vw;
 }
 
 h2.section-title {
@@ -953,6 +954,12 @@ a#tradeinTab:hover {
     padding-right: 4em;
     padding-left: 0;
     margin: 0;
+
+    @media screen and (max-width: 767px) {
+        padding: 0;
+        display: flex;
+        width: 100%;
+    }
 }
 
 #header-top ul li {
@@ -1668,7 +1675,7 @@ hr,
     font-size: 0.95em;
     text-transform: uppercase;
     color: #fff !important;
-    padding: 1em;
+    padding: 2em 0.75em;
     line-height: normal;
 }
 
@@ -1806,7 +1813,13 @@ hr,
 }
 
 .navbar-header .sccm-search .menu-search {
-    margin-right: 1.5em;
+    margin-right: 0em;
+    padding: 1.1em 0;
+
+    @media screen and (max-width: 767px) {
+        margin-right: 1.5em;
+        padding: 0 0.5em;
+    }
 }
 
 .navbar-header .sccm-search .menu-phone span {
@@ -5470,7 +5483,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     }
 
     .footer-bottom {
-        padding: 1em 1em 5em 1em;
+        padding: 1em 1em 1em 1em;
     }
 
     .footer-row.footer-row--bottom {
