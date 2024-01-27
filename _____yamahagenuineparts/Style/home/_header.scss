@@ -17,11 +17,20 @@
             display: block;
 
             .navbar.navbar-default {
+                background-color: transparent;
+                border-color: transparent;
+                margin-bottom: 0;
                 .navbar-toggle {
-                    display: block;
+                    display: flex;
+                    border-radius: 0;
+
+                    .wrapper {
+                        margin-right: 1em;
+                    }
 
                     &::after {
                         content: "Menu";
+                        color: var(--black);
                     }
                 }
             }

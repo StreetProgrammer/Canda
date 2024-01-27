@@ -4910,11 +4910,21 @@ input[type=time]::-webkit-calendar-picker-indicator {
   ._main_header #comp_1705994544829 {
     display: block;
   }
+  ._main_header #comp_1705994544829 .navbar.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0;
+  }
   ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-toggle {
-    display: block;
+    display: flex;
+    border-radius: 0;
+  }
+  ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-toggle .wrapper {
+    margin-right: 1em;
   }
   ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-toggle::after {
     content: "Menu";
+    color: var(--black);
   }
 }
 ._main_header ._yamaha_logo {
@@ -5233,4 +5243,4 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 
 /* pages */
-/* ADS */
+/* ADS *//*# sourceMappingURL=main.css.map */

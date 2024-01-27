@@ -5,6 +5,13 @@ $(document).ready(function () {
   });
 });
 
+// update menu
+$(document).ready(function () {
+  var oldHtml = $(".navbar-toggle").html();
+  $(".navbar-toggle").html("<span class='wrapper'>"+oldHtml+"</span>")
+
+});
+
 /* Active State Menu */
 $(document).ready(function () {
   var url = window.location.pathname;
