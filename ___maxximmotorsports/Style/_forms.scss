@@ -1,0 +1,40 @@
+h2.section-title.text-center {
+    font-size: 1.75em;
+    text-transform: uppercase;
+}
+
+.formsParent {
+    font-family: var(--main-font);
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-family: var(--main-font) !important;
+    }
+
+    .SendCopyCheck,
+    input[type=reset],
+    .seperator {
+        display: none !important;
+    }
+
+    #Buttons {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding: 1em;
+
+        input {
+            float: none;
+            text-align: center;
+            display: inline-block;
+            border: none !important;
+            border-radius: 0 !important;
+        }
+
+        .btn {
+            float: none;
+            display: inline-block;
+        }
+    }
+}

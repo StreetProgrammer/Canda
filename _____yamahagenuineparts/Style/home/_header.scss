@@ -1,0 +1,348 @@
+.sticky-nav {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    z-index: 16;
+}
+
+._main_header {
+    display: flex;
+    padding: 1em 4em;
+    align-items: center;
+
+    #comp_1705994544829 {
+
+        // display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+
+            .navbar.navbar-default {
+                .navbar-toggle {
+                    display: block;
+
+                    &::after {
+                        content: "Menu";
+                    }
+                }
+            }
+        }
+    }
+
+    ._yamaha_logo {
+        margin: 0 3.5em 0 1em;
+
+        img {
+            width: 8em;
+        }
+    }
+
+    ._search {
+        display: flex;
+        flex-direction: row-reverse;
+        flex: 1;
+        margin: 0 1em;
+
+        #searchbtn2,
+        #searchbtnParts {
+            float: none;
+            border-radius: 0px;
+            padding: 0.5em 0 0.4em 1em !important;
+            margin: 0px !important;
+            background-color: var(--main-color) !important;
+            outline: none;
+            color: var(--white) !important;
+            font-size: 1.2em;
+        }
+
+        #searchbox2,
+        #searchboxParts {
+            width: 100%;
+            float: left;
+            border-radius: 0px;
+            border: 0px;
+            outline: none;
+            height: 4em;
+            font-size: 1.1em;
+            padding: 0.91em 1.5em;
+            background-color: var(--white);
+        }
+    }
+
+    ._icon_links {
+        display: flex;
+
+        ._login {
+            padding: 0 2em;
+            border-right: 1px solid;
+            margin: 1em 1.5em;
+
+            a {
+                display: flex;
+                align-items: center;
+                color: #616365;
+
+                >span {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 0.8em;
+
+                    >span {
+                        &:first-child {}
+
+                        &:last-child {
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                i {
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        ._cart {
+            a {
+                color: #616365;
+                display: flex;
+                height: 100%;
+                align-items: center;
+
+                >span {
+                    position: relative;
+
+                    >span {
+                        &.simpleCart_quantity {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: -1.25em;
+                            right: -0.25em;
+                            background-color: #616365;
+                            color: var(--white);
+                            border-radius: 50%;
+                            line-height: 1;
+                            font-size: 0.7em;
+                            width: 2em;
+                            height: 2em;
+                        }
+                    }
+
+                    i {
+                        font-size: 1.25em;
+                        color: var(--black);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Modals */
+
+
+/* Search Modals */
+
+// #searchModal {
+//     .modal-dialog {
+//         margin-top: 8%;
+//         width: 50% !important;
+//         margin-left: auto;
+//         margin-right: auto;
+//         .modal-content {
+//             border: none;
+//             background-color: transparent !important;
+//             background: none;
+//             box-shadow: none;
+//             .modal-body {
+//                 .search-div {
+//                     display: flex;
+//                     flex-direction: row-reverse;
+//                     #searchbtn2 {
+//                         float: none;
+//                         border-radius: 0px;
+//                         border: 0px;
+//                         padding: 0.5em 0 0.4em 1em !important;
+//                         margin: 0px !important;
+//                         background-color: var(--main-color) !important;
+//                         outline: none;
+//                         color: #fff !important;
+//                         font-size: 1.6em;
+//                     }
+//                     #searchbox2 {
+//                         width: 100%;
+//                         float: left;
+//                         border-radius: 0px;
+//                         border: 0px;
+//                         outline: none;
+//                         height: 4em;
+//                         font-size: 1.1em;
+//                         padding: 0.91em 1.5em;
+//                     }
+//                 }
+//                 .search-links {
+//                     background-color: #fff;
+//                     padding: 2em;
+//                     margin-top: 0.5em;
+//                     overflow: hidden;
+//                     h2 {
+//                         margin-top: 0;
+//                         font-size: 1.8em;
+//                     }
+//                     ul {
+//                         margin: 0;
+//                         padding: 0;
+//                         line-height: 1.5;
+//                         li {
+//                             float: left;
+//                             width: 50%;
+//                             border-bottom: 0.01em solid #d5d5d5;
+//                             a {
+//                                 display: block;
+//                                 padding: 0.5em 0;
+//                                 color: var(--darkgrey);
+//                                 &:hover {
+//                                     color: var(--main-color);
+//                                     text-decoration: none;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     @media screen and (max-width: 767px) {
+//         .modal-dialog {
+//             width: 80% !important;
+//             .modal-content {
+//                 .modal-body {
+//                     .search-div {
+//                         #searchbtn2 {
+//                             float: none;
+//                             border-radius: 0px;
+//                             border: 0px;
+//                             padding: 0.5em 0 0.4em 1em !important;
+//                             margin: 0px !important;
+//                             background-color: var(--main-color) !important;
+//                             outline: none;
+//                             color: #fff !important;
+//                             font-size: 1.6em;
+//                         }
+//                         #searchbox2 {
+//                             width: 100%;
+//                             float: left;
+//                             border-radius: 0px;
+//                             border: 0px;
+//                             outline: none;
+//                             height: 4em;
+//                             font-size: 1.1em;
+//                             padding: 0.91em 1.5em;
+//                         }
+//                     }
+//                     .search-links {
+//                         h2 {}
+//                         ul {
+//                             li {
+//                                 width: 100%;
+//                                 a {}
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+/* Hours Modal */
+
+// #HoursModal {
+//     .modal-dialog {
+//         .modal-content {
+//             .modal-body {
+//                 .inner {
+//                     display: flex;
+//                     .bg-container {
+//                         width: 50%;
+//                     }
+//                     .content {
+//                         width: 50%;
+//                         .hours-list {
+//                             color: #000;
+//                             flex: 1;
+//                             display: flex;
+//                             flex-direction: column;
+//                             justify-content: space-evenly;
+//                             width: 100%;
+//                             margin: auto;
+//                             padding: 0 1em;
+//                             height: 100%;
+//                             li {
+//                                 font-size: 0.8em;
+//                                 display: flex;
+//                                 justify-content: space-between;
+//                                 border-bottom: 0.01em solid #d5d5d5;
+//                                 padding: 0.4em;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     @media screen and (max-width: 767px) {
+//         .modal-dialog {
+//             .modal-content {
+//                 .modal-body {
+//                     .inner {
+//                         .bg-container {
+//                             display: none;
+//                         }
+//                         .content {
+//                             width: 100%;
+//                             .hours-list {
+//                                 li {}
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// .modal-body,
+// .modal.deposit-info .modal-content {
+//     padding: 1em 2em;
+//     overflow: hidden;
+// }
+// .modal-dialog {
+//     .modal-content {
+//         border: none;
+//         border-radius: 0.3em;
+//         box-shadow: none;
+//         .modal-header {
+//             padding: 1em 2em;
+//             background-color: var(--main-color);
+//             color: var(--white);
+//             border-top-left-radius: 0.3em;
+//             border-top-right-radius: 0.3em;
+//             text-align: left !important;
+//             .close {
+//                 font-size: 2em;
+//                 color: var(--white);
+//                 opacity: 1;
+//                 background-color: var(--main-color);
+//             }
+//             .modal-title {
+//                 margin: 0;
+//                 line-height: 1.42857143;
+//             }
+//         }
+//         .modal-body {
+//             padding: 0;
+//         }
+//     }
+// }

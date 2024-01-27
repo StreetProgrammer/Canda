@@ -1,0 +1,46 @@
+.build-your-boat-btns {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 2vw 0;
+}
+.build-your-boat-btns #build-your-boat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #070e23;
+  color: var(--white);
+  padding: 0.75em 1em;
+  font-size: 1.5em;
+  transition: all ease-in-out 0.2s;
+}
+.build-your-boat-btns #build-your-boat:hover {
+  background-color: #6d0000;
+}
+@media screen and (max-width: 767px) {
+  .build-your-boat-btns #build-your-boat {
+    margin: auto;
+  }
+}
+
+#page_66660 #comp_1700502817902 .breadcrumbParent {
+  margin-bottom: 0;
+}
+
+#page_66660 .seamaster-srp .sortby-row {
+  padding: 0vw 0px 1vw 0;
+}
+
+.seamaster-srp #products .item {
+  margin: 0.95vw;
+}
+.seamaster-srp #products .item:nth-child(3n) {
+  margin-right: 0 !important;
+}
+@media screen and (max-width: 767px) {
+  .seamaster-srp #products .item {
+    width: 46% !important;
+  }
+  .seamaster-srp #products .item:nth-child(3n) {
+    margin: 0.95vw !important;
+  }
+}

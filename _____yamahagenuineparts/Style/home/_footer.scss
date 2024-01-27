@@ -1,0 +1,37 @@
+.footer_note {
+    margin: 2em 10em;
+    color: var(--black);
+    text-align: center;
+    font-weight: 400;
+
+    a {
+        font-weight: 700;
+        color: var(--black);
+    }
+
+    @media screen and (max-width: 767px) {
+        margin: 2em 3em;
+        order: 0;
+    }
+}
+
+#html_1705994175549 {
+    .contentHtml {
+        @media screen and (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+
+            .to-up-container {
+                order: 1;
+            }
+
+            #footer {
+                order: 1;
+            }
+
+            .footer-bottom {
+                order: 1;
+            }
+        }
+    }
+}

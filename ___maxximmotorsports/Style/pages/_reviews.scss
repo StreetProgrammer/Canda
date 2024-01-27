@@ -1,0 +1,27 @@
+._review-row {
+    margin-top: 1em;
+
+    ._reviews {
+        .review {
+            padding: 1em 0;
+            margin: 1em 0;
+            border-bottom: 1px solid;
+
+            i {}
+
+            .review__text {}
+
+            .review__author-info {
+                .review__stars {
+                    i {
+                        &.fa-star {
+                            color: gold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ._action {}
+}
