@@ -9,10 +9,9 @@
     display: flex;
     padding: 1em 4em;
     align-items: center;
+    border-bottom: 1px solid var(--grey-3);
 
     #comp_1705994544829 {
-
-        // display: none;
         @media screen and (min-width: 768px) {
             display: block;
 
@@ -20,9 +19,11 @@
                 background-color: transparent;
                 border-color: transparent;
                 margin-bottom: 0;
+
                 .navbar-toggle {
                     display: flex;
                     border-radius: 0;
+                    align-items: center;
 
                     .wrapper {
                         margin-right: 1em;
@@ -31,6 +32,29 @@
                     &::after {
                         content: "Menu";
                         color: var(--black);
+                    }
+                }
+
+                .navbar-collapse {
+                    display: none !important;
+
+                    &.in {
+                        display: block !important;
+                    }
+
+                    .nav.navbar-nav {
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 100%;
+                        z-index: 999;
+
+                        >li {
+                            >a {
+                                min-width: 25em;
+                                background: #ddd;
+                            }
+                        }
                     }
                 }
             }
@@ -50,9 +74,9 @@
         flex-direction: row-reverse;
         flex: 1;
         margin: 0 1em;
+        height: 2.5em;
 
-        #searchbtn2,
-        #searchbtnParts {
+        #_searchbtn {
             float: none;
             border-radius: 0px;
             padding: 0.5em 0 0.4em 1em !important;
@@ -61,24 +85,41 @@
             outline: none;
             color: var(--white) !important;
             font-size: 1.2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        #searchbox2,
-        #searchboxParts {
+        #_searchbox {
             width: 100%;
             float: left;
             border-radius: 0px;
             border: 0px;
             outline: none;
-            height: 4em;
+            height: 2em;
             font-size: 1.1em;
             padding: 0.91em 1.5em;
             background-color: var(--white);
+            border: 1px solid var(--grey-3);
+            border-right: 0;
+
+            &:hover,
+            &:focus {
+                background-color: inherit !important;
+                color: inherit !important;
+                box-shadow: none !important;
+            }
         }
     }
 
     ._icon_links {
         display: flex;
+
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
 
         ._login {
             padding: 0 2em;

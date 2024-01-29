@@ -1629,7 +1629,6 @@ hr,
 
 /* Homepage */
 .breadcrumbParent {
-  filter: drop-shadow(0px 1px 3px #000000);
   display: flex !important;
   align-items: center;
   justify-content: space-between;
@@ -1644,6 +1643,7 @@ hr,
   flex: 1;
   font-size: 1.6em;
   font-weight: 600;
+  color: var(--black);
 }
 
 .breadcrumbParent .breadcrumb {
@@ -4905,6 +4905,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   display: flex;
   padding: 1em 4em;
   align-items: center;
+  border-bottom: 1px solid var(--grey-3);
 }
 @media screen and (min-width: 768px) {
   ._main_header #comp_1705994544829 {
@@ -4918,6 +4919,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-toggle {
     display: flex;
     border-radius: 0;
+    align-items: center;
   }
   ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-toggle .wrapper {
     margin-right: 1em;
@@ -4925,6 +4927,23 @@ input[type=time]::-webkit-calendar-picker-indicator {
   ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-toggle::after {
     content: "Menu";
     color: var(--black);
+  }
+  ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-collapse {
+    display: none !important;
+  }
+  ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-collapse.in {
+    display: block !important;
+  }
+  ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-collapse .nav.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    z-index: 999;
+  }
+  ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-collapse .nav.navbar-nav > li > a {
+    min-width: 25em;
+    background: #ddd;
   }
 }
 ._main_header ._yamaha_logo {
@@ -4938,9 +4957,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex-direction: row-reverse;
   flex: 1;
   margin: 0 1em;
+  height: 2.5em;
 }
-._main_header ._search #searchbtn2,
-._main_header ._search #searchbtnParts {
+._main_header ._search #_searchbtn {
   float: none;
   border-radius: 0px;
   padding: 0.5em 0 0.4em 1em !important;
@@ -4949,21 +4968,33 @@ input[type=time]::-webkit-calendar-picker-indicator {
   outline: none;
   color: var(--white) !important;
   font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-._main_header ._search #searchbox2,
-._main_header ._search #searchboxParts {
+._main_header ._search #_searchbox {
   width: 100%;
   float: left;
   border-radius: 0px;
   border: 0px;
   outline: none;
-  height: 4em;
+  height: 2em;
   font-size: 1.1em;
   padding: 0.91em 1.5em;
   background-color: var(--white);
+  border: 1px solid var(--grey-3);
+  border-right: 0;
+}
+._main_header ._search #_searchbox:hover, ._main_header ._search #_searchbox:focus {
+  background-color: inherit !important;
+  color: inherit !important;
+  box-shadow: none !important;
 }
 ._main_header ._icon_links {
   display: flex;
+}
+._main_header ._icon_links a:hover {
+  text-decoration: none;
 }
 ._main_header ._icon_links ._login {
   padding: 0 2em;
@@ -5109,10 +5140,9 @@ input[type=time]::-webkit-calendar-picker-indicator {
     display: block;
   }
   .main_content .flex-row ._col p.visible-xs {
-    border-bottom: 1px solid var(--grey-3);
     font-size: 1em;
     color: var(--black);
-    margin: 0 0 1em 0;
+    margin: 0;
     font-family: var(--main-font-bold);
   }
   .main_content .flex-row ._col p.visible-xs a {
@@ -5126,25 +5156,39 @@ input[type=time]::-webkit-calendar-picker-indicator {
     font-size: 0.7em;
     content: "\f078";
   }
-  .main_content .flex-row ._col p.visible-xs a:focus {
-    text-decoration: none;
-    outline: none;
-    position: relative;
+  .main_content .flex-row ._col .panel-collapse {
+    display: none;
   }
-  .main_content .flex-row ._col p.visible-xs a:focus::before {
+  .main_content .flex-row ._col .panel-collapse.in {
+    display: block;
+  }
+  .main_content .flex-row ._col .panel-collapse.in p.visible-xs {
+    font-size: 1em;
+    color: var(--black);
+    margin: 0 0 1em 0;
+    font-family: var(--main-font-bold);
+  }
+  .main_content .flex-row ._col .panel-collapse.in p.visible-xs a {
+    color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid var(--grey-3);
+    padding: 0.5em 0;
+  }
+  .main_content .flex-row ._col .panel-collapse.in p.visible-xs a::after {
+    font-family: "Font Awesome 5 Pro";
+    font-size: 0.7em;
+    content: "\f078";
+  }
+  .main_content .flex-row ._col .panel-collapse.in p.visible-xs a::before {
     position: absolute;
     top: 100%;
     width: 2.5em;
     height: 0.1em;
     background-color: var(--main-color);
-    margin-top: 0.1em;
     content: "";
-    display: block;
-  }
-  .main_content .flex-row ._col .panel-collapse {
-    display: none;
-  }
-  .main_content .flex-row ._col .panel-collapse.in {
     display: block;
   }
   .main_content .flex-row ._col .panel-collapse .row {
@@ -5243,4 +5287,4 @@ input[type=time]::-webkit-calendar-picker-indicator {
 }
 
 /* pages */
-/* ADS *//*# sourceMappingURL=main.css.map */
+/* ADS */

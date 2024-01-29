@@ -120,20 +120,11 @@
                 }
 
                 p.visible-xs {
-                    border-bottom: 1px solid var(--grey-3);
                     font-size: 1em;
                     color: var(--black);
-                    margin: 0 0 1em 0;
+                    margin: 0;
                     font-family: var(--main-font-bold);
 
-                    // &::after {
-                    //     width: 2.5em;
-                    //     height: 0.1em;
-                    //     background-color: var(--main-color);
-                    //     margin-top: 0.1em;
-                    //     content: "";
-                    //     display: block;
-                    // }
                     a {
                         color: var(--black);
                         display: flex;
@@ -145,23 +136,6 @@
                             font-size: 0.7em;
                             content: '\f078';
                         }
-
-                        &:focus {
-                            text-decoration: none;
-                            outline: none;
-                            position: relative;
-
-                            &::before {
-                                position: absolute;
-                                top: 100%;
-                                width: 2.5em;
-                                height: 0.1em;
-                                background-color: var(--main-color);
-                                margin-top: 0.1em;
-                                content: "";
-                                display: block;
-                            }
-                        }
                     }
                 }
 
@@ -170,6 +144,40 @@
 
                     &.in {
                         display: block;
+
+                        p.visible-xs {
+                            font-size: 1em;
+                            color: var(--black);
+                            margin: 0 0 1em 0;
+                            font-family: var(--main-font-bold);
+
+                            a {
+                                color: var(--black);
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                position: relative;
+                                border-bottom: 1px solid var(--grey-3);
+                                padding: 0.5em 0;
+
+                                &::after {
+                                    font-family: 'Font Awesome 5 Pro';
+                                    font-size: 0.7em;
+                                    content: '\f078';
+                                }
+
+                                &::before {
+                                    position: absolute;
+                                    top: 100%;
+                                    width: 2.5em;
+                                    height: 0.1em;
+                                    background-color: var(--main-color);
+                                    // margin-top: 0.1em;
+                                    content: "";
+                                    display: block;
+                                }
+                            }
+                        }
                     }
 
                     .row {

@@ -5,13 +5,6 @@ $(document).ready(function () {
   });
 });
 
-// update menu
-$(document).ready(function () {
-  var oldHtml = $(".navbar-toggle").html();
-  $(".navbar-toggle").html("<span class='wrapper'>"+oldHtml+"</span>")
-
-});
-
 /* Active State Menu */
 $(document).ready(function () {
   var url = window.location.pathname;
@@ -74,4 +67,32 @@ $(function () {
 
     $("#CenterDiv").html(content);
   }
+});
+
+/* this website */
+
+// Update Menu
+$(document).ready(function () {
+  var oldHtml = $(".navbar-toggle").html();
+  $(".navbar-toggle").html("<span class='wrapper'>" + oldHtml + "</span>");
+});
+
+/* hamdle panel */
+$(document).ready(function () {
+  $(".clickToOpenAndHideME").on("click", function (e) {
+    $(this).parent().removeClass("visible-xs");
+    $(this).parent().addClass("hidden");
+  });
+
+  $(".clickToOpenAndHideOther").on("click", function (e) {
+    var targetClass = $(this).attr("aria-controls").replace("-accord", "");
+    console.log({ targetClass });
+
+    $(".clickToOpenAndHideME." + targetClass)
+      .parent()
+      .addClass("visible-xs");
+    $(".clickToOpenAndHideME." + targetClass)
+      .parent()
+      .removeClass("hidden");
+  });
 });
