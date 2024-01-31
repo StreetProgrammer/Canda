@@ -921,7 +921,7 @@ body {
   font-family: var(--body-font);
   font-size: 1.1vw;
   line-height: 1.4;
-  color: #d5d5d5;
+  color: var(--black);
   padding: 0 !important;
 }
 

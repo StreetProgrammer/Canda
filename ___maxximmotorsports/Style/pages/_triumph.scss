@@ -50,7 +50,6 @@
 
             .youtube {
                 position: absolute;
-                position: absolute;
                 z-index: 1;
                 top: 50%;
                 left: 50%;
@@ -183,22 +182,21 @@
 
                 .youtube {
                     position: absolute;
-                    position: absolute;
                     z-index: 1;
-                    top: 50%;
+                    top: 70%;
                     left: 50%;
                     transform: translate(-50%, -50%);
                     background-color: var(--main-color);
                     color: var(--white);
-                    width: 5em;
-                    height: 5em;
+                    width: 3em;
+                    height: 3em;
                     border-radius: 50%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
                     i {
-                        font-size: 1.25em;
+                        font-size: 1em;
                     }
                 }
 
@@ -226,6 +224,10 @@
         ._btns.container {
             .row {
                 padding: 0 1em;
+
+                .col-xs-12 {
+                    width: 100%;
+                }
             }
         }
     }
