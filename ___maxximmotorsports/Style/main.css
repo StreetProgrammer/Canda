@@ -3967,9 +3967,19 @@ input[type=time]::-webkit-calendar-picker-indicator {
 .light2021 .item.list-group-item .caption .col-sm-7 {
   width: 65%;
 }
+@media screen and (max-width: 767px) {
+  .light2021 .item.list-group-item .caption .col-sm-7 {
+    width: 100%;
+  }
+}
 
 .light2021 .item.list-group-item .caption .cta-btns {
   width: 35%;
+}
+@media screen and (max-width: 767px) {
+  .light2021 .item.list-group-item .caption .cta-btns {
+    width: 100%;
+  }
 }
 
 .light2021 .model-title {
@@ -5320,6 +5330,12 @@ input[type=time]::-webkit-calendar-picker-indicator {
   background: #FF4E00;
 }
 
+@media screen and (max-width: 767px) {
+  .item.list-group-item .img-event,
+  .item.list-group-item .caption {
+    flex-wrap: wrap;
+  }
+}
 /* Home */
 /* pages */
 #page_66916 #html_1703261595014 {
