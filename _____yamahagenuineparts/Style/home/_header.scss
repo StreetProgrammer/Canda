@@ -12,53 +12,76 @@
     border-bottom: 1px solid var(--grey-3);
 
     #comp_1705994544829 {
-        @media screen and (min-width: 768px) {
-            display: block;
+        // @media screen and (min-width: 768px) {
+        display: block;
 
-            .navbar.navbar-default {
-                background-color: transparent;
-                border-color: transparent;
-                margin-bottom: 0;
+        .navbar.navbar-default {
+            background-color: transparent;
+            border-color: transparent;
+            margin-bottom: 0;
 
-                .navbar-toggle {
-                    display: flex;
-                    border-radius: 0;
-                    align-items: center;
+            .navbar-toggle {
+                display: flex;
+                border-radius: 0;
+                align-items: center;
 
-                    .wrapper {
-                        margin-right: 1em;
-                    }
-
-                    &::after {
-                        content: "Menu";
-                        color: var(--black);
-                    }
+                .wrapper {
+                    margin-right: 1em;
                 }
 
-                .navbar-collapse {
-                    display: none !important;
+                &::after {
+                    content: "Menu";
+                    color: var(--black);
+                }
+            }
 
-                    &.in {
-                        display: block !important;
-                    }
+            .navbar-collapse {
+                display: none !important;
 
-                    .nav.navbar-nav {
-                        display: flex;
-                        flex-direction: column;
-                        position: absolute;
-                        top: 100%;
-                        z-index: 999;
+                &.in {
+                    display: block !important;
+                }
 
-                        >li {
-                            >a {
-                                min-width: 25em;
-                                background: #ddd;
+                .nav.navbar-nav {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 100%;
+                    z-index: 999;
+                    min-width: 25em;
+                    border: 0.1em solid #D8D8D8;
+
+                    >li {
+                        >a {
+                            background: var(--white);
+                            color: var(--black);
+
+                            &:hover {
+                                background: var(--main-color);
+                                color: var(--white);
                             }
                         }
+                    }
+
+                    &::before {
+                        // z-index: -1;
+                        content: "";
+                        position: absolute;
+                        top: -5px;
+                        left: 5%;
+                        display: block;
+                        padding: 5px;
+                        box-shadow: -1px -1px 0 1px #D8D8D8;
+                        cursor: pointer;
+                        -webkit-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                        background-color: var(--white);
                     }
                 }
             }
         }
+
+        // }
     }
 
     ._yamaha_logo {
@@ -121,6 +144,10 @@
             }
         }
 
+        .mobile-search {
+            display: none;
+        }
+
         ._login {
             padding: 0 2em;
             border-right: 1px solid;
@@ -151,6 +178,38 @@
             }
         }
 
+        // ._cart {
+        //     a {
+        //         color: #616365;
+        //         display: flex;
+        //         height: 100%;
+        //         align-items: center;
+        //         >span {
+        //             position: relative;
+        //             >span {
+        //                 &.simpleCart_quantity {
+        //                     display: flex;
+        //                     justify-content: center;
+        //                     align-items: center;
+        //                     position: absolute;
+        //                     top: -1.25em;
+        //                     right: -0.25em;
+        //                     background-color: #616365;
+        //                     color: var(--white);
+        //                     border-radius: 50%;
+        //                     line-height: 1;
+        //                     font-size: 0.7em;
+        //                     width: 2em;
+        //                     height: 2em;
+        //                 }
+        //             }
+        //             i {
+        //                 font-size: 1.25em;
+        //                 color: var(--black);
+        //             }
+        //         }
+        //     }
+        // }
         ._cart {
             a {
                 color: #616365;
@@ -159,29 +218,190 @@
                 align-items: center;
 
                 >span {
-                    position: relative;
+                    &.icon {
+                        position: relative;
 
-                    >span {
-                        &.simpleCart_quantity {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            position: absolute;
-                            top: -1.25em;
-                            right: -0.25em;
-                            background-color: #616365;
-                            color: var(--white);
-                            border-radius: 50%;
-                            line-height: 1;
-                            font-size: 0.7em;
-                            width: 2em;
-                            height: 2em;
+                        >span {
+                            &.simpleCart_quantity {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                top: -1.25em;
+                                right: -0.25em;
+                                background-color: #616365;
+                                color: var(--white);
+                                border-radius: 50%;
+                                line-height: 1;
+                                font-size: 0.7em;
+                                width: 2em;
+                                height: 2em;
+                            }
+                        }
+
+                        i {
+                            font-size: 1.25em;
+                            color: var(--black);
                         }
                     }
 
+                    &.txt {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 1em 2em;
+
+        #comp_1705994544829 {
+            display: block;
+
+            .navbar.navbar-default {
+                .navbar-toggle {
+                    .wrapper {
+                        margin-right: 0.25em;
+                    }
+
+                    &::after {
+                        font-size: 12px;
+                    }
+                }
+
+                .navbar-collapse {
+                    display: none !important;
+
+                    &.in {
+                        display: block !important;
+                        position: unset;
+                        transform: none !important;
+                        -webkit-transform: none !important;
+                    }
+
+                    .nav.navbar-nav {
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 100%;
+                        z-index: 999;
+                        min-width: 75vw;
+                        border: 0.1em solid #D8D8D8;
+
+                        >li {
+                            >a {
+                                background: var(--white);
+                                color: var(--black);
+
+                                &:hover {
+                                    background: var(--main-color);
+                                    color: var(--white);
+                                }
+                            }
+                        }
+
+                        &::before {
+                            // z-index: -1;
+                            content: "";
+                            position: absolute;
+                            top: -5px;
+                            left: 5%;
+                            display: block;
+                            padding: 5px;
+                            box-shadow: -1px -1px 0 1px #D8D8D8;
+                            cursor: pointer;
+                            -webkit-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                            background-color: var(--white);
+                        }
+                    }
+                }
+            }
+        }
+
+        ._yamaha_logo {
+            margin: 0 0.5em 0 1em;
+
+            img {
+                width: 8em;
+            }
+        }
+
+        ._search {
+            #_searchbtn {
+                display: none;
+            }
+
+            #_searchbox {
+                display: none;
+            }
+        }
+
+        ._icon_links {
+            display: flex;
+            align-items: center;
+
+            .mobile-search {
+                display: flex;
+                color: #616365;
+                font-size: 1.5em;
+            }
+
+            ._login {
+                margin: 0 1em;
+                padding: 0;
+                border-right: 0;
+
+                a {
+                    >span {
+                        display: none;
+                    }
+
                     i {
-                        font-size: 1.25em;
-                        color: var(--black);
+                        font-size: 1.5em;
+                    }
+                }
+            }
+
+            ._cart {
+                a {
+                    color: #616365;
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+
+                    >span {
+                        &.icon {
+                            position: relative;
+
+                            >span {
+                                &.simpleCart_quantity {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    position: absolute;
+                                    top: -1.25em;
+                                    right: -0.25em;
+                                    background-color: #616365;
+                                    color: var(--white);
+                                    border-radius: 50%;
+                                    line-height: 1;
+                                    font-size: 0.7em;
+                                    width: 2em;
+                                    height: 2em;
+                                }
+                            }
+
+                            i {
+                                font-size: 1.25em;
+                                color: var(--black);
+                            }
+                        }
+
+                        &.txt {
+                            display: none;
+                        }
                     }
                 }
             }

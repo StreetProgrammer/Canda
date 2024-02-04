@@ -1684,6 +1684,7 @@
     <script type="text/javascript" top="">
         window.website_settings = {
             "set_address": "1042 Upper Wellington St <br \/> Hamilton, Ontario <br \/>Canada L9A 3S6",
+            "set_enable_ecommerce": "1",
             "website_name": "Yamaha Genuine Parts & Accessories",
             "conversion_label": "",
             "google_tag": ""
@@ -1944,8 +1945,8 @@
             --darkgrey: #222;
             --grey: #1c1c1c;
             --main-color: #D52B1E;
-            --dealer-color: #D52B1E !important;
-            --main-font-color: #d5d5d5 !important;
+            --dealer-color: #000 !important;
+            --main-font-color: #000 !important;
             --main-font: "Roboto", sans-serif !important;
             --main-font-bold: DINBold, sans-serif !important;
             --body-font: "Open Sans", sans-serif !important;
@@ -1965,10 +1966,6 @@
         }
 
         /* Content */
-
-        .regular-checkbox:checked:after {
-            color: var(--main-color) !important;
-        }
 
         .active-filter-container .badge {
             color: #fff !important;
@@ -2790,29 +2787,25 @@
             color: #3f3f3f !important;
         }
 
-        #filters .well {
-            background-color: #1c1c1c !important;
-        }
-
         .static-filter-active-main {
             margin-bottom: 0 !important;
         }
 
         .static-filter-active-container {
-            background-color: #1c1c1c;
-            border-top: 0.01em solid #3f3f3f !important;
-            border-bottom: 0.01em solid #3f3f3f !important;
+            background-color: transparent;
+            border-top: 0.01em solid #D8D8D8 !important;
+            border-bottom: 0.01em solid #D8D8D8 !important;
             margin-bottom: 0 !important;
             padding: 0.5em 1em;
         }
 
         .grid-group-item .cta-btns,
         .grid-group-item .cta-btns a {
-            padding: 0.5em !important;
+            padding: 0 !important;
         }
 
         .grid-group-item .caption {
-            padding: 0 0.5em 0.5em;
+            padding: 0;
         }
 
         .cta-btns {
@@ -2897,7 +2890,7 @@
             font-family: var(--body-font);
             font-size: 1.1vw;
             line-height: 1.4;
-            color: #d5d5d5;
+            color: var(--black);
             padding: 0 !important;
         }
 
@@ -3009,7 +3002,7 @@
         .table>tfoot>tr>th,
         .table>thead>tr>td,
         .table>thead>tr>th {
-            border-color: #3f3f3f;
+            border-color: #D8D8D8;
         }
 
         .clearfix {
@@ -3281,26 +3274,13 @@
         }
 
         #filters input {
-            background-color: #1c1c1c !important;
-            border-color: #3f3f3f;
+            background-color: transparent !important;
+            border-color: #D8D8D8;
         }
 
         /* Header */
         /* Main Menu */
-
-        .navbar-default .navbar-nav>li:first-child {
-            display: none;
-        }
-
         /* Hide Home from the menu */
-
-        .navbar-header {
-            float: left;
-            display: flex;
-            margin-right: 1.5em;
-            padding: 0.9em 1em;
-            align-items: center;
-        }
 
         .header-logo {
             margin-left: 3em;
@@ -3325,11 +3305,6 @@
         }
 
         @media (max-width: 769px) {
-            .navbar-header {
-                float: none;
-                display: flex;
-            }
-
             .header-logo {
                 margin-left: 0;
                 margin-top: 0;
@@ -3346,92 +3321,6 @@
             }
         }
 
-        .navbar-header a {
-            color: var(--white);
-        }
-
-        .navbar-default {
-            width: 100%;
-            border: none;
-            border-radius: 0;
-            margin: 0;
-            background-color: transparent !important;
-            position: relative;
-            z-index: 3;
-        }
-
-        .navbar {
-            min-height: auto;
-        }
-
-        .navbar-nav {
-            float: none;
-            margin-top: 0.2em;
-        }
-
-        .navbar-nav>li>a {
-            font-family: var(--main-font-bold);
-            font-size: 0.95em;
-            text-transform: uppercase;
-            color: #fff !important;
-            padding: 2em 0.75em;
-            line-height: normal;
-        }
-
-        .navbar-nav>li>a:hover,
-        .navbar-nav>li>a:focus,
-        .navbar .navbar-nav>li.open>a,
-        .navbar .navbar-nav>li:hover>a,
-        .navbar .navbar-nav>li.open>a:hover,
-        .navbar .navbar-nav>li:hover>a:hover,
-        .navbar .navbar-nav>li.open>a:focus,
-        .navbar .navbar-nav>li:hover>a:focus {
-            color: var(--main-color) !important;
-        }
-
-        .navbar .navbar-nav>li:hover .dropdown-menu {
-            display: block;
-        }
-
-        .dropdown-menu {
-            min-width: 14em;
-            background-color: #000 !important;
-            border-radius: 0 !important;
-            border: 0.01em solid var(--main-color) !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            box-shadow: none !important;
-            font-size: 0.8em !important;
-            left: 0 !important;
-        }
-
-        .dropdown-menu>li>a {
-            padding: 0.7em 1.8em !important;
-            line-height: normal !important;
-            color: #d5d5d5 !important;
-            border-bottom: 0.01em solid var(--main-color);
-            text-transform: uppercase;
-        }
-
-        .dropdown-menu>li:last-child>a {
-            border: 0 !important;
-        }
-
-        .dropdown-menu>li>a:focus,
-        .dropdown-menu>li>a:hover,
-        .dropdown-menu>.active>a,
-        .dropdown-menu>.active>a:focus,
-        .dropdown-menu>.active>a:hover {
-            background-color: #000 !important;
-            color: var(--main-color) !important;
-        }
-
-        .navbar-default .navbar-nav>.active>a,
-        .navbar-default .navbar-nav>.active>a:focus,
-        .navbar-default .navbar-nav>.active>a:hover {
-            background-color: transparent !important;
-        }
-
         .sticky-nav {
             position: fixed !important;
             top: 0;
@@ -3446,102 +3335,6 @@
             border-top: 0.2em solid\9;
             border-right: 0.2em solid transparent;
             border-left: 0.2em solid transparent;
-        }
-
-        .navbar-header .sccm-phone {
-            padding: 0.4em 2.5em 0 1em;
-        }
-
-        @media (max-width: 769px) {
-            .sccm-phone {
-                padding: 0.4em 0.5em 0 0.5em !important;
-            }
-        }
-
-        .navbar-header .sccm-cart {
-            padding: 0.3em 2em 0 0;
-            width: 3.5em;
-        }
-
-        @media (max-width: 769px) {
-            .navbar-header .sccm-cart {
-                padding: 0.5em 1.5em 0 0;
-                width: auto !important;
-            }
-        }
-
-        .navbar-header .sccm-search {
-            padding-top: 0;
-            display: flex;
-            position: absolute;
-            right: 2.5em;
-            top: 0.6em;
-            align-items: center;
-        }
-
-        @media (max-width: 769px) {
-            .navbar-header .sccm-search {
-                padding: 0.1em 0 0 0.5em;
-                position: static;
-            }
-
-            .navbar-header .sccm-search .menu-phone {
-                margin-right: 0 !important;
-            }
-
-            .navbar-header .sccm-search a {
-                padding: 0 0.5em;
-                color: var(--white);
-            }
-        }
-
-        .navbar-header .simpleCart_quantity {
-            background-color: var(--main-color);
-            border-radius: 50%;
-            position: absolute;
-            color: #000;
-            line-height: 1;
-            margin-left: 0.8em;
-            margin-top: -0.5em;
-            padding: 0.2em 0.5em;
-            font-size: 0.7em;
-        }
-
-        .navbar-header .sccm-search .menu-phone {
-            margin-right: 3em;
-        }
-
-        .navbar-header .sccm-search .menu-search {
-            margin-right: 0em;
-            padding: 1.1em 0;
-        }
-
-        @media screen and (max-width: 767px) {
-            .navbar-header .sccm-search .menu-search {
-                margin-right: 1.5em;
-                padding: 0 0.5em;
-            }
-        }
-
-        .navbar-header .sccm-search .menu-phone span {
-            font-size: 2em;
-            font-weight: bold;
-            color: var(--main-color);
-        }
-
-        .navbar-header .sccm-search .menu-phone:hover,
-        .navbar-header .sccm-search .menu-phone:focus {
-            text-decoration: none;
-        }
-
-        .navbar-header .sccm-search .shp-crt {
-            margin-right: 1.5em;
-        }
-
-        .navbar-default .navbar-nav>.open>a,
-        .navbar-default .navbar-nav>.open>a:focus,
-        .navbar-default .navbar-nav>.open>a:hover {
-            background-color: transparent;
         }
 
         /* Slider */
@@ -3834,7 +3627,6 @@
         /* Homepage */
 
         .breadcrumbParent {
-            filter: drop-shadow(0px 1px 3px #000000);
             display: flex !important;
             align-items: center;
             justify-content: space-between;
@@ -3849,6 +3641,7 @@
             flex: 1;
             font-size: 1.6em;
             font-weight: 600;
+            color: var(--black);
         }
 
         .breadcrumbParent .breadcrumb {
@@ -3872,7 +3665,11 @@
         }
 
         .breadcrumbParent a {
-            color: #d5d5d5;
+            color: var(--black);
+        }
+
+        .breadcrumb>li+li:before {
+            color: var(--black);
         }
 
         /* SECTIONS */
@@ -5008,7 +4805,7 @@
 
         .parts2021 .filter-collapse-container,
         .parts-srp .filter-collapse-container {
-            border: 0.01em solid #3f3f3f;
+            border: 0;
             margin: 0;
         }
 
@@ -5029,15 +4826,14 @@
 
         .parts2021 .filter-collapse-container a.filter-collapse,
         .parts-srp .filter-collapse-container a.filter-collapse {
-            background-color: #000;
-            border-bottom: 0.01em solid #3f3f3f;
+            border-bottom: 0.01em solid #D8D8D8;
             font-family: var(--main-font-bold) !important;
         }
 
         .parts2021 .active-filter-container a.filter-collapse,
         .parts-srp.active-filter-container a.filter-collapse {
-            background-color: #000;
-            color: #fff;
+            background-color: transparent;
+            color: #000;
             font-family: var(--main-font-bold) !important;
         }
 
@@ -5049,13 +4845,14 @@
         .grid-group-item .model-title {
             font-size: 1em !important;
             padding-top: 0.5em !important;
+            text-align: center;
         }
 
         .parts2021 #products .grid-group-item .thumb,
         .parts-srp #products .grid-group-item .thumb {
-            background: linear-gradient(180deg, #262626 0%, #1c1c1c 100%);
-            border: 0.01em solid #3f3f3f;
-            box-shadow: 0px 2px 6px #000000;
+            background: transparent;
+            border: 0.01em solid #D8D8D8;
+            box-shadow: none;
             padding: 0;
         }
 
@@ -5101,9 +4898,9 @@
             text-shadow: none;
             height: auto !important;
             padding: 0.8em !important;
-            border-top: 0.01em solid #3f3f3f;
+            border-top: 0.01em solid #d8d8d8;
             margin: 0;
-            color: #d5d5d5;
+            color: #000;
             font-weight: bold;
         }
 
@@ -5121,6 +4918,16 @@
         .parts-srp #products .price-oem {
             padding: 0 1em 0.8em 1em;
             font-family: var(--main-font-bold);
+        }
+
+        .parts2021 #products .price-oem.srp-stock-no,
+        .parts-srp #products .price-oem.srp-stock-no {
+            text-align: center;
+        }
+
+        .parts2021 #products .price-oem.price,
+        .parts-srp #products .price-oem.price {
+            text-align: center;
         }
 
         .parts2021 #products .price.show-item,
@@ -5154,7 +4961,6 @@
 
         .parts2021 #keyWordsSection input,
         .parts-srp #keyWordsSection input {
-            border: 0.01em solid #3f3f3f;
             border-right: 0;
             padding: 1.1em !important;
             height: auto !important;
@@ -5176,7 +4982,8 @@
         .parts-srp .sortby-row select,
         .parts-srp .sortby-row input,
         .parts-srp .sortby-row li a {
-            border: 0.01em solid #3f3f3f;
+            background-color: transparent !important;
+            border: 0.01em solid #D8D8D8;
             padding: 1.1em;
             height: auto !important;
             min-height: auto !important;
@@ -5186,10 +4993,10 @@
 
         .parts2021 #keyWordsSection .adsSearchButton,
         .parts-srp #keyWordsSection .adsSearchButton {
-            background-color: #1c1c1c !important;
+            background-color: transparent !important;
             color: #d5d5d5 !important;
             padding: 0.8em !important;
-            border: 0.01em solid #3f3f3f !important;
+            border: 0.01em solid #D8D8D8 !important;
             border-left: 0 !important;
         }
 
@@ -5203,11 +5010,11 @@
 
         .parts2021 .pagination li,
         .parts-srp .pagination li {
-            background-color: #1c1c1c;
+            background-color: transparent;
             display: flex;
             align-items: center;
             margin: 0 0.2em;
-            border: 0.01em solid #3f3f3f;
+            border: 0.01em solid #D8D8D8;
         }
 
         .parts2021 .pagination li.info,
@@ -5242,8 +5049,8 @@
         .parts-srp .loadMore,
         .parts-srp .loadLess {
             padding: 0.5em 1em !important;
-            border: 0.01em solid #3f3f3f;
-            background: #1c1c1c;
+            border: 0.01em solid #D8D8D8;
+            background: transparent;
             font-weight: normal !important;
             font-size: 0.8em !important;
             margin: 0 1em 1em 1em;
@@ -5279,22 +5086,19 @@
         }
 
         .parts-vdp #ad-right-content {
-            background: linear-gradient(180deg, #262626 0%, #1c1c1c 100%);
-            border: 0.01em solid #3f3f3f;
-            box-shadow: 0px 2px 6px #000000;
+            border: 0.01em solid #D8D8D8;
             padding: 2em;
         }
 
         .parts-vdp .row.back-btn {
             position: absolute;
             width: 57.1%;
-            border: 0.01em solid #3f3f3f;
-            background-color: #1c1c1c;
+            border: 0.01em solid #D8D8D8;
             z-index: 2;
         }
 
         .parts-vdp .back-btn a {
-            color: #d5d5d5;
+            color: var(--black);
             font-size: 0.9em;
             padding: 1em;
             display: block;
@@ -5315,7 +5119,7 @@
         }
 
         .parts-vdp .gallery .panel-body {
-            border: 0.01em solid #3f3f3f;
+            border: 0.01em solid #D8D8D8;
         }
 
         .parts-vdp .gallery .img-thumbnail-for-jQ {
@@ -5326,7 +5130,6 @@
             height: 32em !important;
             padding-top: 1em;
             margin: 0 auto;
-            background-color: #1c1c1c;
         }
 
         .parts-vdp .gallery #imageGallery .lslide {
@@ -5388,11 +5191,11 @@
 
         .parts-vdp .quote-btn {
             padding: 0.8em;
-            background-color: #000;
-            color: #d5d5d5;
+            background-color: #616365;
+            color: var(--white);
             font-family: var(--main-font-bold);
             text-transform: uppercase;
-            border: 0.2em solid var(--main-color);
+            border: 0;
         }
 
         .parts-vdp .quote-btn:hover,
@@ -5409,7 +5212,8 @@
         }
 
         .rt-specs-box .specs-row {
-            border-bottom: 0.01em solid #3f3f3f !important;
+            border-bottom: 0.01em solid #D8D8D8 !important;
+            color: #000;
         }
 
         .parts-vdp .specs-row .specs-titles {
@@ -5463,7 +5267,7 @@
         }
 
         .parts-vdp .lSPager.lSGallery {
-            border-top: 0.01em solid #3f3f3f;
+            border-top: 0.01em solid #D8D8D8;
             margin-top: 0 !important;
             width: 100% !important;
         }
@@ -5501,30 +5305,38 @@
 
         .parts-vdp .model-tabs ul.nav.nav-tabs {
             padding: 0.5em 0.5em 0 0.5em;
-            background: linear-gradient(180deg, #262626 0%, #1c1c1c 100%);
-            border: 0.01em solid #3f3f3f;
-            box-shadow: 0px 2px 6px #000000;
+            background: #FFF;
+            border: 0.01em solid #D8D8D8;
+            box-shadow: none;
+        }
+
+        .parts-vdp .model-tabs>ul>li {
+            display: flex;
+            min-width: auto;
+            flex: 1 1 auto;
+            font-size: 0.8em;
         }
 
         .parts-vdp .model-tabs>ul>li>a {
             font-family: var(--main-font-bold);
             font-size: 1em;
             padding: 0.5em 1em;
-            color: #fff;
+            color: var(--black);
         }
 
         .model-tabs>ul>li>a:hover,
         .model-tabs>ul>li>a:focus {
-            background-color: var(--main-color);
-            border: none;
+            background-color: #616365;
+            color: var(--white);
+            border-color: #616365;
         }
 
         .parts-vdp .nav-tabs>li.active>a,
         .parts-vdp .nav-tabs>li.active>a:focus,
         .parts-vdp .nav-tabs>li.active>a:hover {
-            background-color: var(--main-color);
-            color: #000;
-            border-color: var(--main-color);
+            background-color: #616365;
+            color: var(--white);
+            border-color: #616365;
         }
 
         .parts-vdp .tab-content {
@@ -5538,7 +5350,7 @@
         }
 
         .parts-vdp .back-btn a .glyphicon {
-            color: var(--main-color) !important;
+            color: var(--black) !important;
         }
 
         .parts-vdp .parts-price-div .primary {
@@ -5558,9 +5370,7 @@
         }
 
         .parts-vdp .tab-content {
-            background: linear-gradient(180deg, #262626 0%, #1c1c1c 100%);
-            border: 0.01em solid #3f3f3f;
-            box-shadow: 0px 2px 6px #000000;
+            border: 0.01em solid #D8D8D8;
         }
 
         .parts-price-div {
@@ -7274,14 +7084,84 @@
         ._main_header {
             display: flex;
             padding: 1em 4em;
+            align-items: center;
+            border-bottom: 1px solid var(--grey-3);
         }
 
-        ._main_header #comp_1705994544829 {
-            display: none;
+        @media screen and (min-width: 768px) {
+            ._main_header #comp_1705994544829 {
+                display: block;
+            }
+
+            ._main_header #comp_1705994544829 .navbar.navbar-default {
+                background-color: transparent;
+                border-color: transparent;
+                margin-bottom: 0;
+            }
+
+            ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-toggle {
+                display: flex;
+                border-radius: 0;
+                align-items: center;
+            }
+
+            ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-toggle .wrapper {
+                margin-right: 1em;
+            }
+
+            ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-toggle::after {
+                content: "Menu";
+                color: var(--black);
+            }
+
+            ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-collapse {
+                display: none !important;
+            }
+
+            ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-collapse.in {
+                display: block !important;
+            }
+
+            ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-collapse .nav.navbar-nav {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                z-index: 999;
+                min-width: 25em;
+                border: 0.1em solid #D8D8D8;
+            }
+
+            ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-collapse .nav.navbar-nav>li>a {
+                background: var(--white);
+                color: var(--black);
+            }
+
+            ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-collapse .nav.navbar-nav>li>a:hover {
+                background: var(--main-color);
+                color: var(--white);
+            }
+
+            ._main_header #comp_1705994544829 .navbar.navbar-default .navbar-collapse .nav.navbar-nav::before {
+                content: "";
+                position: absolute;
+                top: -5px;
+                left: 5%;
+                display: block;
+                padding: 5px;
+                box-shadow: -1px -1px 0 1px #D8D8D8;
+                cursor: pointer;
+                transform: rotate(45deg);
+                background-color: var(--white);
+            }
+        }
+
+        ._main_header ._yamaha_logo {
+            margin: 0 3.5em 0 1em;
         }
 
         ._main_header ._yamaha_logo img {
-            width: 10em;
+            width: 8em;
         }
 
         ._main_header ._search {
@@ -7289,36 +7169,50 @@
             flex-direction: row-reverse;
             flex: 1;
             margin: 0 1em;
+            height: 2.5em;
         }
 
-        ._main_header ._search #searchbtn2,
-        ._main_header ._search #searchbtnParts {
+        ._main_header ._search #_searchbtn {
             float: none;
             border-radius: 0px;
-            border: 0px;
             padding: 0.5em 0 0.4em 1em !important;
             margin: 0px !important;
             background-color: var(--main-color) !important;
             outline: none;
             color: var(--white) !important;
-            font-size: 1.6em;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        ._main_header ._search #searchbox2,
-        ._main_header ._search #searchboxParts {
+        ._main_header ._search #_searchbox {
             width: 100%;
             float: left;
             border-radius: 0px;
             border: 0px;
             outline: none;
-            height: 4em;
+            height: 2em;
             font-size: 1.1em;
             padding: 0.91em 1.5em;
             background-color: var(--white);
+            border: 1px solid var(--grey-3);
+            border-right: 0;
+        }
+
+        ._main_header ._search #_searchbox:hover,
+        ._main_header ._search #_searchbox:focus {
+            background-color: inherit !important;
+            color: inherit !important;
+            box-shadow: none !important;
         }
 
         ._main_header ._icon_links {
             display: flex;
+        }
+
+        ._main_header ._icon_links a:hover {
+            text-decoration: none;
         }
 
         ._main_header ._icon_links ._login {
@@ -7336,6 +7230,7 @@
         ._main_header ._icon_links ._login a>span {
             display: flex;
             flex-direction: column;
+            font-size: 0.8em;
         }
 
         ._main_header ._icon_links ._login a>span>span:last-child {
@@ -7343,7 +7238,7 @@
         }
 
         ._main_header ._icon_links ._login a i {
-            font-size: 2em;
+            font-size: 1.5em;
         }
 
         ._main_header ._icon_links ._cart a {
@@ -7374,203 +7269,13 @@
         }
 
         ._main_header ._icon_links ._cart a>span i {
-            font-size: 1.5em;
+            font-size: 1.25em;
             color: var(--black);
         }
 
         /* Modals */
         /* Search Modals */
-
-        #searchModal .modal-dialog {
-            margin-top: 8%;
-            width: 50% !important;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        #searchModal .modal-dialog .modal-content {
-            border: none;
-            background-color: transparent !important;
-            background: none;
-            box-shadow: none;
-        }
-
-        #searchModal .modal-dialog .modal-content .modal-body .search-div {
-            display: flex;
-            flex-direction: row-reverse;
-        }
-
-        #searchModal .modal-dialog .modal-content .modal-body .search-div #searchbtn2 {
-            float: none;
-            border-radius: 0px;
-            border: 0px;
-            padding: 0.5em 0 0.4em 1em !important;
-            margin: 0px !important;
-            background-color: var(--main-color) !important;
-            outline: none;
-            color: #fff !important;
-            font-size: 1.6em;
-        }
-
-        #searchModal .modal-dialog .modal-content .modal-body .search-div #searchbox2 {
-            width: 100%;
-            float: left;
-            border-radius: 0px;
-            border: 0px;
-            outline: none;
-            height: 4em;
-            font-size: 1.1em;
-            padding: 0.91em 1.5em;
-        }
-
-        #searchModal .modal-dialog .modal-content .modal-body .search-links {
-            background-color: #fff;
-            padding: 2em;
-            margin-top: 0.5em;
-            overflow: hidden;
-        }
-
-        #searchModal .modal-dialog .modal-content .modal-body .search-links h2 {
-            margin-top: 0;
-            font-size: 1.8em;
-        }
-
-        #searchModal .modal-dialog .modal-content .modal-body .search-links ul {
-            margin: 0;
-            padding: 0;
-            line-height: 1.5;
-        }
-
-        #searchModal .modal-dialog .modal-content .modal-body .search-links ul li {
-            float: left;
-            width: 50%;
-            border-bottom: 0.01em solid #d5d5d5;
-        }
-
-        #searchModal .modal-dialog .modal-content .modal-body .search-links ul li a {
-            display: block;
-            padding: 0.5em 0;
-            color: var(--darkgrey);
-        }
-
-        #searchModal .modal-dialog .modal-content .modal-body .search-links ul li a:hover {
-            color: var(--main-color);
-            text-decoration: none;
-        }
-
-        @media screen and (max-width: 767px) {
-            #searchModal .modal-dialog {
-                width: 80% !important;
-            }
-
-            #searchModal .modal-dialog .modal-content .modal-body .search-div #searchbtn2 {
-                float: none;
-                border-radius: 0px;
-                border: 0px;
-                padding: 0.5em 0 0.4em 1em !important;
-                margin: 0px !important;
-                background-color: var(--main-color) !important;
-                outline: none;
-                color: #fff !important;
-                font-size: 1.6em;
-            }
-
-            #searchModal .modal-dialog .modal-content .modal-body .search-div #searchbox2 {
-                width: 100%;
-                float: left;
-                border-radius: 0px;
-                border: 0px;
-                outline: none;
-                height: 4em;
-                font-size: 1.1em;
-                padding: 0.91em 1.5em;
-            }
-
-            #searchModal .modal-dialog .modal-content .modal-body .search-links ul li {
-                width: 100%;
-            }
-        }
-
         /* Hours Modal */
-
-        #HoursModal .modal-dialog .modal-content .modal-body .inner {
-            display: flex;
-        }
-
-        #HoursModal .modal-dialog .modal-content .modal-body .inner .bg-container {
-            width: 50%;
-        }
-
-        #HoursModal .modal-dialog .modal-content .modal-body .inner .content {
-            width: 50%;
-        }
-
-        #HoursModal .modal-dialog .modal-content .modal-body .inner .content .hours-list {
-            color: #000;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            width: 100%;
-            margin: auto;
-            padding: 0 1em;
-            height: 100%;
-        }
-
-        #HoursModal .modal-dialog .modal-content .modal-body .inner .content .hours-list li {
-            font-size: 0.8em;
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 0.01em solid #d5d5d5;
-            padding: 0.4em;
-        }
-
-        @media screen and (max-width: 767px) {
-            #HoursModal .modal-dialog .modal-content .modal-body .inner .bg-container {
-                display: none;
-            }
-
-            #HoursModal .modal-dialog .modal-content .modal-body .inner .content {
-                width: 100%;
-            }
-        }
-
-        .modal-body,
-        .modal.deposit-info .modal-content {
-            padding: 1em 2em;
-            overflow: hidden;
-        }
-
-        .modal-dialog .modal-content {
-            border: none;
-            border-radius: 0.3em;
-            box-shadow: none;
-        }
-
-        .modal-dialog .modal-content .modal-header {
-            padding: 1em 2em;
-            background-color: var(--main-color);
-            color: var(--white);
-            border-top-left-radius: 0.3em;
-            border-top-right-radius: 0.3em;
-            text-align: left !important;
-        }
-
-        .modal-dialog .modal-content .modal-header .close {
-            font-size: 2em;
-            color: var(--white);
-            opacity: 1;
-            background-color: var(--main-color);
-        }
-
-        .modal-dialog .modal-content .modal-header .modal-title {
-            margin: 0;
-            line-height: 1.42857143;
-        }
-
-        .modal-dialog .modal-content .modal-body {
-            padding: 0;
-        }
 
         .main_content .flex-row {
             display: flex;
@@ -7681,10 +7386,9 @@
             }
 
             .main_content .flex-row ._col p.visible-xs {
-                border-bottom: 1px solid var(--grey-3);
                 font-size: 1em;
                 color: var(--black);
-                margin: 0 0 1em 0;
+                margin: 0;
                 font-family: var(--main-font-bold);
             }
 
@@ -7701,28 +7405,44 @@
                 content: "\f078";
             }
 
-            .main_content .flex-row ._col p.visible-xs a:focus {
-                text-decoration: none;
-                outline: none;
-                position: relative;
-            }
-
-            .main_content .flex-row ._col p.visible-xs a:focus::before {
-                position: absolute;
-                top: 100%;
-                width: 2.5em;
-                height: 0.1em;
-                background-color: var(--main-color);
-                margin-top: 0.1em;
-                content: "";
-                display: block;
-            }
-
             .main_content .flex-row ._col .panel-collapse {
                 display: none;
             }
 
             .main_content .flex-row ._col .panel-collapse.in {
+                display: block;
+            }
+
+            .main_content .flex-row ._col .panel-collapse.in p.visible-xs {
+                font-size: 1em;
+                color: var(--black);
+                margin: 0 0 1em 0;
+                font-family: var(--main-font-bold);
+            }
+
+            .main_content .flex-row ._col .panel-collapse.in p.visible-xs a {
+                color: var(--black);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                border-bottom: 1px solid var(--grey-3);
+                padding: 0.5em 0;
+            }
+
+            .main_content .flex-row ._col .panel-collapse.in p.visible-xs a::after {
+                font-family: "Font Awesome 5 Pro";
+                font-size: 0.7em;
+                content: "\f078";
+            }
+
+            .main_content .flex-row ._col .panel-collapse.in p.visible-xs a::before {
+                position: absolute;
+                top: 100%;
+                width: 2.5em;
+                height: 0.1em;
+                background-color: var(--main-color);
+                content: "";
                 display: block;
             }
 
@@ -7801,6 +7521,44 @@
             }
         }
 
+        .footer_note {
+            margin: 2em 10em;
+            color: var(--black);
+            text-align: center;
+            font-weight: 400;
+        }
+
+        .footer_note a {
+            font-weight: 700;
+            color: var(--black);
+        }
+
+        @media screen and (max-width: 767px) {
+            .footer_note {
+                margin: 2em 3em;
+                order: 0;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            #html_1705994175549 .contentHtml {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #html_1705994175549 .contentHtml .to-up-container {
+                order: 1;
+            }
+
+            #html_1705994175549 .contentHtml #footer {
+                order: 1;
+            }
+
+            #html_1705994175549 .contentHtml .footer-bottom {
+                order: 1;
+            }
+        }
+
         /* pages */
         /* ADS */
     </style>
@@ -7841,24 +7599,26 @@
                         style="position: relative;">
                         <div class="_main_header">
                             <div class="movableComp contentComp common_element" data-com-id="Website Menu"
-                                data-component-website-menu="" data-pagecompid="70518" id="comp_1705994544829"
+                                data-component-website-menu="" data-pagecompid="70684" id="comp_1705994544829"
                                 ppanel="Website Menu">
                                 <style type="text/css">
-                                    #nav_70518 {}
+                                    #nav_70684 {}
                                 </style>
-                                <nav class="navbar navbar-default" id="nav_70518" role="navigation">
-                                    <div class="navbar-header"><button class="navbar-toggle" data-target="#navbar-70518"
+                                <nav class="navbar navbar-default" id="nav_70684" role="navigation">
+                                    <div class="navbar-header"><button class="navbar-toggle" data-target="#navbar-70684"
                                             data-toggle="collapse" type="button"><span class="sr-only">Toggle
                                                 navigation</span> <span class="icon-bar">&nbsp;</span> <span
                                                 class="icon-bar">&nbsp;</span> <span
                                                 class="icon-bar">&nbsp;</span></button></div>
 
-                                    <div class="collapse navbar-collapse" id="navbar-70518">
+                                    <div class="collapse navbar-collapse" id="navbar-70684">
                                         <ul class="nav navbar-nav">
                                             <li><a href="/page/display/siteId/1001518/pageId/67294">Home</a></li>
-                                            <li><a href="/page/display/siteId/1001518/pageId/67295">Contact</a></li>
-                                            <li><a href="/page/display/siteId/1001518/pageId/67296">About</a></li>
-                                            <li><a href="/page/display/siteId/1001518/pageId/67297">Profile</a></li>
+                                            <li><a href="/page/display/siteId/1001518/pageId/67700">Parts</a></li>
+                                            <li><a href="/page/display/siteId/1001518/pageId/67864">Yamaha Parts</a>
+                                            </li>
+                                            <li><a href="/page/display/siteId/1001518/pageId/67865">Yamaha Parts New</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </nav>
@@ -7866,9 +7626,9 @@
                             <a class="_yamaha_logo" href=""> <img alt="Yamaha Genuine Parts &amp; Accessories"
                                     loading="lazy" src="/site-uploads/1001518/images/_Yamaha_logo.png"> </a>
 
-                            <div class="_search"><button class="btn btn-default" id="searchbtn2" onclick="srch()"
+                            <div class="_search"><button class="btn btn-default" id="_searchbtn" onclick="srch()"
                                     type="button"><span class="glyphicon glyphicon-search">&nbsp;</span></button><input
-                                    class="form-control" data-ms-editor="true" id="searchbox2"
+                                    class="form-control" data-ms-editor="true" id="_searchbox"
                                     placeholder="Search by Yamaha Part #" spellcheck="false" type="text"></div>
 
                             <div class="_icon_links">
@@ -7886,7 +7646,7 @@
                     </div>
                 </div>
                 <div ppanel="Breadcrumbs" class="movableComp contentComp common_element ui-sortable-handle"
-                    data-pagecompid="70517" data-component-breadcrumbs="" data-com-id="Breadcrumbs"
+                    data-pagecompid="70683" data-component-breadcrumbs="" data-com-id="Breadcrumbs"
                     id="comp_1705994535485">
                     <nav aria-label="breadcrumb" class="breadcrumbParent">
                         <ol class="breadcrumb">
@@ -7900,7 +7660,7 @@
             <div id="LeftDiv" class="droppableComp droppableHtml ui-sortable 0 ui-sortable-disabled"
                 style="display: none;"></div>
             <div id="CenterDiv" class="droppableComp droppableHtml col-md-12 ui-sortable ui-sortable-disabled"
-                style="height: 1667.66px;">
+                style="height: 2295.91px;">
                 <div ppanel="htmlContainer" class="movableHtml ui-sortable-handle" data-component-htmlcontainer=""
                     data-com-id="htmlContainer" id="html_1705994173597">
                     <div contenteditable="true" class="contentHtml" style="position: relative;">
@@ -7911,7 +7671,8 @@
 
                                 <div class="hero-brands">
                                     <ul>
-                                        <li><a href="/Yamaha-Parts">Yamaha Parts</a></li>
+                                        <li><a href="/page/display/?siteId=1001518&amp;pageId=67864">Yamaha Parts</a>
+                                        </li>
                                         <li><a href="/Yamaha-Accessories">Yamaha Accessories</a></li>
                                     </ul>
                                 </div>
@@ -7936,12 +7697,18 @@
                                     <div>
                                         <h2 class="hidden-xs">Motorcycles</h2>
 
-                                        <p class="visible-xs"><a aria-controls="Motorcycles-accord" class="collapsed"
-                                                data-parent="#model-accordion" data-toggle="collapse"
-                                                href=".Motorcycles-accord" role="button">Motorcycles </a></p>
+                                        <p class="visible-xs"><a aria-controls="Motorcycles-accord"
+                                                class="clickToOpenAndHideME Motorcycles" data-parent="#model-accordion"
+                                                data-toggle="collapse" href=".Motorcycles-accord"
+                                                role="button">Motorcycles </a></p>
 
                                         <div class="panel-collapse collapse Motorcycles-accord" id="collapseExample001">
                                             <div class="card card-body">
+                                                <p class="visible-xs"><a aria-controls="Motorcycles-accord"
+                                                        class="clickToOpenAndHideOther" data-parent="#model-accordion"
+                                                        data-toggle="collapse" href=".Motorcycles-accord"
+                                                        role="button">Motorcycles </a></p>
+
                                                 <div class="row">
                                                     <div class="col-md-4 _img"><img alt="Motorcycles"
                                                             src="/site-uploads/1001518/images/Motorcycles.png"></div>
@@ -7968,12 +7735,18 @@
                                     <div>
                                         <h2 class="hidden-xs">Snowmobiles</h2>
 
-                                        <p class="visible-xs"><a aria-controls="Snowmobiles-accord" class="collapsed"
-                                                data-parent="#model-accordion" data-toggle="collapse"
-                                                href=".Snowmobiles-accord" role="button">Snowmobiles </a></p>
+                                        <p class="visible-xs"><a aria-controls="Snowmobiles-accord"
+                                                class="clickToOpenAndHideME Snowmobiles" data-parent="#model-accordion"
+                                                data-toggle="collapse" href=".Snowmobiles-accord"
+                                                role="button">Snowmobiles </a></p>
 
                                         <div class="panel-collapse collapse Snowmobiles-accord" id="collapseExample001">
                                             <div class="card card-body">
+                                                <p class="visible-xs"><a aria-controls="Snowmobiles-accord"
+                                                        class="clickToOpenAndHideOther" data-parent="#model-accordion"
+                                                        data-toggle="collapse" href=".Snowmobiles-accord"
+                                                        role="button">Snowmobiles </a></p>
+
                                                 <div class="row">
                                                     <div class="col-md-4 _img"><img alt="Snowmobiles"
                                                             src="/site-uploads/1001518/images/Snowmobiles.png"></div>
@@ -8001,12 +7774,17 @@
                                     <div>
                                         <h2 class="hidden-xs">ATV</h2>
 
-                                        <p class="visible-xs"><a aria-controls="ATV-accord" class="collapsed"
-                                                data-parent="#model-accordion" data-toggle="collapse" href=".ATV-accord"
-                                                role="button">ATV </a></p>
+                                        <p class="visible-xs"><a aria-controls="ATV-accord"
+                                                class="clickToOpenAndHideME ATV" data-parent="#model-accordion"
+                                                data-toggle="collapse" href=".ATV-accord" role="button">ATV </a></p>
 
                                         <div class="panel-collapse collapse ATV-accord" id="collapseExample001">
                                             <div class="card card-body">
+                                                <p class="visible-xs"><a aria-controls="ATV-accord"
+                                                        class="clickToOpenAndHideOther" data-parent="#model-accordion"
+                                                        data-toggle="collapse" href=".ATV-accord" role="button">ATV </a>
+                                                </p>
+
                                                 <div class="row">
                                                     <div class="col-md-4 _img"><img alt="ATV"
                                                             src="/site-uploads/1001518/images/ATV.png"></div>
@@ -8033,12 +7811,18 @@
                                     <div>
                                         <h2 class="hidden-xs">Side By Side</h2>
 
-                                        <p class="visible-xs"><a aria-controls="SideBySide-accord" class="collapsed"
-                                                data-parent="#model-accordion" data-toggle="collapse"
-                                                href=".SideBySide-accord" role="button">Side By Side </a></p>
+                                        <p class="visible-xs"><a aria-controls="SideBySide-accord"
+                                                class="clickToOpenAndHideME SideBySide" data-parent="#model-accordion"
+                                                data-toggle="collapse" href=".SideBySide-accord" role="button">Side By
+                                                Side </a></p>
 
                                         <div class="panel-collapse collapse SideBySide-accord" id="collapseExample001">
                                             <div class="card card-body">
+                                                <p class="visible-xs"><a aria-controls="SideBySide-accord"
+                                                        class="clickToOpenAndHideOther" data-parent="#model-accordion"
+                                                        data-toggle="collapse" href=".SideBySide-accord"
+                                                        role="button">Side By Side </a></p>
+
                                                 <div class="row">
                                                     <div class="col-md-4 _img"><img alt="Side By Side"
                                                             src="/site-uploads/1001518/images/Side By Side.png"></div>
@@ -8065,12 +7849,18 @@
                                     <div>
                                         <h2 class="hidden-xs">Generators</h2>
 
-                                        <p class="visible-xs"><a aria-controls="Generators-accord" class="collapsed"
-                                                data-parent="#model-accordion" data-toggle="collapse"
-                                                href=".Generators-accord" role="button">Generators </a></p>
+                                        <p class="visible-xs"><a aria-controls="Generators-accord"
+                                                class="clickToOpenAndHideME Generators" data-parent="#model-accordion"
+                                                data-toggle="collapse" href=".Generators-accord"
+                                                role="button">Generators </a></p>
 
                                         <div class="panel-collapse collapse Generators-accord" id="collapseExample001">
                                             <div class="card card-body">
+                                                <p class="visible-xs"><a aria-controls="Generators-accord"
+                                                        class="clickToOpenAndHideOther" data-parent="#model-accordion"
+                                                        data-toggle="collapse" href=".Generators-accord"
+                                                        role="button">Generators </a></p>
+
                                                 <div class="row">
                                                     <div class="col-md-4 _img"><img alt="Generators"
                                                             src="/site-uploads/1001518/images/Generators.png"></div>
@@ -8079,8 +7869,8 @@
                                                         <p>Yamaha is a leader in Gasoline, diesel and <b>inverter
                                                                 Generators</b>, pumps, MZ Multi Purpose Engines which
                                                             include proven designs like the impeller and graphite cast
-                                                            iron volute casing with silicon carbide mechanical seals.
-                                                        </p>
+                                                            iron volute casing with silicon
+                                                            carbide mechanical seals.</p>
                                                     </div>
 
                                                     <div class="col-md-4 _link"><a href="">Accessories</a></div>
@@ -8099,13 +7889,20 @@
                                         <h2 class="hidden-xs">Yamalube® Products - The Choice of Champions</h2>
 
                                         <p class="visible-xs"><a aria-controls="YamalubeProducts-accord"
-                                                class="collapsed" data-parent="#model-accordion" data-toggle="collapse"
+                                                class="clickToOpenAndHideME YamalubeProducts"
+                                                data-parent="#model-accordion" data-toggle="collapse"
                                                 href=".YamalubeProducts-accord" role="button">Yamalube® Products - The
                                                 Choice of Champions </a></p>
 
                                         <div class="panel-collapse collapse YamalubeProducts-accord"
                                             id="collapseExample001">
                                             <div class="card card-body">
+                                                <p class="visible-xs"><a aria-controls="YamalubeProducts-accord"
+                                                        class="clickToOpenAndHideOther" data-parent="#model-accordion"
+                                                        data-toggle="collapse" href=".YamalubeProducts-accord"
+                                                        role="button">Yamalube® Products - The Choice of Champions </a>
+                                                </p>
+
                                                 <div class="row">
                                                     <div class="col-md-4 _img"><img alt="Yamalube Products"
                                                             src="/site-uploads/1001518/images/Yamalube Products.png">
@@ -8135,13 +7932,19 @@
                                         <h2 class="hidden-xs">Yamaha Parts Catalogs</h2>
 
                                         <p class="visible-xs"><a aria-controls="YamahaPartsCatalogs-accord"
-                                                class="collapsed" data-parent="#model-accordion" data-toggle="collapse"
+                                                class="clickToOpenAndHideME YamahaPartsCatalogs"
+                                                data-parent="#model-accordion" data-toggle="collapse"
                                                 href=".YamahaPartsCatalogs-accord" role="button">Yamaha Parts Catalogs
                                             </a></p>
 
                                         <div class="panel-collapse collapse YamahaPartsCatalogs-accord"
                                             id="collapseExample001">
                                             <div class="card card-body">
+                                                <p class="visible-xs"><a aria-controls="YamahaPartsCatalogs-accord"
+                                                        class="clickToOpenAndHideOther" data-parent="#model-accordion"
+                                                        data-toggle="collapse" href=".YamahaPartsCatalogs-accord"
+                                                        role="button">Yamaha Parts Catalogs </a></p>
+
                                                 <div class="row">
                                                     <div class="col-md-4 _img"><img alt="Yamaha Parts Catalogs"
                                                             src="/site-uploads/1001518/images/Yamaha Parts Catalogs.png">
@@ -8380,9 +8183,27 @@
                                         <div class="lSSlideWrapper usingCss">
                                             <ul id="scroller"
                                                 class="zz gallery list-unstyled lightSlider lsGrab lSSlide"
-                                                style="width: 2958.31px; transform: translate3d(-910.25px, 0px, 0px); height: 204.962px; padding-bottom: 0%;">
+                                                style="width: 4062.5px; transform: translate3d(-1250px, 0px, 0px); height: 282.234px; padding-bottom: 0%;">
                                                 <li align="center" class="clone left"
-                                                    style="width: 217.562px; margin-right: 10px;">
+                                                    style="width: 302.5px; margin-right: 10px;">
+                                                    <a class="randomAdDetails  center-block text-center"
+                                                        href="/randoms/itemid/30367518/">
+                                                        <img loading="lazy" border="0" width="200" photo_width="1366"
+                                                            photo_height="768" alt="Random Advertisment"
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8601/30367518.jpg?width=200">
+                                                        <div class="thumbnailStatus text-center"
+                                                            style="color: rgb(255, 255, 255); background-color: #006000;">
+                                                            In Stock</div>
+                                                    </a>
+                                                    <div>
+                                                        <span class="text-info center-block text-center">CFMoto UFORCE
+                                                            1000 EPS Blue with Heated Cab </span>
+                                                        <span class="text-info center-block text-center">
+                                                            <span>$24999.00</span> </span>
+                                                    </div>
+                                                </li>
+                                                <li align="center" class="clone left"
+                                                    style="width: 302.5px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
                                                         href="/randoms/itemid/29907646/">
                                                         <img loading="lazy" border="0" width="200" photo_width="1024"
@@ -8396,11 +8217,11 @@
                                                         <span class="text-info center-block text-center">2024 CFMOTO
                                                             ZFORCE 950 SPORT-4 Lava Orange </span>
                                                         <span class="text-info center-block text-center">
-                                                            <span>Contact for price</span> </span>
+                                                            <span>$24999.00</span> </span>
                                                     </div>
                                                 </li>
                                                 <li align="center" class="clone left"
-                                                    style="width: 217.562px; margin-right: 10px;">
+                                                    style="width: 302.5px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
                                                         href="/randoms/itemid/29445354/">
                                                         <img loading="lazy" border="0" width="200" photo_width="1366"
@@ -8418,97 +8239,25 @@
                                                     </div>
                                                 </li>
                                                 <li align="center" class="clone left"
-                                                    style="width: 217.562px; margin-right: 10px;">
+                                                    style="width: 302.5px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/30145356/">
+                                                        href="/randoms/itemid/29435990/">
                                                         <img loading="lazy" border="0" width="200" photo_width="1366"
                                                             photo_height="768" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8601/30145356.jpg?width=200">
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8601/29435990.jpg?width=200">
                                                         <div class="thumbnailStatus text-center"
                                                             style="color: rgb(255, 255, 255); background-color: #006000;">
                                                             In Stock</div>
                                                     </a>
                                                     <div>
-                                                        <span class="text-info center-block text-center">CFMOTO CFORCE
-                                                            800 XC EPS 2UP Blue with Tracks &amp; Plow </span>
+                                                        <span class="text-info center-block text-center">CFMoto ZFORCE
+                                                            800 TRAIL G2 EPS Blue </span>
                                                         <span class="text-info center-block text-center">
-                                                            <span>$19999.00</span> </span>
-                                                    </div>
-                                                </li>
-                                                <li align="center" class="clone left"
-                                                    style="width: 217.562px; margin-right: 10px;">
-                                                    <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/30367518/">
-                                                        <img loading="lazy" border="0" width="200" photo_width="1366"
-                                                            photo_height="768" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8601/30367518.jpg?width=200">
-                                                        <div class="thumbnailStatus text-center"
-                                                            style="color: rgb(255, 255, 255); background-color: #006000;">
-                                                            In Stock</div>
-                                                    </a>
-                                                    <div>
-                                                        <span class="text-info center-block text-center">CFMoto UFORCE
-                                                            1000 EPS Blue with Heated Cab </span>
-                                                        <span class="text-info center-block text-center">
-                                                            <span>$24999.00</span> </span>
+                                                            <span>$16999.00</span> </span>
                                                     </div>
                                                 </li>
                                                 <li align="center" class="lslide active"
-                                                    style="width: 217.562px; margin-right: 10px;">
-                                                    <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/29435990/">
-                                                        <img loading="lazy" border="0" width="200" photo_width="1366"
-                                                            photo_height="768" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8601/29435990.jpg?width=200">
-                                                        <div class="thumbnailStatus text-center"
-                                                            style="color: rgb(255, 255, 255); background-color: #006000;">
-                                                            In Stock</div>
-                                                    </a>
-                                                    <div>
-                                                        <span class="text-info center-block text-center">CFMoto ZFORCE
-                                                            800 TRAIL G2 EPS Blue </span>
-                                                        <span class="text-info center-block text-center">
-                                                            <span>$16999.00</span> </span>
-                                                    </div>
-                                                </li>
-                                                <li align="center" class="lslide"
-                                                    style="width: 217.562px; margin-right: 10px;">
-                                                    <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/29907646/">
-                                                        <img loading="lazy" border="0" width="200" photo_width="1024"
-                                                            photo_height="768" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8601/29907646.jpg?width=200">
-                                                        <div class="thumbnailStatus text-center"
-                                                            style="color: rgb(255, 255, 255); background-color: #006000;">
-                                                            In Stock</div>
-                                                    </a>
-                                                    <div>
-                                                        <span class="text-info center-block text-center">2024 CFMOTO
-                                                            ZFORCE 950 SPORT-4 Lava Orange </span>
-                                                        <span class="text-info center-block text-center">
-                                                            <span>Contact for price</span> </span>
-                                                    </div>
-                                                </li>
-                                                <li align="center" class="lslide"
-                                                    style="width: 217.562px; margin-right: 10px;">
-                                                    <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/29445354/">
-                                                        <img loading="lazy" border="0" width="200" photo_width="1366"
-                                                            photo_height="768" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8601/29445354.jpg?width=200">
-                                                        <div class="thumbnailStatus text-center"
-                                                            style="color: rgb(255, 255, 255); background-color: #006000;">
-                                                            In Stock</div>
-                                                    </a>
-                                                    <div>
-                                                        <span class="text-info center-block text-center">2024 CFMOTO
-                                                            CFORCE 500 True Timber Camo </span>
-                                                        <span class="text-info center-block text-center">
-                                                            <span>$9999.00</span> </span>
-                                                    </div>
-                                                </li>
-                                                <li align="center" class="lslide"
-                                                    style="width: 217.562px; margin-right: 10px;">
+                                                    style="width: 302.5px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
                                                         href="/randoms/itemid/30145356/">
                                                         <img loading="lazy" border="0" width="200" photo_width="1366"
@@ -8526,7 +8275,97 @@
                                                     </div>
                                                 </li>
                                                 <li align="center" class="lslide"
-                                                    style="width: 217.562px; margin-right: 10px;">
+                                                    style="width: 302.5px; margin-right: 10px;">
+                                                    <a class="randomAdDetails  center-block text-center"
+                                                        href="/randoms/itemid/30367518/">
+                                                        <img loading="lazy" border="0" width="200" photo_width="1366"
+                                                            photo_height="768" alt="Random Advertisment"
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8601/30367518.jpg?width=200">
+                                                        <div class="thumbnailStatus text-center"
+                                                            style="color: rgb(255, 255, 255); background-color: #006000;">
+                                                            In Stock</div>
+                                                    </a>
+                                                    <div>
+                                                        <span class="text-info center-block text-center">CFMoto UFORCE
+                                                            1000 EPS Blue with Heated Cab </span>
+                                                        <span class="text-info center-block text-center">
+                                                            <span>$24999.00</span> </span>
+                                                    </div>
+                                                </li>
+                                                <li align="center" class="lslide"
+                                                    style="width: 302.5px; margin-right: 10px;">
+                                                    <a class="randomAdDetails  center-block text-center"
+                                                        href="/randoms/itemid/29907646/">
+                                                        <img loading="lazy" border="0" width="200" photo_width="1024"
+                                                            photo_height="768" alt="Random Advertisment"
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8601/29907646.jpg?width=200">
+                                                        <div class="thumbnailStatus text-center"
+                                                            style="color: rgb(255, 255, 255); background-color: #006000;">
+                                                            In Stock</div>
+                                                    </a>
+                                                    <div>
+                                                        <span class="text-info center-block text-center">2024 CFMOTO
+                                                            ZFORCE 950 SPORT-4 Lava Orange </span>
+                                                        <span class="text-info center-block text-center">
+                                                            <span>$24999.00</span> </span>
+                                                    </div>
+                                                </li>
+                                                <li align="center" class="lslide"
+                                                    style="width: 302.5px; margin-right: 10px;">
+                                                    <a class="randomAdDetails  center-block text-center"
+                                                        href="/randoms/itemid/29445354/">
+                                                        <img loading="lazy" border="0" width="200" photo_width="1366"
+                                                            photo_height="768" alt="Random Advertisment"
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8601/29445354.jpg?width=200">
+                                                        <div class="thumbnailStatus text-center"
+                                                            style="color: rgb(255, 255, 255); background-color: #006000;">
+                                                            In Stock</div>
+                                                    </a>
+                                                    <div>
+                                                        <span class="text-info center-block text-center">2024 CFMOTO
+                                                            CFORCE 500 True Timber Camo </span>
+                                                        <span class="text-info center-block text-center">
+                                                            <span>$9999.00</span> </span>
+                                                    </div>
+                                                </li>
+                                                <li align="center" class="lslide"
+                                                    style="width: 302.5px; margin-right: 10px;">
+                                                    <a class="randomAdDetails  center-block text-center"
+                                                        href="/randoms/itemid/29435990/">
+                                                        <img loading="lazy" border="0" width="200" photo_width="1366"
+                                                            photo_height="768" alt="Random Advertisment"
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8601/29435990.jpg?width=200">
+                                                        <div class="thumbnailStatus text-center"
+                                                            style="color: rgb(255, 255, 255); background-color: #006000;">
+                                                            In Stock</div>
+                                                    </a>
+                                                    <div>
+                                                        <span class="text-info center-block text-center">CFMoto ZFORCE
+                                                            800 TRAIL G2 EPS Blue </span>
+                                                        <span class="text-info center-block text-center">
+                                                            <span>$16999.00</span> </span>
+                                                    </div>
+                                                </li>
+                                                <li align="center" class="clone right"
+                                                    style="width: 302.5px; margin-right: 10px;">
+                                                    <a class="randomAdDetails  center-block text-center"
+                                                        href="/randoms/itemid/30145356/">
+                                                        <img loading="lazy" border="0" width="200" photo_width="1366"
+                                                            photo_height="768" alt="Random Advertisment"
+                                                            src="https://www.equipmentsearch.com/uploadedimages/8601/30145356.jpg?width=200">
+                                                        <div class="thumbnailStatus text-center"
+                                                            style="color: rgb(255, 255, 255); background-color: #006000;">
+                                                            In Stock</div>
+                                                    </a>
+                                                    <div>
+                                                        <span class="text-info center-block text-center">CFMOTO CFORCE
+                                                            800 XC EPS 2UP Blue with Tracks &amp; Plow </span>
+                                                        <span class="text-info center-block text-center">
+                                                            <span>$19999.00</span> </span>
+                                                    </div>
+                                                </li>
+                                                <li align="center" class="clone right"
+                                                    style="width: 302.5px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
                                                         href="/randoms/itemid/30367518/">
                                                         <img loading="lazy" border="0" width="200" photo_width="1366"
@@ -8544,25 +8383,7 @@
                                                     </div>
                                                 </li>
                                                 <li align="center" class="clone right"
-                                                    style="width: 217.562px; margin-right: 10px;">
-                                                    <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/29435990/">
-                                                        <img loading="lazy" border="0" width="200" photo_width="1366"
-                                                            photo_height="768" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8601/29435990.jpg?width=200">
-                                                        <div class="thumbnailStatus text-center"
-                                                            style="color: rgb(255, 255, 255); background-color: #006000;">
-                                                            In Stock</div>
-                                                    </a>
-                                                    <div>
-                                                        <span class="text-info center-block text-center">CFMoto ZFORCE
-                                                            800 TRAIL G2 EPS Blue </span>
-                                                        <span class="text-info center-block text-center">
-                                                            <span>$16999.00</span> </span>
-                                                    </div>
-                                                </li>
-                                                <li align="center" class="clone right"
-                                                    style="width: 217.562px; margin-right: 10px;">
+                                                    style="width: 302.5px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
                                                         href="/randoms/itemid/29907646/">
                                                         <img loading="lazy" border="0" width="200" photo_width="1024"
@@ -8576,11 +8397,11 @@
                                                         <span class="text-info center-block text-center">2024 CFMOTO
                                                             ZFORCE 950 SPORT-4 Lava Orange </span>
                                                         <span class="text-info center-block text-center">
-                                                            <span>Contact for price</span> </span>
+                                                            <span>$24999.00</span> </span>
                                                     </div>
                                                 </li>
                                                 <li align="center" class="clone right"
-                                                    style="width: 217.562px; margin-right: 10px;">
+                                                    style="width: 302.5px; margin-right: 10px;">
                                                     <a class="randomAdDetails  center-block text-center"
                                                         href="/randoms/itemid/29445354/">
                                                         <img loading="lazy" border="0" width="200" photo_width="1366"
@@ -8595,24 +8416,6 @@
                                                             CFORCE 500 True Timber Camo </span>
                                                         <span class="text-info center-block text-center">
                                                             <span>$9999.00</span> </span>
-                                                    </div>
-                                                </li>
-                                                <li align="center" class="clone right"
-                                                    style="width: 217.562px; margin-right: 10px;">
-                                                    <a class="randomAdDetails  center-block text-center"
-                                                        href="/randoms/itemid/30145356/">
-                                                        <img loading="lazy" border="0" width="200" photo_width="1366"
-                                                            photo_height="768" alt="Random Advertisment"
-                                                            src="https://www.equipmentsearch.com/uploadedimages/8601/30145356.jpg?width=200">
-                                                        <div class="thumbnailStatus text-center"
-                                                            style="color: rgb(255, 255, 255); background-color: #006000;">
-                                                            In Stock</div>
-                                                    </a>
-                                                    <div>
-                                                        <span class="text-info center-block text-center">CFMOTO CFORCE
-                                                            800 XC EPS 2UP Blue with Tracks &amp; Plow </span>
-                                                        <span class="text-info center-block text-center">
-                                                            <span>$19999.00</span> </span>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -8645,7 +8448,7 @@
                 </div>
             </div>
             <div id="RightDiv" class="droppableComp droppableHtml ui-sortable 0 ui-sortable-disabled"
-                style="height: 1667.66px; display: none;"></div>
+                style="height: 2295.91px; display: none;"></div>
         </div>
         <div class="row">
             <div id="FooterDiv" class="droppableHtml droppableComp col-md-12 ui-sortable ui-sortable-disabled">
@@ -8653,15 +8456,15 @@
                     data-component-htmlcontainer="" data-com-id="htmlContainer" id="html_1705994175549">
                     <div contenteditable="true" class="contentHtml intermediate_notallowed basic_notallowed"
                         style="position: relative;">
-
+                        <!--  -->
                         <div class="to-up-container"><a class="to-up" href="#top"><i aria-hidden="true"
                                     class="fak fa-tk-t-arrow">&nbsp;</i></a></div>
-                        <p class="footer_note">
-                            We will try to accommodate your requests for Genuine Yamaha Parts and Accessories, Yamaha
-                            Motorcycle, Yamaha ATV, Yamaha Snowmobile, Yamaha Generator,Yamaha Side by Side, Yamaha GYTR
-                            Yamalube. If you do not see the items you are looking for please
-                            <a href="/Contact-Us">contact us</a>.
-                        </p>
+                        <!--  -->
+
+                        <p class="footer_note">We will try to accommodate your requests for Genuine Yamaha Parts and
+                            Accessories, Yamaha Motorcycle, Yamaha ATV, Yamaha Snowmobile, Yamaha Generator,Yamaha Side
+                            by Side, Yamaha GYTR Yamalube. If you do not see the items you are
+                            looking for please <a href="/Contact-Us">contact us</a>.</p>
 
                         <section id="footer">
                             <div class="flex-container accordion-section">
@@ -8702,7 +8505,8 @@
                                             <div class="card card-body">
                                                 <ul class="links-ul">
                                                     <li><a href="/">Home</a></li>
-                                                    <li><a href="/Yamaha-Parts">Yamaha Parts</a></li>
+                                                    <li><a href="/page/display/?siteId=1001518&amp;pageId=67864">Yamaha
+                                                            Parts</a></li>
                                                     <li><a href="/Yamaha-Accessories">Yamaha Accessories</a></li>
                                                     <li><a href="/Yamaha-Service-Parts">Yamaha Service Parts</a></li>
                                                     <li><a href="/About-Us">About Us</a></li>
@@ -8895,6 +8699,74 @@
                             </div>
                         </div>
                     </div>
+                    <editor-squiggler aria-hidden="true" tabindex="-1" style="height: 0px; width: 0px;">
+                        <style>
+                            @media print {
+                                .ms-editor-squiggler {
+                                    display: none !important;
+                                }
+                            }
+
+                            .ms-editor-squiggler {
+                                all: initial;
+                                display: block !important;
+                                height: 0px !important;
+                                width: 0px !important;
+                            }
+                        </style>
+                        <div class="ms-editor-squiggler"></div>
+                    </editor-squiggler>
+                    <editor-squiggler aria-hidden="true" tabindex="-1" style="height: 0px; width: 0px;">
+                        <style>
+                            @media print {
+                                .ms-editor-squiggler {
+                                    display: none !important;
+                                }
+                            }
+
+                            .ms-editor-squiggler {
+                                all: initial;
+                                display: block !important;
+                                height: 0px !important;
+                                width: 0px !important;
+                            }
+                        </style>
+                        <div class="ms-editor-squiggler"></div>
+                    </editor-squiggler>
+                    <editor-squiggler aria-hidden="true" tabindex="-1" style="height: 0px; width: 0px;">
+                        <style>
+                            @media print {
+                                .ms-editor-squiggler {
+                                    display: none !important;
+                                }
+                            }
+
+                            .ms-editor-squiggler {
+                                all: initial;
+                                display: block !important;
+                                height: 0px !important;
+                                width: 0px !important;
+                            }
+                        </style>
+                        <div class="ms-editor-squiggler"></div>
+                    </editor-squiggler>
+                    <editor-squiggler aria-hidden="true" tabindex="-1" style="height: 0px; width: 0px;">
+                        <style>
+                            @media print {
+                                .ms-editor-squiggler {
+                                    display: none !important;
+                                }
+                            }
+
+                            .ms-editor-squiggler {
+                                all: initial;
+                                display: block !important;
+                                height: 0px !important;
+                                width: 0px !important;
+                            }
+                        </style>
+                        <div class="ms-editor-squiggler"></div>
+                    </editor-squiggler>
                 </div>
             </div>
         </div>
