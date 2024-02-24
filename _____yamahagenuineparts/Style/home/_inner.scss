@@ -266,3 +266,27 @@
         }
     }
 }
+
+.BusinessPartners {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+
+        ._inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1em;
+            border: 1px solid #D8D8D8;
+            margin: 0.5em 0;
+            height: 90%;
+
+            >a {
+                display: flex;
+                width: 70%;
+                justify-content: center;
+            }
+        }
+    }
+}

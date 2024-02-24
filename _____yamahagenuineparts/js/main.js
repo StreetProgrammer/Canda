@@ -23,9 +23,9 @@ $(document).ready(function () {
 $(function () {
   $(window).on("scroll", function () {
     if ($(window).scrollTop() > 48) {
-      $("#comp_1703261608355").addClass("sticky-nav");
+      $("#html_1705994171125").addClass("sticky-nav");
     } else {
-      $("#comp_1703261608355").removeClass("sticky-nav");
+      $("#html_1705994171125").removeClass("sticky-nav");
     }
   });
 });
@@ -59,8 +59,8 @@ $(function () {
                               <p>404 PAGE NOT FOUND. CHECKOUT OUR INVENTORY OR <a href="/Contact-Us/">CONTACT US</a></p>
   
                               <div class="btn-link">
-                                  <a href="/Barrie">Barrie</a>
-                                  <a href="/Oakville">Oakville</a>
+                                  <a href="/Yamaha-Parts/">Yamaha Parts</a>
+                                  <a href="/Yamaha-Accessories/">Yamaha Accessories</a>
                               </div>
                           </div>
                       </div>`;
@@ -105,3 +105,20 @@ $(document).ready(function () {
       .removeClass("hidden");
   });
 });
+
+/* Start Handle Fake anchors */
+$(function () {
+  $("[data-href]").on("click", function (e) {
+    var target = $(this).attr("target") || undefined;
+    if (!e.target.matches("a")) {
+      console.log("target => ", target);
+      var href = $(this).data("href");
+      if (target === "blank") {
+        window.open(href, target);
+      } else {
+        window.location = href;
+      }
+    }
+  });
+});
+/* End Handle Fake anchors */

@@ -853,7 +853,7 @@ a#tradeinTab:hover {
 
 @media (max-width: 769px) {
   #hero-area .hero-content {
-    top: 9em;
+    top: 15em;
   }
   #hero-area .hero-slogan h2 {
     font-size: 1.8em;
@@ -862,7 +862,7 @@ a#tradeinTab:hover {
     height: 23em;
   }
   #hero-area .hero-brands {
-    margin-top: 1em;
+    margin-top: 3.5em;
     width: 100%;
   }
   #hero-area .hero-brands ul {
@@ -871,11 +871,14 @@ a#tradeinTab:hover {
     justify-content: center;
   }
   #hero-area .hero-brands ul li {
-    width: 33%;
+    width: 25%;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #hero-area .hero-brands ul li a {
-    padding: 0.5em 0;
+    padding: 0.5em 1em 0.5em 1em;
   }
   #hero-area .hero-brands ul li a img {
     width: auto;
@@ -1877,7 +1880,7 @@ hr,
 
 @media (max-width: 769px) {
   #comp_1703314173527 {
-    padding: 2em 1em;
+    padding: 5em 2em 1em;
   }
 }
 /* Brand slider */

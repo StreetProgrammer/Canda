@@ -11,9 +11,10 @@
     align-items: center;
     border-bottom: 1px solid var(--grey-3);
 
-    #comp_1705994544829 {
+    #comp_1707147917952 {
         // @media screen and (min-width: 768px) {
         display: block;
+        width: auto;
 
         .navbar.navbar-default {
             background-color: transparent;
@@ -255,8 +256,9 @@
 
     @media screen and (max-width: 767px) {
         padding: 1em 2em;
+        justify-content: space-between;
 
-        #comp_1705994544829 {
+        #comp_1707147917952 {
             display: block;
 
             .navbar.navbar-default {
@@ -329,6 +331,8 @@
         }
 
         ._search {
+            display: none;
+
             #_searchbtn {
                 display: none;
             }
@@ -345,11 +349,11 @@
             .mobile-search {
                 display: flex;
                 color: #616365;
-                font-size: 1.5em;
+                font-size: 1.25em;
             }
 
             ._login {
-                margin: 0 1em;
+                margin: 0 0.5em;
                 padding: 0;
                 border-right: 0;
 
@@ -359,7 +363,7 @@
                     }
 
                     i {
-                        font-size: 1.5em;
+                        font-size: 1.25em;
                     }
                 }
             }
@@ -370,6 +374,7 @@
                     display: flex;
                     height: 100%;
                     align-items: center;
+                    line-height: 0;
 
                     >span {
                         &.icon {

@@ -1,0 +1,36 @@
+._other_links {
+    h3 {
+        position: relative;
+        border-bottom: 1px solid var(--grey-3);
+        padding: 0 0 0.5em 0;
+
+        &::before {
+            width: 7em;
+            height: 0.1em;
+            background-color: var(--main-color);
+            top: calc(100% - 0.1em);
+            left: 0;
+            content: "";
+            display: block;
+            position: absolute;
+        }
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        >div {
+            width: 48%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        section {
+            >div {
+                width: 100%;
+            }
+        }
+    }
+}

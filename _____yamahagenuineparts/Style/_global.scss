@@ -1352,10 +1352,9 @@ hr,
 }
 
 .btn-link a {
-    background-color: #000;
     font-family: var(--main-font-bold);
     text-transform: uppercase;
-    color: #d5d5d5;
+    color: #616365;
     padding: 0.8em 3em;
     margin-right: 0.5em;
     border: 0.18em solid var(--main-color);
@@ -1379,7 +1378,7 @@ hr,
 .hover-fix a:focus {
     text-decoration: none !important;
     background-color: var(--main-color);
-    color: #000;
+    color: var(--white);
 }
 
 .btn-link:hover,
@@ -1422,7 +1421,7 @@ hr,
 }
 
 .sticky-nav .navbar-header {
-    padding: 0.9em 0;
+    // padding: 0.9em 0;
 }
 
 @media (max-width: 769px) {
@@ -1438,7 +1437,7 @@ hr,
     }
 
     .sticky-nav .navbar-header {
-        padding: 0.7em 0;
+        // padding: 0.7em 0;
     }
 }
 
@@ -1447,7 +1446,7 @@ hr,
     top: 0;
     right: 0;
     z-index: 16;
-    background-color: #000;
+    background-color: var(--white);
 }
 
 .caret {
@@ -1743,7 +1742,7 @@ hr,
 #page_66765,
 #page_66930,
 #page_67294 {
-    #comp_1705994535485 {
+    #comp_1707148541520 {
         display: none;
     }
 }
@@ -1759,6 +1758,7 @@ hr,
     padding: 1.2em 5em !important;
     margin-bottom: 0;
     z-index: 2;
+    border-bottom: 1px solid var(--grey-3);
 }
 
 .breadcrumbParent h1 {
@@ -2221,7 +2221,7 @@ hr,
     height: 4em;
     font-size: 1.1em;
     padding: 0.91em 1.5em;
-    background-color: #000;
+    background-color: var(--white);
 }
 
 #searchModal .modal-dialog,
@@ -2249,7 +2249,7 @@ hr,
     margin: 0px !important;
     background-color: var(--main-color) !important;
     outline: none;
-    color: #000 !important;
+    color: var(--white) !important;
     font-size: 1.6em;
 }
 
@@ -2307,7 +2307,7 @@ hr,
 }
 
 #searchModal .search-links {
-    background-color: #000;
+    background-color: var(--white);
     padding: 2em;
     margin-top: 0.5em;
     overflow: hidden;
@@ -2338,7 +2338,7 @@ hr,
 #searchModal .search-links ul li a {
     display: block;
     padding: 0.5em 0;
-    color: #d5d5d5;
+    color: var(--black);
 }
 
 #searchModal .search-links ul li a:hover,
@@ -3090,9 +3090,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .parts2021 #products .price.show-item,
 .parts-srp #products .price.show-item {
-    font-size: 1.1em;
-    font-family: var(--main-font-bold);
-    color: var(--main-color);
+    font-size: 0.8em;
+    color: #616365;
+    text-align: center;
+    font-weight: 400;
+    font-family: var(--body-font);
 }
 
 .parts2021 #products .starting-ttl,
@@ -3311,7 +3313,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .parts-vdp .stock-num-box .stock-num {font-size: .8em;}*/
 
 .parts-vdp .ecomm-btn {
-    background-color: var(--main-color);
     border-radius: 0;
     padding: 0.5em 1em;
     min-height: auto;
@@ -3319,14 +3320,16 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-family: var(--main-font-bold);
     text-transform: uppercase;
     font-size: 1em;
-    color: #000 !important;
+    background-color: var(--main-color);
+    color: var(--white) !important;
 }
 
 .parts-vdp .ecomm-btn:hover,
 .parts-vdp .ecomm-btn:focus,
 .parts-vdp .ecomm-btn:hover .glyphicon,
 .parts-vdp .ecomm-btn:focus .glyphicon {
-    background-color: #000;
+    background-color: var(--white) !important;
+    color: var(--main-color);
 }
 
 .parts-vdp .parts-price-box {
@@ -3970,7 +3973,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .filter-xs-btn {
-    color: #000 !important;
+    // color: #000 !important;
 }
 
 .reset.button,
@@ -5247,4 +5250,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--main-color);
+}
+
+[data-href] {
+    cursor: pointer;
 }

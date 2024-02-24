@@ -1,7 +1,7 @@
-if ($("#searchbox").length) {
+if ($("#searchbox2").length) {
   setTimeout(function () {
     document
-      .getElementById("searchbox")
+      .getElementById("searchbox2")
       .addEventListener("keyup", function (event) {
         event.preventDefault();
         if (event.keyCode === 13) {
@@ -11,13 +11,30 @@ if ($("#searchbox").length) {
   }, 2000);
 }
 
+if ($("#_searchbox2").length) {
+  setTimeout(function () {
+    document
+      .getElementById("_searchbox2")
+      .addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+          document.getElementById("_searchbtn").click();
+        }
+      });
+  }, 2000);
+}
+
 function srch() {
   //var e = document.getElementById("pagedd");
   //var dest= e.options[e.selectedIndex].value;
-  var valuee = document.getElementById("searchbox2").value;
+  var valuee =
+    document.getElementById("_searchbox2").value ||
+    document.getElementById("searchbox2").value;
   if (valuee != "") {
-    window.location = "/Search-Inventory/search/".concat(valuee);
+    window.location = "/Search-Parts/search/".concat(valuee);
   } else {
+    document.getElementById("_searchbox2").placeholder =
+      "This field is required";
     document.getElementById("searchbox2").placeholder =
       "This field is required";
     var sheet = window.document.styleSheets[0];

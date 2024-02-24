@@ -1,0 +1,44 @@
+#comp_1707844264761 {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 25px 45px 25px;
+    margin: 0 0 0 0;
+    background: -moz-linear-gradient(180deg, rgba(200, 200, 200, 1) 0%, rgba(255, 255, 255, 1) 80%);
+    background: -webkit-linear-gradient(180deg, rgba(200, 200, 200, 1) 0%, rgba(255, 255, 255, 1) 80%);
+    background: linear-gradient(180deg, rgba(200, 200, 200, 1) 0%, rgba(255, 255, 255, 1) 80%);
+
+    .container-fluid {
+        max-width: 1440px !important;
+        margin: 0px auto 20px auto;
+        position: relative;
+        zoom: 1;
+        width: 100%;
+
+        .carousel.slide {
+            .carousel-indicators {
+                bottom: -40px;
+
+                li {
+                    height: 6px;
+                    width: 50px;
+                    background: rgba(200, 200, 200, .5);
+                    border: 0;
+
+                    &.active {
+                        background: var(--main-color);
+                    }
+                }
+            }
+
+            .carousel-inner {
+                .item {
+                    &.active {}
+                }
+            }
+
+            .carousel-control {
+                display: none;
+            }
+        }
+    }
+}

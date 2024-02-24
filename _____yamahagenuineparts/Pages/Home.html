@@ -7623,24 +7623,43 @@
                                     </div>
                                 </nav>
                             </div>
-                            <a class="_yamaha_logo" href=""> <img alt="Yamaha Genuine Parts &amp; Accessories"
-                                    loading="lazy" src="/site-uploads/1001518/images/_Yamaha_logo.png"> </a>
+                            <a class="_yamaha_logo" href=""> 
+                                <img alt="Yamaha Genuine Parts &amp; Accessories"
+                                    loading="lazy" src="/site-uploads/1001518/images/_Yamaha_logo.png"> 
+                            </a>
 
-                            <div class="_search"><button class="btn btn-default" id="_searchbtn" onclick="srch()"
-                                    type="button"><span class="glyphicon glyphicon-search">&nbsp;</span></button><input
-                                    class="form-control" data-ms-editor="true" id="_searchbox"
-                                    placeholder="Search by Yamaha Part #" spellcheck="false" type="text"></div>
+                            <div class="_search">
+                                <a class="mobile-search" href="#" data-toggle="modal" data-target="#searchModal">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true">&nbsp;</span>         
+                                </a>
+                                <button class="btn btn-default" id="_searchbtn" onclick="srch()"
+                                    type="button">
+                                    <span class="glyphicon glyphicon-search">&nbsp;</span>
+                                </button>
+                                <input class="form-control" data-ms-editor="true" id="_searchbox"
+                                    placeholder="Search by Yamaha Part #" spellcheck="false" type="text">
+                            </div>
 
                             <div class="_icon_links">
                                 <div class="_login">
-                                    <a href=""> <i class="fas fa-user">&nbsp;</i> <span> <span>Login / Signup</span>
-                                            <span>My account</span> </span>
+                                    <a data-target="#Login-form" data-toggle="modal" data-whatever="@mdo" href="" type="button"> 
+                                        <i class="fas fa-user">&nbsp;</i> 
+                                        <span> 
+                                            <span>Login / Signup</span>
+                                            <span>My account</span> 
+                                        </span>
                                     </a>
                                 </div>
 
-                                <div class="_cart"><a class="shopping-cart" href="#"><span><span
-                                                class="simpleCart_quantity">0</span> <i aria-hidden="true"
-                                                class="fas fa-shopping-cart">&nbsp;</i> </span> Cart </a></div>
+                                <div class="_cart">
+                                    <a class="shopping-cart" href="#">
+                                        <span class="icon">
+                                            <span class="simpleCart_quantity">0</span> 
+                                            <i aria-hidden="true" class="fas fa-shopping-cart">&nbsp;</i> 
+                                        </span> 
+                                        <span class="txt">Cart</span> 
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

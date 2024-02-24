@@ -1,0 +1,256 @@
+.hero-video-wrapper {
+    height: 65vw;
+    position: relative;
+
+    .hero-text-wrapper {
+        text-align: center;
+        position: relative;
+        height: 0;
+        top: 25vw;
+        z-index: 2;
+
+        .hero-text-p1 {
+            padding: 0;
+            color: var(--white);
+            font-family: var(--RoadRage);
+            font-size: 60px;
+            line-height: 86px;
+            text-shadow: 1px 1px 2px var(--black);
+        }
+
+        .hero-text-p2 {
+            margin: 10px 0 30px;
+            padding: 0;
+            color: var(--white);
+            font-size: 18px;
+            line-height: 32px;
+            text-shadow: 1px 1px 2px var(--black);
+            text-transform: uppercase;
+        }
+    }
+
+    .video-mask {
+        position: absolute;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/site-uploads/1001525/images/mask.png);
+        z-index: 1;
+    }
+
+    #myVideo {
+        width: 100%;
+        display: block;
+        height: 65vw;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    @media only screen and (max-width: 768px) {
+        background-image: url(/site-uploads/1001525/images/home-mobile-splash-bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 65vh;
+
+        .hero-text-wrapper {
+            top: 10vw;
+
+            .hero-text-p1 {}
+
+            .hero-text-p2 {}
+        }
+
+        .video-mask {}
+
+        #myVideo {
+            display: none;
+        }
+    }
+}
+
+
+/*--------------------------*/
+
+.home-model-wrapper {
+    position: relative;
+    height: 45vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &._super_villain {
+        background-image: url(/site-uploads/1001525/images/home-super-villain-hero-11-13-2023.jpg);
+    }
+
+    &._villain {
+        background-image: url(/site-uploads/1001525/images/home-villain-hero-12-21-2022.jpg);
+    }
+
+    &._ut10_crew {
+        background-image: url(/site-uploads/1001525/images/home-ut10-crew-hero.jpg);
+    }
+
+    &._ut10 {
+        background-image: url(/site-uploads/1001525/images/home-fugleman-hero-12-21-2022.jpg);
+    }
+
+    .home-model-content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        padding: 0 10%;
+        height: 200px;
+        transition: .5s ease;
+
+        .content-wrapper {
+            .model-content-p1 {
+                color: #FFF;
+                font-size: 22px;
+                line-height: 24px;
+            }
+
+            img {}
+
+            .model-content-p2 {
+                margin: 10px 0;
+                padding: 0;
+                color: #FFF;
+                height: 67px;
+                height: 0;
+                transition: .8s ease;
+                overflow: hidden;
+            }
+        }
+    }
+
+    &:hover {
+        .home-model-content {
+            height: 300px;
+
+            .model-content-p2 {
+                margin: 30px 0 40px;
+                height: 67px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1240px) {
+        .home-model-content {
+            .content-wrapper {
+                .model-content-p1 {
+                    font-size: calc(10px + 1vw);
+                    line-height: 105%;
+                }
+
+                img {
+                    width: 40vw;
+                }
+
+                .model-content-p2 {
+                    font-size: calc(9px + .5vw);
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        background-position: top;
+        margin-top: 20px;
+
+        .home-model-content {
+            height: 155px;
+
+            .content-wrapper {
+                .model-content-p1 {
+                    color: #FFF;
+                    font-size: 22px;
+                    line-height: 24px;
+                }
+
+                img {
+                    margin-bottom: 20px;
+                }
+
+                .model-content-p2 {
+                    display: none;
+                    margin: 0;
+                }
+            }
+        }
+
+        &:hover {
+            .home-model-content {
+                height: 300px;
+
+                .model-content-p2 {
+                    margin: 30px 0 40px;
+                    height: 67px;
+                }
+            }
+        }
+    }
+}
+
+.home-bottom-cards {
+    .contentwrapper {
+        position: relative;
+
+        .home-bottom-card-wrapper {
+            text-align: center;
+            height: 40vw;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            transition: .5s ease;
+
+            &:hover {
+                background-size: auto 110%;
+            }
+
+            &._contact {
+                background-image: url(/site-uploads/1001525/images/home-contact-us-background.jpg);
+            }
+
+            &.become-a-dealer {
+                background-image: url(/site-uploads/1001525/images/home-become-dealer-background.jpg);
+            }
+
+            .bottom-card-content {
+                position: relative;
+                top: 10%;
+
+                .bottom-card-p1 {
+                    color: var(--white);
+                    font-size: 40px;
+                    line-height: 48px;
+                    padding: 0 0 25px 0;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .contentwrapper {
+            .home-bottom-card-wrapper {
+                margin: 0 0 15px;
+                height: 55vw;
+                background-size: cover;
+
+                &:hover {}
+
+                &._contact {}
+
+                &.become-a-dealer {}
+
+                .bottom-card-content {
+                    .bottom-card-p1 {
+                        font-size: calc(15px + 2vw);
+                        line-height: 135%;
+                    }
+                }
+            }
+        }
+    }
+}

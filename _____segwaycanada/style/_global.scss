@@ -1,0 +1,129 @@
+@font-face {
+    font-family: RoadRage;
+    src: url(/site-uploads/1001525/fonts/Road_Rage.ttf);
+    font-display: swap;
+}
+
+:root {
+    --black: #000;
+    --white: #FFF;
+    --grey: #666;
+    --grey-2: #999;
+    --darkgrey: #1C1C1C;
+    --grey-3: #D8D8D8;
+    --grey-4: #3F3F3F;
+    --lightgrey: #D5D5D5;
+    --secondary-color: #038BDA;
+    --darkgrey: #222;
+    --main-color: #DA291C;
+    --dealer-color: #000 !important;
+    --main-font-color: #000 !important;
+    --main-font: "Roboto", sans-serif !important;
+    --RoadRage: RoadRage, sans-serif !important;
+    --body-font: "Open Sans", sans-serif !important;
+}
+
+html {
+    -webkit-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: 1.1vw;
+    line-height: 1.4;
+    color: var(--black);
+    padding: 0 !important;
+}
+
+#parent,
+#HeaderDiv,
+#FooterDiv,
+#parent {
+    padding: 0 !important;
+}
+
+#CenterDiv {
+    padding: 62px 0 51px 0 !important;
+    height: auto !important;
+}
+
+.container,
+.container-fluid,
+.contentComp .container-fluid {
+    width: 100%;
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+ul {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+.segway-button {
+    position: relative;
+    margin: 0 auto;
+    width: 221px;
+    background: linear-gradient(to right, #da291c 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border-radius: 4px;
+    transition: all .5s ease 0s;
+    cursor: pointer;
+
+    a {
+        position: relative;
+        width: 220px;
+        color: var(--white);
+        line-height: 50px;
+        font-size: 13px;
+        text-align: center;
+        text-transform: uppercase;
+        border: 1px solid var(--white);
+        border-radius: 4px;
+        display: inline-block;
+        transition: all .5s ease 0s;
+
+        img {
+            margin: 0 !important;
+            padding-left: 10px;
+            width: auto !important;
+            height: 35px;
+            transition: all .5s ease 0s;
+            display: inline-block;
+        }
+    }
+
+    &:hover {
+        background-position: left bottom;
+
+        a {
+            border: 1px solid var(--main-color);
+            text-decoration: none;
+
+            img {
+                padding-left: 15px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        width: 201px;
+
+        a {
+            width: 200px;
+            line-height: 40px;
+        }
+    }
+}
