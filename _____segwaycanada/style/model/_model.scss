@@ -55,7 +55,8 @@
                     .model-whitered,
                     .model-blackgreen,
                     .model-grayblack,
-                    .model-blackblack {
+                    .model-blackblack,
+                    .modelImg {
                         position: absolute;
                         right: 0;
                         margin: auto;
@@ -127,6 +128,7 @@
                         display: flex;
                         justify-content: flex-start;
                         align-items: flex-start;
+                        flex-wrap: wrap;
 
                         .model-color {
                             margin: 0 5% 0 0;
@@ -846,6 +848,69 @@
             right: 22%;
             color: var(--white);
             font-size: 34px;
+            opacity: 1;
+        }
+    }
+
+    .gallery-content-grid {
+        max-width: 2000px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+
+        // grid-auto-rows: 18vw;
+        .gallery-image {
+            position: relative;
+            margin: 0px;
+            transition: all .7s ease 0s;
+            grid-column: span 1;
+            grid-row: span 1;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            opacity: .5;
+
+            &:hover {
+                opacity: 1;
+
+                .magnifying-glass {
+                    opacity: 0;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            a {
+                width: 100%;
+            }
+        }
+
+        .gallery-large {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .magnifying-glass {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 34px;
+            height: 34px;
+            color: #FFF;
+            font-size: 34px;
+            transition: all .7s ease 0s;
+            pointer-events: none;
+        }
+
+        .gallery-halfheight {
+            grid-column: span 2;
+            pointer-events: none;
             opacity: 1;
         }
     }

@@ -18,10 +18,14 @@ $("#showMenu").on("click", function () {
 
 /* open - close header models */
 var helperObj = {
+  "d-Snarler-AT5": "pulldown-nav-snarler-at5-wrapper",
+  "d-Snarler-AT6": "pulldown-nav-snarler-at6-wrapper",
   "d-villain": "pulldown-nav-villain-wrapper",
   "d-svillain": "pulldown-nav-super-villain-wrapper",
   "d-ut10-crew": "pulldown-nav-ut10crew-wrapper",
   "d-ut10": "pulldown-nav-ut10-wrapper",
+  "m-Snarler-AT5": "pulldown-nav-snarler-at5-wrapper",
+  "m-Snarler-AT6": "pulldown-nav-snarler-at6-wrapper",
   "m-villain": "pulldown-nav-villain-wrapper",
   "m-svillain": "pulldown-nav-super-villain-wrapper",
   "m-ut10-crew": "pulldown-nav-ut10crew-wrapper",

@@ -1,0 +1,42 @@
+.hero-header {
+    height: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    &.Become-a-Dealer-Hero {
+        background-image: url('/site-uploads/1001525/images/inner/page-hero.jpg');
+    }
+
+    .hero-header-p {
+        margin-top: -40px;
+        padding: 0;
+        color: var(--white);
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        text-shadow: 4px 2px 10px var(--black);
+        display: inline-flex;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+
+    .hero-line {
+        width: 100px;
+        text-shadow: 4px 2px 10px var(--black);
+        border-bottom: 2px solid var(--main-color);
+        display: inline-flex;
+    }
+}
+
+.container.Become-a-Dealer {
+    max-width: 1550px !important;
+    display: flex;
+    flex-wrap: wrap;
+    width: 98% !important;
+    margin: 2em auto;
+}
