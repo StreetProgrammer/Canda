@@ -1,0 +1,1295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+
+<html xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+    <title>
+
+        BRAND STORY | Segway Powersports
+
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://vnext.scdn4.secure.raxcdn.com/content/themes/red/fullres.min.css?v=23112701" rel="stylesheet"
+        type="text/css" />
+    <link
+        href="https://1d06d2cd1add044f809b-80e7ee461174a7fda5950c72a54e8bb7.ssl.cf1.rackcdn.com/content/css/FontAwesome-4.7.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css" />
+    <link
+        href="https://1d06d2cd1add044f809b-80e7ee461174a7fda5950c72a54e8bb7.ssl.cf1.rackcdn.com/content/js/JQueryUI_Themes/base/jquery.ui.all.min.css"
+        rel="stylesheet" type="text/css" />
+    <link href="https://vnext.scdn4.secure.raxcdn.com/assets/segway/css/desktop.min.css?v=23112701" rel="stylesheet"
+        type="text/css" />
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js" type="text/javascript"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery.ui/1.8.13/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="https://vnext.scdn4.secure.raxcdn.com/content/js/base.js?v=23112701" type="text/javascript"></script>
+    <script src="https://vnext.scdn4.secure.raxcdn.com/content/js/fullres/base.js?v=23112701" type="text/javascript">
+    </script>
+    <script src="https://vnext.scdn4.secure.raxcdn.com/assets/segway/js/base.js?v=23112701" type="text/javascript">
+    </script>
+    <script src="https://vnext.scdn4.secure.raxcdn.com/content/js/fancybox/jquery.fancybox.pack.js?v=23112701"
+        type="text/javascript"></script>
+
+
+
+
+
+
+    <script type="text/javascript">
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TZFTF4R');
+    </script>
+
+
+
+
+
+
+
+
+    <script src="https://vnext.scdn4.secure.raxcdn.com/content/js/flexslider/jquery.flexslider-min.js?v=23112701"
+        type="text/javascript"></script>
+
+    <link rel="stylesheet" href="/assets/segway/css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/segway/css/owlcarousel/owl.theme.default.min.css">
+    <script src="/assets/segway/js/owlcarousel/circlechart.js"></script>
+    <script src="/assets/segway/js/owlcarousel/owl.carousel.js"></script>
+
+    <script>
+        $.fn.addBack = function (selector) {
+            return this.add(selector == null ? this.prevObject : this.prevObject.filter(selector));
+        }
+        $(document).ready(function () {
+
+            var intTimeOut = 5000;
+
+            $("#container_31627 .owl-carousel").owlCarousel({
+                loop: true,
+                center: true,
+                margin: 0,
+                mouseDrag: false,
+                nav: true,
+                navElement: 'div',
+                navClass: ['owl-prev', 'owl-next'],
+                navText: ['prev', 'next'],
+                dotsContainer: '.dots',
+                autoplay: true,
+                smartSpeed: 1000,
+                items: 1,
+                onInitialized: function (event) {
+                    $("#circle1").circleChart({
+                        color: "#505050",
+                        background: false,
+                        speed: intTimeOut,
+                        widthRatio: 0.03,
+                        value: 100,
+                        size: 60,
+                        startAngle: 75,
+                        animation: "linearTween"
+                    });
+                },
+                onTranslate: function (event) {
+                    var page = event.page.index;
+                    triggerChart(page);
+                }
+
+            });
+
+            function triggerChart(index) {
+                $('.dots .dot').eq(index).find('.circleChart').circleChart({
+                    speed: 0,
+                    value: 1,
+                    size: 60,
+                    startAngle: 75,
+                });
+                $('.dots .dot').eq(index).find('.circleChart').circleChart({
+                    color: "#505050",
+                    background: false,
+                    speed: intTimeOut,
+                    widthRatio: 0.03,
+                    value: 100,
+                    size: 60,
+                    startAngle: 75,
+                    animation: "linearTween"
+                });
+            }
+
+            $('.about_us02 .infor .prev').on('click', function () {
+                owl.trigger('prev.owl');
+            })
+            $('.about_us02 .infor .next').on('click', function () {
+                owl.trigger('next.owl');
+            })
+
+            $('#flexslider-89092').flexslider({
+                animation: 'slide',
+                direction: 'horizontal',
+                reverse: false,
+                smoothHeight: false,
+                slideshowSpeed: 13000,
+                animationSpeed: 500,
+                directionNav: true
+            });
+        });
+    </script>
+    <style>
+        #content-main {
+            padding: 0;
+        }
+
+        .profile {
+            height: 525px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .profile-text {
+            padding: 0 2%;
+            width: 100%;
+            max-width: 1300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .profile-text h2 {
+            color: #333;
+            font-size: 30px;
+            text-align: center;
+            flex-basis: 100%;
+        }
+
+        .profile-text p {
+            padding: 0;
+            color: #333;
+            font-size: 14px;
+            line-height: 36px;
+            text-indent: 2em;
+        }
+
+        .hero-line {
+            margin-bottom: 20px;
+            width: 100px;
+            text-shadow: 4px 2px 10px #000;
+            border-bottom: 2px solid #da291c;
+            display: inline-flex;
+        }
+
+        .our-story-wrapper {
+            text-align: center;
+        }
+
+        .our-story-wrapper h2 {
+            font-size: 30px;
+            color: #333;
+            position: relative;
+            margin: 80px 0 10px;
+        }
+
+        .our-story-wrapper p {
+            font-size: 14px;
+            color: #333;
+            line-height: 40px;
+        }
+
+        #flexslider-89092 .slides>li {
+            height: 40vw;
+            max-height: 550px;
+            background: #eaeaea;
+            display: flex !important;
+        }
+
+        #flexslider-89092 .slides img {
+            width: 70%;
+            display: inline-flex;
+        }
+
+        #flexslider-89092 .slides p {
+            display: inline-flex;
+            padding: 0;
+            width: 30%;
+            align-items: center;
+            text-align: center;
+            line-height: 35px;
+            font-size: 16px;
+            padding: 1%;
+        }
+
+        #flexslider-89092 .flex-next {
+            top: unset;
+            bottom: 20px;
+            right: 30px;
+            text-align: right;
+            opacity: 1;
+            color: #FFF;
+            background: #6b6b6b;
+            margin: 0;
+            padding: 0px 10px 0px 5px;
+            line-height: 46px;
+        }
+
+        #flexslider-89092 .flex-next:hover {
+            right: 30px;
+            opacity: 1;
+            background: #da291b;
+        }
+
+        #flexslider-89092 .flex-prev {
+            display: none;
+        }
+
+        #flexslider-89092 .flex-control-nav {
+            display: none;
+        }
+
+        .our-slogan-header {
+            text-align: center;
+        }
+
+        .our-slogan-header h2 {
+            position: relative;
+            margin: 80px 0 10px;
+            color: #333;
+            font-size: 30px;
+        }
+
+        .our-slogan-header p {
+            color: #da291b;
+            font-family: "road_range";
+            font-size: 30px;
+            line-height: 48px;
+        }
+
+        .slogan-3box-wrapepr {
+            display: flex;
+            background: #000;
+        }
+
+        .slogan-box {
+            position: relative;
+            width: 35%;
+            height: 550px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .slogan-box img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .8s ease;
+            opacity: .5;
+        }
+
+        .slogan-box img:hover {
+            width: 110%;
+            height: 110%;
+        }
+
+        .slogan-box p {
+            padding: 0 12%;
+            color: #fff;
+            font-size: 15px;
+            line-height: 36px;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @media only screen and (max-width: 1240px) {
+            .profile {
+                padding: 40px 2%;
+                height: auto;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            #flexslider-89092 .slides>li {
+                height: 65vw;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+            }
+
+            #flexslider-89092 .slides img {
+                width: 100%;
+                flex-basis: 100%;
+            }
+
+            #flexslider-89092 .slides p {
+                padding: 4% 1%;
+                flex-basis: 100%;
+                justify-content: center;
+            }
+
+            #flexslider-89092 .flex-next {
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                filter: drop-shadow(2px 4px 6px black);
+            }
+
+            #flexslider-89092 .flex-prev {
+                display: none;
+            }
+
+            #flexslider-89092 .flex-control-nav {
+                display: none;
+            }
+
+            .slogan-3box-wrapper {
+                flex-wrap: wrap;
+            }
+
+            .slogan-box {
+                flex-basis: 100%;
+                height: 350px;
+            }
+        }
+
+        #container_31627 .wrap {
+            max-width: 1300px;
+            min-width: 0;
+        }
+
+        #container_31627 .infor {
+            text-align: center;
+        }
+
+        #container_31627 .infor .tit {
+            font-size: 30px;
+            color: #333;
+            position: relative;
+            padding-bottom: 20px;
+            margin: 80px 0 10px;
+            transition: all 1s;
+        }
+
+        #container_31627 .infor .tit:after {
+            content: '';
+            width: 116px;
+            height: 2px;
+            background: #da291c;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -58px;
+        }
+
+        #container_31627 .infor .con {
+            font-size: 14px;
+            color: #333;
+            line-height: 40px;
+            transition: all 1s;
+        }
+
+        #container_31627 .content {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        @media only screen and (max-width: 992px) {
+            #container_31627 .content {
+                width: 680px;
+            }
+        }
+
+        @media only screen and (max-width: 1240px) {
+            #container_31627 .content {
+                width: 940px;
+            }
+        }
+
+        #container_31627 .owl-carousel {
+            display: none;
+        }
+
+        #container_31627 .owl-carousel.owl-loaded {
+            display: block;
+        }
+
+        #container_31627 .owl-carousel .owl-stage-outer {
+            overflow: inherit;
+        }
+
+        #container_31627 .content .item .t {
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        #container_31627 .content .item .img {
+            position: relative;
+        }
+
+        #container_31627 .content .item .img:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url(/assets/segway/images/about_us/cover.png);
+            opacity: 1;
+            transition: .3s ease;
+        }
+
+        #container_31627 .content .item .img .cover {
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            line-height: 32px;
+            opacity: 0;
+            transition: .3s ease;
+        }
+
+        #container_31627 .content .active .item .img:after {
+            opacity: 0;
+        }
+
+        #container_31627 .content .active .item .img .cover {
+            opacity: 1;
+        }
+
+        #container_31627 .content .owl-nav>div {
+            font-size: 0;
+            width: 66px;
+            height: 80px;
+            background: url(/assets/segway/images/about_us/about_us_nav.png) no-repeat;
+            position: absolute;
+            top: 50%;
+        }
+
+        #container_31627 .content .owl-nav .owl-prev {
+            left: -50px;
+        }
+
+        #container_31627 .content .owl-nav .owl-next {
+            right: -50px;
+            background-position: -80px 0;
+        }
+
+        #container_31627 .infor .tit {
+            margin-bottom: 0;
+        }
+
+        #container_31627 .infor .ctrl {
+            margin: 30px 0;
+        }
+
+        #container_31627 .infor .ctrl>div {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            overflow: hidden;
+        }
+
+        #container_31627 .infor .prev,
+        #container_31627 .infor .next {
+            cursor: pointer;
+            -moz-transition: all .5s ease 0s;
+            -ms-transition: all .5s ease 0s;
+            -o-transition: all .5s ease 0s;
+            -webkit-transition: all .5s ease 0s;
+            transition: all .5s ease 0s;
+            user-select: none;
+        }
+
+        #container_31627 .infor .prev:hover {
+            transform: translateX(-10px);
+        }
+
+        #container_31627 .infor .next:hover {
+            transform: translateX(10px);
+        }
+
+        #container_31627 .infor .dots {
+            margin: 0 50px;
+        }
+
+        #container_31627 .infor .dots .dot {
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+            width: 60px;
+            height: 60px;
+            position: relative;
+            line-height: 60px;
+        }
+
+        #container_31627 .infor .dots .dot .circleChart {
+            opacity: 0;
+        }
+
+        #container_31627 .infor .dots .dot.active .circleChart {
+            opacity: 1;
+        }
+
+        .fadeOut {
+            -webkit-animation-name: fadeOut;
+            animation-name: fadeOut;
+        }
+
+        @-webkit-keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+        }
+
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .circleChart {
+            position: absolute !important;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <link href="https://www.segwaypowersports.us/about-us" rel="canonical" />
+
+    <link rel="icon" type="image/png"
+        href="https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/favicon.png?v=23112701" />
+</head>
+
+<body>
+
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TZFTF4R" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+
+    <div id="fb-root"></div>
+    <script type="text/javascript">
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+    <div id="wrapper">
+        <div id="wrapper-head">
+            <div id="content-head">
+
+                <div class="mid">
+                    <div class="container_16">
+                        <div class="logo">
+                            <a href="https://www.segwaypowersports.us"><img
+                                    src="https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/logo.png?v=23112701"
+                                    alt="Segway Technology Co" /></a>
+                        </div>
+                        <div class="nav-wrapper">
+                            <div class="desktop-nav">
+                                <ul>
+                                    <li>POWERSPORTS:</li>
+                                    <li class="model" id="d-villain">Villain®</li>
+                                    <li class="model" id="d-svillain">Super Villain®</li>
+                                    <li class="model" id="d-ut10-crew">UT10 Crew</li>
+                                    <li class="model" id="d-ut10">UT10</li>
+
+                                    <li class="nonmodel-link"><a href="/promotions">Promotions</a></li>
+                                    <li class="nonmodel-link"><a href="/our-dealers/">Our Dealers</a></li>
+                                    <li class="nonmodel-link"><a href="/become-a-dealer/">Become a Dealer</a></li>
+                                </ul>
+                            </div>
+                            <div class="mobile-nav">
+                                <ul>
+                                    <li class="model" id="m-villain">Villain®</li>
+                                    <li class="model" id="m-svillain">Super Villain®</li>
+                                    <li class="model" id="m-ut10-crew">UT10 Crew</li>
+                                    <li class="model" id="m-ut10">UT10</li>
+
+                                    <li class="nonmodel-link"><a href="/promotions">Promotions</a></li>
+                                    <li class="nonmodel-link"><a href="/our-dealers/">Our Dealers</a></li>
+                                    <li class="nonmodel-link"><a href="/become-a-dealer/">Become a Dealer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="showMenu">
+                            <a href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pulldown-nav-villain-wrapper">
+                    <div class="container_16">
+                        <div class="pulldown-nav-content">
+                            <div class="pulldown-nav-logo-red">
+                                <img src="https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/navigation-logo-villain-red.png?v=23112701"
+                                    alt="" />
+                            </div>
+                            <div class="pulldown-nav-text">
+                                <p>SPORT<br /> SX10 - <span>GASOLINE</span>
+                                    <!-- SX10 H - <span>HYBRID</span>-->
+                                    <br /><span class="price">Starting At $16,299</span>
+                                </p>
+                            </div>
+                            <div class="pulldown-nav-model">
+                                <img src="https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/villain-sx10-wx---tensive-red---left-view.png?v=23112701"
+                                    alt="" />
+                            </div>
+                            <div class="pulldown-nav-button">
+                                <a href="/villain/">Explore<img src="/assets/segway/images/right-arrows.png" alt=""></a>
+                            </div>
+                            <div class="pulldown-nav-grey-logo">
+                                <img src="https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/navigation-logo-villain.png?v=23112701"
+                                    alt="" />
+                            </div>
+                            <div class="vertRedLine">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pulldown-nav-super-villain-wrapper">
+                    <div class="container_16">
+                        <div class="pulldown-nav-content">
+                            <div class="pulldown-nav-logo-red">
+                                <img src=h
+                                    ttps://vnext.scdn4.secure.raxcdn.com/assets/segway/images/super-villain/navigation-logo-super-villan-red-stacked.png
+                                    alt="">
+                            </div>
+                            <div class="pulldown-nav-text">
+                                <p>SPORT<br> SX20T HYBRID<br> SX20T
+                                    <!--<br><span class="price">Starting At $16,899</span>-->
+                                </p>
+                            </div>
+                            <div class="pulldown-nav-model">
+                                <img src=https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/super-villain/super-villain-sx20-hybrid---black-red---left-view.png
+                                    alt="">
+                            </div>
+                            <div class="pulldown-nav-button">
+                                <a href="/super-villain/">Explore<img src="/assets/segway/images/right-arrows.png"
+                                        alt=""></a>
+                            </div>
+                            <div class="pulldown-nav-grey-logo">
+                                <img src=https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/super-villain/navigation-logo-super-villain.png
+                                    alt="">
+                            </div>
+                            <div class="vertRedLine">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pulldown-nav-ut10crew-wrapper">
+                    <div class="container_16">
+                        <div class="pulldown-nav-content">
+                            <div class="pulldown-nav-logo-red">
+                                <img src="https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/navigation-logo-ut10-crew-red.png?v=23112701"
+                                    alt="" />
+                            </div>
+                            <div class="pulldown-nav-text">
+                                <p>UTILITY<br /> UT10 CREW - <span>GASOLINE</span>
+                                    <!-- UT10 H - <span>HYBRID</span>-->
+                                    <br /><span class="price">Starting At $15,999</span>
+                                </p>
+                            </div>
+                            <div class="pulldown-nav-model">
+                                <img src="https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/navigation-product-image-ut10-crew.png?v=23112701"
+                                    alt="" />
+                            </div>
+                            <div class="pulldown-nav-button">
+                                <a href="/ut10-crew">Explore<img src="/assets/segway/images/right-arrows.png"
+                                        alt=""></a>
+                            </div>
+                            <div class="pulldown-nav-grey-logo">
+                                <img src="https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/navigation-logo-ut10-crew.png?v=23112701"
+                                    alt="" />
+                            </div>
+                            <div class="vertRedLine">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pulldown-nav-ut10-wrapper">
+                    <div class="container_16">
+                        <div class="pulldown-nav-content">
+                            <div class="pulldown-nav-logo-red">
+                                <img src="https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/navigation-logo-ut10-red.png?v=23112701"
+                                    alt="" />
+                            </div>
+                            <div class="pulldown-nav-text">
+                                <p>UTILITY<br /> UT10 - <span>GASOLINE</span>
+                                    <!-- UT10 H - <span>HYBRID</span>-->
+                                    <br /><span class="price">Starting At $13,999</span>
+                                </p>
+                            </div>
+                            <div class="pulldown-nav-model">
+                                <img src="https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/fugleman-ut10-x---tensive-red---left-view.png?v=23112701"
+                                    alt="" />
+                            </div>
+                            <div class="pulldown-nav-button">
+                                <a href="/ut10">Explore<img src="/assets/segway/images/right-arrows.png" alt=""></a>
+                            </div>
+                            <div class="pulldown-nav-grey-logo">
+                                <img src="https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/navigation-logo-ut10.png?v=23112701"
+                                    alt="" />
+                            </div>
+                            <div class="vertRedLine">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-navpanel" class="slide-menu">
+
+                <div class="container_16">
+                    <div class="grid_16">
+                        <ul class="navlisthorz firstnav">
+                            <li class="home"><a href="/">Home</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper-overlay"></div>
+        <div id="wrapper-nav">
+            <div id="content-nav">
+
+                <div class="container_16">
+                    <div class="grid_16">
+                        <ul class="navlisthorz firstnav">
+                            <li class="home"><a href="/">Home</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper-main">
+            <div id="content-main">
+
+
+                <div id="container_31018" class="container_16 container_full">
+
+                    <div class="grid_16">
+
+                        <div id="contentWrapper_88940" class="contentwrapper">
+                            <div style="">
+                                <p style="padding: 0;"><img
+                                        src="https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/about_us/about-us-hero.jpg"
+                                        alt="about us" width="100%" height="auto"></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="grid_16">
+
+                        <div id="contentWrapper_88941" class="contentwrapper">
+                            <div style="">
+                                <div class="profile"
+                                    style="background-image: url('/assets/segway/images/about_us/about-us-profile.jpg');">
+                                    <div class="profile-text">
+                                        <h2>COMPANY PROFILE</h2>
+                                        <div class="hero-line">&nbsp;</div>
+                                        <p>Segway Powersports (Segway Technology Co., Ltd.) is an innovative company in
+                                            the field of Powersports design and manufacturing, included but not limited
+                                            to: All-terrain vehicles, Utility Side by Sides, Sport Side
+                                            by Sides and On-road vehicles. Approaching the international market from a
+                                            long-term perspective, Segway Powersports has numerous self-developed
+                                            patented designs including a hybrid powertrain, internal combustion
+                                            engines, a smart IOV system and advanced vehicle designs. Segway Powersports
+                                            is a high-tech enterprise integrating a superior supply chain and its own
+                                            factories. The company specializes in the R&amp;D, production,
+                                            sales and after-sales service of Powersports products. Segway Powersports
+                                            adheres to the motto of &ldquo;FEAR NO PLACE&rdquo; and aims to be the
+                                            leading All-Terrain mobility solution provider.</p>
+                                        <p>Segway Powersports is a subsidiary of the Segway-Ninebot Group which is a
+                                            unicorn in the global smart mobility industry. Segway-Ninebot has three
+                                            major business regions including Asia-Pacific, Europe and America,
+                                            and its products are sold in more than 100 countries and regions around the
+                                            world. It owns over 1,000 global core patents. Its products include
+                                            All-Terrain vehicles, Robotics, Go-karts, Self-Balancing Scooters
+                                            and Kick Scooters. By meeting the diverse, cool and fun needs of users,
+                                            Segway-Ninebot continues to lead the industry with its new product
+                                            development.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="container_31627" class="container_16">
+
+                    <div class="grid_16">
+
+                        <div id="contentWrapper_90318" class="contentwrapper">
+                            <div style="">
+                                <div class="our-story-wrapper">
+                                    <h2>Brand Story</h2>
+                                    <div class="hero-line">&nbsp;</div>
+                                </div>
+                                <div class="infor">
+                                    <div class="wrap">
+                                        <div class="ctrl">
+                                            <div class="prev"><img
+                                                    src="https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/about_us/prev-arrow.png"
+                                                    alt=""></div>
+                                            <div class="dots">
+                                                <div class="dot">1999
+                                                    <div id="circle1" class="circleChart">
+                                                        <!-- -->
+                                                    </div>
+                                                </div>
+                                                <div class="dot">2002
+                                                    <div id="circle2" class="circleChart">
+                                                        <!-- -->
+                                                    </div>
+                                                </div>
+                                                <div class="dot">2004
+                                                    <div id="circle3" class="circleChart">
+                                                        <!-- -->
+                                                    </div>
+                                                </div>
+                                                <div class="dot">2005
+                                                    <div id="circle4" class="circleChart">
+                                                        <!-- -->
+                                                    </div>
+                                                </div>
+                                                <div class="dot">2009
+                                                    <div id="circle5" class="circleChart">
+                                                        <!-- -->
+                                                    </div>
+                                                </div>
+                                                <div class="dot">2012
+                                                    <div id="circle6" class="circleChart">
+                                                        <!-- -->
+                                                    </div>
+                                                </div>
+                                                <div class="dot">2014
+                                                    <div id="circle7" class="circleChart">
+                                                        <!-- -->
+                                                    </div>
+                                                </div>
+                                                <div class="dot">2015
+                                                    <div id="circle8" class="circleChart">
+                                                        <!-- -->
+                                                    </div>
+                                                </div>
+                                                <div class="dot">2019
+                                                    <div id="circle9" class="circleChart">
+                                                        <!-- -->
+                                                    </div>
+                                                </div>
+                                                <div class="dot">Future
+                                                    <div id="circle10" class="circleChart">
+                                                        <!-- -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="next"><img
+                                                    src="https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/about_us/next-arrow.png"
+                                                    alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="grid_16">
+
+                        <div id="contentWrapper_90319" class="contentwrapper">
+                            <div style="">
+                                <div class="content">
+                                    <div class="owl-carousel owl-theme">
+                                        <div class="item">
+                                            <div class="t">1999 SEGWAY IS FOUNDED</div>
+                                            <div class="img">
+                                                <div class="rect-50"><img class="_full"
+                                                        src="/site-uploads/1001525/images/inner/slider-1999.jpg" alt="">
+                                                    <div class="cover">"the Company", later to be known as Segway, is
+                                                        founded by renowned inventor Dean Kamen.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="t">2002 SEGWAY PTS GO ON SALE</div>
+                                            <div class="img">
+                                                <div class="rect-50"><img class="_full"
+                                                        src="/site-uploads/1001525/images/inner/slider-2002.jpg" alt="">
+                                                    <div class="cover">November &ndash; Segway PTs go on sale to the
+                                                        public through Amazon.com. Segway HT was named &ldquo;Best new
+                                                        scientific invention of the year&rdquo; in 2002 by POPULAR
+                                                        SCIENCE Magazine.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="t">2004 FOUR-WHEEL ATV IS LAUNCHED</div>
+                                            <div class="img">
+                                                <div class="rect-50"><img class="_full"
+                                                        src="/site-uploads/1001525/images/inner/slider-2004.jpg" alt="">
+                                                    <div class="cover">November &ndash; Segway's concept four-wheel ATV
+                                                        prototype "Centaur" is featured in TIME Magazine as one of the
+                                                        &ldquo;Best Inventions of 2004&rdquo;.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="t">2005 CROSS-TERRAIN TRANSPORTER IS LAUNCHED</div>
+                                            <div class="img">
+                                                <div class="rect-50"><img class="_full"
+                                                        src="/site-uploads/1001525/images/inner/slider-2005.jpg" alt="">
+                                                    <div class="cover">March &ndash; Segway announces its first Segway
+                                                        Cross-Terrain Transporter (XT) and Golf Transporter (GT), which
+                                                        is equipped with extended-range lithium ion batteries and
+                                                        features all-terrain tires, a
+                                                        robust fender design and specially tuned software for riding
+                                                        over varied terrain.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="t">2009 NEW SECURITY PATROLLER IS INTRODUCED</div>
+                                            <div class="img">
+                                                <div class="rect-50"><img class="_full"
+                                                        src="/site-uploads/1001525/images/inner/slider-2009.jpg" alt="">
+                                                    <div class="cover">May &ndash; After incorporating the specific
+                                                        input of experienced law enforcement and security professionals,
+                                                        Segway introduces two new Patroller models that provide public
+                                                        safety personnel with features
+                                                        that ensure greater visibility and improve community policing
+                                                        and security programs.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="t">2012 ROBOTICS MOBILITY PLATFORM ARTI IS LAUNCHED</div>
+                                            <div class="img">
+                                                <div class="rect-50"><img class="_full"
+                                                        src="/site-uploads/1001525/images/inner/slider-2012.jpg" alt="">
+                                                    <div class="cover">October &ndash; Segway launches ARTI, its latest
+                                                        Robotics Mobility Platform (RMP) prototype.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="t">2014 THREE-WHEEL PATROLLER IS LAUNCHED</div>
+                                            <div class="img">
+                                                <div class="rect-50"><img class="_full"
+                                                        src="/site-uploads/1001525/images/inner/slider-2014.jpg" alt="">
+                                                    <div class="cover">May &ndash; Segway launches its first three-wheel
+                                                        personal transportation device, the SE-3 Patroller, for the
+                                                        public safety market. It boasts Segway quality and reliability
+                                                        as well as innovative anti-tip
+                                                        technology.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="t">2015 SEGWAY &amp; NINEBOT STRATEGIC COMBINATION</div>
+                                            <div class="img">
+                                                <div class="rect-50"><img class="_full"
+                                                        src="/site-uploads/1001525/images/inner/slider-2015.jpg" alt="">
+                                                    <div class="cover">April &ndash; Segway and Ninebot Inc. complete
+                                                        strategic combination. The combined company will focus on
+                                                        research and development, manufacturing, sales and service in
+                                                        the transportation industry.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="t">2019 SEGWAY EXPLORE POWERSPORTS MARKET</div>
+                                            <div class="img">
+                                                <div class="rect-50"><img class="_full"
+                                                        src="/site-uploads/1001525/images/inner/slider-2019.jpg" alt="">
+                                                    <div class="cover">Segway Powersports releases three product series
+                                                        of All-terrain Vehicles with hybrid powertrain at EICMA in
+                                                        Milan, marching into the powersports industry.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="t">FUTURE DELIVER ALL-TERRAIN MOBILITY SOLUTIONS</div>
+                                            <div class="img">
+                                                <div class="rect-50"><img class="_full"
+                                                        src="/site-uploads/1001525/images/inner/slider-future.jpg"
+                                                        alt="">
+                                                    <div class="cover">Segway will continue its own path of innovation
+                                                        and exploration, delivering future All-Terrain mobility
+                                                        solutions, creating more consumer favorite cool &amp; fun /
+                                                        smart products through professional
+                                                        cutting-edge technology and creative brand spirit.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="container_31062" class="container_16">
+
+                    <div class="grid_16">
+
+                        <div id="contentWrapper_89131" class="contentwrapper">
+                            <div style="">
+                                <div class="our-story-wrapper">
+                                    <h2>Our Visions</h2>
+                                    <div class="hero-line">&nbsp;</div>
+                                    <p>To allow the corporate members to gain returns beyond expectation.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="contentWrapper_89093" class="contentwrapper">
+                            <div style="">
+                                <div id="flexslider" class="flexslider">
+                                    <ul class="slides" style="height: 784px; width: 800%; transition-duration: 0s;">
+                                        <li class="clone"
+                                            style="width: 1411px; max-width: 100%; float: left; display: block;"><img
+                                                src="/site-uploads/1001525/images/inner/ourvision-2.jpg" alt="">
+                                            <p>To become one of the coolest and most respected top 500 technology
+                                                companies in the world.</p>
+                                        </li>
+                                        <li style="width: 1411px; max-width: 100%; float: left; display: block;"><img
+                                                src="/site-uploads/1001525/images/inner/ourvision-1.jpg"
+                                                alt="No Image Available">
+                                            <p>To serve more than 1 billion people in the world with the innovative
+                                                short-distance transportation and robot products.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="container_31070" class="container_16 container_full">
+
+                    <div class="grid_16">
+
+                        <div id="contentWrapper_89132" class="contentwrapper">
+                            <div style="">
+                                <div class="our-slogan-wrapper">
+                                    <div class="our-slogan-header">
+                                        <h2>Our Slogan</h2>
+                                        <div class="hero-line">&nbsp;</div>
+                                        <p style="margin: bottom:20px;">FEAR NO PLACE</p>
+                                    </div>
+                                    <div class="slogan-3box-wrapepr">
+                                        <div class="slogan-box"><img
+                                                src="/site-uploads/1001525/images/inner/ourslogan-1.jpg" alt="">
+                                            <p>"FEAR NO PLACE" means that Segway is not just bold, brave, and ready to
+                                                explore any terrain, but truly living, striving and pushing the limits
+                                                every day.</p>
+                                        </div>
+                                        <div class="slogan-box"><img
+                                                src="/site-uploads/1001525/images/inner/ourslogan-2.jpg" alt="">
+                                            <p>Segway Powersports courageously delivers a message: We are always in the
+                                                moment and ready for anything. Moreover, we are desperate for blazing a
+                                                new path.</p>
+                                        </div>
+                                        <div class="slogan-box"><img
+                                                src="/site-uploads/1001525/images/inner/ourslogan-3.jpg" alt="">
+                                            <p>The philosophy is, &ldquo;Where there is a will, there is a way.&rdquo;
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <script type='text/javascript'>
+                    $(document).ready(function () {
+                        fixFlexsliderHeight();
+                    });
+                    $(window).load(function () {
+                        fixFlexsliderHeight();
+                    });
+                    $(window).resize(function () {
+                        fixFlexsliderHeight();
+                    });
+                </script>
+                <div id="custompagecheck"></div>
+
+            </div>
+        </div>
+    </div>
+    <div id="wrapper-foot">
+        <div id="content-foot">
+
+            <div class="links">
+                <div class="container_16">
+                    <div class="grid_16">
+                        <p>
+                            <img src="https://vnext.scdn4.secure.raxcdn.com/assets/segway/images/logo.png?v=23112701"
+                                alt="Segway Technology Co" />
+                        </p>
+                    </div>
+                    <div class="grid_2">
+                        <h5>Powersports</h5>
+                        <p><a href="/villain/">SSV - Villain</a></p>
+                        <p><a href="/super-villain/">SSV - Super Villain</a></p>
+                        <p><a href="/ut10-crew">UTV - UT10 CREW</a></p>
+                        <p><a href="/ut10">UTV - UT10</a></p>
+
+                        <p><a href="/knowledge/">Knowledge Hub</a></p>
+                    </div>
+                    <div class="grid_3">
+                        <h5>Brand</h5>
+                        <p><a href="/about-us/">About Segway Powersports</a></p>
+                        <p><a href="/technology-and-design/">Our Technology & Design</a></p>
+                        <p><a href="/contact-us/">Contact Us</a></p>
+                        <p><a href="/recalls/">Safety Recalls</a></p>
+                        <p><a href="/blog">News</a></p>
+
+                    </div>
+                    <div class="grid_3">
+                        <h5>Segway Dealers</h5>
+                        <p><a href="/our-dealers/">Our Dealers</a></p>
+                        <p><a href="/become-a-dealer/">Become a Segway Dealer</a></p>
+                    </div>
+                    <div class="grid_3">
+                        <h5>Segway Family</h5>
+                        <p><a href="https://www.segway.com/">Segway Consumer Products</a></p>
+                        <p><a href="https://www.segwayrobotics.com/">Segway Robotics</a></p>
+                    </div>
+                    <div class="grid_2 right">
+                        <h5>FOLLOW US</h5>
+                        <ul class="social">
+                            <li><a href="http://www.facebook.com/SegwayPowersportsUS" target="_blank"><i
+                                        class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="http://www.instagram.com/segwaypowersportsus" target="_blank"><i
+                                        class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/@segwaypowersportsus" target="_blank"><i
+                                        class="fa fa-youtube-square"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="container_16">
+                    <div class="grid_16">
+                        <p class="copyright left">&copy;2024 All Rights Reserved.</p>
+                        <p class="copyright"><a href="/privacy-policy">Privacy Policy</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="videos-wrapper">
+    <div class="videos-content">
+        <div class="video-box">
+            <a class="videoBoxLink" href="/site-uploads/1001525/videos/tech-deisgn.mp4"> <img
+                    src="/site-uploads/1001525/images/inner/video-thumbnail-design.jpg" alt=""></a>
+            <div class="video-play">&nbsp;<em class="fa fa-play">&nbsp;</em></div>
+            <p class="video-title"><em class="fa fa-film">&nbsp;</em> SP Design VideoSSS</p>
+        </div>
+        <div class="video-box">
+            <a class="videoBoxLink" href="/site-uploads/1001525/videos/tech-design-language.mp4">
+                <img src="/site-uploads/1001525/images/inner/video-thumbnail-product-design.jpg" alt=""> </a>
+            <div class="video-play">&nbsp;<em class="fa fa-play">&nbsp;</em></div>
+            <p class="video-title"><em class="fa fa-film">&nbsp;</em> Segway powersports Product Design Language &amp;
+                DNA</p>
+        </div>
+        <div class="video-box">
+            <a class="videoBoxLink" href="/site-uploads/1001525/videos/tech-php.mp4"> <img
+                    src="/site-uploads/1001525/images/inner/video-thumbnail-php.jpg" alt=""> </a>
+            <div class="video-play">&nbsp;<em class="fa fa-play">&nbsp;</em></div>
+            <p class="video-title"><em class="fa fa-film">&nbsp;</em> Segway Powersports PHP Hybrid Powertrain</p>
+        </div>
+        <div class="video-box">
+            <a class="videoBoxLink" href="/site-uploads/1001525/videos/tech-erhp.mp4"> <img
+                    src="/site-uploads/1001525/images/inner/video-thumbnail-erhp.jpg" alt=""> </a>
+            <div class="video-play">&nbsp;<em class="fa fa-play">&nbsp;</em></div>
+            <p class="video-title"><em class="fa fa-film">&nbsp;</em> Segway Powersports ERHP Hybrid Powertrain</p>
+        </div>
+    </div>
+</div>

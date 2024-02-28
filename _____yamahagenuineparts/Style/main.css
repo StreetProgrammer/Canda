@@ -1605,6 +1605,7 @@ hr,
   margin-bottom: 0;
   z-index: 2;
   border-bottom: 1px solid var(--grey-3);
+  position: relative;
 }
 
 .breadcrumbParent h1 {
@@ -4843,6 +4844,53 @@ input[type=time]::-webkit-calendar-picker-indicator {
 
 [data-href] {
   cursor: pointer;
+}
+
+#fitmentForm {
+  min-height: auto !important;
+  background: #616365;
+}
+#fitmentForm .drops-box {
+  padding: 0 2vw;
+}
+#fitmentForm .drops-box .fitment-drop {
+  padding: 0.5vw 1.3vw;
+  align-items: center;
+}
+#fitmentForm .drops-box .fitment-drop label {
+  color: var(--white);
+  margin: 0 0.5vw 0 0;
+  text-transform: uppercase;
+}
+#fitmentForm .drops-box .fitment-drop select {
+  width: auto !important;
+  flex: 1;
+  border: 0;
+}
+#fitmentForm .drops-box .fitment-drop:nth-child(2) {
+  display: none;
+}
+#fitmentForm .drops-box .fitment-drop:nth-last-child(1) {
+  flex: unset;
+}
+#fitmentForm .drops-box .fitment-drop:nth-last-child(1) label {
+  display: none;
+}
+#fitmentForm .drops-box .fitment-drop.title {
+  flex: 1;
+  flex-wrap: nowrap;
+  min-width: 15%;
+  color: var(--white);
+}
+#fitmentForm .drops-box .fitment-drop.title i {
+  font-size: 1.5vw;
+}
+#fitmentForm .drops-box .fitment-drop.title span {
+  font-weight: 500;
+}
+
+#page_67294 #fitmentForm {
+  display: none !important;
 }
 
 /* Home */

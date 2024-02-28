@@ -1759,6 +1759,7 @@ hr,
     margin-bottom: 0;
     z-index: 2;
     border-bottom: 1px solid var(--grey-3);
+    position: relative;
 }
 
 .breadcrumbParent h1 {
@@ -5254,4 +5255,67 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 [data-href] {
     cursor: pointer;
+}
+
+#fitmentForm {
+    min-height: auto !important;
+    background: #616365;
+
+    .drops-box {
+        padding: 0 2vw;
+
+        .fitment-drop {
+            padding: 0.5vw 1.3vw;
+            align-items: center;
+
+            label {
+                color: var(--white);
+                margin: 0 0.5vw 0 0;
+                text-transform: uppercase;
+            }
+
+            select {
+                width: auto !important;
+                flex: 1;
+                border: 0
+            }
+
+            &:nth-child(2) {
+                display: none;
+            }
+
+            &:nth-last-child(1) {
+                flex: unset;
+
+                label {
+                    display: none;
+                }
+
+                .btn-primary {}
+
+                .btn-danger {}
+            }
+
+            &.title {
+                flex: 1;
+                flex-wrap: nowrap;
+                min-width: 15%;
+                color: var(--white);
+
+                i {
+                    font-size: 1.5vw;
+                }
+
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+#page_67294 {
+    #fitmentForm {
+        display: none !important;
+    }
 }

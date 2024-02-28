@@ -230,3 +230,17 @@ $(document).ready(function () {
     $("#pure-panel1, #pure-panel2, #pure-panel3").removeClass("active");
   });
 });
+
+/* ------------------------------------------------------------- */
+
+$("div.gallery-image a")
+  .click(function (e) {
+    e.preventDefault();
+  })
+  .fancybox({
+    helpers: {
+      overlay: {
+        locked: false,
+      },
+    },
+  });

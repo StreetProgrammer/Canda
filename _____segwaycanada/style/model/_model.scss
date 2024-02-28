@@ -1002,6 +1002,32 @@
                 display: none;
             }
         }
+
+        .gallery-content-grid {
+            .gallery-image {
+                grid-column: span 2;
+                grid-row: span 2;
+                opacity: 1;
+
+                img {}
+
+                a {}
+            }
+
+            .gallery-large {
+                grid-column: span 4;
+                grid-row: span 3;
+            }
+
+            .magnifying-glass {
+                display: none;
+            }
+
+            .gallery-halfheight {
+                grid-column: span 4;
+                grid-row: span 2;
+            }
+        }
     }
 }
 

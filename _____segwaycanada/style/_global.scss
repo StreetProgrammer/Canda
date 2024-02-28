@@ -34,6 +34,28 @@ body {
     line-height: 1.4;
     color: var(--black);
     padding: 0 !important;
+    font-family: "Open Sans", "Trebuchet MS", Verdana, Helvetica, Arial, Sans-Serif;
+
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+p {
+    padding-bottom: 15px;
+    font-size: 15px;
+    line-height: 22.5px;
+    font-size: 1.1rem;
+    line-height: 2.25rem;
+    line-height: 150%;
+}
+
+a {
+    color: var(--main-color);
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 #parent,
@@ -125,5 +147,101 @@ li {
             width: 200px;
             line-height: 40px;
         }
+    }
+}
+
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    vertical-align: top;
+}
+
+.fancybox-opened {
+    z-index: 8030;
+
+    .fancybox-skin {
+        position: relative;
+        background: #fff;
+        color: #303030;
+        text-shadow: none;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .fancybox-skin {
+        background: none;
+        box-shadow: none !important;
+    }
+
+    .fancybox-outer {
+        position: relative;
+    }
+
+    .fancybox-inner {
+        position: relative;
+        overflow: hidden;
+        min-height: 260px;
+    }
+
+    .fancybox-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .fancybox-nav {
+        position: absolute;
+        height: 34px;
+        width: 36px;
+        background-image: url(/site-uploads/1001525/images/fancybox_sprite.png);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        visibility: visible;
+        z-index: 8040;
+        min-height: 36px !important;
+    }
+
+    .fancybox-prev {
+        top: 150px;
+        right: -40px;
+        left: unset;
+        background-position: 0 -36px;
+    }
+
+    .fancybox-next {
+        top: 100px;
+        right: -40px;
+        background-position: 0 -72px;
+    }
+
+    .fancybox-close {
+        top: 15px;
+        right: -24px;
+    }
+
+    .fancybox-close {
+        position: absolute;
+        top: -18px;
+        right: -18px;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        z-index: 8040;
+    }
+
+    #fancybox-loading,
+    .fancybox-close,
+    .fancybox-prev span,
+    .fancybox-next span {
+        background-image: url(/site-uploads/1001525/images/fancybox_sprite.png);
     }
 }
