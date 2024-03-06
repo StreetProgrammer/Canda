@@ -45,7 +45,7 @@ p {
     padding-bottom: 15px;
     font-size: 15px;
     line-height: 22.5px;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     line-height: 2.25rem;
     line-height: 150%;
 }
@@ -163,7 +163,7 @@ li {
 }
 
 .fancybox-opened {
-    z-index: 8030;
+    z-index: 10000;
 
     .fancybox-skin {
         position: relative;
@@ -244,4 +244,20 @@ li {
     .fancybox-next span {
         background-image: url(/site-uploads/1001525/images/fancybox_sprite.png);
     }
+}
+
+#myVideo {
+    width: 100%;
+    display: block;
+    height: 65vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    z-index: 10500;
 }

@@ -1,0 +1,138 @@
+._promotions {
+    .year-container {
+        width: 100vw;
+
+        .year-24-inner,
+        .year-23-inner {
+            width: -moz-calc(100% - 100px);
+            width: -webkit-calc(100% - 100px);
+            width: -o-calc(100% - 100px);
+            width: calc(100% - 100px);
+            max-width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-wrap: wrap;
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-size: 36%;
+        }
+
+        .year-24-inner {
+            background-image: url(/site-uploads/1001525/images/inner/2024.jpg);
+        }
+
+        .year-23-inner {
+            background-image: url(/site-uploads/1001525/images/inner/2023.jpg);
+        }
+
+        .model-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 18%;
+            margin: 0 1% 0 1%;
+            box-sizing: border-box;
+
+            .model-image {
+                width: 100%;
+                margin: 30% 0 0px 0;
+            }
+
+            .model-name {
+                font-family: "Arial", "Trebuchet MS", Verdana, Helvetica, Arial, Sans-Serif;
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: 700;
+                text-align: center;
+                text-transform: uppercase;
+                width: 100%;
+                color: #da291c;
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+
+            .cta_dealer_btn {
+                background-color: #fff;
+                border-radius: 6px;
+                border: 2px solid #da291c;
+                font-size: 14px;
+                font-family: "Arial", "Trebuchet MS", Verdana, Helvetica, Arial, Sans-Serif;
+                text-align: center;
+                color: #da291c;
+                font-weight: 700;
+                padding: 10px 25px 10px 25px;
+                text-transform: uppercase;
+                margin: 0px auto 30px auto;
+                transition: 0.3s;
+                box-sizing: border-box;
+
+                &:hover {
+                    background-color: #da291c;
+                    border: 2px solid #da291c;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .year-container {
+
+            .year-24-inner,
+            .year-23-inner {
+                width: -moz-calc(100% - 60px);
+                width: -webkit-calc(100% - 60px);
+                width: -o-calc(100% - 60px);
+                width: calc(100% - 60px);
+                max-width: 1440px;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                flex-wrap: wrap;
+                background-repeat: no-repeat;
+                background-position: left top;
+                background-size: 50%;
+            }
+
+            .model-container {
+                display: flex;
+                flex-wrap: wrap;
+                width: 31%;
+                margin: 0 1% 0 1%;
+                box-sizing: border-box;
+
+                .model-image {
+                    width: 100%;
+                    margin: 26% 0 0px 0;
+                }
+
+                .model-name {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .year-container {
+
+            .year-24-inner,
+            .year-23-inner {
+                width: -moz-calc(100% - 20px);
+                width: -webkit-calc(100% - 20px);
+                width: -o-calc(100% - 20px);
+                width: calc(100% - 20px);
+                background-size: 63%;
+            }
+
+            .model-container {
+                width: 48%;
+
+                .model-image {}
+
+                .model-name {}
+            }
+        }
+    }
+}

@@ -58,6 +58,7 @@
                     -ms-touch-action: pan-Y;
                     touch-action: manipulation;
                     -moz-backface-visibility: hidden;
+                    max-width: none;
 
                     .owl-item {
                         min-height: 1px;
@@ -70,6 +71,24 @@
 
             .owl-nav {
                 margin-top: 10px;
+
+                >div {
+                    font-size: 0;
+                    width: 80px;
+                    height: 80px;
+                    background: url(/site-uploads/1001525/images/inner/about_us_nav.png) no-repeat;
+                    position: absolute;
+                    top: 50%;
+                }
+
+                .owl-prev {
+                    left: -50px;
+                }
+
+                .owl-next {
+                    right: -50px;
+                    background-position: -80px 0;
+                }
             }
         }
 
@@ -95,7 +114,27 @@
                     opacity: 0;
                     transition: .3s ease;
                 }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: url(/site-uploads/1001525/images/inner/cover.png);
+                    opacity: 1;
+                    transition: .3s ease;
+                }
             }
+        }
+
+        .active .item .img:after {
+            opacity: 0;
+        }
+
+        .active .item .img .cover {
+            opacity: 1;
         }
     }
 
@@ -492,5 +531,12 @@ table.responsive-table {
             font-weight: 700;
             line-height: 1;
         }
+    }
+}
+
+#comp_1709117729959 {
+    .formsParent {
+        border: 1px solid #ddd;
+        border-radius: 5px;
     }
 }

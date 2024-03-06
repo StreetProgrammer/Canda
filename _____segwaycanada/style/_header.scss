@@ -1,282 +1,8 @@
-#comp_1707844254489 {
-    display: none;
-}
-
-#wrapper-head {
-    background-color: var(--white);
-    position: fixed;
-    height: 62px;
-    width: 100%;
-    margin-top: 0;
-    z-index: 9999;
-
-    #content-head {
-        .mid {
-            position: relative;
-            height: 62px;
-            background: var(--white);
-            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .17);
-            z-index: 1;
-
-            .container_16 {
-                position: relative;
-                width: 100%;
-
-                .logo {
-                    position: absolute;
-                    top: 13px;
-                    left: 2%;
-
-                    a {
-                        img {
-                            width: auto;
-                            height: 42px;
-                            max-width: 600px;
-                            max-height: 160px;
-                        }
-                    }
-                }
-
-                .nav-wrapper {
-                    position: absolute;
-                    right: 2%;
-                    font-family: "Open Sans", "Trebuchet MS", Verdana, Helvetica, Arial, Sans-Serif;
-
-                    .desktop-nav {
-                        ul {
-                            li {
-                                padding: 0 0 0 15px;
-                                color: var(--black);
-                                font-size: 14px;
-                                font-weight: 600;
-                                line-height: 62px;
-                                text-transform: uppercase;
-                                display: inline-block;
-
-                                &.model {
-                                    margin: 0 0 0 10px;
-                                    padding: 0 0 0 22px;
-                                    color: var(--grey);
-                                    background-image: url(/site-uploads/1001525/images/right-arrows.png);
-                                    background-position: left center;
-                                    background-repeat: no-repeat;
-                                    background-size: 18px;
-                                    cursor: pointer;
-
-                                    &:hover {
-                                        color: var(--main-color);
-                                    }
-                                }
-
-                                &.nonmodel-link {
-                                    color: var(--black);
-
-                                    a {
-                                        color: var(--black);
-
-                                        &:hover {
-                                            color: var(--main-color);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .mobile-nav {
-                        position: absolute;
-                        top: 62px;
-                        right: -290px;
-                        background: var(--white);
-                        border-top: 1px solid var(--main-color);
-                        border-left: 1px solid var(--main-color);
-                        display: none;
-                        transition: all .5s ease;
-
-                        ul {
-                            li {
-                                padding: 0 15px 0 45px;
-                                margin: 0;
-                                width: 200px;
-                                color: var(--black);
-                                font-size: 14px;
-                                font-weight: 600;
-                                line-height: 62px;
-                                text-transform: uppercase;
-                                border-bottom: 1px solid var(--main-color);
-
-                                &.model {
-                                    margin: 0;
-                                    color: #666;
-                                    background-image: url(/site-uploads/1001525/images/right-arrows.png);
-                                    background-position: 6% center;
-                                    background-repeat: no-repeat;
-                                    background-size: 18px;
-                                    cursor: pointer;
-
-                                    &:hover {
-                                        color: var(--main-color);
-                                    }
-                                }
-
-                                &.nonmodel-link {
-                                    color: var(--black);
-
-                                    a {
-                                        color: var(--black);
-
-                                        &:hover {
-                                            color: var(--main-color);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        .pulldown-nav-snarler-at5-wrapper,
-        .pulldown-nav-snarler-at6-wrapper,
-        .pulldown-nav-villain-wrapper,
-        .pulldown-nav-super-villain-wrapper,
-        .pulldown-nav-ut10crew-wrapper,
-        .pulldown-nav-ut10-wrapper {
-            &.opend {
-                top: 0;
-            }
-
-            position: absolute;
-            top: -240px;
-            width: 100%;
-            height: 300px;
-            padding-top: 62px;
-            background: #fff;
-            z-index: 0;
-            transition: cubic-bezier(.68, -.55, .27, 1.55) .5s;
-
-            .container_16 {
-                position: relative;
-                width: 100%;
-
-                .pulldown-nav-content {
-                    position: relative;
-                    right: 0;
-                    height: 238px;
-
-                    .pulldown-nav-logo-red {
-                        position: absolute;
-                        top: 28px;
-                        right: 380px;
-
-                        img {
-                            width: 185px;
-                            height: auto;
-                        }
-                    }
-
-                    .pulldown-nav-text {
-                        position: absolute;
-                        top: 68px;
-                        right: 404px;
-
-                        p {
-                            padding: 0;
-                            color: var(--black);
-                            font-family: "Open Sans", "Trebuchet MS", Verdana, Helvetica, Arial, Sans-Serif;
-                            font-size: 14px;
-                            font-weight: 600;
-
-                            span {
-                                color: var(--grey-2);
-
-                                &.price {
-                                    color: var(--main-color);
-                                    text-transform: uppercase;
-                                }
-                            }
-                        }
-                    }
-
-                    .pulldown-nav-model {
-                        position: absolute;
-                        top: 5px;
-                        right: 25px;
-
-                        img {
-                            width: auto;
-                            height: 250px;
-                        }
-                    }
-
-                    .pulldown-nav-button {
-                        position: absolute;
-                        top: 135px;
-                        right: 377px;
-                        margin: 0 auto;
-                        width: 174px;
-                        background: #fff;
-                        background-size: 200% 100%;
-                        background-position: right bottom;
-                        border-radius: 4px;
-                        transition: all .5s ease 0s;
-                        cursor: pointer;
-
-                        a {
-                            position: relative;
-                            width: 170px;
-                            color: #da291c;
-                            line-height: 48px;
-                            font-family: "Open Sans", "Trebuchet MS", Verdana, Helvetica, Arial, Sans-Serif;
-                            font-size: 15px;
-                            font-weight: 600;
-                            text-align: center;
-                            text-transform: uppercase;
-                            border: 2px solid #da291c;
-                            border-radius: 4px;
-                            display: inline-block;
-                            transition: all .5s ease 0s;
-
-                            img {
-                                margin-left: 7px;
-                                width: 20px;
-                                transition: all .4s ease 0s;
-                                display: inline-block;
-                                border-radius: 4px;
-                                vertical-align: sub;
-                            }
-                        }
-                    }
-
-                    .pulldown-nav-grey-logo {
-                        position: absolute;
-                        top: 135px;
-                        right: 5px;
-                        z-index: -1;
-
-                        img {}
-                    }
-
-                    .vertRedLine {
-                        z-index: 53;
-                        position: absolute;
-                        top: 15px;
-                        right: 20px;
-                        width: 2px;
-                        height: 200px;
-                        background-color: var(--main-color);
-                    }
-                }
-            }
-        }
-
-        #showMenu {
-            display: none;
-        }
+    #comp_1707844254489 {
+        display: none;
     }
 
-    @media screen and (max-width: 1240px) {
+    #wrapper-head {
         background-color: var(--white);
         position: fixed;
         height: 62px;
@@ -286,39 +12,122 @@
 
         #content-head {
             .mid {
+                position: relative;
+                height: 62px;
+                background: var(--white);
+                box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .17);
+                z-index: 1;
+
                 .container_16 {
+                    position: relative;
+                    width: 100%;
+
                     .logo {
+                        position: absolute;
+                        top: 13px;
+                        left: 2%;
+
                         a {
-                            img {}
+                            img {
+                                width: auto;
+                                height: 42px;
+                                max-width: 600px;
+                                max-height: 160px;
+                            }
                         }
                     }
 
                     .nav-wrapper {
-                        right: 0;
-                        position: relative;
+                        position: absolute;
+                        right: 2%;
+                        font-family: "Open Sans", "Trebuchet MS", Verdana, Helvetica, Arial, Sans-Serif;
 
                         .desktop-nav {
-                            display: none;
-                        }
-
-                        .mobile-nav {
-                            display: unset;
-
-                            &.opend {
-                                right: 0;
-                            }
-
                             ul {
                                 li {
-                                    width: 260px;
+                                    padding: 0 0 0 15px;
+                                    color: var(--black);
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    line-height: 62px;
+                                    text-transform: uppercase;
+                                    display: inline-block;
 
                                     &.model {
-                                        &:hover {}
+                                        margin: 0 0 0 10px;
+                                        padding: 0 0 0 22px;
+                                        color: var(--grey);
+                                        background-image: url(/site-uploads/1001525/images/right-arrows.png);
+                                        background-position: left center;
+                                        background-repeat: no-repeat;
+                                        background-size: 18px;
+                                        cursor: pointer;
+
+                                        &:hover {
+                                            color: var(--main-color);
+                                        }
                                     }
 
                                     &.nonmodel-link {
+                                        color: var(--black);
+
                                         a {
-                                            &:hover {}
+                                            color: var(--black);
+
+                                            &:hover {
+                                                color: var(--main-color);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .mobile-nav {
+                            position: absolute;
+                            top: 62px;
+                            right: -290px;
+                            background: var(--white);
+                            border-top: 1px solid var(--main-color);
+                            border-left: 1px solid var(--main-color);
+                            display: none;
+                            transition: all .5s ease;
+
+                            ul {
+                                li {
+                                    padding: 0 15px 0 45px;
+                                    margin: 0;
+                                    width: 200px;
+                                    color: var(--black);
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    line-height: 62px;
+                                    text-transform: uppercase;
+                                    border-bottom: 1px solid var(--main-color);
+
+                                    &.model {
+                                        margin: 0;
+                                        color: #666;
+                                        background-image: url(/site-uploads/1001525/images/right-arrows.png);
+                                        background-position: 6% center;
+                                        background-repeat: no-repeat;
+                                        background-size: 18px;
+                                        cursor: pointer;
+
+                                        &:hover {
+                                            color: var(--main-color);
+                                        }
+                                    }
+
+                                    &.nonmodel-link {
+                                        color: var(--black);
+
+                                        a {
+                                            color: var(--black);
+
+                                            &:hover {
+                                                color: var(--main-color);
+                                            }
                                         }
                                     }
                                 }
@@ -334,147 +143,436 @@
             .pulldown-nav-super-villain-wrapper,
             .pulldown-nav-ut10crew-wrapper,
             .pulldown-nav-ut10-wrapper {
+                &.opend {
+                    top: 0;
+                }
 
-                // position: absolute;
-                // top: -240px;
-                // width: 100%;
-                // height: 300px;
-                // padding-top: 62px;
-                // background: #fff;
-                // z-index: 0;
-                // transition: cubic-bezier(.68, -.55, .27, 1.55) .5s;
+                position: absolute;
+                top: -240px;
+                width: 100%;
+                height: 300px;
+                padding-top: 62px;
+                background: #fff;
+                z-index: 0;
+                transition: cubic-bezier(.68, -.55, .27, 1.55) .5s;
+
                 .container_16 {
+                    position: relative;
+                    width: 100%;
 
-                    // position: relative;
-                    // width: 100%;
                     .pulldown-nav-content {
+                        position: relative;
+                        right: 0;
+                        height: 238px;
 
-                        // position: relative;
-                        // right: 0;
-                        // height: 238px;
                         .pulldown-nav-logo-red {
-                            position: relative;
-                            top: 15px;
-                            right: 0;
-                            text-align: center;
+                            position: absolute;
+                            top: 28px;
+                            right: 380px;
 
                             img {
-                                width: 75%;
+                                width: 185px;
+                                height: auto;
                             }
                         }
 
                         .pulldown-nav-text {
-                            position: relative;
-                            text-align: center;
-                            right: auto;
-                            top: 40px;
-                            width: 150px;
-                            margin: 0 auto;
+                            position: absolute;
+                            top: 68px;
+                            right: 404px;
 
                             p {
-                                span {
-                                    padding: 0;
+                                padding: 0;
+                                color: var(--black);
+                                font-family: "Open Sans", "Trebuchet MS", Verdana, Helvetica, Arial, Sans-Serif;
+                                font-size: 14px;
+                                font-weight: 600;
 
+                                span {
+                                    color: var(--grey-2);
+
+                                    &.price {
+                                        color: var(--main-color);
+                                        text-transform: uppercase;
+                                    }
+                                }
+                            }
+                        }
+
+                        .pulldown-nav-model {
+                            position: absolute;
+                            top: 5px;
+                            right: 25px;
+
+                            img {
+                                width: auto;
+                                height: 250px;
+                            }
+                        }
+
+                        .pulldown-nav-button {
+                            position: absolute;
+                            top: 135px;
+                            right: 377px;
+                            margin: 0 auto;
+                            min-width: 174px;
+                            background: #fff;
+                            background-size: 200% 100%;
+                            background-position: right bottom;
+                            border-radius: 4px;
+                            transition: all .5s ease 0s;
+                            cursor: pointer;
+                            display: flex;
+
+                            a {
+                                position: relative;
+                                width: 170px;
+                                color: #da291c;
+                                line-height: 48px;
+                                font-family: "Open Sans", "Trebuchet MS", Verdana, Helvetica, Arial, Sans-Serif;
+                                font-size: 15px;
+                                font-weight: 600;
+                                text-align: center;
+                                text-transform: uppercase;
+                                border: 2px solid #da291c;
+                                border-radius: 4px;
+                                display: inline-block;
+                                transition: all .5s ease 0s;
+
+                                img {
+                                    margin-left: 7px;
+                                    width: 20px;
+                                    transition: all .4s ease 0s;
+                                    display: inline-block;
+                                    border-radius: 4px;
+                                    vertical-align: sub;
+                                }
+                            }
+                        }
+
+                        .pulldown-nav-grey-logo {
+                            position: absolute;
+                            top: 135px;
+                            right: 5px;
+                            z-index: -1;
+
+                            img {}
+                        }
+
+                        .vertRedLine {
+                            z-index: 53;
+                            position: absolute;
+                            top: 15px;
+                            right: 20px;
+                            width: 2px;
+                            height: 200px;
+                            background-color: var(--main-color);
+                        }
+                    }
+                }
+            }
+
+            #showMenu {
+                display: none;
+            }
+
+            /* new menu*/
+            .pulldown-nav-snarler-at5-wrapper,
+            .pulldown-nav-snarler-at6-wrapper,
+            .pulldown-nav-villain-wrapper,
+            .pulldown-nav-super-villain-wrapper,
+            .pulldown-nav-ut10crew-wrapper,
+            .pulldown-nav-ut10-wrapper {
+                display: flex;
+
+                .container_16 {
+                    .pulldown-nav-content {
+                        .pulldown-nav-logo-red {
+                            img {}
+                        }
+
+                        .pulldown-nav-text {
+                            p {
+                                span {
                                     &.price {}
                                 }
                             }
                         }
 
                         .pulldown-nav-model {
-                            top: 120px;
-
                             img {
-                                width: 100%;
-                                height: auto;
+                                height: 180px;
+                                max-height: 10vw;
                             }
                         }
 
                         .pulldown-nav-button {
-                            position: relative;
-                            right: 0;
-                            top: 80px;
-
                             a {
-                                line-height: 40px;
-
                                 img {}
                             }
                         }
 
                         .pulldown-nav-grey-logo {
-                            display: none;
+                            width: 40vw;
+                            right: auto;
+                            left: 1vw;
 
                             img {}
                         }
 
-                        .vertRedLine {
-                            display: none;
+                        .vertRedLine {}
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 1240px) {
+            background-color: var(--white);
+            position: fixed;
+            height: 62px;
+            width: 100%;
+            margin-top: 0;
+            z-index: 9999;
+
+            #content-head .mid .container_16 .nav-wrapper .desktop-nav ul li:first-child {
+                display: block;
+            }
+
+            #content-head {
+                .mid {
+                    .container_16 {
+                        .logo {
+                            a {
+                                img {}
+                            }
                         }
+
+                        .nav-wrapper {
+                            right: 0;
+                            position: relative;
+
+                            .desktop-nav {
+                                display: none;
+                            }
+
+                            .mobile-nav {
+                                display: unset;
+
+                                &.opend {
+                                    right: 0;
+                                }
+
+                                ul {
+                                    li {
+                                        width: 260px;
+
+                                        &.model {
+                                            &:hover {}
+                                        }
+
+                                        &.nonmodel-link {
+                                            a {
+                                                &:hover {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .pulldown-nav-snarler-at5-wrapper,
+                .pulldown-nav-snarler-at6-wrapper,
+                .pulldown-nav-villain-wrapper,
+                .pulldown-nav-super-villain-wrapper,
+                .pulldown-nav-ut10crew-wrapper,
+                .pulldown-nav-ut10-wrapper {
+                    .container_16 {
+                        .pulldown-nav-content {
+                            .pulldown-nav-logo-red {
+                                position: relative;
+                                top: 15px;
+                                right: 0;
+                                text-align: center;
+
+                                img {
+                                    width: 75%;
+                                }
+                            }
+
+                            .pulldown-nav-text {
+                                position: relative;
+                                text-align: center;
+                                right: auto;
+                                top: 40px;
+                                width: 150px;
+                                margin: 0 auto;
+
+                                p {
+                                    span {
+                                        padding: 0;
+
+                                        &.price {}
+                                    }
+                                }
+                            }
+
+                            .pulldown-nav-model {
+                                top: 120px;
+
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+
+                            .pulldown-nav-button {
+                                position: relative;
+                                right: 0;
+                                top: 80px;
+
+                                a {
+                                    line-height: 40px;
+
+                                    img {
+                                        display: none;
+                                    }
+                                }
+                            }
+
+                            .pulldown-nav-grey-logo {
+                                display: none;
+
+                                img {}
+                            }
+
+                            .vertRedLine {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .pulldown-nav-snarler-at5-wrapper,
+                .pulldown-nav-snarler-at6-wrapper,
+                .pulldown-nav-villain-wrapper {
+                    top: 126px;
+                    right: 0;
+                    padding: 0;
+                    width: 260px;
+                    height: 0;
+                    z-index: 1;
+                    visibility: hidden;
+                    overflow: hidden;
+                    transition: none;
+
+                    &.opend {
+                        top: 126px;
+                        margin-bottom: 275px;
+                        height: 275px;
+                        border-left: 1px solid var(--main-color);
+                        border-bottom: 1px solid var(--main-color);
+                        visibility: visible;
+                    }
+                }
+
+                .pulldown-nav-super-villain-wrapper,
+                .pulldown-nav-ut10crew-wrapper,
+                .pulldown-nav-ut10-wrapper {
+                    top: 189px;
+                    right: 0;
+                    padding: 0;
+                    width: 260px;
+                    height: 0;
+                    z-index: 1;
+                    visibility: hidden;
+                    overflow: hidden;
+                    transition: none;
+
+                    &.opend {
+                        top: 252px;
+                        margin-bottom: 275px;
+                        height: 275px;
+                        border-left: 1px solid var(--main-color);
+                        border-bottom: 1px solid var(--main-color);
+                        visibility: visible;
+                    }
+                }
+
+                #showMenu {
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    left: unset;
+                    cursor: pointer;
+                    text-align: right;
+                    padding: 18px 25px;
+
+                    i {
+                        color: var(--main-color);
+                        font-size: 26px;
+                        line-height: 26px;
                     }
                 }
             }
 
+            /**/
+            /* new menu*/
             .pulldown-nav-snarler-at5-wrapper,
             .pulldown-nav-snarler-at6-wrapper,
-            .pulldown-nav-villain-wrapper {
-                top: 126px;
-                right: 0;
-                padding: 0;
-                width: 260px;
-                height: 0;
-                z-index: 1;
-                visibility: hidden;
-                overflow: hidden;
-                transition: none;
-
-                &.opend {
-                    top: 126px;
-                    margin-bottom: 275px;
-                    height: 275px;
-                    border-left: 1px solid var(--main-color);
-                    border-bottom: 1px solid var(--main-color);
-                    visibility: visible;
-                }
-            }
-
+            .pulldown-nav-villain-wrapper,
             .pulldown-nav-super-villain-wrapper,
             .pulldown-nav-ut10crew-wrapper,
             .pulldown-nav-ut10-wrapper {
-                top: 189px;
-                right: 0;
-                padding: 0;
-                width: 260px;
-                height: 0;
-                z-index: 1;
-                visibility: hidden;
-                overflow: hidden;
-                transition: none;
+                flex-direction: column;
 
                 &.opend {
-                    top: 252px;
-                    margin-bottom: 275px;
-                    height: 275px;
-                    border-left: 1px solid var(--main-color);
-                    border-bottom: 1px solid var(--main-color);
-                    visibility: visible;
+                    height: 550px !important;
                 }
-            }
 
-            #showMenu {
-                display: block;
-                position: absolute;
-                right: 0;
-                left: unset;
-                cursor: pointer;
-                text-align: right;
-                padding: 18px 25px;
+                .container_16 {
+                    .pulldown-nav-content {
+                        .pulldown-nav-logo-red {
+                            img {}
+                        }
 
-                i {
-                    color: var(--main-color);
-                    font-size: 26px;
-                    line-height: 26px;
+                        .pulldown-nav-text {
+                            p {
+                                span {
+                                    &.price {}
+                                }
+                            }
+                        }
+
+                        .pulldown-nav-model {
+                            img {
+                                height: 140px !important;
+                                max-height: 75vw !important;
+                            }
+                        }
+
+                        .pulldown-nav-button {
+                            justify-content: center;
+
+                            a {
+                                img {}
+                            }
+                        }
+
+                        .pulldown-nav-grey-logo {
+                            img {}
+                        }
+
+                        .vertRedLine {}
+                    }
                 }
             }
         }
+
+        @media screen and (max-width: 1400px) {
+            #content-head .mid .container_16 .nav-wrapper .desktop-nav ul li:first-child {
+                display: none;
+            }
+        }
     }
-}

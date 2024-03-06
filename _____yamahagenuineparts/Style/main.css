@@ -4867,7 +4867,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   flex: 1;
   border: 0;
 }
-#fitmentForm .drops-box .fitment-drop:nth-child(2) {
+#fitmentForm .drops-box .fitment-drop:nth-child(3) {
   display: none;
 }
 #fitmentForm .drops-box .fitment-drop:nth-last-child(1) {

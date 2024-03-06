@@ -257,3 +257,182 @@
 
 
 /**/
+
+.banner-container {
+    position: fixed;
+    left: 0px;
+    bottom: 30px;
+    width: 785px;
+    height: 103px;
+    z-index: 500;
+    display: none;
+
+    input {
+        display: none;
+    }
+
+    input+label {
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    input,
+    input+label,
+    input:checked {
+        cursor: pointer;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 0 0 749px;
+        width: 40px;
+        height: 103px;
+        opacity: 1;
+        z-index: 5000;
+    }
+
+    .hamburger,
+    input:checked~.hamburger {
+        border-radius: 0px;
+        height: 103px;
+        width: 30px;
+        background: url(/site-uploads/1001525/images/button-arrows.png) center center no-repeat;
+        background-size: 130%;
+        transform: rotate(180deg);
+        transition: all 0.75s;
+        margin: -107px 0 0 754px;
+        z-index: 1000;
+        position: absolute;
+        bottom: 0;
+    }
+
+    input:checked+label {
+        margin: 0;
+        position: relative;
+    }
+
+    input:checked~.hamburger {
+        transform: rotate(0deg);
+        margin: -107px 0 0px 5px;
+    }
+
+    #banner-menu {
+        width: 787px;
+        height: 101px;
+        background-color: #da291c;
+        border-radius: 0 6px 6px 0;
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 2px 2px 0 0;
+        transform: translateX(0%);
+        transition: transform 0.75s;
+        z-index: 500;
+
+        .promo-banner-slider {
+            .promoSlider {
+                width: 747px;
+                padding: 0 0 0 0;
+                margin: 0 0 0 0;
+            }
+        }
+
+        .flexslider {
+            margin: 0px auto 20px auto;
+            position: relative;
+            zoom: 1;
+            width: 100%;
+            max-width: 1440px;
+
+            .slides {
+                zoom: 1;
+
+                >li {
+                    display: none;
+                    -webkit-backface-visibility: hidden;
+                }
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    input:checked~#banner-menu {
+        transform: translateX(-95%);
+    }
+
+    @media only screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+
+#page_68079 {
+    .banner-container {
+        display: block;
+    }
+}
+
+
+/**/
+
+.footer-bottom {
+    padding: 0.75em 3em 0.75em 5em;
+    background-color: rgba(240, 240, 240, 0.45);
+    border-top: 1px solid #DDD;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    .footer-row.footer-row--bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-bottom__elem {
+        color: var(--black);
+        text-align: left;
+    }
+
+    .footer-bottom p,
+    .footer-bottom span,
+    .footer-bottom a {
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+
+    .footer-bottom__elem a {
+        color: var(--black);
+    }
+
+    .footer-bottom__elem.footer-bottom__elem--ds-logo a img.hidden-xs,
+    .footer-bottom__elem.footer-bottom__elem--ds-logo a img.visible-xs {
+        height: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 1em 1em 1em 1em;
+
+        .footer-row.footer-row--bottom {
+            display: block;
+            text-align: center;
+        }
+
+        .footer-bottom__elem {
+            text-align: center;
+            line-height: 2;
+        }
+
+        .footer-bottom__elem img.hidden-xs {
+            display: none !important;
+        }
+
+        .footer-bottom__elem img {
+            display: inline-block !important;
+        }
+    }
+}

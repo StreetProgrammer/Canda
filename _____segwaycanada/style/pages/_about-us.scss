@@ -67,6 +67,7 @@
     .wrap {
         max-width: 1300px;
         min-width: 0;
+        margin: auto;
 
         .ctrl {
             margin: 30px 0;
@@ -106,6 +107,94 @@
                     top: 0;
                     left: 0;
                 }
+            }
+        }
+    }
+}
+
+._about_us {
+    ._about_us_flexslider {
+        width: calc(100% - 2%);
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .slides {
+            >li {
+                height: 40vw;
+                max-height: 550px;
+                background: #eaeaea;
+                display: flex !important;
+            }
+
+            img {
+                width: 70%;
+                display: inline-flex;
+            }
+
+            p {
+                display: inline-flex;
+                padding: 0;
+                width: 30%;
+                align-items: center;
+                text-align: center;
+                line-height: 35px;
+                font-size: 16px;
+                padding: 1%;
+            }
+        }
+
+        .flex-next {
+            top: unset;
+            bottom: 20px;
+            right: 30px;
+            text-align: right;
+            opacity: 1;
+            color: #FFF;
+            background: #6b6b6b;
+            margin: 0;
+            padding: 0px 10px 0px 5px;
+            line-height: 46px;
+
+            &:hover {
+                right: 30px;
+                opacity: 1;
+                background: #da291b;
+            }
+        }
+
+        .flex-prev {
+            display: none;
+        }
+
+        .flex-control-nav {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .slides {
+            >li {
+                height: 65vw;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+            }
+
+            img {
+                width: 70%;
+                display: inline-flex;
+            }
+
+            p {
+                display: inline-flex;
+                padding: 0;
+                width: 30%;
+                align-items: center;
+                text-align: center;
+                line-height: 35px;
+                font-size: 16px;
+                padding: 1%;
             }
         }
     }

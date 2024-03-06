@@ -1,0 +1,603 @@
+/* SRP PARTS 2021 */
+
+.parts2021,
+.parts-srp {
+    &.container-fluid {
+        font-size: 1em !important;
+        padding: 2.5vw !important;
+    }
+}
+
+.parts2021 .filter-collapse-container,
+.parts-srp .filter-collapse-container {
+    border: 0.01em solid #ddd;
+    margin: 0;
+}
+
+.parts2021 .filter-collapse-container:before,
+.parts-srp.filter-collapse-container:before {
+    display: none;
+}
+
+.parts2021 .static-filter-active-container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.parts2021 #static-filter-count,
+.parts-srp #static-filter-count {
+    margin-left: 1em;
+    margin-bottom: 0.3em;
+    font-size: 0.8em;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    padding: 0.3em 0.5em 0.2em 0.5em;
+}
+
+.parts2021 .filter-collapse-container a.filter-collapse,
+.parts-srp .filter-collapse-container a.filter-collapse {
+    // background-color: #000;
+    border-bottom: 0.01em solid #ddd;
+    font-family: var(--main-font-bold) !important;
+}
+
+.parts2021 .active-filter-container a.filter-collapse,
+.parts-srp.active-filter-container a.filter-collapse {
+    color: #000;
+    background-color: #fff;
+    font-family: var(--main-font-bold) !important;
+}
+
+.parts2021 .static-filter-active-title,
+.parts-srp .static-filter-active-title {
+    font-family: var(--main-font-bold) !important;
+}
+
+.grid-group-item .model-title {
+    font-size: 1em !important;
+    padding-top: 0.5em !important;
+}
+
+.parts2021 .grid-group-item .caption {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.parts2021 #products .grid-group-item .thumb,
+.parts-srp #products .grid-group-item .thumb {
+    // background: linear-gradient(180deg, #262626 0%, #1c1c1c 100%);
+    border: 0.01em solid #ddd;
+    // box-shadow: 0px 2px 6px #000000;
+    padding: 0;
+}
+
+.parts2021 #products .grid-group-item .thumb:hover,
+.parts2021 #products .grid-group-item .thumb:focus,
+.parts-srp #products .grid-group-item .thumb:hover,
+.parts-srp #products .grid-group-item .thumb:focus {
+    box-shadow: 0px 0px 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.parts2021 #products .grid-group-item .thumb:hover .cta-btns a.main-btn,
+.parts2021 #products .grid-group-item .thumb:focus,
+.parts2021 .cta-btns a.main-btn,
+.parts-srp #products .grid-group-item .thumb:hover .cta-btns a.main-btn,
+.parts-srp #products .grid-group-item .thumb:focus,
+.parts-srp .cta-btns a.main-btn {
+    background-color: var(--main-color) !important;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.parts2021 .cta-btns a.main-btn:hover,
+.parts-srp .cta-btns a.main-btn:hover {
+    opacity: 1;
+}
+
+.parts2021 #products .item,
+.parts-srp #products .item {
+    padding: 0.5em;
+}
+
+.parts2021 #products .grid-group-item .thumb .thumbnail-container,
+.parts-srp #products .grid-group-item .thumb .thumbnail-container {
+    padding: 1em 1em 0 1em;
+}
+
+.parts2021 #products .cta-btns a.main-btn,
+.parts-srp #products .cta-btns a.main-btn {
+    background-color: transparent !important;
+    background: transparent;
+    font-size: 0.9em;
+    font-family: var(--main-font-bold);
+    text-shadow: none;
+    height: auto !important;
+    padding: 0.8em !important;
+    border-top: 0.01em solid #ddd;
+    margin: 0;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.parts2021 #products .model-title,
+.parts-srp #products .model-title {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    color: #d5d5d5 !important;
+    font-family: var(--main-font-bold);
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.parts2021 #products .price-oem,
+.parts-srp #products .price-oem {
+    padding: 0 1em 0.8em 1em;
+    font-family: var(--main-font-bold);
+}
+
+.parts2021 #products .price.show-item,
+.parts-srp #products .price.show-item {
+    font-size: 1.1em;
+    font-family: var(--main-font-bold);
+    color: var(--main-color);
+}
+
+.parts2021 #products .starting-ttl,
+.parts-srp #products .starting-ttl {
+    font-size: 0.85em;
+    color: #000;
+}
+
+.parts2021 #products .cta-btns a.main-btn i,
+.parts-srp #products .cta-btns a.main-btn i {
+    font-size: 0.9em;
+}
+
+.parts2021 #products .cta-btns a i,
+.parts-srp #products .cta-btns a i {
+    padding: 0.25em 0.3em 0 0 !important;
+    margin: 0 !important;
+}
+
+.parts2021 #keyWordsSection,
+.parts-srp #keyWordsSection {
+    padding-right: 0.3em;
+}
+
+.parts2021 #keyWordsSection input,
+.parts-srp #keyWordsSection input {
+    border: 0.01em solid #ddd;
+    border-right: 0;
+    padding: 1.1em !important;
+    height: auto !important;
+    min-height: auto !important;
+    font-size: 0.8em;
+    outline: none;
+}
+
+.parts2021 .sortby-row,
+.parts-srp .sortby-row {
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.sortby-row {
+    display: flex;
+    width: 100%;
+    padding: 0 0.5vw 0.5vw;
+    justify-content: flex-end;
+}
+
+.parts2021 #filters select,
+.parts2021 .sortby-row select,
+.parts2021 .sortby-row input,
+.parts2021 .sortby-row li a,
+.parts-srp #filters select,
+.parts-srp .sortby-row select,
+.parts-srp .sortby-row input,
+.parts-srp .sortby-row li a {
+    border: 0.01em solid #ddd;
+    padding: 1.1em;
+    height: auto !important;
+    min-height: auto !important;
+    font-size: 0.8em;
+    outline: none;
+}
+
+.parts2021 #keyWordsSection .adsSearchButton,
+.parts-srp #keyWordsSection .adsSearchButton {
+    // background-color: #1c1c1c !important;
+    color: #000 !important;
+    padding: 0.8em !important;
+    border: 0.01em solid #ddd !important;
+    border-left: 0 !important;
+}
+
+.parts2021 .pagination,
+.parts-srp .pagination {
+    background-color: transparent;
+    border-radius: 0;
+    justify-content: center;
+    float: left;
+}
+
+.parts2021 .pagination li,
+.parts-srp .pagination li {
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    margin: 0 0.2em;
+    border: 0.01em solid #ddd;
+}
+
+.parts2021 .pagination li.info,
+.parts-srp .pagination li.info {
+    padding: 0 1em !important;
+}
+
+.parts2021 .pagination.dark li a,
+.parts-srp .pagination.dark li a {
+    padding: 1.35em !important;
+    font-size: 0.8em;
+}
+
+.parts2021 .srp-online-shop,
+.parts-srp .srp-online-shop {
+    padding: 0 1em 0.8em 1.2em;
+    font-family: var(--body-font);
+    font-size: 0.8em;
+    width: 100%;
+    text-align: center;
+}
+
+.parts2021 #filters .big-checkbox,
+.parts-srp #filters .big-checkbox {
+    padding: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 0.2em;
+}
+
+.parts2021 .loadMore,
+.parts2021 .loadLess,
+.parts-srp .loadMore,
+.parts-srp .loadLess {
+    padding: 0.5em 1em !important;
+    border: 0.01em solid #ddd;
+    background: #FFF;
+    font-weight: normal !important;
+    font-size: 0.8em !important;
+    margin: 0 1em 1em 1em;
+}
+
+.parts2021 span.filter-count,
+.parts-srp span.filter-count {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+.parts2021 .srp-stock-no,
+.parts-srp .srp-stock-no {
+    font-size: 0.7em;
+    font-family: var(--body-font);
+    opacity: 0.8;
+    padding-bottom: 0.8em;
+}
+
+
+/* PARTS VDP */
+
+.parts-vdp.container-fluid {
+    padding: 2.5vw !important;
+}
+
+.parts-vdp .model-title,
+.parts-vdp .available,
+.parts-vdp .instock-tag {
+    display: none;
+}
+
+.parts-vdp #ad-left-content {
+    padding: 0;
+    margin-top: 3em;
+}
+
+.parts-vdp #ad-right-content {
+    // background: linear-gradient(180deg, #262626 0%, #1c1c1c 100%);
+    border: 0.01em solid #ddd;
+    box-shadow: 0px 2px 6px #ccc;
+    padding: 2em;
+}
+
+.parts-vdp .row.back-btn {
+    position: absolute;
+    width: 57.1%;
+    // border: 0.01em solid #3f3f3f;
+    // background-color: #1c1c1c;
+    z-index: 2;
+}
+
+.parts-vdp .back-btn a {
+    color: #000;
+    font-size: 0.9em;
+    padding: 1em;
+    display: block;
+}
+
+.parts-vdp .img-tag {
+    font-size: 0.8em !important;
+    width: 9em !important;
+    left: -2.2em !important;
+    top: 1.3em !important;
+    padding: 0.5em 1em !important;
+    line-height: 1.4 !important;
+    height: auto !important;
+}
+
+.parts-vdp .gallery {
+    padding: 0 2em 0 0;
+
+    @media screen and (max-width) {
+        padding: 0 1em 0 1em;
+    }
+}
+
+.parts-vdp .gallery .panel-body {
+    border: 0.01em solid #ddd;
+}
+
+.parts-vdp .gallery .img-thumbnail-for-jQ {
+    padding: 0;
+}
+
+.parts-vdp .gallery #imageGallery {
+    height: 32em !important;
+    padding-top: 1em;
+    margin: 0 auto;
+    // background-color: #1c1c1c;
+}
+
+.parts-vdp .gallery #imageGallery .lslide {
+    height: 30em !important;
+}
+
+.parts-vdp .gallery #imageGallery .lslide img {
+    height: 100%;
+    padding: 1em;
+    object-fit: contain;
+}
+
+
+/*.parts-vdp .stock-num-box {padding: 0; display: block !important; position: absolute; left: -29em; text-align: right; z-index: 3; top: 1em; width: 100%;}
+  .parts-vdp .stock-num-box .stock-num {font-size: .8em;}*/
+
+.parts-vdp .ecomm-btn {
+    background-color: var(--main-color);
+    border-radius: 0;
+    padding: 0.5em 1em;
+    min-height: auto;
+    margin: 0.5em 0;
+    font-family: var(--main-font-bold);
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #000 !important;
+}
+
+.parts-vdp .ecomm-btn:hover,
+.parts-vdp .ecomm-btn:focus,
+.parts-vdp .ecomm-btn:hover .glyphicon,
+.parts-vdp .ecomm-btn:focus .glyphicon {
+    background-color: #000;
+}
+
+.parts-vdp .parts-price-box {
+    font-size: 1.1em;
+    font-family: var(--main-font-bold);
+}
+
+.parts-vdp .parts-price-box .old-price,
+.parts-vdp .parts-price-box .you-save,
+.parts-vdp .parts-price-box .sale-price {
+    float: none;
+    font-size: 1.2em;
+    padding-left: 0.2em;
+}
+
+.parts-vdp .parts-price-box .old-price {
+    text-decoration: line-through;
+}
+
+.parts-vdp .checklist-filter li {
+    padding: 0.5em 0.8em 0.2em 0.8em;
+}
+
+.parts-vdp .rt-action-btn .glyphicon {
+    width: 1.5em;
+}
+
+.parts-vdp .quote-btn {
+    padding: 0.8em;
+    background-color: #FFF;
+    color: #000;
+    font-family: var(--main-font-bold);
+    text-transform: uppercase;
+    border: 0.2em solid var(--main-color);
+}
+
+.parts-vdp .quote-btn:hover,
+.parts-vdp .quote-btn:focus {
+    background-color: var(--main-color);
+    color: #FFF;
+}
+
+.parts-vdp .rt-specs-box {
+    padding: 1em 0;
+    margin: 0.5em 0;
+    background-color: transparent;
+    color: #000;
+}
+
+.rt-specs-box .specs-row {
+    border-bottom: 0.01em solid #ddd !important;
+}
+
+.parts-vdp .specs-row .specs-titles {
+    padding-left: 0;
+}
+
+.parts-vdp #qautity-add-box .quantityBoxBox {
+    font-size: 1em;
+}
+
+.parts-vdp .lSAction>.lSPrev {
+    left: 2em;
+}
+
+.parts-vdp .lSAction>.lSNext {
+    right: 2em;
+}
+
+.parts-vdp .lSAction>a {
+    width: auto;
+    height: auto;
+    opacity: 1;
+    margin-top: -2em;
+    z-index: 2;
+    background-image: none;
+}
+
+.parts-vdp .lSAction .lSPrev::before,
+.parts-vdp .lSAction .lSNext::before {
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    font-family: "Glyphicons Halflings";
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 0.3em 0 0.3em 0.5em;
+    opacity: 1;
+    font-size: 1.2em;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+}
+
+.parts-vdp .lSAction .lSPrev::before {
+    content: "\e257";
+}
+
+.parts-vdp .lSAction .lSNext::before {
+    content: "\e258";
+}
+
+.parts-vdp .lSPager.lSGallery {
+    border-top: 0.01em solid #ddd;
+    margin-top: 0 !important;
+    width: 100% !important;
+}
+
+.parts-vdp .lSPager.lSGallery li {
+    max-height: none !important;
+    height: auto !important;
+    width: auto !important;
+}
+
+.parts-vdp .lSPager.lSGallery li a {
+    padding: 0.5em;
+    display: block;
+}
+
+.parts-vdp .lSPager.lSGallery li a img {
+    border: 0.15em solid #d5d5d5;
+    height: 5em;
+    padding: 0 1em;
+}
+
+.parts-vdp .lSPager.lSGallery li.active,
+.parts-vdp .lSPager.lSGallery li:hover {
+    border-radius: 0;
+}
+
+.parts-vdp .lSPager.lSGallery li.active a img,
+.parts-vdp .lSPager.lSGallery li:hover a img {
+    border-color: var(--main-color) !important;
+}
+
+.parts-vdp .model-tabs {
+    margin: 2em 0;
+}
+
+.parts-vdp .model-tabs ul.nav.nav-tabs {
+    padding: 0.5em 0.5em 0 0.5em;
+    // background: linear-gradient(180deg, #262626 0%, #1c1c1c 100%);
+    border: 0.01em solid #ddd;
+    box-shadow: 0px 2px 6px #ddd;
+}
+
+.parts-vdp .model-tabs>ul>li>a {
+    font-family: var(--main-font-bold);
+    font-size: 1em;
+    padding: 0.5em 1em;
+    color: #fff;
+}
+
+.model-tabs>ul>li>a:hover,
+.model-tabs>ul>li>a:focus {
+    background-color: var(--main-color);
+    border: none;
+}
+
+.parts-vdp .nav-tabs>li.active>a,
+.parts-vdp .nav-tabs>li.active>a:focus,
+.parts-vdp .nav-tabs>li.active>a:hover {
+    background-color: var(--main-color);
+    color: #FFF;
+    border-color: var(--main-color);
+}
+
+.parts-vdp .tab-content {
+    padding: 1em;
+    border: 0.01em solid #d5d5d5;
+    border-top: 0;
+}
+
+.parts-vdp .ShowReadMore {
+    min-height: 10em;
+}
+
+.parts-vdp .back-btn a .glyphicon {
+    color: var(--main-color) !important;
+}
+
+.parts-vdp .parts-price-div .primary {
+    font-family: var(--main-font-bold);
+    font-size: 1.6em;
+    line-height: 1.4;
+    float: none;
+    color: var(--main-color);
+}
+
+#detals-tabs-accordion .js-tabcollapse-panel-heading {
+    font-family: var(--main-font-bold) !important;
+}
+
+.parts-vdp .tab-content>.active {
+    overflow: hidden;
+}
+
+.parts-vdp .tab-content {
+    // background: linear-gradient(180deg, #262626 0%, #1c1c1c 100%);
+    border: 0.01em solid #ddd;
+    box-shadow: 0px 2px 6px #ddd;
+}
+
+.parts-price-div {
+    color: #fff;
+}
