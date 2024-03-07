@@ -1,0 +1,52 @@
+@font-face {
+  font-family: DIN;
+  src: url(/site-uploads/1001454/fonts/DIN.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: DIN Bold;
+  src: url(/site-uploads/1001454/fonts/DIN-PRO-700-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: DIN Normal;
+  src: url(/site-uploads/1001454/fonts/DINMedium.ttf) format('truetype');
+}
+
+.carousel-control.left:before {
+  content: '\f053';
+  top: 7em;
+  left: 0;
+  border-bottom-right-radius: 5em;
+  border-top-right-radius: 5em;
+}
+
+.carousel-control.right:before {
+  content: '\f054';
+  top: 7em;
+  right: 0;
+  border-bottom-left-radius: 5em;
+  border-top-left-radius: 5em;
+}
+
+#footer .btn-primary::after {
+  font-family: 'Font Awesome 5 Pro';
+  font-size: 1.1em;
+  content: '\f078';
+}
+
+.brands-row > div .brands-title:after {
+  transition: 0.4s all ease;
+  width: 27px;
+  height: 41px;
+  content: '\f078';
+  font-family: 'Font Awesome 5 Pro';
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 39px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 13px;
+}
+
+/* transform: rotate(180deg) translateZ(0); */

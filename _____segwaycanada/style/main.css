@@ -4194,6 +4194,20 @@ table.responsive-table table th {
   border: 0.01em solid #d5d5d5;
   border-top: 0;
 }
+.parts-vdp .tab-content .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .parts-vdp .gallery-price-setion {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .parts-vdp .gallery-price-setion .gallery {
+    padding: 0 1em 0 1em;
+  }
+}
 
 .parts-vdp .ShowReadMore {
   min-height: 10em;

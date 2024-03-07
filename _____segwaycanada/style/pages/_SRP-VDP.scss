@@ -566,6 +566,24 @@
     padding: 1em;
     border: 0.01em solid #d5d5d5;
     border-top: 0;
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.parts-vdp {
+    .gallery-price-setion {
+        @media screen and (max-width: 768px) {
+            margin-left: 0;
+            margin-right: 0;
+
+            .gallery {
+                padding: 0 1em 0 1em;
+            }
+        }
+    }
 }
 
 .parts-vdp .ShowReadMore {
